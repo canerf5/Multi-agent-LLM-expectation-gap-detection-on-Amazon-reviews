@@ -1,0 +1,29 @@
+# ------------------------------------------------------------
+# Proje ayarları — tüm script'ler buradan okur
+# ------------------------------------------------------------
+
+# Amazon Reviews 2023 (McAuley Lab) kategori adı
+# Clothing_Shoes_and_Jewelry  -> tez dokümanındaki kategori (yorum 27.8 GB, meta 18 GB; streaming ile okunur)
+# Amazon_Fashion              -> daha küçük alternatif (yorum 1 GB, meta 1.4 GB)
+category: Clothing_Shoes_and_Jewelry
+
+# Yorum dosyasının en fazla kaç satırı okunacak (tamamını indirmemek için)
+max_reviews: 3000000
+
+# Örneklem kriterleri
+min_reviews: 10        # ürünün en az yorum sayısı
+min_negative: 3        # en az negatif yorum sayısı
+negative_max_rating: 2 # rating <= 2 ise negatif
+min_words: 5           # bundan kısa negatif yorumlar atılır
+max_neg_per_product: 15
+
+# Kaç ürün
+n_products: 200
+n_gold: 40     # elle etiketlenecek test seti
+n_dev: 5       # prompt denemesi için (gold'dan AYRI)
+
+seed: 42
+
+# LLM (Faz 5'te kullanılacak)
+model: gpt-4o-mini
+temperature: 0

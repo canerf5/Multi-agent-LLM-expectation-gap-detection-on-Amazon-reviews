@@ -1,0 +1,17 @@
+# Gizli bilgiler — ASLA push etme
+.env
+
+# Büyük ham veri
+data/raw/*
+!data/raw/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editör / sistem
+.vscode/
+.DS_Store
+~$*.xlsx

@@ -7,8 +7,9 @@
 # Amazon_Fashion              -> daha küçük alternatif (yorum 1 GB, meta 1.4 GB)
 category: Clothing_Shoes_and_Jewelry
 
-# Yorum dosyasının en fazla kaç satırı okunacak (tamamını indirmemek için)
-max_reviews: 3000000
+# Yorum dosyasının en fazla kaç satırı okunacak.
+# null = dosyanın TAMAMI (dosyalar bilgisayardayken önerilen; seçim dosya sırasından bağımsız olur)
+max_reviews: null
 
 # Örneklem kriterleri
 min_reviews: 10        # ürünün en az yorum sayısı
@@ -16,6 +17,22 @@ min_negative: 3        # en az negatif yorum sayısı
 negative_max_rating: 2 # rating <= 2 ise negatif
 min_words: 5           # bundan kısa negatif yorumlar atılır
 max_neg_per_product: 15
+
+# Kapsam filtresi (büyük-küçük harf duyarsız, tam eşleşme):
+# ürünün kategori yolunun (meta 'categories') HERHANGİ bir seviyesi include
+# listesinde olmalı VE HİÇBİR seviyesi exclude listesinde olmamalı.
+# Saat, takı, çanta, bavul, aksesuar, kostüm vb. böylece dışarıda kalır.
+# Filtreyi kapatmak için: include_categories: [] ve exclude_categories: []
+include_categories: ["Clothing", "Shoes", "Boot Shop", "Sport Specific Clothing"]
+exclude_categories: ["Jewelry", "Watches", "Accessories", "Handbags & Wallets",
+  "Luggage & Travel Gear", "Shoe, Jewelry & Watch Accessories", "Costumes & Accessories"]
+
+# Aynı ürün altında birebir aynı metne sahip negatif yorumlar tek sayılır
+dedupe_reviews: true
+
+# Gold'daki bir ürün etiketleme sırasında "veri uygun değil" çıkarsa
+# sırayla yerine konacak yedek ürün sayısı (200'e dahil değil)
+n_reserve: 10
 
 # Kaç ürün
 n_products: 200

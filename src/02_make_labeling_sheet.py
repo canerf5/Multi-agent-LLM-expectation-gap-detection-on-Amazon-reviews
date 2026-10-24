@@ -61,6 +61,13 @@ def main():
         "Her satırda bir ürün var. Ürünü GÖRMENE gerek yok; sadece 'Sayfada yazan' ve 'Negatif yorumlar' sütunlarını oku.",
         "Soru: Sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki var mı?",
         "",
+        "0) veri_uygun: Önce bunu doldur. Aşağıdakilerden biri varsa 'Hayır' yaz, notu yaz ve o satırın geri kalanını BOŞ bırak:",
+        "   - Yorumlar sayfadaki ürünle ilgili değil (başka ürünler anlatılıyor; Amazon farklı ürünleri birleştirmiş)",
+        "   - Ürün giyim/ayakkabı değil (filtreye rağmen kaçan)",
+        "   - Geriye değerlendirilebilecek 2'den az yorum kalıyor",
+        "   'Hayır' çıkan her gold ürün için 'Yedekler' sayfasındaki SIRADAKİ ürünü etiketle (atlama yapma, sırayla git).",
+        "   Toplamda veri_uygun = Evet olan 40 ürün olmalı.",
+        "",
         "1) gap_var: Evet / Hayır",
         "2) Konu sütunları: çelişki hangi konudaysa o sütuna X koy (birden fazla olabilir).",
         "   Kural: Bir konu ancak EN AZ 2 yorum o sorundan bahsediyorsa işaretlenir.",
@@ -71,6 +78,7 @@ def main():
         "4) not: Neden bu kararı verdin, 1 cümle.",
         "",
         "SAYILMAYANLAR: kargo/paketleme, satıcı/iade süreci, 'beğenmedim' gibi kişisel zevk, tek seferlik arıza (1 yorum).",
+        "TEKRARLAR: Birebir aynı yorumlar script tarafından zaten ayıklandı. Yine de aynı kişinin neredeyse aynı yorumunu görürsen tek say.",
         "",
         "ÖRNEK: Sayfa 'Waterproof leather boot' diyor; 2 yorum 'su aldı', 1 yorum 'kargo geç'.",
         "        -> gap_var = Evet | Malzeme = X (su geçirmezlik malzeme iddiası) | seviye = Yüksek | not: 'Su geçirmez diyor, 2/2 ilgili yorum su aldı diyor'",
@@ -82,19 +90,33 @@ def main():
     ins["A1"].font = Font(bold=True, size=14)
     ins.column_dimensions["A"].width = 130
 
-    # ---------- Etiket sayfası ----------
-    ws = wb.create_sheet("Etiketler")
-    headers = ["no", "parent_asin", "Sayfada yazan", "Negatif yorumlar", "gap_var"] + GAP_TYPES + ["seviye", "not"]
+    reserve = [p for p in products if p["split"] == "reserve"]
+    build_sheet(wb, "Etiketler", gold)
+    if reserve:
+        build_sheet(wb, "Yedekler", reserve)
+
+    out = ROOT / "data" / "gold" / "etiketleme.xlsx"
+    wb.save(out)
+    print(f"Yazıldı: {out}  ({len(gold)} gold + {len(reserve)} yedek)")
+
+
+def build_sheet(wb, title, items):
+    from openpyxl.utils import get_column_letter
+    ws = wb.create_sheet(title)
+    headers = (["no", "parent_asin", "Sayfada yazan", "Negatif yorumlar", "veri_uygun", "gap_var"]
+               + GAP_TYPES + ["seviye", "not"])
     ws.append(headers)
-    for i, p in enumerate(gold, 1):
-        ws.append([i, p["parent_asin"], page_text(p), reviews_text(p), None]
+    for i, p in enumerate(items, 1):
+        ws.append([i, p["parent_asin"], page_text(p), reviews_text(p), None, None]
                   + [None] * len(GAP_TYPES) + [None, None])
 
     head_fill = PatternFill("solid", fgColor="1F3A5F")
     input_fill = PatternFill("solid", fgColor="FFF4CC")
-    n = len(gold) + 1
-    first_input = 5
-    last_input = len(headers)
+    check_fill = PatternFill("solid", fgColor="E2EFDA")
+    n = len(items) + 1
+    col_ok, col_gap = 5, 6
+    col_t0, col_t1 = 7, 6 + len(GAP_TYPES)
+    col_lvl, col_note = col_t1 + 1, col_t1 + 2
     for c in range(1, len(headers) + 1):
         cell = ws.cell(row=1, column=c)
         cell.font = Font(bold=True, color="FFFFFF")
@@ -105,32 +127,30 @@ def main():
         for c in range(1, len(headers) + 1):
             cell = ws.cell(row=r, column=c)
             cell.alignment = Alignment(wrap_text=True, vertical="top")
-            if c >= first_input:
+            if c == col_ok:
+                cell.fill = check_fill
+            elif c >= col_gap:
                 cell.fill = input_fill
 
-    widths = {"A": 5, "B": 13, "C": 55, "D": 75, "E": 9}
-    for col, w in widths.items():
+    for col, w in {"A": 5, "B": 13, "C": 55, "D": 75}.items():
         ws.column_dimensions[col].width = w
-    from openpyxl.utils import get_column_letter
-    for c in range(6, 6 + len(GAP_TYPES)):
+    ws.column_dimensions[get_column_letter(col_ok)].width = 10
+    ws.column_dimensions[get_column_letter(col_gap)].width = 9
+    for c in range(col_t0, col_t1 + 1):
         ws.column_dimensions[get_column_letter(c)].width = 9
-    ws.column_dimensions[get_column_letter(last_input - 1)].width = 10
-    ws.column_dimensions[get_column_letter(last_input)].width = 35
+    ws.column_dimensions[get_column_letter(col_lvl)].width = 10
+    ws.column_dimensions[get_column_letter(col_note)].width = 35
     ws.freeze_panes = "C2"
 
-    # Açılır listeler
     def dv(options, col_from, col_to):
         v = DataValidation(type="list", formula1='"' + ",".join(options) + '"', allow_blank=True)
         ws.add_data_validation(v)
         v.add(f"{get_column_letter(col_from)}2:{get_column_letter(col_to)}{n}")
 
-    dv(["Evet", "Hayır"], 5, 5)
-    dv(["X"], 6, 5 + len(GAP_TYPES))
-    dv(["Yok", "Orta", "Yüksek"], last_input - 1, last_input - 1)
-
-    out = ROOT / "data" / "gold" / "etiketleme.xlsx"
-    wb.save(out)
-    print(f"Yazıldı: {out}  ({len(gold)} ürün)")
+    dv(["Evet", "Hayır"], col_ok, col_ok)
+    dv(["Evet", "Hayır"], col_gap, col_gap)
+    dv(["X"], col_t0, col_t1)
+    dv(["Yok", "Orta", "Yüksek"], col_lvl, col_lvl)
 
 
 if __name__ == "__main__":

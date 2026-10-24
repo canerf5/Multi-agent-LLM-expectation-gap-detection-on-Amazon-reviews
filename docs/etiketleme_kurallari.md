@@ -5,6 +5,14 @@ Bu kurallar 40 ürünlük test setini elle etiketlerken kullanılır ve tezin ek
 ## Ne okunur?
 Sadece sistemin de gördüğü metin: ürün sayfası (başlık, özellikler, açıklama, detaylar, fiyat) ve negatif yorumlar (rating ≤ 2). Ürünün kendisi değerlendirilmez.
 
+## Önce: veri uygun mu?
+Her ürün için önce `veri_uygun` alanı doldurulur. Aşağıdakilerden biri varsa **Hayır** yazılır, not düşülür ve diğer alanlar boş bırakılır:
+- Yorumlar sayfadaki ürünle ilgili değil (Amazon farklı ürünleri aynı `parent_asin` altında birleştirmiş; ör. kapüşonlu ürünün yorumlarında başka sweatshirt'ler anlatılıyor)
+- Ürün giyim veya ayakkabı değil (kategori filtresine rağmen kaçan)
+- Konu dışı yorumlar çıkarıldığında değerlendirilebilecek 2'den az yorum kalıyor
+
+**Yedek kuralı:** `veri_uygun = Hayır` olan her gold ürünün yerine, `Yedekler` sayfasındaki **sıradaki** ürün etiketlenir (atlama yapılmaz). Sonuçta `veri_uygun = Evet` olan 40 ürün elde edilir. Kaç ürünün neden çıkarıldığı tezde veri kalitesi bulgusu olarak raporlanır.
+
 ## Sorulan soru
 Sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki var mı?
 
@@ -31,6 +39,7 @@ Birden fazla konu varsa en yüksek seviye yazılır.
 - Kargo, paketleme, satıcı veya iade süreci şikayetleri
 - Kişisel zevk ("beğenmedim", "bana yakışmadı")
 - Tek bir yorumda geçen sorun
+- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)
 - 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)
 
 ## Konu tanımları

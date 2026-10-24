@@ -4,23 +4,27 @@ FAZ 2 — Veri toplama
 Amazon Reviews 2023'ten (Hugging Face) kriterlere uyan ürünleri seçer ve
 her ürün için sayfa bilgisi + negatif yorumları tek dosyaya yazar.
 
-Dosyalar indirilmez, satır satır STREAM edilir:
+Dosyalar satır satır okunur (yerel dosya ya da Hugging Face stream):
   1) Yorum dosyasının ilk `max_reviews` satırı okunur, parent_asin'e göre gruplanır.
-  2) Kriteri sağlayan ürünler karıştırılır (seed sabit) -> aday havuzu.
-  3) Meta dosyası okunur; aday havuzundan yeterli sayıda ürünün metadata'sı
-     bulununca okuma DURUR (18 GB'ın tamamını okumaya gerek kalmaz).
+  2) Kriteri sağlayan ürünler -> aday havuzu.
+  3) Meta dosyasının TAMAMI okunur; sayfa bilgisi dolu olan adaylar toplanır.
+  4) Bu adaylar karıştırılır (seed sabit) ve ilk `n_products` tanesi seçilir.
+     Böylece örneklem dosya sırasından bağımsız, gerçekten rastgele olur.
 
 Çıktı: data/processed/products_200.jsonl
 Her ürüne bir "split" alanı atanır: gold (40) / dev (5) / rest (155)
 
-Kullanım:
-    python src/01_sample_data.py
-    # internet yerine yerel dosya ile denemek için:
-    python src/01_sample_data.py --reviews-file a.jsonl --meta-file b.jsonl
+Kullanım (önerilen: yerel dosyalar, birkaç dakika):
+    python src/01_sample_data.py \
+        --reviews-file data/raw/Clothing_Shoes_and_Jewelry.jsonl \
+        --meta-file data/raw/meta_Clothing_Shoes_and_Jewelry.jsonl
+    # dosya verilmezse Hugging Face'ten stream eder (meta'nın tamamı okunduğu için çok yavaş)
 """
 import argparse
+import html
 import json
 import random
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -40,8 +44,14 @@ def open_lines(local_path, hf_path):
     return fs.open(hf_path, "r", encoding="utf-8", block_size=8 * 1024 * 1024)
 
 
+TAG_RE = re.compile(r"<[^>]+>")
+ASIN_RE = re.compile(r'"parent_asin":\s*"([^"]+)"')
+
+
 def clean_text(s):
-    return " ".join(str(s or "").split())
+    """HTML etiketlerini (<br /> vb.) ve &amp; gibi kodları temizler, boşlukları sadeleştirir."""
+    s = html.unescape(TAG_RE.sub(" ", str(s or "")))
+    return " ".join(s.split())
 
 
 def to_price(p):
@@ -101,11 +111,15 @@ def main():
 
     pool = set(candidates)
 
-    # ---------- 2) Metadata'yı oku (yeterince bulununca dur) ----------
-    print(f"[2/3] Metadata okunuyor (hedef: {cfg['n_products']} ürün bulununca durulacak)")
+    # ---------- 2) Metadata'nın tamamını oku, adayların sayfa bilgisini topla ----------
+    print(f"[2/3] Metadata okunuyor (dosyanın tamamı, {len(pool):,} aday aranıyor)")
     found = {}
     with open_lines(args.meta_file, f"{HF_REPO}/meta_categories/meta_{cat}.jsonl") as f:
         for line in tqdm(f, unit=" ürün"):
+            # Hız için: aday olmayan satırı JSON'a çevirmeden atla
+            hit = ASIN_RE.search(line)
+            if hit and hit.group(1) not in pool:
+                continue
             try:
                 m = json.loads(line)
             except json.JSONDecodeError:
@@ -127,15 +141,14 @@ def main():
                 "store": clean_text(m.get("store")),
                 "average_rating": m.get("average_rating"),
             }
-            if len(found) >= cfg["n_products"]:
-                break
 
+    print(f"      Sayfa bilgisi dolu aday: {len(found):,}")
     if len(found) < cfg["n_products"]:
         print(f"UYARI: sadece {len(found)} ürünün metadata'sı bulundu.")
 
-    # ---------- 3) Birleştir, split ata, yaz ----------
-    pids = sorted(found)
-    rng.shuffle(pids)
+    # ---------- 3) Rastgele seç, split ata, yaz ----------
+    # candidates zaten seed ile karıştırıldı -> sırayı koruyarak ilk n_products tanesi
+    pids = [p for p in candidates if p in found][: cfg["n_products"]]
     out = ROOT / "data" / "processed" / f"products_{cfg['n_products']}.jsonl"
     with open(out, "w", encoding="utf-8") as f:
         for idx, pid in enumerate(pids):

@@ -28,14 +28,14 @@ pip install -r requirements.txt
 
 | Faz | Komut | Çıktı |
 |---|---|---|
-| 2. Veri | `python src/01_sample_data.py` | `data/processed/products_200.jsonl` |
+| 2. Veri | `python src/01_sample_data.py --reviews-file data/raw/Clothing_Shoes_and_Jewelry.jsonl --meta-file data/raw/meta_Clothing_Shoes_and_Jewelry.jsonl` | `data/processed/products_200.jsonl` |
 | 4. Etiketleme dosyası | `python src/02_make_labeling_sheet.py` | `data/gold/etiketleme.xlsx` |
 | 4. Etiketleme | Excel'de sarı sütunları doldur → commit | — |
 | 5–6. Ajanlar + baseline | *(eklenecek)* | — |
 | 7. Tam koşu | *(eklenecek)* | `outputs/` |
 | 8. Değerlendirme | *(eklenecek)* | `reports/` |
 
-> `01_sample_data.py` veriyi indirmez, Hugging Face'ten satır satır okur. İnternet hızına göre 15–40 dk sürebilir.
+> Ham dosyalar (Hugging Face → McAuley-Lab/Amazon-Reviews-2023, `raw/review_categories/` ve `raw/meta_categories/`) elle indirilip `data/raw/` altına konur (~43 GB, git'e girmez). Dosya verilmezse script Hugging Face'ten stream eder ama meta dosyasının tamamını okuduğu için çok yavaştır.
 
 ## Klasörler
 
@@ -54,7 +54,7 @@ reports/             # metrikler, grafikler
 ## Fazlar
 
 - [x] 1. Kurulum
-- [ ] 2. Veri toplama
+- [x] 2. Veri toplama
 - [ ] 3. Etiketleme kuralları (`docs/etiketleme_kurallari.md`)
 - [ ] 4. 40 ürün etiketleme → `v0.1-data` tag
 - [ ] 5. 3 ajan

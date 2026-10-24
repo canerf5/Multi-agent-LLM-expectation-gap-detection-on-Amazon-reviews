@@ -53,7 +53,7 @@ reports/             # metrikler, grafikler
 
 ## Fazlar
 
-- [ ] 1. Kurulum
+- [x] 1. Kurulum
 - [ ] 2. Veri toplama
 - [ ] 3. Etiketleme kuralları (`docs/etiketleme_kurallari.md`)
 - [ ] 4. 40 ürün etiketleme → `v0.1-data` tag

@@ -31,6 +31,7 @@ pip install -r requirements.txt
 | 2. Veri | `python src/01_sample_data.py --reviews-file data/raw/Clothing_Shoes_and_Jewelry.jsonl --meta-file data/raw/meta_Clothing_Shoes_and_Jewelry.jsonl` | `data/processed/products_200.jsonl` |
 | 4. Etiketleme dosyası | `python src/02_make_labeling_sheet.py` | `data/gold/etiketleme.xlsx` |
 | 4. Etiketleme | Excel'de sarı sütunları doldur → commit | — |
+| 4. Gold dışa aktarma | `python src/03_export_gold.py` | `data/gold/gold_40.csv` |
 | 5–6. Ajanlar + baseline | *(eklenecek)* | — |
 | 7. Tam koşu | *(eklenecek)* | `outputs/` |
 | 8. Değerlendirme | *(eklenecek)* | `reports/` |
@@ -55,8 +56,8 @@ reports/             # metrikler, grafikler
 
 - [x] 1. Kurulum
 - [x] 2. Veri toplama
-- [ ] 3. Etiketleme kuralları (`docs/etiketleme_kurallari.md`)
-- [ ] 4. 40 ürün etiketleme → `v0.1-data` tag
+- [x] 3. Etiketleme kuralları (`docs/etiketleme_kurallari.md`)
+- [x] 4. 40 ürün etiketleme → `v0.1-data` tag
 - [ ] 5. 3 ajan
 - [ ] 6. Baseline + 5 dev ürünle deneme → `v0.2-agents` tag
 - [ ] 7. 200 ürün tam koşu

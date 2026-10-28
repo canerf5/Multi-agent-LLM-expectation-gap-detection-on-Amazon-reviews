@@ -128,10 +128,22 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 
 **Metrikler:**
 
-- Accuracy: Gap var/yok tespiti
-- Precision, Recall, F1 (micro ve macro): Gap tipi sınıflandırma
+*Ana metrik:* **Gap tipi micro-F1** (çoklu etiket; 40 ürün × 6 tip). Yanında **6 tip üzerinden macro-F1** verilir. Test setinde 37 üründe toplam 88 tip etiketi bulunduğundan iki sistem asıl olarak bu düzeyde ayrışır.
+
+- Gap tipi sınıflandırma: Precision (kesinlik), Recall (duyarlılık) ve F1; micro ve macro ortalama
 - Tip bazında F1: Hangi gap tiplerinde başarılı/başarısız olunduğu
+- Eksik Bilgi tipi: Test setinde bu tipe hiç rastlanmamıştır (frekans 0). Recall ve F1 bu sınıf için tanımsız olduğundan (sıfıra bölme), Eksik Bilgi micro ve macro hesaplamadan çıkarılır (6 tip) ve sınıflandırma raporunda support = 0 olarak açıkça gösterilir. Bir sistemin bu tipte yaptığı tahminler (yanlış pozitifler) ayrıca sayılarak raporlanır.
+
+*İkincil metrikler:*
+
 - Seviye isabeti: Gap seviyesinin doğru tahmin oranı
+- Gap var/yok tespiti: Her iki sınıf (Evet/Hayır) için Precision, Recall, F1 ve Macro F1. "Hayır" sınıfı yalnızca 3 ürüne dayanır; bu sınıftaki tek bir hata sınıfın recall değerini 1/3 oranında değiştirir. Bu yüzden gap var/yok sonucu ana metrik olarak kullanılmaz ve bu notla birlikte raporlanır. Her ürüne "Evet" diyen bir model %92,5 accuracy elde eder (Macro F1 = 0,48); accuracy yanıltıcı olduğundan yalnızca bu çoğunluk sınıfı referansıyla (majority baseline) birlikte verilir.
+
+*İstatistiksel karşılaştırma:* 40 ürünlük test seti küçük olduğundan iki sistem arasındaki farkın tesadüf olup olmadığı ayrıca sınanır:
+
+- Her metrik için 1000 tekrarlı bootstrap (ürünler yerine koyarak yeniden örneklenir) ile %95 güven aralığı
+- Eşleştirilmiş bootstrap karşılaştırması: Her tekrarda aynı ürün örneklemi iki sisteme birlikte uygulanır ve fark (çok ajanlı − tek LLM) hesaplanır. Farkın %95 güven aralığı ve farkın 0'dan küçük ya da 0'a eşit çıktığı tekrarların oranı raporlanır. Güven aralığı 0'ı içeriyorsa fark anlamlı kabul edilmez.
+
 - Karşılaştırma: İki sistemin aynı 40 ürün üzerindeki performansı
 
 **Alt sorular için ek analizler:**
@@ -152,7 +164,7 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 | Ürün sayısı | 200 |
 | Ajan sayısı | 3 |
 | Model | GPT-4o-mini veya benzeri API tabanlı LLM |
-| Değerlendirme | 40 ürün manuel etiket; Accuracy, P/R/F1, seviye isabeti |
+| Değerlendirme | 40 ürün manuel etiket; ana metrik gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma |
 | Karşılaştırma | Çok ajanlı sistem vs tek LLM |
 | Çıktı formatı | JSON (yapılandırılmış) |
 | Çalışma şekli | Offline analiz |
@@ -188,6 +200,8 @@ Ana risk:     Beden uyumsuzluğu
 - Gerçek iade verisi bulunmadığı için iade riski dolaylı olarak ölçülmektedir.
 - Tek kategori ile sınırlıdır; genellenebilirlik sınırlıdır.
 - Tek etiketleyici ile değerlendirme yapılacaktır; etiketleyiciler arası uyum hesaplanmayacaktır.
+- Test setinde sınıf dağılımı dengesizdir: 40 ürünün 37'sinde gap vardır, yalnızca 3'ünde yoktur. "Gap yok" sınıfına ilişkin sonuçlar 3 ürüne dayandığı için istatistiksel olarak zayıftır.
+- Eksik Bilgi tipine test setinde rastlanmamıştır; bu tip değerlendirme metriklerinin kapsamı dışında kalmıştır ve sistemlerin bu tipteki başarısı ölçülememiştir.
 - Amazon veri setinde ürün sayfası içeriği zaman içinde değişmiş olabilir; bu durum veri tutarlılığını etkileyebilir.
 - İngilizce veri ile çalışılmaktadır; dil bağımlılığı vardır.
 - Görsel analiz yapılmamaktadır; görsel kaynaklı beklenti uyumsuzlukları dolaylı olarak ele alınmaktadır.
@@ -200,7 +214,7 @@ Ana risk:     Beden uyumsuzluğu
 - Üç ajanlı sistem çalışır durumda olmalıdır.
 - 200 ürün için gap analizi üretilmiş olmalıdır.
 - 40 ürün manuel olarak etiketlenmiş olmalıdır.
-- Accuracy, F1 ve seviye isabeti metrikleri hesaplanmış ve karşılaştırılmaya hazır olmalıdır.
+- Gap tipi micro-F1 ve macro-F1 (ana), seviye isabeti ve gap var/yok Macro F1 (ikincil) hesaplanmış; iki sistem farkı için 1000 tekrarlı bootstrap ile %95 güven aralığı ve eşleştirilmiş karşılaştırma yapılmış olmalıdır.
 - Tek LLM baseline ile karşılaştırma yapılmış olmalıdır.
 
 ## 12. Özet
@@ -215,7 +229,7 @@ Bu çalışma, e-ticaret ürün sayfalarındaki beklenti uyumsuzluğunu çok aja
 | Birleştirme anahtarı | asin | parent_asin | Beden/renk varyantlarının yorumları tek ürün altında toplanıyor |
 | Örneklem kriteri | ≥5 yorum, ≥1 negatif | ≥10 yorum, ≥3 negatif | Tek negatif yorumla şikayet örüntüsü oluşmuyor; Review Mining Agent'ın gruplayacağı veri sağlanıyor |
 | Gap skoru | 0–10 sayısal | Yok / Orta / Yüksek | Tek etiketleyicide 0–10 ölçeği tutarsız; kurala dayalı 3 seviye tekrarlanabilir |
-| Metrikler | Accuracy, P/R/F1 | + micro/macro F1, tip bazında F1, seviye isabeti | Seviye alanı da değerlendiriliyor |
+| Metrikler | Accuracy, P/R/F1 | Ana: gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; tip bazında F1; accuracy yalnızca çoğunluk sınıfı referansıyla; Eksik Bilgi (support = 0) hesaplamadan çıkarıldı; 1000 tekrarlı bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma | Test setinde 37 Evet / 3 Hayır: "hep Evet" diyen model %92,5 accuracy alıyor (Macro F1 = 0,48) ve "Hayır" sınıfı 3 ürüne dayandığı için gap var/yok iki sistemi ayırmıyor; asıl ayrışma 88 tip etiketinde. 40 ürün küçük olduğundan farkın anlamlılığı bootstrap ile sınanıyor; Eksik Bilgi test setinde hiç geçmiyor |
 | Filtreleme | Yöntem belirtilmemiş | Kısa yorum: kod; kargo/zevk: Ajan 2 | Kural tabanlı ayıklama bu şikayetleri güvenilir yakalayamıyor |
 | Veri bölme | — | 40 test / 5 geliştirme / 155 kalan + 10 yedek | Prompt ayarının test setini etkilememesi; veri sorunu olan gold ürünlerin yerine yedek |
 | Kapsam filtresi | — | Giyim ve ayakkabı: kategori yolunda Clothing / Shoes / Boot Shop / Sport Specific Clothing geçen, Jewelry / Watches / Accessories / Handbags & Wallets / Luggage & Travel Gear / Shoe, Jewelry & Watch Accessories / Costumes & Accessories geçmeyen ürünler | Kategoride giyim dışı ürünler (bavul, saat, şemsiye) var; taksonomi bu ürünlere uymuyor. Yalnızca "Clothing/Shoes" araması botları (Boot Shop) ve spor giyimi (Sport Specific Clothing) dışarıda bırakıyordu |

@@ -21,6 +21,65 @@ ROOT = Path(__file__).resolve().parents[1]
 
 GAP_TYPES = ["Beden/Kalıp", "Renk", "Görsel", "Kalite", "Malzeme", "Dayanıklılık", "Eksik Bilgi"]
 
+# Talimatlar sayfasının metni (kurallar sürüm 2; ayrıntı: docs/etiketleme_kurallari.md)
+INSTRUCTIONS = [
+    "ETİKETLEME TALİMATI (kurallar sürüm 2)",
+    "",
+    "Her satırda bir ürün var. Ürünü GÖRMENE gerek yok; sadece 'Sayfada yazan' ve 'Negatif yorumlar' sütunlarını oku.",
+    "Soru: Sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki var mı?",
+    "",
+    "0) veri_uygun: Önce bunu doldur. Aşağıdakilerden biri varsa 'Hayır' yaz, notu yaz ve o satırın geri kalanını BOŞ bırak:",
+    "   - Yorumlar sayfadaki ürünle ilgili değil (başka ürünler anlatılıyor; Amazon farklı ürünleri birleştirmiş)",
+    "   - Ürün giyim/ayakkabı değil (filtreye rağmen kaçan)",
+    "   - Geriye değerlendirilebilecek 2'den az yorum kalıyor",
+    "   'Hayır' çıkan her gold ürün için 'Yedekler' sayfasındaki SIRADAKİ ürünü etiketle (atlama yapma, sırayla git).",
+    "   Toplamda veri_uygun = Evet olan 40 ürün olmalı.",
+    "   NOT: 'Çelişki yok' bir veri sorunu DEĞİLDİR. O durumda veri_uygun = Evet, gap_var = Hayır yazılır.",
+    "",
+    "1) gap_var: Evet / Hayır",
+    "2) Konu sütunları: çelişki hangi konudaysa o sütuna X koy (birden fazla olabilir).",
+    "   Kural: Bir konu ancak EN AZ 2 yorum o sorundan bahsediyorsa işaretlenir.",
+    "   TEK KONU KURALI: Bir şikayet yalnızca TEK konuya sayılır. Her konunun KENDİ en az 2 yorumu olmalı;",
+    "   aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.",
+    "   Konu tanımları:",
+    "   - Beden/Kalıp:  ölçü, kalıp, oturuş",
+    "   - Renk:         renk farklı veya soluk",
+    "   - Görsel:       fotoğraftaki görünümden farklı (renk hariç)",
+    "   - Malzeme:      kumaşın/materyalin özelliği (ince, şeffaf, plastik gibi, su geçirmiyor, kaşındırıyor, sert)",
+    "   - Dayanıklılık: zamanla bozulma (X kullanım/yıkama sonra söküldü/yırtıldı)",
+    "   - Kalite:       SADECE ilk günden işçilik/üretim hatası (dikiş, düğme, fermuar, defolu/lekeli geliş)",
+    "                   ve somut sebep belirtmeyen genel 'cheap' / 'poor quality'",
+    "   - Eksik Bilgi:  sayfada bilginin hiç olmaması",
+    "   Öncelik: Şikayet birden fazla konuya uyuyorsa en spesifik olana gider (Malzeme ve Dayanıklılık, Kalite'den önce).",
+    "3) seviye:",
+    "   Yüksek = Sayfada ürüne özgü SOMUT bir iddia var ve yorumlar bu iddiayla DOĞRUDAN çelişiyor",
+    "            (somut iddia: ölçü aralığı, kalıp uyarısı, materyal, 'waterproof', 'memory foam', renk adı vb.)",
+    "   Orta   = Sayfa o konuda bilgi vermemiş VEYA sadece genel pazarlama dili kullanmış, yorumlar şikayet ediyor",
+    "            (genel pazarlama dili iddia sayılmaz: 'high quality', 'premium', 'perfect fit', markanın her üründe kullandığı metin)",
+    "   Renk:    renk adı var ve şikayet 'soluk/donuk' ise Orta; başka renk geldiyse Yüksek",
+    "   Yok    = Çelişki yok (gap_var = Hayır ise seviye de Yok)",
+    "   Birden fazla konu varsa en yüksek seviye yazılır.",
+    "4) not: Neden bu kararı verdin, 1 cümle.",
+    "",
+    "SAYILMAYANLAR: kargo/paketleme, satıcı/iade süreci, 'beğenmedim' gibi kişisel zevk, tek seferlik arıza (1 yorum).",
+    "   Kullanılmış/iade edilmiş ürün gönderimi satıcı hatasıdır, sayılmaz; hasarlı/delikli/lekeli/defolu YENİ ürün Kalite'dir.",
+    "TEKRARLAR: Birebir aynı yorumlar script tarafından zaten ayıklandı. Yine de aynı kişinin neredeyse aynı yorumunu görürsen tek say.",
+    "",
+    "ÖRNEK: Sayfa 'Waterproof leather boot' diyor; 2 yorum 'su aldı', 1 yorum 'kargo geç'.",
+    "        -> gap_var = Evet | Malzeme = X (su geçirmezlik malzeme iddiası) | seviye = Yüksek | not: 'Su geçirmez diyor, 2/2 ilgili yorum su aldı diyor'",
+    "",
+    "ÖNEMLİ: Bu dosyayı bitirip GitHub'a commit etmeden yapay zeka sistemini ÇALIŞTIRMA.",
+]
+
+
+def write_instructions(ws):
+    """Talimatlar sayfasını INSTRUCTIONS ile (baştan) yazar."""
+    ws.delete_rows(1, ws.max_row)
+    for i, r in enumerate(INSTRUCTIONS, 1):
+        ws.cell(row=i, column=1, value=r)
+    ws["A1"].font = Font(bold=True, size=14)
+    ws.column_dimensions["A"].width = 130
+
 
 def page_text(p):
     parts = [f"BAŞLIK: {p['title']}"]
@@ -45,6 +104,10 @@ def reviews_text(p):
 
 
 def main():
+    out = ROOT / "data" / "gold" / "etiketleme.xlsx"
+    if out.exists():
+        raise SystemExit(f"{out} zaten var; elle girilen etiketlerin üzerine yazmamak için durdum. "
+                         "Sıfırdan oluşturmak istiyorsan önce dosyayı sil/taşı.")
     cfg = yaml.safe_load(open(ROOT / "config.yaml", encoding="utf-8"))
     src = ROOT / "data" / "processed" / f"products_{cfg['n_products']}.jsonl"
     products = [json.loads(l) for l in open(src, encoding="utf-8")]
@@ -55,47 +118,13 @@ def main():
     # ---------- Talimat sayfası ----------
     ins = wb.active
     ins.title = "Talimatlar"
-    rules = [
-        "ETİKETLEME TALİMATI",
-        "",
-        "Her satırda bir ürün var. Ürünü GÖRMENE gerek yok; sadece 'Sayfada yazan' ve 'Negatif yorumlar' sütunlarını oku.",
-        "Soru: Sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki var mı?",
-        "",
-        "0) veri_uygun: Önce bunu doldur. Aşağıdakilerden biri varsa 'Hayır' yaz, notu yaz ve o satırın geri kalanını BOŞ bırak:",
-        "   - Yorumlar sayfadaki ürünle ilgili değil (başka ürünler anlatılıyor; Amazon farklı ürünleri birleştirmiş)",
-        "   - Ürün giyim/ayakkabı değil (filtreye rağmen kaçan)",
-        "   - Geriye değerlendirilebilecek 2'den az yorum kalıyor",
-        "   'Hayır' çıkan her gold ürün için 'Yedekler' sayfasındaki SIRADAKİ ürünü etiketle (atlama yapma, sırayla git).",
-        "   Toplamda veri_uygun = Evet olan 40 ürün olmalı.",
-        "",
-        "1) gap_var: Evet / Hayır",
-        "2) Konu sütunları: çelişki hangi konudaysa o sütuna X koy (birden fazla olabilir).",
-        "   Kural: Bir konu ancak EN AZ 2 yorum o sorundan bahsediyorsa işaretlenir.",
-        "3) seviye:",
-        "   Yüksek = Sayfa açıkça bir şey iddia etmiş, yorumlar tersini söylüyor (ör. 'su geçirmez' yazıyor, 'su aldı' diyorlar)",
-        "   Orta   = Sayfa o konuda bilgi vermemiş, yorumlar şikayet ediyor (ör. beden bilgisi yok, 'küçük geldi' diyorlar)",
-        "   Yok    = Çelişki yok (gap_var = Hayır ise seviye de Yok)",
-        "4) not: Neden bu kararı verdin, 1 cümle.",
-        "",
-        "SAYILMAYANLAR: kargo/paketleme, satıcı/iade süreci, 'beğenmedim' gibi kişisel zevk, tek seferlik arıza (1 yorum).",
-        "TEKRARLAR: Birebir aynı yorumlar script tarafından zaten ayıklandı. Yine de aynı kişinin neredeyse aynı yorumunu görürsen tek say.",
-        "",
-        "ÖRNEK: Sayfa 'Waterproof leather boot' diyor; 2 yorum 'su aldı', 1 yorum 'kargo geç'.",
-        "        -> gap_var = Evet | Malzeme = X (su geçirmezlik malzeme iddiası) | seviye = Yüksek | not: 'Su geçirmez diyor, 2/2 ilgili yorum su aldı diyor'",
-        "",
-        "ÖNEMLİ: Bu dosyayı bitirip GitHub'a commit etmeden yapay zeka sistemini ÇALIŞTIRMA.",
-    ]
-    for i, r in enumerate(rules, 1):
-        ins.cell(row=i, column=1, value=r)
-    ins["A1"].font = Font(bold=True, size=14)
-    ins.column_dimensions["A"].width = 130
+    write_instructions(ins)
 
     reserve = [p for p in products if p["split"] == "reserve"]
     build_sheet(wb, "Etiketler", gold)
     if reserve:
         build_sheet(wb, "Yedekler", reserve)
 
-    out = ROOT / "data" / "gold" / "etiketleme.xlsx"
     wb.save(out)
     print(f"Yazıldı: {out}  ({len(gold)} gold + {len(reserve)} yedek)")
 

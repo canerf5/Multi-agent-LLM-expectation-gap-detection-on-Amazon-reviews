@@ -1,7 +1,7 @@
 # Tez Kapsamı ve Önerisi
 
 **Öğrenci:** Caner Erenler (21058025) · Yıldız Teknik Üniversitesi, Matematik Mühendisliği
-**Sürüm:** 2.0 · 16 Ekim 2026
+**Sürüm:** 2.1 · 29 Ekim 2026
 
 **Tez Başlığı (Öneri):**
 E-Ticaret Ürün Sayfalarında Çok Ajanlı LLM Tabanlı Beklenti Uyumsuzluğu Tespiti: Amazon Ürün Yorumları Üzerine Bir Uygulama
@@ -78,10 +78,13 @@ Sistem, sıralı çalışan üç LLM ajanından oluşmaktadır.
 
 **Veri filtreleme:** Beklenti uyumsuzluğu ile ilgisi olmayan yorumlar ayıklanır:
 
-- HTML etiketleri ve kodlanmış karakterler: ön işleme aşamasında temizlenir
+- HTML etiketleri, kodlanmış karakterler ve `[[VIDEOID:...]]` gibi Amazon yer tutucuları: ön işleme aşamasında temizlenir
 - Çok kısa ve içeriksiz yorumlar (5 kelimeden kısa): ön işleme aşamasında kodla
 - Kargo ve paketleme kaynaklı şikayetler: Review Mining Agent tarafından
+- Satıcı ve iade süreci şikayetleri ile kullanılmış/iade edilmiş ürün gönderimi: Review Mining Agent tarafından
 - Kişisel zevk beyanları ("beğenmedim", "bana uymadı"): Review Mining Agent tarafından
+
+Bu ayıklama kuralları, altın standart etiketlemesinde uygulanan kurallarla (`docs/etiketleme_kurallari.md`, "Sayılmayanlar") aynıdır.
 
 **Zaman tutarlılığı:** Amazon veri setinde ürün sayfası içeriği zaman içinde değişebilmektedir. Kullanıcının yorum yaptığı tarihteki sayfa içeriği ile sistemin kullandığı içerik arasında fark olabilir. Örneklemdeki yorumların tarih aralığı raporlanacak ve bu durum sınırlılıklar arasında belirtilecektir.
 
@@ -103,9 +106,11 @@ Bir ürün birden fazla gap tipine sahip olabilir (çoklu etiket).
 
 | Seviye | Tanım |
 |---|---|
-| Yüksek | Sayfa açıkça bir iddiada bulunmuş, yorumlar bunun tersini söylüyor |
-| Orta | Sayfa ilgili konuda bilgi vermemiş, yorumlar bu konuda şikayet ediyor |
+| Yüksek | Sayfada ürüne özgü somut bir iddia (ölçü aralığı, kalıp uyarısı, materyal, "waterproof", "memory foam", renk adı vb.) var ve yorumlar bu iddiayla doğrudan çelişiyor |
+| Orta | Sayfa ilgili konuda bilgi vermemiş veya yalnızca genel pazarlama dili ("high quality", "premium", "perfect fit") kullanmış; yorumlar bu konuda şikayet ediyor |
 | Yok | Sayfa ile yorumlar arasında çelişki yok |
+
+Tip tanımları, tek konu kuralı (bir şikayet yalnızca tek tipe sayılır) ve öncelik sırası etiketleme kurallarında (`docs/etiketleme_kurallari.md`, sürüm 2) ayrıntılı olarak verilmiştir.
 
 Seviye, tek etiketleyicili değerlendirmede tutarlılığı artırmak amacıyla 0–10 sayısal skor yerine kurala dayalı üç kademeli bir ölçekle tanımlanmıştır.
 
@@ -124,11 +129,11 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 - Çok ajanlı sistem: 3 ajanlı sıralı mimari
 - Tek LLM baseline: Tüm analizi tek prompt ile yapan model
 
-İki sistem aynı modeli, aynı girdiyi ve aynı çıktı şemasını kullanır; tek fark mimaridir.
+İki sistem aynı modeli, aynı girdiyi ve aynı çıktı şemasını kullanır; tek fark mimaridir. Her iki sistem de aynı 40 test ürünü üzerinde değerlendirilir.
 
 **Metrikler:**
 
-*Ana metrik:* **Gap tipi micro-F1** (çoklu etiket; 40 ürün × 6 tip). Yanında **6 tip üzerinden macro-F1** verilir. Test setinde 37 üründe toplam 88 tip etiketi bulunduğundan iki sistem asıl olarak bu düzeyde ayrışır.
+*Ana metrik:* **Gap tipi micro-F1** (çoklu etiket; 40 ürün × 6 tip). Yanında **6 tip üzerinden macro-F1** verilir. Test setinde 36 üründe toplam 62 tip etiketi bulunduğundan iki sistem asıl olarak bu düzeyde ayrışır.
 
 - Gap tipi sınıflandırma: Precision (kesinlik), Recall (duyarlılık) ve F1; micro ve macro ortalama
 - Tip bazında F1: Hangi gap tiplerinde başarılı/başarısız olunduğu
@@ -137,14 +142,12 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 *İkincil metrikler:*
 
 - Seviye isabeti: Gap seviyesinin doğru tahmin oranı
-- Gap var/yok tespiti: Her iki sınıf (Evet/Hayır) için Precision, Recall, F1 ve Macro F1. "Hayır" sınıfı yalnızca 3 ürüne dayanır; bu sınıftaki tek bir hata sınıfın recall değerini 1/3 oranında değiştirir. Bu yüzden gap var/yok sonucu ana metrik olarak kullanılmaz ve bu notla birlikte raporlanır. Her ürüne "Evet" diyen bir model %92,5 accuracy elde eder (Macro F1 = 0,48); accuracy yanıltıcı olduğundan yalnızca bu çoğunluk sınıfı referansıyla (majority baseline) birlikte verilir.
+- Gap var/yok tespiti: Her iki sınıf (Evet/Hayır) için Precision, Recall, F1 ve Macro F1. "Hayır" sınıfı yalnızca 4 ürüne dayanır; bu sınıftaki tek bir hata sınıfın recall değerini 1/4 oranında değiştirir. Bu yüzden gap var/yok sonucu ana metrik olarak kullanılmaz ve bu notla birlikte raporlanır. Her ürüne "Evet" diyen bir model %90 accuracy elde eder (Macro F1 = 0,47); accuracy yanıltıcı olduğundan yalnızca bu çoğunluk sınıfı referansıyla (majority baseline) birlikte verilir.
 
 *İstatistiksel karşılaştırma:* 40 ürünlük test seti küçük olduğundan iki sistem arasındaki farkın tesadüf olup olmadığı ayrıca sınanır:
 
 - Her metrik için 1000 tekrarlı bootstrap (ürünler yerine koyarak yeniden örneklenir) ile %95 güven aralığı
 - Eşleştirilmiş bootstrap karşılaştırması: Her tekrarda aynı ürün örneklemi iki sisteme birlikte uygulanır ve fark (çok ajanlı − tek LLM) hesaplanır. Farkın %95 güven aralığı ve farkın 0'dan küçük ya da 0'a eşit çıktığı tekrarların oranı raporlanır. Güven aralığı 0'ı içeriyorsa fark anlamlı kabul edilmez.
-
-- Karşılaştırma: İki sistemin aynı 40 ürün üzerindeki performansı
 
 **Alt sorular için ek analizler:**
 
@@ -200,8 +203,9 @@ Ana risk:     Beden uyumsuzluğu
 - Gerçek iade verisi bulunmadığı için iade riski dolaylı olarak ölçülmektedir.
 - Tek kategori ile sınırlıdır; genellenebilirlik sınırlıdır.
 - Tek etiketleyici ile değerlendirme yapılacaktır; etiketleyiciler arası uyum hesaplanmayacaktır.
-- Test setinde sınıf dağılımı dengesizdir: 40 ürünün 37'sinde gap vardır, yalnızca 3'ünde yoktur. "Gap yok" sınıfına ilişkin sonuçlar 3 ürüne dayandığı için istatistiksel olarak zayıftır.
+- Test setinde sınıf dağılımı dengesizdir: 40 ürünün 36'sında gap vardır, yalnızca 4'ünde yoktur. "Gap yok" sınıfına ilişkin sonuçlar 4 ürüne dayandığı için istatistiksel olarak zayıftır.
 - Eksik Bilgi tipine test setinde rastlanmamıştır; bu tip değerlendirme metriklerinin kapsamı dışında kalmıştır ve sistemlerin bu tipteki başarısı ölçülememiştir.
+- Bazı gap tipleri test setinde az örneklidir (Görsel 2, Renk 5, Kalite 5 ürün). Bu tiplerin F1 değerleri birkaç tahmine bağlı olarak büyük ölçüde değişebilir ve 6 tip üzerinden hesaplanan macro-F1'i belirgin biçimde etkiler; bu nedenle ana metrik micro-F1 olarak seçilmiş, tip bazında sonuçlar bu uyarıyla birlikte yorumlanmıştır.
 - Amazon veri setinde ürün sayfası içeriği zaman içinde değişmiş olabilir; bu durum veri tutarlılığını etkileyebilir.
 - İngilizce veri ile çalışılmaktadır; dil bağımlılığı vardır.
 - Görsel analiz yapılmamaktadır; görsel kaynaklı beklenti uyumsuzlukları dolaylı olarak ele alınmaktadır.
@@ -229,9 +233,10 @@ Bu çalışma, e-ticaret ürün sayfalarındaki beklenti uyumsuzluğunu çok aja
 | Birleştirme anahtarı | asin | parent_asin | Beden/renk varyantlarının yorumları tek ürün altında toplanıyor |
 | Örneklem kriteri | ≥5 yorum, ≥1 negatif | ≥10 yorum, ≥3 negatif | Tek negatif yorumla şikayet örüntüsü oluşmuyor; Review Mining Agent'ın gruplayacağı veri sağlanıyor |
 | Gap skoru | 0–10 sayısal | Yok / Orta / Yüksek | Tek etiketleyicide 0–10 ölçeği tutarsız; kurala dayalı 3 seviye tekrarlanabilir |
-| Metrikler | Accuracy, P/R/F1 | Ana: gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; tip bazında F1; accuracy yalnızca çoğunluk sınıfı referansıyla; Eksik Bilgi (support = 0) hesaplamadan çıkarıldı; 1000 tekrarlı bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma | Test setinde 37 Evet / 3 Hayır: "hep Evet" diyen model %92,5 accuracy alıyor (Macro F1 = 0,48) ve "Hayır" sınıfı 3 ürüne dayandığı için gap var/yok iki sistemi ayırmıyor; asıl ayrışma 88 tip etiketinde. 40 ürün küçük olduğundan farkın anlamlılığı bootstrap ile sınanıyor; Eksik Bilgi test setinde hiç geçmiyor |
+| Metrikler | Accuracy, P/R/F1 | Ana: gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; tip bazında F1; accuracy yalnızca çoğunluk sınıfı referansıyla; Eksik Bilgi (support = 0) hesaplamadan çıkarıldı; 1000 tekrarlı bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma | Test setinde 36 Evet / 4 Hayır: "hep Evet" diyen model %90 accuracy alıyor (Macro F1 = 0,47) ve "Hayır" sınıfı 4 ürüne dayandığı için gap var/yok iki sistemi ayırmıyor; asıl ayrışma 62 tip etiketinde. 40 ürün küçük olduğundan farkın anlamlılığı bootstrap ile sınanıyor; Eksik Bilgi test setinde hiç geçmiyor |
 | Filtreleme | Yöntem belirtilmemiş | Kısa yorum: kod; kargo/zevk: Ajan 2 | Kural tabanlı ayıklama bu şikayetleri güvenilir yakalayamıyor |
 | Veri bölme | — | 40 test / 5 geliştirme / 155 kalan + 10 yedek | Prompt ayarının test setini etkilememesi; veri sorunu olan gold ürünlerin yerine yedek |
 | Kapsam filtresi | — | Giyim ve ayakkabı: kategori yolunda Clothing / Shoes / Boot Shop / Sport Specific Clothing geçen, Jewelry / Watches / Accessories / Handbags & Wallets / Luggage & Travel Gear / Shoe, Jewelry & Watch Accessories / Costumes & Accessories geçmeyen ürünler | Kategoride giyim dışı ürünler (bavul, saat, şemsiye) var; taksonomi bu ürünlere uymuyor. Yalnızca "Clothing/Shoes" araması botları (Boot Shop) ve spor giyimi (Sport Specific Clothing) dışarıda bırakıyordu |
 | Tekrarlı yorumlar | — | Birebir aynı negatif yorumlar tek sayılır | Kopyalar "en az 2 yorum" kuralını yanıltıyor |
+| Etiketleme kuralları (sürüm 2) | Tip tanımları yalnızca örnekle; seviye "Yüksek" için "sayfa açıkça iddiada bulunmuş" | Tek konu kuralı (bir şikayet yalnızca tek tipe sayılır, her tipin kendi en az 2 yorumu olmalı); tip tanımları ve öncelik (Malzeme ve Dayanıklılık, Kalite'den önce; Kalite yalnızca ilk günden işçilik/üretim hatası ve genel "cheap/poor quality"); "Yüksek" için ürüne özgü somut iddia şartı (genel pazarlama dili en fazla Orta; renk adı + soluk/donuk = Orta, başka renk = Yüksek); kullanılmış/iade edilmiş ürün gönderimi satıcı hatası (sayılmaz), hasarlı/defolu yeni ürün Kalite | Etiketleme sonrası tutarlılık kontrolünde tip sınırları ve "açık iddia" tanımı netleştirildi; sistem çalıştırılmadan önce 40 ürünün tamamı yeni kurallarla yeniden gözden geçirildi |
 | Bölüm numaraları | 8, 11, 13 eksik | Sıralı (1–13) | Biçim |

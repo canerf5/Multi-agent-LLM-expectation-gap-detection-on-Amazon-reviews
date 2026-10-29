@@ -41,6 +41,14 @@ n_dev: 5       # prompt denemesi için (gold'dan AYRI)
 
 seed: 42
 
-# LLM (Faz 5'te kullanılacak)
+# LLM (Faz 5)
+# model: tarihli tam sürüm yazılmalı (ör. gpt-4o-mini-2024-07-18). API erişimi
+# doğrulanınca güncellenecek; o zamana kadar gerçek çağrı yapılmaz.
 model: gpt-4o-mini
+model_verified: false
 temperature: 0
+# Fiyat (USD / 1 milyon token). Doğrulanmadı: OpenAI fiyat sayfasından teyit edilecek.
+price_input_per_1m: 0.15
+price_output_per_1m: 0.60
+llm_timeout: 120      # saniye, tek çağrı
+llm_retries: 3        # hata/zaman aşımında tekrar sayısı (2, 4, 8 sn bekleme)

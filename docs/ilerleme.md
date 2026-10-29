@@ -8,7 +8,7 @@ Son güncelleme: 29 Ekim 2026
 | 2. Veri toplama | ✅ Bitti | 24 Ekim 2026 | `e5a9619`, tag `v0.1-sample` |
 | 3. Etiketleme kuralları | ✅ Bitti (sürüm 2) | 29 Ekim 2026 | `docs/etiketleme_kurallari.md` |
 | 4. 40 ürün gold etiketleme | ✅ Bitti | 29 Ekim 2026 | `726c41d`, tag `v0.1-data` |
-| **5. 3 ajan** | ⏭ **Sıradaki** | — | — |
+| **5. 3 ajan** | 🔧 **Devam ediyor** | — | kod + API'siz testler hazır; gerçek deneme bekliyor |
 | 6. Baseline + 5 dev ürünle deneme | Bekliyor | — | tag `v0.2-agents` |
 | 7. 200 ürün tam koşu | Bekliyor | — | — |
 | 8. Değerlendirme | Bekliyor | — | tag `v0.3-results` |
@@ -29,12 +29,32 @@ Son güncelleme: 29 Ekim 2026
 - Altın standart (`data/gold/gold_40.csv`): 36 gap var / 4 yok; 62 tip etiketi (Beden/Kalıp 24, Malzeme 13, Dayanıklılık 13, Renk 5, Kalite 5, Görsel 2, Eksik Bilgi 0); seviye 8 Yüksek / 28 Orta / 4 Yok. Hiçbir gold ürün "veri uygun değil" çıkmadı, yedek kullanılmadı.
 - Metrik kararları `docs/kapsam.md` §6'ya işlendi (ana metrik gap tipi micro-F1, bootstrap güven aralığı).
 
-## Sıradaki: Faz 5 — 3 ajan
+## Devam eden: Faz 5 — 3 ajan
+
+**Hazır (29 Ekim 2026):** `src/schemas.py`, `src/llm.py`, `src/agents.py`, `src/pipeline.py`, `prompts/*.md`; önbellek, maliyet logu, tutarlılık kontrolü (1 tekrar, sonra "tutarsız" işareti), girdi bütünlüğü kontrolü ve gold kilidi (kullanıcı kilidi + git kontrolleri) çalışıyor.
+
+**Gold bariyeri (29 Ekim 2026):** izin kuralları + tüm araçlar için PreToolUse hook'u; ayrıntı CLAUDE.md "Gold bariyeri" bölümünde. Gerçek oturumda denendi: yasak kalıp içeren zararsız komut engellendi, dev işleri geçti. Gold sızıntı denetimi için `src/audit_gold.py` (kullanıcı çalıştırır).
+
+**Testler:** `tests/test_faz5.py` (21) + `tests/test_bariyer.py` (9) = 30 API'siz test geçti. Testler gold içeriğini okumaz.
+
+**Bekleyen:**
+1. Kullanıcı: denetim script'ini kendi terminalinde çalıştır (beklenen: hiç iz yok).
+2. Kullanıcı: `.env` içine `OPENAI_API_KEY` (yok).
+3. Model erişimini listele → tarihli sürümü ve fiyatı `config.yaml`'a yaz, `model_verified: true`.
+4. 1 dev üründe gerçek deneme (tahmin ~$0,002; 3–4 çağrı), çıktıların incelenmesi, ikinci koşuda önbellek kontrolü.
+
+### Faz 5 planı (ilk hali)
 - Ajan 1 (Expectation), Ajan 2 (Review Mining), Ajan 3 (Gap + Fix); JSON şemaları; OpenAI SDK, `temperature = 0`, önbellek, ara çıktıların `outputs/` altına kaydı.
 - Ajan 2'nin ilgisiz saydığı şikayetler etiketleme kurallarındaki "Sayılmayanlar" ile aynı olmalı.
 - Sistemlere yorumların tam metni verilir.
 - Deneme SADECE 5 dev ürünle (gold'a dokunulmaz).
 - Gerekli: `.env` içinde `OPENAI_API_KEY`.
+
+## Karar kaydı
+
+| Tarih | Olay | Etki | Alınan önlem |
+|---|---|---|---|
+| 29 Ekim 2026 | Faz 5 geliştirmesi sırasında asistan, gold kilidinin çalıştığını görmek için `pipeline.py --split gold --estimate` komutunu çalıştırdı. Komut maliyet tahmini için 40 gold ürünün sayfa ve yorum METNİNİ okudu (`products_200.jsonl` üzerinden, uzunluk hesabı için). | LLM çağrısı yapılmadı, hiçbir çıktı/dosya yazılmadı, gold etiketlerine (`data/gold/`) erişilmedi. Prompt'lar bu olaydan sonra gold içeriğine göre değiştirilmedi. | Gold bariyeri kuruldu: `.claude/settings.json` (Read/Edit deny) + PreToolUse hook `.claude/hooks/gold_guard.py`; `--split gold` için kullanıcı kilidi (`.gold_unlock`); test script'leri gold içeriği okumayacak şekilde değiştirildi; Faz 7 öncesi `src/audit_gold.py` denetimi kullanıcı tarafından çalıştırılacak. |
 
 ## Açık notlar
 - Az örnekli tipler (Görsel 2, Renk 5, Kalite 5) ve "gap yok" sınıfının 4 ürüne dayanması sınırlılıklarda belirtildi.

@@ -1,6 +1,9 @@
 # Gizli bilgiler — ASLA push etme
 .env
 
+# Gold kilidi — yalnızca kullanıcı oluşturur, commit'lenmez
+.gold_unlock
+
 # Büyük ham veri
 data/raw/*
 !data/raw/.gitkeep

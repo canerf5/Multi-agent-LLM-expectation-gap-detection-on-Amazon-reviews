@@ -122,7 +122,7 @@ Seviye, tek etiketleyicili değerlendirmede tutarlılığı artırmak amacıyla 
 - Gap tipi/tipleri
 - Gap seviyesi (Yok / Orta / Yüksek)
 
-Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrolüne (git) işlenir. Etiketleme kuralları tezin ekinde yer alır.
+Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrolüne (git) işlenir. Etiketleme kuralları tezin ekinde yer alır. Altın standart etiketlere erişim, sistem geliştirme sürecinde teknik olarak engellenmiş; prompt geliştirme yalnızca geliştirme kümesiyle yapılmıştır.
 
 **Karşılaştırma:**
 
@@ -166,7 +166,7 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 | Veri | Amazon Reviews 2023 |
 | Ürün sayısı | 200 |
 | Ajan sayısı | 3 |
-| Model | GPT-4o-mini veya benzeri API tabanlı LLM |
+| Model | OpenAI GPT-4o-mini; tarihli tam sürüm API erişimi doğrulandığında `config.yaml`'a ve buraya yazılacak (doğrulama bekliyor) |
 | Değerlendirme | 40 ürün manuel etiket; ana metrik gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma |
 | Karşılaştırma | Çok ajanlı sistem vs tek LLM |
 | Çıktı formatı | JSON (yapılandırılmış) |

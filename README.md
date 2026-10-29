@@ -32,7 +32,10 @@ pip install -r requirements.txt
 | 4. Etiketleme dosyası | `python src/02_make_labeling_sheet.py` | `data/gold/etiketleme.xlsx` |
 | 4. Etiketleme | Excel'de sarı sütunları doldur → commit | — |
 | 4. Gold dışa aktarma | `python src/03_export_gold.py` | `data/gold/gold_40.csv` |
-| 5–6. Ajanlar + baseline | *(eklenecek)* | — |
+| 5. Testler (API'siz) | `python -m unittest tests.test_faz5 tests.test_bariyer -v` | — |
+| 5. Maliyet tahmini | `python src/pipeline.py --estimate [--asin ASIN]` | — (API çağrısı yok) |
+| 5. Çok ajanlı sistem (dev) | `python src/pipeline.py [--asin ASIN]` | `outputs/multi_agent/dev/<asin>/` |
+| 6. Baseline | *(eklenecek)* | — |
 | 7. Tam koşu | *(eklenecek)* | `outputs/` |
 | 8. Değerlendirme | *(eklenecek)* | `reports/` |
 

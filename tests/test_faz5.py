@@ -334,21 +334,42 @@ class TestEndToEnd(TempOutputs):
         self.assertEqual([r["run_id"] for r in index], [first.name, second.name])
         self.assertEqual(index[0]["prompt_hash"], index[1]["prompt_hash"])
 
-    def test_partial_run_still_recorded(self):
+    def test_product_errors_skipped_and_resume(self):
+        """Hatalı ürün atlanır, diğerleri devam eder; aynı komut yeniden çalışınca biten ürünler önbellekten gelir."""
         class Boom(FakeLLM):
             def __call__(self, *a, **k):
-                if len(self.calls) == 3:                                        # 2. ürünün ilk çağrısı
+                if "review_mining" == a[3]["name"] and len(self.calls) == 4:   # 2. ürünün Ajan 2 çağrısı
+                    self.calls.append({"schema": "HATA"})
                     raise ValueError("kalıcı hata")
                 return super().__call__(*a, **k)
         with mock.patch.object(llm, "_request", Boom()):
-            with self.assertRaises(ValueError):
-                pipeline.main([])
+            self.assertEqual(pipeline.main([]), 1)                              # hata var -> çıkış kodu 1
         (run,) = (self.tmp / "runs" / "dev").iterdir()
         man = json.loads((run / "manifest.json").read_text(encoding="utf-8"))
         self.assertFalse(man["tamamlandi"])
-        self.assertIn("kalıcı hata", man["hata"])
-        self.assertEqual(len(man["urunler_tamamlanan"]), 1)
-        self.assertEqual(len((run / "sonuclar.csv").read_text(encoding="utf-8").splitlines()), 2)
+        self.assertEqual(len(man["hatali_urunler"]), 1)
+        self.assertIn("kalıcı hata", man["hatali_urunler"][0]["hata"])
+        self.assertEqual(len(man["urunler_tamamlanan"]), 4)
+        self.assertEqual(len((run / "sonuclar.csv").read_text(encoding="utf-8").splitlines()), 5)
+
+        fake = FakeLLM()                                                         # kaldığı yerden devam
+        with mock.patch.object(llm, "_request", fake):
+            self.assertIsNone(pipeline.main([]))
+        self.assertEqual({c["schema"] for c in fake.calls}, {"review_mining", "gap_result"})   # yalnızca eksikler
+        self.assertEqual(len(fake.calls), 2)
+        run2 = next(d for d in (self.tmp / "runs" / "dev").iterdir() if d != run)
+        man2 = json.loads((run2 / "manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(man2["tamamlandi"])
+        self.assertEqual(len(man2["urunler_tamamlanan"]), 5)
+
+    def test_split_all_requires_gold_lock(self):
+        self.assertEqual(pipeline.SPLITS["all"], ("gold", "dev", "rest"))
+        fake = FakeLLM()
+        with mock.patch.object(llm, "_request", fake), \
+                mock.patch.object(pipeline, "gold_lock", side_effect=pipeline.GoldLockError("kilit")):
+            with self.assertRaises(pipeline.GoldLockError):
+                pipeline.main(["--split", "all", "--estimate"])                 # tahmin bile kilit ister
+        self.assertEqual(fake.calls, [])
 
     def test_slug_and_violation_kind(self):
         self.assertEqual(runs.slug("Öneri formatı v2!"), "oneri-formati-v2")

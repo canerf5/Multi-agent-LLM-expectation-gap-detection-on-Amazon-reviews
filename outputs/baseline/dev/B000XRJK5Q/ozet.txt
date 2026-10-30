@@ -1,0 +1,13 @@
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Syntheitc'
+ana_risk:     Sayfa, ürünün kalıbı ve oturuşu hakkında bilgi vermiyor; müşteriler ise ayakkabıların dar ve rahatsız olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar; kalıp küçük geliyor.
+  - [Malzeme | değiştir] Ürün açıklamasında '100% sentetik' ifadesinin yanına 'deri değil' uyarısı ekleyin.
+      sayfa: '100% Syntheitc' | müşteri: Yorum 3: Ürün, sayfada belirtilen deri değil, sentetik malzeme içeriyor.

@@ -51,10 +51,13 @@ def load_cfg():
         return yaml.safe_load(f)
 
 
+SPLITS = {"dev": ("dev",), "gold": ("gold",), "rest": ("rest",), "all": ("gold", "dev", "rest")}   # all = 200 ürün
+
+
 def load_products(split):
     cfg = load_cfg()
     with open(ROOT / "data" / "processed" / f"products_{cfg['n_products']}.jsonl", encoding="utf-8") as f:
-        return [p for p in map(json.loads, f) if p["split"] == split]
+        return [p for p in map(json.loads, f) if p["split"] in SPLITS[split]]
 
 
 def gold_lock(run=subprocess.run, unlock_file=None):
@@ -124,9 +127,9 @@ def run_product(p, run_dir):
     return a3, meta
 
 
-def update_latest(run_dir, split, metas):
-    """Son koşunun ürün klasörlerini outputs/multi_agent/<split>/ altına kopyalar."""
-    latest = llm.OUT_DIR / "multi_agent" / split
+def update_latest(run_dir, split, metas, system="multi_agent"):
+    """Son koşunun ürün klasörlerini outputs/<sistem>/<split>/ altına kopyalar."""
+    latest = llm.OUT_DIR / system / split
     for m in metas:
         shutil.copytree(run_dir / m["parent_asin"], latest / m["parent_asin"], dirs_exist_ok=True)
         if m["tutarsiz"]:
@@ -143,15 +146,19 @@ def read_log_from(n):
         return [json.loads(l) for l in list(f)[n:]]
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--split", choices=["dev", "gold", "rest"], default="dev")
+def parse_args(argv, doc):
+    ap = argparse.ArgumentParser(description=doc, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--split", choices=list(SPLITS), default="dev",
+                    help="dev (varsayılan) | rest | gold | all (= gold + dev + rest, 200 ürün; gold kilidi gerekir)")
     ap.add_argument("--asin", action="append", help="yalnızca bu ürün(ler); seçili split içinde olmalı")
     ap.add_argument("--estimate", action="store_true", help="API çağırmadan çağrı sayısı ve maliyet tahmini")
     ap.add_argument("--not", dest="note", help="koşu kaydına kısa not (ör. 'oneri formati'); klasör adına da girer")
-    args = ap.parse_args(argv)
+    return ap.parse_args(argv)
 
-    if args.split == "gold":
+
+def select_products(args):
+    """Kilit denetimi (gold içeren kümelerde) + ürün seçimi. 3 ajanlı sistem ve baseline için ortak."""
+    if "gold" in SPLITS[args.split]:
         gold_lock()
     products = load_products(args.split)
     if args.asin:
@@ -160,43 +167,68 @@ def main(argv=None):
         if unknown:
             raise SystemExit(f"{sorted(unknown)} '{args.split}' kümesinde değil")
         products = [p for p in products if p["parent_asin"] in wanted]
+    return products
 
-    if args.estimate:
-        e = estimate(products)
-        print(f"Küme: {args.split} | ürün: {e['urun']} | çağrı: {e['cagri']} "
-              f"(tutarlılık tekrarıyla en fazla {e['cagri_tekrar_dahil_en_fazla']})")
-        print(f"Tahmini token: girdi ~{e['girdi_token']:,}, çıktı ~{e['cikti_token']:,}")
-        print(f"Tahmini maliyet: ~${e['maliyet_usd']:.4f} (tekrarlarla en fazla ~${e['maliyet_usd_tekrar_dahil_en_fazla']:.4f}) "
-              f"| fiyat: ${load_cfg()['price_input_per_1m']}/{load_cfg()['price_output_per_1m']} per 1M "
-              f"(doğrulandı: {load_cfg().get('model_verified')})")
-        return
 
-    prompts = {n: agents.load_prompt(n) for n in ("expectation", "review_mining", "gap_fix")}
-    run_dir = runs.new_run_dir(llm.OUT_DIR, "multi_agent", args.split, args.note)
+def print_estimate(args, e):
+    cfg = load_cfg()
+    print(f"Küme: {args.split} | ürün: {e['urun']} | çağrı: {e['cagri']} "
+          f"(tutarlılık tekrarıyla en fazla {e['cagri_tekrar_dahil_en_fazla']})")
+    print(f"Tahmini token: girdi ~{e['girdi_token']:,}, çıktı ~{e['cikti_token']:,}")
+    print(f"Tahmini maliyet: ~${e['maliyet_usd']:.4f} (tekrarlarla en fazla ~${e['maliyet_usd_tekrar_dahil_en_fazla']:.4f}) "
+          f"| fiyat: ${cfg['price_input_per_1m']}/{cfg['price_output_per_1m']} per 1M "
+          f"(doğrulandı: {cfg.get('model_verified')})")
+
+
+def execute(args, products, system, prompts, run_one):
+    """Koşuyu yürütür ve kaydeder (3 ajanlı sistem ve baseline için ortak).
+    Ürün bazında hata yakalanır: hatalı ürün atlanır, diğerleri devam eder, hatalar manifest'e yazılır.
+    Kaldığı yerden devam: aynı komut yeniden çalıştırılınca tamamlanan ürünler önbellekten (ücretsiz) gelir.
+    Döndürür: hatalı ürün sayısı."""
+    run_dir = runs.new_run_dir(llm.OUT_DIR, system, args.split, args.note)
     started = datetime.now(timezone.utc).isoformat(timespec="seconds")
     n_log_before = len(read_log_from(0))
     t0 = time.perf_counter()
-    results, metas, error = [], [], None
+    results, metas, failed, error = [], [], [], None
     try:
         for p in products:
-            a3, meta = run_product(p, run_dir)
-            results.append(a3)
+            try:
+                res, meta = run_one(p, run_dir)
+            except Exception as exc:                 # ürün bazında: kaydet ve devam et
+                failed.append({"parent_asin": p["parent_asin"], "hata": f"{type(exc).__name__}: {exc}"})
+                print(f"{p['parent_asin']}: HATA {type(exc).__name__}: {str(exc)[:200]}")
+                continue
+            results.append(res)
             metas.append(meta)
             flag = " TUTARSIZ" if meta["tutarsiz"] else (" (tekrar ile düzeldi)" if meta["deneme"] == 2 else "")
-            print(f"{p['parent_asin']}: gap_var={a3['gap_var']} tipler={a3['gap_tipleri']} seviye={a3['seviye']}{flag}")
-    except BaseException as exc:                     # kayıt yine yazılır, hata yukarı iletilir
+            print(f"{p['parent_asin']}: gap_var={res['gap_var']} tipler={res['gap_tipleri']} seviye={res['seviye']}{flag}")
+    except BaseException as exc:                     # ör. Ctrl+C: kayıt yine yazılır, hata yukarı iletilir
         error = f"{type(exc).__name__}: {exc}"
         raise
     finally:
+        if failed and error is None:
+            error = f"{len(failed)} ürün hatalı (ayrıntı: hatali_urunler); aynı komutla yeniden çalıştırılabilir"
         calls = read_log_from(n_log_before)
-        _, m = runs.write_run(run_dir, system="multi_agent", split=args.split, note=args.note, products=products,
+        _, m = runs.write_run(run_dir, system=system, split=args.split, note=args.note, products=products,
                               results=results, metas=metas, calls=calls, prompts=prompts, started=started,
-                              wall_sn=time.perf_counter() - t0, completed=error is None, error=error)
-        update_latest(run_dir, args.split, metas)
+                              wall_sn=time.perf_counter() - t0, completed=error is None, error=error,
+                              failed=failed)
+        update_latest(run_dir, args.split, metas, system)
         print(f"\nÇağrı: {m['cagri']['toplam']} (önbellekten: {m['cagri']['onbellekten']}) | "
               f"token: girdi {m['token']['girdi_odenen']:,}, çıktı {m['token']['cikti_odenen']:,} | "
               f"maliyet: ${m['maliyet_usd']['odenen']:.6f} (eşdeğer ${m['maliyet_usd']['esdeger']:.6f})")
-        print(f"Koşu kaydı: {run_dir}" + ("" if error is None else "  (YARIM: hata nedeniyle tamamlanmadı)"))
+        print(f"Koşu kaydı: {run_dir}" + ("" if error is None else f"  (TAMAMLANMADI: {error})"))
+    return len(failed)
+
+
+def main(argv=None):
+    args = parse_args(argv, __doc__)
+    products = select_products(args)
+    if args.estimate:
+        print_estimate(args, estimate(products))
+        return
+    prompts = {n: agents.load_prompt(n) for n in ("expectation", "review_mining", "gap_fix")}
+    return 1 if execute(args, products, "multi_agent", prompts, run_product) else None
 
 
 if __name__ == "__main__":

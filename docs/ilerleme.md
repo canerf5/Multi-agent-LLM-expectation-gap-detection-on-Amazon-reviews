@@ -9,8 +9,8 @@ Son güncelleme: 30 Ekim 2026
 | 3. Etiketleme kuralları | ✅ Bitti (sürüm 2) | 29 Ekim 2026 | `docs/etiketleme_kurallari.md` |
 | 4. 40 ürün gold etiketleme | ✅ Bitti | 29 Ekim 2026 | `726c41d`, tag `v0.1-data` |
 | 5. 3 ajan | ✅ Bitti (prompt'lar donduruldu) | 30 Ekim 2026 | `7d5646a` + bu commit; `outputs/runs/index.csv` (dev deneme 1–3) |
-| **6. Baseline + 5 dev ürünle deneme** | 🔧 **Sıradaki** | — | tag `v0.2-agents` |
-| 7. 200 ürün tam koşu | Bekliyor | — | — |
+| 6. Baseline + 5 dev ürünle deneme | ✅ Bitti (baseline donduruldu) | 30 Ekim 2026 | tag `v0.2-agents` |
+| **7. 200 ürün tam koşu** | 🔧 **Sıradaki** | — | — |
 | 8. Değerlendirme | Bekliyor | — | tag `v0.3-results` |
 | 9. Hata analizi + alt sorular | Bekliyor | — | — |
 | 10. Tez yazımı | Bekliyor | — | tag `v1.0-final` |
@@ -54,12 +54,20 @@ Son güncelleme: 30 Ekim 2026
 
 **Gold bariyeri (29 Ekim 2026):** izin kuralları + tüm araçlar için PreToolUse hook'u; ayrıntı CLAUDE.md "Gold bariyeri" bölümünde. Gerçek oturumda denendi: yasak kalıp içeren zararsız komut engellendi, dev işleri geçti. Gold sızıntı denetimi için `src/audit_gold.py` (kullanıcı çalıştırır).
 
-## Sıradaki: Faz 6 — Baseline
+## Faz 6 — Baseline (bitti, 30 Ekim 2026)
 
-1. Tek prompt'luk baseline: aynı girdi (`page_text` + `reviews_text`), aynı kural bölümleri, aynı sonuç şeması, aynı tutarlılık kontrolü ve tek tekrar hakkı (alıntı kaynağı sayfa metni); kayıt `src/runs.py` ile.
-2. Baseline için de en fazla 3 dev koşusu, sonra dondurma → tag `v0.2-agents`.
-3. Değerlendirme + bootstrap script'i (sahte etiketlerle test; gold okunmaz).
-4. Kullanıcı: Faz 7 öncesi denetim script'ini kendi terminalinde çalıştırır (beklenen: hiç iz yok).
+- **Baseline:** `prompts/baseline.md` (üç ajan prompt'unun talimatlarının toplamı; karşılaştırma `docs/yontem.md` Ek B), `src/baseline.py`. Aynı girdi, kural bölümleri, sonuç şeması, tutarlılık kontrolü ve tek tekrar (`agents.checked_call`, iki sisteme ortak; 3 ajanlı sistemin davranışı önbellekten yeniden oynatılarak değişmediği doğrulandı).
+- **Dev koşusu 1 ve dondurma:** tekrar gereken 5/5, tutarsız 4/5, $0,0098 (3 ajan doğrulama koşusu: 1/5, 0/5, $0,0085). Hataların tümü talimat uyumsuzluğu (çoğunlukla tek yoruma dayanan tip); uyarlama hatası yok. Ek koşu ya yeni talimat ya ara adım gerektireceği için yapılmadı; baseline deneme 1 haliyle donduruldu (`docs/yontem.md` §4.5).
+- **Değerlendirme:** `src/evaluate.py` (kapsam §6 metriklerinin hepsi, 1000 tekrarlı eşleştirilmiş bootstrap, tohum 42; yontem §7.3 dosyaları). Sahte altın standart ve elle hesaplanmış iki örnekle test edildi; gerçek altın standardı yalnızca kilit açıkken okur. 40 ürün × 1000 tekrar ≈ 0,3 sn.
+- **Faz 7 hazırlığı:** `--split all` (200 ürün; gold kilidi gerekir), ürün bazında hata yakalama, aynı komutla kaldığı yerden devam (testli). Maliyet tahmini (gold dışı 160 üründen ölçekli): 3 ajan ~$0,50, baseline ~$0,23, toplam ~$0,73 (tekrarlarla en fazla ~$1,12).
+- **Testler:** `tests/test_faz5.py` (28) + `tests/test_faz6.py` (7) + `tests/test_degerlendirme.py` (6) + `tests/test_bariyer.py` (9) = 50 API'siz test.
+
+## Sıradaki: Faz 7 — 200 ürün tam koşu
+
+1. Kullanıcı: denetim script'ini kendi terminalinde çalıştırır (beklenen: hiç iz yok).
+2. Kullanıcı: kilidi açar.
+3. İki sistem `--split all` ile çalışır (önce `--estimate`, onay); hatalı ürün varsa aynı komutla tamamlanır.
+4. Faz 8: `src/evaluate.py` ile test kümesi değerlendirmesi; ardından kullanıcı kilidi kapatır.
 
 **Kapanan kararlar (30 Ekim 2026):** fiyat/detay girdi farkı belgelendi (`docs/yontem.md` §3, kapsam sınırlılıkları); "markası" kapsamdan çıkarıldı; tutarsız kararlar olduğu gibi değerlendirilir, sayısı raporlanır; seviye isabeti çoğunluk referansı (%70) ve 3 seviye macro-F1 ile verilir; "aynı sorun" (yön farkı ayrı sorundur) kurallara eklendi; Alt Soru 2 (Mann-Whitney U) ve Alt Soru 3 (kalan kümeden 20 ürün, kör puanlama, rubrik) tanımlandı. Kapsam teknik ayrıntılardan arındırıldı, ayrıntılar `docs/yontem.md`'ye taşındı.
 

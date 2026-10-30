@@ -1,0 +1,76 @@
+{
+  "run_id": "2026-10-30_201505_baseline_deneme1",
+  "sistem": "baseline",
+  "split": "dev",
+  "not": "deneme1",
+  "tamamlandi": true,
+  "hata": null,
+  "baslangic": "2026-10-30T17:15:05+00:00",
+  "bitis": "2026-10-30T17:15:59+00:00",
+  "urunler_istenen": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "urunler_tamamlanan": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "hatali_urunler": [],
+  "model": "gpt-4o-mini-2024-07-18",
+  "temperature": 0,
+  "model_verified": true,
+  "git_commit": "185b313fe46f94f490c9a9165e8e1b5402cdfb94",
+  "kod_degisikligi_var": true,
+  "hash": {
+    "prompts": {
+      "baseline": "243ff2d54474b48e24d2f65d7879a9e2cd02b1bb2831df6508a404228b97ba46"
+    },
+    "prompt_toplam": "afcd0444d25e31961f2cf9bffad164bd2983b49e01e99a8334c853f01a18e7ff",
+    "kurallar": "071f4f36b3f331ea75c8fc4f341f7ab06eee96d7d15e95b36bf46e31bbd7a131",
+    "semalar": "c802162a81c135ac8d2d7b4bb256dae440d5367199c5f2e54c7d06f63770de3a",
+    "config": "d1c230fad3b7ce31655fde555473fff1198706c168a7c363b322ad04aa8e9110"
+  },
+  "config": {
+    "category": "Clothing_Shoes_and_Jewelry",
+    "max_reviews": null,
+    "min_reviews": 10,
+    "min_negative": 3,
+    "negative_max_rating": 2,
+    "min_words": 5,
+    "max_neg_per_product": 15,
+    "include_categories": [
+      "Clothing",
+      "Shoes",
+      "Boot Shop",
+      "Sport Specific Clothing"
+    ],
+    "exclude_categories": [
+      "Jewelry",
+      "Watches",
+      "Accessories",
+      "Handbags & Wallets",
+      "Luggage & Travel Gear",
+      "Shoe, Jewelry & Watch Accessories",
+      "Costumes & Accessories"
+    ],
+    "dedupe_reviews": true,
+    "n_reserve": 10,
+    "n_products": 200,
+    "n_gold": 40,
+    "n_dev": 5,
+    "seed": 42,
+    "model": "gpt-4o-mini-2024-07-18",
+    "model_verified": true,
+    "temperature": 0,
+    "price_input_per_1m": 0.15,
+    "price_output_per_1m": 0.6,
+    "llm_timeout": 120,
+    "llm_retries": 3
+  }
+}

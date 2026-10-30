@@ -1,0 +1,10 @@
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Beden uyumu ile ilgili iddia var, ancak müşteriler ürünün küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'normal bedene göre küçük' uyarısı ekle.
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2, 4: Ürün kalıbı küçük, doğru bedeni bulmak zor.

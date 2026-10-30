@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "100% Syntheitc"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalıbı ve oturuşu hakkında bilgi vermiyor; müşteriler ise ayakkabıların dar ve rahatsız olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Ayakkabılar dar; kalıp küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Syntheitc",
+      "musteri_deneyimi": "Yorum 3: Ürün, sayfada belirtilen deri değil, sentetik malzeme içeriyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün açıklamasında '100% sentetik' ifadesinin yanına 'deri değil' uyarısı ekleyin."
+    }
+  ]
+}

@@ -252,12 +252,11 @@ def agent3_input(a1, a2):
             + "\n\nŞİKAYET GRUPLARI (Ajan 2):\n" + json.dumps(a2, ensure_ascii=False, indent=2))
 
 
-def agent3(a1, a2, n_reviews, asin):
-    """Karar + öneri. Tutarsızlıkta ihlali açıklayıp 1 kez tekrar sorar.
-    (sonuç, meta) döndürür; ikinci deneme de tutarsızsa sonuç DEĞİŞTİRİLMEDEN meta['tutarsiz'] = True."""
-    system, user = load_prompt("gap_fix"), agent3_input(a1, a2)
-    quotes = [b["iddia"] for b in a1["beklentiler"]]          # Ajan 3'ün görebildiği tek sayfa kaynağı
-    res = llm.call_llm(system, user, RESULT_SCHEMA, tag=f"agent3:{asin}")
+def checked_call(system, user, n_reviews, quotes, name, asin):
+    """ORTAK SONUÇ çağrısı + tutarlılık kontrolü; ihlalde ihlalleri açıklayıp 1 kez tekrar sorar.
+    3 ajanlı sistem (Ajan 3) ve baseline için AYNI mekanizma. (sonuç, meta) döndürür; ikinci deneme de
+    tutarsızsa sonuç DEĞİŞTİRİLMEDEN meta['tutarsiz'] = True."""
+    res = llm.call_llm(system, user, RESULT_SCHEMA, tag=f"{name}:{asin}")
     viol = result_violations(res, n_reviews, quotes)
     meta = {"deneme": 1, "ilk_ihlaller": viol, "tutarsiz": False, "ihlaller": []}
     if not viol:
@@ -266,12 +265,32 @@ def agent3(a1, a2, n_reviews, asin):
                   + "\n".join(f"- {x}" for x in viol)
                   + "\n\nÖnceki cevap:\n" + json.dumps(res, ensure_ascii=False, indent=2)
                   + "\n\nKurallara uyan düzeltilmiş cevabı ver.")
-    res2 = llm.call_llm(system, retry_user, RESULT_SCHEMA, tag=f"agent3_retry:{asin}")
+    res2 = llm.call_llm(system, retry_user, RESULT_SCHEMA, tag=f"{name}_retry:{asin}")
     viol2 = result_violations(res2, n_reviews, quotes)
     meta.update({"deneme": 2, "ihlaller": viol2, "tutarsiz": bool(viol2)})
     return res2, meta
 
 
-__all__ = ["GAP_TYPES", "agent1", "agent2", "agent3", "check_input", "expectation_warnings", "load_prompt",
+def agent3(a1, a2, n_reviews, asin):
+    """Karar + öneri (checked_call ile). Alıntı kaynağı: Ajan 1'in alıntıları (Ajan 3 sayfayı görmez)."""
+    quotes = [b["iddia"] for b in a1["beklentiler"]]
+    return checked_call(load_prompt("gap_fix"), agent3_input(a1, a2), n_reviews, quotes, "agent3", asin)
+
+
+# ---------------------------------------------------------------- tek LLM baseline
+def baseline_input(page, reviews):
+    """Baseline girdisi: Ajan 1 ve Ajan 2'ye giden metinlerin AYNISI, birlikte."""
+    return "ÜRÜN SAYFASI:\n" + page + "\n\nNEGATİF YORUMLAR:\n" + reviews
+
+
+def baseline(p):
+    """Tek prompt'ta karar + öneri (checked_call ile). Alıntı kaynağı: sayfa metni."""
+    page, reviews = page_text(p), reviews_text(p)
+    return checked_call(load_prompt("baseline"), baseline_input(page, reviews), len(p["negative_reviews"]),
+                        [page], "baseline", p["parent_asin"])
+
+
+__all__ = ["GAP_TYPES", "agent1", "agent2", "agent3", "baseline", "baseline_input", "check_input", "checked_call",
+           "expectation_warnings", "load_prompt",
            "page_text", "quote_ok", "render_text", "result_violations", "review_mining_warnings", "reviews_text",
            "rule_sections", "rules_block"]

@@ -32,12 +32,12 @@ pip install -r requirements.txt
 | 4. Etiketleme dosyası | `python src/02_make_labeling_sheet.py` | `data/gold/etiketleme.xlsx` |
 | 4. Etiketleme | Excel'de sarı sütunları doldur → commit | — |
 | 4. Gold dışa aktarma | `python src/03_export_gold.py` | `data/gold/gold_40.csv` |
-| 5. Testler (API'siz) | `python -m unittest tests.test_faz5 tests.test_bariyer -v` | — |
+| 5–8. Testler (API'siz) | `python -m unittest tests.test_faz5 tests.test_faz6 tests.test_degerlendirme tests.test_bariyer -v` | — |
 | 5. Maliyet tahmini | `python src/pipeline.py --estimate [--asin ASIN]` | — (API çağrısı yok) |
 | 5. Çok ajanlı sistem (dev) | `python src/pipeline.py [--asin ASIN] [--not "kısa not"]` | `outputs/runs/dev/<koşu>/` (her koşu ayrı; `outputs/runs/index.csv`) |
-| 6. Baseline | *(eklenecek)* | — |
-| 7. Tam koşu | *(eklenecek)* | `outputs/` |
-| 8. Değerlendirme | *(eklenecek)* | `reports/` |
+| 6. Baseline (dev) | `python src/baseline.py [--asin ASIN] [--not "kısa not"]` | `outputs/runs/dev/<koşu>/` |
+| 7. Tam koşu (gold kilidi gerekir) | `python src/pipeline.py --split all` ve `python src/baseline.py --split all` (önce `--estimate`) | `outputs/runs/all/<koşu>/` |
+| 8. Değerlendirme (gold kilidi gerekir) | `python src/evaluate.py --gold <altın standart CSV> --multi <koşu> --baseline <koşu>` | `reports/degerlendirme/<tarih>/` |
 
 > Ham dosyalar (Hugging Face → McAuley-Lab/Amazon-Reviews-2023, `raw/review_categories/` ve `raw/meta_categories/`) elle indirilip `data/raw/` altına konur (~43 GB, git'e girmez). Dosya verilmezse script Hugging Face'ten stream eder ama meta dosyasının tamamını okuduğu için çok yavaştır.
 
@@ -61,8 +61,8 @@ reports/             # metrikler, grafikler
 - [x] 2. Veri toplama
 - [x] 3. Etiketleme kuralları (`docs/etiketleme_kurallari.md`)
 - [x] 4. 40 ürün etiketleme → `v0.1-data` tag
-- [ ] 5. 3 ajan
-- [ ] 6. Baseline + 5 dev ürünle deneme → `v0.2-agents` tag
+- [x] 5. 3 ajan
+- [x] 6. Baseline + 5 dev ürünle deneme → `v0.2-agents` tag
 - [ ] 7. 200 ürün tam koşu
 - [ ] 8. Değerlendirme → `v0.3-results` tag
 - [ ] 9. Hata analizi + alt sorular

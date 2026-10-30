@@ -172,7 +172,7 @@ def process_metrics(results, metas, calls, wall_sn):
 
 # ---------------------------------------------------------------- yazma
 def write_run(run_dir, *, system, split, note, products, results, metas, calls, prompts, started, wall_sn,
-              completed=True, error=None, git=None):
+              completed=True, error=None, git=None, failed=()):
     """Koşu kayıtlarını yazar ve index.csv'ye ekler. results/metas: tamamlanan ürünler (sıra korunur).
     prompts: {ad: modele giden tam metin}. Ürün klasörlerini (<asin>/) sistem kendisi yazar."""
     run_dir = Path(run_dir)
@@ -200,6 +200,7 @@ def write_run(run_dir, *, system, split, note, products, results, metas, calls, 
         "tamamlandi": completed, "hata": error,
         "baslangic": started, "bitis": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "urunler_istenen": [p["parent_asin"] for p in products], "urunler_tamamlanan": done,
+        "hatali_urunler": list(failed),
         "model": cfg.get("model"), "temperature": cfg.get("temperature"), "model_verified": cfg.get("model_verified"),
         **(git or git_state()),
         "hash": {"prompts": {k: sha256_text(v) for k, v in sorted(prompts.items())}, "prompt_toplam": prompt_hash,

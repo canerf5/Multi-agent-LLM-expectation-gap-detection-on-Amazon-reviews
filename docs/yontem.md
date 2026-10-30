@@ -125,6 +125,10 @@ Ajan 3'ün (ve baseline'ın) kararı kodla kurallara göre denetlenir:
 
 Baseline, çok ajanlı sistemle aynı girdiyi (aynı sayfa ve yorum metni), aynı kural bölümlerini, aynı ortak sonuç şemasını, aynı tutarlılık kontrolünü ve aynı tek tekrar hakkını kullanır; analizin tamamını tek prompt'ta yapar. Tek fark mimaridir.
 
+- **Girdi:** "ÜRÜN SAYFASI" başlığı altında Ajan 1'e giden sayfa metninin, "NEGATİF YORUMLAR" başlığı altında Ajan 2'ye giden numaralı yorum metninin aynısı.
+- **Prompt:** `prompts/baseline.md`. Üç ajan prompt'undaki görev talimatlarının toplamıdır; ara çıktıya yapılan atıflar ("Ajan 1'in alıntısı", "Ajan 2'nin özeti") sayfaya ve yorumlara yapılan atıflara uyarlanmış, yalnızca ara çıktıya veya görünürlüğe özgü talimatlar çıkarılmıştır. Üç prompt'ta olmayan talimat eklenmemiştir. Talimat karşılaştırması Ek B'dedir; kritik talimatların baseline'da birebir bulunduğu otomatik testle denetlenir.
+- **Kontrol ve tekrar:** Ajan 3 ile aynı fonksiyon (aynı ihlal listesi, aynı tekrar mesajı, en fazla bir tekrar). Alıntı kaynağı sayfa metnidir.
+
 ### 4.5 Prompt geliştirme sınırı
 
 Her sistemin prompt'ları yalnızca geliştirme kümesinde (5 ürün) ve **en fazla 3 koşu** ile geliştirilir; üçüncü koşudan sonra prompt'lar dondurulur. Prompt değişiklikleri yalnızca etiketleme kurallarından türetilen genel düzeltmelerdir; ürüne özgü ayar yapılmaz ve geliştirme ürünlerinden örnek kullanılmaz. Koşuların sayısı ve içeriği koşu kaydında (`outputs/runs/index.csv`) belgelenir. Dondurulan sistemde kalan hatalar (ör. tutarsız kalan kararlar) düzeltilmeye çalışılmaz, bulgu olarak raporlanır.
@@ -141,6 +145,15 @@ Her sistemin prompt'ları yalnızca geliştirme kümesinde (5 ürün) ve **en fa
 Dondurulan sürüm seçilirken önceden belirlenen kural (3. koşudan sonra dondurma) ve süreç ölçüleri esas alınmıştır; geliştirme ürünlerinin etiketi olmadığından ürün bazında "en iyi" koşu seçilmemiştir.
 
 **Nihai prompt doğrulaması:** Dondurmadan sonra etiketleme kurallarına "aynı sorun" tanımı eklenmiştir (kurallar, "Tek konu kuralı" bölümü çalışma anında prompt'lara eklendiği için modele giden prompt metni değişmiş, prompt şablonları değişmemiştir). Bu nedenle prompt şablonları değiştirilmeden 5 geliştirme ürününde bir doğrulama koşusu yapılmıştır (koşu notu: "dogrulama-nihai-prompt"). Bu koşu bir geliştirme denemesi değil, nihai prompt doğrulamasıdır: amacı nihai prompt metninin geliştirme kümesinde bir kez çalıştığını kayda geçirmektir; koşudan sonra hiçbir şey değiştirilmemiştir. Sonucu yukarıdaki tabloya eklenmiştir.
+
+**Baseline:** Baseline prompt'u, 3 ajanlı sistemin 3 koşuda geliştirilmiş ve dondurulmuş talimatlarından birebir türetildi; dolayısıyla iki sistem aynı geliştirme emeğinden yararlanır. Baseline'da 1 dev koşusu yapıldı. Gözlenen hataların tümü talimat uyumsuzluğuydu; uyarlama hatası bulunmadı. Ek koşular, ya üç prompt'ta olmayan talimat eklemeyi ya da baseline'a ara adım yaptırmayı (mimari farkı ortadan kaldırmayı) gerektireceği için yapılmadı. Baseline 30 Ekim 2026'da bu haliyle dondurulmuştur.
+
+| Koşu | Sistem | Tekrar gereken | Tutarsız | Eşdeğer maliyet |
+|---|---|---|---|---|
+| Doğrulama (nihai prompt) | 3 ajan | 1/5 | 0/5 | $0,0085 (16 çağrı) |
+| 1 | Baseline | 5/5 | 4/5 | $0,0098 (10 çağrı) |
+
+Baseline'ın ilk denemedeki ihlalleri: 2 yorum şartı (7), tek konu kuralı (3), iddia yokken Yüksek (1); tekrardan sonra kalan: 2 yorum şartı (7), tek konu kuralı (1).
 
 ## 5. Tekrarlanabilirlik
 
@@ -164,7 +177,9 @@ Karşılaştırmaların her adımı yeniden üretilebilir ve izlenebilir olacak 
 - `olcumler.json`: altın standart gerektirmeyen süreç ölçümleri: gap var oranı, tip ve seviye dağılımı; tekrar gereken ve tutarsız kalan ürün oranı ile ihlal türleri; ajan uyarı sayıları; öneri sayısı ve işlem dağılımı; çağrı, token, maliyet ve süre
 - `outputs/runs/index.csv`: her koşu için tek satır (prompt geliştirme geçmişi; iki sistemin geliştirme kümesinde kaç kez denendiği)
 
-Maliyet, token ve süre hem "ödenen" (önbellekten gelen çağrı 0) hem "eşdeğer" (önbellekten gelen çağrı için ilk ücretli çağrının değeri) olarak kaydedilir; sistemler arası karşılaştırmada eşdeğer değerler kullanılır. Bir koşu hata nedeniyle yarıda kalırsa o ana kadarki kayıt "tamamlanmadı" işaretiyle yazılır.
+Maliyet, token ve süre hem "ödenen" (önbellekten gelen çağrı 0) hem "eşdeğer" (önbellekten gelen çağrı için ilk ücretli çağrının değeri) olarak kaydedilir; sistemler arası karşılaştırmada eşdeğer değerler kullanılır.
+
+**Hata ve devam:** Bir üründe hata olursa (ör. API hatası, şema ihlali) o ürün atlanır, koşu diğer ürünlerle devam eder; hatalı ürünler ve hata metinleri manifest'e yazılır ve koşu "tamamlanmadı" olarak işaretlenir. Aynı komut yeniden çalıştırıldığında tamamlanmış çağrılar önbellekten (ücretsiz) gelir, yalnızca eksik çağrılar yapılır. Koşu dışarıdan durdurulursa (ör. Ctrl+C) o ana kadarki kayıt yine yazılır. Tam koşu (Faz 7) `--split all` (test + geliştirme + kalan = 200 ürün) ile yapılır; test ürünlerini içerdiği için gold kilidi gerektirir.
 
 ## 7. Değerlendirme
 
@@ -181,6 +196,8 @@ Maliyet, token ve süre hem "ödenen" (önbellekten gelen çağrı 0) hem "eşde
 - Gap var/yok tespiti: her iki sınıf (Evet / Hayır) için precision, recall, F1 ve Macro F1. "Hayır" sınıfı yalnızca 4 ürüne dayanır; bu sınıftaki tek bir hata sınıfın recall değerini 1/4 oranında değiştirir. Bu yüzden gap var/yok sonucu ana metrik olarak kullanılmaz ve bu notla birlikte raporlanır. Her ürüne "Evet" diyen bir model %90 accuracy elde eder (Macro F1 = 0,47); accuracy yanıltıcı olduğundan yalnızca bu çoğunluk sınıfı referansıyla (majority baseline) birlikte verilir.
 - Seviye isabeti: gap seviyesinin doğru tahmin oranı. Test kümesinde seviye dağılımı 8 Yüksek / 28 Orta / 4 Yok olduğundan her ürüne "Orta" diyen bir model %70 isabet alır; isabet bu çoğunluk referansıyla birlikte verilir. Yanında 3 seviye üzerinden macro-F1 raporlanır.
 - Süreç: her sistem için tutarsız karar sayısı, eşdeğer maliyet ve süre.
+
+**Tanımsız sınıflar:** Precision veya recall'un paydası 0 ise o değer 0 sayılır. Bir sınıfta (tip veya seviye) TP + FP + FN = 0 ise, yani o sınıf ne altın standartta ne tahminde geçiyorsa, F1 tanımsızdır ve o örneklemde macro ortalamaya katılmaz. Tam test kümesinde 6 tipin ve 3 seviyenin hepsinin desteği olduğundan bu kural noktasal değerleri etkilemez; desteği az olan sınıfların (ör. Görsel, "gap yok") bazı bootstrap örneklemlerinde hiç geçmediği durumlarda uygulanır.
 
 **Tutarsız kararlar:** Tutarlılık kontrolünden ikinci denemede de geçemeyen kararlar olduğu gibi değerlendirilir (`gap_var`, `gap_tipleri`, `seviye` doğrudan alınır); elle düzeltilmez ve değerlendirmeden çıkarılmaz. Her sistem için tutarsız karar sayısı raporlanır.
 
@@ -203,6 +220,8 @@ Değerlendirme (Faz 8) `reports/degerlendirme/<tarih>/` klasörüne yazılır:
 - `urun_bazinda.csv`: ürün bazında altın standart ve iki sistemin kararları
 - `rapor.md`: teze girecek tablolar
 - `oneri_puanlama.csv` (Alt Soru 3) ve `hata_analizi.csv` (hatanın kaynağı olan ajan)
+
+Değerlendirme `src/evaluate.py` ile yapılır: altın standart dosyası, iki sistemin koşu klasörleri ve çıktı klasörü açıkça verilir. Script altın standartta yalnızca `parent_asin`, gap var, tip ve seviye sütunlarını okur (not sütununu okumaz); iki koşunun sistem adlarını, modelini ve her altın standart ürününün sonucunun bulunduğunu denetler. Altın standart klasöründeki dosya yalnızca gold kilidi açıkken okunur. Bootstrap tekrar sayısı ve tohumu `config.yaml`'dan alınır (`bootstrap_n: 1000`, `bootstrap_seed: 42`); güven aralıkları yüzdelik (2,5 ve 97,5) yöntemiyle hesaplanır. Script, elle hesaplanmış iki örnek ve sahte altın standartla test edilmiştir.
 
 ### 7.4 Alt Soru 2
 
@@ -245,6 +264,33 @@ Test kümesinde yanlış tahmin edilen ürünlerde (yanlış/eksik tip veya sevi
 - Sınırlar: Denetim betiği komut metnine bakar; metinde geçmeyen dolaylı erişimi tam olarak yakalayamaz. Bu nedenle denetim script'i ve "test sonuçlarına bakarak prompt değiştirilmez" kuralı ayrıca geçerlidir.
 
 **Olay kaydı:** 29 Ekim 2026'da (bariyer kurulmadan önce) bir maliyet tahmini komutu test ürünlerinin sayfa ve yorum metnini uzunluk hesabı için okumuştur; LLM çağrısı yapılmamış, etiketlere erişilmemiş ve prompt'lar bu içeriğe göre değiştirilmemiştir. 30 Ekim 2026'da bir arama çıktısında örneklem raporundaki ürün tablosu nedeniyle 2 test ürününün ASIN'i ve başlığı görünmüş; etiket görülmemiş ve bu bilgi kullanılmamıştır. Ardından ürün tablosu rapordan çıkarılmış ve örneklem listesi korunan bir klasöre taşınmıştır. Ayrıntılar `docs/ilerleme.md` > Karar kaydı'ndadır.
+
+## Ek B. Baseline talimat karşılaştırması
+
+Üç ajan prompt'u (A1: `prompts/expectation.md`, A2: `prompts/review_mining.md`, A3: `prompts/gap_fix.md`) ile baseline prompt'unun (`prompts/baseline.md`) talimat karşılaştırması. Kural bölümleri ("Tek konu kuralı", "Seviye kuralı", "Sayılmayanlar", "Konu tanımları") ve kurallardaki örnek her iki sisteme de aynı kurallar dosyasından çalışma anında eklenir.
+
+| Talimat | A1 | A2 | A3 | Baseline | Not |
+|---|---|---|---|---|---|
+| Sayfanın tüm bölümlerini tara, açıklamadaki iddialar dahil | ✓ | | | ✓ | |
+| Konu: Eksik Bilgi dışındaki 6 konu; "Diğer" yalnızca hiçbiri uymazsa | ✓ | | | ✓ | |
+| İddia = birebir İngilizce alıntı | ✓ | | | ✓ | |
+| Somut / genel ayrımı ("doğrulanabilir" ölçütü) | ✓ | | (eşleme) | ✓ | |
+| Sayfada olmayan vaadi ekleme | ✓ | | | ✓ | |
+| Kayıt bilgileri (paket ölçüsü, tarih, model no) vaat değildir | ✓ | | | ✓ | |
+| Materyal adı içeren ifadenin konularından biri Malzeme | ✓ | | | ✓ | |
+| Sayfanın bilgi vermemesi de önemlidir | ✓ | | | ✓ | A1'deki "onu sen yazma" kısmı ara çıktıya özgü olduğundan çıkarıldı |
+| Yorumları görmüyorsun; yorum tahmini yapma | ✓ | | | — | Görünürlüğe özgü (baseline yorumları görür); "ürünü değerlendirme" korundu |
+| Aynı alıntıyı aynı konu için tekrarlama | ✓ | | | — | Ajan 1'in liste çıktısına özgü |
+| Aynı sorun → tek grup (farklı kelimelerle de olsa); farklı sorun → ayrı grup | | ✓ | | ✓ | |
+| Eksik Bilgi yalnızca yorum sayfada yazmadığını açıkça söylüyorsa | | ✓ | | ✓ | |
+| Tek konu kuralı ve öncelik sırası | | ✓ | ✓ | ✓ | |
+| "Sayılmayanlar" ilgisizdir (4 sebep) | | ✓ | ✓ | ✓ | |
+| Sadece yorumlarda yazanı kullan; geçerli yorum numaraları | | ✓ | | ✓ | |
+| Tek yorumluk sorunu da grup olarak yaz ("sonraki aşama karar verir") | | ✓ | | — | Ara çıktıya özgü |
+| `ozet` / `ilgisiz_sebebi` alanları | | ✓ | | — | Ajan 2 şemasına özgü |
+| Karar adımları 1–9 (2 yorum şartı, tamamen çıkar, gap yok normaldir, gerekçe, seviye, ana risk) | | | ✓ | ✓ | "Ajan 1'in alıntısı" → "sayfadan aynen alıntı" |
+| Öneri alanları ve öneri kuralları | | | ✓ | ✓ | "Ajan 2'nin özetine dayan" → "yorumlara dayan" |
+| SON KONTROL listesi | | | ✓ | ✓ | Aynı uyarlama |
 
 ## Ek A. Revizyon gerekçeleri (ayrıntılı)
 

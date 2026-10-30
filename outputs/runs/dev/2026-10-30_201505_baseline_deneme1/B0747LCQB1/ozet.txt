@@ -1,0 +1,16 @@
+ASIN:         B0747LCQB1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'Slim fit, DCF016-11 colors in 6 (U.S) sizes are available.'
+  - Renk: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2 | sayfa iddiası: 'Lightweight and soft special Faux-fur fabric.'
+ana_risk:     Slim fit iddiası var, ancak müşteriler ürünün çok dar olduğunu belirtiyor; ayrıca renk ve malzeme ile ilgili de şikayetler mevcut.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Slim fit, DCF016-11 colors in 6 (U.S) sizes are available.' | müşteri: Yorum 3: Çok dar, 2 beden büyük alınmalı.
+  - [Renk | ekle] Renklerin gerçek tonları hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Renk, fotoğraftakinden çok daha açık geldi.
+  - [Malzeme | değiştir] Kolların malzemesi hakkında daha net bilgi verin; ince olduğu belirtilmeli.
+      sayfa: 'Lightweight and soft special Faux-fur fabric.' | müşteri: Yorum 2: Kollardaki malzeme ince, tişört kadar ince.

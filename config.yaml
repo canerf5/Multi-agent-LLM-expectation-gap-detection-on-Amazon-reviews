@@ -52,3 +52,7 @@ price_input_per_1m: 0.15
 price_output_per_1m: 0.60
 llm_timeout: 120      # saniye, tek çağrı
 llm_retries: 3        # hata/zaman aşımında tekrar sayısı (2, 4, 8 sn bekleme)
+
+# Değerlendirme (Faz 8; kapsam §6, yontem §7.2)
+bootstrap_n: 1000     # bootstrap tekrar sayısı (ürünler yerine koyarak yeniden örneklenir)
+bootstrap_seed: 42    # bootstrap rastgelelik tohumu (iki sistem aynı örneklemleri kullanır: eşleştirilmiş)

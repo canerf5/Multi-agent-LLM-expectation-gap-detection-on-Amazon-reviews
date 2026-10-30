@@ -1,0 +1,16 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıp ve malzeme kalitesi hakkında bilgi vermiyor; müşteriler kalıbın dar olduğunu ve kalitesiz malzeme kullandığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Kalıp dar; bir beden büyük alın.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Kalite düşük; dikişler kötü.
+  - [Malzeme | ekle] Kullanılan malzeme hakkında bilgi ekleyin; ince ve kalitesiz olduğu belirtiliyor.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4: Malzeme ince ve kalitesiz.

@@ -23,10 +23,13 @@ src/llm.py                     Faz 5: tek ortak call_llm (önbellek, log, maliye
 src/agents.py                  Faz 5: 3 ajan, girdi metni ve kontrolü, tutarlılık kontrolü
 src/pipeline.py                Faz 5: Ajan 1 -> 2 -> 3; varsayılan dev; gold kilidi
 src/runs.py                    Faz 5: koşu kaydı (manifest, sonuclar.csv, olcumler.json, index.csv); iki sisteme ortak
+src/baseline.py                Faz 6: tek LLM baseline (pipeline.py ile aynı seçenekler, kilit, kayıt)
+src/evaluate.py                Faz 8: metrikler + eşleştirilmiş bootstrap; gerçek altın standardı yalnızca kilit açıkken okur
 src/audit_gold.py              gold sızıntı denetimi (yalnızca kullanıcı çalıştırır)
-prompts/*.md                   ajan prompt'ları; {KURALLAR} çalışma anında kurallar dosyasından doldurulur
+prompts/*.md                   ajan ve baseline prompt'ları (DONDURULDU); {KURALLAR} çalışma anında kurallar dosyasından doldurulur
 tests/test_faz5.py             API'siz testler (sahte LLM)
 tests/test_bariyer.py          gold bariyeri testleri
+tests/test_faz6.py             baseline testleri; tests/test_degerlendirme.py: sahte altın standartla metrik testleri
 data/raw/                      ham Amazon dosyaları (~43 GB), git'e GİRMEZ
 data/processed/products_200.jsonl  örneklem (gold 40 / dev 5 / rest 155 / reserve 10)
 data/gold/gold_40.csv          ALTIN STANDART (değerlendirmede tek kaynak)

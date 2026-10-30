@@ -1,0 +1,10 @@
+ASIN:         B0C4XT56MD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'wide traditional belt with a tightening cord: for optimal support of the shorts around the waist.'
+ana_risk:     Sayfada 'optimal support of the shorts around the waist' iddiası var, ancak müşteriler beden ölçülerinin çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin küçük olduğu bilgisi eklenmeli; 'Beden ölçüleri normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'wide traditional belt with a tightening cord: for optimal support of the shorts around the waist.' | müşteri: Yorum 1, 2, 3: Beden ölçüleri çok küçük geliyor.

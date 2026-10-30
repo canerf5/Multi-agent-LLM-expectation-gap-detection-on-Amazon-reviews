@@ -1,0 +1,65 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Görsel",
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        1,
+        5,
+        9,
+        10
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        4,
+        11
+      ],
+      "sayfa_iddiasi": "100% Polyester"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        3,
+        5,
+        6,
+        11
+      ],
+      "sayfa_iddiasi": "Super Value Sweatshirts"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında belirtilen kalitede ve görselde bir sweatshirt vaat ediliyor, ancak müşteriler aldıkları ürünün kalitesiz ve görselden çok farklı olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 5, 9, 10: Ürün görseldeki gibi değil, çok daha kötü görünüyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün görselinin gerçek ürüne uygun şekilde güncellenmesi gerektiğini belirtin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Polyester",
+      "musteri_deneyimi": "Yorum 2, 4, 11: Malzeme kalitesiz, ince ve rahatsız edici.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme hakkında daha net bilgi ver; 'kalitesiz polyester' ifadesini ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Super Value Sweatshirts",
+      "musteri_deneyimi": "Yorum 2, 3, 5, 6, 11: Ürün kalitesiz, vaat edilenin altında.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha gerçekçi bir açıklama ekle; 'kalite standartları düşük' gibi bir not ekle."
+    }
+  ]
+}

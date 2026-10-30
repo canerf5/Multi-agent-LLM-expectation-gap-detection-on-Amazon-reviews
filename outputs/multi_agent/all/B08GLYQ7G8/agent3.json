@@ -1,0 +1,62 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Görsel"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        5,
+        11,
+        12
+      ],
+      "sayfa_iddiasi": "SIZE: Please refer to the Last Picture -\"Size Chart\" before ordering."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        9,
+        10
+      ],
+      "sayfa_iddiasi": "Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2,
+        6,
+        14
+      ],
+      "sayfa_iddiasi": "solid color: black/ blue/ red"
+    }
+  ],
+  "ana_risk": "Sayfada kumaş kalitesi ile ilgili somut bir iddia var, ancak müşteriler kumaş kalitesinin çok düşük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "SIZE: Please refer to the Last Picture -\"Size Chart\" before ordering.",
+      "musteri_deneyimi": "Yorum 5, 11, 12: Çok küçük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının daha doğru bir şekilde belirtildiği bir ifade ekleyin; 'Beden kalıbı normalden küçük, bir beden büyük almanız önerilir'."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester",
+      "musteri_deneyimi": "Yorum 3, 9, 10: Kumaş kalitesi çok düşük.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, dayanıklı ve uzun ömürlüdür'."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "solid color: black/ blue/ red",
+      "musteri_deneyimi": "Yorum 2, 6, 14: Fotoğraftaki ürünle alakası yok.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün görsellerinin gerçek ürünü yansıttığını belirtin; 'Ürün görselleri gerçek ürünü yansıtmaktadır, renk ve doku farklılıkları olabilir'."
+    }
+  ]
+}

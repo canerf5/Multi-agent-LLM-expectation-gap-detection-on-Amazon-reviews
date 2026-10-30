@@ -1,0 +1,91 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme",
+    "Dayanıklılık",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        10,
+        11,
+        15
+      ],
+      "sayfa_iddiasi": "Lightweight,waterproof material provides water resistance with little weight."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        9
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında 'su geçirmez' iddiası var, ancak birçok müşteri su geçirmediğini ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3: Yanlış beden gönderildi, çok büyük geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasında beden seçimi ile ilgili uyarı ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 13: Kalitesi çok düşük, beklentileri karşılamıyor.",
+      "islem": "kaldır",
+      "duzeltme": "Kalite ile ilgili yanıltıcı ifadeleri kaldırın."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Lightweight,waterproof material provides water resistance with little weight.",
+      "musteri_deneyimi": "Yorum 8, 10, 11, 15: Su geçirmiyor, nefes almıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme ile ilgili daha doğru bilgi verin; 'su geçirmez' ifadesini gözden geçirin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 9: Uzun süreli kullanımda dayanıklı değil.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasında dayanıklılık ile ilgili bilgi ekleyin."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Ürünün ön görünümü ve fermuar konumu hakkında bilgi yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasında ürünün tasarımı ve fermuar konumu hakkında bilgi ekleyin."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B076H9BGDL
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: 'Waterproof Breathable'
+ana_risk:     Sayfa su geçirmezlik iddiasında bulunuyor, ancak müşteriler ürünün su geçirmediğini belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik iddiasını gözden geçirerek, ürünün su geçirmediğine dair bilgi ekleyin.
+      sayfa: 'Waterproof Breathable' | müşteri: Yorum 2, 3: Kumaş crinkly plastik ve nefes almaz; ürün su geçirmiyor.

@@ -1,0 +1,72 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kaşındıran ve sert kumaş",
+      "yorum_numaralari": [
+        1,
+        4,
+        10,
+        12,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok büyük geldi",
+      "yorum_numaralari": [
+        3,
+        7,
+        10,
+        11,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Fotoğraftaki ürünle alakası yok",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kötü işçilik ve kalitesizlik",
+      "yorum_numaralari": [
+        5,
+        8,
+        9,
+        12,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada yıkama talimatı yoktu",
+      "yorum_numaralari": [
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kalite beklenenden düşük",
+      "yorum_numaralari": [
+        5,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

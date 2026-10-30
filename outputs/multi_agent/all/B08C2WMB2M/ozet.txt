@@ -1,0 +1,13 @@
+ASIN:         B08C2WMB2M
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5 | sayfa iddiası: 'Women loose solid shoulder pads sleeveless casual cotton tank top.'
+  - Malzeme: yorum 8, 10 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak müşteriler kumaşın kalitesiz ve şeffaf olduğunu belirtiyor; ayrıca kalıp çok küçük geliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Women loose solid shoulder pads sleeveless casual cotton tank top.' | müşteri: Yorum 4, 5: Kalıp çok küçük geliyor.
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında 'şeffaf ve ince kumaş' uyarısını ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 8, 10: Kumaş kalitesi kötü ve şeffaf.

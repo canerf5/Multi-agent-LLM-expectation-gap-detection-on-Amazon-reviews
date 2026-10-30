@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Always soft, always durable cotton for a look ready to greet the day, all day",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "A short-sleeved top styled with a pointed collar, button-front closure and chest pocket",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "No visible logos or branding making this a perfect choice for school children that need to wear uniforms or have strict dress-codes.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "77% Cotton, 21% Polyester, 2% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Made in our amazing Comfort Denim",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Wide waistband keeps you snug and flat.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Classic 5 pocket styling with signature \"J\" back pocket embroidery.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Distressing",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Tacked cuff",
+      "iddia_turu": "genel"
+    }
+  ]
+}

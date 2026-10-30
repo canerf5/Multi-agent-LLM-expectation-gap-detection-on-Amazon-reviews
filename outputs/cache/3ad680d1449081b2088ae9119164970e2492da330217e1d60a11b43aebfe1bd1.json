@@ -1,0 +1,62 @@
+{
+  "tag": "agent2:B0844S491Z",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2560,
+    "output_tokens": 183,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0004938,
+  "sure_sn": 3.139,
+  "created": "2026-10-30T17:51:18+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Sizing is way off — The sizing is way off. I got a size small for my large 8 year old. It’s basically a dress on him. It fits me and still has no compression in the arms because they are so loose. The small is more like an adult M in the abdomen and XL in the arms compression shirt.\n\n2) [2★] Sizing is WAY too big! — The material is great but my 7 yr old was swimming in this!\n\n3) [2★] Way Too Big — This is supposed to be a compression shirt, but it’s even slightly too big as a regular shirt for my ten year old. I even used the sizing chart. He likes the design too much for me to send it back, so it will be a regular summer shirt for him, but I won’t be buying more.\n\n4) [2★] Dissatisfied — The only compression shirt I've ever seen with an embroidered logo. Feels really rough and itchy against the skin. Switch to sublimated logos or heat press and they are of an acceptable quality.\n\n5) [1★] Sizing issue — Well the shirt was of good quality but according to the ad, it says it was a boy's size and so I ordered the extra large like I always do but this in no way was a boys size because it was way too big and offered no compression at all. I'm thinking if I ordered size small it may have fit perfectly but I didn't want to take that chance and possibly have to return that one as well. I ordered another brand in a men's extra small and it fit perfectly.\n\n6) [2★] Way too big — My 12 yr old boy wanted a compression shirt for basketball. We ordered a medium according to size chart. Huge! Then reordered a small. Still huge. Call this a “loose fitting dry fit shirt.” Kinda annoyed at this point.\n\n7) [1★] Not compression shirt — I bought this product 2 of them, for grandson. As he needed black compression shirts to wear under basketball jersey for his games. These are nice t-shirts but they are not compression t-shirts. Which was why they were purchased.\n\n8) [1★] haven’t received refund. — This shirt did not workout for my son and I returned it almost a month ago and have yet to receive the refund.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Bedenler çok büyük geliyor",
+        "yorum_numaralari": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş sert ve kaşındırıyor",
+        "yorum_numaralari": [
+          4
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada kompresyon özelliği yoktu",
+        "yorum_numaralari": [
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": null,
+        "ozet": "İade süreciyle ilgili sorun",
+        "yorum_numaralari": [
+          8
+        ],
+        "ilgili": false,
+        "ilgisiz_sebebi": "satıcı/iade"
+      }
+    ]
+  }
+}

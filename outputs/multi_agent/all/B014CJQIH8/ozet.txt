@@ -1,0 +1,16 @@
+ASIN:         B014CJQIH8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'Regular trim with modern cut fit, good quality warm overcoat'
+  - Renk: yorum 3, 8 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 4, 5, 6, 7 | sayfa iddiası: 'Money-back satisfaction guarantee.'
+ana_risk:     Beden kalıbı, renk ve kalite ile ilgili şikayetler var; sayfada vaat edilen kalıp, renk ve kalite ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha dar olduğunu belirtin; 'Bir beden küçük almanız önerilir' notu ekleyin.
+      sayfa: 'Regular trim with modern cut fit, good quality warm overcoat' | müşteri: Yorum 2: Çok büyük geldi, tam oturmadı.
+  - [Renk | ekle] Renk seçeneklerini ve gerçek renk tonunu belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 8: Renk beklediğim gibi değil, farklı geldi.
+  - [Kalite | değiştir] Kalite kontrol süreçlerini ve kullanılan malzemelerin dayanıklılığını vurgulayın.
+      sayfa: 'Money-back satisfaction guarantee.' | müşteri: Yorum 4, 5, 6, 7: Kalite çok düşük, düğme koptu.

@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Görsel"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Skin-Friendly Material--65% Cotton and 35% Polyester Tunic Tops, stretchy fabric, lightweight, soft, skin-friendly and breathable, Provide a More Comfortable Wearing Experience."
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün malzeme kalitesi ve görünümüne dair iddialarda bulunuyor; ancak müşteriler ince ve kalitesiz buluyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Skin-Friendly Material--65% Cotton and 35% Polyester Tunic Tops, stretchy fabric, lightweight, soft, skin-friendly and breathable, Provide a More Comfortable Wearing Experience.",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün çok ince ve kalitesiz görünüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün malzemesinin kalitesiz olduğunu belirten bir uyarı ekle."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Ürün görseldeki gibi durmuyor, renkler daha soluk.",
+      "islem": "ekle",
+      "duzeltme": "Ürün görsellerinin gerçek renk ve görünümünü yansıtması için açıklama ekle."
+    }
+  ]
+}

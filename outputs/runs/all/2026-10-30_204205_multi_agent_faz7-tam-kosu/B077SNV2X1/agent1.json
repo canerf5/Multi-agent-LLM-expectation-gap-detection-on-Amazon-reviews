@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Synthetic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Polyurethane sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "vegan upper",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "memory foam insole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Flex A Lite Outsole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "designed for durability, so you can enjoy wearing them for years to come.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Solid Flat with Tassel Bow Detail on Toe",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "Available in Black, Brown, Cognac, Whisky, Moss Grey PU, Wine PU and Navy colors to choose from.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

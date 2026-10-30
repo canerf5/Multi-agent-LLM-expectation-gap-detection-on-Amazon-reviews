@@ -1,0 +1,13 @@
+ASIN:         B08D14RMRJ
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 6 | sayfa iddiası: 'protective die cut rubber rand and toe cap'
+  - Kalite: yorum 3, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Dayanıklılık iddiası var, ancak kullanıcılar tabanın ayrıldığını bildiriyor; kalite iddiası yok ama kullanıcılar ürünün kalitesiz olduğunu ve rahat olmadığını belirtiyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Tabanın dayanıklılığı hakkında daha fazla bilgi verin; tabanın ayrılma riski ile ilgili uyarı ekleyin.
+      sayfa: 'protective die cut rubber rand and toe cap' | müşteri: Yorum 2, 6: Sole (taban) ayrılıyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında daha net bilgi verin; kayganlık ve rahatlık konularında kullanıcı deneyimlerini yansıtın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5, 7: Ürün yeni geldi ama tabanında sim var, sanki kullanılmış; ayakkabılar artık rahat değil, ayaklarımı acıtıyor; ürün reklam edildiği gibi değil, kaygan ve kalitesiz görünüyor.

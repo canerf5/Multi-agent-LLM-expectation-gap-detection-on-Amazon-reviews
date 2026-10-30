@@ -1,0 +1,13 @@
+ASIN:         B0050UP9ME
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Inside drawstring 10" inseam (L)'
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalıp iddiası var, ancak müşteriler kalıbın dar olduğunu ve bel kısmında sorun yaşadıklarını belirtiyor; ayrıca dayanıklılık konusunda da şikayetler mevcut.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Inside drawstring 10" inseam (L)' | müşteri: Yorum 1, 4: Bel kısmı dar; bir beden büyük alınması öneriliyor.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; velcro'nun dayanıklılığı ve ıslaklıkta ağırlık konusunda uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Velcro çabuk bozuluyor; ıslakken ağırlaşıyor.

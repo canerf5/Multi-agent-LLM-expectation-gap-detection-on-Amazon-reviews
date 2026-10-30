@@ -1,0 +1,67 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        12,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4,
+        8,
+        10,
+        11,
+        15
+      ],
+      "sayfa_iddiasi": "High-Quality Women’s Athletic Clothing Sets"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        7,
+        8,
+        13
+      ],
+      "sayfa_iddiasi": "UPGRADE SEAMLESS CRAFT SOLVE SEE THROUGH ISSUES"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında yüksek kaliteli ve dayanıklı olduğu iddia ediliyor, ancak müşteriler kalitesiz ve yırtılan ürünler aldıklarını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3, 12, 14: Bedenler doğru değil, küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri için 'Küçük, Orta, Büyük' gibi standart ifadeleri ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "High-Quality Women’s Athletic Clothing Sets",
+      "musteri_deneyimi": "Yorum 1, 4, 8, 10, 11, 15: Ürün kalitesi düşük, yırtılıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrol süreçlerini ve malzeme dayanıklılığını vurgulayan bir ifade ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "UPGRADE SEAMLESS CRAFT SOLVE SEE THROUGH ISSUES",
+      "musteri_deneyimi": "Yorum 6, 7, 8, 13: Ürün şeffaf, iç çamaşırı görünüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün şeffaflık sorununu çözmek için kullanılan malzeme hakkında daha fazla bilgi verin."
+    }
+  ]
+}

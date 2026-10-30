@@ -1,0 +1,82 @@
+{
+  "tag": "agent2:B089CKS4GS",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2956,
+    "output_tokens": 291,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.000618,
+  "sure_sn": 4.252,
+  "created": "2026-10-30T18:08:01+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Extremely thin and fragile — These underwear are extremely thin. You can actually see through the fabric, not because I'm fat and they stretch (I'm 5'10'' and 160lbs), but because their as thin as a single ply toilet paper. Yes, they're soft, but they're already falling apart after one wash. Would not recommend.\n\n2) [2★] I had purchase other Terramar Silkskins... — These did NOT fit as well - skimpier and the waistband rolls. I'll stick with the solid colors - sooooo much better.\n\n3) [1★] Five Stars — These are the best underwear. Closest thing to feeling like going commando. Thanks! Well, after a few months of use I have changed my review from 5 starts to 1 star. There are so many snags in this material. Unfornate. The other boxers I bought have not done this.\n\n4) [1★] they are not briefs — These are advertised as \"briefs\" which they certainly are not. As I understand the definition of \"briefs\" it describes an item that has a low rise where the top elastic falls or rests at the hips below the normal waistline. I followed the size buying guide and the top elastic on these \"briefs\" is actually above my waistline! They have a high rise and are anything but \"brief\". They appear well made and do feel very nice against your skin but I don't choose to wear my underwear up just under my chin.\n\n5) [1★] Disappointed again — I have been wearing Silkskins for years mostly because they used to fit me well because I have long legs. But I guess they are trying to cut corners on production by making them more trunk like and with a narrower waist band. The shorter legs roll up to my crotch since I walk for 10 hours a day at my job. My old ones never do that.\n\n6) [1★] Pilling and worn after 2 washes — These were fairly expensive and are pilling and worn down extremely thin after just 2 washes. Had high hopes when I got them because they did feel soft but definitely wouldn’t recommend.\n\n7) [1★] Tore on first wearing — Wore once. Tear in the seat. Poor stitching.\n\n8) [1★] Came with holes. Comfortable boxers though — The boxers are amazing however, ther had holes in them on the below the waist band. Very disappointed by the quality of my last two orders.\n\n9) [2★] not as specified — My grandson likes these so I ordered them thinking that I was getting a pack of 2 because that's what the description says, but it was only 1 so I sent them back. I didn't want to pay over $25 for one pair of boys underwear\n\n10) [1★] Were amazing until a seam split — Wore these for only about 5 or 6 times until one of the seams unraveled and opened wider and wider. It's a shame as they're really comfortable.\n\n11) [2★] Two Stars — For me, there to short waisted I wish they were a higher rise......\n\n12) [1★] Sized way small — Size is way small I have 8 pair of the original silkskins these are like 2 sizes smaller. Material is okay not like the regular ones couldn't wear so not sure on comfort for proper fit. Value for money waste because the size is small.\n\n13) [2★] Inconsistent Products — Ordered two of the same product, in 2 sizes to determine which size works best for me. Received 2 different products, though labeled as the same just different sizes. The fabric was completely different on each, and though one was a medium and the other a large they fit about the same. The medium pair rides up and doesn't stay down, while the large pair stays in place but the fabric seems to be pilling from rubbing on my jeans after one wearing.\n\n14) [2★] ehh — The material feels nice and it's thin, but it rides up too much for my liking. Also, washed it once and the threads started to come undone.\n\n15) [1★] One Star — Well made 6” too long so unfortabke around thigh.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş çok ince ve şeffaf.",
+        "yorum_numaralari": [
+          1,
+          6
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Ürünler yıkama sonrası pilling yapıyor ve inceleşiyor.",
+        "yorum_numaralari": [
+          6,
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Bedenler normalden küçük ve kalıp uyumsuz.",
+        "yorum_numaralari": [
+          2,
+          4,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Dikişler kötü, ilk kullanımda yırtılıyor.",
+        "yorum_numaralari": [
+          7,
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün açıklamasında belirtilen özelliklerle uyuşmuyor.",
+        "yorum_numaralari": [
+          9,
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Kalıp çok kısa ve rahatsız.",
+        "yorum_numaralari": [
+          11,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

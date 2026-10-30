@@ -1,0 +1,16 @@
+ASIN:         B08FQVYYDM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 10, 12, 13, 14 | sayfa iddiası: "NOTICE: Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase."
+  - Kalite: yorum 3, 4, 8, 15 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 6, 11 | sayfa iddiası: 'PREMIUM FABRIC: This funny mama long sleeve sweatshirt is made of cotton blend, super soft and comfortable to wear.'
+ana_risk:     Sayfa, ürünün kalitesini ve beden uyumunu garanti ediyor; ancak müşteriler, ürünün kalitesiz olduğunu ve bedenlerin beklenenden küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden uyumu hakkında daha net bilgi ver; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notu ekle.
+      sayfa: "NOTICE: Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase." | müşteri: Yorum 5, 10, 12, 13, 14: Bedenler beklenenden küçük veya yanlış gönderilmiş.
+  - [Kalite | ekle] Ürün açıklamasına kalite kontrolü hakkında bilgi ekle; 'Ürünlerimiz kalite kontrolünden geçmektedir, ancak herhangi bir sorunla karşılaşırsanız lütfen bizimle iletişime geçin.' yaz.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 8, 15: Ürün kalitesiz, defolu veya hatalı geldi.
+  - [Malzeme | değiştir] Kumaşın içeriği hakkında daha net bilgi ver; 'Kumaş karışımı %100 pamuk değil, %X oranında rayon içeriyor' notu ekle.
+      sayfa: 'PREMIUM FABRIC: This funny mama long sleeve sweatshirt is made of cotton blend, super soft and comfortable to wear.' | müşteri: Yorum 1, 6, 11: Kumaş kalitesiz ve rahatsız.

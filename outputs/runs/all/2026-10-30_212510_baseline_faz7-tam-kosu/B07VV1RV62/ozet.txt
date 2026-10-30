@@ -1,0 +1,22 @@
+ASIN:         B07VV1RV62
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Malzeme, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 8 | sayfa iddiası: 'You’ll stay comfy all day long.'
+  - Görsel: yorum 2, 4, 10 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 3, 5 | sayfa iddiası: 'Made from super soft cotton blend, this t shirt is cozy, stretchy and breathable on your skin.'
+  - Kalite: yorum 3, 6, 7 | sayfa iddiası: "Customers' satisfaction is our aim."
+  - Dayanıklılık: yorum 8, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalıp iddiası var, ancak müşteriler ürünün çok küçük olduğunu belirtiyor; ayrıca görseldeki ürünle gelen ürün arasında büyük farklılıklar var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'You’ll stay comfy all day long.' | müşteri: Yorum 1, 8: Çok küçük geliyor ve yıkama sonrası küçülüyor.
+  - [Görsel | ekle] Görselin gerçek ürünü yansıtması için güncellenmesi gerekiyor.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 10: Gelen ürün görseldekiyle aynı değil; renk ve tasarım farklı.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: 'Made from super soft cotton blend, this t shirt is cozy, stretchy and breathable on your skin.' | müşteri: Yorum 2, 3, 5: Malzeme kalitesiz ve ucuz hissettiriyor.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: "Customers' satisfaction is our aim." | müşteri: Yorum 3, 6, 7: Ürün kalitesi düşük; dikişler ve baskı sorunlu.
+  - [Dayanıklılık | ekle] Yıkama sonrası küçülme olabileceği belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 8, 9: Yıkamada üründe küçülme ve deformasyon oluyor.

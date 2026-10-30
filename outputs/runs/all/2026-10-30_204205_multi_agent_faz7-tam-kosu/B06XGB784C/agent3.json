@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        13
+      ],
+      "sayfa_iddiasi": "Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        3,
+        7,
+        8,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use"
+    }
+  ],
+  "ana_risk": "Kumaş kalitesi iddiası var, ancak müşteriler kumaşın her yıkamada parçalandığını ve ürünün yıkamadan sonra inceleşip yırtıldığını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel",
+      "musteri_deneyimi": "Yorum 6, 13: Kumaş kalitesi kötü, her yıkamada parçalanıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi ver; 'Her yıkamada parçalanma riski vardır' uyarısını ekle."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use",
+      "musteri_deneyimi": "Yorum 2, 3, 7, 8, 14, 15: Robe, yıkamadan sonra inceleşti ve yırtıldı.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık hakkında daha net bilgi ver; 'Ürün yıkama sonrası inceleşebilir' uyarısını ekle."
+    }
+  ]
+}

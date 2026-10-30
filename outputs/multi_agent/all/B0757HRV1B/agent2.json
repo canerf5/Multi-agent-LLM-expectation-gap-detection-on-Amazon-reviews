@@ -1,0 +1,44 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "İlk haftadan sonra tamamen bozuldu.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Açıklamada yazdığı gibi güçlendirilmiş diz yok.",
+      "yorum_numaralari": [
+        2,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düğme ilk günde koptu.",
+      "yorum_numaralari": [
+        3,
+        4,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Dizleri çok çabuk yırtılıyor.",
+      "yorum_numaralari": [
+        5,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

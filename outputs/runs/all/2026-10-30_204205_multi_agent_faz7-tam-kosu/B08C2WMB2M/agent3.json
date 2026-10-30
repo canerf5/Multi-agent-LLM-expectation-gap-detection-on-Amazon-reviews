@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "Women loose solid shoulder pads sleeveless casual cotton tank top."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        10
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfada %100 pamuk iddiası var, ancak müşteriler kumaşın kalitesiz ve şeffaf olduğunu belirtiyor; ayrıca kalıp çok küçük geliyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Women loose solid shoulder pads sleeveless casual cotton tank top.",
+      "musteri_deneyimi": "Yorum 4, 5: Kalıp çok küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 8, 10: Kumaş kalitesi kötü ve şeffaf.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesi hakkında 'şeffaf ve ince kumaş' uyarısını ekleyin."
+    }
+  ]
+}

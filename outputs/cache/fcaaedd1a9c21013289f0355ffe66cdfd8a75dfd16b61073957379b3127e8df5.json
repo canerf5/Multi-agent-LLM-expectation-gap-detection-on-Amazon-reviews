@@ -1,0 +1,105 @@
+{
+  "tag": "agent2:B08PFBX7S2",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3088,
+    "output_tokens": 360,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0006792,
+  "sure_sn": 4.595,
+  "created": "2026-10-30T17:45:48+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Runs large — Runs very large. I also received the wrong size the first time. Will try one more time for the right fit.\n\n2) [1★] Absolute junk — Stitching around front pocket on hoodie is horrible. Wont last but a few days. Took it out of the package washed it once and its already falling apart. This can't be legit Carhartt gear. Don't buy. Complete rip off. Also is way darker than shown in picture. Its a VERY dark blue and not the shade as shown.\n\n3) [2★] not NEW Navy as pictured — got the \"NEW Navy\" and it's a dark navy. old navy I guess. navy navy. the material is nothing like the picture. I don't think it is 100% cotton. I have several of these sweatshirts cause they come in TALL. I love them. but this one is scratchy. and not soft at all. the color is also very dark.\n\n4) [2★] Great hoody overall — Great quality goody overall but came with a very abrasive chemical smell.\n\n5) [2★] Color not as advertised — Ordered the “new navy” color for my boyfriend. He has the black one and it’s his favorite hoodie. The hoodie itself is great! The fit, the material- other than the color I was sent, it was everything I hoped it would be. The “new navy” is so dark though, it should be “new black” not navy. The color was nowhere near what the photo advertised, which was a much brighter blue. The extremely dark black/blue color was pretty disappointing.\n\n6) [1★] Carharrt — I was sent a factory second! Stitching was sloppy , very sloppy..\n\n7) [2★] Nice thick — The fit is great, the thickness is great nice and warm. But the fact that it already looks like it's been washed and dried a few times is why I rated 2 stars. It is not a true black.\n\n8) [1★] Seemed used — Unsure of why, but the hoodie itself fits, that wasn't the problem. It showed up smelling awful (cigarette smoke) and had a small tear under the hood of the sweatshirt.. Not gunna bother returning as the first one was too big.. guess I'll stick to in-store purchases from now on.\n\n9) [2★] A bit too large — If I were to order this sweatshirt again, I would order a \"medium\". My sport coat size 43, plus or minus, so I ordered a large, but this sweatshirt is more like an extra large size.\n\n10) [2★] “Carhart 100% cotton men’s hoodie “ — It’s listed as 100%cotton, it billed the same way. My son is welding and has to have either FR or 100% cotton. I ordered the hoodie expecting Carhart /Amazon to deliver what they advertised. The hoodie is 50/50poly/cotton. That’s a major safety hazard\n\n11) [1★] Para compartir nada que no es la medida perfecta — Es demasiado grande para ser small me queda como talla L no está nada bueno\n\n12) [1★] They can't seem to figure out the difference between original and loose fit — I've ordered like 6 of these so far to try on. 1 has come correctly as I've ordered it. The rest have been the wrong size and wrong cut. I wish the Amazon employees would spend more time checking the actual size and style and not just grabbing random bags that look. \"Close enough\" The one that did come in the correct size was a great fit even if it was too big so I went a size down\n\n13) [1★] Hoodie seems fine… — The hoodie itself feels like it’s nice. My problem is with the seller/fulfillment center. I ordered a “Tall” but when it came it was regular, so it was too short. Because I needed it ASAP, I went ahead and ordered a new one immediately. I confirmed, again, I selected the “Tall” option. Delivery for this one was delayed and took a week despite the Prime shipping, and it’s still not a “Tall.” Either fix the listing to not offer these in “Tall” sizes, or send me what I ordered. This is ridiculous.\n\n14) [1★] Nice Sweatshirt but... — I have bought many of these through the years and it seems Carhartt is making them with a much thinner material than they used to. I put an older Carhartt sweatshirt I still have right next to this new one and the material is much thinner on the new one. Guess I'll just wash it carefully.\n\n15) [2★] Sad — I got this hoodie about a month ago to surprise my boyfriend and the hoodie came in the mail with a hole in it. Had to throw it out and waste all that money:(",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Çok büyük geldi",
+        "yorum_numaralari": [
+          1,
+          9,
+          11,
+          12,
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Dikişler kötü, ürün hemen bozuldu",
+        "yorum_numaralari": [
+          2,
+          6,
+          10,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Renk",
+        "ozet": "Renk fotoğraftakinden çok daha koyu",
+        "yorum_numaralari": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş kalitesi düşük, sert ve kaşındırıyor",
+        "yorum_numaralari": [
+          3,
+          4,
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada %100 pamuk yazıyordu ama değil",
+        "yorum_numaralari": [
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün delikli geldi",
+        "yorum_numaralari": [
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada yazmıyordu",
+        "yorum_numaralari": [
+          4
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün fotoğraftakiyle alakası yok",
+        "yorum_numaralari": [
+          2
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

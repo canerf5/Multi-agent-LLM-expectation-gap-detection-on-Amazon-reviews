@@ -1,0 +1,13 @@
+ASIN:         B0050UP9ME
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '100% Spandex'
+ana_risk:     Sayfa, kumaşın %100 spandex olduğunu iddia ediyor, ancak müşteriler velcro kalitesinin düşük olduğunu ve yıkamada çıktığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenin küçük geldiğine dair bilgi ekleyin; 'Bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Beden küçük geliyor, bir beden büyük alınmalı.
+  - [Malzeme | değiştir] Velcro kalitesinin düşük olduğu ve yıkamada çıktığı bilgisini düzeltin.
+      sayfa: '100% Spandex' | müşteri: Yorum 1, 2: Velcro kalitesi düşük, yıkamada çıkıyor.

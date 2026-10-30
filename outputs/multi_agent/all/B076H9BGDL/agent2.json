@@ -1,0 +1,31 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bacaklar çok geniş ve iç dikiş uzun.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş crinkly plastik ve nefes almaz.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ürün su geçirmiyor.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

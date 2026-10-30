@@ -1,0 +1,36 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürün bedeni çok küçük geldi.",
+      "yorum_numaralari": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü ve dayanıklı değil.",
+      "yorum_numaralari": [
+        3,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": null,
+      "ozet": "Ürün stokta yoktu.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "90%polyamide, 10% spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Removable padded and wirefree cups to ensure maximum comfort",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "T back with adjustable straps offers a customized fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft and comfortable underband",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Side lining with scalloped trimming adds extra femininity",
+      "iddia_turu": "genel"
+    }
+  ]
+}

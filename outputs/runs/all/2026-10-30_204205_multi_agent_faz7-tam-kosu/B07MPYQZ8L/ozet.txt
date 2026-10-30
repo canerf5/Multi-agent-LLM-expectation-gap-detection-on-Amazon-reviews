@@ -1,0 +1,13 @@
+ASIN:         B07MPYQZ8L
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4, 12, 14, 15 | sayfa iddiası: '65%Cotton，35%Rayon'
+  - Beden/Kalıp: yorum 3, 7, 10, 11, 13 | sayfa iddiası: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.'
+ana_risk:     Malzeme iddiası var, ancak müşteriler kaşındıran ve sert kumaşla karşılaştıklarını belirtiyor; Beden/Kalıp iddiası var, fakat birçok müşteri ürünün çok büyük geldiğini söylüyor.
+öneriler:
+  - [Malzeme | değiştir] Sayfada kumaşın yumuşak ve nefes alabilir olduğu bilgisi eklenmeli.
+      sayfa: '65%Cotton，35%Rayon' | müşteri: Yorum 1, 4, 12, 14, 15: Kaşındıran ve sert kumaş.
+  - [Beden/Kalıp | değiştir] Sayfada bedenlerin büyük geldiğine dair bir uyarı eklenmeli; 'Bir beden küçük almanız önerilir' notu eklenmeli.
+      sayfa: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.' | müşteri: Yorum 3, 7, 10, 11, 13: Çok büyük geldi.

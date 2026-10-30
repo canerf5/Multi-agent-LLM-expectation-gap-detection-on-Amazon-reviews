@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Authentic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Durable",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Brand New",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Original Packaging",
+      "iddia_turu": "genel"
+    }
+  ]
+}

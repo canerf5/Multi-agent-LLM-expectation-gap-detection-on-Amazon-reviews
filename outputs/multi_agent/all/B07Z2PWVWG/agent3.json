@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Renk",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "Size S-----Length 64cm/25.2\"-----Bust 96cm/37.8\" Size M------Length 66cm/26.0\"-----Bust 100cm/39.3\" Size L--------Length 68cm/26.8\"-----Bust 106cm/41.7\" Size XL--------Length 71cm/28\"-----Bust 112cm/44\" Size XXL--------Length 74cm/29.2\"-----Bust 118cm/44.6\""
+    }
+  ],
+  "ana_risk": "Sayfa, beyaz kısımların renk değiştirebileceği ve yıkama sonrası bedenin küçüleceği iddiasında bulunmuyor, ancak müşteriler bu durumları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Beyaz kısım pembe oldu; Yorum 3: Beyaz kısım pembe oldu.",
+      "islem": "ekle",
+      "duzeltme": "Beyaz kısımların renk değiştirebileceği bilgisini ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size S-----Length 64cm/25.2\"-----Bust 96cm/37.8\" Size M------Length 66cm/26.0\"-----Bust 100cm/39.3\" Size L--------Length 68cm/26.8\"-----Bust 106cm/41.7\" Size XL--------Length 71cm/28\"-----Bust 112cm/44\" Size XXL--------Length 74cm/29.2\"-----Bust 118cm/44.6\"",
+      "musteri_deneyimi": "Yorum 3: Yıkadıktan sonra beden küçüldü.",
+      "islem": "ekle",
+      "duzeltme": "Yıkama sonrası bedenin küçüleceği bilgisini ekleyin."
+    }
+  ]
+}

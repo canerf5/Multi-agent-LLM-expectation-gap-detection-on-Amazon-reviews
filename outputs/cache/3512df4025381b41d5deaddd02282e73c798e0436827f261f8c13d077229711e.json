@@ -1,0 +1,69 @@
+{
+  "tag": "agent2:B0BHVXWGFH",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2936,
+    "output_tokens": 200,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0005604,
+  "sure_sn": 2.965,
+  "created": "2026-10-30T18:21:31+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Runs very small — These run very small and short. Don’t waste your money they look nothing like the picture. I returned them\n\n2) [1★] Nothing like the photo! — What came in and what is in the photo are two entirely different looks! Total misrepresentation.\n\n3) [1★] The pants were nothing like the picture — These pants are cheap, wrong size, and look nothing like the picture\n\n4) [1★] junk — horrible quality. wait is size 5 length is size 16 junk!!\n\n5) [1★] JUNK!!! — What an absolute joke!! I should have known from China. The zipper was broken right out of the packed and there isn't even a hole for the button. Neg 5 stars 🤬\n\n6) [1★] Way too small and nothing like the picture — First and foremost, I ordered a 2XL thinking that they would be the right size and they sent me a 3XL... I went to put them on and they fit like maybe a medium. The buttonhole was sewn closed but that doesn't matter cuz they wouldn't fit around my waist. The sizing was extremely bad and they look absolutely nothing like the picture. Also they hit just shy of my ankles when they're supposed to be long. Horrible and do not recommend anyone buying these\n\n7) [1★] Nothing at all like the picture — I was really excited for these jeans, but they look nothing at all like the picture. The waist is tiny compared to the hips, they're too short and not distressed at all, just a plain blue. Terrible quality. Do not buy.\n\n8) [2★] Not Stretchy — These pants fit funny on the waste and are high wasted. They are not stretchy at all.\n\n9) [1★] Disappointed 👎 — How can you sew the button hole without the hole for the button being there. They didn't fit when I tried them on anyway but if they did have a button hole and fit I still would not kept them. The style is what I'm looking for but the waist is extremely high waisted more than \"mom jeans\" should be. Definitely returning and don't recommend you waist your time or money with these jeans.\n\n10) [1★] Don't be Fooled — I really loved the look of these jeans. They had a nice rustic, boho, look. So I waited for the right time when the price was in my budget and I bought. These jeans are NOTHING like what is in the picture. They are cheap. Poor quality. The stitching is orange thread. The jean material does not have that vintage worn, weathered blue, but more of a cheap dark blue color. They look like something you would find at a flea market. I am so disappointed. I am already in the process of returning.\n\n11) [1★] NO stretch (as they advertise) and they run EXTREMELY small — These jeans are NOTHING like they described. There is absolutely NO stretch to them and I sized up and they are still about 3 sizes too small. Do not recommend these AT ALL.\n\n12) [1★] Worst purchase EVER — These are not women's pants. These might fit my thin teenage niece. Wrong color and the style isn't even close. DO NOT WASTE YOUR MONEY\n\n13) [1★] BEWARE.....NOTHING like the picture — ZERO STARS IF POSSOBLE...Seriously, this was nothing like what was pictured. HIlariously AWFUL, LOL. . Was thinking I ordered those cute baggy woman's jeans, but got weird gray denim with different hemlines, pockets. There wasn't even a hole for the button to go through..omgeeezzz.. Beware!!!\n\n14) [1★] They were no where close to picture — They were no where like they pictured not even same wash or style. Sent back for refund after waiting 3 weeks to get.\n\n15) [2★] Way, way too small — I am a big girl so I ordered a 3X because that's what I wear everyday. I couldn't even pull them up all the way. Button hole wasn't cut. No fading or ripping at all. Not stretchy at all.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Çok küçük geldi ve yanlış beden gönderildi.",
+        "yorum_numaralari": [
+          1,
+          6,
+          11,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Fotoğraftaki ürünle alakası yok.",
+        "yorum_numaralari": [
+          2,
+          3,
+          7,
+          10,
+          12,
+          13,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Kötü kalite, dikişler ve malzeme sorunlu.",
+        "yorum_numaralari": [
+          4,
+          5,
+          9
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Esnek değil, beklenenden farklı.",
+        "yorum_numaralari": [
+          8,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

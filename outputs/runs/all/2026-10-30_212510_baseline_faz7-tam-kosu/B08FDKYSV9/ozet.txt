@@ -1,0 +1,13 @@
+ASIN:         B08FDKYSV9
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün bedeninin küçük olduğunu ve kalitesinin düşük olduğunu belirtmiyor; müşteriler bu sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp küçük; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4: Kalıp beklenenden küçük; büyük alındığında küçük geldi.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; elastiklerin dayanıklılığı hakkında uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: İlk kullanımda elastik koptu; Yorum 3: Bir gün giydikten sonra nubbies oluştu.

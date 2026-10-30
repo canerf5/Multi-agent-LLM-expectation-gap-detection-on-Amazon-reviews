@@ -1,0 +1,13 @@
+ASIN:         B06XGB784C
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3, 7, 8, 14, 15 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 6, 11, 12, 13 | sayfa iddiası: 'Plush terry-cotton bathrobe for luxurious spa-like comfort at home or away; for men and women (unisex)'
+ana_risk:     Dayanıklılık iddiası sayfada yok, ancak müşteriler ürünün çabuk yıprandığını ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Yıkama sonrası dayanıklılığı düşebilir, dikkatli kullanılması önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 7, 8, 14, 15: Ürün yıkama sonrası çabuk yıpranıyor ve parçalanıyor.
+  - [Kalite | değiştir] Ürünün kalitesi hakkında daha net bilgi ver; 'Ürün ilk yıkamada kötü kokabilir ve lekelenme riski vardır, dikkatli yıkanması önerilir.'
+      sayfa: 'Plush terry-cotton bathrobe for luxurious spa-like comfort at home or away; for men and women (unisex)' | müşteri: Yorum 1, 6, 11, 12, 13: Ürün kötü kokuyor, lekeli geliyor ve lifleri dökülüyor.

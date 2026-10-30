@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Materials: 35% WOOL 65% RAYON",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Wool Blend Fabric",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Dry Clean Only",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Provides the finest and most stylish Coat which can be worn during spring and winter seasons.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Regular trim with modern cut fit, good quality warm overcoat",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Money-back satisfaction guarantee.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

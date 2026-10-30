@@ -1,0 +1,13 @@
+ASIN:         B07BP6QRM8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 10, 11, 14 | sayfa iddiası: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on.'
+  - Kalite: yorum 1, 4, 13 | sayfa iddiası: 'Soft, lightweight and anti-slip sole is good choice for making walking feel natural.'
+ana_risk:     Sayfa, ayakkabıların ayaklara uygunluğu ve kalitesi hakkında iddialarda bulunuyor; ancak müşteriler, ürünlerin kalitesiz olduğunu ve uygun şekilde oturmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında, ayakkabıların kalıbının dar olduğu ve bir beden büyük alınması gerektiği bilgisi eklenmeli.
+      sayfa: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on.' | müşteri: Yorum 3, 10, 11, 14: Ayakkabılar beklenen ölçülerde değil, çok büyük geliyor.
+  - [Kalite | değiştir] Ürün sayfasında, ayakkabıların yürüyüş desteği sağlamadığına dair bir uyarı eklenmeli.
+      sayfa: 'Soft, lightweight and anti-slip sole is good choice for making walking feel natural.' | müşteri: Yorum 1, 4, 13: Ayakkabıların kalitesi düşük, yürümek için uygun değil.

@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "tek konu kuralı: yorum 3 hem Beden/Kalıp hem Kalite için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "parent_asin": "B0C3BW3PCD",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 3,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 3 birden fazla ilgili grupta (grup 2 ve 3)"
+  ],
+  "sure_duvar_sn": 10.872,
+  "time": "2026-10-30T18:12:04+00:00"
+}

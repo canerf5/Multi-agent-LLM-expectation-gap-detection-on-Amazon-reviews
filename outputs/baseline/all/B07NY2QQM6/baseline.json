@@ -1,0 +1,60 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        5,
+        6,
+        9
+      ],
+      "sayfa_iddiasi": "memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabının konfor ve dayanıklılık vaat ediyor; ancak müşteriler, ayakkabıların kalitesiz olduğunu ve kısa sürede bozulduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step.",
+      "musteri_deneyimi": "Yorum 5, 6, 9: Ayakkabılar çok dar ve konforlu değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Ayakkabılar kısa sürede bozuluyor ve kalitesiz.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi ekleyin; dayanıklılık test sonuçlarını paylaşın."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Ayakkabılar kısa sürede yıpranıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün dayanıklılığı hakkında bilgi ekleyin; uzun süreli kullanım için önerilerde bulunun."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Canvas",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material Upper - Textile/ Sole - Rubber",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Silver glitter canvas",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Lace-Up closure",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Machine Wash",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Officially licensed",
+      "iddia_turu": "genel"
+    }
+  ]
+}

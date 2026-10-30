@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Patent Leather+Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Please check carefully with the size chart we provide before you place an order",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Adult Recommended Size---|------Chest-----|------Waist-----|---Sleeve Length---|---Shoulder to Crotch(exclude shoulder straps) ---S------|--------------S-------------|---27.5\"/70cm---|---24.0\"/60cm---|-----21.0\"/54cm----|--------------------26.0\"/67cm---------------- ---M------|--------------M-------------|---29.0\"/74cm---|---25.0\"/63cm---|-----22.0\"/55cm----|--------------------27.0\"/69cm---------------- ---L------|--------------L-------------|---31.0\"/78cm---|---26.0\"/66cm---|-----22.0\"/56cm----|--------------------28.0\"/71cm---------------- ---XL-----|-------------XL-------------|---33.0\"/83cm---|---28.0\"/71cm---|-----22.5\"/57cm----|--------------------29.0\"/73cm----------------",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Color: Multicolor(as pictures show)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Condition: New with tag",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "glossy appearance",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "stretchy fabric",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Super soft and comfortable to wear",
+      "iddia_turu": "genel"
+    }
+  ]
+}

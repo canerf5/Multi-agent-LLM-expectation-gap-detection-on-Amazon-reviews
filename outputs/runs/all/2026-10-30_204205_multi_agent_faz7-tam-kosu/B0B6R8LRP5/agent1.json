@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Zipper sweatshirts for women lightweight warmth, breathable, cozy.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "An exaggerated fit that feels extra roomy.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Not too short, not too long, just right around the waistband.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Suitable for running, playing ball, dancing, cycling, playing ball, hiking, walking, exercising, home, daily wear, travel, for fall and winter.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "We listen to customer feedback and fine-tune every detail to ensure quality, fit, and comfort.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

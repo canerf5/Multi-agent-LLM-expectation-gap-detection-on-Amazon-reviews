@@ -1,0 +1,10 @@
+ASIN:         B00V3R17IS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının düzgün olduğunu iddia ediyor ancak müşteriler yıkama sonrası beden küçülmesi ve yukarı doğru kıvrılma yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Yıkama sonrası beden küçülmesi olabileceğine dair bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: İlk soğuk yıkamada 2 beden küçüldü; yıkamada sürekli yukarı doğru kıvrılıyor.

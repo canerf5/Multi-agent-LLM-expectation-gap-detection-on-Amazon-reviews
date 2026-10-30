@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "durable outdoor shirt",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "Tan back neck lining",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Relaxed fit",
+      "iddia_turu": "genel"
+    }
+  ]
+}

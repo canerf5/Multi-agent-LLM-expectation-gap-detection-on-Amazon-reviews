@@ -1,0 +1,67 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Dayanıklılık",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        8,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13
+      ],
+      "sayfa_iddiasi": "Ultralight compression provides men with a comfortable, functional fit for athletes."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4,
+        9
+      ],
+      "sayfa_iddiasi": "Comfort & Quality: Ultralight design improves air flow over the skin and allows air to cool the skin helping moderate body temperature while padded cushioning and seamless toe-closure protects against and hotspots."
+    }
+  ],
+  "ana_risk": "Beden uyumsuzluğu ve dayanıklılık sorunları var; sayfa, ürünün dayanıklılığı ve kalitesi hakkında yanıltıcı bilgiler veriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 8: Kadınlara uygun boyut, erkekler için uygun değil.",
+      "islem": "ekle",
+      "duzeltme": "Erkekler için uygun beden bilgisi ekleyin; 'Bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Ultralight compression provides men with a comfortable, functional fit for athletes.",
+      "musteri_deneyimi": "Yorum 3, 4, 5, 6, 7, 10, 11, 13: Ürün dayanıklılığı düşük, çabuk yırtılıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün açıklamasında dayanıklılık hakkında daha net bilgi verin; 'Daha dayanıklı bir yapı sunuyoruz' gibi ifadeler ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Comfort & Quality: Ultralight design improves air flow over the skin and allows air to cool the skin helping moderate body temperature while padded cushioning and seamless toe-closure protects against and hotspots.",
+      "musteri_deneyimi": "Yorum 1, 4, 9: Fiyatına göre kalite beklentisi karşılanmıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha gerçekçi bir açıklama yapın; 'Ürün fiyatına göre beklenen kalitede olmayabilir' gibi bir not ekleyin."
+    }
+  ]
+}

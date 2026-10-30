@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Shaft measures approximately Above the Knee from arch"
+    }
+  ],
+  "ana_risk": "Beden kalıbı ile ilgili sorunlar var; sayfada kalıp ölçüsü belirtilmiş ama müşteriler ayakkabıların küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Shaft measures approximately Above the Knee from arch",
+      "musteri_deneyimi": "Yorum 3, 4: Küçük geliyor, bir beden büyük almak gerekiyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında 'bir beden büyük almanız önerilir' notu ekle."
+    }
+  ]
+}

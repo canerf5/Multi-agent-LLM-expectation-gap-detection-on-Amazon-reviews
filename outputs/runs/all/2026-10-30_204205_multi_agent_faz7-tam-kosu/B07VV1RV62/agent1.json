@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Made from super soft cotton blend, this t shirt is cozy, stretchy and breathable on your skin.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material: Cotton Blend.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Basic tees with Graphic decoration, So cute tops, Sexy O Neck tees, Short sleeve T-shirts, Plain style.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Unique style makes you more beautiful and fashionable.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Casual Loose Fit Women T Shirt.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Customers' satisfaction is our aim. If you are not satisfied with our product, pls contact us and we will solve the problem for you within 24 hours.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

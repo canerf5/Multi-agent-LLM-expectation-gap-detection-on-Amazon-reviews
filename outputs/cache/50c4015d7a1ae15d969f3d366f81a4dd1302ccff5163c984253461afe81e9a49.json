@@ -1,0 +1,66 @@
+{
+  "tag": "agent1:B07F2CCYFY",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2557,
+    "output_tokens": 380,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00061155,
+  "sure_sn": 4.389,
+  "created": "2026-10-30T18:20:46+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: Columbia Women's Anytime Casual Stretch Skort, Water & Stain Resistant, Sun Protection\n\nFİYAT: (yok)\n\nÖZELLİKLER:\n• 96% Nylon, 4% Elastane\n• Imported\n• Elastic closure\n• Machine Wash\n• OMNI-SHIELD: Go ahead. Try and get dirty. Unlike most other fabrics, our unique Omni-SHIELD advanced water and stain repellency system helps little ones stay clean and dry by resisting the absorption of liquids\n• OMNI-SHADE: Be safe and protected. Omni-Shade blocks UVA and UVB rays to help prevent sunburns and long-term skin damage. The tight weave construction with UV absorbent yarns block the full spectrum of harmful UV rays\n• BUILT-IN SUN PROTECTION: The Columbia Anytime Casual Stretch Skort guard against sun damage thanks to its UPF 50 rated material. It utilizes a breathable, stain and water repellent fabric to keep you protected and looking clean all day\n• STYLISH ACTIVE FIT: Made with a mid rise modern stretch blend fabric, this fun skort features an active feminine cut that lets you move carefree throughout your day\n• BUILT TO LAST: Columbia’s attention to detail is what sets our apparel apart from others. We use only the highest quality materials, expert craftsmanship, and durable stitching. This is a fun skort you will enjoy for seasons to come\n\nAÇIKLAMA: Versatile, fun, and stylish. Crafted for an active fit, this skort is perfect for a day on the water, or a jaunt around the block. The Anytime Casual Stretch Skort features built-in UPF 50 protection to ward off harmful UV rays, while our advanced stain and water resistant fabric keeps you clean and looking good all day. Advanced technology and functional design make for a great experience. Whether you're out for hours of socializing, or just sitting back catching the view, these skorts will not disappoint. The protective Omni-SHADE exterior features UPF 50 to help shield against harmful UVA and UVB sun rays, while the Omni-SHIELD fabric repels water, dirt, and stains for clean wear all day long. Columbia offers these women’s skorts in multiple colors and sizes. Extended sizing available. Active fit. To ensure the size you choose is just right, please refer to our sizing chart. To find your waist measurement, measure around your natural waistline, and then measure widest point at the hips.\n\nDETAYLAR:\n- Package Dimensions: 8 x 6 x 0.5 inches; 4 Ounces\n- Item model number: 1812471\n- Department: Womens\n- Date First Available: February 14, 2018\n- Manufacturer: Columbia",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "96% Nylon, 4% Elastane",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "Omni-SHIELD: Go ahead. Try and get dirty. Unlike most other fabrics, our unique Omni-SHIELD advanced water and stain repellency system helps little ones stay clean and dry by resisting the absorption of liquids",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "Omni-Shade blocks UVA and UVB rays to help prevent sunburns and long-term skin damage. The tight weave construction with UV absorbent yarns block the full spectrum of harmful UV rays",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "BUILT-IN SUN PROTECTION: The Columbia Anytime Casual Stretch Skort guard against sun damage thanks to its UPF 50 rated material.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "BUILT TO LAST: Columbia’s attention to detail is what sets our apparel apart from others. We use only the highest quality materials, expert craftsmanship, and durable stitching.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "This skort is perfect for a day on the water, or a jaunt around the block.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "These skorts will not disappoint.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "Active fit.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "To ensure the size you choose is just right, please refer to our sizing chart.",
+        "iddia_turu": "genel"
+      }
+    ]
+  }
+}

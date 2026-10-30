@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Pull on,Drawstring closure",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Machine Wash",
+      "iddia_turu": "somut"
+    }
+  ]
+}

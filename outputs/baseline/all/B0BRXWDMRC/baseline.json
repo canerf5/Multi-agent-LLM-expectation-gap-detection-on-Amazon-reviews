@@ -1,0 +1,52 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        9,
+        11,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2,
+        6,
+        7,
+        10,
+        12
+      ],
+      "sayfa_iddiasi": "Excellent Fabric : Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform."
+    }
+  ],
+  "ana_risk": "Beden ve malzeme ile ilgili iddialar var, ancak müşteriler bu ürünün kalıbının ve kumaşının beklenenden çok farklı olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you.",
+      "musteri_deneyimi": "Yorum 3, 4, 5, 9, 11, 14, 15: Bedenler standart ölçülerle uyuşmuyor, çok küçük veya çok büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden uyumu hakkında daha net bilgi ver; 'Bedenler standart ölçülerden farklı olabilir, lütfen ölçü tablosunu kontrol edin.' ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Excellent Fabric : Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform.",
+      "musteri_deneyimi": "Yorum 1, 2, 6, 7, 10, 12: Kumaş kalitesi düşük, nefes almıyor ve beklenenden farklı.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaşın içeriği ve hissiyatı hakkında daha fazla bilgi ekleyin.'"
+    }
+  ]
+}

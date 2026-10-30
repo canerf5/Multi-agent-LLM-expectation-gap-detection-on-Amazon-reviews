@@ -1,0 +1,16 @@
+ASIN:         B0936XDNJ4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 12, 14 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 4, 8, 10, 11, 15 | sayfa iddiası: 'High-Quality Women’s Athletic Clothing Sets'
+  - Malzeme: yorum 6, 7, 8, 13 | sayfa iddiası: 'UPGRADE SEAMLESS CRAFT SOLVE SEE THROUGH ISSUES'
+ana_risk:     Ürün sayfasında yüksek kaliteli ve dayanıklı olduğu iddia ediliyor, ancak müşteriler kalitesiz ve yırtılan ürünler aldıklarını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri için 'Küçük, Orta, Büyük' gibi standart ifadeleri ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 12, 14: Bedenler doğru değil, küçük geliyor.
+  - [Kalite | değiştir] Kalite kontrol süreçlerini ve malzeme dayanıklılığını vurgulayan bir ifade ekleyin.
+      sayfa: 'High-Quality Women’s Athletic Clothing Sets' | müşteri: Yorum 1, 4, 8, 10, 11, 15: Ürün kalitesi düşük, yırtılıyor.
+  - [Malzeme | değiştir] Ürünün şeffaflık sorununu çözmek için kullanılan malzeme hakkında daha fazla bilgi verin.
+      sayfa: 'UPGRADE SEAMLESS CRAFT SOLVE SEE THROUGH ISSUES' | müşteri: Yorum 6, 7, 8, 13: Ürün şeffaf, iç çamaşırı görünüyor.

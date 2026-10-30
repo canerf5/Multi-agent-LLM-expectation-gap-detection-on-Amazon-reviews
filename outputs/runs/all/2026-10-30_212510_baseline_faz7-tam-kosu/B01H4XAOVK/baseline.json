@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "Durable"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Dayanıklılık iddiası var, ancak müşteriler ayakkabıların bir hafta içinde parçalandığını belirtiyor; beden kalıbı ile ilgili de uyumsuzluk yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Durable",
+      "musteri_deneyimi": "Yorum 1: Ayakkabılar bir hafta içinde parçalanmaya başladı.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık konusunda daha net bilgi ver; 'Yüksek dayanıklılık bekleniyor, ancak bazı kullanıcılar dayanıklılık sorunları bildirdi.'"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Ayakkabı yeterince geniş değil.",
+      "islem": "ekle",
+      "duzeltme": "Ayakkabı genişliği hakkında bilgi ekle; 'Dar kalıp; geniş ayaklar için önerilmez.'"
+    }
+  ]
+}

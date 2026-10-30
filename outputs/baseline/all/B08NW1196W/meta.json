@@ -1,0 +1,16 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [8]",
+    "Eksik Bilgi: en az 2 farklı destekleyen yorum gerekli, 1 var [7]",
+    "tek konu kuralı: yorum 8 hem Kalite hem Dayanıklılık için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08NW1196W",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 10,
+  "sure_duvar_sn": 12.311,
+  "time": "2026-10-30T18:52:42+00:00"
+}

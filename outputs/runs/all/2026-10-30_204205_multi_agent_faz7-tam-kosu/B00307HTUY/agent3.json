@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        4,
+        7
+      ],
+      "sayfa_iddiasi": "100% Leather"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "Non-slip outsole"
+    }
+  ],
+  "ana_risk": "Sayfada '100% Leather' ve 'Non-slip outsole' iddiaları var, ancak müşteriler kumaş kalitesinin kötü olduğunu ve ürünün kısa sürede bozulduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Leather",
+      "musteri_deneyimi": "Yorum 3, 4, 7: Kumaş kalitesi kötü, deri çatladı.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesinin yüksek olduğu bilgisi eklenmeli."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Non-slip outsole",
+      "musteri_deneyimi": "Yorum 5, 6: Ürün kısa sürede bozuldu.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha fazla bilgi verilmeli."
+    }
+  ]
+}

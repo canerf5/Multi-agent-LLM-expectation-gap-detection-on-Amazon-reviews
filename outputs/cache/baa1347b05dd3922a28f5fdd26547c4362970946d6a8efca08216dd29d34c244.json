@@ -1,0 +1,68 @@
+{
+  "tag": "agent2:B07W3Q1Y2X",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2866,
+    "output_tokens": 189,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0005433,
+  "sure_sn": 3.355,
+  "created": "2026-10-30T18:22:11+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Definitely for style and not comfort — Very cute shoes . Size runs about 1/2 size small. Not comfortable when I was walking from my car to the stadium.\n\n2) [2★] Very cute but runs small — Very cute but runs small. I ordered a 7 and it was too small. So I returned it for an 8 but th company still sent me an 7, and then told me they were out of size 8. Very dissatisfied since this was my daughters favorite Christmas gift and I wasn’t able to get her the right size!\n\n3) [2★] Cute, Not Comfortable — Within an hour of wearing these at a PSU game, I had 3 blisters and blood on the back of my ankles. Even now that they are “broken in,” I still will not wear them again because they hurt my feet due to lack of support. Additionally, the threads started pulling apart within hours. I got many compliments about how cute they were, but absolutely not worth the pain. Overall just poorly made shoes.\n\n4) [1★] Run Small: Uncomfortable — Although I get lot of compliments on these sneakers, they run small and are uncomfortable. I tolerate them by wearing them with ankle stockings. I cannot wear them with socks. I suggest buying a 1/2 size larger than usual.\n\n5) [1★] Nice looking, but not comfortable — Bought these for gift, liked really cool, she said real uncomfortable and stiff, returned for refund, the return process was real easy and they took back no problem I give customer service an A\n\n6) [2★] Way narrow — Narrow and my foots not wide .\n\n7) [1★] Wrong sizes — The fit was awful. I had to send back twice and just settle that my wife is going to be mad. I got for her for a gift and the shoes were tight for her and didn’t seem sized right. I sent back and tried another pair and had to send them back to. This is a product you will definitely have to play with sizes and doesn’t seem worth it.\n\n8) [1★] Loved them put they came in the wrong size. — There was a size 10 and a size 9 shoe in the box. The box said Ladies size 10.\n\n9) [1★] Very narrow — I could barely get my foot into the shoe as the width was extremely narrow. Not comfortable and I had to take them off after only 10 minutes. No not buy unless you wear an extra narrow shoe size.\n\n10) [1★] Huge disappointment & too narrow — Buy a size up and don’t wear them for too long, they are very uncomfortable\n\n11) [1★] Junk. — The first pair I ordered was too small, so I exchanged for a bigger size. I got them and in the WRONG team!! 😭 So now I'm done. And they don't look very well made considering how much they are.\n\n12) [1★] They run small. — Runs very small. 7 is 6 8 is 7 So, on so forth.\n\n13) [1★] Do not buy. They are defective. — Very mishapened. These are made wrong. One shoe is big and the other is to narrow. Definitely not worth the money!\n\n14) [1★] Returned twice — I received once and they are to small and info balls that were to small.I sent them back and two days later receive the exact same size and the bingo ball the exact same size What makes someone that if you send the same thing that the results will be different\n\n15) [1★] OMG THIS IS THE CHEAPEEEEEEEEST POS SHOE — THIS SHOE IS SO CHEAP, LIKE I ORDERED IT OFF OF WISH OR SOMETHING. DONT WASTE YOUR MONEY",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Numara küçük geliyor",
+        "yorum_numaralari": [
+          1,
+          2,
+          4,
+          7,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Dar kalıp",
+        "yorum_numaralari": [
+          6,
+          9,
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Kötü yapım, dikişler çekiliyor",
+        "yorum_numaralari": [
+          3,
+          5,
+          11,
+          13,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada doğru numara bilgisi yok",
+        "yorum_numaralari": [
+          8,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

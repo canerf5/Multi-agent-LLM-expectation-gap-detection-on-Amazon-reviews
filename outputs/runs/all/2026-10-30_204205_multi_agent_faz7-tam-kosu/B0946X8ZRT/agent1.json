@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "The printed button hats are soft, breathable and lightweight, friendly to your skin, bringing you a comfortable wearing experience.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "the caps with elastic band and adjustable back band design, make you adjust the tightness to fit for your head and different hairstyles, make sure comfort wearing experience all times, fits for most women and men",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "comes with 5 different pattern caps, cat, bear, rocket, etc., adorable and fashionable printed pattern make people feel happy",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "with built-in sweatbands across the front head part, can effectively absorb your sweat, keep your eyes away from sweat and keep you dry all the time",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "make you adjust the tightness to fit for your head and different hairstyles",
+      "iddia_turu": "somut"
+    }
+  ]
+}

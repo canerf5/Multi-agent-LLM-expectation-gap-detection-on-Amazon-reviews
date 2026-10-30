@@ -1,0 +1,31 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Bir ay içinde delik oluştu",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Nefes almıyor, kötü koku yapıyor",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Kaygan, kayma problemi var",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

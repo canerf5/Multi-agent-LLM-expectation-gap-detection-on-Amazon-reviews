@@ -1,0 +1,54 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "92% Modal, 8% Spandex Jersey",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Made from a luxurious 92% modal and 8% spandex blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "These boxer briefs feature an elastic waistband and a “no-ride” inseam.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "These boxers are incredibly durable and are highly fade resistant.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "You will not have to deal with uncomfortable bunching or irritation again.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "They are perfect for everyday wear!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Fabrics undergo thorough lab and field testing to ensure they meet the strictest performance requirements.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "A quick drying design that moves sweat away from your body to keep you cool and dry.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "They are perfect for working out, running, skiing, skateboarding, football, baseball, basketball, tennis, volleyball, soccer, hiking and more!",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B08HQ6VBFC
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 4, 5 | sayfa iddiası: 'We manufacture our tees to be the best super soft high quality shirts.'
+ana_risk:     Sayfa, yüksek kaliteli tişörtler vaat ediyor ancak müşteriler işçilik hataları ve baskı sorunları yaşıyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında işçilik kalitesi hakkında daha net bilgi verin ve baskı hataları ile ilgili uyarı ekleyin.
+      sayfa: 'We manufacture our tees to be the best super soft high quality shirts.' | müşteri: Yorum 1, 2, 4, 5: Üründe işçilik hatası var, baskı düzgün değil.

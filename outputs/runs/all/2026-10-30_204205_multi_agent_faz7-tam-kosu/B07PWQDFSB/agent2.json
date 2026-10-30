@@ -1,0 +1,33 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük geldi",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düşük kalite, düğmeler ilk günden çıktı",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Kırık fermuar, sadece iki kez giyildi",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

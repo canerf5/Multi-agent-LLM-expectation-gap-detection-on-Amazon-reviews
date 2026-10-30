@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Waterproof Breathable"
+    }
+  ],
+  "ana_risk": "Sayfa su geçirmezlik iddiasında bulunuyor, ancak müşteriler ürünün su geçirmediğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Waterproof Breathable",
+      "musteri_deneyimi": "Yorum 2, 3: Kumaş crinkly plastik ve nefes almaz; ürün su geçirmiyor.",
+      "islem": "değiştir",
+      "duzeltme": "Su geçirmezlik iddiasını gözden geçirerek, ürünün su geçirmediğine dair bilgi ekleyin."
+    }
+  ]
+}

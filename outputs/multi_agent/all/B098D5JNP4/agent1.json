@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "76% Rayon, 21% Nylon, 3% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Slim flattering fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "These will be your go-to pant for work, a casual outing, or a night out. They are extremely flattering on all shapes and sizes.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Easy to care for and affordable.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

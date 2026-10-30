@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "50% Waterproof Leather/50% Mesh",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "1.8mm leather and abrasion-resistant mesh upper",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "molded ethylene vinyl acetate midsole absorbs the pain",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "a cool, comfortable low-cut",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "functional, innovative and aesthetic footwear that performs to the highest standards",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "tag": "agent2:B07RLS1Q3R",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2907,
+    "output_tokens": 160,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00053205,
+  "sure_sn": 3.082,
+  "created": "2026-10-30T17:55:26+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Cheap made — Horrible fell apart after my grandson wore them teice\n\n2) [1★] Crap — The shoe comes way to small so you have to size up 2 sizes. And when your kids foot goes in the material spreads so much it looks like they have monster foot . Looks deformed ! So extremely cheep\n\n3) [1★] Had a hole pop out of the toe on day one. — Had a hole pop out of the toe on day one.\n\n4) [1★] At least 2 sizes too small — These sneakers were waaaaay too small for my son. He wears a size 5 youth and they barely fit my daughter who wears a size 3 youth.\n\n5) [1★] Only lasted 3 weeks before shoes got holes on them — I bought a pair for my 9 and 10 year old boys. The shoe only lasted 3 weeks before it got holes in the toes . Won’t buy another pair because of that reason.\n\n6) [1★] Couldn't even put them on because the opening is way too small and the fabric is way too tight. — We bought these a size larger than our 9 year old needed with the thought there would be room to grow into them, but the opening at the top of the shoe is so small and the fabric so tight that he couldn't get his foot into the shoe, even with an adult helping. Some of the photos I'm seeing in other reviews appear to be an entirely different type of shoe.\n\n7) [2★] Moderate — Not really true to size but my daughter loves them\n\n8) [1★] Junk don’t waste your $ — So cheaply made. Should return them.\n\n9) [2★] Cheap cheap cheap — Update: These lasted for only 2 months for my 8 year old with almost daily wear. They now have a hole in the toe. This is a $15 dollar value that they’re selling for $40, not cool. My Sonic the Hedgehog-loving son loves these shoes, too bad they probably won't last long. They are so cheaply made. The sole is so light it almost feels like plastic. The connection between the canvas and the sole likely won't last, it seems so flimsy how it's held together. I will update this after he wears them for a few months- assuming they last, which I doubt.\n\n10) [1★] It was a waste of money — After my son wore it a day, see how it looks like. Don’t waste your money buying this. I wish there is a way to give 0. This doesn’t deserve 1.\n\n11) [2★] Order a size down. I ordered a boys size 1 and they are more like a size 2. — Ill have to exchange them for the right size. These also have Yellow specks in the white soles. So too big and with defects.\n\n12) [1★] Horrible shoes — Shoes didn’t last 2weeks. Started unraveling material and the white part got mud on it and won’t come off. I’ve tried every cleaning product. Would never buy again.\n\n13) [2★] Didn’t last more than a couple weeks — Bought 2 pair for my 10 year old and both pairs only lasted a couple weeks, the soles wore out and holes in the toe area. They are not suitable for any level of activity. They looked awesome and and my son said the felt good but who cares if they only last a few weeks. Maybe ok for a house shoe or an adult who is not very active but they were definitely a waste of money for me.\n\n14) [1★] Waste of money — The shoes ripped out the toe area the first day my daughter got them. I would never buy this brand again.\n\n15) [1★] falls apart within a week — poor quality. the shoe fell apart within the first week. I bought this shoe for my six year old son. He is pretty active but not anymore than the average 6-year-old boy.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Ürün kısa sürede bozuluyor veya delik açılıyor.",
+        "yorum_numaralari": [
+          1,
+          3,
+          5,
+          12,
+          14,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ürün numarası beklenenden küçük.",
+        "yorum_numaralari": [
+          2,
+          4,
+          6,
+          10,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün kalitesi çok düşük, kötü işçilik.",
+        "yorum_numaralari": [
+          2,
+          8,
+          9,
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

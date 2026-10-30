@@ -1,0 +1,82 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar çok büyük geldi",
+      "yorum_numaralari": [
+        9,
+        11,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar garip bir şekle sahip",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar çok küçük geldi",
+      "yorum_numaralari": [
+        5,
+        7,
+        12,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Tabanları ince",
+      "yorum_numaralari": [
+        8,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Web sitesinde ayakkabı boyutu yoktu",
+      "yorum_numaralari": [
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürünün rengi fotoğraftakiyle uyuşmuyor",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi beklenenden düşük",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar yürüyen çocuklar için uygun değil",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

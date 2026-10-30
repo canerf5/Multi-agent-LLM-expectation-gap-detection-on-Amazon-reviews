@@ -1,0 +1,5 @@
+ASIN:         B004NNY4AW
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

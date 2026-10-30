@@ -1,0 +1,52 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5,
+        10,
+        11,
+        12,
+        13,
+        15
+      ],
+      "sayfa_iddiasi": "100% Polyester"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        14
+      ],
+      "sayfa_iddiasi": "Please order one size up if you are taller, stronger, or grows faster."
+    }
+  ],
+  "ana_risk": "Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaş kalitesinin kötü olduğunu belirtiyor; ayrıca bedenlerin küçük geldiği iddiası var, sayfada beden konusunda bir uyarı var.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Polyester",
+      "musteri_deneyimi": "Yorum 1, 5, 10, 11, 12, 13, 15: Kumaş kalitesi kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesinin düşük olduğu bilgisi eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Please order one size up if you are taller, stronger, or grows faster.",
+      "musteri_deneyimi": "Yorum 3, 4, 6, 8, 9, 14: Bedenler küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin küçük geldiği bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu eklenmeli."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Leather",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Fabric lining",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Their sole aim is to make a comfortable walking shoe.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

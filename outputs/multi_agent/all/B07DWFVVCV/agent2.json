@@ -1,0 +1,65 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar numara olarak küçük geldi.",
+      "yorum_numaralari": [
+        5,
+        11,
+        12,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar numara olarak büyük geldi.",
+      "yorum_numaralari": [
+        3,
+        4,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ayakkabının kalitesi kötü, destek yetersiz.",
+      "yorum_numaralari": [
+        6,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün teslim edilmedi.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ayakkabılar ucuz hissettiriyor.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar parmak ucunda dar.",
+      "yorum_numaralari": [
+        2,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

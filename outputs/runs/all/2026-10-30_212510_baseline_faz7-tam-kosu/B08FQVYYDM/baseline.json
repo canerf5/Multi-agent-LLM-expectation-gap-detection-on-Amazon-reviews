@@ -1,0 +1,65 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        5,
+        10,
+        12,
+        13,
+        14
+      ],
+      "sayfa_iddiasi": "NOTICE: Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        4,
+        8,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        6,
+        11
+      ],
+      "sayfa_iddiasi": "PREMIUM FABRIC: This funny mama long sleeve sweatshirt is made of cotton blend, super soft and comfortable to wear."
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesini ve beden uyumunu garanti ediyor; ancak müşteriler, ürünün kalitesiz olduğunu ve bedenlerin beklenenden küçük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "NOTICE: Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase.",
+      "musteri_deneyimi": "Yorum 5, 10, 12, 13, 14: Bedenler beklenenden küçük veya yanlış gönderilmiş.",
+      "islem": "değiştir",
+      "duzeltme": "Beden uyumu hakkında daha net bilgi ver; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notu ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4, 8, 15: Ürün kalitesiz, defolu veya hatalı geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasına kalite kontrolü hakkında bilgi ekle; 'Ürünlerimiz kalite kontrolünden geçmektedir, ancak herhangi bir sorunla karşılaşırsanız lütfen bizimle iletişime geçin.' yaz."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "PREMIUM FABRIC: This funny mama long sleeve sweatshirt is made of cotton blend, super soft and comfortable to wear.",
+      "musteri_deneyimi": "Yorum 1, 6, 11: Kumaş kalitesiz ve rahatsız.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın içeriği hakkında daha net bilgi ver; 'Kumaş karışımı %100 pamuk değil, %X oranında rayon içeriyor' notu ekle."
+    }
+  ]
+}

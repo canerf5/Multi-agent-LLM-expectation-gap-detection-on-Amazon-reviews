@@ -1,0 +1,47 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Soketler küçük geldi",
+      "yorum_numaralari": [
+        1,
+        4,
+        6,
+        5,
+        12,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Soketler çok ince",
+      "yorum_numaralari": [
+        2,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Topuk kısmı çok çabuk aşınıyor",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Gelen ürün fotoğraftakiyle aynı değil",
+      "yorum_numaralari": [
+        10,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

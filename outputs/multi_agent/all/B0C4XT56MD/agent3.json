@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "wide traditional belt with a tightening cord: for optimal support of the shorts around the waist."
+    }
+  ],
+  "ana_risk": "Sayfada 'optimal support of the shorts around the waist' iddiası var, ancak müşteriler beden ölçülerinin çok küçük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "wide traditional belt with a tightening cord: for optimal support of the shorts around the waist.",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Beden ölçüleri çok küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerinin küçük olduğu bilgisi eklenmeli; 'Beden ölçüleri normalden küçük, bir beden büyük almanız önerilir.'"
+    }
+  ]
+}

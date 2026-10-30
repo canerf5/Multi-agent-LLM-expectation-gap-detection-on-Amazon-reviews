@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Leather",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Genuine leather",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "A durable but very flexible contrasting rubber sole lends the shoe even more style & versatility.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "A stacked wooden heel provides good elevation & support.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "The fit and comfort This shoe offers are exceptional!",
+      "iddia_turu": "genel"
+    }
+  ]
+}

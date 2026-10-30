@@ -1,0 +1,19 @@
+ASIN:         B00307HTUY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 4, 5 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 4, 5, 7 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 7 | sayfa iddiası: '100% Leather'
+ana_risk:     Sayfa, '100% Leather' iddiasında bulunuyor ancak müşteriler derinin kalitesiz olduğunu ve çabuk çatladığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp ve oturuş hakkında bilgi ekleyin; 'kalıp büyük, açılış kısmı dar'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Kalıp büyük, açılış kısmı dar.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'kalite sorunları yaşanabilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5: Kalite düşük, çabuk bozuluyor.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında bilgi ekleyin; 'ürün kısa sürede bozulabilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 7: Ürün kısa sürede bozuluyor.
+  - [Malzeme | değiştir] Deri kalitesi hakkında daha net bilgi verin; 'deri kalitesi değişkenlik gösterebilir'.
+      sayfa: '100% Leather' | müşteri: Yorum 3, 7: Deri kalitesiz, çabuk çatlıyor.

@@ -1,0 +1,16 @@
+ASIN:         B075Y4GMW5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında beden ve kalıp bilgisi yok, ancak müşteriler ayakkabıların dar olduğunu ve ayaklarının sığmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'dar kalıp; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Ayakkabı dar, ayağı tam sığmıyor.
+  - [Kalite | ekle] Ürün sayfasına 'kalite garantisi yok; dikkatli kullanın' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Kalite çok kötü, dikişler açılıyor ve ürün hemen bozuluyor.
+  - [Dayanıklılık | ekle] Ürün sayfasına 'kısa süreli kullanım için uygundur; uzun süreli dayanıklılık beklemeyin' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ürün kısa sürede aşınıyor ve destek kayboluyor.

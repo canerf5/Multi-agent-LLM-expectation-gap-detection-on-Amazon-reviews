@@ -1,0 +1,16 @@
+ASIN:         B086ZWJ5PX
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4 | sayfa iddiası: 'The fit and comfort This shoe offers are exceptional!'
+  - Malzeme: yorum 2, 5 | sayfa iddiası: '100% Leather'
+  - Kalite: yorum 1, 2, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün konforlu ve iyi bir uyum sunduğunu iddia ediyor; ancak müşteriler, ayakkabıların rahatsız edici olduğunu ve kalitesiz bir deri kullandığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "Bu ayakkabılar dar kalıp ve uzun süreli kullanımda rahatsızlık verebilir" uyarısını ekle.
+      sayfa: 'The fit and comfort This shoe offers are exceptional!' | müşteri: Yorum 2, 3, 4: Ayakkabılar çok dar ve rahatsız.
+  - [Malzeme | değiştir] "Kullanılan derinin kalitesi değişkenlik gösterebilir; bazı kullanıcılar sertlikten şikayetçi olmuştur" notunu ekle.
+      sayfa: '100% Leather' | müşteri: Yorum 2, 5: Deri kalitesi kötü ve sert.
+  - [Kalite | ekle] "Ürün kalitesi hakkında daha fazla bilgi verin; kullanıcıların deneyimlerini yansıtacak bir uyarı ekleyin."
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 5: Ürün kalitesi beklenenden düşük.

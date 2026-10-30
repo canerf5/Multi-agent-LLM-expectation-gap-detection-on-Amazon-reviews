@@ -1,0 +1,16 @@
+ASIN:         B09TYMC6FS
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 2 | sayfa iddiası: 'This dressy dress make you shining, eye-catching and outstanding.'
+  - Malzeme: yorum 2, 4 | sayfa iddiası: 'The material is breathable and soft, has good stretch, lightweight fabric.'
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'The V-neck design and stretchy fit will perfectly highlight your beautiful neck and bodyline.'
+ana_risk:     Ürün sayfasında belirtilen görsel ve malzeme kalitesi ile müşterilerin aldığı ürün arasında büyük bir fark var; sayfada 'şık ve dikkat çekici' denirken, yorumlar 'ucuz ve rahatsız' diyor.
+öneriler:
+  - [Görsel | değiştir] Ürün görselinin gerçek durumu hakkında daha net bilgi ver.
+      sayfa: 'This dressy dress make you shining, eye-catching and outstanding.' | müşteri: Yorum 1, 2: Ürün fotoğraftaki gibi değil, gerçek görüntüsü çok farklı.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha gerçekçi bir açıklama ekle.
+      sayfa: 'The material is breathable and soft, has good stretch, lightweight fabric.' | müşteri: Yorum 2, 4: Malzeme kalitesi düşük, rahatsız edici ve çabuk yıpranıyor.
+  - [Beden/Kalıp | ekle] Kalıp hakkında 'normal bedenden bir beden küçük almanız önerilir' notunu ekle.
+      sayfa: 'The V-neck design and stretchy fit will perfectly highlight your beautiful neck and bodyline.' | müşteri: Yorum 3, 5: Kalıp dar, normal bedenden bir beden küçük alınması gerektiği belirtiliyor.

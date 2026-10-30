@@ -1,0 +1,13 @@
+ASIN:         B006Z62862
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining'
+ana_risk:     Su geçirmiyor iddiası var, ancak kullanıcılar su aldığını bildiriyor; ayrıca dar kalıp şikayeti de mevcut.
+öneriler:
+  - [Beden/Kalıp | ekle] Sayfaya 'Dar kalıp; bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Ayakkabı parmak kısmında çok dar geliyor.
+  - [Malzeme | değiştir] Sayfada 'Su geçirmiyor' ifadesinin yanına 'Bazı kullanıcılar su aldığını bildirmiştir' notu ekleyin.
+      sayfa: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining' | müşteri: Yorum 3: Su geçirmiyor denilen bot, su alıyor.

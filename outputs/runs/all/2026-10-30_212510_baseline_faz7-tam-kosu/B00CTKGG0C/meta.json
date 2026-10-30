@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles had no traction.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles had no traction.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [2]"
+  ],
+  "parent_asin": "B00CTKGG0C",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 3,
+  "sure_duvar_sn": 8.424,
+  "time": "2026-10-30T18:41:30+00:00"
+}

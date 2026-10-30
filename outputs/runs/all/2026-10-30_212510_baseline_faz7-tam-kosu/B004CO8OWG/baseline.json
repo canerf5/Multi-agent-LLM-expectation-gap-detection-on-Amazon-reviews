@@ -1,0 +1,57 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Renk",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "Colors for styles that come in packs of Assorted Colors may differ from color shown on photo."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden ve kalıp iddiası yok, ancak müşteriler ürünün küçük geldiğini belirtiyor; ayrıca malzeme içeriğiyle ilgili yanıltıcı bir durum var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Bedenler küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasına 'kalıp dar; bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "Colors for styles that come in packs of Assorted Colors may differ from color shown on photo.",
+      "musteri_deneyimi": "Yorum 2: Renk fotoğraftaki gibi değil.",
+      "islem": "değiştir",
+      "duzeltme": "Renk açıklamasını daha net hale getirin; 'Renkler, fotoğraftaki gibi olmayabilir' şeklinde güncelleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3: Ürün içeriği yanıltıcı; Modal yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasına malzeme içeriği hakkında daha net bilgi ekleyin; 'Ürün %95 pamuk, %5 spandeks içerir; Modal yoktur' şeklinde belirtin."
+    }
+  ]
+}

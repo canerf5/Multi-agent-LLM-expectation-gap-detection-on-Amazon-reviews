@@ -1,0 +1,115 @@
+{
+  "tag": "agent2:B01HF9ZNDC",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3256,
+    "output_tokens": 432,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0007476,
+  "sure_sn": 5.948,
+  "created": "2026-10-30T18:03:06+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Two Stars — Squeaked loudly. No reason to evaluate any other features at that point. Returned them the same day the arrived.\n\n2) [1★] The Merrill Moab 2 was uncomfortable — Trying the Merrill Moab 2 on, they felt pretty good however when I put my weight on them there was a slight bump in both shoes near the balls of my feet. So my feet didn't sit flat on the insole of the boot making them uncomfortable. I think that it has something to do with the tread design. Perhaps that's why this model was on sale. I returned them to Amazon.\n\n3) [1★] Dangerous \"hiking\" boots — These boots tripped me up. Hiking in Kanab, UT, coming downhill on a steep narrow switchback rocky path, the laces of one boot caught on the top HOOK (speed lace hook?) of the other boot, and face down I went. (Yes, both shoes were tied) Luckily I fell the right direction-- few feet more sideways would have been a rapid tumble down the side of the red rocks. WHY have SPEED HOOKs on the side of \"hiking\" boots? And why have the lacing holes on the boots so small that the laces won't go through without the tips (aglets), so that you need speed hooks? Not just catching a lace but even snagging threads on the pant leg. These hooks are handy, because they are so large, but dangerous because they are so large. (see the pics in the listing).\n\n4) [2★] Only way to get 12.5’s US M — Very smooth exterior...don’t have the suede look like any of the previous 12 pairs I have purchased through Merrel.\n\n5) [1★] Lasted six weeks! — These boots were delivered six weeks ago and I have worn them five times. One of the boots is already separating from the sole! I have been wearing Merrill boots for about 15 years, but lately they haven’t been holding up the way they used to. I frequently have to use Shoe Goo to glue them back together but six weeks is totally unacceptable!\n\n6) [2★] poorly made and leak — lasted three months and coming apart and leak\n\n7) [1★] Great initially, ultimately waste of money. — Great shoe initially, but after two months of wear, one of the eyelets ripped out of the boot simply tying my shoe. Two months of wear is all I get from these means these are a waste of money in my opinion. Something so simple should not wear out so early in use. I do expect about 500 miles or six months minimum from a hiking boot. Spend your money elsewhere.\n\n8) [2★] Fit. Wear. And hold up. — Came apart near the toe only after 48 days of use. Disappointing.\n\n9) [1★] Not waterproof and the company doesn’t help with this issue — Don’t buy if you’re looking for waterproof hiking boots.\n\n10) [1★] Not Out of the Box Comfort — I've worn Merrell Hiking Boots until the boot fell apart (usually years). The Merrell's wore well and they were my go to hiking book. These Merrell's are not the quality and comfort I've experienced before. I read the reviews and I tend to take the reviews with a grain of salt. The experience description on the review site is difficult to believe. \"Experience out-of-the-box comfort in this Gore-Tex hiker. With durable synthetic leather, a supportive footbed, and Vibram traction, all in a versatile package, you won't doubt why Moab stands for mother-of-all-boots.\" If you have a foot with no problems and can stand pain, then the Moab is for you.\n\n11) [1★] Disappointed — I have had several pair of Merrell shoes and boots. I wear a wide size, and though the width is tolerable, the boot is probably 2 sizes longer than normal. When hiking down hill my foot slides forward, causing my toes to jam painfully into the front of the boot. The design of the boot makes it impossible to get a snug, secure fit, regardless of how tight the laces are. I bought the Gore-tex model to keep my feet dry, but the first time I wore them I stepped into water about two inches deep, and my toes were wet within seconds. Merrell seems to have joined the many shoe makers that have decided to abandon all those great features that got people like me to buy their product.\n\n12) [1★] Most uncomfortable brand of shoe ever owned — This has nothing to do with seller no issues with the purchase. Has everything to to with the brand . I heard that Merrell was supposed to be a comfortable good shoe. Well I heard wrong! I went from wearing a leather Carhartt logging style work boot to these and couple months later with insoles that I bought still very uncomfortable. Unfortunately I bought two pairs one for work one for good. WILL NEVER BUY MERRELL AGAIN\n\n13) [2★] It’s like a high cut sneaker. — Too flimsy. I don’t believe water doesn’t get into your socks.\n\n14) [1★] It's not a waterproof shoes. Last week I hiked ... — It's not a waterproof shoes. Last week I hiked on lawn after rain, there was not ponding just wet. After 10 mins my socks complete wet inside.\n\n15) [2★] Not water proof or resistant. — They were pretty comfortable shoes, But they were not even remotely waterproof. I bought these for an outdoor job in lawn care. The very first time it rained my feet were soaked. Very disappointing considering how much they cost.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Altı haftada ayrılmaya başladı.",
+        "yorum_numaralari": [
+          5
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Üç ayda ayrılmaya ve sızdırmaya başladı.",
+        "yorum_numaralari": [
+          6
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "İki ayda bir gözlük düştü.",
+        "yorum_numaralari": [
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Su geçirmiyor.",
+        "yorum_numaralari": [
+          9,
+          11,
+          14,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "İki numara büyük geldi.",
+        "yorum_numaralari": [
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Konforlu değil, kalitesi düşmüş.",
+        "yorum_numaralari": [
+          10,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün fotoğraftaki gibi değil, çok ince.",
+        "yorum_numaralari": [
+          4
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Yüksek kesim spor ayakkabı gibi.",
+        "yorum_numaralari": [
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ayakkabılar rahat değil, ayaklarım düz oturmuyor.",
+        "yorum_numaralari": [
+          2
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Bağcıklar tehlikeli, takılıyor.",
+        "yorum_numaralari": [
+          3
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

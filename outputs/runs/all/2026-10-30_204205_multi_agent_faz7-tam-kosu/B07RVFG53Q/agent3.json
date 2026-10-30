@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "Size:S-XL."
+    }
+  ],
+  "ana_risk": "Sayfada 'Size:S-XL.' iddiası var, ancak kullanıcılar ürünün kısa geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size:S-XL.",
+      "musteri_deneyimi": "Yorum 2, 4: Kısa geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının daha geniş olduğunu belirtin; 'Kısa geldi' yorumlarına göre kalıp ayarlaması yapın."
+    }
+  ]
+}

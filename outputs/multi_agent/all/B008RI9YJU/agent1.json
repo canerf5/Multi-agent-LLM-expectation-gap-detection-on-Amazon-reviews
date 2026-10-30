@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Leather/Synthetic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Resalyte cushioning",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Removable footbed",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "the company's success stems from it's high quality, diversified, and affordable product line",
+      "iddia_turu": "genel"
+    }
+  ]
+}

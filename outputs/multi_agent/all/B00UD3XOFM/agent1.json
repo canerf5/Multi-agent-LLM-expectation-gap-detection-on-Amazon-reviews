@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Customized Big & Tall fit",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "soft elastic waistband",
+      "iddia_turu": "genel"
+    }
+  ]
+}

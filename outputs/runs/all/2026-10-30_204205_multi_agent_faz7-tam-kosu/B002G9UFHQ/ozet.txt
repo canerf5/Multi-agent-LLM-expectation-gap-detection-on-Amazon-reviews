@@ -1,0 +1,10 @@
+ASIN:         B002G9UFHQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 13, 14, 15 | sayfa iddiası: 'This shoe runs 2 sizes smaller than street shoe size'
+ana_risk:     Bu ayakkabı 2 beden küçük olduğu iddia ediliyor, ancak birçok müşteri ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden bilgisi olarak 'Bu ayakkabı sokak ayakkabı numarasından 2 beden küçük' ifadesini koruyun, ancak beden tablosunu daha açıklayıcı hale getirin.
+      sayfa: 'This shoe runs 2 sizes smaller than street shoe size' | müşteri: Yorum 1-15: Ürünler çok küçük, beklenenden dar.

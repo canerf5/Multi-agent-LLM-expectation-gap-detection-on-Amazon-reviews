@@ -1,0 +1,16 @@
+ASIN:         B09DGG5Z94
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 4, 5 | sayfa iddiası: 'The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more.'
+  - Kalite: yorum 3, 7 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olduğunu iddia ediyor; ancak müşteriler eldivenlerin ıslaklıkta işe yaramadığını belirtiyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olmadığını belirtin.
+      sayfa: 'The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more.' | müşteri: Yorum 4, 5: Eldivenler birkaç saat sonra tamamen ıslanıyor.
+  - [Kalite | ekle] Eldivenlerin su geçirmediği ve soğuk havalarda etkili olmadığı bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 7: Eldivenler su geçirmiyor, eller soğuk kalıyor.
+  - [Eksik Bilgi | ekle] Ürünün su geçirmezlik özelliği hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Açıklamada su geçirmezlik özelliği yoktu.

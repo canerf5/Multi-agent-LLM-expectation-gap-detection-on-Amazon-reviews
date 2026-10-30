@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Quick-Dry&Non-Slip: With hydrophobic mesh webbing upper for speed up drying and multi directional lug pattern for increased traction.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Closed Toe:This boys/girls sandals are designed With the covered toe,make surer your child on the go do not have to worry about watching their step.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Easy On and Off: With double adjustable hook-and-loop strap , your kids will be ready for anytime.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Great For: Performance plus style in a sandal that's all set for adventure.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

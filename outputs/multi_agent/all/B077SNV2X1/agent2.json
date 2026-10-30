@@ -1,0 +1,23 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ayakkabının tabanı tamamen yırtıldı.",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük, para israfı.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

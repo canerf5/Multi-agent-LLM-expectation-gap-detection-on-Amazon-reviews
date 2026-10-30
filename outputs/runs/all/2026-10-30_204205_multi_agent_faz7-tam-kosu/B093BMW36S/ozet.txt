@@ -1,0 +1,13 @@
+ASIN:         B093BMW36S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 10 | sayfa iddiası: 'Body: 90% Polyester, 10% Elastane; Lining: 90% Polyester, 10% Elastane'
+ana_risk:     Sayfa, kumaşın kalitesi hakkında bilgi veriyor ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenin büyük geldiği ve ölçülerin uyumsuz olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 5, 14: Beden büyük geldi, ölçüye uymuyor.
+  - [Malzeme | değiştir] Kumaşın kalitesiz olduğu bilgisi eklenmeli.
+      sayfa: 'Body: 90% Polyester, 10% Elastane; Lining: 90% Polyester, 10% Elastane' | müşteri: Yorum 3, 10: Kumaş ince ve kalitesiz.

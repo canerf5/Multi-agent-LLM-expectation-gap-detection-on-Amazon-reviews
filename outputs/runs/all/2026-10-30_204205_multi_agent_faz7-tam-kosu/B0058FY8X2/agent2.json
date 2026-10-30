@@ -1,0 +1,24 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Kötü beden uyumu",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada bel lastiği ve fermuar yoktu",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

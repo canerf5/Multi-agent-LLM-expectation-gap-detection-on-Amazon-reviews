@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        11,
+        15
+      ],
+      "sayfa_iddiasi": "Nylon,more durable and breathable."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        6,
+        9
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada 'Nylon, more durable and breathable.' iddiası var, ancak müşteriler malzemenin su geçirmediğini ve nefes almadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Nylon,more durable and breathable.",
+      "musteri_deneyimi": "Yorum 8, 11, 15: Kesinlikle su geçirmiyor, sadece rüzgar kesici.",
+      "islem": "değiştir",
+      "duzeltme": "Malzemenin su geçirmediği ve nefes almadığı bilgisini ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 12, 13: Çok kötü kalite, kalitesiz.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha net bilgi verin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 6, 9: Hemen su geçirdi, dayanıklı değil.",
+      "islem": "ekle",
+      "duzeltme": "Dayanıklılık hakkında bilgi ekleyin; ürünün uzun süreli kullanıma uygun olmadığını belirtin."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Topuk kısmı çok sert, zamanla rahatlamıyor.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "İlk kullanımda ayrılmaya başladı.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Parmak kısmı çok dar.",
+      "yorum_numaralari": [
+        5,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kullanılmış ayakkabı yeni olarak satıldı.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Müşteri hizmetleri hakkında bilgi yoktu.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "65% Polyester, 35% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "65 percent polyester/35 percent cotton poplin provides durable softness for all day comfort.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Wear-tested for quality and toughness, these machine-washable scrub pants have 2 front pockets, a triple cargo pocket with an ID bungee loop and hidden mesh cell phone pocket",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "high-quality medical uniforms",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "soft fabric and hem vents on these bottoms keep you feeling and looking good",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "trendy color options for any work shift",
+      "iddia_turu": "genel"
+    }
+  ]
+}

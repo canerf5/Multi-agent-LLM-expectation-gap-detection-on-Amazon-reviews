@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Material: 78% Cotton, 10% Nylon, 10% Polyester, 2% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft and warm materials, odor and wrinkle resistant, anti smell, stretchable and absorbent",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size suggestions: Men's 7-11.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Quarter length is designed to maximize blood circulation for your feet.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Machine Washable and dryable.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "100% SATISFACTION GUARANTEED.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

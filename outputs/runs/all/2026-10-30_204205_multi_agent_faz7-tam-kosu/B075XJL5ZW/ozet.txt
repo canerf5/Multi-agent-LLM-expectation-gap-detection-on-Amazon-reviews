@@ -1,0 +1,13 @@
+ASIN:         B075XJL5ZW
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 5, 3, 7, 8 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch'
+ana_risk:     Sayfa, beden kalıbı ile ilgili ölçü bilgisi verirken, kullanıcılar boyun kısmının rahatsız edici olduğunu belirtiyor; ayrıca kalite ile ilgili sorunlar da yaşanıyor.
+öneriler:
+  - [Kalite | ekle] Ürün açıklamasına 'Ürün yeni ve lekesizdir' ifadesi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Ürün lekeli ve kullanılmış geldi.
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında 'Boyun kısmı rahat bir oturuş sağlar' ifadesi eklenmeli.
+      sayfa: 'Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch' | müşteri: Yorum 1, 4: Boyun kısmı rahatsız ediyor.

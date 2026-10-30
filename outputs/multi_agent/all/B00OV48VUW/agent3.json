@@ -1,0 +1,29 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width."
+    }
+  ],
+  "ana_risk": "Sayfa, her bedene uygun kalıp geliştirdiğini iddia ediyor, ancak müşteriler geniş geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width.",
+      "musteri_deneyimi": "Yorum 1, 2, 3, 4: Geniş geldi, dar numara bekleniyordu.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kalıp genişliği hakkında bilgi verin; 'Bu model geniş kalıp olarak tasarlanmıştır.' ekleyin."
+    }
+  ]
+}

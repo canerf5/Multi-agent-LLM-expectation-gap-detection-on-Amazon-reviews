@@ -1,0 +1,48 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "sayfa_iddiasi": "Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        12,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün su geçirmez olduğunu iddia ediyor; ancak birçok müşteri, ayakkabıların su geçirmediğini ve bu nedenle ıslak ayaklarla geri döndüklerini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet.",
+      "musteri_deneyimi": "Yorum 1, 5, 6, 9, 10, 11: Su geçirmiyor, ıslak ayaklarla geri dönüldü.",
+      "islem": "değiştir",
+      "duzeltme": "Su geçirmezlik iddiasını gözden geçirerek, gerçek su geçirmezlik performansını belirtin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 12, 15: Bedenler küçük ve ağır, rahat değil.",
+      "islem": "ekle",
+      "duzeltme": "Beden ve kalıp hakkında daha net bilgi verin; 'Küçük kalıp, bir beden büyük almanız önerilir' gibi bir not ekleyin."
+    }
+  ]
+}

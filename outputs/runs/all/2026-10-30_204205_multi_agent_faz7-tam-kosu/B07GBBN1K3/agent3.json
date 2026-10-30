@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "100% Polyester"
+    }
+  ],
+  "ana_risk": "Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaşın şeffaf olduğunu ve sıcak havalar için uygun olmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Polyester",
+      "musteri_deneyimi": "Yorum 2, 3: Kumaş şeffaf ve sıcak havalar için uygun değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın şeffaf olduğu ve sıcak havalar için uygun olmadığı bilgisini ekleyin."
+    }
+  ]
+}

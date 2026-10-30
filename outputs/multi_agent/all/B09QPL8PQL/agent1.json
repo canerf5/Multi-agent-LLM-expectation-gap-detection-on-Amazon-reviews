@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "69% Polyamide, 31% Elastane; Lining: 64% Polyamide, 36% Elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Brushed Naked Feeling collection: Buttery soft fabric plus brushed handfeel, which is a little thick with enough compression.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "V-back design makes you look sexy and charming.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Spaghetti straps with metal buckle for personal fit.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Great for low to medium impact sports. Perfect for Piliate, Yoga, Gym workout, running or daily lounging.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Removable pads for flexible movement and moderate support.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

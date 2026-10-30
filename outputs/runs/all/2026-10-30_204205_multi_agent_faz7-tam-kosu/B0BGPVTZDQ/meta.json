@@ -1,0 +1,27 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 5 hem Beden/Kalıp hem Görsel için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B0BGPVTZDQ",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 14,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 10 birden fazla ilgili grupta (grup 1 ve 3)",
+    "yorum 8 birden fazla ilgili grupta (grup 2 ve 4)",
+    "yorum 5 birden fazla ilgili grupta (grup 2 ve 4)",
+    "yorum 14 birden fazla ilgili grupta (grup 3 ve 4)",
+    "yorum 2 birden fazla ilgili grupta (grup 3 ve 5)",
+    "yorum 3 birden fazla ilgili grupta (grup 2 ve 5)",
+    "yorum 4 birden fazla ilgili grupta (grup 3 ve 5)",
+    "yorum 10 birden fazla ilgili grupta (grup 3 ve 5)",
+    "yorum 11 birden fazla ilgili grupta (grup 1 ve 5)"
+  ],
+  "sure_duvar_sn": 18.683,
+  "time": "2026-10-30T17:51:59+00:00"
+}

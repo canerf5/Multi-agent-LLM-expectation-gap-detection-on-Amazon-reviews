@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        5,
+        11,
+        12,
+        15
+      ],
+      "sayfa_iddiasi": "ideal for those with medium arched feet / flat, ideal for those with moderate pronation"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        6,
+        14
+      ],
+      "sayfa_iddiasi": "the BioMoGo DNA midsole provides adaptive cushioning, while the Extended Progressive Diagonal Rollbar guarantees stability and comfort."
+    }
+  ],
+  "ana_risk": "Sayfa, 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' iddiasında bulunuyor, ancak müşteriler ayakkabıların kalıbının küçük olduğunu ve kalitesinin düştüğünü belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "ideal for those with medium arched feet / flat, ideal for those with moderate pronation",
+      "musteri_deneyimi": "Yorum 2, 5, 11, 12, 15: Ayakkabılar kalıp olarak küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında daha net bilgi ver; 'Bu model, normalde giydiğiniz numaradan bir beden büyük almanızı öneririz.' ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "the BioMoGo DNA midsole provides adaptive cushioning, while the Extended Progressive Diagonal Rollbar guarantees stability and comfort.",
+      "musteri_deneyimi": "Yorum 1, 6, 14: Ayakkabı kalitesi kötü, destek yetersiz.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha net bilgi ver; 'Son kullanıcı geri bildirimlerine göre, bu modelin kalitesi önceki modellerle karşılaştırıldığında düşmüş olabilir.' ekleyin."
+    }
+  ]
+}

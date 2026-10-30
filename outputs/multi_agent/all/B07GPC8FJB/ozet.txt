@@ -1,0 +1,10 @@
+ASIN:         B07GPC8FJB
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '95% Rayon, 5% Other Fibers'
+ana_risk:     Sayfa, ürünün %95 rayon olduğunu iddia ediyor; ancak müşteriler kumaşın sert olduğunu ve pilling yaptığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın pilling yapma özelliği ve sertliği hakkında bilgi ekleyin.
+      sayfa: '95% Rayon, 5% Other Fibers' | müşteri: Yorum 3, 4: Kumaş pilling yapıyor ve sert.

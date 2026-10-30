@@ -1,0 +1,57 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş su geçirmiyor, ayakkabılar ıslanıyor.",
+      "yorum_numaralari": [
+        1,
+        5,
+        6,
+        10,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenleri küçük veya dar geliyor.",
+      "yorum_numaralari": [
+        2,
+        3,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ayakkabılar uzun sürede kuruyor.",
+      "yorum_numaralari": [
+        3,
+        4,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Gönderilen ürün kullanılmıştı.",
+      "yorum_numaralari": [
+        13
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kullanılmış ürün"
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Kayma problemi var, alt tutuşu kötü.",
+      "yorum_numaralari": [
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

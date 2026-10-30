@@ -1,0 +1,5 @@
+ASIN:         B09QPL8PQL
+gap_var:      Evet
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

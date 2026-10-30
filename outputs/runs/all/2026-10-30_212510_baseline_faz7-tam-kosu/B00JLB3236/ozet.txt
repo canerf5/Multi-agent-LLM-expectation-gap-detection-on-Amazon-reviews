@@ -1,0 +1,10 @@
+ASIN:         B00JLB3236
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden uyumu ile ilgili bilgi vermiyor; müşteriler, ürünün beklenen kalitede olmadığını ve bedenlerin uyumsuz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden uyumu hakkında bilgi ekleyin; 'Bedenler standart ölçülerden farklılık gösterebilir, lütfen dikkat edin.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5, 6: Beden uyumu sorunları var.

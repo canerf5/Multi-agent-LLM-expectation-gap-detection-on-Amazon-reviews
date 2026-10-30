@@ -1,0 +1,13 @@
+ASIN:         B09PK1VGKH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 7 | sayfa iddiası: 'Please check our chart to find the size that suits you. Very suitable for narrow feet.'
+  - Malzeme: yorum 1, 5 | sayfa iddiası: 'The lace-up shoe upper is made of artificial PU material with an adjustable buckle.'
+ana_risk:     Sayfada ayakkabıların dar ayaklara uygun olduğu iddiası var, ancak birçok müşteri ayakkabıların çok büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek, 'Ayakkabılar normalden büyük kalıp, bir beden küçük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Please check our chart to find the size that suits you. Very suitable for narrow feet.' | müşteri: Yorum 2, 3, 4, 7: Ayakkabılar çok büyük geldi.
+  - [Malzeme | değiştir] Ürün açıklamasına 'Yüksek kaliteli yapay PU malzeme kullanılmıştır.' ifadesini ekleyin.
+      sayfa: 'The lace-up shoe upper is made of artificial PU material with an adjustable buckle.' | müşteri: Yorum 1, 5: Ayakkabının kalitesi çok düşük görünüyor.

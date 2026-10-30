@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Made of high quality cotton blend.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Breathable and sweat-absorbent to keep little girls warm inside and outside in this spring.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size - 0-6Months, 6-12 Months, 12-18 Months, 18-24 Months, 2T, 3T.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Full of sweet heart printed, so sweet!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "The straps are little longer because they designed to be crossed over at the back.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

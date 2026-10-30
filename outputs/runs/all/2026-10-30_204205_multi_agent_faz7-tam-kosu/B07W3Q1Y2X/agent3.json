@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        5,
+        11
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        8,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada malzeme ile ilgili somut bilgiler var, ancak müşteriler kalıp ve kalite sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 4: Numara küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbının dar olduğu ve numara seçiminde dikkat edilmesi gerektiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 5, 11: Kötü yapım, dikişler çekiliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dikiş kalitesi hakkında bilgi eklenmeli; dikişlerin sağlam olduğu belirtilmeli."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 8, 14: Açıklamada doğru numara bilgisi yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasında doğru numara bilgisi ve ölçü tablosu eklenmeli."
+    }
+  ]
+}

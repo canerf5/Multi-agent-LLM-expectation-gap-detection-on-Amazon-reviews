@@ -1,0 +1,13 @@
+ASIN:         B09PQDLRQZ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'Size & Care: Please refer to our SIZE CHART carefully before you order (Not Amazon size chart).'
+  - Malzeme: yorum 2, 3 | sayfa iddiası: 'Features: Textured pattern, knitted polo shirts, hollow out, material wicks sweat, 100% pre-shrunk, ribbed hem and cuff, classic fit, short sleeve, well elastic. No pilling and no wrinkling'
+ana_risk:     Ürün sayfasında beden ölçüleri hakkında bilgi var, ancak müşteriler bedenin küçük olduğunu belirtiyor; ayrıca malzeme ile ilgili şikayetler var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'Size & Care: Please refer to our SIZE CHART carefully before you order (Not Amazon size chart).' | müşteri: Yorum 1: Beden ölçüleri doğru değil, çok küçük geliyor.
+  - [Malzeme | değiştir] Malzemenin ince ve şeffaf olabileceğine dair uyarı ekleyin.
+      sayfa: 'Features: Textured pattern, knitted polo shirts, hollow out, material wicks sweat, 100% pre-shrunk, ribbed hem and cuff, classic fit, short sleeve, well elastic. No pilling and no wrinkling' | müşteri: Yorum 2, 3: Malzeme çok ince ve garip.

@@ -1,0 +1,10 @@
+ASIN:         B0BSBBCHRZ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'loose fit a-line flowy silhouette'
+ana_risk:     Sayfa, elbisenin kalıbının geniş ve dökümlü olduğunu iddia ediyor, ancak müşteriler elbisenin şekilsiz ve büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Elbisenin kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; 'Bedeninizden bir beden küçük almanız önerilir'.
+      sayfa: 'loose fit a-line flowy silhouette' | müşteri: Yorum 1, 3: Elbise tamamen şekilsiz ve büyük geldi.

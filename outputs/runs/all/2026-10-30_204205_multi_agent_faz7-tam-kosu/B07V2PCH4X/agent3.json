@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün malzeme kalitesi hakkında bilgi vermiyor; müşteriler ise ürünün bedeninin küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün numarası küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün bedeninin küçük geldiğine dair bilgi ekleyin."
+    }
+  ]
+}

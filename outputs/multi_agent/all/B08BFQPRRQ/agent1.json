@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "35% Polyester, 35% Acrylic, 30% Nylon",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Loose-Fit: designed for comfort",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "This top measures 23\"/58 cm",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "featuring a boxier fit with side slits and chunky rib detailing",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Chunky oversized horn buttons accent the V-neck closure",
+      "iddia_turu": "genel"
+    }
+  ]
+}

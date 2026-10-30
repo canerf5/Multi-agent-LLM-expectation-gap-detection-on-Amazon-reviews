@@ -1,0 +1,16 @@
+ASIN:         B07RRTPN6J
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 8 | sayfa iddiası: 'Suggest to choose a size up, cute and sexy.'
+  - Malzeme: yorum 1, 2, 6 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 4, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'bir beden büyük almanız önerilir' diyor; ancak birçok müşteri ürünün kalıbının küçük olduğunu, kumaşın ince ve kalitesinin düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp küçük; bir beden büyük almanız önerilir.
+      sayfa: 'Suggest to choose a size up, cute and sexy.' | müşteri: Yorum 3, 5, 8: Ürün kalıbı küçük, bir beden büyük almak gerekiyor.
+  - [Malzeme | ekle] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 6: Kumaş ince ve şeffaf.
+  - [Kalite | ekle] Ürün kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 5, 7: Ürün kalitesi düşük, hayal kırıklığı yarattı.

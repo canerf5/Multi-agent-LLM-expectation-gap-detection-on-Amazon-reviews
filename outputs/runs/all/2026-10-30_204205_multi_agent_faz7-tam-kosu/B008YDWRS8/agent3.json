@@ -1,0 +1,50 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        4,
+        7
+      ],
+      "sayfa_iddiasi": "Rubber sole"
+    }
+  ],
+  "ana_risk": "Dayanıklılık iddiası var, ancak kullanıcılar sole'ların ayrıldığını ve dayanıklılık sorunları yaşadıklarını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.",
+      "musteri_deneyimi": "Yorum 1, 2, 3, 5, 6, 8, 11, 14, 15: Sole'lar ayrılıyor ve dayanıklılık sorunları var.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık ile ilgili daha net bilgi verin; 'Sole'ların ayrılma riski vardır' uyarısını ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Rubber sole",
+      "musteri_deneyimi": "Yorum 4, 7: Kullanılan malzeme kalitesi düşük.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha net bilgi verin; 'Kullanılan malzeme kalitesi standartların altındadır' uyarısını ekleyin."
+    }
+  ]
+}

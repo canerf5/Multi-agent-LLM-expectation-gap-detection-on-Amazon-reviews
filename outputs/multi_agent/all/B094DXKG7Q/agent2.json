@@ -1,0 +1,41 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün delikli geldi.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Renk şeridi hatalı; kırmızı yerine morumsu/pembe var.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş ince ve kalitesiz.",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Büyük baldırlar için uygun değil.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

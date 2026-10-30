@@ -1,0 +1,23 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürün çok büyük geliyor, bir beden küçük alınmalı.",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün yıkandıktan sonra çok fazla küçülüyor ve iplikler çıkıyor.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

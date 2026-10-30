@@ -1,0 +1,67 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4,
+        10,
+        11,
+        15
+      ],
+      "sayfa_iddiasi": "we will be responsible for the end"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        5,
+        12,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        7,
+        8,
+        13
+      ],
+      "sayfa_iddiasi": "60% Nylon, 35% Polyester, 5% Spandex"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında kumaşın %60 Naylon, %35 Polyester ve %5 Spandeks olduğu belirtiliyor, ancak müşteriler kumaşın şeffaf olduğunu ve kalitenin düşük olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "we will be responsible for the end",
+      "musteri_deneyimi": "Yorum 1, 4, 10, 11, 15: Ürün kalitesi düşük, dikişler yırtılıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrolü yapıldığına dair bilgi ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3, 5, 12, 14: Bedenler küçük geliyor, yanlış beden gönderilmiş.",
+      "islem": "ekle",
+      "duzeltme": "Beden tablosu ekleyin ve bedenlerin küçük geldiğine dair uyarı yapın."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "60% Nylon, 35% Polyester, 5% Spandex",
+      "musteri_deneyimi": "Yorum 6, 7, 8, 13: Kumaş şeffaf, görünümde sorun var.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın şeffaf olabileceğine dair uyarı ekleyin."
+    }
+  ]
+}

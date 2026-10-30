@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada konfor sağlayan kaliteli malzemeler iddiası var, ancak kullanıcılar kötü kalite ve yapım hatası yaşadıklarını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Kötü kalite ve yapım hatası var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kalite kontrol süreçleri hakkında bilgi verin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 5, 6, 7: Ayakkabılar dar ve uyumsuz.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasına beden uyumu hakkında bilgi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir'."
+    }
+  ]
+}

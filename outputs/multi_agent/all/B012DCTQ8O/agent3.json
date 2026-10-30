@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4,
+        3,
+        9,
+        13
+      ],
+      "sayfa_iddiasi": "Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        12
+      ],
+      "sayfa_iddiasi": "100% PU Leather"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların kalıbı ve malzemesi hakkında yanıltıcı bilgiler veriyor; kullanıcılar ayakkabıların bir numara büyük geldiğini ve poliüretandan yapıldığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations.",
+      "musteri_deneyimi": "Yorum 1, 4, 3, 9, 13: Ayakkabılar bir numara büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfa üzerindeki beden tablosunu güncelleyerek, ayakkabıların bir numara büyük geldiğini belirtin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% PU Leather",
+      "musteri_deneyimi": "Yorum 8, 12: Ayakkabının üst kısmı deriden değil, poliüretandan yapılmış.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada malzeme bilgisi olarak '100% PU Leather' ifadesini 'Üst kısım poliüretan malzemeden yapılmıştır' şeklinde değiştirin."
+    }
+  ]
+}

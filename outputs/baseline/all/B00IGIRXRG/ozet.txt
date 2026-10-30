@@ -1,0 +1,13 @@
+ASIN:         B00IGIRXRG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 5, 6 | sayfa iddiası: "Fits men's shoe size 6-12"
+  - Kalite: yorum 1, 4 | sayfa iddiası: "The Fruit of the Loom men's socks are constructed for comfort and durability."
+ana_risk:     Sayfa, 6-12 numara ayaklar için uygun olduğunu iddia ediyor, ancak birçok müşteri bu çorapların küçük ve dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Çorapların kalıbının dar olduğu ve büyük ayak numaraları için uygun olmadığına dair uyarı ekle.
+      sayfa: "Fits men's shoe size 6-12" | müşteri: Yorum 2, 3, 5, 6: Çoraplar dar ve küçük geliyor.
+  - [Kalite | değiştir] Ürünün kalitesinin düşük olduğu ve çabuk yıpranabileceğine dair uyarı ekle.
+      sayfa: "The Fruit of the Loom men's socks are constructed for comfort and durability." | müşteri: Yorum 1, 4: Çoraplar çabuk yıpranıyor ve delik açıyor.

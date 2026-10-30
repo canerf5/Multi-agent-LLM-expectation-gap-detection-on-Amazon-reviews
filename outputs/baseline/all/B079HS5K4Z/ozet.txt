@@ -1,0 +1,16 @@
+ASIN:         B079HS5K4Z
+gap_var:      Evet
+gap_tipleri:  Kalite, Dayanıklılık, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 2, 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 1, 2, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 3, 4, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında kalite ve dayanıklılık ile ilgili bilgi yok, ancak müşteriler ürünün dikişlerinin ve malzemesinin kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Ürünün kalitesiz olduğu ve dikişlerin yırtılma riski taşıdığına dair uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 6, 7: Dikişler ve malzeme kalitesiz; ürün hemen yırtılıyor.
+  - [Dayanıklılık | ekle] Ürünün yalnızca kısa süreli etkinlikler için uygun olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 5, 6, 7: Ürün kısa süreli kullanıma uygun; dikişler ve malzeme çabuk bozuluyor.
+  - [Beden/Kalıp | ekle] Kalıp ve beden uyumu hakkında daha net bilgi verin; bel kısmının geniş olabileceğini belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5: Kalıp uzun; bel kısmı geniş, oturuşu beklenenden farklı.

@@ -1,0 +1,51 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Eller ıslak olduğunda eldivenler içine kolayca girilmiyor.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Eldivenler birkaç saat sonra tamamen ıslanıyor.",
+      "yorum_numaralari": [
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Küçük ve orta boy aynı boyda, her ikisi de çocuğuma büyük geldi.",
+      "yorum_numaralari": [
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Eldivenler su geçirmiyor, eller soğuk kalıyor.",
+      "yorum_numaralari": [
+        3,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada su geçirmezlik özelliği yoktu.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B08GFSLZ5R
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'Available as 3 size - S,M,L Suitable for 95% of adult men and women.'
+ana_risk:     Sayfa, 95% uyumlu beden aralığı sunduğunu iddia ediyor, ancak müşteriler ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek, 'Ürün kalıbı normalden küçük, 2 beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Available as 3 size - S,M,L Suitable for 95% of adult men and women.' | müşteri: Yorum 2, 3: Ürün çok küçük, 2 beden büyük alınmalı.

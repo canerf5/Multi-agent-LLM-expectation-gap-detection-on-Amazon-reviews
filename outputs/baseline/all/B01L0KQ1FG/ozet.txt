@@ -1,0 +1,13 @@
+ASIN:         B01L0KQ1FG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 9, 10, 11, 12, 14, 15 | sayfa iddiası: 'Relaxed fit'
+  - Malzeme: yorum 1, 4, 7 | sayfa iddiası: 'durable outdoor shirt, you have found it with the Wrangler authentic long sleeve canvas shirt.'
+ana_risk:     Sayfa, 'rahat oturuş' iddiasında bulunuyor ancak birçok müşteri bedenin küçük olduğunu ve hareket etmeye engel olduğunu belirtiyor; ayrıca 'dayanıklı dış mekan gömleği' iddiası var ama kumaş kalitesiz bulunuyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Rahat oturuş iddiasını gözden geçirerek, 'Beden küçük, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Relaxed fit' | müşteri: Yorum 2, 3, 9, 10, 11, 12, 14, 15: Beden küçük, rahat oturuş iddiası doğru değil.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Bu gömlek, dayanıklı dış mekan kullanımı için tasarlanmıştır ancak bazı kullanıcılar kumaş kalitesini yetersiz bulmuştur.' şeklinde bir not ekleyin.
+      sayfa: 'durable outdoor shirt, you have found it with the Wrangler authentic long sleeve canvas shirt.' | müşteri: Yorum 1, 4, 7: Kumaş kalitesiz, dayanıklı değil.

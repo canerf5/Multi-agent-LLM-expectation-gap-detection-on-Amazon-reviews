@@ -1,0 +1,13 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Kalite",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Yok",
+  "tip_gerekceleri": [],
+  "ana_risk": "",
+  "oneriler": []
+}

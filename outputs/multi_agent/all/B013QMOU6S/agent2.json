@@ -1,0 +1,26 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün kısa sürede bozuluyor.",
+      "yorum_numaralari": [
+        1,
+        2,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Numara uyumsuzluğu var.",
+      "yorum_numaralari": [
+        3,
+        4,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

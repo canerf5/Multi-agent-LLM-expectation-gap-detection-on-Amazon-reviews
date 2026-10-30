@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "3/4 flared sleeves with mesh patchwork design",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "strappy V neckline",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "PLUSH & COMFORTABLE HIGH-QUALITY MATERIAL - Taking it back to 1970's, 1980's and 1990's with the Retro Platform Loki."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "COZY SOFT FULL SHEEPSKIN LINING & FOOTBED: Our sheepskin lining regulates body temperature to keep your feet warm, and the comfort sheepskin footbed provides additional softness and reduces foot fatigue."
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün rahat ve kaliteli olduğu iddiasında bulunuyor; ancak müşteriler, yürümekte zorlandıklarını ve kalitesiz malzeme ile karşılaştıklarını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice.",
+      "musteri_deneyimi": "Yorum 1, 4: Yürümekte zorlanıyorlar ve kayma riski var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kalıp ve yürüyüş konforu hakkında daha net bilgi verin; 'kayma riski var' uyarısını ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "PLUSH & COMFORTABLE HIGH-QUALITY MATERIAL - Taking it back to 1970's, 1980's and 1990's with the Retro Platform Loki.",
+      "musteri_deneyimi": "Yorum 2, 5: Kalitesiz malzeme ve dikiş sorunları var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kalite kontrol süreçleri hakkında bilgi verin ve malzeme kalitesini vurgulayın."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "COZY SOFT FULL SHEEPSKIN LINING & FOOTBED: Our sheepskin lining regulates body temperature to keep your feet warm, and the comfort sheepskin footbed provides additional softness and reduces foot fatigue.",
+      "musteri_deneyimi": "Yorum 3, 5: Rahatlık bekleniyor ama malzeme kalitesi düşük.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kullanılan malzemelerin kalitesi hakkında daha fazla bilgi verin."
+    }
+  ]
+}

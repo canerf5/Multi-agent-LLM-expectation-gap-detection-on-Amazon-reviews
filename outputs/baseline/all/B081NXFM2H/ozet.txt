@@ -1,0 +1,16 @@
+ASIN:         B081NXFM2H
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice."
+  - Kalite: yorum 2, 5 | sayfa iddiası: "PLUSH & COMFORTABLE HIGH-QUALITY MATERIAL - Taking it back to 1970's, 1980's and 1990's with the Retro Platform Loki."
+  - Malzeme: yorum 3, 5 | sayfa iddiası: 'COZY SOFT FULL SHEEPSKIN LINING & FOOTBED: Our sheepskin lining regulates body temperature to keep your feet warm, and the comfort sheepskin footbed provides additional softness and reduces foot fatigue.'
+ana_risk:     Sayfa, ürünün rahat ve kaliteli olduğu iddiasında bulunuyor; ancak müşteriler, yürümekte zorlandıklarını ve kalitesiz malzeme ile karşılaştıklarını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp ve yürüyüş konforu hakkında daha net bilgi verin; 'kayma riski var' uyarısını ekleyin.
+      sayfa: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice." | müşteri: Yorum 1, 4: Yürümekte zorlanıyorlar ve kayma riski var.
+  - [Kalite | değiştir] Ürün sayfasında kalite kontrol süreçleri hakkında bilgi verin ve malzeme kalitesini vurgulayın.
+      sayfa: "PLUSH & COMFORTABLE HIGH-QUALITY MATERIAL - Taking it back to 1970's, 1980's and 1990's with the Retro Platform Loki." | müşteri: Yorum 2, 5: Kalitesiz malzeme ve dikiş sorunları var.
+  - [Malzeme | değiştir] Ürün sayfasında kullanılan malzemelerin kalitesi hakkında daha fazla bilgi verin.
+      sayfa: 'COZY SOFT FULL SHEEPSKIN LINING & FOOTBED: Our sheepskin lining regulates body temperature to keep your feet warm, and the comfort sheepskin footbed provides additional softness and reduces foot fatigue.' | müşteri: Yorum 3, 5: Rahatlık bekleniyor ama malzeme kalitesi düşük.

@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "100% Synthetic"
+    }
+  ],
+  "ana_risk": "Sayfada '100% Synthetic' iddiası var, ancak kullanıcılar topuk kısmındaki plastik nedeniyle zor giyme sorunuyla karşılaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Synthetic",
+      "musteri_deneyimi": "Yorum 2, 3: Topuk kısmındaki plastik zor giydiriyor.",
+      "islem": "değiştir",
+      "duzeltme": "Topuk kısmının giyimi kolaylaştıracak şekilde tasarlandığını belirtin."
+    }
+  ]
+}

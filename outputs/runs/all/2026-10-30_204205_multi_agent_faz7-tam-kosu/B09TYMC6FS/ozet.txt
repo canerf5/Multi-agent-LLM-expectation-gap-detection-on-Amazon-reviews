@@ -1,0 +1,16 @@
+ASIN:         B09TYMC6FS
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 4 | sayfa iddiası: '95% Polyester, 5% Spandex'
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün görseldeki gibi değil, kumaş kalitesi düşük ve rahatsız edici; beden ise küçük geliyor.
+öneriler:
+  - [Görsel | ekle] Ürün fotoğrafını gerçek ürüne uygun şekilde güncelle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün fotoğraftaki gibi değil.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'kalitesiz kumaş' ifadesini kaldır.
+      sayfa: '95% Polyester, 5% Spandex' | müşteri: Yorum 2, 4: Kumaş kalitesi düşük ve rahatsız edici.
+  - [Beden/Kalıp | ekle] Bedenin küçük geldiğine dair uyarı ekle; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Beden biraz küçük geliyor.

@@ -1,0 +1,16 @@
+ASIN:         B008RI9YJU
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 3, 7, 11, 13, 14 | sayfa iddiası: "the company's success stems from it's high quality, diversified, and affordable product line"
+  - Malzeme: yorum 5, 9, 15 | sayfa iddiası: '100% Leather/Synthetic'
+  - Beden/Kalıp: yorum 2, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kalitesi düşük olduğu ve kullanılan malzemenin kalitesiz olduğu iddia ediliyor, ancak müşteriler ürünün kalitesiz olduğunu ve çabuk yıprandığını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrol süreçlerinin iyileştirildiğine dair bilgi ekleyin.
+      sayfa: "the company's success stems from it's high quality, diversified, and affordable product line" | müşteri: Yorum 3, 7, 11, 13, 14: Ürün kalitesi düşük, çabuk yıpranıyor.
+  - [Malzeme | değiştir] Kullanılan malzemenin kalitesi hakkında daha fazla bilgi verin.
+      sayfa: '100% Leather/Synthetic' | müşteri: Yorum 5, 9, 15: Kullanılan malzeme ince ve kalitesiz.
+  - [Beden/Kalıp | ekle] Beden seçiminde bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 12: Numara küçük, dar geliyor.

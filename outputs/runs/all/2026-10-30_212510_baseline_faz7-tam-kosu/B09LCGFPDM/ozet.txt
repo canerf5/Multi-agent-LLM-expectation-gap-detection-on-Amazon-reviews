@@ -1,0 +1,16 @@
+ASIN:         B09LCGFPDM
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 3, 4, 5 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında kalite ve dayanıklılık ile ilgili bilgi yok, ancak müşteriler ürünün kalitesiz olduğunu ve dayanıklılığının düşük olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekleyin; 'Ürün kalitesizdir, straplar çabuk bozulabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 4, 5: Kalite düşük, straplar çalışmıyor, ürün ilk günden bozuldu.
+  - [Beden/Kalıp | ekle] Beden kalıbı hakkında bilgi ekleyin; 'Kalıp dar ve uzun, geniş ayaklı çocuklar için uygun olmayabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Beden kalıbı dar ve uzun, çocukların ayak şekline uygun değil.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Ürün kısa süreli kullanımlarda bozulabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ürün dayanıklı değil, kısa sürede bozuluyor.

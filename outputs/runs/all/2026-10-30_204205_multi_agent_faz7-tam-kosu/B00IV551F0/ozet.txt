@@ -1,0 +1,5 @@
+ASIN:         B00IV551F0
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

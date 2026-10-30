@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4,
+        11,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların küçük geldiğini ve kalitesiz olduğunu belirtiyor; ancak müşteriler, ürünün kalitesizliği ve yanlış beden bilgisi nedeniyle şikayet ediyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4, 11, 12: Ayakkabılar küçük geliyor, bir beden büyük alınması öneriliyor.",
+      "islem": "ekle",
+      "duzeltme": "\"Beden küçük geliyor; bir beden büyük almanız önerilir\" notunu ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 7, 10, 14: Kalite düşük, destek yok, ayakkabılar çabuk deforme oluyor.",
+      "islem": "ekle",
+      "duzeltme": "\"Kalite düşük; yeterli destek yok\" uyarısını ekle."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B07FVN4YW7
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Please check carefully with the size chart we provide before you place an order'
+  - Malzeme: yorum 3, 6 | sayfa iddiası: 'Patent Leather+Spandex'
+ana_risk:     Ürün bedeni çok küçük geldiği ve kumaş kalitesinin kötü olduğu belirtiliyor; sayfada beden kontrolü yapılması gerektiği ve malzeme olarak patent deri ve spandeks olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu daha belirgin hale getirerek, 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Please check carefully with the size chart we provide before you place an order' | müşteri: Yorum 1, 2: Ürün bedeni çok küçük geldi.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, dayanıklıdır' ifadesini gözden geçirin.
+      sayfa: 'Patent Leather+Spandex' | müşteri: Yorum 3, 6: Kumaş kalitesi kötü ve dayanıklı değil.

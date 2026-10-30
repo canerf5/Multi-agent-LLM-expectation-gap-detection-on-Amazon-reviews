@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Plush terry-cotton bathrobe for luxurious spa-like comfort at home or away; for men and women (unisex)",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Shawl collar ups the cozy factor; removable belt; 2 front pockets; machine washable",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+ASIN:         B07MPYQZ8L
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 10 | sayfa iddiası: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.'
+  - Malzeme: yorum 1, 4, 5, 10, 14 | sayfa iddiası: 'Soft and breathable material, provides you a comfortable feminine touch and comfortable feeling.'
+  - Kalite: yorum 1, 12, 15 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'yumuşak ve nefes alabilen malzeme' iddiasında bulunuyor, ancak müşteriler malzemenin sert ve rahatsız edici olduğunu belirtiyor; ayrıca beden rehberi de hatalı.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden rehberini gözden geçirerek daha doğru bilgiler ekleyin.
+      sayfa: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.' | müşteri: Yorum 3, 10: Beden rehberi hatalı, büyük geliyor.
+  - [Malzeme | değiştir] Malzeme ile ilgili daha doğru bilgi verin; 'sert ve rahatsız edici' olduğunu belirtin.
+      sayfa: 'Soft and breathable material, provides you a comfortable feminine touch and comfortable feeling.' | müşteri: Yorum 1, 4, 5, 10, 14: Malzeme sert, rahatsız edici ve nefes almaz.
+  - [Kalite | ekle] Kalite ile ilgili bilgi ekleyin; 'düşük kalite ve yıkama sonrası sorunlar yaşanabilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 12, 15: Kalite düşük, dikişler kötü, yıkama sonrası sorunlar var.

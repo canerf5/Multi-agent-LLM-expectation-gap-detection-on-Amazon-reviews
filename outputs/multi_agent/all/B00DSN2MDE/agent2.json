@@ -1,0 +1,77 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük, kısa sürede bozuluyor.",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        9,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Küçük ve dar geliyor.",
+      "yorum_numaralari": [
+        2,
+        7,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kullanılan malzeme kalitesiz ve dayanaksız.",
+      "yorum_numaralari": [
+        2,
+        6,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk beklenenden farklı ve hoş değil.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada kalite kontrol hakkında bilgi yok.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün görseldeki gibi değil.",
+      "yorum_numaralari": [
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi beklenenden düşük.",
+      "yorum_numaralari": [
+        8,
+        10,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

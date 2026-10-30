@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "95% Polyester, 5% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Suggest to choose a size up, cute and sexy.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Scalloped edge, ajustable spaghetti straps, v neckline plain crop camisole.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Slim fit basic solid crop sleeveless bralette shirt.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Basic crop top for all seasons, for spring and summer.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

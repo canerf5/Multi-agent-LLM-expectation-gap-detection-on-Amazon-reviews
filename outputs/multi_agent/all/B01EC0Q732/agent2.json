@@ -1,0 +1,50 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi kötü, rahat değil ve çabuk bozuluyor.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar çok büyük ve rahatsız.",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Yanlış ürün gönderildi, sipariş edilenle alakası yok.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün bekleneni karşılamıyor, rahatsız.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında yeterli bilgi yok.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

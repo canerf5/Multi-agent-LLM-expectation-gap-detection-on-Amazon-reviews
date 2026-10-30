@@ -1,0 +1,45 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Pls. Attention: These rain boots run a bit large, if you are not sure, please go down half size."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "The upper is made of natural plant rubber, which is environmentally friendly and has the advantages of resilience, insulation and water barrier."
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün genişlik ve kalitesine dair iddialarda bulunuyor; ancak müşteriler, ürünün genişliğinin yanlış olduğunu ve kalitesinin düşük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Pls. Attention: These rain boots run a bit large, if you are not sure, please go down half size.",
+      "musteri_deneyimi": "Yorum 3: Bu ayakkabı geniş değil, büyük parmaklarımı sıkıştırdı; Yorum 4: Beden doğru ama bu botlar aşırı geniş!",
+      "islem": "değiştir",
+      "duzeltme": "Genişlik konusunda daha net bilgi ver; 'Bu botlar geniş kalıp olarak tasarlanmıştır, ancak bazı kullanıcılar için dar gelebilir.' gibi bir not ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "The upper is made of natural plant rubber, which is environmentally friendly and has the advantages of resilience, insulation and water barrier.",
+      "musteri_deneyimi": "Yorum 1: İlk kullanımda sızdırdı; Yorum 2: İlk giyişte üst kısmı tamamen yırtıldı; Yorum 5: İkinci kez giyerken üst kısmı yırtıldı; Yorum 6: Kalite tanımı çok düşük, birkaç kullanımda yırtıldı.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha net bilgi ver; 'Bu botlar, dayanıklılık açısından test edilmiştir, ancak aşırı zor koşullarda kullanıldığında yıpranma riski vardır.' gibi bir not ekle."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Delightful details help you get into the Valentines Day spirit anywhere and everywhere!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "these plush materials are soft to the touch and will keep you warm during those cold winter months.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This whimsical costume makes a great prop for all lovey dovey events",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "wear this lips onesie, and show off your true holiday spirit!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "the loose fit gives you the flexibility to easily wear over your existing clothes or jacket.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Our union suits are machine washable, but we highly recommend your new onesie costume be hand washed and laid flat to dry before wearing.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

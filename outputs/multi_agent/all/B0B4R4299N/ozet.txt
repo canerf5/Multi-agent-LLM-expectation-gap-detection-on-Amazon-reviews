@@ -1,0 +1,16 @@
+ASIN:         B0B4R4299N
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 2, 3 | sayfa iddiası: 'Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic.'
+  - Malzeme: yorum 1, 2, 3 | sayfa iddiası: '65% Cotton /35% Polyester'
+  - Renk: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün görseldeki tasarıma, kumaş kalitesine ve renk iddialarına dair şikayetler var; fotoğraftaki görünüm, kumaş kalitesi ve renk hakkında sorunlar yaşanıyor.
+öneriler:
+  - [Görsel | değiştir] Ürün fotoğraflarını güncelleyerek gerçek görünümünü yansıtın.
+      sayfa: 'Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic.' | müşteri: Yorum 1, 2, 3: Ürün fotoğraftaki görünümden farklı.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini gözden geçirin.
+      sayfa: '65% Cotton /35% Polyester' | müşteri: Yorum 1, 2, 3: Kumaş ince ve kalitesiz görünüyor.
+  - [Renk | ekle] Renk kalitesi hakkında bilgi ekleyin; 'Renk fotoğraftakinden farklı ve soluk' ifadesini dikkate alın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Renk fotoğraftakinden farklı ve soluk.

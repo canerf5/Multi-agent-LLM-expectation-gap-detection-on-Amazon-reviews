@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton-canvas webbing",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "EVA-foam sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Classic thong sandal featuring striped canvas straps and soft footbed",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Teva is an authentic icon in the outdoor industry.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Teva pioneered the sport-sandal category.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Providing positive contributions to the world in which we play is at the core of everything Teva stands for.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Teva supports the outdoor athletic lifestyle and remains committed to innovation in outdoor performance footwear.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalıp ve malzeme kalitesi hakkında bilgi vermiyor; müşteriler kalıbın dar olduğunu ve kalitesiz malzeme kullandığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Kalıp dar; bir beden büyük alın.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 5: Kalite düşük; dikişler kötü.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha net bilgi verin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4: Malzeme ince ve kalitesiz.",
+      "islem": "ekle",
+      "duzeltme": "Kullanılan malzeme hakkında bilgi ekleyin; ince ve kalitesiz olduğu belirtiliyor."
+    }
+  ]
+}

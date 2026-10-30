@@ -1,0 +1,16 @@
+ASIN:         B014CJQIH8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'Regular trim with modern cut fit, good quality warm overcoat,Wool Blend Fabric, and making style make you feel good and comfortable when wearing.'
+  - Renk: yorum 3, 8 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 5, 7 | sayfa iddiası: 'Provides the finest and most stylish Coat which can be worn during spring and winter seasons.'
+ana_risk:     Ürün sayfasında belirtilen 'modern kesim' ve 'iyi kalite' iddiaları, müşterilerin büyük beden ve düşük kalite şikayetleriyle çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp büyük; bir beden küçük almanız önerilir.
+      sayfa: 'Regular trim with modern cut fit, good quality warm overcoat,Wool Blend Fabric, and making style make you feel good and comfortable when wearing.' | müşteri: Yorum 2, 4: Çok büyük geldi, kalıbı kötü.
+  - [Renk | ekle] Ürün açıklamasına 'Renk, görseldeki gibi olmayabilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 8: Renk görseldeki gibi değil, tek ton gri geldi.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi verin; 'Düğmelerin sağlamlığı garanti edilmez' gibi bir not ekleyin.
+      sayfa: 'Provides the finest and most stylish Coat which can be worn during spring and winter seasons.' | müşteri: Yorum 5, 7: Kalite düşük, düğme koptu, malzeme kötü.

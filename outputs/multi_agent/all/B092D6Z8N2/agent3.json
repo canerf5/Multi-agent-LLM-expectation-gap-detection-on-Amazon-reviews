@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "95% Polyester, 5% Elastane"
+    }
+  ],
+  "ana_risk": "Malzeme iddiası var, ancak müşteriler çorapların teri emmediğini ve kötü koku yaptığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "95% Polyester, 5% Elastane",
+      "musteri_deneyimi": "Yorum 4, 9, 10, 11, 14: Çoraplar teri ememiyor, kötü koku yapıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında 'Çoraplar teri ememiyor, kötü koku yapıyor' şeklinde bir uyarı ekleyin."
+    }
+  ]
+}

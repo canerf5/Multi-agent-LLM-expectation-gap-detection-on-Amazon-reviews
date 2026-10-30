@@ -1,0 +1,13 @@
+ASIN:         B07PSM8XXG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5 | sayfa iddiası: 'Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.'
+  - Malzeme: yorum 9, 10 | sayfa iddiası: 'Rubber sole'
+ana_risk:     Metatomical Footbed Design iddiası var, ancak 4 farklı yorum kalıbın küçük veya büyük geldiğini belirtiyor; ayrıca Rubber sole iddiası var ama 2 yorum malzemenin sert ve destekleyici olmadığını söylüyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.' | müşteri: Yorum 1, 2, 4, 5: Küçük veya büyük geliyor.
+  - [Malzeme | değiştir] Ürün sayfasında malzeme hakkında 'kullanılan kauçuk taban serttir ve yeterli destek sağlamayabilir' ifadesi ekleyin.
+      sayfa: 'Rubber sole' | müşteri: Yorum 9, 10: Sert ve destekleyici değil.

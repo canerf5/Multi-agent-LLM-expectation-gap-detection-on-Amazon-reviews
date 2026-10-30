@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [2]"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08VSG8YY2",
+  "split": "gold",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 3,
+  "agent1_uyarilari": [
+    "beklenti 4: iddia sayfada birebir geçmiyor: 'Relaxed fit. Open collar Chest pocket. Straight hem with sid'"
+  ],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 12.978,
+  "time": "2026-10-30T17:43:46+00:00"
+}

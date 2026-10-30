@@ -1,0 +1,10 @@
+ASIN:         B078PP6525
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 15 | sayfa iddiası: 'slim fit'
+ana_risk:     Sayfada 'slim fit' iddiası var, ancak birçok müşteri ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'slim fit' ifadesinin yanına 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'slim fit' | müşteri: Yorum 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 15: Çok küçük geldi, beklenen bedenden daha dar.

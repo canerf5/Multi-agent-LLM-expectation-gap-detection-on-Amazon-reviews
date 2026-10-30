@@ -1,0 +1,13 @@
+ASIN:         B0B81XVL8S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4 | sayfa iddiası: 'Sizes 8-22.'
+  - Kalite: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında belirtilen beden aralığı ile müşterilerin yaşadığı beden uyumsuzluğu var; ayrıca kalite ile ilgili sorunlar da mevcut.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosu ekleyin ve kalıbın dar olduğu bilgisini verin.
+      sayfa: 'Sizes 8-22.' | müşteri: Yorum 4: 2-3 beden büyük alınmalı.
+  - [Kalite | ekle] Ürünün kalite kontrolü hakkında bilgi verin ve lekeli ürün gönderimi ile ilgili uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün lekeli geldi ve kalitesi düşük.

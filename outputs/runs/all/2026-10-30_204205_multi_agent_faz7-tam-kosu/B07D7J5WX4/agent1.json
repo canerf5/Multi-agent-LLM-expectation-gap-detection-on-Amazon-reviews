@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Made with premium quality light weight and durable material",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material: Silicone",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size: Large",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "Color: Green",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Half finger design preserves lever feel",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Friction gel pads on palms provide just the right amount of cushioning while feeling the road through the bars for best comfort and durability",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Can be used in many outdoor/indoor exercise activities such as cycling, fitness workout, gym, lifting, mountain climbing, boating, fishing, hiking, kayaking, etc.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

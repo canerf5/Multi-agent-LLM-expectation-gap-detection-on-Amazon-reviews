@@ -1,0 +1,16 @@
+ASIN:         B006Z62862
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining'
+ana_risk:     Sayfa, su geçirmezlik iddiasında bulunuyor ancak müşteriler bu ürünün su geçirdiğini belirtiyor; ayrıca kalıp dar olduğu ve dayanıklılığının yetersiz olduğu şikayetleri var.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Ayakkabı burun kısmı çok dar geliyor.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Ürün, uzun süreli kullanıma uygun değildir' gibi bir uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Altı haftada dikişleri açılmaya başladı.
+  - [Malzeme | değiştir] Su geçirmezlik iddiasını gözden geçirin; 'Su geçirmez' ifadesinin doğruluğunu kontrol edin.
+      sayfa: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining' | müşteri: Yorum 3: Su geçirmez olduğu iddia ediliyor ama su geçirdi.

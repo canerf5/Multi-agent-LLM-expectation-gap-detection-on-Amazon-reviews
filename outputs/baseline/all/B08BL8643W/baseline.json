@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4,
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "High quality spandex provides excellent stretch and comfortable fit"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        3,
+        5,
+        9
+      ],
+      "sayfa_iddiasi": "Premium Cotton Material provides excellent moisture management, and maximized breathability, providing a pleasant wear experience all day"
+    }
+  ],
+  "ana_risk": "Kalite ve dayanıklılık iddiaları var, ancak müşteriler ürünün kalitesiz olduğunu ve çabuk yıprandığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "High quality spandex provides excellent stretch and comfortable fit",
+      "musteri_deneyimi": "Yorum 2, 4, 10, 14: Kalite kötü, dikişler çarpık ve çabuk yıpranıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrolü yapıldığına dair bilgi ekleyin ve ürünün kalitesini artırmak için geliştirmeler yapıldığını belirtin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Premium Cotton Material provides excellent moisture management, and maximized breathability, providing a pleasant wear experience all day",
+      "musteri_deneyimi": "Yorum 1, 3, 5, 9: Ürün çabuk yıpranıyor, delik açılıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi verin ve kullanıcıların beklentilerini karşılayacak şekilde geliştirin."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B091RLYWYJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5 | sayfa iddiası: 'Comfortable two lip lace up sneaker'
+ana_risk:     Sayfa, rahat bir sneaker vaat ediyor; ancak müşteriler kalıbın çok dar olduğunu ve beklediklerinden küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Comfortable two lip lace up sneaker' | müşteri: Yorum 1, 2, 3, 4, 5: Kalıp çok dar ve küçük geliyor.

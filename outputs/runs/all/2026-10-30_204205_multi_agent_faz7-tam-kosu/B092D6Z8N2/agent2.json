@@ -1,0 +1,58 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün hasarlı geldi.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Sıcak havalarda ayakları daha fazla terletiyor.",
+      "yorum_numaralari": [
+        2,
+        6,
+        13,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Soket çorap değil, diz üstü gibi uzuyor.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Çoraplar çok sıkı, yırtılıyor.",
+      "yorum_numaralari": [
+        5,
+        8,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Çoraplar teri ememiyor, kötü koku yapıyor.",
+      "yorum_numaralari": [
+        4,
+        9,
+        10,
+        11,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

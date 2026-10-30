@@ -1,0 +1,16 @@
+ASIN:         B013QMOU6S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 6 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 2 | sayfa iddiası: 'A cool, comfortable low-cut, ready to bang out a 40-minute speed-hike after work or just keep track of the kids on the weekend.'
+  - Dayanıklılık: yorum 1, 5 | sayfa iddiası: "A molded ethylene vinyl acetate midsole absorbs the pain so you'll return to the trailhead with a little gas in the tank."
+ana_risk:     Beden ve kalıp konusunda sorunlar var; sayfada bu konuda bilgi yok, ancak müşteriler yanlış beden ve dar kalıp şikayetinde bulunuyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 6: Bedenler küçük geliyor ve kalıp dar.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi ver.
+      sayfa: 'A cool, comfortable low-cut, ready to bang out a 40-minute speed-hike after work or just keep track of the kids on the weekend.' | müşteri: Yorum 1, 2: Kalite sorunları var, çabuk aşınıyor.
+  - [Dayanıklılık | değiştir] Ürün dayanıklılığı hakkında daha net bilgi ver.
+      sayfa: "A molded ethylene vinyl acetate midsole absorbs the pain so you'll return to the trailhead with a little gas in the tank." | müşteri: Yorum 1, 5: Ürün dayanıklılığı düşük, çabuk bozuluyor.

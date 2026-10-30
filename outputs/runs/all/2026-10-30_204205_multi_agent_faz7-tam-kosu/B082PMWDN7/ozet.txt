@@ -1,0 +1,10 @@
+ASIN:         B082PMWDN7
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak müşteriler kumaşın ince ve şeffaf olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 2: Kumaş ince ve delikli, kumaş ucuz ve şeffaf.

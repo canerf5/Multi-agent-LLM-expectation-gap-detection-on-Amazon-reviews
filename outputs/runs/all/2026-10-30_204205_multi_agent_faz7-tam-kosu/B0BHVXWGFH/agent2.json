@@ -1,0 +1,52 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük geldi ve yanlış beden gönderildi.",
+      "yorum_numaralari": [
+        1,
+        6,
+        11,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Fotoğraftaki ürünle alakası yok.",
+      "yorum_numaralari": [
+        2,
+        3,
+        7,
+        10,
+        12,
+        13,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kötü kalite, dikişler ve malzeme sorunlu.",
+      "yorum_numaralari": [
+        4,
+        5,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Esnek değil, beklenenden farklı.",
+      "yorum_numaralari": [
+        8,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

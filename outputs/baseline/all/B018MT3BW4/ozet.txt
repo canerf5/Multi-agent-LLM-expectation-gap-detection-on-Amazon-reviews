@@ -1,0 +1,13 @@
+ASIN:         B018MT3BW4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 10, 11 | sayfa iddiası: 'Kids Version Of Our Adult BDU Pants'
+  - Eksik Bilgi: yorum 9, 12, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında belirtilen bedenlerin doğru olmadığı ve müşterilerin ürünün yalnızca pantolon olduğunu düşünerek aldıkları için hayal kırıklığı yaşadığı belirtiliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin doğru olmadığını belirtin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'Kids Version Of Our Adult BDU Pants' | müşteri: Yorum 2, 4, 5, 6, 10, 11: Bedenler belirtilen ölçülerden daha küçük geliyor.
+  - [Eksik Bilgi | ekle] Ürün açıklamasına 'Bu ürün yalnızca pantolon içerir, üst parça dahil değildir.' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 9, 12, 14: Ürün yalnızca pantolon, üst parça yok; açıklamada bu bilgi yok.

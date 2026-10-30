@@ -1,0 +1,64 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "sayfa_iddiasi": "An exaggerated fit that feels extra roomy."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        9
+      ],
+      "sayfa_iddiasi": "Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3,
+        8,
+        10
+      ],
+      "sayfa_iddiasi": "Zipper closure"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesinin yüksek olduğunu ve rahat bir oturuş sunduğunu vaat ediyor; ancak müşteriler, dikiş kalitesi ve malzeme ile ilgili ciddi sorunlar yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "An exaggerated fit that feels extra roomy.",
+      "musteri_deneyimi": "Yorum 2, 4, 5, 7, 8: Ürün kalıbı beklenenden kısa ve uyumsuz.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında daha net bilgi ver; 'Kalıbı normalden kısa, bir beden büyük almanız önerilir.' ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.",
+      "musteri_deneyimi": "Yorum 6, 9: Malzeme kalitesi beklenenden düşük, sentetik bir kumaş.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme hakkında daha net bilgi ver; 'Kumaş %90 polyester, %10 spandex'tir.' ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Zipper closure",
+      "musteri_deneyimi": "Yorum 1, 3, 8, 10: Dikiş ve fermuar kalitesi düşük, ürün kullanılamaz hale geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrolü hakkında bilgi ekleyin; 'Ürünlerimizde kalite kontrolü yapılmaktadır, ancak sorun yaşarsanız iade edebilirsiniz.' yazın."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "Boot opening measures approximately 10.75\" around"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesiz olduğunu ve yanlış ürün gönderildiğini belirten yorumlarla çelişiyor; sayfada bu konuda bilgi yok.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Boot opening measures approximately 10.75\" around",
+      "musteri_deneyimi": "Yorum 3, 5: Kalıp dar; bir beden büyük alınması öneriliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 1: Ürün kalitesiz; tabanlar hızlıca aşındı ve ürün kötü.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında bilgi ekleyin; tabanların dayanıklılığı hakkında uyarı ekleyin."
+    }
+  ]
+}

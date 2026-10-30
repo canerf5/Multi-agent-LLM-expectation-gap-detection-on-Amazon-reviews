@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "The silk satin material is highly breathable, which helps regulate your body temperature throughout the night."
+    }
+  ],
+  "ana_risk": "Beden ve kalıp ile ilgili sorunlar var; sayfa, beden ölçüleri hakkında bilgi vermiyor ama yorumlar küçük ve büyük beden sorunlarını dile getiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Bedenler küçük ve büyük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri hakkında bilgi ekleyin; örneğin, 'Küçük beden 34-36, Orta beden 38-40' gibi."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "The silk satin material is highly breathable, which helps regulate your body temperature throughout the night.",
+      "musteri_deneyimi": "Yorum 1, 4: Kalite beklentileri karşılamıyor, dikişler rahatsız ediyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha net bilgi verin; örneğin, 'Dikişlerin rahatlığı artıracak şekilde tasarlandığını belirtin.'"
+    }
+  ]
+}

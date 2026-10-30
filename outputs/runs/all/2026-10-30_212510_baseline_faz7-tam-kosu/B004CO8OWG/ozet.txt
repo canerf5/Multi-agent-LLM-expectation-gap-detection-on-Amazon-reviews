@@ -1,0 +1,16 @@
+ASIN:         B004CO8OWG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+  - Renk: yorum 2 | sayfa iddiası: 'Colors for styles that come in packs of Assorted Colors may differ from color shown on photo.'
+  - Malzeme: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalıp iddiası yok, ancak müşteriler ürünün küçük geldiğini belirtiyor; ayrıca malzeme içeriğiyle ilgili yanıltıcı bir durum var.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'kalıp dar; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Bedenler küçük geliyor.
+  - [Renk | değiştir] Renk açıklamasını daha net hale getirin; 'Renkler, fotoğraftaki gibi olmayabilir' şeklinde güncelleyin.
+      sayfa: 'Colors for styles that come in packs of Assorted Colors may differ from color shown on photo.' | müşteri: Yorum 2: Renk fotoğraftaki gibi değil.
+  - [Malzeme | ekle] Ürün sayfasına malzeme içeriği hakkında daha net bilgi ekleyin; 'Ürün %95 pamuk, %5 spandeks içerir; Modal yoktur' şeklinde belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Ürün içeriği yanıltıcı; Modal yok.

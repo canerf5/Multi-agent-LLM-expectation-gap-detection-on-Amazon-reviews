@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "Size & Care: Please refer to our SIZE CHART carefully before you order (Not Amazon size chart)."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Features: Textured pattern, knitted polo shirts, hollow out, material wicks sweat, 100% pre-shrunk, ribbed hem and cuff, classic fit, short sleeve, well elastic. No pilling and no wrinkling"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında beden ölçüleri hakkında bilgi var, ancak müşteriler bedenin küçük olduğunu belirtiyor; ayrıca malzeme ile ilgili şikayetler var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size & Care: Please refer to our SIZE CHART carefully before you order (Not Amazon size chart).",
+      "musteri_deneyimi": "Yorum 1: Beden ölçüleri doğru değil, çok küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Features: Textured pattern, knitted polo shirts, hollow out, material wicks sweat, 100% pre-shrunk, ribbed hem and cuff, classic fit, short sleeve, well elastic. No pilling and no wrinkling",
+      "musteri_deneyimi": "Yorum 2, 3: Malzeme çok ince ve garip.",
+      "islem": "değiştir",
+      "duzeltme": "Malzemenin ince ve şeffaf olabileceğine dair uyarı ekleyin."
+    }
+  ]
+}

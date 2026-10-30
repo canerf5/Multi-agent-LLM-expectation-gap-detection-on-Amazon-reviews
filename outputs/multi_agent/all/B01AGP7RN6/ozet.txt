@@ -1,0 +1,10 @@
+ASIN:         B01AGP7RN6
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 3 | sayfa iddiası: 'Waterproof'
+ana_risk:     Sayfada 'Waterproof' iddiası var, ancak ürün kısa sürede bozuluyor; bu durum dayanıklılık konusunda ciddi bir uyumsuzluk yaratıyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Kısa sürede bozulma riski vardır' uyarısını ekleyin.
+      sayfa: 'Waterproof' | müşteri: Yorum 1, 2, 3: Ürün kısa sürede bozuluyor.

@@ -1,0 +1,13 @@
+ASIN:         B07BJCFKFP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 6 | sayfa iddiası: 'SIZE INFO: Item may run small, consider sizing up.'
+  - Kalite: yorum 2, 5 | sayfa iddiası: 'MATERIAL - Made of 100% cotton, these sexy 80s outfit for women are produced for your comfort with their lightweight material and incredibly soft touch.'
+ana_risk:     Sayfa, bedenin küçük olabileceğini belirtiyor ancak müşteriler ürünün çok küçük veya çok büyük geldiğini bildiriyor; kalite iddiaları da ürünün dayanıklılığı ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının dar olduğunu belirtin; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'SIZE INFO: Item may run small, consider sizing up.' | müşteri: Yorum 3, 4, 6: Ürün çok küçük veya çok büyük geliyor.
+  - [Kalite | değiştir] Ürünün kalitesinin yüksek olduğunu belirtin; 'Yıkama sonrası soyulma yapabilir' uyarısı ekleyin.
+      sayfa: 'MATERIAL - Made of 100% cotton, these sexy 80s outfit for women are produced for your comfort with their lightweight material and incredibly soft touch.' | müşteri: Yorum 2, 5: Kalite düşük, yazılar hemen soyuluyor.

@@ -1,0 +1,36 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Kötü kalite ve yapım hatası var.",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar dar ve uyumsuz.",
+      "yorum_numaralari": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında yeterli bilgi yok.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B097CZMC6H
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 10, 11, 12, 13, 15 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 3, 4, 6, 8, 9, 14 | sayfa iddiası: 'Please order one size up if you are taller, stronger, or grows faster.'
+ana_risk:     Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaş kalitesinin kötü olduğunu belirtiyor; ayrıca bedenlerin küçük geldiği iddiası var, sayfada beden konusunda bir uyarı var.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: '100% Polyester' | müşteri: Yorum 1, 5, 10, 11, 12, 13, 15: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiği bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'Please order one size up if you are taller, stronger, or grows faster.' | müşteri: Yorum 3, 4, 6, 8, 9, 14: Bedenler küçük geliyor.

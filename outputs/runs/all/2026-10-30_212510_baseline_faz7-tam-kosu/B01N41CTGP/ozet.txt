@@ -1,0 +1,16 @@
+ASIN:         B01N41CTGP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 5 | sayfa iddiası: 'This Youth sized long sleeve shirt has a taped neck and shoulders with rib knit cuffs.'
+  - Kalite: yorum 4, 5, 8 | sayfa iddiası: 'This unique Youth Long Sleeve T-Shirt is designed and printed in the United States with eco-friendly ink, so it is safe for you and the environment.'
+  - Eksik Bilgi: yorum 1, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'Youth Long Sleeve T-Shirt' olarak tanımlanan bir ürünü 'sweater' olarak tanımlıyor; müşteriler ise ürünün bir tişört olduğunu ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve beden bilgilerini daha net belirtin; 'kollar kısa, bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'This Youth sized long sleeve shirt has a taped neck and shoulders with rib knit cuffs.' | müşteri: Yorum 2, 3, 5: Kollar çok kısa ve kalıp garip.
+  - [Kalite | değiştir] Kalite kontrolü hakkında bilgi ekleyin; 'baskı kalitesi garanti edilmez' notu ekleyin.
+      sayfa: 'This unique Youth Long Sleeve T-Shirt is designed and printed in the United States with eco-friendly ink, so it is safe for you and the environment.' | müşteri: Yorum 4, 5, 8: Kalite kötü, baskı bozuk.
+  - [Eksik Bilgi | ekle] Ürün açıklamasında 'bu bir tişört, kazak değildir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 6, 7: Ürün açıklamasında 'sweater' ifadesi var, ama bu bir tişört.

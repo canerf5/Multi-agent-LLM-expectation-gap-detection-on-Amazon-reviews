@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 10 hem Kalite hem Beden/Kalıp için sayılmış",
+    "tek konu kuralı: yorum 13 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B098D5JNP4",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "grup 5: ilgili = false ama ilgisiz_sebebi yok",
+    "yorum 10 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 13 birden fazla ilgili grupta (grup 1 ve 3)",
+    "yorum 11 birden fazla ilgili grupta (grup 3 ve 4)"
+  ],
+  "sure_duvar_sn": 19.252,
+  "time": "2026-10-30T17:59:10+00:00"
+}

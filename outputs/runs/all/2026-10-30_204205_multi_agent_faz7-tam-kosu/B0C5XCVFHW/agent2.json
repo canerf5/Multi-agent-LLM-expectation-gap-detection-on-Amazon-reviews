@@ -1,0 +1,54 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Omuzlar çok dar, hareket kısıtlıyor.",
+      "yorum_numaralari": [
+        1,
+        3,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş çok ince ve kalitesiz.",
+      "yorum_numaralari": [
+        4,
+        5,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün hasarlı geldi.",
+      "yorum_numaralari": [
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk soluk ve kötü görünüyor.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün boyutları hakkında bilgi eksik.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Renk",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        5,
+        6,
+        11,
+        12
+      ],
+      "sayfa_iddiasi": "SIZE: Please refer to the Last Picture -\"Size Chart\" before ordering."
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        2,
+        7,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "solid color: black/ blue/ red"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        9,
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester"
+    }
+  ],
+  "ana_risk": "Ürün sayfasında belirtilen beden, renk ve malzeme bilgileri, müşterilerin yaşadığı sorunlarla çelişiyor; birçok müşteri ürünün kalitesiz olduğunu, beklediklerinden çok daha küçük geldiğini ve renklerin farklı olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "SIZE: Please refer to the Last Picture -\"Size Chart\" before ordering.",
+      "musteri_deneyimi": "Yorum 5, 11, 12: Çok küçük geldi, XL yerine M gibi.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin gerçek ölçülerini ekleyin; 'kalıp dar; bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "solid color: black/ blue/ red",
+      "musteri_deneyimi": "Yorum 2, 7, 14: Renk beklenenden farklı geldi, mavi yerine lacivert.",
+      "islem": "değiştir",
+      "duzeltme": "Renk açıklamasını güncelleyin; 'gelen ürünün rengi fotoğraftaki gibi olmayabilir' uyarısı ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester",
+      "musteri_deneyimi": "Yorum 3, 9, 10: Kumaş kalitesiz ve ucuz görünüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'kumaşın kalitesi beklenenden düşük olabilir' notu ekleyin."
+    }
+  ]
+}

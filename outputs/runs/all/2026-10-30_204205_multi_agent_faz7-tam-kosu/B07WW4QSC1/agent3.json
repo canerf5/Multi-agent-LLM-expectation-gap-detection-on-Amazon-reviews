@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada ürün kalitesi hakkında bilgi yok, ancak müşteriler ürünün kalitesinin beklenenden düşük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Ürün kalitesi beklenenden düşük.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha net bilgi verin; 'Ürün kimyasal bir kokuya sahip olabilir.'"
+    }
+  ]
+}

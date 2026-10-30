@@ -1,0 +1,13 @@
+ASIN:         B00GOL1NX2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Asian Size : Bust 35.4" / Shoulder 13.5" / Sleeve 20.5" / Front Length 25.5"-27.5"'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün beden ölçülerinin küçük olduğunu belirtirken, müşteriler bu ürünün çok küçük geldiğini ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin yanı sıra, 'kalıp dar; bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'Asian Size : Bust 35.4" / Shoulder 13.5" / Sleeve 20.5" / Front Length 25.5"-27.5"' | müşteri: Yorum 1, 2: Çok küçük geliyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekle; 'ilk yıkamada bozulma riski vardır' uyarısını ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Kalite çok kötü, ilk yıkamada parçalandı.

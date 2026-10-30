@@ -1,0 +1,13 @@
+ASIN:         B09N7KL432
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'The size of this swiss dot dress is relatively large.'
+  - Malzeme: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, elbisenin büyük beden olduğunu belirtirken, müşteriler elbisenin büyük olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "Bu elbise büyük bedendir; bir beden küçük almanız önerilir." ifadesini ekleyin.
+      sayfa: 'The size of this swiss dot dress is relatively large.' | müşteri: Yorum 1, 2: Göğüs kısmı çok büyük, elbise bol duruyor.
+  - [Malzeme | ekle] "Elbisenin şeffaf olduğunu belirtin; altına kaydırmaz bir giysi giyilmesi önerilir." ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Elbise tamamen şeffaf, iç gösteriyor.

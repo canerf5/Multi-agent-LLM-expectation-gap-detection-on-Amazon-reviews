@@ -1,0 +1,23 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Renk: tip_gerekceleri içinde kaydı yok",
+    "Görsel: tip_gerekceleri içinde kaydı yok",
+    "Kalite: tip_gerekceleri içinde kaydı yok"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Renk: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The top clearly looks pink or magenta on line. But it is pur'",
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [6]",
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Renk için sayılmış",
+    "tek konu kuralı: yorum 2 hem Renk hem Görsel için sayılmış",
+    "tek konu kuralı: yorum 3 hem Beden/Kalıp hem Görsel için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The top clearly looks pink or magenta on line. But it is pur'"
+  ],
+  "parent_asin": "B01GK8UGD6",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 7,
+  "sure_duvar_sn": 12.23,
+  "time": "2026-10-30T18:45:15+00:00"
+}

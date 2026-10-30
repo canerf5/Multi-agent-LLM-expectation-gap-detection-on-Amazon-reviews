@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Cotton Blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Cotton Blends + Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Asian Size : Bust 35.4\" / Shoulder 13.5\" / Sleeve 20.5\" / Front Length 25.5\"-27.5\"",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Curved hem cover the buttocks .",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Fake pocket design on both sides, more chic!",
+      "iddia_turu": "genel"
+    }
+  ]
+}

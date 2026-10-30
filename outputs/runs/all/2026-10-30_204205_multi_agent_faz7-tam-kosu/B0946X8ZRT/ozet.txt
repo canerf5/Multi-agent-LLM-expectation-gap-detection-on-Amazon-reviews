@@ -1,0 +1,13 @@
+ASIN:         B0946X8ZRT
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 6 | sayfa iddiası: 'make you adjust the tightness to fit for your head and different hairstyles'
+  - Kalite: yorum 4, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, başlık ayarlama konusunda yardımcı olacağını iddia ediyor, ancak müşteriler ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'make you adjust the tightness to fit for your head and different hairstyles' | müşteri: Yorum 1, 2, 3, 6: Çok küçük geliyor
+  - [Kalite | ekle] Düğmelerin boyutu ve tutuş gücü hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 7: Düğmeler çok küçük ve maskeleri tutmuyor

@@ -1,0 +1,13 @@
+ASIN:         B09LCWQHX6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 11 | sayfa iddiası: 'Shaft measures approximately 5" from arch'
+  - Malzeme: yorum 5, 12 | sayfa iddiası: 'synthetic leather'
+ana_risk:     Sayfada 'Shaft measures approximately 5" from arch' iddiası var, ancak müşteriler bacak kısmının kısa olduğunu ve ayakkabıların dar geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini daha net belirtin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Shaft measures approximately 5" from arch' | müşteri: Yorum 3, 11: Dar geliyor, parmak kısmı çok dar; çok büyük, iade edemiyorum.
+  - [Malzeme | değiştir] Malzeme hakkında daha fazla bilgi verin; 'Kaymaz özellikte değildir, dikkatli kullanın' uyarısını ekleyin.
+      sayfa: 'synthetic leather' | müşteri: Yorum 5, 12: Malzeme sert, ayak üstünde sıkı; kaymaz, kayma riski var.

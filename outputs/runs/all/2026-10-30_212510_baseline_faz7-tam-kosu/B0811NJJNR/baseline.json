@@ -1,0 +1,56 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Görsel",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "Best Quality Product"
+    }
+  ],
+  "ana_risk": "Sayfa 'en iyi kalite ürün' iddiasında bulunuyor, ancak müşteriler kalitenin düşük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1: Kolları çok küçük, büyük beden alındığında küçük beden kolları var.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp hakkında bilgi ekleyin; 'Kolları küçük, büyük beden alırken dikkat edin'."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Renk beklenenden farklı, daha açık bir pembe geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün renkleri hakkında bilgi ekleyin; 'Renkler fotoğraftakinden farklı olabilir'."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Best Quality Product",
+      "musteri_deneyimi": "Yorum 3: Kalite düşük, 2 ayda bozuldu.",
+      "islem": "değiştir",
+      "duzeltme": "'En iyi kalite ürün' ifadesini gözden geçirin ve daha gerçekçi bir ifade ile değiştirin."
+    }
+  ]
+}

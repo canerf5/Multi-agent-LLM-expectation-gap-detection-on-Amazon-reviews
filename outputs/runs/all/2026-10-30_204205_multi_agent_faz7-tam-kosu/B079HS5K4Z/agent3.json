@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "sayfa_iddiasi": "60% polyester,40% spandex."
+    }
+  ],
+  "ana_risk": "Malzeme iddiası var ama ürün kalitesi ve dayanıklılığı ile ilgili şikayetler mevcut.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 6, 7: Dikişler yırtıldı veya ürün parçalandı.",
+      "islem": "ekle",
+      "duzeltme": "Ürün dayanıklılığı hakkında bilgi ekleyin; dikişlerin kalitesi hakkında bilgi verin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "60% polyester,40% spandex.",
+      "musteri_deneyimi": "Yorum 2, 4, 5, 8: Ürün kalitesi bekleneni karşılamıyor; dikişler ve malzeme sorunlu.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi ve dikişlerin dayanıklılığı hakkında daha net bilgi verin."
+    }
+  ]
+}

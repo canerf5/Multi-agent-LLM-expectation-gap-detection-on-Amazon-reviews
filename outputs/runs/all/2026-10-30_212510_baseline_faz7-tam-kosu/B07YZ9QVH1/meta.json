@@ -1,0 +1,23 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Cups are WAY too small; does NOT fit cup sizes D and DD as d'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Feels really cheap and does not fit D cups.'",
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 7 hem Beden/Kalıp hem Kalite için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Cups are WAY too small; does NOT fit cup sizes D and DD as d'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Feels really cheap and does not fit D cups.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 7 hem Beden/Kalıp hem Kalite için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B07YZ9QVH1",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 7,
+  "sure_duvar_sn": 8.291,
+  "time": "2026-10-30T18:33:34+00:00"
+}

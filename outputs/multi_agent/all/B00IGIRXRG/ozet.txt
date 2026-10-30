@@ -1,0 +1,13 @@
+ASIN:         B00IGIRXRG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: "Fits men's shoe size 6-12"
+  - Dayanıklılık: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden kalıbı ile ilgili iddia var, ancak müşteriler ürünün çok büyük veya çok küçük geldiğini belirtiyor; dayanıklılık konusunda ise sayfada bilgi yok ama delik açılması şikayeti var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; örneğin, 'Beden kalıbı normalden büyük veya küçük olabilir, lütfen ölçülerinizi kontrol edin.'
+      sayfa: "Fits men's shoe size 6-12" | müşteri: Yorum 2, 3: Çok büyük veya çok küçük geliyor.
+  - [Dayanıklılık | ekle] Ürün sayfasına dayanıklılık hakkında bilgi ekleyin; örneğin, 'Ürün dayanıklılığı ile ilgili dikkat edilmesi gereken noktalar: Hızla delik açılabilir, dikkatli kullanım önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Hızla delik açılıyor.

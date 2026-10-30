@@ -1,0 +1,13 @@
+ASIN:         B09ZHFVMR5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2 | sayfa iddiası: 'We pay attention to details and closely monitor quality.'
+ana_risk:     Beden ve kalite ile ilgili sorunlar var; sayfa, ürünün kaliteli olduğunu iddia ediyor, ancak müşteriler büyük beden ve delik açılması sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenlerin kalıbının büyük olduğu bilgisi eklenmeli; 'Bedenler büyük, bir beden küçük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Bedenler büyük geliyor.
+  - [Kalite | değiştir] Kalite kontrolü hakkında daha net bilgi verilmeli; 'Ürün ince, dikkatli kullanılması önerilir.'
+      sayfa: 'We pay attention to details and closely monitor quality.' | müşteri: Yorum 2: Ürün çok ince ve delik açılıyor.

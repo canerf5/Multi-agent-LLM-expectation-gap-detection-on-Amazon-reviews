@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "pants have an elastic waistband and adjustable drawstring for a comfortable fit"
+    }
+  ],
+  "ana_risk": "Sayfa, esnek bel bandı ve ayarlanabilir ip ile rahat bir oturuş vaat ediyor, ancak bazı müşteriler ürünün küçük ve büyük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "pants have an elastic waistband and adjustable drawstring for a comfortable fit",
+      "musteri_deneyimi": "Yorum 2: Küçük geldi; Yorum 3: Çok büyük geldi",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; 'Bedeninizden bir beden büyük almanız önerilir.'"
+    }
+  ]
+}

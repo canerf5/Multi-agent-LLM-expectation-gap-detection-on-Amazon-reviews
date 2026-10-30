@@ -1,0 +1,16 @@
+ASIN:         B076H9BGDL
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün beden ve kalıp bilgisi vermiyor; müşteriler ise ürünün kalıbının çok geniş ve uzun olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp bilgisi ekleyin; 'Bacaklar geniş ve uzun, bir beden küçük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Bacaklar çok geniş ve iç dikiş çok uzun.
+  - [Malzeme | ekle] Kumaşın özellikleri hakkında bilgi ekleyin; 'Kumaş crinkly plastik, yumuşak değil.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Kumaş crinkly plastik, yumuşak değil.
+  - [Dayanıklılık | ekle] Ürünün su geçirmezlik özelliği hakkında bilgi ekleyin; 'Ürün hafif yağmurda su geçirmektedir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Su geçirmiyor, hafif yağmurda ıslanıyor.

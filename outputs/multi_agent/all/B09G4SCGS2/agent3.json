@@ -1,0 +1,30 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "XXL fits men's shoe sizes 15-18"
+    }
+  ],
+  "ana_risk": "Sayfa, XXL bedenin 15-18 numara ayakkabılara uyduğunu iddia ediyor, ancak müşteriler soketlerin beklenenden küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "XXL fits men's shoe sizes 15-18",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 5, 6: Soketler beklenenden küçük geldi",
+      "islem": "değiştir",
+      "duzeltme": "Beden bilgisi olarak 'XXL, 15-18 numara ayakkabılar için uygundur' ifadesini 'XXL, 15-18 numara ayakkabılar için uygundur; ancak soketler küçük gelebilir, bir beden büyük almanız önerilir' şeklinde değiştirin."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        13
+      ],
+      "sayfa_iddiasi": "Please order one size up if you are taller, stronger, or grows faster."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden ve malzeme kalitesi ile ilgili iddialar var, ancak müşteriler bu ürünün kalitesiz ve yanlış bedende geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Please order one size up if you are taller, stronger, or grows faster.",
+      "musteri_deneyimi": "Yorum 3, 4, 6, 8, 9, 13: Bedenler küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin küçük olduğu ve bir veya iki beden büyük sipariş verilmesi gerektiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 5, 10, 11, 12, 14, 15: Malzeme kalitesiz ve rahatsız.",
+      "islem": "ekle",
+      "duzeltme": "Malzemenin kalitesiz olduğu ve ince bir yapıya sahip olduğu bilgisi eklenmeli."
+    }
+  ]
+}

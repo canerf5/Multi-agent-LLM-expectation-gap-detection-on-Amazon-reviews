@@ -1,0 +1,16 @@
+ASIN:         B08C2WMB2M
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 10 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 7, 8, 11 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 6, 8 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfa, ürünün beden ve kalıp uyumu hakkında bilgi vermiyor; müşteriler ise ürünün küçük ve rahatsız olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp ve beden uyumu hakkında bilgi ekleyin; 'kalıp dar, bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 10: Kalıp küçük ve uyumsuz.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'kalite garantisi yoktur' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 7, 8, 11: Kalite kötü, ürün kullanılmış gibi görünüyor.
+  - [Malzeme | değiştir] Malzeme bilgisi değiştirilmeli; '100% pamuk değil, spandeks karışımıdır' olarak güncellenmeli.
+      sayfa: '100% Cotton' | müşteri: Yorum 6, 8: Ürün 100% pamuk değil, spandeks karışımı.

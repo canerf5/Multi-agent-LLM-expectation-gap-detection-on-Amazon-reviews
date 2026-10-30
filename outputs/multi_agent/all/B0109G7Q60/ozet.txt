@@ -1,0 +1,5 @@
+ASIN:         B0109G7Q60
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

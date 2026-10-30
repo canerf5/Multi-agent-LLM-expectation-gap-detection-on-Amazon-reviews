@@ -1,0 +1,5 @@
+ASIN:         B0B76ZVSJN
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

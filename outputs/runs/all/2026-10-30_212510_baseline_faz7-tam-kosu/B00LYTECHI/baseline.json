@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün beden uyumu ve kalitesi hakkında net bilgi vermiyor; müşteriler bedenin dar olduğunu ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3, 5: Beden dar; büyük bedenler için uygun değil.",
+      "islem": "ekle",
+      "duzeltme": "Beden uyumu hakkında bilgi ekleyin; 'Dar kalıp, büyük bedenler için önerilmez.'"
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Kalite düşük; tekrar satın almayı düşünmüyorum.",
+      "islem": "ekle",
+      "duzeltme": "Kalite ile ilgili daha net bilgi verin; 'Kalite standartları gözden geçirilmiştir.'"
+    }
+  ]
+}

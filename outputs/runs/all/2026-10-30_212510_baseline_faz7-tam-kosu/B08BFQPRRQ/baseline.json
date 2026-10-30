@@ -1,0 +1,66 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        11
+      ],
+      "sayfa_iddiasi": "Loose-Fit: designed for comfort"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        5,
+        8,
+        9,
+        10,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        4,
+        9,
+        10,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, 'Loose-Fit: designed for comfort' iddiasında bulunuyor, ancak müşteriler bedenin büyük olduğunu ve rahat olmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Loose-Fit: designed for comfort",
+      "musteri_deneyimi": "Yorum 1, 2, 11: Beden büyük ve rahat değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp büyük; bir beden küçük almanız önerilir."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5, 8, 9, 10, 12: Kumaş kalitesi kötü, pilling yapıyor.",
+      "islem": "ekle",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; pilling yapma ihtimali belirtin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 9, 10, 12: Ürün kısa sürede bozuluyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dayanıklılığı hakkında bilgi ekleyin; yıkama talimatlarına dikkat edilmesi gerektiğini belirtin."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "70% Synthetic, 30% Mesh",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This two-toned fashion sneaker sports athletic style with feminine flair.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

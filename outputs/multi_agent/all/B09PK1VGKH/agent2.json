@@ -1,0 +1,54 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar çok büyük geldi.",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ayakkabının kalitesi çok düşük görünüyor.",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ayakkabılar çok kötü yapıldı.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında yeterli bilgi yoktu.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Ayakkabılar ayaklarımı turuncu yaptı.",
+      "yorum_numaralari": [
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

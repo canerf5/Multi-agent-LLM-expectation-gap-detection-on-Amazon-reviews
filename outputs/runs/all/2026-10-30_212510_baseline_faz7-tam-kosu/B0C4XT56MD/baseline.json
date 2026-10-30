@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden ölçüleri hakkında bilgi vermiyor; müşteriler, bedenlerin çok küçük olduğunu ve yanıltıcı bir şekilde yönlendirildiklerini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Beden ölçüleri yanıltıcı ve çok küçük.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri hakkında daha net bilgi ver; 'Bedenler küçük, bir beden büyük almanız önerilir' notu ekle."
+    }
+  ]
+}

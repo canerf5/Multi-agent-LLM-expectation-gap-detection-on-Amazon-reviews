@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünlerin belirtilen bedenden daha küçük olduğunu belirten şikayetlerle çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4, 5: Ürünler belirtilen bedenden daha küçük.",
+      "islem": "ekle",
+      "duzeltme": "Ürünlerin bedeni hakkında 'Bir beden büyük almanız önerilir' notu eklenmeli."
+    }
+  ]
+}

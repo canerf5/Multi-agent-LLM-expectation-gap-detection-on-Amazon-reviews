@@ -1,0 +1,16 @@
+ASIN:         B089CKS4GS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 12, 15 | sayfa iddiası: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).'
+  - Kalite: yorum 1, 6, 7, 10, 8 | sayfa iddiası: 'They are perfect for everyday wear!'
+  - Malzeme: yorum 1, 6, 14 | sayfa iddiası: 'Made from a luxurious 92% modal and 8% spandex blend, these briefs are tagless and flexible to provide you with the ultimate comfort.'
+ana_risk:     Ürün sayfasında belirtilen beden ve kalıp bilgileri ile müşterilerin yaşadığı kalıp sorunları arasında çelişki var; birçok müşteri ürünün beklenenden daha küçük veya yüksek olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve beden bilgilerini gözden geçirerek daha net bir açıklama ekleyin; 'kalıp dar, bir beden büyük almanız önerilir' gibi bir not ekleyin.
+      sayfa: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).' | müşteri: Yorum 4, 5, 12, 15: Ürün kalıbı beklenenden küçük ve yüksek.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi verin; 'Ürünlerimiz yüksek kalite standartlarına sahiptir, ancak bazı kullanıcılar dikiş ve kumaş sorunları bildirmiştir.' gibi bir not ekleyin.
+      sayfa: 'They are perfect for everyday wear!' | müşteri: Yorum 1, 6, 7, 10, 8: Ürün kalitesi düşük, dikişler ve kumaş sorunları var.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha fazla bilgi verin; 'Kumaşımız yumuşak ve esnek, ancak bazı kullanıcılar ince olduğunu belirtmiştir.' gibi bir not ekleyin.
+      sayfa: 'Made from a luxurious 92% modal and 8% spandex blend, these briefs are tagless and flexible to provide you with the ultimate comfort.' | müşteri: Yorum 1, 6, 14: Kumaş ince ve kalitesiz, çabuk yıpranıyor.

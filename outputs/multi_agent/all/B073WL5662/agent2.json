@@ -1,0 +1,34 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün hemen yırtıldı.",
+      "yorum_numaralari": [
+        1,
+        3,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ürün fleece değil, ince pamuklu.",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden küçük geldi.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

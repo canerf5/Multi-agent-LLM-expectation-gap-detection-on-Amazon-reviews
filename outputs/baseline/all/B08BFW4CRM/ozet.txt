@@ -1,0 +1,10 @@
+ASIN:         B08BFW4CRM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Shaft measures approximately Above the Knee from arch'
+ana_risk:     Beden kalıbı ile ilgili sorunlar var; sayfada kalıp ölçüsü belirtilmiş ama müşteriler ayakkabıların küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'Shaft measures approximately Above the Knee from arch' | müşteri: Yorum 3, 4: Küçük geliyor, bir beden büyük almak gerekiyor.

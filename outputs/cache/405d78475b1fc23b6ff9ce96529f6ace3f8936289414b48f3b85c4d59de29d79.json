@@ -1,0 +1,79 @@
+{
+  "tag": "agent2:B07D7J5WX4",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3320,
+    "output_tokens": 253,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0006498,
+  "sure_sn": 3.304,
+  "created": "2026-10-30T17:53:03+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Gel is not the way to go — Not comfortable at all. Still had the hand strain/tingling from biking long distances. Gel cannot replace a quality leather gloves w proper padding.\n\n2) [1★] Gel? Its foam. — The gel pads are a joke. The gel is just a thin surface layer of gray. The raise part it made up of foam. The finger pulls are not straps like most biking gloves the straps are there just sew on. The finger pulls are little tabs.\n\n3) [1★] Pay more for better gloves — Not that great. Cheap but get what you pay for. Does not seem to fit well or offer all that much padding.\n\n4) [1★] Little to no padding — The so-called pads on the palms were very thin.\n\n5) [2★] Product consistency — This was my second pair. First pair I wore out second tore at the seem in 2 days. Had to purchase something local as I use them for my wheel chair.\n\n6) [2★] Unbelievably thin! — I bought them because they were gel. When I looked at the gloves I was impressed how lightweight they were and how thin the material was, but not in a good way. I returned them right away without even taking them out of the plastic, for a higher quality product.\n\n7) [1★] No gel in pads. Threads ripped immediately. — When I first tried one of the gloves on & then clasped the wrist velcro pull closure to remove it, the threads ripped around the entire circumference of the velcro pull tab. Being a seamstress, I tested the strength of one of the segments of thread by attempting to break it with my fingers. Sure enough, it broke in half with little effort. I’m nearly certain the thread is cotton, which easily decomposes if left damp in high humidity. Thin cotton thread is not strong enough or appropriate for cycling/sport gloves. Secondly, I immediately sensed there was no gel in the palms because the padding squished like thin foam. Upon examining the inside of the gloves, I validated I was correct. Every stitched area that was advertised to have \"gel pads\" instead had thin foam protruding 2 to 3 mm beyond the stitching. In other words, simple foam, like the kind you would see on wire hangars coming from your local dry cleaners, was sewn into the interior of the gloves - NOT gel. My previous cycle gloves had real gel pads, & the difference was profound. Those gloves had not been expensive either, so there’s no excuse for this rip-off. I have no problem with not having brand name, well-made, fancy gloves. (For example, I would've been willing to hot glue thesse velcro wrist tabs back together.) However, I have a big issue with false advertisement.\n\n8) [2★] not what i was expecting — low quality product that does not provide the vibration buffering expected.\n\n9) [1★] Don't bother — These \"gloves\" are thin and cheap. You'd be better off with surgical gloves. LAME!! Seriously they are so thin! There's barely any padding for why you wear bike gloves. No protection at all.\n\n10) [1★] Poor quality — For the 1st couple of days I had thought I got a really good deal but on the 4th day the stitching around the wrist started coming undone, and eventually the Orange trim fell off after about a week. very disappointing. also note these run very small so up your size or better yet spend a little more money for a better pair. I would avoid these and will not purchase again.\n\n11) [1★] Seams came apart on the first try-on — Cheaply made, Rey poor quality. I returned them on the first day!\n\n12) [2★] Very light weight with little padding — Very light weight with little padding. I prefer a heavier duty glove with good padding\n\n13) [2★] Meh...not so great. — UPDATE: Got a hole in the palm of one glove after about 10 months. Gloves are still \"usable\" although not really desirable at this point. My original review is still spot-on. ORIGINAL REVIEW: I cycle daily and own many, many cycling gloves. I generally get 1 or 2 years out of each pair. I ordered these because my (old) half-finger road gloves finally started coming apart. I had read very good reviews of this glove both on multiple listings here on Amazon as well as another popular import e-commerce site. Honestly, these gloves look like they have the worst quality of ANY cycling gloves I've ever purchased. I concede that the jury is still out on how long they'll last, but the padding is utter garbage and the stitching is lacking. I've got absolutely nothing against inexpensive cycling gear from China (like these gloves). I've still got multiple pairs of GREAT Chinese cycling gloves I purchased from Amazon. They could easily have put better cushioning on the palm (what's in there sure isn't gel like they claim). The only people who should buy these gloves are folks who ride maybe 2 or 3 short rides a year. Anybody who actually cycles daily/weekly/monthly needs to look elsewhere.\n\n14) [1★] Only Received One Glove — First off, I only received a single glove in its packaging. I have no idea how it got separated from its mate, nor how the person who packed the order failed to notice that there was only one glove in the bag. The single glove, representative of the pair, was not very well padded at all; it felt like it had rubber grips sewn directly to the palm fabric with zero cushioning inside. I bought these gloves to use as protection against self-harm by an autistic individual, and even if there had been two, they would have been useless for this purpose. I am returning the glove and looking for a different brand, possibly from a different website.\n\n15) [1★] Worthless — Updated: These gloves barely lasted a month for me. I went out to my local bike shop and purchased better ones than these.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş ince ve kalitesiz.",
+        "yorum_numaralari": [
+          1,
+          3,
+          4,
+          6,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "İlk kullanımda dikişler açıldı veya kalitesiz malzeme kullanıldı.",
+        "yorum_numaralari": [
+          7,
+          10,
+          11,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Küçük kalıp, beden uyumsuzluğu var.",
+        "yorum_numaralari": [
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada gelin olduğu belirtilmemiş.",
+        "yorum_numaralari": [
+          2,
+          8
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Görseldeki ürünle alakası yok.",
+        "yorum_numaralari": [
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

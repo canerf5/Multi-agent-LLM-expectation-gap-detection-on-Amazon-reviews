@@ -1,0 +1,54 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Leather and Synthetic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "leather / mesh upper",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "made with our specialized COOLMAX; fiber to absorb moisture and accelerate drying",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "constructed from durable textile and synthetic overlays to give you a dependable work shoe",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "rubber slip resistant outsole to provide traction against slick or wet surfaces",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "offers superior oil and slip-resistance protection in compliance with ASTM F2913-11 safety standards",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "designed to fulfill work in every industry",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "when the work day gets long, Fila is there with a shoe that defies expectations to deliver another level of performance and quality design",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "built in perforations for breathability and a variable lace up front closure",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B09PQDLRQZ
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '65% Viscose, 35% Polyamide'
+ana_risk:     Sayfa, kumaşın %65 Viskoz ve %35 Polyamid olduğunu belirtirken, müşteriler kumaşın çok ince ve şeffaf olduğunu bildiriyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: '65% Viscose, 35% Polyamide' | müşteri: Yorum 2, 3: Kumaş çok ince ve şeffaf.

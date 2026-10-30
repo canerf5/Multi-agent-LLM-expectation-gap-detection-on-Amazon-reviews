@@ -1,0 +1,13 @@
+ASIN:         B08LG7YM6J
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'These rain boots run a bit large, if you are not sure, please go down half size.'
+  - Kalite: yorum 2, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların geniş olduğu iddiasında bulunuyor ancak müşteriler dar geldiğini belirtiyor; ayrıca kalite sorunları da yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Ayakkabı geniş olarak tanıtılmasına rağmen dar geliyor; doğru bedende ama çok geniş' ifadesini ekleyin.
+      sayfa: 'These rain boots run a bit large, if you are not sure, please go down half size.' | müşteri: Yorum 3, 4: Ayakkabı geniş olarak tanıtılmasına rağmen dar geldi; doğru bedende ama çok geniş.
+  - [Kalite | ekle] Sayfada 'Ürün ilk kullanımda yırtılabilir; kalitesi düşük olabilir' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5, 6: Ürün ilk kullanımda yırtıldı ve kalitesi düşük.

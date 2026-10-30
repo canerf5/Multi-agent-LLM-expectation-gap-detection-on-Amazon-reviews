@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "95% Cotton, 5% Spandex.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Breathable, Soft and Stretchy",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Machine Washable - No Shrinking Guaranteed",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Extra Wide Elastic Waistband for Kids' Comfort",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "they are stretchy, comfortable, and not see-through.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Long enough to provide warmth in cool months and a nice snug fit at the ankle",
+      "iddia_turu": "genel"
+    }
+  ]
+}

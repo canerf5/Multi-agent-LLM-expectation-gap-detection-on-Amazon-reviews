@@ -1,0 +1,24 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Üst kısım alt kısımdan daha iyi yalıtım sağlıyor, alt kısım yetersiz.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ayakkabılar soğuk havada yeterince sıcak tutmuyor.",
+      "yorum_numaralari": [
+        1,
+        3,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

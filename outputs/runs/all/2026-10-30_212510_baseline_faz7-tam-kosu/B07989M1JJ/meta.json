@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Görsel: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Not as pictured — I mean they fit well, but are nothing like'",
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Order 3 sizes up way too long tho — I wear an 11 order 13.'",
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [4]",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Defective — I love the way the jeans fit.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Order 3 sizes up way too long tho — I wear an 11 order 13.'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Defective — I love the way the jeans fit.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Görsel: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Not as pictured — I mean they fit well, but are nothing like'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Not as pictured — I mean they fit well, but are nothing like'"
+  ],
+  "parent_asin": "B07989M1JJ",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 7,
+  "sure_duvar_sn": 9.552,
+  "time": "2026-10-30T18:44:24+00:00"
+}

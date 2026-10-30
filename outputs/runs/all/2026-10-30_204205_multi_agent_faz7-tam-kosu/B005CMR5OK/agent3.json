@@ -1,0 +1,30 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada bu konuda bilgi yok, ancak müşteriler numara uyumsuzluğu ve kalıp sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4, 5, 6, 7: Top kısımlar çok bol; önceki aldığım ayakkabıyla uyumlu değil; orta genişlikteki ayakkabı uymadı; bir ayakkabı uyar, diğeri çok büyük; ayakkabı ayakta durmuyor, güvenli değil.",
+      "islem": "ekle",
+      "duzeltme": "Ayakkabı kalıbının genişliği hakkında bilgi ekleyin; 'Bu model normalden geniş kalıp olarak tasarlanmıştır.'"
+    }
+  ]
+}

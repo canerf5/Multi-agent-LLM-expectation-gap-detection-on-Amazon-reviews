@@ -1,0 +1,36 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "slim fit"
+    }
+  ],
+  "ana_risk": "Sayfada 'slim fit' iddiası var, ancak birçok müşteri ürünün çok küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "slim fit",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 15: Çok küçük geldi, beklenen bedenden daha dar.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'slim fit' ifadesinin yanına 'Bir beden büyük almanız önerilir' notunu ekleyin."
+    }
+  ]
+}

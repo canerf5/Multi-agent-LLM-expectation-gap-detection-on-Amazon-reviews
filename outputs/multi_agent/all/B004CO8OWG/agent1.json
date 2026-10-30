@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Fiber Content: \"95% Cotton, 5% Spandex\"",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Its all about classic, comfortable, everday basics.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Our soft cotton is pre-shrunk for a perfect fit wash after wash.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

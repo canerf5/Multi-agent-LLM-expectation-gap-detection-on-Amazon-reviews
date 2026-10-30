@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "60% Cotton/40% Modal blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "ideal for all body types",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Hitting just at the hip with a slightly extended back hem, this 27” top",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This easy fit tee features a light and airy slub knit with a scoop neck and elbow-length sleeves.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Chico's inclusive size chart ranges from sizes 0-22.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

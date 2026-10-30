@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Eksik Bilgi: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Eksik Bilgi: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Ürün sayfasında doğru boy bilgisi yoktu'",
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Eksik Bilgi için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Ürün sayfasında doğru boy bilgisi yoktu'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B09G4SCGS2",
+  "split": "gold",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 6,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 5 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 3)"
+  ],
+  "sure_duvar_sn": 18.493,
+  "time": "2026-10-30T17:42:23+00:00"
+}

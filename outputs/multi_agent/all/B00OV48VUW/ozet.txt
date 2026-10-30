@@ -1,0 +1,10 @@
+ASIN:         B00OV48VUW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width."
+ana_risk:     Sayfa, her bedene uygun kalıp geliştirdiğini iddia ediyor, ancak müşteriler geniş geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp genişliği hakkında bilgi verin; 'Bu model geniş kalıp olarak tasarlanmıştır.' ekleyin.
+      sayfa: "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width." | müşteri: Yorum 1, 2, 3, 4: Geniş geldi, dar numara bekleniyordu.

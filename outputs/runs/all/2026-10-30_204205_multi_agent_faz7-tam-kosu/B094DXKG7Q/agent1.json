@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "60% Nylon, 30% Cotton, 10% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Comfortblend fabric is soft and breathable.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "their durable construction means they'll retain their shape even after repeated washings!",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "The socks are colorful and fun.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "a knee-high cut ensures that these Pride flag socks are comfortable enough to wear all day long!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Whether you're enjoying a night out with friends or just lounging around the house, our socks are made of 4-Way Stretch flexible fabric engineered to stay secure on your feet as you move",
+      "iddia_turu": "genel"
+    }
+  ]
+}

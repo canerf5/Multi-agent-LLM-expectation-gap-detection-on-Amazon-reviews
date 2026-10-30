@@ -1,0 +1,13 @@
+ASIN:         B08XVQRZBV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 7, 15 | sayfa iddiası: 'Loose design at the calf cuff'
+  - Malzeme: yorum 6, 13 | sayfa iddiası: 'Elastic,Cotton'
+ana_risk:     Loose design at the calf cuff iddiası var, ancak müşteriler soketlerin küçük veya büyük geldiğini belirtiyor; ayrıca kumaş kalitesi düşük, ince ve dayanıksız olarak şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüleri hakkında daha net bilgi ver; 'Beden ölçüleri standarttır, 1 beden büyük almanız önerilir' yaz.
+      sayfa: 'Loose design at the calf cuff' | müşteri: Yorum 1, 3, 7, 15: Soketler küçük veya büyük geliyor
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi yüksek, dayanıklı ve kalın' ifadesini ekle.
+      sayfa: 'Elastic,Cotton' | müşteri: Yorum 6, 13: Kumaş kalitesi düşük, ince ve dayanıksız

@@ -1,0 +1,45 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        9,
+        10
+      ],
+      "sayfa_iddiasi": "Rubber sole"
+    }
+  ],
+  "ana_risk": "Metatomical Footbed Design iddiası var, ancak 4 farklı yorum kalıbın küçük veya büyük geldiğini belirtiyor; ayrıca Rubber sole iddiası var ama 2 yorum malzemenin sert ve destekleyici olmadığını söylüyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 5: Küçük veya büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Rubber sole",
+      "musteri_deneyimi": "Yorum 9, 10: Sert ve destekleyici değil.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında malzeme hakkında 'kullanılan kauçuk taban serttir ve yeterli destek sağlamayabilir' ifadesi ekleyin."
+    }
+  ]
+}

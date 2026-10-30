@@ -1,0 +1,46 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler çok küçük geliyor.",
+      "yorum_numaralari": [
+        1,
+        4,
+        5,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kalite çok kötü, dikişler hemen açılıyor.",
+      "yorum_numaralari": [
+        3,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi düşük, ince ve ucuz.",
+      "yorum_numaralari": [
+        4,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada bedenlerin nasıl olacağına dair bilgi yok.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

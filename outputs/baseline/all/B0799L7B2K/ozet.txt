@@ -1,0 +1,10 @@
+ASIN:         B0799L7B2K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Mens Jeans Slim Fit : Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it. Good stretchy material,comfortable, move freely in it, men fashion jeans skinny design shows your perfect leg shape.'
+ana_risk:     Sayfa, 'slim fit' ve 'skinny design' iddiasında bulunuyor, ancak müşteriler ürünün kalıbının büyük olduğunu ve bekledikleri gibi gelmediğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'dar kalıp, bir beden küçük almanız önerilir' notu ekleyin.
+      sayfa: 'Mens Jeans Slim Fit : Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it. Good stretchy material,comfortable, move freely in it, men fashion jeans skinny design shows your perfect leg shape.' | müşteri: Yorum 3, 4: Kalıp büyük, dar değil.

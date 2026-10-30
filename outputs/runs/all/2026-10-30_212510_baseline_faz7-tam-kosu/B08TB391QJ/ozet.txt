@@ -1,0 +1,16 @@
+ASIN:         B08TB391QJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'Shaft measures approximately 15.75" from arch'
+  - Kalite: yorum 4, 6 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 4, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalıp iddiası var, ancak müşteriler kalıbın dar olduğunu ve zorluk yaşadıklarını belirtiyor; kalite ve dayanıklılık ile ilgili de ciddi sorunlar yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Shaft measures approximately 15.75" from arch' | müşteri: Yorum 3, 5: Beden dar; zorluk yaşanıyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekleyin; 'Daha dayanıklı bir tasarım sunulmaktadır' gibi bir ifade ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 6: Kalite sorunları var; tabanlar yapıştırılmış ve hemen çıkıyor.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Ürünün dayanıklılığı ile ilgili bilgi verin'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 6: Ürün dayanıklı değil; bir kez giyince hasar görüyor.

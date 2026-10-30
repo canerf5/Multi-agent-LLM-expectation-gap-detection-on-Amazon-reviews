@@ -1,0 +1,49 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Kalite ciddi şekilde düştü, iki çift yırtıldı.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Bir ay bile dayanmadı, çok çabuk bozuldu.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "İç kısmı sert, deride derin yaralara neden oldu.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden büyütülmesine rağmen bilekleri acıtıyor.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": null,
+      "ozet": "İlanın içeriği yanıltıcı, indirim kuponu yok.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    }
+  ]
+}

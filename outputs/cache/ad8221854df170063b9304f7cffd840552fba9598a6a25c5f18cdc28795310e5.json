@@ -1,0 +1,156 @@
+{
+  "tag": "agent2:B07MZHXQRB",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2761,
+    "output_tokens": 676,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00081975,
+  "sure_sn": 8.243,
+  "created": "2026-10-30T18:05:58+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Doesn’t show the front — warning: it’s a pullover, doesn’t open in front. — The photo from the back is misleading. I wanted a zip up windbreaker, got a too-warm pullover.\n\n2) [1★] poor quality — the worst thing that I have seen in my life.\n\n3) [2★] Wrong Size Was Sent — I bought this for my 19 year old son who wears a mens small in everything. The rain jacket was HUGE on him. Turns out it was an XL so I returned it. I'm buying a different brand instead of taking the chance of the same thing happening again.\n\n4) [2★] Zipper — Not happy with the zipper on the wrong side...... Makes it harder to zip up......\n\n5) [1★] Worst packaging ever! — Incredibly difficult to open and open the jacket. When I was finally able to untangle the mess the jacket was a mess of wrinkles. This packaging was a stupid idea. It is an incredible inconvenience and damages the product. What was the manufacturer thinking?!\n\n6) [1★] wetted out right away — I took it out on a backpacking trip and it wetted out on me right away! On the look for something different!\n\n7) [1★] A crinkled plastic bag — This is awful. It’s a thin rubber plastic bag fold it up into a little sack and impossible to flatten or where. Looks nothing like the photo. Not even worth the $25.\n\n8) [1★] Not waterproof — Definitely not waterproof. Is good as a wind breaker.\n\n9) [1★] Not for extended commercial use. — Not for longterm use in a commercial application. (ie. Food processing, car wash, truck wash, etc.) It will develop rips and tears in the pockets and the zippers will break easily. Reasonable for limited emergency use while traveling.\n\n10) [1★] DOESNT BREATHE - I got soaking wet from condensation — I wore this one time and that will be the last time. It is waterproof from the outside, but the fabric doesn't breathe at all. It trapped all of my body's humidity, which then condensed on the inside of the jacket. As I moved about, my clothes rubbed against these dewdrops on the inside of the jacket. Imagine my confusion when I took this jacket off and found my clothes underneath soaking wet! Do not recommend.\n\n11) [1★] Worthless Do not buy — Soaked through to my clothes the first time I wore it. Pools of water collected in the sleeves and trickled down my arms.\n\n12) [1★] Less than — Not what was advertised. Disappointed. Would return if within the timeframe allowed.\n\n13) [2★] Garbage Bag jacket — Very cheaply made... low quality, although the price was fair, I expected a better product\n\n14) [1★] It’s a poncho! — For about $35.00 it’s a $5.00 Poncho!! Not what anyone would expect. Thought it would be a light jacket! It’ll work in a pinch. Very disappointed!!\n\n15) [1★] Not worth it! — Waterproof but not breathable at ALL!! I usually ride a bike to work and back. My shirt was soaking wet when i took it off",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Görsel",
+        "ozet": "Arka fotoğraf yanıltıcı, ön tarafı göstermiyor.",
+        "yorum_numaralari": [
+          1
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Çok kötü kalite, hayatımda gördüğüm en kötü şey.",
+        "yorum_numaralari": [
+          2
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Yanlış beden gönderildi, çok büyük geldi.",
+        "yorum_numaralari": [
+          3
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Zipper yanlış tarafta, kullanımı zorlaştırıyor.",
+        "yorum_numaralari": [
+          4
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Ürün açıklamasında bilgi yoktu.",
+        "yorum_numaralari": [
+          5
+        ],
+        "ilgili": false,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Hemen su geçirdi, dayanıklı değil.",
+        "yorum_numaralari": [
+          6
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün fotoğraftaki gibi değil, ince bir plastik torba gibi.",
+        "yorum_numaralari": [
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kesinlikle su geçirmiyor, sadece rüzgar kesici.",
+        "yorum_numaralari": [
+          8
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Uzun süreli ticari kullanım için uygun değil, yırtılma ve kopma yapıyor.",
+        "yorum_numaralari": [
+          9
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Nefes almıyor, vücut nemini hapsediyor.",
+        "yorum_numaralari": [
+          10
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "İlk giyişte su geçirdi, kıyafetlerim ıslandı.",
+        "yorum_numaralari": [
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Reklam edilenle aynı değil, hayal kırıklığına uğradım.",
+        "yorum_numaralari": [
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Çok ucuz yapım, kalitesiz.",
+        "yorum_numaralari": [
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Poncho gibi, beklediğim gibi değil.",
+        "yorum_numaralari": [
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Su geçirmiyor ama nefes almıyor, ıslak kaldım.",
+        "yorum_numaralari": [
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

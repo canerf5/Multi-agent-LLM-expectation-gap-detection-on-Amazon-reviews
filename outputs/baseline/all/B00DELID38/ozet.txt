@@ -1,0 +1,13 @@
+ASIN:         B00DELID38
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının büyük olduğunu belirtmiyor; müşteriler, ürünün beklenenden 2 beden büyük olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının büyük olduğu bilgisi eklenmeli; 'Bu ürün normalden 2 beden büyük kalıp ile üretilmiştir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ürün 2 beden büyük geliyor.
+  - [Kalite | ekle] Yaka etiketinin rahatsız edici olabileceği bilgisi eklenmeli; 'Yaka etiketinin ciltte tahrişe neden olabileceği konusunda dikkatli olunmalıdır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Yaka etiketi rahatsız edici, ciltte tahrişe neden oluyor.

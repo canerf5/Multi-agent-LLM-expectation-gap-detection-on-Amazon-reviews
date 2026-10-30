@@ -1,0 +1,13 @@
+ASIN:         B01GRVO402
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'HIGH-QUALITY FABRIC - Specially made of 100% other fibers and 8.5 oz. Cotton Canvas fabric that provides a comfortable feel while keeping a stretched fit.'
+ana_risk:     Sayfa, yüksek kaliteli kumaş iddiasında bulunuyor ancak müşteriler ince ve yetersiz yalıtım ile büyük beden sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden seçenekleri arasında 36" uzunluk bulunmadığını belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: 36" uzunluk seçeneği yok.
+  - [Malzeme | değiştir] Astarın kalınlığı ve yalıtım özellikleri hakkında daha net bilgi verin.
+      sayfa: 'HIGH-QUALITY FABRIC - Specially made of 100% other fibers and 8.5 oz. Cotton Canvas fabric that provides a comfortable feel while keeping a stretched fit.' | müşteri: Yorum 1, 3: İç astar ince ve yetersiz yalıtım sağlıyor.

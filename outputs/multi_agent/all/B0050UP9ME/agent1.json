@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "88% polyester, 12% elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "3.4 cover. 79/21 nylon and spandex mesh body and 88/12 polyester and spandex lining.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Inside key pocket Side contrasting insert Front velcro closure Inside drawstring 10\" inseam (L)",
+      "iddia_turu": "genel"
+    }
+  ]
+}

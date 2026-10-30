@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Quality Guaranteed: Discover a new level of confidence in yo'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Quality Guaranteed: Discover a new level of confidence in yo'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Quality Guaranteed: Discover a new level of confidence in yo'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Quality Guaranteed: Discover a new level of confidence in yo'"
+  ],
+  "parent_asin": "B07PWQDFSB",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 5,
+  "sure_duvar_sn": 8.919,
+  "time": "2026-10-30T18:41:45+00:00"
+}

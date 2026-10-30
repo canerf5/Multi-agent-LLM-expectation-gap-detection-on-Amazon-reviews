@@ -1,0 +1,10 @@
+ASIN:         B07VV1RV62
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 8, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada dayanıklılık hakkında bilgi yok, ancak müşteriler ürünün ilk yıkamada küçüldüğünü belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün yıkama talimatlarını ve dayanıklılığı hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 8, 9: İlk yıkamada küçüldü.

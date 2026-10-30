@@ -1,0 +1,16 @@
+ASIN:         B089CKS4GS
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1 | sayfa iddiası: '92% Modal, 8% Spandex Jersey'
+  - Dayanıklılık: yorum 6, 10 | sayfa iddiası: 'These boxers are incredibly durable and are highly fade resistant.'
+  - Beden/Kalıp: yorum 2, 4, 11 | sayfa iddiası: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).'
+ana_risk:     Sayfada kumaşın kalitesi ve dayanıklılığı ile ilgili somut iddialar var, ancak müşteriler kumaşın ince ve şeffaf olduğunu, ürünlerin yıkama sonrası pilling yaptığını ve bedenlerin normalden küçük olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince olduğu ve şeffaflık sorununa dikkat çekilecek şekilde açıklama ekleyin.
+      sayfa: '92% Modal, 8% Spandex Jersey' | müşteri: Yorum 1: Kumaş çok ince ve şeffaf.
+  - [Dayanıklılık | değiştir] Ürünlerin yıkama sonrası dayanıklılığı hakkında daha net bilgi verin; pilling yapma ihtimaline karşı uyarı ekleyin.
+      sayfa: 'These boxers are incredibly durable and are highly fade resistant.' | müşteri: Yorum 6, 10: Ürünler yıkama sonrası pilling yapıyor ve inceleşiyor.
+  - [Beden/Kalıp | değiştir] Bedenlerin normalden küçük olduğu konusunda uyarı ekleyin; bir beden büyük almanız önerilir.
+      sayfa: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).' | müşteri: Yorum 2, 4, 11: Bedenler normalden küçük ve kalıp uyumsuz.

@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        8
+      ],
+      "sayfa_iddiasi": "Material:Polyester+Lace"
+    }
+  ],
+  "ana_risk": "Sayfada polyester ve dantel malzeme iddiası var, ancak müşteriler kumaşı çok ince ve şeffaf buluyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Material:Polyester+Lace",
+      "musteri_deneyimi": "Yorum 1, 8: Çok ince ve şeffaf kumaş.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli."
+    }
+  ]
+}

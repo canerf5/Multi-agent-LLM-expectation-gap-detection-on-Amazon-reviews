@@ -1,0 +1,13 @@
+ASIN:         B08F1788ZY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 7, 8, 11, 12 | sayfa iddiası: 'Size:X-Large/XX-Large/3X-Large/4X-Large;Color:Black/Suntan'
+  - Malzeme: yorum 3, 5, 6 | sayfa iddiası: '91% Polyamide, 9% Elastane'
+ana_risk:     Sayfa, beden ve kalıp konusunda büyük beden kullanıcılar için uygun olduğunu iddia ediyor; ancak birçok müşteri bu ürünlerin kalıbının küçük olduğunu ve rahat bir oturuş sağlamadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük olduğu ve daha büyük bedenlerin tercih edilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'Size:X-Large/XX-Large/3X-Large/4X-Large;Color:Black/Suntan' | müşteri: Yorum 2, 7, 8, 11, 12: Beden kalıbı küçük, rahat oturmuyor.
+  - [Malzeme | değiştir] Malzemenin dayanıklılığı hakkında bilgi eklenmeli; 'malzeme çabuk yırtılabilir' uyarısı yapılmalı.
+      sayfa: '91% Polyamide, 9% Elastane' | müşteri: Yorum 3, 5, 6: Malzeme kalitesi düşük, çabuk yırtılıyor ve deliniyor.

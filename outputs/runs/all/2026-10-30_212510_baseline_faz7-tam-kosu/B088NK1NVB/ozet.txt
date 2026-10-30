@@ -1,0 +1,13 @@
+ASIN:         B088NK1NVB
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 6, 8, 9, 10, 13 | sayfa iddiası: '94% Nylon, 6% Spandex'
+  - Kalite: yorum 3, 4, 5, 8, 11, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesi hakkında bilgi veriyor ancak müşteriler şeffaflık ve kalitesizlik sorunları yaşıyor; sayfada bu konuda bilgi yok.
+öneriler:
+  - [Malzeme | ekle] Ürünün şeffaf olduğu ve spor yaparken giyilmemesi gerektiği bilgisi eklenmeli.
+      sayfa: '94% Nylon, 6% Spandex' | müşteri: Yorum 1, 5, 6, 9, 10, 13: Ürün tamamen şeffaf ve giyilemez durumda.
+  - [Kalite | ekle] Ürünün kalitesiz olduğu ve dikişlerinin zayıf olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 8, 11, 12: Ürün kalitesi düşük, dikişleri zayıf ve çabuk yıpranıyor.

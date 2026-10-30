@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "91% Polyamide, 9% Elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "70D plus size tights stightens slightly from tummy to thigh",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Queen size tights perfect stretch to keep you comfy all day",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size:X-Large/XX-Large/3X-Large/4X-Large",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "Color:Black/Suntan",
+      "iddia_turu": "somut"
+    }
+  ]
+}

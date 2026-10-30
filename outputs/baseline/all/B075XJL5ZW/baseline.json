@@ -1,0 +1,45 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        3,
+        7,
+        8
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesiz olduğu ve düğmelerinin hemen koptuğu iddialarıyla çelişiyor; müşteriler ürünün kullanılamaz durumda geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5: Ürün kirli ve kullanılmış geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün temiz ve yeni olduğuna dair garanti verin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 7, 8: Düğmesi hemen koptu.",
+      "islem": "ekle",
+      "duzeltme": "Düğmenin sağlamlığı hakkında bilgi ekleyin; 'düğme sağlamdır' gibi."
+    }
+  ]
+}

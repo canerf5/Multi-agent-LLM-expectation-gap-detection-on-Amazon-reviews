@@ -1,0 +1,16 @@
+ASIN:         B0B6R8LRP5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 7, 8 | sayfa iddiası: 'An exaggerated fit that feels extra roomy.'
+  - Malzeme: yorum 6, 9 | sayfa iddiası: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.'
+  - Kalite: yorum 1, 3, 8, 10 | sayfa iddiası: 'Zipper closure'
+ana_risk:     Sayfa, ürünün kalitesinin yüksek olduğunu ve rahat bir oturuş sunduğunu vaat ediyor; ancak müşteriler, dikiş kalitesi ve malzeme ile ilgili ciddi sorunlar yaşıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Kalıbı normalden kısa, bir beden büyük almanız önerilir.' ekleyin.
+      sayfa: 'An exaggerated fit that feels extra roomy.' | müşteri: Yorum 2, 4, 5, 7, 8: Ürün kalıbı beklenenden kısa ve uyumsuz.
+  - [Malzeme | değiştir] Malzeme hakkında daha net bilgi ver; 'Kumaş %90 polyester, %10 spandex'tir.' ekleyin.
+      sayfa: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.' | müşteri: Yorum 6, 9: Malzeme kalitesi beklenenden düşük, sentetik bir kumaş.
+  - [Kalite | değiştir] Kalite kontrolü hakkında bilgi ekleyin; 'Ürünlerimizde kalite kontrolü yapılmaktadır, ancak sorun yaşarsanız iade edebilirsiniz.' yazın.
+      sayfa: 'Zipper closure' | müşteri: Yorum 1, 3, 8, 10: Dikiş ve fermuar kalitesi düşük, ürün kullanılamaz hale geliyor.

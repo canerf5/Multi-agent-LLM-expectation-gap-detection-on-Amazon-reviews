@@ -1,0 +1,13 @@
+ASIN:         B07989M1JJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'Mid-rise jeans that are fitted through the thigh and fitted at the knee into a boot cut for a slimming and lengthening silhouette.'
+  - Görsel: yorum 1, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ölçüsü iddiası var, ancak müşteriler bedenin beklenenden küçük veya uzun olduğunu belirtiyor; ayrıca ürün fotoğraflarıyla uyuşmuyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüsü hakkında daha net bilgi ver; 'Beden ölçüsü normalden küçük veya uzun gelebilir, bir beden büyük almanız önerilir.'
+      sayfa: 'Mid-rise jeans that are fitted through the thigh and fitted at the knee into a boot cut for a slimming and lengthening silhouette.' | müşteri: Yorum 2, 3: Beden ölçüsü beklenenden küçük veya uzun.
+  - [Görsel | ekle] Ürün sayfasına gerçek ürün fotoğraflarını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5, 6, 7: Ürün fotoğraflarıyla uyuşmuyor.

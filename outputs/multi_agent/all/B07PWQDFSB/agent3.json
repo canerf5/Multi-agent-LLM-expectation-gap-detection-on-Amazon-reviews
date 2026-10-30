@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "sayfa_iddiasi": "available in sizes from XS to 3XL"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "our commitment to quality and comfort is guaranteed"
+    }
+  ],
+  "ana_risk": "Sayfada 'XS'den 3XL'e kadar beden mevcut' iddiası var, ancak müşteriler 'çok küçük geldi' diyor; ayrıca 'kalite ve konfor garantisi' var ama 'düğmeler ilk günden çıktı' şikayeti var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "available in sizes from XS to 3XL",
+      "musteri_deneyimi": "Yorum 1, 5: Çok küçük geldi",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "our commitment to quality and comfort is guaranteed",
+      "musteri_deneyimi": "Yorum 3, 4: Düşük kalite, düğmeler ilk günden çıktı",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrol süreçlerinin güçlendirildiği bilgisi eklenmeli."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B005CMR5OK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 5, 6 | sayfa iddiası: 'Heel measures approximately 2.25"'
+  - Görsel: yorum 1, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabının 2.25 inç topuk yüksekliği olduğunu iddia ediyor, ancak müşteriler bu yüksekliği yanıltıcı buluyor ve ayakkabının düz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Topuk yüksekliği yanıltıcı; 'Topuk yüksekliği 2.25 inç, ancak bazı kullanıcılar bu yükseklikten memnun kalmadı' notu ekleyin.
+      sayfa: 'Heel measures approximately 2.25"' | müşteri: Yorum 1, 4, 5, 6: Ayakkabı numarası beklenenden küçük; 1/2 numara yok.
+  - [Görsel | ekle] Ayakkabının tasarımının bazı kullanıcılar için güvenli hissettirmediğine dair bir uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 7: Ayakkabı tasarımı güven vermiyor ve ayakta durmuyor.

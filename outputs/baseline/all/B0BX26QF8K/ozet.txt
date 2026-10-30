@@ -1,0 +1,13 @@
+ASIN:         B0BX26QF8K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 4 | sayfa iddiası: 'The silk satin material is highly breathable, which helps regulate your body temperature throughout the night.'
+ana_risk:     Beden ve kalıp ile ilgili sorunlar var; sayfa, beden ölçüleri hakkında bilgi vermiyor ama yorumlar küçük ve büyük beden sorunlarını dile getiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında bilgi ekleyin; örneğin, 'Küçük beden 34-36, Orta beden 38-40' gibi.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Bedenler küçük ve büyük geliyor.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi verin; örneğin, 'Dikişlerin rahatlığı artıracak şekilde tasarlandığını belirtin.'
+      sayfa: 'The silk satin material is highly breathable, which helps regulate your body temperature throughout the night.' | müşteri: Yorum 1, 4: Kalite beklentileri karşılamıyor, dikişler rahatsız ediyor.

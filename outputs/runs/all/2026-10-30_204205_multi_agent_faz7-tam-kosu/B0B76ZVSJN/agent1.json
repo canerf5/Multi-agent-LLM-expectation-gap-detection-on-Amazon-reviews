@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "This graphic print crop top made of 80% Polyester & 20% Cotton, soft and comfy to wear",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Regular fit. Please refer to the size measurement in images before ordering",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "feature with stylish graphic print, THANK YOU letter print",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "cute, sexy and trendy style",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "summer streetwear cropped shirt for women",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "can be worn with high waisted jeans, leggings, shorts or skirts",
+      "iddia_turu": "genel"
+    }
+  ]
+}

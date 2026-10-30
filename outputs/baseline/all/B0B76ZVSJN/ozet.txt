@@ -1,0 +1,13 @@
+ASIN:         B0B76ZVSJN
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının dar olduğunu ve kumaşının kalitesiz olduğunu iddia etmiyor; ancak müşteriler bu konularda şikayet ediyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Ürün dar, iki beden büyük almak gerekiyor.
+  - [Malzeme | ekle] Kumaşın kalitesi hakkında daha net bilgi verin; 'şık görünse de kumaş kalitesizdir' gibi bir not ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Kumaş kalitesiz, iade ettim.

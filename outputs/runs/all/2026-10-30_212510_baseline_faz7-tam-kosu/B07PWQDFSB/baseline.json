@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "sayfa_iddiasi": "Our jacket is available in sizes from XS to 3XL, ensuring that every man can find their perfect fit."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Quality Guaranteed: Discover a new level of confidence in your shopping experience! Our commitment to quality and comfort is guaranteed."
+    }
+  ],
+  "ana_risk": "Beden ve kalite ile ilgili ciddi sorunlar var; sayfa, her bedenin uygun olacağını ve kaliteli bir ürün sunacağını vaat ediyor, ancak müşteriler tam tersi deneyimler yaşamış.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Our jacket is available in sizes from XS to 3XL, ensuring that every man can find their perfect fit.",
+      "musteri_deneyimi": "Yorum 1, 5: Bedenler beklenenden küçük; kalıp dar.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp dar, bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Quality Guaranteed: Discover a new level of confidence in your shopping experience! Our commitment to quality and comfort is guaranteed.",
+      "musteri_deneyimi": "Yorum 2, 3, 4: Kalite çok düşük; dikişler ve fermuar sorunlu.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalitesi ile ilgili sorunlar yaşanabilir, dikkatli olun."
+    }
+  ]
+}

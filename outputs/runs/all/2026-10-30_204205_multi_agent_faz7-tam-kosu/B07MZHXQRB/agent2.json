@@ -1,0 +1,139 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Görsel",
+      "ozet": "Arka fotoğraf yanıltıcı, ön tarafı göstermiyor.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Çok kötü kalite, hayatımda gördüğüm en kötü şey.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Yanlış beden gönderildi, çok büyük geldi.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Zipper yanlış tarafta, kullanımı zorlaştırıyor.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında bilgi yoktu.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Hemen su geçirdi, dayanıklı değil.",
+      "yorum_numaralari": [
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğraftaki gibi değil, ince bir plastik torba gibi.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kesinlikle su geçirmiyor, sadece rüzgar kesici.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Uzun süreli ticari kullanım için uygun değil, yırtılma ve kopma yapıyor.",
+      "yorum_numaralari": [
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Nefes almıyor, vücut nemini hapsediyor.",
+      "yorum_numaralari": [
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "İlk giyişte su geçirdi, kıyafetlerim ıslandı.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Reklam edilenle aynı değil, hayal kırıklığına uğradım.",
+      "yorum_numaralari": [
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Çok ucuz yapım, kalitesiz.",
+      "yorum_numaralari": [
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Poncho gibi, beklediğim gibi değil.",
+      "yorum_numaralari": [
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Su geçirmiyor ama nefes almıyor, ıslak kaldım.",
+      "yorum_numaralari": [
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

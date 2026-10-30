@@ -1,0 +1,17 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Ürün hasarlı geldi, delikler var.'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Ürün hasarlı geldi, delikler var.'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B00UD3XOFM",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 4,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 9.182,
+  "time": "2026-10-30T17:58:05+00:00"
+}

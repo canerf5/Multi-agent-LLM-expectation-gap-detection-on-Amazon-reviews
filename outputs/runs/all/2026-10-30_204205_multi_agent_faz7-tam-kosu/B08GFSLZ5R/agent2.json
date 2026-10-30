@@ -1,0 +1,23 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Ürün kalitesi düşük, düğmeler büyük ve ucuz görünüyor.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürün çok küçük, 2 beden büyük alınmalı.",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

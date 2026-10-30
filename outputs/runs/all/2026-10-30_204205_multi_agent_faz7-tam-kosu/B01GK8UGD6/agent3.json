@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Görsel",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        7
+      ],
+      "sayfa_iddiasi": "One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)]."
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün, 'One Size Regular' iddiasına rağmen bazı kullanıcılara çok büyük geldiğini belirtiyor; ayrıca ürün fotoğraftaki görünümden farklı olduğu ve işçilik hatası içerdiği şikayetleri var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].",
+      "musteri_deneyimi": "Yorum 2, 7: Ürün çok büyük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerini gözden geçirerek, daha net bir beden aralığı bilgisi ekleyin."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün fotoğraftaki görünümden farklı.",
+      "islem": "ekle",
+      "duzeltme": "Ürün fotoğraflarını güncelleyerek, gerçek görünümünü yansıtacak şekilde değiştirin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 5: Ürün işçilik hatası içeriyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi verin ve işçilik standartlarını açıklayın."
+    }
+  ]
+}

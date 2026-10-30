@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "This Jeans is made of stretchy cotton material, elasticity is very good.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Torn design is popular in fashion, we think everyone should have a ripped jeans.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "It goes will with different styles of clothes, sometimes simple design is the best, no need to consider matching which clothes, with such simple style, it can go well with all the clothes in your wardrobe.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "color not easy to fade after washing.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Mens skinny jeans stretch with mental zipper and button is not easy to be broken.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Such a skinny denim ripped jeans for men goes well with shirt,T-shirt,pullover,jacket.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

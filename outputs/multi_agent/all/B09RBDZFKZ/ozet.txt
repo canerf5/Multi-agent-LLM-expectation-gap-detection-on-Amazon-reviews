@@ -1,0 +1,5 @@
+ASIN:         B09RBDZFKZ
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

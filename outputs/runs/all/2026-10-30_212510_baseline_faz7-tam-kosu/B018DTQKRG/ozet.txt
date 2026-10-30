@@ -1,0 +1,16 @@
+ASIN:         B018DTQKRG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 5, 6, 12 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 10, 14 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 7, 8, 13 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün beden ve kalıp bilgisi vermiyor; müşteriler ise ürünün küçük ve rahatsız olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden tablosu ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 5, 6, 12: Bedenler küçük, rahatsız ediyor.
+  - [Malzeme | ekle] Kumaş kalitesi hakkında bilgi ekleyin; 'Ürün ince ve şeffaf olabilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 10, 14: Çok ince ve kalitesiz, şeffaf görünüyor.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'Ürünlerin dayanıklılığı sınırlı olabilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 7, 8, 13: Kalite düşük, çabuk yıpranıyor.

@@ -1,0 +1,67 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü, kağıt gibi hissediliyor.",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler beklenenden küçük, normalde giyilen bedenden daha küçük.",
+      "yorum_numaralari": [
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk beklenenden daha koyu.",
+      "yorum_numaralari": [
+        8,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "İlk kullanımda yırtıldı.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında 'heavy canvas' yazıyordu ama ağır pamuk çıktı.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "3XLT bedenin uzunluğu beklenenden kısa.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

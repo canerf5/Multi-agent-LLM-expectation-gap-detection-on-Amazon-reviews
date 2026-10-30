@@ -1,0 +1,10 @@
+ASIN:         B00UPG17WY
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '100% Synthetic'
+ana_risk:     Sayfada '100% Synthetic' iddiası var, ancak kullanıcılar topuk kısmındaki plastik nedeniyle zor giyme sorunuyla karşılaşıyor.
+öneriler:
+  - [Malzeme | değiştir] Topuk kısmının giyimi kolaylaştıracak şekilde tasarlandığını belirtin.
+      sayfa: '100% Synthetic' | müşteri: Yorum 2, 3: Topuk kısmındaki plastik zor giydiriyor.

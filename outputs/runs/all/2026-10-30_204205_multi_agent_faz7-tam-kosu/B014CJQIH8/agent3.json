@@ -1,0 +1,60 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Renk",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "Regular trim with modern cut fit, good quality warm overcoat"
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        3,
+        8
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "Money-back satisfaction guarantee."
+    }
+  ],
+  "ana_risk": "Beden kalıbı, renk ve kalite ile ilgili şikayetler var; sayfada vaat edilen kalıp, renk ve kalite ile çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Regular trim with modern cut fit, good quality warm overcoat",
+      "musteri_deneyimi": "Yorum 2: Çok büyük geldi, tam oturmadı.",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının daha dar olduğunu belirtin; 'Bir beden küçük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 8: Renk beklediğim gibi değil, farklı geldi.",
+      "islem": "ekle",
+      "duzeltme": "Renk seçeneklerini ve gerçek renk tonunu belirtin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Money-back satisfaction guarantee.",
+      "musteri_deneyimi": "Yorum 4, 5, 6, 7: Kalite çok düşük, düğme koptu.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrol süreçlerini ve kullanılan malzemelerin dayanıklılığını vurgulayın."
+    }
+  ]
+}

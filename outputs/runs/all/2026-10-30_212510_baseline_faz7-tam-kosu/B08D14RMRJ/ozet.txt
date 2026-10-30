@@ -1,0 +1,13 @@
+ASIN:         B08D14RMRJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Shaft measures approximately low-top from arch'
+  - Kalite: yorum 2, 3, 5, 6, 7 | sayfa iddiası: "This protective and sturdy leather moc, built with cushion for comfort for when you're spending a long time on your feet."
+ana_risk:     Beden ve kalıp iddiası var, ancak müşteriler ayakkabının büyük geldiğini belirtiyor; kalite iddiaları da, ürünün kalitesiz olduğunu gösteriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp büyük; bir beden küçük almanız önerilir.
+      sayfa: 'Shaft measures approximately low-top from arch' | müşteri: Yorum 1, 4: Ayakkabı numarası büyük geliyor.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi verin; kalite kontrol süreçlerini belirtin.
+      sayfa: "This protective and sturdy leather moc, built with cushion for comfort for when you're spending a long time on your feet." | müşteri: Yorum 2, 3, 5, 6, 7: Kalite sorunları var; dikişler ve taban ayrılıyor.

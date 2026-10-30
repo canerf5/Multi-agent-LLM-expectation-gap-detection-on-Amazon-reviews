@@ -1,0 +1,13 @@
+ASIN:         B00Q7JD0SW
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'Rated -25F/-32C.'
+  - Dayanıklılık: yorum 2, 4 | sayfa iddiası: 'Waterproof seam-sealed construction.'
+ana_risk:     Sayfa, -25F/-32C sıcaklıkta koruma vaat ediyor, ancak kullanıcılar ayaklarının soğuk olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında, bu botların soğuk havada yeterince sıcak tutmadığına dair bir uyarı ekleyin.
+      sayfa: 'Rated -25F/-32C.' | müşteri: Yorum 1, 3: Soğuk havada ayaklarım üşüdü.
+  - [Dayanıklılık | değiştir] Ürün sayfasında, bu botların kar ve aşırı soğuk hava koşullarında performansının sınırlı olabileceğine dair bir uyarı ekleyin.
+      sayfa: 'Waterproof seam-sealed construction.' | müşteri: Yorum 2, 4: Kar yağışında yeterince iyi değil.

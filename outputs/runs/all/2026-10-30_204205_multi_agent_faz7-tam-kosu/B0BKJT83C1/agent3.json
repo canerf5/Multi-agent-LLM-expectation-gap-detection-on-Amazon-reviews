@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above."
+    }
+  ],
+  "ana_risk": "Sayfa, daha geniş bir oturuş için 1-2 beden büyük alınması gerektiğini belirtiyor; ancak müşteriler ürünün çok küçük geldiğini bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above.",
+      "musteri_deneyimi": "Yorum 1, 3: Çok küçük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında 'Beden tablosuna göre 1-2 beden büyük almanız önerilir' ifadesinin yanına 'Ancak bazı kullanıcılar ürünü küçük buldu' notunu ekleyin."
+    }
+  ]
+}

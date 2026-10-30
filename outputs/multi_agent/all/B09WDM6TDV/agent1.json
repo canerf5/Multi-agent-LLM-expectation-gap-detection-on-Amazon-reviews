@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size 30 (Jacket30/Pants29); Size 32 (Jacket32/Pants30);Size 34 (Jacket34/Pants31); Size 36 (Jacket36/Pants32);Size 38 (Jacket38/Pants34);Size 40 (Jacket40/Pants36);Size 42 (Jacket42/Pants38); Size 44 (Jacket44/Pants40)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "woven",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Stylish looking and slim fit great quality for all kinds of occasions",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This men wide shawl lapel generation tuxedo suit is crafted with full shoulder and slim cut with 3D draping.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

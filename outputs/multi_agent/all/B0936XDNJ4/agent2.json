@@ -1,0 +1,42 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük, dikişler yırtılıyor.",
+      "yorum_numaralari": [
+        1,
+        4,
+        10,
+        11,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler küçük geliyor, yanlış beden gönderilmiş.",
+      "yorum_numaralari": [
+        2,
+        3,
+        5,
+        12,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş şeffaf, görünümde sorun var.",
+      "yorum_numaralari": [
+        6,
+        7,
+        8,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

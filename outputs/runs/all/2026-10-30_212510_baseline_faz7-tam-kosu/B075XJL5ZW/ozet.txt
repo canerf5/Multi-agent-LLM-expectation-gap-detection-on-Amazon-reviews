@@ -1,0 +1,13 @@
+ASIN:         B075XJL5ZW
+gap_var:      Evet
+gap_tipleri:  Kalite, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 5, 6 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 7, 8 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalitesiz olduğu ve düğmelerinin hemen koptuğu iddialarıyla çelişiyor; müşteriler ürünün kullanılamaz durumda geldiğini belirtiyor.
+öneriler:
+  - [Kalite | ekle] Ürünün temiz ve yeni olduğuna dair garanti verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Ürün kirli ve kullanılmış geldi.
+  - [Dayanıklılık | ekle] Düğmenin sağlamlığı hakkında bilgi ekleyin; 'düğme sağlamdır' gibi.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 7, 8: Düğmesi hemen koptu.

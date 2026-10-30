@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 9 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 10 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 12 hem Malzeme hem Dayanıklılık için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 9 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 10 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 12 hem Malzeme hem Dayanıklılık için sayılmış"
+  ],
+  "parent_asin": "B08BFQPRRQ",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 10.487,
+  "time": "2026-10-30T18:43:07+00:00"
+}

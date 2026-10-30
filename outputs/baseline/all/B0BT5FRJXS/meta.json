@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Horrible quality - The material looks and feels like paper. '",
+    "tek konu kuralı: yorum 1 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 2 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 4 hem Malzeme hem Kalite için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Horrible quality - The material looks and feels like paper. '"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 1 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 2 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 4 hem Malzeme hem Kalite için sayılmış"
+  ],
+  "parent_asin": "B0BT5FRJXS",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 6,
+  "sure_duvar_sn": 9.255,
+  "time": "2026-10-30T18:48:08+00:00"
+}

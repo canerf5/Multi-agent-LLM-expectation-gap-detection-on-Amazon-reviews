@@ -1,0 +1,13 @@
+ASIN:         B07PWQDFSB
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5 | sayfa iddiası: 'available in sizes from XS to 3XL'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'our commitment to quality and comfort is guaranteed'
+ana_risk:     Sayfada 'XS'den 3XL'e kadar beden mevcut' iddiası var, ancak müşteriler 'çok küçük geldi' diyor; ayrıca 'kalite ve konfor garantisi' var ama 'düğmeler ilk günden çıktı' şikayeti var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'available in sizes from XS to 3XL' | müşteri: Yorum 1, 5: Çok küçük geldi
+  - [Kalite | değiştir] Kalite kontrol süreçlerinin güçlendirildiği bilgisi eklenmeli.
+      sayfa: 'our commitment to quality and comfort is guaranteed' | müşteri: Yorum 3, 4: Düşük kalite, düğmeler ilk günden çıktı

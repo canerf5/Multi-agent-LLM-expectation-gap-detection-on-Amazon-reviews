@@ -1,0 +1,13 @@
+ASIN:         B07DWFVVCV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 11, 12, 15, 3, 4, 13, 2, 9 | sayfa iddiası: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation'
+  - Kalite: yorum 6, 14 | sayfa iddiası: 'without any unpleasant side effects'
+ana_risk:     Sayfada 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' iddiası var, ancak müşteriler ayakkabıların numara olarak küçük ve büyük geldiğini, parmak ucunda dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp ve beden bilgilerini daha net ifade edin; 'Ayakkabılar numara olarak küçük veya büyük gelebilir, lütfen beden tablosunu kontrol edin.'
+      sayfa: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' | müşteri: Yorum 5, 11, 12, 15: Ayakkabılar numara olarak küçük geldi; Yorum 3, 4, 13: Ayakkabılar numara olarak büyük geldi; Yorum 2, 9: Ayakkabılar parmak ucunda dar.
+  - [Kalite | değiştir] Ürün sayfasında kalite ve destek hakkında daha fazla bilgi verin; 'Ayakkabılar, uzun süreli kullanımda konfor ve destek sağlamak için tasarlanmıştır.'
+      sayfa: 'without any unpleasant side effects' | müşteri: Yorum 6, 14: Ayakkabının kalitesi kötü, destek yetersiz.

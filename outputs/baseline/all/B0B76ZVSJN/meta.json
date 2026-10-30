@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Regular fit. Please refer to the size measurement in images '",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'This graphic print crop top made of 80% Polyester & 20% Cott'",
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Malzeme için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Regular fit. Please refer to the size measurement in images '",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'This graphic print crop top made of 80% Polyester & 20% Cott'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "parent_asin": "B0B76ZVSJN",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 3,
+  "sure_duvar_sn": 6.82,
+  "time": "2026-10-30T18:30:38+00:00"
+}

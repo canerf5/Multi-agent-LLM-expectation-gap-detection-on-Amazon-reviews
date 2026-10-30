@@ -1,0 +1,10 @@
+ASIN:         B07XYM7M4P
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2 | sayfa iddiası: 'Fabric: Polyester& Cotton/ Machine Washable'
+ana_risk:     Sayfa, polyester ve pamuk karışımı kumaşın kalitesiz olduğunu iddia ediyor; ancak müşteriler dış malzemenin kalitesiz ve sert olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | ekle] Kumaş kalitesi hakkında daha net bilgi ver; 'Dış malzeme kalitesiz ve sert' ifadesini ekle.
+      sayfa: 'Fabric: Polyester& Cotton/ Machine Washable' | müşteri: Yorum 2: Dış malzeme kalitesiz, sert gibi.

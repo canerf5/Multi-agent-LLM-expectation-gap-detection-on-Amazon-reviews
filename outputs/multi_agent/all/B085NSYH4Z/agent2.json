@@ -1,0 +1,49 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Küçük geldi, beden uyumsuzluğu var.",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş çok ince ve kalitesiz.",
+      "yorum_numaralari": [
+        2,
+        10,
+        13,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün işçilik hatalarıyla geldi, dikişler kötü.",
+      "yorum_numaralari": [
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada esneklik yoktu.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

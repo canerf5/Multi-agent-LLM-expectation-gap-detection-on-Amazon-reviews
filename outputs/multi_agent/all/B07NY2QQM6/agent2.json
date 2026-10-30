@@ -1,0 +1,45 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün kısa sürede bozuluyor, yapıştırıcıları açılıyor.",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kullanılan malzeme kalitesiz, ince ve dar.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar dar, rahat değil.",
+      "yorum_numaralari": [
+        5,
+        6,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Memory foam hissedilmiyor, ayakları acıtıyor.",
+      "yorum_numaralari": [
+        1,
+        3,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

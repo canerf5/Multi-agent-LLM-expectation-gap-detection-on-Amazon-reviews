@@ -1,0 +1,49 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4,
+        12,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "65%Cotton，35%Rayon"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        7,
+        10,
+        11,
+        13
+      ],
+      "sayfa_iddiasi": "Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22."
+    }
+  ],
+  "ana_risk": "Malzeme iddiası var, ancak müşteriler kaşındıran ve sert kumaşla karşılaştıklarını belirtiyor; Beden/Kalıp iddiası var, fakat birçok müşteri ürünün çok büyük geldiğini söylüyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "65%Cotton，35%Rayon",
+      "musteri_deneyimi": "Yorum 1, 4, 12, 14, 15: Kaşındıran ve sert kumaş.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada kumaşın yumuşak ve nefes alabilir olduğu bilgisi eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.",
+      "musteri_deneyimi": "Yorum 3, 7, 10, 11, 13: Çok büyük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada bedenlerin büyük geldiğine dair bir uyarı eklenmeli; 'Bir beden küçük almanız önerilir' notu eklenmeli."
+    }
+  ]
+}

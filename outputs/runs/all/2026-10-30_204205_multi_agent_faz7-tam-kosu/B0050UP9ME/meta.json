@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "parent_asin": "B0050UP9ME",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 4,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 2 birden fazla ilgili grupta (grup 2 ve 3)"
+  ],
+  "sure_duvar_sn": 12.487,
+  "time": "2026-10-30T17:50:40+00:00"
+}

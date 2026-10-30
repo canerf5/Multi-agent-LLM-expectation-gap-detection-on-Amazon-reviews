@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        6
+      ],
+      "sayfa_iddiasi": "SIZE INFO: Item may run small, consider sizing up."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "MATERIAL - Made of 100% cotton, these sexy 80s outfit for women are produced for your comfort with their lightweight material and incredibly soft touch."
+    }
+  ],
+  "ana_risk": "Sayfa, bedenin küçük olabileceğini belirtiyor ancak müşteriler ürünün çok küçük veya çok büyük geldiğini bildiriyor; kalite iddiaları da ürünün dayanıklılığı ile çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "SIZE INFO: Item may run small, consider sizing up.",
+      "musteri_deneyimi": "Yorum 3, 4, 6: Ürün çok küçük veya çok büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının dar olduğunu belirtin; 'Bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "MATERIAL - Made of 100% cotton, these sexy 80s outfit for women are produced for your comfort with their lightweight material and incredibly soft touch.",
+      "musteri_deneyimi": "Yorum 2, 5: Kalite düşük, yazılar hemen soyuluyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün kalitesinin yüksek olduğunu belirtin; 'Yıkama sonrası soyulma yapabilir' uyarısı ekleyin."
+    }
+  ]
+}

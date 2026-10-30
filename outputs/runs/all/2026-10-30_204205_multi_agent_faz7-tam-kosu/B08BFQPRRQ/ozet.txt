@@ -1,0 +1,13 @@
+ASIN:         B08BFQPRRQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 11 | sayfa iddiası: 'Loose-Fit: designed for comfort'
+  - Malzeme: yorum 4, 8, 9, 10, 12, 13 | sayfa iddiası: '35% Polyester, 35% Acrylic, 30% Nylon'
+ana_risk:     Loose-Fit iddiası var, ancak müşteriler bedenin büyük olduğunu ve oturuşun kötü olduğunu belirtiyor; kumaş kalitesi iddiası var, fakat kullanıcılar kumaşın kalitesiz olduğunu ve pilling yaptığını söylüyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Loose-Fit: designed for comfort' ifadesinin yanına 'Beden büyük, oturuşu kötü; bir beden küçük almanız önerilir.' notunu ekleyin.
+      sayfa: 'Loose-Fit: designed for comfort' | müşteri: Yorum 1, 2, 11: Beden büyük ve oturuş kötü.
+  - [Malzeme | değiştir] Sayfada kumaş kalitesi ile ilgili 'Pilling yapma riski vardır; dikkatli yıkama önerilir.' uyarısını ekleyin.
+      sayfa: '35% Polyester, 35% Acrylic, 30% Nylon' | müşteri: Yorum 4, 8, 9, 10, 12, 13: Kumaş kalitesi kötü, pilling yapıyor.

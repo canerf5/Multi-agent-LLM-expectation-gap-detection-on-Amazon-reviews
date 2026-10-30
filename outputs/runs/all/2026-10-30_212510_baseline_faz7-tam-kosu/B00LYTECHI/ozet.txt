@@ -1,0 +1,13 @@
+ASIN:         B00LYTECHI
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 5 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün beden uyumu ve kalitesi hakkında net bilgi vermiyor; müşteriler bedenin dar olduğunu ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden uyumu hakkında bilgi ekleyin; 'Dar kalıp, büyük bedenler için önerilmez.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 5: Beden dar; büyük bedenler için uygun değil.
+  - [Kalite | ekle] Kalite ile ilgili daha net bilgi verin; 'Kalite standartları gözden geçirilmiştir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Kalite düşük; tekrar satın almayı düşünmüyorum.

@@ -1,0 +1,13 @@
+ASIN:         B07DFZPSSF
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2 | sayfa iddiası: 'Wrinkle free'
+ana_risk:     Sayfa, 'wrinkle free' iddiasında bulunuyor ancak müşteriler bu ürünün kırışmadığını belirtmekte; ayrıca beden kalıbı da beklenenden küçük.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden kalıbının küçük olduğu ve bir beden büyük alınması gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 4: Beden kalıbı beklenenden küçük, 1-3 beden büyük alınması öneriliyor.
+  - [Malzeme | değiştir] 'Wrinkle free' ifadesi kaldırılmalı veya doğruluğu belirtilmeli.
+      sayfa: 'Wrinkle free' | müşteri: Yorum 2: Ürün kırışmaz değil, bu bilgi yanıltıcı.

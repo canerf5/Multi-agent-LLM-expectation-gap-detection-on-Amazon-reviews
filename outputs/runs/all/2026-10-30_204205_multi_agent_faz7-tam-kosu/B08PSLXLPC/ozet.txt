@@ -1,0 +1,13 @@
+ASIN:         B08PSLXLPC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 12, 5, 11, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 3, 7, 10, 15 | sayfa iddiası: 'made of genuine luxury split leather upper with classic fine stitching.'
+ana_risk:     Sayfada malzeme kalitesi ile ilgili somut bir iddia var, ancak müşteriler ayakkabıların ucuz olduğunu ve destek sunmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasında bedenlerin küçük olduğu ve bir beden büyük sipariş verilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 12, 5, 11, 14: Ayakkabılar belirtilen bedenden çok küçük, bir ayakkabı diğerinden büyük, bedenler küçük, bir beden büyük sipariş verilmeli, ayakkabılar kısa ve geniş.
+  - [Malzeme | değiştir] Sayfada malzeme kalitesinin yüksek olduğu vurgusu gözden geçirilmeli ve destekleyici malzeme bilgisi eklenmeli.
+      sayfa: 'made of genuine luxury split leather upper with classic fine stitching.' | müşteri: Yorum 2, 3, 7, 10, 15: Ayakkabılar çok ucuz ve destek yok.

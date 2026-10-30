@@ -1,0 +1,13 @@
+ASIN:         B085NSYH4Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 5, 7, 9, 12 | sayfa iddiası: 'Runs Small!!! Please order one size up if you want a more comfortable style.'
+  - Malzeme: yorum 2, 10, 13, 14, 15 | sayfa iddiası: 'made of soft and smooth satin fabric, they are breathable, comfortable and no itchy.'
+ana_risk:     Beden kalıbı küçük geliyor, oysa sayfada bir beden büyük almanız gerektiği belirtiliyor; kumaş kalitesiz, sayfada ise yumuşak ve rahat olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "Bir beden büyük almanız önerilir" ifadesini ekleyin.
+      sayfa: 'Runs Small!!! Please order one size up if you want a more comfortable style.' | müşteri: Yorum 3, 4, 5, 7, 9, 12: Küçük geldi, beden uyumsuzluğu var.
+  - [Malzeme | değiştir] "Kumaş ince ve kalitesizdir" uyarısını ekleyin.
+      sayfa: 'made of soft and smooth satin fabric, they are breathable, comfortable and no itchy.' | müşteri: Yorum 2, 10, 13, 14, 15: Kumaş çok ince ve kalitesiz.

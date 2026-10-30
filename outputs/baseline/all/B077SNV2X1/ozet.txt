@@ -1,0 +1,13 @@
+ASIN:         B077SNV2X1
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Made with the best quality materials, and designed for durability, so you can enjoy wearing them for years to come.'
+  - Kalite: yorum 1, 2, 3 | sayfa iddiası: 'These are by far, the most comfortable shoes you will ever own, as they feature a memory foam insole and Flex A Lite Outsole.'
+ana_risk:     Sayfa, ürünün dayanıklılığı ve kalitesi hakkında iddialarda bulunuyor, ancak müşteriler ayakkabıların kısa sürede bozulduğunu bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha gerçekçi bir ifade ekleyin; 'Kısa süreli kullanımda dayanıklılık sorunları yaşanabilir.'
+      sayfa: 'Made with the best quality materials, and designed for durability, so you can enjoy wearing them for years to come.' | müşteri: Yorum 2, 3: Ayakkabıların tabanı tamamen ayrıldı.
+  - [Kalite | değiştir] Konfor iddiasını gözden geçirin; 'Konforlu ancak uzun süreli kullanımda kalite sorunları yaşanabilir.'
+      sayfa: 'These are by far, the most comfortable shoes you will ever own, as they feature a memory foam insole and Flex A Lite Outsole.' | müşteri: Yorum 1, 2, 3: Ayakkabılar kalitesiz ve çabuk bozuluyor.

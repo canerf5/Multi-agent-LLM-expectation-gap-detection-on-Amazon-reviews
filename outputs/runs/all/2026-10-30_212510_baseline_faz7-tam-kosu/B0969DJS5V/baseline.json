@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların kalıbı hakkında bilgi vermiyor; müşteriler ayakkabıların dar olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 3: Ayakkabılar dar; kalıp küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; kalıp hakkında bilgi ekleyin."
+    }
+  ]
+}

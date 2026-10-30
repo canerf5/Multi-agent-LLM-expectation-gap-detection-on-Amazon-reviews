@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün kalıbı ve beden uyumu ile ilgili sorunlar var; sayfada bu konuda bilgi yok.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Beden uyumu sorunlu; kalıp dar ve bel kısmı geniş.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbı hakkında bilgi ekleyin; 'Bedenler normalden küçük veya dar kalıp olabilir, bir beden büyük almanız önerilir.'"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "80% Cotton, 20% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Ultra soft Faux-fur lining",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight and soft special Faux-fur fabric.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Slim fit, DCF016-11 colors in 6 (U.S) sizes are available.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Ribbed trims at cuffs and waistband / Kanga pocket / Long sleeve / Drawstring with metal tips",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "COMFY & COZY - A special blend of comfort and fun, these plush materials are soft to the touch and will keep you warm during those cold winter months."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün yumuşak ve konforlu olduğu iddiasında bulunuyor; ancak müşteriler ince ve kalitesiz bir malzeme ile karşılaştıklarını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "COMFY & COZY - A special blend of comfort and fun, these plush materials are soft to the touch and will keep you warm during those cold winter months.",
+      "musteri_deneyimi": "Yorum 1, 2, 3, 4: Malzeme ince ve kalitesiz, yumuşak değil.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme hakkında daha net bilgi ver; 'Ürün ince ve kalitesiz bir kumaştan yapılmıştır, yumuşaklık garantisi yoktur.' gibi bir uyarı ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 4: Kalite çok kötü, ucuz görünüyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalite hakkında daha net bilgi ver; 'Ürün kalitesi düşük, dikkatli inceleyerek satın alınız.' gibi bir uyarı ekle."
+    }
+  ]
+}

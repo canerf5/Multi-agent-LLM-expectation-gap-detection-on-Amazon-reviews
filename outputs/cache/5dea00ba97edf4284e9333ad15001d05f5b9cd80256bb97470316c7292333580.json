@@ -1,0 +1,90 @@
+{
+  "tag": "agent2:B08GLYQ7G8",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3039,
+    "output_tokens": 264,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00061425,
+  "sure_sn": 3.443,
+  "created": "2026-10-30T17:47:08+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] Awful — Itchy, stiff, awful fit. Just an awful coat. Sorry\n\n2) [1★] Buyer BEWARE — I was really disappointed it took a month to get this coat and when it came it was not the correct color. I contacted the buyer and they gave me kind of a run around about, if I send it back it would take so long because it came from China. I settled for them just charging me a lesser price because I did not want to go through having to send this through customs back to China and waiting for them to finally get it and then refunding me my money and I'm sure they would have taken their sweet everliving time, long process. As you see the color is not a royal blue as they advertise it's navy. I was very disappointed so all I can say is buyer beware because this place will probably send you not the color of coat that you order and it felt like felt material instead of a wool.\n\n3) [2★] Cheap Fabric/ Don't waste money — Looks nice in the photo, but the fabric and color and so very cheap. Don't waste your time.\n\n4) [1★] Bad and bad — Lie and Bad in the world.\n\n5) [1★] No es color qué aparece me llegó un abrigó azúl marino casé Negro y bien súper pequeño — Malísima la calidad puper pequeña las tallas encargué xL t me queda cómo M\n\n6) [1★] DO NOT BUY -- A child's coat, not an adult's coat — This is not a woman's coat as advertised. It looks like a child's coat. This was a gift but I wouldn't give it since it's not as advertised. I'd give it no stars if I could. The seller has been horrible to deal with.\n\n7) [1★] Not the right color — This coat is NAVY! Cheap material! Don't bother ordering! Not worth 10.00. Took forever to get it. Very unhappy.....\n\n8) [1★] Don't know, never got it. — Can't tell you how this coat is because I never received it. It looks lovely in the picture...tracking says it was delivered two days after it shipped which is impossible since it appears to have shipped from China. Oh well, maybe you'll have better luck.\n\n9) [1★] Worst garment ever — First, this coat is very light weight, but that is not the worst part. What makes it just awful is the design of the coat. I know that I am not as tall or slim as the model in the picture, but the shape of this coat is nothing like the picture. The fabric and cut does not allow for proper fall or drape of the coat on your body. It looks like the first attempt of a beginner sewer of designing and sewing a coat. I have not been overly thrilled with the clothes that I have purchased online, and this is the last straw - I will not be buying any clothes from Amazon except for undies, pajamas and sneakers.\n\n10) [1★] Not recommended — Very thin and easily torn… im not happy with this purchase..\n\n11) [1★] This coat was returned immediately. Way too small. I would like to see the reimbursement. — It was very bad quality and way too small.At best it was a size M not XL. Please credit my account.\n\n12) [1★] WAY TOO SMALL — I had to order like 3 of these coats to FINALLY get one to fit. My daughter is a small to medium and I had to order an XXL for her.\n\n13) [1★] HORRIBLE!!! Scam — This is a swap and bait-they have used a picture from a retailer in US and this comes from China it’s horrible doesn’t even resemble what was advertised -buyer beware -do not order this trash -will be returning-have contacted Amazon and was told it comes from overseas -it’s a scam\n\n14) [1★] Terrible coat, terrible customer service — Don't buy from this company. I ordered coat in blue. In the picture it was a bright pretty blue. When i got the coat, the material was very cheap and the color was nothing like the picture. It also showed on my amazon account that it hadnt been delivered. Amazon said I had to contact the 3rd party seller for the refund. I did and never heard anything back. I contacted Amazon again and they said they would contact the seller for my refund. They never heard back from them either so Amazon refunded the money for me.\n\n15) [1★] Not the same beautiful blue or good material quality as advertised & viewed!! — Disliked color, quality of material & cut! Cheap!!",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Çok küçük geldi",
+        "yorum_numaralari": [
+          5,
+          11,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Renk",
+        "ozet": "Renk yanlış geldi",
+        "yorum_numaralari": [
+          2,
+          7,
+          14,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş kalitesi çok düşük",
+        "yorum_numaralari": [
+          3,
+          9,
+          10,
+          14,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Fotoğraftaki ürünle alakası yok",
+        "yorum_numaralari": [
+          2,
+          6,
+          13,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Kalite çok kötü",
+        "yorum_numaralari": [
+          1,
+          4,
+          9,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada yazmıyordu",
+        "yorum_numaralari": [
+          8
+        ],
+        "ilgili": false,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

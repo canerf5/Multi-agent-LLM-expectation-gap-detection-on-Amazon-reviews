@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalıbının düzgün olduğunu iddia ediyor ancak müşteriler yıkama sonrası beden küçülmesi ve yukarı doğru kıvrılma yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4: İlk soğuk yıkamada 2 beden küçüldü; yıkamada sürekli yukarı doğru kıvrılıyor.",
+      "islem": "ekle",
+      "duzeltme": "Yıkama sonrası beden küçülmesi olabileceğine dair bilgi ekleyin."
+    }
+  ]
+}

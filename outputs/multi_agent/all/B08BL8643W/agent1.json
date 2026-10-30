@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "80%Cotton 15%Polyurethane 5%Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Premium Cotton Material provides excellent moisture management, and maximized breathability, providing a pleasant wear experience all day",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "High quality spandex provides excellent stretch and comfortable fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Women's shoe size (5~9) / Model size info : height (5.7feet), weight (119pounds), shoe size (women's shoe 9.5)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "As different computers display colors differently, the color of the actual item may vary slightly from the above images, thanks for your understanding",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B01GFLJSGO
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'Sizes: S-6XL'
+ana_risk:     Sayfa, beden uyumu hakkında bilgi vermiyor; müşteriler kalıbın dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'dar kesim; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'Sizes: S-6XL' | müşteri: Yorum 2, 3: Kalıp dar; bir beden büyük alın.

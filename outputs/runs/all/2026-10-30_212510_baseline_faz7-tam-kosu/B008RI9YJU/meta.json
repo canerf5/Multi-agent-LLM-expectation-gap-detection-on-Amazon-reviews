@@ -1,0 +1,23 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Seems cheaply made for a Sketcher'",
+    "Dayanıklılık: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: \"They wear fast, it's true... But...\"",
+    "tek konu kuralı: yorum 3 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 11 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 13 hem Malzeme hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 14 hem Malzeme hem Dayanıklılık için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Seems cheaply made for a Sketcher'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: \"They wear fast, it's true... But...\""
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B008RI9YJU",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 7.951,
+  "time": "2026-10-30T18:47:18+00:00"
+}

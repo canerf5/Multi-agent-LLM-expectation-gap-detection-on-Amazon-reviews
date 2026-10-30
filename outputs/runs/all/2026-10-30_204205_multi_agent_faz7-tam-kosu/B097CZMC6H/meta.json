@@ -1,0 +1,16 @@
+{
+  "deneme": 1,
+  "ilk_ihlaller": [],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B097CZMC6H",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [
+    "beklenti 5: iddia sayfada birebir geçmiyor: \"Machine wash or hand wash. Please don't bleach.\""
+  ],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 9.587,
+  "time": "2026-10-30T18:16:02+00:00"
+}

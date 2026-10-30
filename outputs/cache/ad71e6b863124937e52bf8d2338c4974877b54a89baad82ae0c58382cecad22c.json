@@ -1,0 +1,74 @@
+{
+  "tag": "agent2:B08BFQPRRQ",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2938,
+    "output_tokens": 245,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0005877,
+  "sure_sn": 3.474,
+  "created": "2026-10-30T18:08:42+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Heavy and unflattering — I have had this on my wishlist and was excited when it restocked. What a disappointment. I got the XS and it was still too big, chunky, and HEAVY. Not comfortable due to the heaviness, not soft and overall just blah.\n\n2) [1★] Color is Off, Fit is Bad, Fabric is Worse — The Drop is the worst company that Amazon keeps pushing on me. The quality is terrible. How is a sweater not soft? This is how. It's also too big and too short at the same time. And why is the yellow/green color pictured actually army green? The Drop is why people need a good return program when buying clothes online\n\n3) [1★] Five snags in unworn sweater and too big. — I was so excited to get this sweater, but when I opened it, it had 5 snags in the unworn sweater so, I returned it.\n\n4) [2★] Pilling! — I really like this sweater. Except, I wore it once and it pilled like had owned it for years. If it had not pilled I would have been so hapy but I am not impressed with produce. I did not send it back because. I do like it other than the pilling. I will just wear it around the house for lounging. I do not recommend it\n\n5) [2★] Itchy!!! — Super itchy and stiff material.\n\n6) [1★] Seams came apart after first wear. Terrible. — Sweater seams all started to come apart. A complete waste of money. Can’t return either. Don’t waste your money.\n\n7) [1★] Notcomplete — Can't find shorts or tank on here\n\n8) [1★] AMAZON!! 🛑 ✋🏼 STOP PILLING by STOPPING using NYLON in your sweaters!! This is RIDICULOUS!! 🛑 ✋🏼 — Amazon — Please STOP ✋🏼 adding Nylon to your sweater items!!! Every single sweater or sweater pant I’ve bought from you is RUINED (just like this one!) with PILLING after 1-2 wears!! The items look OLD and WORN. All you need to do is STOP USING NYLON in your sweaters! Please — Let’s all PROTEST by NOT BUYING Amazon sweater material until they change this!! 🛑 ✋🏼 NO NYLON!!! ✋🏼 🛑\n\n9) [1★] horrible quality — started peeling after the first wash. It looks like I have had it for 10 years, its awful\n\n10) [1★] Ruined after one gentle cycle wash no dryer — I purchased this sweater despite the reviews hoping I could just gently wash and it would be okay, since it’s a cute design and not very “Amazon looking.” Size wise and design it’s good. However for the price I would hope it lasts more than one use. I washed gently and air dried. It looked like an old sweater with loads of piling after a SINGLE use. These companies are just getting away with creating trash :(\n\n11) [2★] Not great — Fit is boxy and weird. Material is not luxe.\n\n12) [2★] Disappointed — I ordered this cute drop shoulder cardigan and was very excited when I received it. After trying on and wearing around the house I noticed the sweat knit immediately started to pull. Fuzz balls everywhere. Not just wear the fabrics rubbed but everywhere. Around the cuff of the sleeve, down the front, back and lots of fuzzy balls. The style, fit and color are beautiful but the fabric was inexpensive and of very poor quality. Even though the price was not too expensive for this style of cardigan. It unfortunately did not compensate the poor quality fabric used. Too bad.\n\n13) [2★] Too expensive for this quality — Very poor quality, $15 is max but not $50\n\n14) [1★] Pocket fell off a week into it — My pocket already fell off. So disappointed. So pointless.\n\n15) [1★] Not the full set — It only comes with the cardigan which was very disappointing.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Beden büyük ve oturuş kötü.",
+        "yorum_numaralari": [
+          1,
+          2,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş kalitesi kötü, pilling yapıyor.",
+        "yorum_numaralari": [
+          4,
+          8,
+          9,
+          10,
+          12,
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "İlk kullanımda dikişler açıldı veya hasar oluştu.",
+        "yorum_numaralari": [
+          3,
+          6,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Ürün tam set değil, eksik parça var.",
+        "yorum_numaralari": [
+          7,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": null,
+        "ozet": "Kargo veya paketleme ile ilgili şikayet yok.",
+        "yorum_numaralari": [],
+        "ilgili": false,
+        "ilgisiz_sebebi": "kargo/paketleme"
+      }
+    ]
+  }
+}

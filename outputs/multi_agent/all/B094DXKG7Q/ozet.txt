@@ -1,0 +1,10 @@
+ASIN:         B094DXKG7Q
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 3, 5 | sayfa iddiası: '60% Nylon, 30% Cotton, 10% Spandex'
+ana_risk:     Sayfa, ürünün malzeme içeriği olarak %60 Naylon, %30 Pamuk ve %10 Spandeks olduğunu belirtirken, müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş ince ve kalitesiz' ifadesini ekle.
+      sayfa: '60% Nylon, 30% Cotton, 10% Spandex' | müşteri: Yorum 3, 5: Kumaş ince ve kalitesiz.

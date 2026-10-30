@@ -1,0 +1,5 @@
+ASIN:         B072LX74PY
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

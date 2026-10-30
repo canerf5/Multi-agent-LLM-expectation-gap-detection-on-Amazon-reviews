@@ -1,0 +1,40 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Görsel",
+      "ozet": "Gelen ürün fotoğraftakiyle alakası yok",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Çok düşük kalite",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": null,
+      "ozet": "Kargo süreciyle ilgili şikayet",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kargo/paketleme"
+    }
+  ]
+}

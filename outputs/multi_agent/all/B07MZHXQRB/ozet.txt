@@ -1,0 +1,16 @@
+ASIN:         B07MZHXQRB
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 8, 11, 15 | sayfa iddiası: 'Nylon,more durable and breathable.'
+  - Kalite: yorum 2, 12, 13 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 6, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'Nylon, more durable and breathable.' iddiası var, ancak müşteriler malzemenin su geçirmediğini ve nefes almadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Malzemenin su geçirmediği ve nefes almadığı bilgisini ekleyin.
+      sayfa: 'Nylon,more durable and breathable.' | müşteri: Yorum 8, 11, 15: Kesinlikle su geçirmiyor, sadece rüzgar kesici.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 12, 13: Çok kötü kalite, kalitesiz.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında bilgi ekleyin; ürünün uzun süreli kullanıma uygun olmadığını belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 9: Hemen su geçirdi, dayanıklı değil.

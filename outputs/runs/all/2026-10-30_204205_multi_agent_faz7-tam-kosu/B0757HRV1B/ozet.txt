@@ -1,0 +1,13 @@
+ASIN:         B0757HRV1B
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 8 | sayfa iddiası: '100% Cotton'
+  - Dayanıklılık: yorum 5, 6 | sayfa iddiası: 'Double needle stitching and a reinforced kick plate at back leg hem for enhanced durability'
+ana_risk:     Sayfada '100% Cotton' iddiası var, ancak müşteriler güçlendirilmiş dizlerin olmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün açıklamasına 'Güçlendirilmiş diz yok' ifadesini ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 2, 8: Açıklamada yazdığı gibi güçlendirilmiş diz yok.
+  - [Dayanıklılık | değiştir] Ürün açıklamasında dizlerin dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: 'Double needle stitching and a reinforced kick plate at back leg hem for enhanced durability' | müşteri: Yorum 5, 6: Dizleri çok çabuk yırtılıyor.

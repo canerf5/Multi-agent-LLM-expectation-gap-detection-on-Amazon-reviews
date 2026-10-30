@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        10,
+        11
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden ve kalıp konusunda bilgi vermiyor; müşteriler ürünün küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 10, 11: Ürün kalıbı küçük, bedenler beklenenden dar geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbının küçük olduğu ve bedenlerin dar geldiği bilgisi eklenecek."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 13: Kumaş kaşındırıyor ve rahatsızlık veriyor.",
+      "islem": "ekle",
+      "duzeltme": "Kumaşın kaşındırıcı olabileceği bilgisi eklenecek."
+    }
+  ]
+}

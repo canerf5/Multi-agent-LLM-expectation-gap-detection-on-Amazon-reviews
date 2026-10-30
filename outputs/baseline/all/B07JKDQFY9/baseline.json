@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "These slippers are made from high-quality materials."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, yüksek kaliteli malzeme iddiasında bulunuyor ancak müşteriler dayanıklılık ve nefes alabilirlik sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "These slippers are made from high-quality materials.",
+      "musteri_deneyimi": "Yorum 1: Bir ay içinde delik oluştu.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi ver."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Nefes almadığı için ayaklar kötü kokuyor.",
+      "islem": "ekle",
+      "duzeltme": "Slipperlerin nefes alabilirlik özelliği hakkında bilgi ekle."
+    }
+  ]
+}

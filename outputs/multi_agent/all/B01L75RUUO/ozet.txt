@@ -1,0 +1,10 @@
+ASIN:         B01L75RUUO
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'XX-Large'
+ana_risk:     Sayfada 'XX-Large' bedeni iddia ediliyor, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir' yazın.
+      sayfa: 'XX-Large' | müşteri: Yorum 1, 2, 3, 4: Çok küçük geldi

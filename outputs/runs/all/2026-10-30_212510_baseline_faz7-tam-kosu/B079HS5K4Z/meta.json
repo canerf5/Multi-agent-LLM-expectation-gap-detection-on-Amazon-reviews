@@ -1,0 +1,25 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 1 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 2 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 6 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 7 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 5 hem Dayanıklılık hem Beden/Kalıp için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 1 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 2 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 6 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 7 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 5 hem Dayanıklılık hem Beden/Kalıp için sayılmış"
+  ],
+  "parent_asin": "B079HS5K4Z",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 8,
+  "sure_duvar_sn": 12.35,
+  "time": "2026-10-30T18:25:34+00:00"
+}

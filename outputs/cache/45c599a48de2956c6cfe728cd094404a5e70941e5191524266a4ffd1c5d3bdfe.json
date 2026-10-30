@@ -1,0 +1,101 @@
+{
+  "tag": "baseline:B0BHVXWGFH",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 5574,
+    "output_tokens": 962,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0014133,
+  "sure_sn": 12.83,
+  "created": "2026-10-30T18:50:15+00:00",
+  "request": {
+    "system": "Sen bir beklenti uyumsuzluğu (gap) analistisin (tek LLM).\n\nGÖREV\nSana bir Amazon ürün sayfasının metni (başlık, fiyat, özellikler, açıklama, detaylar) ve aynı ürünün numaralı negatif müşteri yorumları (1–2 yıldız) birlikte verilecek. Bu sayfanın müşteriye NE VAAT ETTİĞİNİ ve müşterilerin GERÇEKTE neyden şikayet ettiğini belirle; sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki (gap) var mı, karar ver ve ürün sayfası için iyileştirme önerisi üret. Analizin tamamını tek adımda yap ve yalnızca sonuç JSON'unu ver.\n\nSAYFA VAATLERİ\n- Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı dikkate al. Ürünü kendin değerlendirme.\n- Konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- İddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- İddia türü: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n- Sadece sayfada YAZAN şeyleri kullan. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) vaat olarak kullanma.\n- Bir ifade birden fazla konuya değebilir. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) konularından biri Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir.\n\nŞİKAYETLER\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Şikayetin konusu, aşağıdaki konu tanımlarındaki 7 konudan biridir. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Kurallardaki \"Sayılmayanlar\" listesindeki şikayetler (\"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\", \"kişisel zevk\") ilgisizdir.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n\nKARAR ADIMLARI\n1. Sadece ilgili şikayetleri kullan (\"Sayılmayanlar\" listesindekiler hariç).\n2. Her aday tip için, aynı sorundan bahseden FARKLI yorum numaralarını say. Bir tip ancak en az 2 farklı yorum aynı sorundan bahsediyorsa gap tipi olur (kurallardaki \"Tek konu kuralı\": her konunun kendi en az 2 yorumu olmalı). Aynı tipteki farklı sorunları birbirine ekleyerek 2'ye tamamlama.\n3. 2 yorum şartını sağlamayan tipi TAMAMEN çıkar: gap_tipleri, tip_gerekceleri ve oneriler içinde yer almaz.\n4. \"Tek konu kuralı\": Bir yorum numarası yalnızca BİR tipin gerekçesinde yer alabilir.\n5. 3. ve 4. adımlardan sonra hiç tip kalmadıysa gap_var = false. Tek yoruma dayanan şikayetler gap değildir; \"gap yok\" geçerli ve normal bir sonuçtur.\n6. Her gap tipi için tip_gerekceleri'ne bir kayıt yaz: tip, destekleyen yorum numaraları (en az 2, birbirinden farklı) ve sayfa_iddiasi. sayfa_iddiasi, sayfadaki o konuyla ilgili iddianın sayfadan AYNEN kopyalanmış alıntısıdır (değiştirme, çevirme, kısaltma); sayfada o konuda iddia yoksa \"bilgi yok\".\n7. Seviye: kurallardaki \"Seviye kuralı\"nı uygula; her tip için düşün, sonuca EN YÜKSEĞİNİ yaz. İddia türü \"somut\" olan iddia, kuraldaki \"somut iddia\"dır; \"genel\" iddia veya iddia yokluğu en fazla Orta'dır. Somut iddia olsa bile şikayet onunla DOĞRUDAN çelişmiyorsa Orta'dır. sayfa_iddiasi \"bilgi yok\" olan bir tip hiçbir zaman Yüksek değildir.\n8. gap_var = true ise: gap_tipleri en az 1 tip, seviye Orta veya Yüksek, tip_gerekceleri ve oneriler her gap tipi için dolu.\n   gap_var = false ise: gap_tipleri, tip_gerekceleri ve oneriler boş liste, seviye \"Yok\", ana_risk boş metin (\"\").\n9. ana_risk: En önemli uyumsuzluğu tek Türkçe cümleyle yaz; sayfanın ne vaat ettiğini ve müşterilerin ne yaşadığını karşılaştır. Sayfa iddiası olarak yalnızca tip_gerekceleri'ndeki sayfa_iddiasi'nı kullan; sayfa_iddiasi \"bilgi yok\" ise \"sayfada bu konuda bilgi yok\" de, sayfaya iddia yükleme.\n\nÖNERİLER (oneriler)\nHer gap tipi için en az bir öneri yaz. Her öneri:\n- tip: Önerinin dayandığı gap tipi (gap_tipleri içinden).\n- sayfa_iddiasi: Düzeltilecek sayfa ifadesi; sayfadan AYNEN kopyala. Sayfada bu konuda iddia yoksa \"bilgi yok\".\n- musteri_deneyimi: Müşterilerin yaşadığı sorun, yorum numaralarıyla (ör. \"Yorum 1, 3: 1–2 beden küçük geliyor\"). Yorumlara dayan.\n- islem: \"kaldır\" (yanlış veya yanıltıcı ifade sayfadan silinmeli), \"değiştir\" (ifade düzeltilmeli), \"ekle\" (sayfada olmayan bilgi eklenmeli). sayfa_iddiasi \"bilgi yok\" ise islem \"ekle\" olur.\n- duzeltme: Ürün SAYFASINDA yapılacak somut değişiklik (Türkçe, kısa): hangi ifade kalkacak/değişecek ya da sayfaya hangi bilgi, uyarı, tablo veya görsel eklenecek. Eklenecek bilginin İÇERİĞİNİ yaz; içerik şikayetlerden çıkıyorsa onu kullan (ör. \"kalıp dar; bir beden büyük alın\"). \"Bilgi ekle\", \"daha net bilgi ver\", \"iddiayı gözden geçir\" gibi neyin yazılacağını söylemeyen ifadeler yetmez.\n\nÖneri kuralları:\n- Yalnızca ürün sayfası değişikliği öner. Ürünün kendisini değiştirmeyi (\"kaliteyi artır\", \"kumaşı kalınlaştır\", \"dikişleri düzelt\") önerme.\n- Ölçü, oran veya değer uydurma: yalnızca yorumlarda geçen bilgiyi kullan (ör. şikayet \"1–2 beden küçük\" diyorsa \"bir beden büyük almanız önerilir\" notu önerilebilir; yorumlarda geçmeyen bir cm değeri yazılamaz). Eklenecek bilginin değeri bilinmiyorsa neyin ekleneceğini yaz (ör. \"kumaş kalınlığı bilgisini ekle\").\n\nSON KONTROL (cevabı vermeden önce her maddeyi kontrol et; uymayan varsa düzelt)\n- Her gap tipinin en az 2 farklı yorumu var; hiçbir yorum iki tipte birden yok.\n- seviye Yüksek ise en az bir gap tipinin sayfa_iddiasi \"bilgi yok\" DEĞİL ve o iddianın türü \"somut\"; değilse seviye Orta.\n- Her sayfa_iddiasi, sayfadaki bir ifadenin aynen kopyası veya \"bilgi yok\".\n- Her gap tipine en az bir öneri var; sayfa_iddiasi \"bilgi yok\" olan önerinin islem'i \"ekle\".\n- gap_var = false ise tüm listeler boş, seviye \"Yok\", ana_risk \"\".\n\nÇıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n\nKurallardaki örnek (insan etiket biçiminde; senin çıktın JSON olacak):\n\n**Sayfa:** \"Men's leather boot. Waterproof. Non-slip sole.\"\n**Yorumlar:** (1) \"İlk yağmurda içi su doldu.\" (2) \"Su geçirmez yazıyor ama ayaklarım ıslandı.\" (3) \"Kargo kutusu ezik geldi.\"\n\n→ gap_var = **Evet** · Malzeme = **X** · seviye = **Yüksek** · not: \"Su geçirmez iddiası var, ilgili 2/2 yorum su aldığını söylüyor; kargo yorumu sayılmadı.\"\n",
+    "user": "ÜRÜN SAYFASI:\nBAŞLIK: Flamingals Stretchy 90S Vintage Ripped Mid Waist Jeans Casual Fall Jeans for Women 2022\n\nFİYAT: $33.0\n\nÖZELLİKLER:\n• 64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex\n• Button closure\n• Machine Wash\n• Feature: High Waist, high stretch, button, zipper, pocket, long jeans. Amp up your denim collection with these jeans. Featuring stretchy denim with a high-waist design, and a skinny fit. Team these with a crop top and mules for a look we're loving\n• Fabric is very stretchy,and it's soft and comfortable\n• Occasion: It is versatile to wear and suits most occasions such as casual, school, office, shopping, going out, party, vacation, and so on. It is perfect for juniors, loved ones, and yourself\n• Size Chart: Small: Bust: 33-35\", Waist: 27-28\", Hips: 37-38\", / Medium: Bust: 35-37\", Waist: 29-30\", Hips: 39-40\", / Large: Bust: 37-39\", Waist: 31-33\", Hips: 41-43\", / X-Large: Bust: 39-41\", Waist: 34-36\", Hips: 44-46\", / XX-Large Plus: Bust: 41-43\", Waist: 37-39\", Hips: 47-49\", / 3X-Large Plus: Bust: 43-45\", Waist: 40-42\", Hips: 50-52\", / 4X-Large Plus: Bust: 45-47\", Waist: 43-45\", Hips: 53-55\"\n• Our philosophy is that all body types need to be celebrated without sacrificing comfort or style. Our sizing is based on a true women's size. Please refer to the size chart before ordering. Going up a size if you love a more relaxed style\n\nAÇIKLAMA: (yok)\n\nDETAYLAR:\n- Package Dimensions: 16.93 x 13.39 x 0.79 inches; 5.64 Ounces\n- Department: womens\n- Date First Available: October 11, 2022\n\nNEGATİF YORUMLAR:\n1) [2★] Runs very small — These run very small and short. Don’t waste your money they look nothing like the picture. I returned them\n\n2) [1★] Nothing like the photo! — What came in and what is in the photo are two entirely different looks! Total misrepresentation.\n\n3) [1★] The pants were nothing like the picture — These pants are cheap, wrong size, and look nothing like the picture\n\n4) [1★] junk — horrible quality. wait is size 5 length is size 16 junk!!\n\n5) [1★] JUNK!!! — What an absolute joke!! I should have known from China. The zipper was broken right out of the packed and there isn't even a hole for the button. Neg 5 stars 🤬\n\n6) [1★] Way too small and nothing like the picture — First and foremost, I ordered a 2XL thinking that they would be the right size and they sent me a 3XL... I went to put them on and they fit like maybe a medium. The buttonhole was sewn closed but that doesn't matter cuz they wouldn't fit around my waist. The sizing was extremely bad and they look absolutely nothing like the picture. Also they hit just shy of my ankles when they're supposed to be long. Horrible and do not recommend anyone buying these\n\n7) [1★] Nothing at all like the picture — I was really excited for these jeans, but they look nothing at all like the picture. The waist is tiny compared to the hips, they're too short and not distressed at all, just a plain blue. Terrible quality. Do not buy.\n\n8) [2★] Not Stretchy — These pants fit funny on the waste and are high wasted. They are not stretchy at all.\n\n9) [1★] Disappointed 👎 — How can you sew the button hole without the hole for the button being there. They didn't fit when I tried them on anyway but if they did have a button hole and fit I still would not kept them. The style is what I'm looking for but the waist is extremely high waisted more than \"mom jeans\" should be. Definitely returning and don't recommend you waist your time or money with these jeans.\n\n10) [1★] Don't be Fooled — I really loved the look of these jeans. They had a nice rustic, boho, look. So I waited for the right time when the price was in my budget and I bought. These jeans are NOTHING like what is in the picture. They are cheap. Poor quality. The stitching is orange thread. The jean material does not have that vintage worn, weathered blue, but more of a cheap dark blue color. They look like something you would find at a flea market. I am so disappointed. I am already in the process of returning.\n\n11) [1★] NO stretch (as they advertise) and they run EXTREMELY small — These jeans are NOTHING like they described. There is absolutely NO stretch to them and I sized up and they are still about 3 sizes too small. Do not recommend these AT ALL.\n\n12) [1★] Worst purchase EVER — These are not women's pants. These might fit my thin teenage niece. Wrong color and the style isn't even close. DO NOT WASTE YOUR MONEY\n\n13) [1★] BEWARE.....NOTHING like the picture — ZERO STARS IF POSSOBLE...Seriously, this was nothing like what was pictured. HIlariously AWFUL, LOL. . Was thinking I ordered those cute baggy woman's jeans, but got weird gray denim with different hemlines, pockets. There wasn't even a hole for the button to go through..omgeeezzz.. Beware!!!\n\n14) [1★] They were no where close to picture — They were no where like they pictured not even same wash or style. Sent back for refund after waiting 3 weeks to get.\n\n15) [2★] Way, way too small — I am a big girl so I ordered a 3X because that's what I wear everyday. I couldn't even pull them up all the way. Button hole wasn't cut. No fading or ripping at all. Not stretchy at all.",
+    "schema": "gap_result"
+  },
+  "response": {
+    "gap_var": true,
+    "gap_tipleri": [
+      "Beden/Kalıp",
+      "Görsel",
+      "Kalite",
+      "Malzeme"
+    ],
+    "seviye": "Yüksek",
+    "tip_gerekceleri": [
+      {
+        "tip": "Beden/Kalıp",
+        "yorum_numaralari": [
+          1,
+          6,
+          11,
+          15
+        ],
+        "sayfa_iddiasi": "Size Chart: Small: Bust: 33-35\", Waist: 27-28\", Hips: 37-38\", / Medium: Bust: 35-37\", Waist: 29-30\", Hips: 39-40\", / Large: Bust: 37-39\", Waist: 31-33\", Hips: 41-43\", / X-Large: Bust: 39-41\", Waist: 34-36\", Hips: 44-46\", / XX-Large Plus: Bust: 41-43\", Waist: 37-39\", Hips: 47-49\", / 3X-Large Plus: Bust: 43-45\", Waist: 40-42\", Hips: 50-52\", / 4X-Large Plus: Bust: 45-47\", Waist: 43-45\", Hips: 53-55\""
+      },
+      {
+        "tip": "Görsel",
+        "yorum_numaralari": [
+          2,
+          3,
+          7,
+          10,
+          12,
+          14
+        ],
+        "sayfa_iddiasi": "Feature: High Waist, high stretch, button, zipper, pocket, long jeans."
+      },
+      {
+        "tip": "Kalite",
+        "yorum_numaralari": [
+          4,
+          5,
+          9,
+          11,
+          13
+        ],
+        "sayfa_iddiasi": "Fabric is very stretchy,and it's soft and comfortable"
+      },
+      {
+        "tip": "Malzeme",
+        "yorum_numaralari": [
+          8,
+          11
+        ],
+        "sayfa_iddiasi": "Fabric is very stretchy,and it's soft and comfortable"
+      }
+    ],
+    "ana_risk": "Sayfa, ürünün beden ve kalıp bilgilerini doğru yansıtmıyor; müşteriler, ürünlerin beklediklerinden çok daha küçük ve kalitesiz olduğunu belirtiyor.",
+    "oneriler": [
+      {
+        "tip": "Beden/Kalıp",
+        "sayfa_iddiasi": "Size Chart: Small: Bust: 33-35\", Waist: 27-28\", Hips: 37-38\", / Medium: Bust: 35-37\", Waist: 29-30\", Hips: 39-40\", / Large: Bust: 37-39\", Waist: 31-33\", Hips: 41-43\", / X-Large: Bust: 39-41\", Waist: 34-36\", Hips: 44-46\", / XX-Large Plus: Bust: 41-43\", Waist: 37-39\", Hips: 47-49\", / 3X-Large Plus: Bust: 43-45\", Waist: 40-42\", Hips: 50-52\", / 4X-Large Plus: Bust: 45-47\", Waist: 43-45\", Hips: 53-55\"",
+        "musteri_deneyimi": "Yorum 1, 6, 11, 15: Çok küçük ve yanlış beden gönderilmiş.",
+        "islem": "değiştir",
+        "duzeltme": "Beden tablosunu güncelleyerek daha doğru beden bilgisi verin."
+      },
+      {
+        "tip": "Görsel",
+        "sayfa_iddiasi": "Feature: High Waist, high stretch, button, zipper, pocket, long jeans.",
+        "musteri_deneyimi": "Yorum 2, 3, 7, 10, 12, 14: Ürün fotoğraflardakiyle aynı değil.",
+        "islem": "değiştir",
+        "duzeltme": "Ürün fotoğraflarını gerçek ürüne uygun şekilde güncelleyin."
+      },
+      {
+        "tip": "Kalite",
+        "sayfa_iddiasi": "Fabric is very stretchy,and it's soft and comfortable",
+        "musteri_deneyimi": "Yorum 4, 5, 9, 11, 13: Kalite çok kötü, dikişler ve malzeme sorunlu.",
+        "islem": "değiştir",
+        "duzeltme": "Ürün kalitesi hakkında daha net bilgi verin ve kalite kontrol süreçlerini belirtin."
+      },
+      {
+        "tip": "Malzeme",
+        "sayfa_iddiasi": "Fabric is very stretchy,and it's soft and comfortable",
+        "musteri_deneyimi": "Yorum 8, 11: Ürün esnek değil, beklenenden farklı.",
+        "islem": "değiştir",
+        "duzeltme": "Kumaşın esneklik durumu hakkında daha net bilgi verin."
+      }
+    ]
+  }
+}

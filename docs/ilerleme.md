@@ -10,9 +10,9 @@ Son güncelleme: 30 Ekim 2026
 | 4. 40 ürün gold etiketleme | ✅ Bitti | 29 Ekim 2026 | `726c41d`, tag `v0.1-data` |
 | 5. 3 ajan | ✅ Bitti (prompt'lar donduruldu) | 30 Ekim 2026 | `7d5646a` + bu commit; `outputs/runs/index.csv` (dev deneme 1–3) |
 | 6. Baseline + 5 dev ürünle deneme | ✅ Bitti (baseline donduruldu) | 30 Ekim 2026 | tag `v0.2-agents` |
-| **7. 200 ürün tam koşu** | 🔧 **Sıradaki** | — | — |
-| 8. Değerlendirme | Bekliyor | — | tag `v0.3-results` |
-| 9. Hata analizi + alt sorular | Bekliyor | — | — |
+| 7. 200 ürün tam koşu | ✅ Bitti | 30 Ekim 2026 | `outputs/runs/all/` |
+| 8. Değerlendirme | ✅ Bitti | 30 Ekim 2026 | `reports/degerlendirme/2026-10-30_215304/`, tag `v0.3-results` |
+| **9. Hata analizi + alt sorular** | 🔧 **Sıradaki** | — | — |
 | 10. Tez yazımı | Bekliyor | — | tag `v1.0-final` |
 
 ## Biten fazların özeti
@@ -62,12 +62,38 @@ Son güncelleme: 30 Ekim 2026
 - **Faz 7 hazırlığı:** `--split all` (200 ürün; gold kilidi gerekir), ürün bazında hata yakalama, aynı komutla kaldığı yerden devam (testli). Maliyet tahmini (gold dışı 160 üründen ölçekli): 3 ajan ~$0,50, baseline ~$0,23, toplam ~$0,73 (tekrarlarla en fazla ~$1,12).
 - **Testler:** `tests/test_faz5.py` (28) + `tests/test_faz6.py` (7) + `tests/test_degerlendirme.py` (6) + `tests/test_bariyer.py` (9) = 50 API'siz test.
 
-## Sıradaki: Faz 7 — 200 ürün tam koşu
+## Faz 7 — 200 ürün tam koşu (bitti, 30 Ekim 2026)
 
-1. Kullanıcı: denetim script'ini kendi terminalinde çalıştırır (beklenen: hiç iz yok).
-2. Kullanıcı: kilidi açar.
-3. İki sistem `--split all` ile çalışır (önce `--estimate`, onay); hatalı ürün varsa aynı komutla tamamlanır.
-4. Faz 8: `src/evaluate.py` ile test kümesi değerlendirmesi; ardından kullanıcı kilidi kapatır.
+Kullanıcı denetim script'ini çalıştırdı (hiç iz yok) ve kilidi açtı. İki sistem `--split all` ile, dondurulmuş prompt, kural ve kodla çalıştı; sonuçlara bakarak hiçbir şey değiştirilmedi ve yeniden koşu yapılmadı.
+
+| Sistem | Koşu | Ürün | Hatalı | Çağrı | Ödenen |
+|---|---|---|---|---|---|
+| 3 ajan | `2026-10-30_204205_multi_agent_faz7-tam-kosu` | 200/200 | 0 | 705 (16 önbellek) | $0,438 |
+| Baseline | `2026-10-30_212510_baseline_faz7-tam-kosu` | 200/200 | 0 | 360 (10 önbellek) | $0,358 |
+
+Toplam ödenen: $0,80 (tahmin ~$0,73, en fazla ~$1,12).
+
+## Faz 8 — Değerlendirme (bitti, 30 Ekim 2026)
+
+`src/evaluate.py`, gerçek altın standart (40 ürün, `v0.1-data`), 1000 tekrarlı eşleştirilmiş bootstrap (tohum 42). Çıktılar: `reports/degerlendirme/2026-10-30_215304/` (`rapor.md`, `metrikler.csv`, `tip_bazinda.csv`, `karsilastirma.csv`, `urun_bazinda.csv`, `girdi.json`).
+
+| Metrik | 3 ajan | Baseline | Fark [%95 GA] | Anlamlı |
+|---|---|---|---|---|
+| Gap tipi micro-F1 (ana) | 0,683 | 0,653 | 0,030 [−0,062, 0,119] | hayır |
+| Gap tipi macro-F1 (6 tip) | 0,565 | 0,530 | 0,034 [−0,126, 0,154] | hayır |
+| Gap var/yok Macro F1 | 0,657 | 0,474 | 0,183 [−0,051, 0,381] | hayır |
+| Gap var/yok accuracy | 0,850 | 0,900 | −0,050 [−0,175, 0,051] | hayır |
+| Seviye isabeti | 0,450 | 0,375 | 0,075 [−0,100, 0,250] | hayır |
+| Seviye macro-F1 (3 seviye) | 0,439 | 0,257 | 0,182 [−0,026, 0,353] | hayır |
+
+Çoğunluk referansları: hep "Evet" → accuracy 0,900, Macro F1 0,474; hep "Orta" → seviye isabeti 0,700, 3 seviye macro-F1 0,275. Süreç: tutarsız karar 2 (3 ajan) / 21 (baseline); Eksik Bilgi yanlış pozitif 0 / 2; test kümesinde eşdeğer maliyet $0,087 / $0,070, eşdeğer API süresi 482 / 328 sn.
+
+## Sıradaki: Faz 9 — Hata analizi ve alt sorular
+
+1. Hata analizi (yontem §7.6): `urun_bazinda.csv` ve ajan ara çıktıları; `hata_analizi.csv`.
+2. Alt Soru 2 (yontem §7.4): 200 ürünün 3 ajanlı çıktısı; Mann-Whitney U + Holm.
+3. Alt Soru 3 (yontem §7.5): kalan kümeden 20 ürün, kör puanlama sayfası; kullanıcı puanlar.
+4. Kullanıcı: kilidi kapatır (hata analizi test ürünlerinin ara çıktılarını okumayı gerektirirse kilit bu iş bitene kadar açık kalabilir).
 
 **Kapanan kararlar (30 Ekim 2026):** fiyat/detay girdi farkı belgelendi (`docs/yontem.md` §3, kapsam sınırlılıkları); "markası" kapsamdan çıkarıldı; tutarsız kararlar olduğu gibi değerlendirilir, sayısı raporlanır; seviye isabeti çoğunluk referansı (%70) ve 3 seviye macro-F1 ile verilir; "aynı sorun" (yön farkı ayrı sorundur) kurallara eklendi; Alt Soru 2 (Mann-Whitney U) ve Alt Soru 3 (kalan kümeden 20 ürün, kör puanlama, rubrik) tanımlandı. Kapsam teknik ayrıntılardan arındırıldı, ayrıntılar `docs/yontem.md`'ye taşındı.
 

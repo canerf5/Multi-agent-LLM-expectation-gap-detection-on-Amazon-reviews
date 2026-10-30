@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Rayon",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "BIG AND TALL SIZING: You should order Tall if you are 6'2\" or taller. You should order Big if you are 6'1\" or shorter",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "You'll love the vibrant colors, its breezy open collar and the coconut button closures which give a nice tropical touch.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Relaxed fit. Open collar Chest pocket. Straight hem with side vents. Coconut button closures. Woven rayon",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Machine wash; imported",
+      "iddia_turu": "somut"
+    }
+  ]
+}

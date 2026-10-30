@@ -1,0 +1,16 @@
+ASIN:         B07W3Q1Y2X
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 5, 11 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 8, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada malzeme ile ilgili somut bilgiler var, ancak müşteriler kalıp ve kalite sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının dar olduğu ve numara seçiminde dikkat edilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 4: Numara küçük geliyor.
+  - [Kalite | ekle] Ürünün dikiş kalitesi hakkında bilgi eklenmeli; dikişlerin sağlam olduğu belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5, 11: Kötü yapım, dikişler çekiliyor.
+  - [Eksik Bilgi | ekle] Ürün açıklamasında doğru numara bilgisi ve ölçü tablosu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 8, 14: Açıklamada doğru numara bilgisi yok.

@@ -1,0 +1,33 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Renk",
+      "ozet": "Renk farklı geldi",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden küçük geldi",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Fotoğraftaki görünümden farklı",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

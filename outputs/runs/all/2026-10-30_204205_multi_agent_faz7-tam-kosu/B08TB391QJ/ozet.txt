@@ -1,0 +1,13 @@
+ASIN:         B08TB391QJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'Shaft measures approximately 15.75" from arch'
+  - Malzeme: yorum 4, 6 | sayfa iddiası: '100% Synthetic'
+ana_risk:     Beden ölçüleri ile ilgili iddialar var, ancak kullanıcılar bedenlerin dar olduğunu ve ziplenemediğini belirtiyor; malzeme ile ilgili iddialar da dayanıklılık sorunları ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin dar olduğu ve ziplenemediği bilgisini ekleyin.
+      sayfa: 'Shaft measures approximately 15.75" from arch' | müşteri: Yorum 3, 5: Bedenleri dar, ziplenemiyor.
+  - [Malzeme | değiştir] Dayanıklılık sorunları hakkında bilgi verin; tabanların çıkma riski olduğunu belirtin.
+      sayfa: '100% Synthetic' | müşteri: Yorum 4, 6: Dayanıklılık sorunları var, tabanlar çıkıyor.

@@ -1,0 +1,16 @@
+ASIN:         B0BGPVTZDQ
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 5, 9, 10 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 4, 11 | sayfa iddiası: '100% Polyester'
+  - Kalite: yorum 2, 3, 5, 6, 11 | sayfa iddiası: 'Super Value Sweatshirts'
+ana_risk:     Ürün sayfasında belirtilen kalitede ve görselde bir sweatshirt vaat ediliyor, ancak müşteriler aldıkları ürünün kalitesiz ve görselden çok farklı olduğunu belirtiyor.
+öneriler:
+  - [Görsel | ekle] Ürün görselinin gerçek ürüne uygun şekilde güncellenmesi gerektiğini belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5, 9, 10: Ürün görseldeki gibi değil, çok daha kötü görünüyor.
+  - [Malzeme | değiştir] Malzeme hakkında daha net bilgi ver; 'kalitesiz polyester' ifadesini ekle.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 4, 11: Malzeme kalitesiz, ince ve rahatsız edici.
+  - [Kalite | değiştir] Kalite ile ilgili daha gerçekçi bir açıklama ekle; 'kalite standartları düşük' gibi bir not ekle.
+      sayfa: 'Super Value Sweatshirts' | müşteri: Yorum 2, 3, 5, 6, 11: Ürün kalitesiz, vaat edilenin altında.

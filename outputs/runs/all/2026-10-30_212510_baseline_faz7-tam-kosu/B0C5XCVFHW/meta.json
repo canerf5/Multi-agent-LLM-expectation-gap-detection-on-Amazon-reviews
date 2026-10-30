@@ -1,0 +1,17 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Renk: en az 2 farklı destekleyen yorum gerekli, 1 var [8]",
+    "tek konu kuralı: yorum 4 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 4 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "parent_asin": "B0C5XCVFHW",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 10,
+  "sure_duvar_sn": 13.551,
+  "time": "2026-10-30T18:28:37+00:00"
+}

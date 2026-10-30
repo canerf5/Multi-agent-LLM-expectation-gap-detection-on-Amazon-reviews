@@ -1,0 +1,13 @@
+ASIN:         B07GBBN1K3
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '100% Polyester'
+  - Kalite: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesi hakkında bilgi veriyor ancak müşteriler kumaşın ince olduğunu ve dikişlerin kötü yapıldığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın sıcak havalarda uygun olmadığına dair uyarı ekleyin.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 3: Kumaş ince ve sıcak havalarda uygun değil.
+  - [Kalite | ekle] Ürünün dikiş kalitesi hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Dikişler kötü yapılmış.

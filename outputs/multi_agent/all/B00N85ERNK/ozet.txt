@@ -1,0 +1,13 @@
+ASIN:         B00N85ERNK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 10 | sayfa iddiası: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger'
+  - Malzeme: yorum 8, 9 | sayfa iddiası: 'fabric'
+ana_risk:     Ayakkabının küçük olduğu iddiası var, ancak kullanıcılar ayakkabının dar geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Dar kalıp; bir beden büyük almanız önerilir' ifadesi eklenmeli.
+      sayfa: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger' | müşteri: Yorum 3, 5, 10: Çok dar geldi.
+  - [Malzeme | değiştir] Sayfada 'Sert malzeme; daha yumuşak bir deneyim için inceleyin' ifadesi eklenmeli.
+      sayfa: 'fabric' | müşteri: Yorum 8, 9: Ayakkabılar çok sert ve rahatsız.

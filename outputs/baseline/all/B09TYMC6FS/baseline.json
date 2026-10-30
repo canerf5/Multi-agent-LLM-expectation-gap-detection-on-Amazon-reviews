@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Görsel",
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "This dressy dress make you shining, eye-catching and outstanding."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "The material is breathable and soft, has good stretch, lightweight fabric."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "The V-neck design and stretchy fit will perfectly highlight your beautiful neck and bodyline."
+    }
+  ],
+  "ana_risk": "Ürün sayfasında belirtilen görsel ve malzeme kalitesi ile müşterilerin aldığı ürün arasında büyük bir fark var; sayfada 'şık ve dikkat çekici' denirken, yorumlar 'ucuz ve rahatsız' diyor.",
+  "oneriler": [
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "This dressy dress make you shining, eye-catching and outstanding.",
+      "musteri_deneyimi": "Yorum 1, 2: Ürün fotoğraftaki gibi değil, gerçek görüntüsü çok farklı.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün görselinin gerçek durumu hakkında daha net bilgi ver."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "The material is breathable and soft, has good stretch, lightweight fabric.",
+      "musteri_deneyimi": "Yorum 2, 4: Malzeme kalitesi düşük, rahatsız edici ve çabuk yıpranıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha gerçekçi bir açıklama ekle."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "The V-neck design and stretchy fit will perfectly highlight your beautiful neck and bodyline.",
+      "musteri_deneyimi": "Yorum 3, 5: Kalıp dar, normal bedenden bir beden küçük alınması gerektiği belirtiliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp hakkında 'normal bedenden bir beden küçük almanız önerilir' notunu ekle."
+    }
+  ]
+}

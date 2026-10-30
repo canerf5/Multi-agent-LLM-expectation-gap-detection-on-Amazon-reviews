@@ -1,0 +1,15 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'very poor quality and construction'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'very poor quality and construction'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B09JLM1WTC",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 7,
+  "sure_duvar_sn": 7.936,
+  "time": "2026-10-30T18:44:14+00:00"
+}

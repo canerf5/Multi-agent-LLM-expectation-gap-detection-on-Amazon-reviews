@@ -1,0 +1,49 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "synthetic leather",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "durable TPR rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Shaft measures approximately 5\" from arch",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Heel measures approximately 1 inches",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Boot opening measures approximately 10\" around",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "waterproof uppes",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "soft insole, cosy lining, and non slip sole",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "classic look",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Perfect with skinny jeans, short skirt, and suitable for daily leisure, formal business and so on.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

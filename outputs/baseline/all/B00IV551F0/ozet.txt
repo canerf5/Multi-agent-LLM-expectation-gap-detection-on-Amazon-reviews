@@ -1,0 +1,13 @@
+ASIN:         B00IV551F0
+gap_var:      Evet
+gap_tipleri:  Renk, Kalite
+seviye:       Orta
+gerekçeler:
+  - Renk: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün renginin beyaz olduğunu iddia etmiyor, ancak müşteriler kirli beyaz geldiğini belirtiyor; ayrıca kalite beklentisi karşılanmıyor.
+öneriler:
+  - [Renk | ekle] Ürünün rengi hakkında 'Ürün kirli beyaz olarak gelebilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Renk kirli beyaz geldi.
+  - [Kalite | ekle] Malzeme kalitesi hakkında 'Malzeme kalitesi değişkenlik gösterebilir' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Malzeme kalitesi beklenenden düşük.

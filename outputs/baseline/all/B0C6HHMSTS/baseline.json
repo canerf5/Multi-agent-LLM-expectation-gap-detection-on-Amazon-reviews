@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "Heel measures approximately 3.5\""
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabının kalıbının dar olduğunu belirtmiyor; müşteriler dar ve küçük geldiğini söylüyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Heel measures approximately 3.5\"",
+      "musteri_deneyimi": "Yorum 2, 4: Ayakkabılar dar; 6-6.5 giyenler 7 numara almalı.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; 6-6.5 giyenler için 7 numara önerilir."
+    }
+  ]
+}

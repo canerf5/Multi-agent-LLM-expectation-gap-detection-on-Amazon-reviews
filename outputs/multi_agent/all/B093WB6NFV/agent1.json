@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "We provide soft and lightweight pure superior cotton and Polyester non-fading T-shirts.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Our T-shirts are high quality shirts.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Suitable for machine washing and hand washing.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Our T-shirts are fun, trendy, stylish and novel, which can bring you a unique and comfortable experience.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

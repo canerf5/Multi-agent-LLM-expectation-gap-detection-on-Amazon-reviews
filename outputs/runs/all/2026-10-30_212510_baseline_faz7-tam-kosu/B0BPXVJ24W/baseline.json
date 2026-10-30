@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly."
+    }
+  ],
+  "ana_risk": "Beden ve kalıp iddiası var, ancak müşteriler ürünün küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly.",
+      "musteri_deneyimi": "Yorum 1, 2: Küçük geliyor, beden uyumsuzluğu var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının küçük olduğu ve bir beden büyük almanın önerildiği bilgisi eklenmeli."
+    }
+  ]
+}

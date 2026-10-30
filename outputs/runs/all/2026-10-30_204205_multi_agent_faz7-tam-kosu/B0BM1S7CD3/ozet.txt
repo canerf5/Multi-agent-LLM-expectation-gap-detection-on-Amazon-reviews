@@ -1,0 +1,13 @@
+ASIN:         B0BM1S7CD3
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'adjustability provides the perfect fit'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabının ayak yapısına uygunluk sağlaması gerektiğini iddia ediyor, ancak kullanıcılar arch desteğinin uygun olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Arch desteği hakkında daha net bilgi verin; ayakkabının hangi ayak yapısına uygun olduğu belirtilmeli.
+      sayfa: 'adjustability provides the perfect fit' | müşteri: Yorum 1, 2: Ayakkabının arch desteği ayak yapısına uygun değil.
+  - [Kalite | ekle] Ayakkabının konforu ve denge durumu hakkında bilgi ekleyin; kullanıcıların yaşadığı rahatsızlıklar belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ayakkabı çok rahatsız ve dengesiz.

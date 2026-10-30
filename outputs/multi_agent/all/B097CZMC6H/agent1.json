@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Please order one size up if you are taller, stronger, or grows faster.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Made of 100% Polyester,which is soft,warm and breathable.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Our butterfly print tops for women is designed by 3D print, which have unique and realistic patterns to choose.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Machine wash or hand wash. Please don't bleach.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

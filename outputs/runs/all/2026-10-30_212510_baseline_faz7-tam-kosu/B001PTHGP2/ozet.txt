@@ -1,0 +1,16 @@
+ASIN:         B001PTHGP2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 5, 6, 10, 11, 15 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 7, 12, 13 | sayfa iddiası: 'The Stuyak features a cushioned footbed for comforting every step'
+  - Kalite: yorum 4, 8, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalıp konusunda dar bir yapı iddiası var, ancak birçok müşteri ayakkabıların dar olduğunu ve rahat bir oturuş sağlamadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 5, 6, 10, 11, 15: Dar kalıp, bir beden büyük almak gerekiyor.
+  - [Malzeme | değiştir] Kullanıcıların rahatsızlık hissetmemesi için thong tasarımında yumuşak malzeme kullanıldığı belirtilmeli.
+      sayfa: 'The Stuyak features a cushioned footbed for comforting every step' | müşteri: Yorum 3, 7, 12, 13: Thong tasarımı rahatsız edici, yürüyünce sürtünme yapıyor.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi verilmeli; dayanıklılık bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 8, 9: Orta kullanımda tabanlar ayrılıyor, kalite sorunları var.

@@ -1,0 +1,16 @@
+ASIN:         B093BMW36S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5, 6, 9, 13, 14 | sayfa iddiası: 'Wide Flat Elastic Waistband: Wide and soft elastic waistband with internal draw strings for a personalized fit, keeps you feeling comfortable with no rolls or digs.'
+  - Malzeme: yorum 3, 10, 15 | sayfa iddiası: 'Lightweight and Breathable Fabric: Super soft material wicks away sweat to keep you comfortable when you exercise.'
+  - Renk: yorum 1, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında beden kalıbı ve malzeme ile ilgili vaatler var, ancak müşteriler bu vaatlerin karşılanmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında daha net bilgi ver; 'Beden kalıbı normalden büyük, bir beden küçük almanız önerilir' notu ekle.
+      sayfa: 'Wide Flat Elastic Waistband: Wide and soft elastic waistband with internal draw strings for a personalized fit, keeps you feeling comfortable with no rolls or digs.' | müşteri: Yorum 1, 5, 6, 9, 13, 14: Beden kalıbı beklenenden büyük veya rahatsız edici.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi ver; 'Malzeme ince, destekleyici olmayabilir' notu ekle.
+      sayfa: 'Lightweight and Breathable Fabric: Super soft material wicks away sweat to keep you comfortable when you exercise.' | müşteri: Yorum 3, 10, 15: Malzeme ince ve destekleyici değil.
+  - [Renk | ekle] Ürün açıklamasına renklerin fotoğraftaki gibi olmayabileceğine dair bir uyarı ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 12: Renk, fotoğraftakiyle uyuşmuyor.

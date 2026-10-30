@@ -1,0 +1,50 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        12
+      ],
+      "sayfa_iddiasi": "Runs Small!!! Please order one size up if you want a more comfortable style."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        10,
+        13,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "made of soft and smooth satin fabric, they are breathable, comfortable and no itchy."
+    }
+  ],
+  "ana_risk": "Beden kalıbı küçük geliyor, oysa sayfada bir beden büyük almanız gerektiği belirtiliyor; kumaş kalitesiz, sayfada ise yumuşak ve rahat olduğu iddia ediliyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Runs Small!!! Please order one size up if you want a more comfortable style.",
+      "musteri_deneyimi": "Yorum 3, 4, 5, 7, 9, 12: Küçük geldi, beden uyumsuzluğu var.",
+      "islem": "değiştir",
+      "duzeltme": "\"Bir beden büyük almanız önerilir\" ifadesini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "made of soft and smooth satin fabric, they are breathable, comfortable and no itchy.",
+      "musteri_deneyimi": "Yorum 2, 10, 13, 14, 15: Kumaş çok ince ve kalitesiz.",
+      "islem": "değiştir",
+      "duzeltme": "\"Kumaş ince ve kalitesizdir\" uyarısını ekleyin."
+    }
+  ]
+}

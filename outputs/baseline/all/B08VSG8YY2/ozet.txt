@@ -1,0 +1,10 @@
+ASIN:         B08VSG8YY2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'Relaxed fit.'
+ana_risk:     Sayfa, rahat bir oturuş vaat ediyor ancak müşteriler kötü bir uyum yaşadıklarını belirtiyor; ayrıca sayfa, kumaşın yıkama sonrası çekme sorununu belirtmiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "Relaxed fit" ifadesini "Kalıp büyük; bir beden küçük almanız önerilir" şeklinde değiştir.
+      sayfa: 'Relaxed fit.' | müşteri: Yorum 1, 3: Ürün çok büyük geliyor, bir beden küçük alınması öneriliyor.

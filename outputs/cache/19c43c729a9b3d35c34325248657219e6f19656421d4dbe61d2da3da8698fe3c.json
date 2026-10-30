@@ -1,0 +1,85 @@
+{
+  "tag": "agent2:B0BGPVTZDQ",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2985,
+    "output_tokens": 246,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00059535,
+  "sure_sn": 3.214,
+  "created": "2026-10-30T17:51:44+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] Not what I expected — First , in the picture it looks like a darker green. Instead it is a shiny, light green. Secondly it barely looks like the picture. The image in the picture makes it look substantial, as does the wording “tactical sweatshirt”. Instead what I received was a light weight, flimsy shirt. It might be okay if the temperature were around 50 F, but it would hardly measure up to a “regular “ sweatshirt. It looked great in the picture, but in real life, it isn’t worth your money, certainly not impressed. I have no idea what the 21 grams refers to.\n\n2) [1★] Polyester low end junk — This is Chinese jelly buddy stuff they advertise on Facebook it’s polyester crap unless you like material sticking to you all the time don’t buy it, it must have many paid reviews I have two other hoodies and they’re absolutely Junk you can’t dry them After you wear them for a half an hour they have so much static in them you can’t stand it apparently they don’t have cotton in China they got cool designs,but crap material\n\n3) [1★] Cheap looking — My husband was really disappointed the pic looks nothing like the shirt. Cheap looking material just awful\n\n4) [1★] Save your money. — It's as thin as a tee shirt.\n\n5) [1★] It’s a kimono, not a hoodie, not tactical, not form-fitting — It’s one solid color. It’s really baggy. Not form fitting at all. It has all kinds of weird strings that there’s nothing reasonable to do with. There’s no hood. There’s no way this would hold up to rough weather or tactical usage. Nothing like what was advertised. At all.\n\n6) [1★] False advertising — Not a hoodie and not even close to the advertised picture. Was going to buy a few different ones but lucky I only got scammed on 1. Don’t understand how they get away with doing this. Bad company won’t buy again and neither should you. Also states waterproof. No way no how\n\n7) [1★] Believe the negative reviews! Buyers beware! — Not Evan close to the color in the picture on the Amazon website! Helen Keller could of told you that it’s not the same as the picture on the website. Didn’t even bother returning it, drove the shirt straight to the goodwill bin.\n\n8) [1★] Not what was expected — I thought it looked heavy duty in the ad, but it is just a flimsy tee shirt and the pockets make it look stupid in real life.\n\n9) [1★] Not even close to the picture! — This is extremely cheap material. It’s a mint green instead of OD green. The colors look like it was died to look “rustic” but it just looks sun faded and stained. If you want the shirt pictured in the ad then stay clear of this! It’s not even close to what you want.\n\n10) [2★] Buyer beware — This shirt is not what we expected AT ALL! looks absolutely nothing like the picture, the white string is god awful and looks horrible. The material is cheap, and the pockets aren’t even real..very bad seller! Stay away..I’m not even gonna bother returning it.. I’m just gonna take the loss.\n\n11) [1★] False advertising — where do i begin! The fabric is far to thin and doesn't match the image at all, in addition the fabric they did use instead has the texture printed onto it(including the barely visible sewing marks of where the pockets should be!) the material thats behind the drawstrings is completely different than the depiction, the collar isnt even similar and the \"pockets\" are just two sewn on flaps of fabric! The only thing that is even remotely similar is that it covers your upper body and has a crisscrossing string. Do Not Buy\n\n12) [2★] Looks cooler online — Looks much better online, once you receive, it looks like it’s costume material and wouldn’t wear as a shirt.\n\n13) [2★] Bad material. Wanted a tunic. Got a screenprint. — Material was bad. Wanted a tunic but it looks like a cheap screenprint.\n\n14) [1★] Devolución del articulo — Si la tela fuera de algodón fuera mejor.. son muy largos y anchos en la parte inferior",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Renk",
+        "ozet": "Renk fotoğraftakinden farklı",
+        "yorum_numaralari": [
+          1,
+          6,
+          7,
+          9,
+          10,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün fotoğraftaki görünümden farklı",
+        "yorum_numaralari": [
+          1,
+          3,
+          5,
+          8,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş kalitesi kötü",
+        "yorum_numaralari": [
+          2,
+          4,
+          10,
+          13,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ürün kalıbı beklenenden farklı",
+        "yorum_numaralari": [
+          5,
+          8,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün kalitesi düşük",
+        "yorum_numaralari": [
+          2,
+          3,
+          4,
+          10,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

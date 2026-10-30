@@ -1,0 +1,15 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [5]",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B0711K6VK4",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 5,
+  "sure_duvar_sn": 8.11,
+  "time": "2026-10-30T18:51:41+00:00"
+}

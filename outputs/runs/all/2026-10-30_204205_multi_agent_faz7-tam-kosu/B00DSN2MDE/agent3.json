@@ -1,0 +1,64 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        9,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        6,
+        12
+      ],
+      "sayfa_iddiasi": "100% Cotton-canvas webbing"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        7,
+        11
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada kullanılan malzeme kalitesi yüksek olarak belirtiliyor, ancak müşteriler malzemenin kalitesiz olduğunu ve ürünün kısa sürede bozulduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4, 5, 9, 15: Ürün kalitesi düşük, kısa sürede bozuluyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi ve kalite kontrol süreci eklenmeli."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton-canvas webbing",
+      "musteri_deneyimi": "Yorum 2, 6, 12: Kullanılan malzeme kalitesiz ve dayanaksız.",
+      "islem": "değiştir",
+      "duzeltme": "Kullanılan malzeme hakkında daha detaylı bilgi verilmeli; malzemenin dayanıklılığı ve kalitesi hakkında açıklama eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 7, 11: Küçük ve dar geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden tablosu eklenmeli ve kalıp hakkında bilgi verilerek, 'bir beden büyük almanız önerilir' notu eklenmeli."
+    }
+  ]
+}

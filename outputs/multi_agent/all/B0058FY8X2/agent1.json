@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Waist: Small 28\"-29\", Medium 30\"-32\", Large 34\"-36\", XL 38\"-40\", 2XL 42\"-44\", 3XL 46\"-48\".",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "87% 7.1 oz Polyester, 13% Elastane.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Updated dual layer ColdGear fabric for ultra-warm, brushed interior and a slick, fast-drying exterior.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight 4-way stretch construction improves mobility and accelerates dry time.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Superior moisture transport system wicks sweat to help regulate body temperature.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Self-fabric waistband stretches easily for optimal comfort.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Ergonomic waistband designed to deliver greater back coverage for added warmth and protection.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

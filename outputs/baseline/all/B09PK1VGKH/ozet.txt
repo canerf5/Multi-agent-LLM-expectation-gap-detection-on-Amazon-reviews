@@ -1,0 +1,13 @@
+ASIN:         B09PK1VGKH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 5, 7 | sayfa iddiası: 'Perfect fit: Our sandals are great gifts for young girls or ladies of all ages. Please check our chart to find the size that suits you. Very suitable for narrow feet.'
+  - Malzeme: yorum 1, 5, 6 | sayfa iddiası: 'High-quality material: The lace-up shoe upper is made of artificial PU material with an adjustable buckle.'
+ana_risk:     Sayfa, 'dar ayaklar için çok uygun' iddiasında bulunuyor, ancak birçok müşteri ayakkabıların çok geniş olduğunu ve ayaklarının kaydığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp genişliği hakkında bilgi ekleyin; 'Bu ayakkabılar dar ayaklar için uygun olmayabilir, geniş ayaklar için daha iyi bir seçenek arayın.'
+      sayfa: 'Perfect fit: Our sandals are great gifts for young girls or ladies of all ages. Please check our chart to find the size that suits you. Very suitable for narrow feet.' | müşteri: Yorum 2, 3, 4, 5, 7: Ayakkabılar çok geniş ve büyük geliyor.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; 'Üst kısım yapay PU malzemeden yapılmıştır, bu nedenle bazı kullanıcılar için estetik olarak hoş olmayabilir.'
+      sayfa: 'High-quality material: The lace-up shoe upper is made of artificial PU material with an adjustable buckle.' | müşteri: Yorum 1, 5, 6: Malzeme kalitesi düşük, ucuz görünüyor ve ayakkabılar renk veriyor.

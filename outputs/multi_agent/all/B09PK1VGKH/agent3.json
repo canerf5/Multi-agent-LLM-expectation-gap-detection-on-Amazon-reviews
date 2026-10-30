@@ -1,0 +1,45 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "sayfa_iddiasi": "Please check our chart to find the size that suits you. Very suitable for narrow feet."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "sayfa_iddiasi": "The lace-up shoe upper is made of artificial PU material with an adjustable buckle."
+    }
+  ],
+  "ana_risk": "Sayfada ayakkabıların dar ayaklara uygun olduğu iddiası var, ancak birçok müşteri ayakkabıların çok büyük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Please check our chart to find the size that suits you. Very suitable for narrow feet.",
+      "musteri_deneyimi": "Yorum 2, 3, 4, 7: Ayakkabılar çok büyük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Beden tablosunu güncelleyerek, 'Ayakkabılar normalden büyük kalıp, bir beden küçük almanız önerilir.' ifadesini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "The lace-up shoe upper is made of artificial PU material with an adjustable buckle.",
+      "musteri_deneyimi": "Yorum 1, 5: Ayakkabının kalitesi çok düşük görünüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün açıklamasına 'Yüksek kaliteli yapay PU malzeme kullanılmıştır.' ifadesini ekleyin."
+    }
+  ]
+}

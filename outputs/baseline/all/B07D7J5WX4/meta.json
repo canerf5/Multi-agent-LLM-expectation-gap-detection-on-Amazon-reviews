@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 10 hem Beden/Kalıp hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 7 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 10 hem Beden/Kalıp hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 7 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "parent_asin": "B07D7J5WX4",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 10.829,
+  "time": "2026-10-30T18:32:26+00:00"
+}

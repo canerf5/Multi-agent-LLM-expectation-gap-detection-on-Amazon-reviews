@@ -1,0 +1,68 @@
+{
+  "tag": "agent2:B012DCTQ8O",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2976,
+    "output_tokens": 211,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.000573,
+  "sure_sn": 3.993,
+  "created": "2026-10-30T18:07:15+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] One Star — shoes fit a whole size bigger and not comfortable\n\n2) [2★] I love the professional look of these shoes — Ouch.. I love the professional look of these shoes, especially for the price. But omg they are so tight! The length of the shoe is a little loose if anything, but the width and the height is so tight that I have blisters on the top and sides of my toes after just an hour of wearing of them. I hope they break in soon, and if they do, I'll update with a higher rating, but at the moment I can't even keep them on.\n\n3) [2★] Too Small — This clog was too small for my feet. The package did arrive on time which was super amazing, but I ended up returning it anyways.\n\n4) [2★] Dont know what size to get — They are not true to size. and when you buy a size up they are to big\n\n5) [2★] Good shoe, not for me — The shoes themselves are fine, good quality, look great. They're just not very comfortable. I've worn clogs before for outpatient jobs where I'm standing for long periods. For ED work where I'm pushing stretchers and walking more my sneakers were better.\n\n6) [1★] Bad order — Ordered male shoes in M7.5-8 got female shoes in F7-7.5 so it was way too small.. Returning them to try something else.\n\n7) [1★] Feet hurt like crazy at the end of a 12 hour shift — Feet hurt like crazy at the end of a 12 hour shift. If you have arched feet like I do, these will hurt at the arches. They were fine the 1st few hours, but by hour 4, it was hurting at the corners of my feet and at the arches. I wish I could return these.\n\n8) [1★] Polyurethane = NOT Leather — I owe many pairs of Sanita but this is the ugliest shoe I have ever bought. It looks so cheap in quality and production that CHEAP is the only fashion statement your will be making — cheap cheaper cheapest — crappy craftsmanship — royal rubbish from what was a known as a company — and Amazon charge my Amazon Prime account USD10 for shipping which I would not mind if the shoe was not a polyurethane stapled to a hard block — do not buy it if you want a therapeutic shoe — spend more for better — never again!\n\n9) [2★] Two Stars — The back end of the shoes is too loose.\n\n10) [1★] Horrible quality — I've been a nurse for 20 years and have been wearing nothing but Dansko and Sanita. I have shoes that are 12 years old and still look brand new. These are clearly defective. After 2 weeks of wear, the sole cracked, and the top cracked and peeled\n\n11) [1★] Save your time and money... don't buy!!!! — Don't waste your time and money!! These are old stock that are super crappy. I wore them for an hour and BOTH SOLES CRACKED!!! Seriously?? This is beyond ridiculous they're either really old or fake. The only reason it got one star is because you can't give a rating of zero. At least Amazon gave me a refund...\n\n12) [2★] Doesn’t seem right — It is a flexible sole on this shoe, was not a hard sole like all the other sanitary shoes I have bought and I am not totally sure the shoe is leather\n\n13) [2★] Two Stars — Too large and would costed $45.00 to return and only paid $85.00. Go figure.\n\n14) [1★] One Star — After 1 week of wearing, the \"leather\" top of the clogs started to crack and flake off\n\n15) [1★] Seller will not work with you to resolve issues. — I am in ICU nurse, and I Purchased these clogs back in February, but did not take them out of the box or try them on until May, I had ordered these before and never had an issue as far as fit. When I tried them on they were tight and pinched. I contacted the seller and explained the situation. They refused to give me a refund. So, now I have a pair of expensive work shoes that I cannot wear.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ayakkabılar bir numara büyük geliyor.",
+        "yorum_numaralari": [
+          1,
+          4,
+          3,
+          9,
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ayakkabılar çok dar ve rahatsız.",
+        "yorum_numaralari": [
+          2,
+          7,
+          5,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Ayakkabaların kalitesi çok kötü, çabuk bozuluyor.",
+        "yorum_numaralari": [
+          10,
+          11,
+          14,
+          8
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Ayakkabının üst kısmı deriden değil, poliüretandan yapılmış.",
+        "yorum_numaralari": [
+          8,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

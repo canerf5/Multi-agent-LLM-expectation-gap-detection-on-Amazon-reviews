@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Body: 90% Polyester, 10% Elastane; Lining: 90% Polyester, 10% Elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight and Breathable Fabric: Super soft material wicks away sweat to keep you comfortable when you exercise.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Double Layer Design: The inner layer provides elastic support and protective coverage; Outer layer side split design provides breathability and a greater range of motion.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Wide Flat Elastic Waistband: Wide and soft elastic waistband with internal draw strings for a personalized fit, keeps you feeling comfortable with no rolls or digs.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Back Zipper Pocket: Back zippered pocket securely stash valuable items like a key and credit card, keep your hands free during activities.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Phone Pocket: The built-in liner with a elastic phone pocket on the right can prevent your phone out slipping, keep free movement.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

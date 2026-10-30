@@ -1,0 +1,13 @@
+ASIN:         B07RVFG53Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'Size:S-XL.Please refer to the left size image to ensure a better fitting before you order.'
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'Fabric: Polyester. Very soft and comfortable to wear, feel cool in summer specially.'
+ana_risk:     Beden ve kalite ile ilgili sorunlar var; sayfa, ürünün doğru bedende olduğunu ve kaliteli olduğunu iddia ediyor, ancak müşteriler bu iddialarla çelişen deneyimler yaşamış.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve beden hakkında daha net bilgi ver; 'Kalıp dar, bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'Size:S-XL.Please refer to the left size image to ensure a better fitting before you order.' | müşteri: Yorum 2, 4: Çok kısa ve kalıp dar geliyor.
+  - [Kalite | değiştir] Kalite hakkında daha net bilgi ver; 'Ürün dikişleri zayıf, dikkatli kullanılmalı' notu ekle.
+      sayfa: 'Fabric: Polyester. Very soft and comfortable to wear, feel cool in summer specially.' | müşteri: Yorum 3, 5: Kalite kötü, dikişler zayıf.

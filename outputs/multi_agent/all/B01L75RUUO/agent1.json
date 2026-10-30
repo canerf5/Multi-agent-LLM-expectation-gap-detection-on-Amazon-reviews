@@ -1,0 +1,14 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Felt,Polyester,Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "XX-Large",
+      "iddia_turu": "somut"
+    }
+  ]
+}

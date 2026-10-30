@@ -1,0 +1,26 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "'Old Fart' Socks fit men's UK size 6 - 11"
+    }
+  ],
+  "ana_risk": "Sayfa, 'Old Fart' çoraplarının UK 6-11 beden aralığına uygun olduğunu iddia ediyor, ancak müşteriler çorapların çok küçük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "'Old Fart' Socks fit men's UK size 6 - 11",
+      "musteri_deneyimi": "Yorum 3: Çok küçük",
+      "islem": "değiştir",
+      "duzeltme": "Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'."
+    }
+  ]
+}

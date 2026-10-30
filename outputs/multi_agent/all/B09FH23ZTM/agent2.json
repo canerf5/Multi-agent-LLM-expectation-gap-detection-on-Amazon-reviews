@@ -1,0 +1,94 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bir ayakkabı diğerinden küçük geliyor.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Üç farklı numara denedim, hepsi aynı.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Yeterli yastıklama yok, ayakkabılar yürürken çıkıyor.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ayakkabılar 4 ayda parçalandı.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Yapımında ve malzemesinde sorun var.",
+      "yorum_numaralari": [
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kullanılmış ve lekeli geldi.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kullanılmış ürün"
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün dayanıklı değil, bir sezon bile gitmez.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ayakkabılar yürürken çok ses çıkarıyor.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Dar ayaklar için öneriliyor, geniş ayaklar için uygun değil.",
+      "yorum_numaralari": [
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Üretim hatası var, satıcı destek vermiyor.",
+      "yorum_numaralari": [
+        9
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    }
+  ]
+}

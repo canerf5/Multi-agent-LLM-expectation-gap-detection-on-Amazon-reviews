@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "US Size Measurements [Bust / Shoulder / Length] Size S: [ 34 / 14.5 / 22 ] Size M: [ 35 / 14.5 / 22.5 ] Size L: [ 37.5 / 15.5 / 23 ] Size 1XL: [ 42 / 17 / 24 ] Size 2XL: [ 44 / 17.25 / 25 ] Size 3XL: [ 45.5 / 17.5 / 25 ]"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden ölçüleri hakkında bilgi veriyor ancak bazı müşteriler ürünün kısa olduğunu belirtiyor; ayrıca kalite ile ilgili zayıf bir zipper durumu var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "US Size Measurements [Bust / Shoulder / Length] Size S: [ 34 / 14.5 / 22 ] Size M: [ 35 / 14.5 / 22.5 ] Size L: [ 37.5 / 15.5 / 23 ] Size 1XL: [ 42 / 17 / 24 ] Size 2XL: [ 44 / 17.25 / 25 ] Size 3XL: [ 45.5 / 17.5 / 25 ]",
+      "musteri_deneyimi": "Yorum 2: Ürün kısa geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının kısa olduğu bilgisi eklenmeli; 'Kısa kalıp, bir beden büyük almanız önerilir' notu eklenmeli."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3: Fermuarlar zor açılıp kapanıyor.",
+      "islem": "ekle",
+      "duzeltme": "Fermuarların kalitesi hakkında bilgi eklenmeli; 'Fermuarlar zor açılmakta ve kapanmaktadır, dikkatli kullanılması önerilir' notu eklenmeli."
+    }
+  ]
+}

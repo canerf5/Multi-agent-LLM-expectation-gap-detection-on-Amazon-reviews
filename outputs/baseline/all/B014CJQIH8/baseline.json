@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Renk",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "Regular trim with modern cut fit, good quality warm overcoat,Wool Blend Fabric, and making style make you feel good and comfortable when wearing."
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        3,
+        8
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        5,
+        7
+      ],
+      "sayfa_iddiasi": "Provides the finest and most stylish Coat which can be worn during spring and winter seasons."
+    }
+  ],
+  "ana_risk": "Ürün sayfasında belirtilen 'modern kesim' ve 'iyi kalite' iddiaları, müşterilerin büyük beden ve düşük kalite şikayetleriyle çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Regular trim with modern cut fit, good quality warm overcoat,Wool Blend Fabric, and making style make you feel good and comfortable when wearing.",
+      "musteri_deneyimi": "Yorum 2, 4: Çok büyük geldi, kalıbı kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp büyük; bir beden küçük almanız önerilir."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 8: Renk görseldeki gibi değil, tek ton gri geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasına 'Renk, görseldeki gibi olmayabilir' uyarısı ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Provides the finest and most stylish Coat which can be worn during spring and winter seasons.",
+      "musteri_deneyimi": "Yorum 5, 7: Kalite düşük, düğme koptu, malzeme kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili daha net bilgi verin; 'Düğmelerin sağlamlığı garanti edilmez' gibi bir not ekleyin."
+    }
+  ]
+}

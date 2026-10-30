@@ -1,0 +1,13 @@
+ASIN:         B082PMWDN7
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4, 6 | sayfa iddiası: '100% Cotton'
+  - Kalite: yorum 2, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler ince ve delikli kumaşla ilgili şikayet ediyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve delikli olduğu bilgisi eklenmeli.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 4, 6: Kumaş ince ve delikli; dışarıda giyilemeyecek kadar şeffaf.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi eklenmeli; 'kalite düşük, yıkama sonrası şeklini korumuyor' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Kalite düşük; yıkama sonrası şeklini korumuyor.

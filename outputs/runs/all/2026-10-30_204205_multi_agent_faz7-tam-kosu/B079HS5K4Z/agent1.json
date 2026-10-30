@@ -1,0 +1,14 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "60% polyester,40% spandex.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Please Select the Size According to the Size Chart Picture Before Ordering.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

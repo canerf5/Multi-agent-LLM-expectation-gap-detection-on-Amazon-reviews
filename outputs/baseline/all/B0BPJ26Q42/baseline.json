@@ -1,0 +1,67 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Beden/Kalıp",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "Always soft, always durable cotton for a look ready to greet the day, all day"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        11,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        2,
+        5,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesinin yüksek olduğunu vaat ediyor; ancak birçok müşteri, ürünün üzerinde lekeler, delikler ve kalitesiz dikişler olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Always soft, always durable cotton for a look ready to greet the day, all day",
+      "musteri_deneyimi": "Yorum 1, 3, 4, 6, 8, 9, 10, 14: Ürün kalitesi düşük, lekeler ve dikiş hataları var.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrolü yapıldığına dair bilgi ekleyin ve ürünün kalitesiz olduğu yönündeki iddiaları gözden geçirin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 11, 12, 13: Bedenler çok küçük, yanlış etiketlenmiş gibi.",
+      "islem": "ekle",
+      "duzeltme": "Bedenlerin küçük olduğu ve alırken bir beden büyük alınması gerektiğine dair uyarı ekleyin."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5, 15: Ürün kırışıklık yapıyor ve ütü gerektiriyor; bu konuda bilgi yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün ütü gerektirdiğine dair bilgi ekleyin ve bakım talimatlarını netleştirin."
+    }
+  ]
+}

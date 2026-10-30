@@ -1,0 +1,60 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Dikişler kötü, düğmeler ilk yıkamada düştü.",
+      "yorum_numaralari": [
+        1,
+        8,
+        10,
+        12,
+        13,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler küçük, yanlış ölçü.",
+      "yorum_numaralari": [
+        2,
+        9,
+        10,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi düşük, çabuk yıpranıyor.",
+      "yorum_numaralari": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün açıklamasındaki gibi değil.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada yazmıyordu.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

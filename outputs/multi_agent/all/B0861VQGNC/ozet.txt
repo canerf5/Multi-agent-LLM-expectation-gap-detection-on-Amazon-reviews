@@ -1,0 +1,10 @@
+ASIN:         B0861VQGNC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'The shoe size too small problem has been corrected after June 15th, 2021.'
+ana_risk:     Sayfada 'küçük beden' sorununun düzeltildiği iddiası var, ancak müşteriler hala bedenin küçük geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük olduğu bilgisini ekleyin; 'Beden küçük geldi, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'The shoe size too small problem has been corrected after June 15th, 2021.' | müşteri: Yorum 2, 3: Beden küçük geldi.

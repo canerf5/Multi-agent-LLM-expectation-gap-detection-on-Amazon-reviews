@@ -1,0 +1,49 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        7,
+        9,
+        12
+      ],
+      "sayfa_iddiasi": "Runs Small!!! Please order one size up if you want a more comfortable style."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        5,
+        10,
+        13,
+        14
+      ],
+      "sayfa_iddiasi": "They are breathable, comfortable and no itchy."
+    }
+  ],
+  "ana_risk": "Sayfa, 'küçük kalıyor' ve 'rahatsız etmiyor' iddialarında bulunuyor; ancak müşteriler bu elbisenin çok dar ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Runs Small!!! Please order one size up if you want a more comfortable style.",
+      "musteri_deneyimi": "Yorum 3, 4, 7, 9, 12: Çok küçük geliyor ve dar kalıp var.",
+      "islem": "değiştir",
+      "duzeltme": "Küçük kalıp uyarısını daha belirgin hale getirerek, 'Bir beden büyük almanız önerilir' ifadesini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "They are breathable, comfortable and no itchy.",
+      "musteri_deneyimi": "Yorum 2, 5, 10, 13, 14: Kumaş çok ince ve kalitesiz.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve şeffaf, dikkatli giyinilmesi önerilir' notunu ekleyin."
+    }
+  ]
+}

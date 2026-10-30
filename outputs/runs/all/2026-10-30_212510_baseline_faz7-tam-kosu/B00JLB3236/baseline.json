@@ -1,0 +1,29 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden uyumu ile ilgili bilgi vermiyor; müşteriler, ürünün beklenen kalitede olmadığını ve bedenlerin uyumsuz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4, 5, 6: Beden uyumu sorunları var.",
+      "islem": "ekle",
+      "duzeltme": "Beden uyumu hakkında bilgi ekleyin; 'Bedenler standart ölçülerden farklılık gösterebilir, lütfen dikkat edin.'"
+    }
+  ]
+}

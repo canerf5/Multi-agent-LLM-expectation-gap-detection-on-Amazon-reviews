@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "Size:S-XL.Please refer to the left size image to ensure a better fitting before you order."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "Fabric: Polyester. Very soft and comfortable to wear, feel cool in summer specially."
+    }
+  ],
+  "ana_risk": "Beden ve kalite ile ilgili sorunlar var; sayfa, ürünün doğru bedende olduğunu ve kaliteli olduğunu iddia ediyor, ancak müşteriler bu iddialarla çelişen deneyimler yaşamış.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size:S-XL.Please refer to the left size image to ensure a better fitting before you order.",
+      "musteri_deneyimi": "Yorum 2, 4: Çok kısa ve kalıp dar geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp ve beden hakkında daha net bilgi ver; 'Kalıp dar, bir beden büyük almanız önerilir' notu ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Fabric: Polyester. Very soft and comfortable to wear, feel cool in summer specially.",
+      "musteri_deneyimi": "Yorum 3, 5: Kalite kötü, dikişler zayıf.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite hakkında daha net bilgi ver; 'Ürün dikişleri zayıf, dikkatli kullanılmalı' notu ekle."
+    }
+  ]
+}

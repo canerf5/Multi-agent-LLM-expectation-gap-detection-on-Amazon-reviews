@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        9
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        6
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "50% Polyester, 50% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfada kumaş kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın sert ve kaşındırıcı olduğunu belirtiyor; ayrıca dikişlerin kötü olduğunu ve ürünün hemen bozulduğunu söylüyorlar.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 9: Çok büyük geldi",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbının büyük olduğu bilgisini ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 6: Dikişler kötü, ürün hemen bozuldu",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesinin düşük olduğu bilgisini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "50% Polyester, 50% Cotton",
+      "musteri_deneyimi": "Yorum 3, 4: Kumaş kalitesi düşük, sert ve kaşındırıyor",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesinin düşük olduğu ve sert olduğu bilgisini düzeltin."
+    }
+  ]
+}

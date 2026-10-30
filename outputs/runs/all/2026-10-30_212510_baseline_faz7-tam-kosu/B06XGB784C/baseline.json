@@ -1,0 +1,50 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        3,
+        7,
+        8,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        6,
+        11,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "Plush terry-cotton bathrobe for luxurious spa-like comfort at home or away; for men and women (unisex)"
+    }
+  ],
+  "ana_risk": "Dayanıklılık iddiası sayfada yok, ancak müşteriler ürünün çabuk yıprandığını ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3, 7, 8, 14, 15: Ürün yıkama sonrası çabuk yıpranıyor ve parçalanıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Yıkama sonrası dayanıklılığı düşebilir, dikkatli kullanılması önerilir.'"
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Plush terry-cotton bathrobe for luxurious spa-like comfort at home or away; for men and women (unisex)",
+      "musteri_deneyimi": "Yorum 1, 6, 11, 12, 13: Ürün kötü kokuyor, lekeli geliyor ve lifleri dökülüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün kalitesi hakkında daha net bilgi ver; 'Ürün ilk yıkamada kötü kokabilir ve lekelenme riski vardır, dikkatli yıkanması önerilir.'"
+    }
+  ]
+}

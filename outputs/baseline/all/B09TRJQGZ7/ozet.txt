@@ -1,0 +1,16 @@
+ASIN:         B09TRJQGZ7
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 11, 14 | sayfa iddiası: 'We are standard US sizes. Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.'
+  - Malzeme: yorum 1, 8, 9 | sayfa iddiası: '100% Polyester'
+  - Kalite: yorum 3, 4, 5, 10, 13 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, standart beden ölçülerine göre uygunluk vaat ediyor ancak müşteriler ürünün beklenenden küçük veya dar olduğunu belirtiyor; ayrıca malzeme kalitesi ve işçilikle ilgili ciddi sorunlar yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha doğru bir şekilde belirtildiği bir not ekleyin; 'Bedenler standart ölçülerden küçük gelebilir, bir beden büyük almanız önerilir.'
+      sayfa: 'We are standard US sizes. Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.' | müşteri: Yorum 11, 14: Bedenler standart ölçülerden küçük geliyor.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; 'Malzeme ince ve şeffaf, dikkatli kullanım önerilir.'
+      sayfa: '100% Polyester' | müşteri: Yorum 1, 8, 9: Malzeme kalitesi düşük, ince ve şeffaf.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'Ürünler kontrol edilerek gönderilmektedir, hasarlı veya kullanılmış ürün gönderimi yapılmamaktadır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 10, 13: Ürün kalitesi düşük, hasarlı veya kullanılmış geliyor.

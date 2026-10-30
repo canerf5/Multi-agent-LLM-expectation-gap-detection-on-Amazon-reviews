@@ -1,0 +1,36 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Dikişler yırtıldı veya ürün parçalandı.",
+      "yorum_numaralari": [
+        1,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi bekleneni karşılamıyor; dikişler ve malzeme sorunlu.",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Kalıp beklenenden uzun veya oturuşu rahatsız.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

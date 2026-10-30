@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "Shaft measures approximately 15.75\" from arch"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        4,
+        6
+      ],
+      "sayfa_iddiasi": "100% Synthetic"
+    }
+  ],
+  "ana_risk": "Beden ölçüleri ile ilgili iddialar var, ancak kullanıcılar bedenlerin dar olduğunu ve ziplenemediğini belirtiyor; malzeme ile ilgili iddialar da dayanıklılık sorunları ile çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Shaft measures approximately 15.75\" from arch",
+      "musteri_deneyimi": "Yorum 3, 5: Bedenleri dar, ziplenemiyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerinin dar olduğu ve ziplenemediği bilgisini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Synthetic",
+      "musteri_deneyimi": "Yorum 4, 6: Dayanıklılık sorunları var, tabanlar çıkıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık sorunları hakkında bilgi verin; tabanların çıkma riski olduğunu belirtin."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B081NXFM2H
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 5, 3 | sayfa iddiası: 'shearling'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice."
+ana_risk:     Sayfa, 'shearling' malzeme iddiasında bulunuyor ancak müşteriler arka boyasının çıktığını ve temizlenmesinin zor olduğunu belirtiyor; ayrıca dayanıklılık iddiası var ama yürürken kayma ve sertlik şikayetleri mevcut.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında malzeme kalitesi hakkında daha net bilgi verin; 'arka boyası çıkma yapabilir, bu nedenle dikkatli temizlenmelidir' notunu ekleyin.
+      sayfa: 'shearling' | müşteri: Yorum 5: Arka boyası çıkıyor, zor temizleniyor.
+  - [Beden/Kalıp | değiştir] Sayfada 'kayma yapabilir, dikkatli kullanılması önerilir' uyarısını ekleyin.
+      sayfa: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice." | müşteri: Yorum 1, 4: Zor yürünüyor, kayıyor ve platform sert.

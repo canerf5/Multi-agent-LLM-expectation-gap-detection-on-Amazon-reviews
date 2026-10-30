@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "L (US 14)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Drawstring closure",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Wash cold",
+      "iddia_turu": "somut"
+    }
+  ]
+}

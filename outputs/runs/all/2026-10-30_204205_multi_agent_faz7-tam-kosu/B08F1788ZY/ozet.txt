@@ -1,0 +1,13 @@
+ASIN:         B08F1788ZY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 7, 8, 9, 11, 12, 15 | sayfa iddiası: '70D plus size tights stightens slightly from tummy to thigh'
+  - Görsel: yorum 6, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden/Kalıp iddiası var, ancak birçok yorum ürünün çok küçük ve dar geldiğini belirtiyor; ürün fotoğrafları yanıltıcı olduğu belirtiliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha geniş olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: '70D plus size tights stightens slightly from tummy to thigh' | müşteri: Yorum 1, 2, 7, 8, 9, 11, 12, 15: Çok küçük ve dar geliyor
+  - [Görsel | ekle] Ürün fotoğraflarının gerçek ürünü yansıtması gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 14: Ürün fotoğrafları yanıltıcı

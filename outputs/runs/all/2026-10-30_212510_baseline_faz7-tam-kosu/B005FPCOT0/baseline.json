@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesine dair bir iddia sunmuyor; ancak müşteriler, ürünün kalitesiz olduğunu ve kısa sürede bozulduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Kalite çok kötü; kısa sürede parçalanıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesiz olduğu ve kısa sürede bozulabileceği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün dayanıklı değil; kısa sürede dikişleri açılıyor ve parçalanıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dayanıklılığı hakkında bilgi eklenmeli; uzun süreli kullanımda sorun yaşanabileceği belirtilmeli."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B018DTQKRG
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 14 | sayfa iddiası: 'Mesh'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme olarak 'Mesh' olduğunu iddia ediyor; ancak müşteriler soketlerin çok ince olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün açıklamasında 'Mesh' malzeme ile birlikte 'ince' olduğu bilgisini ekleyin.
+      sayfa: 'Mesh' | müşteri: Yorum 2, 14: Soketler çok ince
+  - [Beden/Kalıp | ekle] Ürün sayfasında beden kalıbı hakkında bilgi ekleyin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Soketler küçük geldi

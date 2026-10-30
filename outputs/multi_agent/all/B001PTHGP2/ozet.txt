@@ -1,0 +1,16 @@
+ASIN:         B001PTHGP2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 5, 6, 10, 11, 15 | sayfa iddiası: 'Heel measures approximately 1"'
+  - Malzeme: yorum 3, 13 | sayfa iddiası: '100% Leather and Synthetic'
+  - Dayanıklılık: yorum 4, 8, 9 | sayfa iddiası: 'thick leather and fabric straps that keep up with your rugged style'
+ana_risk:     Sayfada 'Heel measures approximately 1"' iddiası var, ancak müşteriler çok dar ve küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha geniş bir aralıkta olduğu bilgisi eklenmeli.
+      sayfa: 'Heel measures approximately 1"' | müşteri: Yorum 1, 2, 5, 6, 10, 11, 15: Çok dar ve küçük geliyor.
+  - [Malzeme | değiştir] Kullanılan malzemenin kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: '100% Leather and Synthetic' | müşteri: Yorum 3, 13: Aşındırıcı malzeme kullanılmış.
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha fazla bilgi eklenmeli.
+      sayfa: 'thick leather and fabric straps that keep up with your rugged style' | müşteri: Yorum 4, 8, 9: Tabanlar ayrılıyor veya kalitesi düşük.

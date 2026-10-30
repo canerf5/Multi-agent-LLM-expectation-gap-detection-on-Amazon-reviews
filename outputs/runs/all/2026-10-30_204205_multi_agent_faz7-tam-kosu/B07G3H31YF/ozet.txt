@@ -1,0 +1,13 @@
+ASIN:         B07G3H31YF
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 10, 12, 15 | sayfa iddiası: 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW'
+  - Eksik Bilgi: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW' iddiası var, ancak müşteriler numaraların çok küçük geldiğini ve genişlik bilgisi olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden ve kalıp hakkında 'Bedenler normalden küçük; bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW' | müşteri: Yorum 4, 5, 10, 12, 15: Numaralar çok küçük geliyor.
+  - [Eksik Bilgi | ekle] Ürün sayfasına genişlik bilgisi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Ürün açıklamasında genişlik bilgisi yok.

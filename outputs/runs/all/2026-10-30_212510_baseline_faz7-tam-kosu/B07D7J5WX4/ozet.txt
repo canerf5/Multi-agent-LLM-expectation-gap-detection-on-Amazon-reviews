@@ -1,0 +1,16 @@
+ASIN:         B07D7J5WX4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 10, 14 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 7, 10, 11 | sayfa iddiası: 'Made with premium quality light weight and durable material that softens impact and vibration of hands on the handlebars instantaneously, efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain.'
+  - Malzeme: yorum 2, 7, 9, 13 | sayfa iddiası: 'Friction gel pads on palms provide just the right amount of cushioning while feeling the road through the bars for best comfort and durability.'
+ana_risk:     Sayfa, kaliteli malzeme ve konfor vaad ediyor; ancak müşteriler kalitesiz ve yetersiz malzeme ile karşılaştıklarını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp küçük; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 10, 14: Kalıp küçük, bir beden büyük alınması öneriliyor.
+  - [Kalite | değiştir] Kalite iddiasını gözden geçirerek daha gerçekçi bir ifade ekleyin.
+      sayfa: 'Made with premium quality light weight and durable material that softens impact and vibration of hands on the handlebars instantaneously, efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain.' | müşteri: Yorum 1, 7, 10, 11: Kalite düşük, dikişler hemen açılıyor, malzeme kalitesiz.
+  - [Malzeme | değiştir] Malzeme açıklamasını güncelleyerek gerçek içeriği belirtin.
+      sayfa: 'Friction gel pads on palms provide just the right amount of cushioning while feeling the road through the bars for best comfort and durability.' | müşteri: Yorum 2, 7, 9, 13: Gel pad yok, sadece ince köpük var.

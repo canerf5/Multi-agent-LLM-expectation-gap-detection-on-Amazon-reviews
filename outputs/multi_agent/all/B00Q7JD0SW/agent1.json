@@ -1,0 +1,49 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Leather and Textile",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Combination of leather, nylon, webbing and metal hardware. Techlite shell.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Waterproof seam-sealed construction",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Omni-Heat reflective lining.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "200g insulation.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Rated -25F/-32C.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Look and feel good whatever the weather with our latest clothing and gear built to keep you comfortable and protected throughout the season.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Columbia products are engineered using the best technologies and highest quality materials, providing you with innovative products that are functional yet stylish and a great value.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

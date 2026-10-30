@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "tek konu kuralı: yorum 3 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Dayanıklılık için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "tek konu kuralı: yorum 3 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Dayanıklılık için sayılmış"
+  ],
+  "parent_asin": "B09LCGFPDM",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 5,
+  "sure_duvar_sn": 10.661,
+  "time": "2026-10-30T18:27:47+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "Fabric: Polyester& Cotton/ Machine Washable"
+    }
+  ],
+  "ana_risk": "Sayfa, polyester ve pamuk karışımı kumaşın kalitesiz olduğunu iddia ediyor; ancak müşteriler dış malzemenin kalitesiz ve sert olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Fabric: Polyester& Cotton/ Machine Washable",
+      "musteri_deneyimi": "Yorum 2: Dış malzeme kalitesiz, sert gibi.",
+      "islem": "ekle",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi ver; 'Dış malzeme kalitesiz ve sert' ifadesini ekle."
+    }
+  ]
+}

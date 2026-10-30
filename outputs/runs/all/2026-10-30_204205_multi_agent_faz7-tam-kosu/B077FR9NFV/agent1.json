@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5\"/90cm----|---22.5\"/57.5cm---|-----21\"/54cm-- ---6------|-----------6 Years----------|------39\"/99cm-----|----25\"/63.5cm----|----23.5\"/60cm- ---8------|-----------8 Years----------|----42\"/107.5cm----|----27\"/68.5cm----|----25\"/64.5cm- ---10-----|----------10 Years----------|---45.5\"/116.5cm---|---28.5\"/73.5cm---|-----27\"/69cm-- ---12-----|----------12 Years----------|-----49\"/125cm-----|---30.5\"/78.5cm---|---28.5\"/73.5cm ---14-----|----------14 Years----------|----52.5\"/134cm----|---32.5\"/83.5cm---|----30.5\"/78cm- ---16-----|----------16 Years----------|-----56\"/143cm-----|----34.5\"/88cm----|---32.5\"/82.5cm",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material: Polyester, Lace, Chiffon",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Elegant Halter neck with floral lace top bodice, hollow out back, attractive and cute.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "New with tag",
+      "iddia_turu": "genel"
+    }
+  ]
+}

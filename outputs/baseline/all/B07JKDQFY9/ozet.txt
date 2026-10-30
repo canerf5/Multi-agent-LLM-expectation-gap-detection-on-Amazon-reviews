@@ -1,0 +1,13 @@
+ASIN:         B07JKDQFY9
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 1 | sayfa iddiası: 'These slippers are made from high-quality materials.'
+  - Malzeme: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, yüksek kaliteli malzeme iddiasında bulunuyor ancak müşteriler dayanıklılık ve nefes alabilirlik sorunları yaşıyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi ver.
+      sayfa: 'These slippers are made from high-quality materials.' | müşteri: Yorum 1: Bir ay içinde delik oluştu.
+  - [Malzeme | ekle] Slipperlerin nefes alabilirlik özelliği hakkında bilgi ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Nefes almadığı için ayaklar kötü kokuyor.

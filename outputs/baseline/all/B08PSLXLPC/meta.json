@@ -1,0 +1,24 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Sizes run small.'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Very cheap so can’t complain.'",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'the inner sole is flat as a pancake with zero arch support.'",
+    "tek konu kuralı: yorum 3 hem Kalite hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 14 hem Kalite hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 7 hem Kalite hem Malzeme için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Sizes run small.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Very cheap so can’t complain.'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'the inner sole is flat as a pancake with zero arch support.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B08PSLXLPC",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 9.83,
+  "time": "2026-10-30T18:28:47+00:00"
+}

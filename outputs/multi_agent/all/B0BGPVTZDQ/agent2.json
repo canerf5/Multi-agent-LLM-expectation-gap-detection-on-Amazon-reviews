@@ -1,0 +1,68 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Renk",
+      "ozet": "Renk fotoğraftakinden farklı",
+      "yorum_numaralari": [
+        1,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğraftaki görünümden farklı",
+      "yorum_numaralari": [
+        1,
+        3,
+        5,
+        8,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü",
+      "yorum_numaralari": [
+        2,
+        4,
+        10,
+        13,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürün kalıbı beklenenden farklı",
+      "yorum_numaralari": [
+        5,
+        8,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        10,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+ASIN:         B012DCTQ8O
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 7, 9 | sayfa iddiası: 'Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations.'
+  - Kalite: yorum 10, 11, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 8, 12 | sayfa iddiası: '100% PU Leather'
+ana_risk:     Sayfa, doğru beden bilgisi veriyor ancak müşteriler ayakkabıların kalıbının yanlış olduğunu ve kalitesinin düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve beden uyumu hakkında daha net bilgi ver; 'Ayakkabılar kalıp olarak dar veya geniş olabilir, bir beden büyük veya küçük almanız önerilir.'
+      sayfa: 'Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations.' | müşteri: Yorum 1, 2, 3, 4, 7, 9: Ayakkabılar kalıp olarak doğru değil, büyük veya küçük geliyor.
+  - [Kalite | ekle] Ürün sayfasına kalite garantisi veya iade politikası ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 10, 11, 14: Kalite sorunları var, ayakkabılar kısa sürede hasar görüyor.
+  - [Malzeme | değiştir] Malzeme açıklamasını gözden geçirerek PU derinin özellikleri hakkında daha fazla bilgi verin.
+      sayfa: '100% PU Leather' | müşteri: Yorum 8, 12: Ayakkabının malzemesi hakkında şüpheler var, PU derinin kalitesi düşük.

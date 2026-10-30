@@ -1,0 +1,10 @@
+ASIN:         B08P2CHY2W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'Athletic/slim fit--Order a size larger if you like a looser fit'
+ana_risk:     Sayfada beden kalıbı için büyük almanız gerektiği belirtiliyor, ancak müşteriler bedenin küçük geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Beden küçük gelmektedir, bir beden büyük almanız önerilir.'
+      sayfa: 'Athletic/slim fit--Order a size larger if you like a looser fit' | müşteri: Yorum 1, 3: Beden küçük geliyor

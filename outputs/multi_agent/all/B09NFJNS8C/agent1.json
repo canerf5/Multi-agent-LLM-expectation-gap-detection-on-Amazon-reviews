@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Cotton Blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "High-quality windbreaker fabric.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft and lightweight.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Good workmanship down to every detail for a chic look.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Cute and elegant, It’s perfect to put over a dress or even just a shirt and some leggings.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "while keeping warm and windproof, your baby couldn't feel restrained.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

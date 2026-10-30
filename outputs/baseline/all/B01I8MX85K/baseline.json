@@ -1,0 +1,32 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "Platform measures approximately 1.25 inches"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabının kalıbı hakkında bilgi veriyor ancak müşteriler farklı beden ve kalıp sorunları yaşıyor; bu durum, sayfadaki iddia ile çelişiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Platform measures approximately 1.25 inches",
+      "musteri_deneyimi": "Yorum 1, 2, 3, 4, 5, 6, 7: Beden kalıbı çok dar veya geniş geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında daha net bilgi ver; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekle."
+    }
+  ]
+}

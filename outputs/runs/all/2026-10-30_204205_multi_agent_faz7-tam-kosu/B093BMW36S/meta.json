@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Görsel: en az 2 farklı destekleyen yorum gerekli, 1 var [8]",
+    "tek konu kuralı: yorum 3 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 3 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "parent_asin": "B093BMW36S",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "grup 7: ilgili = false ama ilgisiz_sebebi yok",
+    "yorum 3 birden fazla ilgili grupta (grup 2 ve 4)"
+  ],
+  "sure_duvar_sn": 19.332,
+  "time": "2026-10-30T17:54:38+00:00"
+}

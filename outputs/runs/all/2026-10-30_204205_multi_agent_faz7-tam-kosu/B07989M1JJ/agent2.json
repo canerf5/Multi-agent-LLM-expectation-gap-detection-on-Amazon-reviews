@@ -1,0 +1,35 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğraflarıyla uyuşmuyor.",
+      "yorum_numaralari": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden ölçüsü beklenenden küçük veya uzun.",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün defolu geldi.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

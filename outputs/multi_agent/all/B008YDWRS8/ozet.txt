@@ -1,0 +1,13 @@
+ASIN:         B008YDWRS8
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 3, 5, 6, 8, 11, 14, 15 | sayfa iddiası: 'A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.'
+  - Malzeme: yorum 4, 7 | sayfa iddiası: 'Rubber sole'
+ana_risk:     Dayanıklılık iddiası var, ancak kullanıcılar sole'ların ayrıldığını ve dayanıklılık sorunları yaşadıklarını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha net bilgi verin; 'Sole'ların ayrılma riski vardır' uyarısını ekleyin.
+      sayfa: 'A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.' | müşteri: Yorum 1, 2, 3, 5, 6, 8, 11, 14, 15: Sole'lar ayrılıyor ve dayanıklılık sorunları var.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; 'Kullanılan malzeme kalitesi standartların altındadır' uyarısını ekleyin.
+      sayfa: 'Rubber sole' | müşteri: Yorum 4, 7: Kullanılan malzeme kalitesi düşük.

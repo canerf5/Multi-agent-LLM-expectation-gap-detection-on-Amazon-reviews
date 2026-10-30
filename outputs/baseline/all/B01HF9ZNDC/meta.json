@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'GORE-TEX waterproof membrane, exceptional breathability and '",
+    "tek konu kuralı: yorum 9 hem Malzeme hem Eksik Bilgi için sayılmış",
+    "tek konu kuralı: yorum 14 hem Malzeme hem Eksik Bilgi için sayılmış",
+    "tek konu kuralı: yorum 15 hem Malzeme hem Eksik Bilgi için sayılmış",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'GORE-TEX waterproof membrane, exceptional breathability and '"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'GORE-TEX waterproof membrane, exceptional breathability and '",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'GORE-TEX waterproof membrane, exceptional breathability and '"
+  ],
+  "parent_asin": "B01HF9ZNDC",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 13.917,
+  "time": "2026-10-30T18:39:37+00:00"
+}

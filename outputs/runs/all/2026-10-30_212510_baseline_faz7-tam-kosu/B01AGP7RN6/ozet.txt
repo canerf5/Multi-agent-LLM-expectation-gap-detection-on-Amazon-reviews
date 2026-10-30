@@ -1,0 +1,10 @@
+ASIN:         B01AGP7RN6
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 3 | sayfa iddiası: 'Lightweight & comfortable'
+ana_risk:     Sayfa, dayanıklılık konusunda 'hafif ve rahat' iddiasında bulunuyor; ancak müşteriler ayakkabıların kısa sürede bozulduğunu bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha net bilgi ver; 'Kısa süreli kullanımlarda dayanıklılığı düşük olabilir' notu ekle.
+      sayfa: 'Lightweight & comfortable' | müşteri: Yorum 1, 2, 3: Ayakkabılar kısa sürede bozuluyor.

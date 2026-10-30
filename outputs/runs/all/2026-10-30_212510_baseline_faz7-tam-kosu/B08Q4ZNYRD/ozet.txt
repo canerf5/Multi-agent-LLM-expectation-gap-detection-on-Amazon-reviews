@@ -1,0 +1,16 @@
+ASIN:         B08Q4ZNYRD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'This item is snug-fitting'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 4 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfa, ürünün snug-fitting olduğunu belirtirken, müşteriler bedenin küçük geldiğini ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'This item is snug-fitting' | müşteri: Yorum 2, 3: 5T beden için küçük geliyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekleyin; 'Dikişlerin dayanıklılığı konusunda dikkatli olun'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Kalite düşük, dikişler ilk yıkamada açılıyor.
+  - [Malzeme | değiştir] Kumaşın yumuşaklığı hakkında daha net bilgi verin; 'Kumaşın yumuşaklığı konusunda dikkatli olun'.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 4: Kumaş yumuşak değil.

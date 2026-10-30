@@ -1,0 +1,25 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles are just perfectly sized (fit as expected).'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The strap is also soft and pliable not hurting the top of yo'",
+    "Dayanıklılık: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles are just perfectly sized (fit as expected).'",
+    "tek konu kuralı: yorum 3 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Dayanıklılık için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles are just perfectly sized (fit as expected).'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The strap is also soft and pliable not hurting the top of yo'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The soles are just perfectly sized (fit as expected).'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 3 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Dayanıklılık için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B00DSN2MDE",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 9.266,
+  "time": "2026-10-30T18:46:28+00:00"
+}

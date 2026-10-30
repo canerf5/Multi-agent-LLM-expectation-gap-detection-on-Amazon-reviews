@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        4,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        3,
+        4,
+        9
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, bedenin küçük olduğu ve kalitenin düşük olduğu iddialarında bulunmuyor, ancak müşteriler bu sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 7: Beden küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Bedenin küçük olduğu bilgisi eklenmeli; 'Küçük almayın, bir beden büyük almanız önerilir.'"
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4, 15: Kalite düşük, ürün kısa sürede bozuluyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalite kontrolü hakkında bilgi eklenmeli; 'Ürün kalitesi kontrol edilmiştir.'"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4, 9: Ürün dayanıklı değil, kısa sürede bozuluyor.",
+      "islem": "ekle",
+      "duzeltme": "Dayanıklılık hakkında bilgi eklenmeli; 'Ürün hafif kullanımda bile dayanıklı değildir.'"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü.",
+      "yorum_numaralari": [
+        1,
+        6,
+        7,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler beklenenden küçük veya büyük.",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        9,
+        11,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk beklenenden farklı.",
+      "yorum_numaralari": [
+        1,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük.",
+      "yorum_numaralari": [
+        2,
+        8,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

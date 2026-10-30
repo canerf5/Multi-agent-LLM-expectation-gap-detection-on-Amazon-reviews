@@ -1,0 +1,13 @@
+ASIN:         B08NW1196W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 9 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 6, 8 | sayfa iddiası: "These comfortable women's sneakers will appeal to everyday champions looking for the best footwear possible; whether going for a short stroll, long-distance walking for wellness, doing work inside or outside the home, or getting around town."
+ana_risk:     Sayfa, ürünün kalitesinin yüksek olduğunu iddia ediyor, ancak müşteriler kalitesiz ve dayanıklılığı düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp hakkında bilgi ekleyin; 'Kalıp dar veya geniş olabilir, lütfen bir beden büyük veya küçük almayı düşünün.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 9: Ayakkabılar kalıp olarak büyük veya küçük geliyor.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi verin; 'Ürünlerimiz yüksek kalite standartlarına sahiptir, ancak bazı kullanıcılar için beklenmedik sorunlar yaşanabilir.'
+      sayfa: "These comfortable women's sneakers will appeal to everyday champions looking for the best footwear possible; whether going for a short stroll, long-distance walking for wellness, doing work inside or outside the home, or getting around town." | müşteri: Yorum 1, 6, 8: Kalite düşük, ayakkabılar kısa sürede hasar görüyor ve ses çıkarıyor.

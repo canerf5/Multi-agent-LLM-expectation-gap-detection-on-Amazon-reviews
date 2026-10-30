@@ -1,0 +1,13 @@
+ASIN:         B009YR3E58
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 8, 11, 12, 13 | sayfa iddiası: 'Comfort Meets Fashion: Soft fabric and hem vents on these bottoms keep you feeling and looking good, while a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely.'
+  - Malzeme: yorum 2, 4, 6, 10, 14 | sayfa iddiası: 'High-Quality Fabric, Lots of Color Options: The Origins collection features a soft polyester and cotton blend that keeps its shape and won’t shrink, plus trendy color options for any work shift.'
+ana_risk:     Ürün sayfasında 'modern fit' ve 'yumuşak kumaş' iddiaları var, ancak müşteriler bu pantolonların kalıbının çok dar olduğunu ve kumaşının rahatsız edici olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'dar kalıp; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'Comfort Meets Fashion: Soft fabric and hem vents on these bottoms keep you feeling and looking good, while a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely.' | müşteri: Yorum 1, 3, 5, 8, 11, 12, 13: Pantolonlar çok dar, kalıp beklenenden küçük.
+  - [Malzeme | değiştir] Kumaş hakkında 'rahatlık için esnek kumaş önerilir' notu ekleyin.
+      sayfa: 'High-Quality Fabric, Lots of Color Options: The Origins collection features a soft polyester and cotton blend that keeps its shape and won’t shrink, plus trendy color options for any work shift.' | müşteri: Yorum 2, 4, 6, 10, 14: Kumaş rahatsız edici ve esneme payı yok.

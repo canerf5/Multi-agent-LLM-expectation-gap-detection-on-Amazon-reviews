@@ -1,0 +1,13 @@
+ASIN:         B08FQVYYDM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 6, 12, 13, 14 | sayfa iddiası: "Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase."
+  - Kalite: yorum 3, 8, 15 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada bedenin dar olduğu belirtiliyor; ancak müşteriler bedenin küçük geldiğini ve ürünün defolu olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar olduğu bilgisi vurgulanmalı ve beden tablosu daha belirgin hale getirilmeli.
+      sayfa: "Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase." | müşteri: Yorum 5, 6, 12, 13, 14: Beden küçük geldi; beklenenden daha dar.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi eklenmeli; kalite kontrol süreçleri hakkında bilgi verilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 8, 15: Ürün defolu geldi; dikişleri kötü.

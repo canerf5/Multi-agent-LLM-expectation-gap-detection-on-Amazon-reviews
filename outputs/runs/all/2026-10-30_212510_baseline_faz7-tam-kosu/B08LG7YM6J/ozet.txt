@@ -1,0 +1,13 @@
+ASIN:         B08LG7YM6J
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Pls. Attention: These rain boots run a bit large, if you are not sure, please go down half size.'
+  - Kalite: yorum 1, 2, 5, 6 | sayfa iddiası: 'The upper is made of natural plant rubber, which is environmentally friendly and has the advantages of resilience, insulation and water barrier.'
+ana_risk:     Sayfa, ürünün genişlik ve kalitesine dair iddialarda bulunuyor; ancak müşteriler, ürünün genişliğinin yanlış olduğunu ve kalitesinin düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Genişlik konusunda daha net bilgi ver; 'Bu botlar geniş kalıp olarak tasarlanmıştır, ancak bazı kullanıcılar için dar gelebilir.' gibi bir not ekle.
+      sayfa: 'Pls. Attention: These rain boots run a bit large, if you are not sure, please go down half size.' | müşteri: Yorum 3: Bu ayakkabı geniş değil, büyük parmaklarımı sıkıştırdı; Yorum 4: Beden doğru ama bu botlar aşırı geniş!
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi ver; 'Bu botlar, dayanıklılık açısından test edilmiştir, ancak aşırı zor koşullarda kullanıldığında yıpranma riski vardır.' gibi bir not ekle.
+      sayfa: 'The upper is made of natural plant rubber, which is environmentally friendly and has the advantages of resilience, insulation and water barrier.' | müşteri: Yorum 1: İlk kullanımda sızdırdı; Yorum 2: İlk giyişte üst kısmı tamamen yırtıldı; Yorum 5: İkinci kez giyerken üst kısmı yırtıldı; Yorum 6: Kalite tanımı çok düşük, birkaç kullanımda yırtıldı.

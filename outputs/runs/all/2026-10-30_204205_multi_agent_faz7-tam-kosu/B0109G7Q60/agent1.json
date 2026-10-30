@@ -1,0 +1,14 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "US Size Measurements [Bust / Shoulder / Length] Size S: [ 34 / 14.5 / 22 ] Size M: [ 35 / 14.5 / 22.5 ] Size L: [ 37.5 / 15.5 / 23 ] Size 1XL: [ 42 / 17 / 24 ] Size 2XL: [ 44 / 17.25 / 25 ] Size 3XL: [ 45.5 / 17.5 / 25 ]",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Polyester100%",
+      "iddia_turu": "somut"
+    }
+  ]
+}

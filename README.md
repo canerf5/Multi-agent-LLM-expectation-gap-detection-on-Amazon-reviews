@@ -63,8 +63,8 @@ reports/             # metrikler, grafikler
 - [x] 4. 40 ürün etiketleme → `v0.1-data` tag
 - [x] 5. 3 ajan
 - [x] 6. Baseline + 5 dev ürünle deneme → `v0.2-agents` tag
-- [ ] 7. 200 ürün tam koşu
-- [ ] 8. Değerlendirme → `v0.3-results` tag
+- [x] 7. 200 ürün tam koşu
+- [x] 8. Değerlendirme → `v0.3-results` tag
 - [ ] 9. Hata analizi + alt sorular
 - [ ] 10. Tez yazımı → `v1.0-final` tag
 

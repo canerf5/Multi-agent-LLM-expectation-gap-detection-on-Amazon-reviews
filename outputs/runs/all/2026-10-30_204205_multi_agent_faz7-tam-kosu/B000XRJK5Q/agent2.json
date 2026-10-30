@@ -1,0 +1,23 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar dar kalıp, numara uyumsuzluğu var.",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Ürün açıklamasında deri olduğu belirtilmesine rağmen sentetik malzeme geldi.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

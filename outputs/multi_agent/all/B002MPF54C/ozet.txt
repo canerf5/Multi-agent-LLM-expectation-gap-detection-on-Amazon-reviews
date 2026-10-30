@@ -1,0 +1,13 @@
+ASIN:         B002MPF54C
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Item tends to run small. Recommend buying one size up.'
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '78% Nylon, 22% Spandex'
+ana_risk:     Sayfada 'Item tends to run small' iddiası var, ancak müşteriler 'çok küçük geldi' diyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Beden küçük geliyor, bir beden büyük almanız önerilir.' ifadesi eklenecek.
+      sayfa: 'Item tends to run small. Recommend buying one size up.' | müşteri: Yorum 1, 2: Çok küçük geldi.
+  - [Malzeme | değiştir] Sayfada 'Kumaş ince; yeterince termal koruma sağlamıyor.' ifadesi eklenecek.
+      sayfa: '78% Nylon, 22% Spandex' | müşteri: Yorum 3, 4: Kumaş çok ince ve yeterince termal koruma sağlamıyor.

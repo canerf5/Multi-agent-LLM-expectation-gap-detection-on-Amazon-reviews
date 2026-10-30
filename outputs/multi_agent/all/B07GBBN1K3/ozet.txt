@@ -1,0 +1,10 @@
+ASIN:         B07GBBN1K3
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '100% Polyester'
+ana_risk:     Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaşın şeffaf olduğunu ve sıcak havalar için uygun olmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın şeffaf olduğu ve sıcak havalar için uygun olmadığı bilgisini ekleyin.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 3: Kumaş şeffaf ve sıcak havalar için uygun değil.

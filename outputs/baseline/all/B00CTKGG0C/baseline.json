@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün dayanıklılığı ve malzeme kalitesi hakkında bilgi vermiyor; müşteriler dayanıklılığın düşük olduğunu ve tabanların kaygan olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3: Dışarıda yürümeye dayanıklı değil.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Dış mekan kullanımı için uygun değil' gibi bir uyarı ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Tabanlar kaygan, düşme tehlikesi var.",
+      "islem": "ekle",
+      "duzeltme": "Tabanların kaygan olduğu bilgisini ekleyin; 'Kaygan zeminlerde dikkatli olun' uyarısı ekleyin."
+    }
+  ]
+}

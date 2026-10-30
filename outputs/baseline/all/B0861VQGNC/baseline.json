@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Renk"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "The shoe size too small problem has been corrected after June 15th, 2021."
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabının küçük gelmeyeceğini iddia ediyor ancak müşteriler tam beden sipariş etmelerine rağmen ayakkabının ya küçük ya da büyük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "The shoe size too small problem has been corrected after June 15th, 2021.",
+      "musteri_deneyimi": "Yorum 2, 3: Ayakkabı küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Küçük gelen ayakkabılar için 'Bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Renk, sipariş edilenle uyuşmuyor.",
+      "islem": "ekle",
+      "duzeltme": "Renk seçenekleri ve gerçek renklerin fotoğraflarını ekleyin."
+    }
+  ]
+}

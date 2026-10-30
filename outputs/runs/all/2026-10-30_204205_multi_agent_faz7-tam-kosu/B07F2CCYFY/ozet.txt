@@ -1,0 +1,5 @@
+ASIN:         B07F2CCYFY
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

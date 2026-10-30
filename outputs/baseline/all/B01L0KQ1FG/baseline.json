@@ -1,0 +1,50 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Relaxed fit"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4,
+        7
+      ],
+      "sayfa_iddiasi": "durable outdoor shirt, you have found it with the Wrangler authentic long sleeve canvas shirt."
+    }
+  ],
+  "ana_risk": "Sayfa, 'rahat oturuş' iddiasında bulunuyor ancak birçok müşteri bedenin küçük olduğunu ve hareket etmeye engel olduğunu belirtiyor; ayrıca 'dayanıklı dış mekan gömleği' iddiası var ama kumaş kalitesiz bulunuyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Relaxed fit",
+      "musteri_deneyimi": "Yorum 2, 3, 9, 10, 11, 12, 14, 15: Beden küçük, rahat oturuş iddiası doğru değil.",
+      "islem": "değiştir",
+      "duzeltme": "Rahat oturuş iddiasını gözden geçirerek, 'Beden küçük, bir beden büyük almanız önerilir' notunu ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "durable outdoor shirt, you have found it with the Wrangler authentic long sleeve canvas shirt.",
+      "musteri_deneyimi": "Yorum 1, 4, 7: Kumaş kalitesiz, dayanıklı değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'Bu gömlek, dayanıklı dış mekan kullanımı için tasarlanmıştır ancak bazı kullanıcılar kumaş kalitesini yetersiz bulmuştur.' şeklinde bir not ekleyin."
+    }
+  ]
+}

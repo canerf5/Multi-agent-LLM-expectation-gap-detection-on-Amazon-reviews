@@ -1,0 +1,22 @@
+ASIN:         B07MZHXQRB
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme, Dayanıklılık, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 13 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 8, 10, 11, 15 | sayfa iddiası: 'Lightweight,waterproof material provides water resistance with little weight.'
+  - Dayanıklılık: yorum 9 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında 'su geçirmez' iddiası var, ancak birçok müşteri su geçirmediğini ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün açıklamasında beden seçimi ile ilgili uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Yanlış beden gönderildi, çok büyük geldi.
+  - [Kalite | kaldır] Kalite ile ilgili yanıltıcı ifadeleri kaldırın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 13: Kalitesi çok düşük, beklentileri karşılamıyor.
+  - [Malzeme | değiştir] Malzeme ile ilgili daha doğru bilgi verin; 'su geçirmez' ifadesini gözden geçirin.
+      sayfa: 'Lightweight,waterproof material provides water resistance with little weight.' | müşteri: Yorum 8, 10, 11, 15: Su geçirmiyor, nefes almıyor.
+  - [Dayanıklılık | ekle] Ürün açıklamasında dayanıklılık ile ilgili bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 9: Uzun süreli kullanımda dayanıklı değil.
+  - [Eksik Bilgi | ekle] Ürün açıklamasında ürünün tasarımı ve fermuar konumu hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Ürünün ön görünümü ve fermuar konumu hakkında bilgi yok.

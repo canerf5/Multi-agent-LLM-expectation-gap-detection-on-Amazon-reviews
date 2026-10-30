@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft, premium cotton yarns make Tommy’s short sleeve button down shirts comfortable, naturally breathable and always polished.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "CUSTOM FIT: Tommy Hilfiger’s modern button down is cut slightly slimmer in the chest and shoulder with a slightly shorter length, so it’s easy to go untucked.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "short sleeve button down shirt with a front pocket and embroidered logo flag",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "from the collar buttons to the flag pocket logo—a signature of Tommy Hilfiger’s men’s button downs—the details make all the difference.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "thanks to the soft feel, classic good looks and timeless design that stays crisp with every wear.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Tommy Hilfiger’s men’s button down shirt is entirely machine washable and irons in moments (making life a lot easier).",
+      "iddia_turu": "genel"
+    }
+  ]
+}

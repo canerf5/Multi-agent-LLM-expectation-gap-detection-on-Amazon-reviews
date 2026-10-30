@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 1 hem Kalite hem Dayanıklılık için sayılmış",
+    "tek konu kuralı: yorum 2 hem Kalite hem Dayanıklılık için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Kalite hem Dayanıklılık için sayılmış"
+  ],
+  "parent_asin": "B005FPCOT0",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 3,
+  "sure_duvar_sn": 8.593,
+  "time": "2026-10-30T18:45:45+00:00"
+}

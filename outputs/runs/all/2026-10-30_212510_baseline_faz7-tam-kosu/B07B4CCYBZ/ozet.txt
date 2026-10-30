@@ -1,0 +1,13 @@
+ASIN:         B07B4CCYBZ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 6, 9, 10, 11 | sayfa iddiası: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet.'
+  - Beden/Kalıp: yorum 2, 12, 15 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün su geçirmez olduğunu iddia ediyor; ancak birçok müşteri, ayakkabıların su geçirmediğini ve bu nedenle ıslak ayaklarla geri döndüklerini belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik iddiasını gözden geçirerek, gerçek su geçirmezlik performansını belirtin.
+      sayfa: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet.' | müşteri: Yorum 1, 5, 6, 9, 10, 11: Su geçirmiyor, ıslak ayaklarla geri dönüldü.
+  - [Beden/Kalıp | ekle] Beden ve kalıp hakkında daha net bilgi verin; 'Küçük kalıp, bir beden büyük almanız önerilir' gibi bir not ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 12, 15: Bedenler küçük ve ağır, rahat değil.

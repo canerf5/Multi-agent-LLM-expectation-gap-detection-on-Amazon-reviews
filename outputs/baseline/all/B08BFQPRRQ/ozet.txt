@@ -1,0 +1,16 @@
+ASIN:         B08BFQPRRQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 11 | sayfa iddiası: 'Loose-Fit: designed for comfort'
+  - Malzeme: yorum 2, 5, 8, 9, 10, 12 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 4, 9, 10, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'Loose-Fit: designed for comfort' iddiasında bulunuyor, ancak müşteriler bedenin büyük olduğunu ve rahat olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp büyük; bir beden küçük almanız önerilir.
+      sayfa: 'Loose-Fit: designed for comfort' | müşteri: Yorum 1, 2, 11: Beden büyük ve rahat değil.
+  - [Malzeme | ekle] Kumaş kalitesi hakkında daha net bilgi verin; pilling yapma ihtimali belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5, 8, 9, 10, 12: Kumaş kalitesi kötü, pilling yapıyor.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; yıkama talimatlarına dikkat edilmesi gerektiğini belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 9, 10, 12: Ürün kısa sürede bozuluyor.

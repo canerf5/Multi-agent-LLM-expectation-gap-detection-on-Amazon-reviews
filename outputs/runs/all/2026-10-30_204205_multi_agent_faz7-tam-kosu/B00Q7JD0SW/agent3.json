@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "100% Leather and Textile"
+    }
+  ],
+  "ana_risk": "Sayfa, '100% Leather and Textile' iddiasında bulunuyor, ancak kullanıcılar ayakkabıların soğuk havada yeterince sıcak tutmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Leather and Textile",
+      "musteri_deneyimi": "Yorum 1, 3: Ayakkabılar soğuk havada yeterince sıcak tutmuyor.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Soğuk havalarda yeterli yalıtım sağlamadığı belirtiliyor; bu nedenle daha iyi bir yalıtım için bir beden büyük almanız önerilir.' ifadesini ekleyin."
+    }
+  ]
+}

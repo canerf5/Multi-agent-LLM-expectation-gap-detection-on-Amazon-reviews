@@ -1,0 +1,13 @@
+ASIN:         B0B6R8LRP5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 2 | sayfa iddiası: 'Not too short, not too long, just right around the waistband.'
+  - Malzeme: yorum 6, 9 | sayfa iddiası: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.'
+ana_risk:     Sayfa, kalıbın doğru oturduğunu iddia ediyor, ancak müşteriler kısa ve kötü oturan bir kalıp ile karşılaştıklarını belirtiyorlar; kumaşın ne olduğu belirtilmemişken, sayfada yumuşak ve sıcak bir malzeme olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Kısa ve kötü oturan bir kalıp' ifadesini kaldır.
+      sayfa: 'Not too short, not too long, just right around the waistband.' | müşteri: Kısa ve kötü oturan bir kalıp; Ürün beklenenden farklı oturuyor.
+  - [Malzeme | ekle] Kumaşın içeriği hakkında bilgi ekle; 'Kumaşın içeriği pamuk değil, detaylı bilgi verilecek'.
+      sayfa: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.' | müşteri: Kumaşın ne olduğu belirtilmemiş, pamuk değil.

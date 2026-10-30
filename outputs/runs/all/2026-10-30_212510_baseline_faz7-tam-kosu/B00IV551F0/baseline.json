@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Renk",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün renginin beyaz olduğunu iddia etmiyor, ancak müşteriler kirli beyaz geldiğini belirtiyor; ayrıca kalite beklentisi karşılanmıyor.",
+  "oneriler": [
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1: Renk kirli beyaz geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün rengi hakkında 'Ürün kirli beyaz olarak gelebilir' uyarısı ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: Malzeme kalitesi beklenenden düşük.",
+      "islem": "ekle",
+      "duzeltme": "Malzeme kalitesi hakkında 'Malzeme kalitesi değişkenlik gösterebilir' uyarısı ekleyin."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "Item tends to run small. Recommend buying one size up."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "78% Nylon, 22% Spandex"
+    }
+  ],
+  "ana_risk": "Sayfada 'Item tends to run small' iddiası var, ancak müşteriler 'çok küçük geldi' diyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Item tends to run small. Recommend buying one size up.",
+      "musteri_deneyimi": "Yorum 1, 2: Çok küçük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Beden küçük geliyor, bir beden büyük almanız önerilir.' ifadesi eklenecek."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "78% Nylon, 22% Spandex",
+      "musteri_deneyimi": "Yorum 3, 4: Kumaş çok ince ve yeterince termal koruma sağlamıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Kumaş ince; yeterince termal koruma sağlamıyor.' ifadesi eklenecek."
+    }
+  ]
+}

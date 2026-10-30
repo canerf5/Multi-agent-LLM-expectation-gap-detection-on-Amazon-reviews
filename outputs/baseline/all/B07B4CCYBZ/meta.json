@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Waterproof and light weight rain boot is made with a durable'",
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The combination of a hook/loop strap and sturdy handles make'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Waterproof and light weight rain boot is made with a durable'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The combination of a hook/loop strap and sturdy handles make'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Waterproof and light weight rain boot is made with a durable'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Waterproof and light weight rain boot is made with a durable'"
+  ],
+  "parent_asin": "B07B4CCYBZ",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 9.889,
+  "time": "2026-10-30T18:30:48+00:00"
+}

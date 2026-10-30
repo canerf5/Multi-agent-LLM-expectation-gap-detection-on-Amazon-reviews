@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Görsel",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        4,
+        8
+      ],
+      "sayfa_iddiasi": "This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün baskısının eğlenceli olduğunu iddia ediyor, ancak müşteriler baskının kötü olduğunu belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.",
+      "musteri_deneyimi": "Yorum 4, 8: Ürünün baskısı kötü, görüntü bozuk.",
+      "islem": "değiştir",
+      "duzeltme": "Baskı kalitesi hakkında daha net bilgi verin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Kollar çok kısa, beden ölçüsü garip.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri hakkında daha net bilgi ekleyin."
+    }
+  ]
+}

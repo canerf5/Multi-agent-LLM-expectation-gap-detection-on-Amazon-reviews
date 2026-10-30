@@ -1,0 +1,19 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 2 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B07YZ9QVH1",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 7,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 2 birden fazla ilgili grupta (grup 1 ve 4)",
+    "yorum 7 birden fazla ilgili grupta (grup 1 ve 4)"
+  ],
+  "sure_duvar_sn": 19.382,
+  "time": "2026-10-30T17:54:57+00:00"
+}

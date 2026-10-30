@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Synthetic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Made of frayed hemp uppers with soft chambray lining for comfort; side cut out details",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Suede sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Easy slip on design for quick and easy wear",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Non-slip, flexible rubber outsoles for added traction",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "COMFORTABLE CASUAL STYLE: Go from the beach to the streets with the Cory slide sandals for men by Crevo",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "ADDED CMOMFORT: Memory foam cushioned insoles add to long time wearing comfort",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Numara küçük geliyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        7,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Dar kalıp",
+      "yorum_numaralari": [
+        6,
+        9,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kötü yapım, dikişler çekiliyor",
+      "yorum_numaralari": [
+        3,
+        5,
+        11,
+        13,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada doğru numara bilgisi yok",
+      "yorum_numaralari": [
+        8,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

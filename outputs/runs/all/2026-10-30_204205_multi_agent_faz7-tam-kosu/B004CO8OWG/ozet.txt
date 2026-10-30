@@ -1,0 +1,13 @@
+ASIN:         B004CO8OWG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Our soft cotton is pre-shrunk for a perfect fit wash after wash.'
+  - Malzeme: yorum 3 | sayfa iddiası: 'Fiber Content: "95% Cotton, 5% Spandex"'
+ana_risk:     Ürün açıklamada belirtilen malzeme içermiyor ve beden kalıbı küçük geliyor; sayfada bu konuda bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir.'
+      sayfa: 'Our soft cotton is pre-shrunk for a perfect fit wash after wash.' | müşteri: Yorum 1, 4: Bu ürünler küçük geliyor.
+  - [Malzeme | ekle] Malzeme içeriği ile ilgili doğru bilgi ekleyin; 'Ürün %95 pamuk ve %5 spandeks içermektedir.'
+      sayfa: 'Fiber Content: "95% Cotton, 5% Spandex"' | müşteri: Yorum 3: Ürün açıklamada belirtilen malzemeyi içermiyor.

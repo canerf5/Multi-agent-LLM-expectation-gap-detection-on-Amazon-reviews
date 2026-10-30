@@ -1,0 +1,37 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürünler belirtilen bedenden daha küçük.",
+      "yorum_numaralari": [
+        2,
+        4,
+        5,
+        10,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Bel çevresindeki malzeme çok kaşındırıyor.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün sadece pantolon, üst parça yok.",
+      "yorum_numaralari": [
+        9,
+        12,
+        14
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kişisel zevk"
+    }
+  ]
+}

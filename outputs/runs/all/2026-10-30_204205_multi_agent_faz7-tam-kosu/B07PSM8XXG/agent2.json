@@ -1,0 +1,56 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Küçük veya büyük geliyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kalite sorunları var",
+      "yorum_numaralari": [
+        6,
+        11,
+        12,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Sert ve destekleyici değil",
+      "yorum_numaralari": [
+        9,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada yazmıyordu",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": null,
+      "ozet": "Kargo veya iade süreci şikayetleri",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    }
+  ]
+}

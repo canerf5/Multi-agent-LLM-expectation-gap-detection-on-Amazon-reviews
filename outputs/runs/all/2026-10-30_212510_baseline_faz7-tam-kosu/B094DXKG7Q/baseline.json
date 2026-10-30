@@ -1,0 +1,45 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "HYPER-COMFY A knee-high cut ensures that these Pride flag socks are comfortable enough to wear all day long!"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "Comfortblend fabric is soft and breathable."
+    }
+  ],
+  "ana_risk": "Kalite ve malzeme ile ilgili iddialar var, ancak müşteriler ürünün kalitesiz olduğunu ve deliklerle geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "HYPER-COMFY A knee-high cut ensures that these Pride flag socks are comfortable enough to wear all day long!",
+      "musteri_deneyimi": "Yorum 1, 2, 5: Ürün deliklerle geldi ve kalitesi beklenenden düşük.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite kontrolü hakkında bilgi ekleyin ve ürünün dayanıklılığına dair daha net bir ifade yazın."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Comfortblend fabric is soft and breathable.",
+      "musteri_deneyimi": "Yorum 2, 3, 5: Malzeme ince ve kalitesiz, beklenenden daha kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Kullanılan malzemenin kalitesi hakkında daha fazla bilgi verin ve dayanıklılığı artırmak için öneriler ekleyin."
+    }
+  ]
+}

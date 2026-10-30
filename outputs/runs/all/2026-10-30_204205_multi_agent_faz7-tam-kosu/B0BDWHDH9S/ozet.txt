@@ -1,0 +1,10 @@
+ASIN:         B0BDWHDH9S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'Livona’s Sports Bra measurements are based on US standard sizing S-XXL.'
+ana_risk:     Sayfa, ürünün beden ölçülerinin standartlara uygun olduğunu iddia ediyor; ancak müşteriler, ürünün küçük geldiğini ve uygun destek sağlamadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha net bir şekilde belirtildiği bir açıklama ekleyin; örneğin, 'Beden ölçüleri standart US ölçülerine göre küçük kalabilir, büyük göğüsler için önerilen bedenleri kontrol edin.'
+      sayfa: 'Livona’s Sports Bra measurements are based on US standard sizing S-XXL.' | müşteri: Yorum 1, 2, 3, 4: Küçük beden yeterince küçük değil, destek yok, kötü oturuş.

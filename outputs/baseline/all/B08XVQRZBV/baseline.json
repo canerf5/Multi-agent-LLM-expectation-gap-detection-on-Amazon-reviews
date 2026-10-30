@@ -1,0 +1,63 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Görsel",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        3,
+        7,
+        15
+      ],
+      "sayfa_iddiasi": "Loose design at the calf cuff"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2,
+        9,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        5,
+        6,
+        13
+      ],
+      "sayfa_iddiasi": "Durable and breathable"
+    }
+  ],
+  "ana_risk": "Sayfa, kalın ve sıcak bir taban sunan bir ürün vaat ediyor; ancak müşteriler, tabanın ince ve rahatsız edici olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Loose design at the calf cuff",
+      "musteri_deneyimi": "Yorum 1, 3, 7, 15: Beden kalıbı dar; büyük alındığında bile sıkı geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp ve beden bilgisi ekleyin; 'Beden kalıbı dar, bir beden büyük almanız önerilir.'"
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 9, 12: Ürün görseldeki gibi değil, daha kısa ve dar.",
+      "islem": "ekle",
+      "duzeltme": "Ürün görsellerinin gerçek boyutunu ve kalıbını yansıttığını belirtin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Durable and breathable",
+      "musteri_deneyimi": "Yorum 5, 6, 13: Malzeme ince ve rahatsız; taban kalınlığı artırılmalı.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalınlığı ve konforu hakkında bilgi ekleyin; 'Daha kalın bir taban sunulmaktadır.'"
+    }
+  ]
+}

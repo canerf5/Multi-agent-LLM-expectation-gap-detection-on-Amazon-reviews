@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "Our soft cotton is pre-shrunk for a perfect fit wash after wash."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "Fiber Content: \"95% Cotton, 5% Spandex\""
+    }
+  ],
+  "ana_risk": "Ürün açıklamada belirtilen malzeme içermiyor ve beden kalıbı küçük geliyor; sayfada bu konuda bilgi yok.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Our soft cotton is pre-shrunk for a perfect fit wash after wash.",
+      "musteri_deneyimi": "Yorum 1, 4: Bu ürünler küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir.'"
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Fiber Content: \"95% Cotton, 5% Spandex\"",
+      "musteri_deneyimi": "Yorum 3: Ürün açıklamada belirtilen malzemeyi içermiyor.",
+      "islem": "ekle",
+      "duzeltme": "Malzeme içeriği ile ilgili doğru bilgi ekleyin; 'Ürün %95 pamuk ve %5 spandeks içermektedir.'"
+    }
+  ]
+}

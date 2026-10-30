@@ -1,0 +1,16 @@
+ASIN:         B097NBGR75
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'This product fits a little slim, so we recommend sizing up if you are between sizes'
+  - Renk: yorum 3 | sayfa iddiası: 'bilgi yok'
+  - Görsel: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden kalıbı iddiası var, ancak yorum 1'deki müşteri ürünün çok küçük geldiğini belirtiyor; ayrıca renk ve görsel uyumsuzluğu da mevcut.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'This product fits a little slim, so we recommend sizing up if you are between sizes' | müşteri: Yorum 1: Çok küçük geldi.
+  - [Renk | ekle] Ürünün gerçek rengi hakkında bilgi ekleyin; 'Renk, fotoğraftaki gibi olmayabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Renk fotoğraftakinden farklı.
+  - [Görsel | ekle] Ürün görselinin gerçek görünümü hakkında bilgi ekleyin; 'Gerçek ürün görseldeki gibi olmayabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Fotoğraftaki ürünle alakası yok.

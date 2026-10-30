@@ -1,0 +1,49 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Görsel"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        11,
+        12,
+        15
+      ],
+      "sayfa_iddiasi": "70D plus size tights stightens slightly from tummy to thigh"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        6,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden/Kalıp iddiası var, ancak birçok yorum ürünün çok küçük ve dar geldiğini belirtiyor; ürün fotoğrafları yanıltıcı olduğu belirtiliyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "70D plus size tights stightens slightly from tummy to thigh",
+      "musteri_deneyimi": "Yorum 1, 2, 7, 8, 9, 11, 12, 15: Çok küçük ve dar geliyor",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının daha geniş olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 6, 14: Ürün fotoğrafları yanıltıcı",
+      "islem": "ekle",
+      "duzeltme": "Ürün fotoğraflarının gerçek ürünü yansıtması gerektiği bilgisi eklenmeli."
+    }
+  ]
+}

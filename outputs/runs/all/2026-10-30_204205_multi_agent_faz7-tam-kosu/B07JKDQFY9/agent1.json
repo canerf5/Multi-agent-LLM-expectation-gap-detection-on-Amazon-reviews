@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Man-Made Materials",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "These awesome slippers are available in toddler boy's or girl's sizes 5-6 M US Toddler, 7-8 M US Toddler, 9-10 M US Toddler, and 11-12 M US Little Kid.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "These a-line Mickey Mouse slippers feature soft plush texture and fun graphics of your favorite Disney character, Mickey Mouse!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "These plush slippers feature Disney character, Mickey Mouse!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "These house shoes have textured soles for added safety.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "Navy",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "They are lightweight and soft.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "These house shoes contain slip resistant soles, a soft plush texture, cushioned foot-bed, an elastic back, a pull tab for easy on and off, and embroidered applique images with 3D Mickey ears!",
+      "iddia_turu": "genel"
+    }
+  ]
+}

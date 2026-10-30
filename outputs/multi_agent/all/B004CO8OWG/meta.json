@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "parent_asin": "B004CO8OWG",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 4,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 13.197,
+  "time": "2026-10-30T17:51:13+00:00"
+}

@@ -1,0 +1,10 @@
+ASIN:         B007PA43ZG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların kalıbı hakkında bilgi vermiyor; müşteriler ayakkabıların dar ve büyük olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3, 4, 5, 6: Ayakkabılar dar ve büyük geliyor.

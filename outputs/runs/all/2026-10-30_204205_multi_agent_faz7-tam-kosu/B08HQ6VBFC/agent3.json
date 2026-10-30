@@ -1,0 +1,29 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "We manufacture our tees to be the best super soft high quality shirts."
+    }
+  ],
+  "ana_risk": "Sayfa, yüksek kaliteli tişörtler vaat ediyor ancak müşteriler işçilik hataları ve baskı sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "We manufacture our tees to be the best super soft high quality shirts.",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 5: Üründe işçilik hatası var, baskı düzgün değil.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında işçilik kalitesi hakkında daha net bilgi verin ve baskı hataları ile ilgili uyarı ekleyin."
+    }
+  ]
+}

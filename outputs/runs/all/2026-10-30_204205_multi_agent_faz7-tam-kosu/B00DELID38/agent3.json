@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "65/35 poly/cotton pique"
+    }
+  ],
+  "ana_risk": "Sayfa, 65/35 poly/cotton pique malzeme iddiasında bulunuyor, ancak müşteriler etiket ve dikişlerin rahatsız edici olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "65/35 poly/cotton pique",
+      "musteri_deneyimi": "Yorum 1, 2: Etiket ve dikişler rahatsız edici.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında etiketin ve dikişlerin kalitesi hakkında bilgi verin; 'Etiketler yumuşak ve dikişler rahatsız etmeyecek şekilde tasarlanmıştır' ifadesini ekleyin."
+    }
+  ]
+}

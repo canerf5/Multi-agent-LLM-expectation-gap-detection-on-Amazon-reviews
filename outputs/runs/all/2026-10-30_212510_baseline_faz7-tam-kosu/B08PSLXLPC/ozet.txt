@@ -1,0 +1,13 @@
+ASIN:         B08PSLXLPC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 11, 12 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 7, 10, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların küçük geldiğini ve kalitesiz olduğunu belirtiyor; ancak müşteriler, ürünün kalitesizliği ve yanlış beden bilgisi nedeniyle şikayet ediyor.
+öneriler:
+  - [Beden/Kalıp | ekle] "Beden küçük geliyor; bir beden büyük almanız önerilir" notunu ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 11, 12: Ayakkabılar küçük geliyor, bir beden büyük alınması öneriliyor.
+  - [Kalite | ekle] "Kalite düşük; yeterli destek yok" uyarısını ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 7, 10, 14: Kalite düşük, destek yok, ayakkabılar çabuk deforme oluyor.

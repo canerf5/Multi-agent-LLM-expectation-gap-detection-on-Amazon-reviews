@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it."
+    }
+  ],
+  "ana_risk": "Sayfada kalıp ve malzeme ile ilgili somut iddialar var, ancak müşteriler ürünün küçük veya büyük geldiğini ve kalitesinin kötü olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”",
+      "musteri_deneyimi": "Yorum 3: Ürün küçük geldi; Yorum 4: Ürün büyük geldi, skinny değil.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının daha net bir şekilde belirtildiği bir not ekleyin; 'Ürünün kalıbı dar, bir beden büyük almanız önerilir.'"
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it.",
+      "musteri_deneyimi": "Yorum 1: Kalite kötü; Yorum 3: Kalite kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, ancak bazı kullanıcılar yırtıkların fazla olduğunu belirtmektedir.'"
+    }
+  ]
+}

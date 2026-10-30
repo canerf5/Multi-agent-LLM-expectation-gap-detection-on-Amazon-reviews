@@ -1,0 +1,23 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Comfort Meets Fashion: Soft fabric and hem vents on these bo'",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Fabric, Lots of Color Options: The Origins coll'",
+    "tek konu kuralı: yorum 14 hem Beden/Kalıp hem Malzeme için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Comfort Meets Fashion: Soft fabric and hem vents on these bo'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Fabric, Lots of Color Options: The Origins coll'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Comfort Meets Fashion: Soft fabric and hem vents on these bo'",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Fabric, Lots of Color Options: The Origins coll'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Comfort Meets Fashion: Soft fabric and hem vents on these bo'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Fabric, Lots of Color Options: The Origins coll'"
+  ],
+  "parent_asin": "B009YR3E58",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 14.989,
+  "time": "2026-10-30T18:36:48+00:00"
+}

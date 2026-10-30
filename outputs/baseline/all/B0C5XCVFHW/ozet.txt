@@ -1,0 +1,16 @@
+ASIN:         B0C5XCVFHW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 9 | sayfa iddiası: 'CUSTOM FIT: Tommy Hilfiger’s modern button down is cut slightly slimmer in the chest and shoulder with a slightly shorter length, so it’s easy to go untucked.'
+  - Kalite: yorum 4, 10 | sayfa iddiası: 'PURE COTTON: Soft, premium cotton yarns make Tommy’s short sleeve button down shirts comfortable, naturally breathable and always polished.'
+  - Malzeme: yorum 5, 4 | sayfa iddiası: 'PURE COTTON: Soft, premium cotton yarns make Tommy’s short sleeve button down shirts comfortable, naturally breathable and always polished.'
+ana_risk:     Sayfa, 'custom fit' iddiasında bulunuyor ancak müşteriler dar kalıp ve kötü kalite ile ilgili şikayet ediyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Dar kalıp; bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'CUSTOM FIT: Tommy Hilfiger’s modern button down is cut slightly slimmer in the chest and shoulder with a slightly shorter length, so it’s easy to go untucked.' | müşteri: Yorum 1, 3, 9: Dar kalıp, omuzlar çok dar geliyor.
+  - [Kalite | değiştir] Kalite hakkında daha net bilgi ver; 'Ürün kalitesi beklenenden düşük; dikkatli inceleyin' notu ekle.
+      sayfa: 'PURE COTTON: Soft, premium cotton yarns make Tommy’s short sleeve button down shirts comfortable, naturally breathable and always polished.' | müşteri: Yorum 4, 10: Kalite çok düşük, ucuz görünüyor.
+  - [Malzeme | değiştir] Kumaş kalınlığı hakkında bilgi ver; 'Kumaş kalınlığı hakkında bilgi ekle'.
+      sayfa: 'PURE COTTON: Soft, premium cotton yarns make Tommy’s short sleeve button down shirts comfortable, naturally breathable and always polished.' | müşteri: Yorum 5, 4: Kumaş çok kalın ve ucuz görünüyor.

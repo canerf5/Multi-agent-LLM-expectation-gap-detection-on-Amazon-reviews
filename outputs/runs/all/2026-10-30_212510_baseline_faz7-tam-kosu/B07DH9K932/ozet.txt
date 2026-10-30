@@ -1,0 +1,16 @@
+ASIN:         B07DH9K932
+gap_var:      Evet
+gap_tipleri:  Renk, Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Renk: yorum 1, 2 | sayfa iddiası: 'breathable materials bring comfort, cool and refreshing to your feet.'
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: "Size suggestions: Men's 7-11."
+  - Kalite: yorum 2 | sayfa iddiası: 'We ONLY sell products that we use and feel satisfied with the quality.'
+ana_risk:     Renk, beden ve kalite ile ilgili iddialar var, ancak müşteriler renklerin soluk olduğunu, bedenin küçük olduğunu ve kalitenin yetersiz olduğunu belirtiyor.
+öneriler:
+  - [Renk | değiştir] Renk açıklamasını güncelleyerek 'soluk turuncu' ifadesini ekleyin.
+      sayfa: 'breathable materials bring comfort, cool and refreshing to your feet.' | müşteri: Yorum 1, 2: Renk çok soluk ve tatmin edici değil.
+  - [Beden/Kalıp | değiştir] Beden önerisini 'Beden 7-11, ancak kalıbı dar; bir beden büyük almanız önerilir.' şeklinde güncelleyin.
+      sayfa: "Size suggestions: Men's 7-11." | müşteri: Yorum 3: Çorap çok küçük.
+  - [Kalite | değiştir] Kalite ile ilgili iddiaları gözden geçirerek daha net bilgi verin.
+      sayfa: 'We ONLY sell products that we use and feel satisfied with the quality.' | müşteri: Yorum 2: Kalite yetersiz.

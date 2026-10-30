@@ -1,0 +1,13 @@
+ASIN:         B09JLM1WTC
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 3 | sayfa iddiası: 'Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening'
+  - Beden/Kalıp: yorum 4, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada konfor sağlayan kaliteli malzemeler iddiası var, ancak kullanıcılar kötü kalite ve yapım hatası yaşadıklarını bildiriyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında kalite kontrol süreçleri hakkında bilgi verin.
+      sayfa: 'Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening' | müşteri: Yorum 1, 2, 3: Kötü kalite ve yapım hatası var.
+  - [Beden/Kalıp | ekle] Ürün sayfasına beden uyumu hakkında bilgi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 6, 7: Ayakkabılar dar ve uyumsuz.

@@ -1,0 +1,24 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 6 hem Malzeme hem Dayanıklılık için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [1]"
+  ],
+  "parent_asin": "B089CKS4GS",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [
+    "beklenti 3: iddia sayfada birebir geçmiyor: 'The sizes are available in Small (28-30”), Medium (32-34”), '",
+    "beklenti 8: iddia sayfada birebir geçmiyor: 'Fabrics undergo thorough lab and field testing to ensure the'"
+  ],
+  "agent2_uyarilari": [
+    "yorum 6 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 10 birden fazla ilgili grupta (grup 2 ve 4)"
+  ],
+  "sure_duvar_sn": 29.597,
+  "time": "2026-10-30T18:08:26+00:00"
+}

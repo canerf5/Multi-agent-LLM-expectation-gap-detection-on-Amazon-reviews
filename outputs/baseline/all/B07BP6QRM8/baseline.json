@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        10,
+        11,
+        14
+      ],
+      "sayfa_iddiasi": "Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        4,
+        13
+      ],
+      "sayfa_iddiasi": "Soft, lightweight and anti-slip sole is good choice for making walking feel natural."
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların ayaklara uygunluğu ve kalitesi hakkında iddialarda bulunuyor; ancak müşteriler, ürünlerin kalitesiz olduğunu ve uygun şekilde oturmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on.",
+      "musteri_deneyimi": "Yorum 3, 10, 11, 14: Ayakkabılar beklenen ölçülerde değil, çok büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında, ayakkabıların kalıbının dar olduğu ve bir beden büyük alınması gerektiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Soft, lightweight and anti-slip sole is good choice for making walking feel natural.",
+      "musteri_deneyimi": "Yorum 1, 4, 13: Ayakkabıların kalitesi düşük, yürümek için uygun değil.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında, ayakkabıların yürüyüş desteği sağlamadığına dair bir uyarı eklenmeli."
+    }
+  ]
+}

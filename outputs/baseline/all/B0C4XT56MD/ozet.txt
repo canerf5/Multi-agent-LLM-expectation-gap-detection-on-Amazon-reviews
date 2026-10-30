@@ -1,0 +1,10 @@
+ASIN:         B0C4XT56MD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ölçüleri hakkında bilgi vermiyor; müşteriler, bedenlerin çok küçük olduğunu ve yanıltıcı bir şekilde yönlendirildiklerini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında daha net bilgi ver; 'Bedenler küçük, bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3: Beden ölçüleri yanıltıcı ve çok küçük.

@@ -1,0 +1,19 @@
+ASIN:         B09476T6C1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 5, 8 | sayfa iddiası: 'For safety, cotton pajamas should always fit snugly'
+  - Kalite: yorum 3, 4, 6 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 4, 6 | sayfa iddiası: '100% Cotton. Super soft and breathable'
+  - Dayanıklılık: yorum 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'snug fit' iddiasında bulunuyor ancak müşteriler ürünün çok küçük olduğunu ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük alınması gerektiği bilgisi eklenmeli.
+      sayfa: 'For safety, cotton pajamas should always fit snugly' | müşteri: Yorum 1, 4, 5, 8: Çok küçük geliyor.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 6: Kalite çok kötü, dikişler hemen açılıyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: '100% Cotton. Super soft and breathable' | müşteri: Yorum 4, 6: Kumaş kalitesi düşük, ince ve ucuz görünüyor.
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 7: Ürün kısa sürede yıpranıyor, dikişler açılıyor.

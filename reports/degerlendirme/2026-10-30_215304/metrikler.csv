@@ -1,0 +1,25 @@
+sistem,metrik,deger,ci_alt,ci_ust,gecerli_tekrar
+multi_agent,tip_micro_precision,0.706897,,,0
+multi_agent,tip_micro_recall,0.66129,,,0
+multi_agent,tip_micro_f1,0.683333,0.579986,0.765625,1000
+multi_agent,tip_macro_f1,0.564876,0.398848,0.677019,1000
+multi_agent,gapvar_evet_f1,0.914286,,,0
+multi_agent,gapvar_hayir_f1,0.4,,,0
+multi_agent,gapvar_macro_f1,0.657143,0.444249,0.841897,1000
+multi_agent,gapvar_accuracy,0.85,0.725,0.95,1000
+multi_agent,seviye_isabet,0.45,0.3,0.6,1000
+multi_agent,seviye_macro_f1,0.439094,0.25174,0.602439,1000
+baseline,tip_micro_precision,0.564706,,,0
+baseline,tip_micro_recall,0.774194,,,0
+baseline,tip_micro_f1,0.653061,0.575535,0.726031,1000
+baseline,tip_macro_f1,0.530459,0.398667,0.615451,1000
+baseline,gapvar_evet_f1,0.947368,,,0
+baseline,gapvar_hayir_f1,0.0,,,0
+baseline,gapvar_macro_f1,0.473684,0.444444,0.493671,1000
+baseline,gapvar_accuracy,0.9,0.8,0.975,1000
+baseline,seviye_isabet,0.375,0.225,0.525,1000
+baseline,seviye_macro_f1,0.256769,0.15194,0.355557,1000
+cogunluk_referansi (Evet),gapvar_accuracy,0.9,,,
+cogunluk_referansi (Evet),gapvar_macro_f1,0.473684,,,
+cogunluk_referansi (Orta),seviye_isabet,0.7,,,
+cogunluk_referansi (Orta),seviye_macro_f1,0.27451,,,

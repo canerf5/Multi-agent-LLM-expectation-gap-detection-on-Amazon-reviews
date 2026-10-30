@@ -1,0 +1,13 @@
+ASIN:         B00SYPOTY6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler kumaş kalitesinin kötü olduğunu ve yıkandıkça yıprandığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının küçük olduğu bilgisi eklenmeli, bir beden büyük alınması önerilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün küçük geldi, bir beden büyük almak gerekti.
+  - [Kalite | ekle] Kumaşın kalitesi hakkında bilgi eklenmeli, yıkama sonrası yıpranma olabileceği belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 14: Kumaş kalitesi kötü, yıkandıkça yıpranıyor.

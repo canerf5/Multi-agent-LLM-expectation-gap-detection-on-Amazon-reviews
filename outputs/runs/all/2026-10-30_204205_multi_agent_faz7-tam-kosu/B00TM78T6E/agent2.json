@@ -1,0 +1,41 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Çabuk yırtılıyorlar",
+      "yorum_numaralari": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden kadınlara uygun, erkekler için dar",
+      "yorum_numaralari": [
+        2,
+        8,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Fiyatına göre kalitesi düşük",
+      "yorum_numaralari": [
+        1,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

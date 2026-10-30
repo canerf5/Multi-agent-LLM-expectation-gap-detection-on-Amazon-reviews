@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfada %100 pamuk iddiası var, ancak kumaşın kırışmadığına dair şikayet var.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4: Beden ölçüsü küçük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri hakkında daha net bilgi verin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 2: Kumaş kırışmıyor gibi değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kırışmadığına dair bilgi ekleyin."
+    }
+  ]
+}

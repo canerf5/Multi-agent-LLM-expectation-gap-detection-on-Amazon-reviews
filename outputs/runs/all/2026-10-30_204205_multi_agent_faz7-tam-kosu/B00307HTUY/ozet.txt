@@ -1,0 +1,13 @@
+ASIN:         B00307HTUY
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 3, 4, 7 | sayfa iddiası: '100% Leather'
+  - Dayanıklılık: yorum 5, 6 | sayfa iddiası: 'Non-slip outsole'
+ana_risk:     Sayfada '100% Leather' ve 'Non-slip outsole' iddiaları var, ancak müşteriler kumaş kalitesinin kötü olduğunu ve ürünün kısa sürede bozulduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin yüksek olduğu bilgisi eklenmeli.
+      sayfa: '100% Leather' | müşteri: Yorum 3, 4, 7: Kumaş kalitesi kötü, deri çatladı.
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha fazla bilgi verilmeli.
+      sayfa: 'Non-slip outsole' | müşteri: Yorum 5, 6: Ürün kısa sürede bozuldu.

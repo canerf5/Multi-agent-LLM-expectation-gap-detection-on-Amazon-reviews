@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 10 hem Malzeme hem Kalite için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08PSLXLPC",
+  "split": "gold",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [
+    "beklenti 5: iddia sayfada birebir geçmiyor: 'convenient to wear and take off, makes you feel comfortable '"
+  ],
+  "agent2_uyarilari": [
+    "yorum 10 birden fazla ilgili grupta (grup 3 ve 5)"
+  ],
+  "sure_duvar_sn": 20.895,
+  "time": "2026-10-30T17:46:54+00:00"
+}

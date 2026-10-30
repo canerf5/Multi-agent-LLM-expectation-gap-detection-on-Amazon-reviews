@@ -1,0 +1,13 @@
+ASIN:         B0BM1S7CD3
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Orthotic Grade Arch Support'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'Full Contact Comfort footbed delivering an unmatched level of orthotic support.'
+ana_risk:     Sayfa, ortopedik destek iddiasında bulunuyor ancak müşteriler ayakkabının destekleyici yapısını yetersiz buluyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve destek yapısı hakkında daha net bilgi ver.
+      sayfa: 'Orthotic Grade Arch Support' | müşteri: Yorum 1, 2: Ayakkabının arka kısmı çok geniş, destek doğru yerden gelmiyor.
+  - [Kalite | değiştir] Ürünün kalitesi hakkında daha gerçekçi bir açıklama yap.
+      sayfa: 'Full Contact Comfort footbed delivering an unmatched level of orthotic support.' | müşteri: Yorum 3, 4: Ayakkabı kalitesi düşük, rahatsız edici.

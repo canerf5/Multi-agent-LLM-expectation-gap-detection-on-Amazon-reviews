@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Nylon,more durable and breathable.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight,waterproof material provides water resistance with little weight.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Elastic cuffs help to keep clothes dry.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Ideal for all seasons,cycling,camping,fishing,outdoor activities.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Two side zipper pocket and one back pocket for storage,packable back pocket no need bag to pack.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

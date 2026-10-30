@@ -1,0 +1,66 @@
+{
+  "tag": "agent1:B0936XDNJ4",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2676,
+    "output_tokens": 329,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0005988,
+  "sure_sn": 4.069,
+  "created": "2026-10-30T17:45:03+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: Workout Sets for Women 2 Piece High Waisted Seamless Leggings with Padded Sports Bra Sets\n\nFİYAT: $28.99\n\nÖZELLİKLER:\n• 60% Nylon, 35% Polyester, 5% Spandex\n• Imported\n• Pull-On closure\n• Machine Wash\n• 【MATCHING WORKOUT OUTFITS FOR WOMEN BECOME FASHION TREND 】- We design unique color workout sets for women, let you stand out bright eye when you’re exercising. New seamless craft sports bra matched high-waist leggings, with a wide, high rise waistband with tummy control, contours your curves and streamlines the natural shape of your waist, make you feel confident and supportive during training.\n• 【SUPER VALUE TWO PIECE WOKROUT SETS PACK 】- This workout sets is our new collection comes in a range of vibrant colors, enjoy the power of being young. Matched with same color womens activewear reduce the trouble of matching clothes every day.\n• 【UPGRADE SEAMLESS CRAFT SOLVE SEE THROUGH ISSUES】- Used thicker yarn, improve knitting dense, increase the elasticity, really non-see through. Because this 2 piece seamless yoga sets was knitted, if stretch too large, there will be some seams, we recommend wearing light-colored underwear to avoid embarrassment.\n• 【ULTRA HIGH WAISTED WORKOUT LEGGINGS】 - Our women’s workout leggings with widened double layered ribbed waistband, in order to make a better tummy control yoga pants, contour your hips and thighs. Additionally, the triangle design of crotch makes you feel safe to do deep squat. when you wear these yoga pants, you will feel comfortable stretch and freedom of movement.\n• 【PADDED WIRE FREE SOFT SPORTS BRA】- The padded bra use moisture wicking light-weight sponge pad cups. Four-way stretch bra with removable pads can supports different cups (A-E cups), show off your graceful curves, lining bag design easy for replacement and cleaning. In addition, the generous shoulder straps make you more comfortable to wear, without putting pressure on your shoulders.\n• 【HIGH-QUALITY WOMEN’S ATHLETIC CLOTHING SETS】 Workout sets for women 2 piece yoga outfits is made of nylon and spandex, scientific fabric ratio, let the sportswear fabric has good elasticity and durability. Super-soft fabric wicks moisture to help you stay sweat-free and chafe-free, keep you in enjoyment during exercise.\n• 【EASY MEET VARIOUS OCCASIONS】 - Fitness workout outfits sets are perfect for Casual, Outdoor, Yoga, Workout, Sports, Cycle, Clubwear, Roomwear, Gym, etc. Its easy to wear style have made this women 2 piece tracksuit sets become one of the most popular sports suits on social media. This sports bra sets will be the best choice for your next matching clothes.\n• 【NOVA ACTIVE QUALITY GUARANTEE】- We are committed to providing our customers with the best summer outfits at the most reasonable price with have strict quality inspection before shipping. If any problem, please do not hesitate to contact us. And 180-Days NO RISK 100% Full Refund Assurance, we will be responsible for the end.\n\nAÇIKLAMA: (yok)\n\nDETAYLAR:\n- Department: Women\n- Date First Available: March 15, 2021",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "60% Nylon, 35% Polyester, 5% Spandex",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "scientific fabric ratio, let the sportswear fabric has good elasticity and durability",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "Super-soft fabric wicks moisture to help you stay sweat-free and chafe-free",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "with a wide, high rise waistband with tummy control, contours your curves and streamlines the natural shape of your waist",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "Our women’s workout leggings with widened double layered ribbed waistband, in order to make a better tummy control yoga pants, contour your hips and thighs",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "the triangle design of crotch makes you feel safe to do deep squat",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "Four-way stretch bra with removable pads can supports different cups (A-E cups)",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "let you stand out bright eye when you’re exercising",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Kalite",
+        "iddia": "we will be responsible for the end",
+        "iddia_turu": "genel"
+      }
+    ]
+  }
+}

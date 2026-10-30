@@ -1,0 +1,16 @@
+ASIN:         B07B4CCYBZ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 6, 10, 11 | sayfa iddiası: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet'
+  - Beden/Kalıp: yorum 2, 15 | sayfa iddiası: 'The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off'
+  - Dayanıklılık: yorum 3, 4, 12 | sayfa iddiası: 'Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty'
+ana_risk:     Su geçirmez olduğu iddia ediliyor, ancak müşteriler ayakkabıların su geçirdiğini belirtiyor; ayrıca dayanıklılık konusunda da şikayetler var.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik özelliği hakkında daha net bilgi ver; 'Kumaş su geçirmiyor' ifadesini kaldır.
+      sayfa: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet' | müşteri: Yorum 1, 5, 6, 10, 11: Kumaş su geçirmiyor, ayakkabılar ıslanıyor.
+  - [Beden/Kalıp | değiştir] Bedenlerin dar geldiğine dair uyarı ekle; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off' | müşteri: Yorum 2, 15: Bedenleri küçük veya dar geliyor.
+  - [Dayanıklılık | değiştir] Kuruma süresi hakkında bilgi ekle; 'Uzun sürede kuruduğu belirtiliyor'.
+      sayfa: 'Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty' | müşteri: Yorum 3, 4, 12: Ayakkabılar uzun sürede kuruyor.

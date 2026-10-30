@@ -1,0 +1,16 @@
+ASIN:         B06XCYN3MX
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 6 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 5 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden kalıbı ve kalite ile ilgili sorunlar yaşandığını belirtmiyor; müşteriler ise ürünün küçük geldiğini ve kalitesiz olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 6: Çok küçük geliyor; bir beden büyük alınması öneriliyor.
+  - [Kalite | ekle] Ürünün yıkanırken dikkatli kullanılması gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5: Kalite sorunları var; dikişler kötü, yıkamada bozuluyor.
+  - [Dayanıklılık | ekle] Ürünün yıkanma talimatları ve dayanıklılığı hakkında bilgi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 5, 7: Ürün yıkandıktan sonra bozuluyor; dayanıklılığı hakkında bilgi yok.

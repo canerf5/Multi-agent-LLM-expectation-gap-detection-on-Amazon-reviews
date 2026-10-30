@@ -1,0 +1,10 @@
+ASIN:         B004NNY4AW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: "With over 60 different sizes to choose from in most shoes, Trotter's promises you the largest selection of sizes and widths for even the hardest to fit foot."
+ana_risk:     Sayfa, genişlik ve kalıp konusunda geniş bir seçenek sunduğunu iddia ediyor, ancak müşteriler bu iddiayı desteklemiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] 9.5 geniş numaranın standartlara uymadığına dair bir uyarı ekle.
+      sayfa: "With over 60 different sizes to choose from in most shoes, Trotter's promises you the largest selection of sizes and widths for even the hardest to fit foot." | müşteri: Yorum 2, 3: 9.5 geniş numara standartlara uymuyor, kalıp küçük.

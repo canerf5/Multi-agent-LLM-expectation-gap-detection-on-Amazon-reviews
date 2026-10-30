@@ -1,0 +1,13 @@
+ASIN:         B08GFSLZ5R
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'MULTIPLE COLORS AND SIZES. Available as 3 size - S,M,L Suitable for 95% of adult men and women.'
+  - Kalite: yorum 1, 3 | sayfa iddiası: 'HIGH QUALITY - We Specialize in Printing Designs Directly on Pajamas.'
+ana_risk:     Sayfa, ürünün kalitesinin yüksek olduğunu ve bedenlerin 95% oranında uyum sağladığını vaat ediyor; ancak müşteriler kalitenin düşük olduğunu ve bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler küçük, 2 beden büyük almanız önerilir.'
+      sayfa: 'MULTIPLE COLORS AND SIZES. Available as 3 size - S,M,L Suitable for 95% of adult men and women.' | müşteri: Yorum 2, 3: Bedenler küçük geliyor; 2 beden büyük alınmalı.
+  - [Kalite | değiştir] Kalite ile ilgili iddiayı gözden geçirin; 'Baskı kalitesi ve malzeme hakkında daha net bilgi verin.'
+      sayfa: 'HIGH QUALITY - We Specialize in Printing Designs Directly on Pajamas.' | müşteri: Yorum 1, 3: Kalite düşük; malzeme ucuz görünüyor ve baskı kalitesi kötü.

@@ -1,0 +1,10 @@
+ASIN:         B0869D79DV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 6 | sayfa iddiası: 'Wide waistband keeps you snug and flat.'
+ana_risk:     Sayfada 'Wide waistband keeps you snug and flat.' iddiası var, ancak müşteriler bedenin çok küçük ve kısa olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük olduğu bilgisi eklenmeli.
+      sayfa: 'Wide waistband keeps you snug and flat.' | müşteri: Yorum 3, 6: Çok küçük ve kısa geldi.

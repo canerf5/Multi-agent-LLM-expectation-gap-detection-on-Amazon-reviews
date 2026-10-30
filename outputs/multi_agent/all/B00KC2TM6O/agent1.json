@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Manmade",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Manmade sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Touch Ups has dedicated itself to providing the highest quality bridal, prom and evening footwear at competitive prices.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Touch Ups combines fashion-forward styling with an array of colors and fabrics.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Touch Ups is proud to be the largest dyeable bridal shoe manufacturer in the world.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

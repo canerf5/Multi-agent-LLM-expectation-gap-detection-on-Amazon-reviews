@@ -1,0 +1,13 @@
+ASIN:         B07G3H31YF
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 8, 9, 10, 11, 12, 15 | sayfa iddiası: 'Available in 30 sizes and widths.'
+  - Kalite: yorum 1, 3, 6, 14 | sayfa iddiası: 'A must-have modern style perfect for casual-chic weekend wear.'
+ana_risk:     Sayfa, 30 beden ve genişlikte seçenek sunduğunu iddia ediyor; ancak müşteriler, ayakkabıların dar olduğunu ve kalitesiz yapıldığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Genişlik seçenekleri hakkında daha net bilgi ver; 'Bu ayakkabılar dar kalıp, geniş ayaklar için uygun olmayabilir.' ekle.
+      sayfa: 'Available in 30 sizes and widths.' | müşteri: Yorum 2, 4, 5, 8, 9, 10, 11, 12, 15: Ayakkabılar dar, genişlik iddiası doğru değil.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi ver; 'Bu ayakkabılar günlük kullanım için tasarlanmıştır, ancak uzun süreli konfor sağlamayabilir.' ekle.
+      sayfa: 'A must-have modern style perfect for casual-chic weekend wear.' | müşteri: Yorum 1, 3, 6, 14: Kalite düşük, dikişler hemen açılıyor, konfor yok.

@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5,
+        10
+      ],
+      "sayfa_iddiasi": "Shoe fits small. For a roomier feel consider ordering 1/2 size larger"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        9
+      ],
+      "sayfa_iddiasi": "fabric"
+    }
+  ],
+  "ana_risk": "Ayakkabının küçük olduğu iddiası var, ancak kullanıcılar ayakkabının dar geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Shoe fits small. For a roomier feel consider ordering 1/2 size larger",
+      "musteri_deneyimi": "Yorum 3, 5, 10: Çok dar geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Dar kalıp; bir beden büyük almanız önerilir' ifadesi eklenmeli."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "fabric",
+      "musteri_deneyimi": "Yorum 8, 9: Ayakkabılar çok sert ve rahatsız.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Sert malzeme; daha yumuşak bir deneyim için inceleyin' ifadesi eklenmeli."
+    }
+  ]
+}

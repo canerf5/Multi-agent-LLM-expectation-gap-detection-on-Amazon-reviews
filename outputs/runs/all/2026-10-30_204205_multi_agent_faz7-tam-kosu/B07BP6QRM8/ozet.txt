@@ -1,0 +1,13 @@
+ASIN:         B07BP6QRM8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 9, 11, 14, 5, 7, 12 | sayfa iddiası: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on'
+  - Malzeme: yorum 8 | sayfa iddiası: 'made of high quality baby friendly material'
+ana_risk:     Sayfada ayakkabıların kalıbının ayarlanabilir olduğu iddia ediliyor, ancak müşteriler ayakkabıların çok büyük veya çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp ve beden bilgilerini netleştirerek, 'Ayakkabılar normal bedene göre büyük veya küçük gelebilir, lütfen beden tablosunu kontrol edin.' ifadesini ekleyin.
+      sayfa: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on' | müşteri: Yorum 9, 11, 14: Ayakkabılar çok büyük geldi; Yorum 5, 7, 12: Ayakkabılar çok küçük geldi
+  - [Malzeme | değiştir] Ürün sayfasında malzeme kalitesi hakkında daha fazla bilgi verin; 'Taban kalınlığı hakkında bilgi ekleyin ve ince taban uyarısı yapın.'
+      sayfa: 'made of high quality baby friendly material' | müşteri: Yorum 8: Tabanları ince

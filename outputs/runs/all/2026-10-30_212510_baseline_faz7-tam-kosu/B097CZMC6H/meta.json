@@ -1,0 +1,15 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Material Made of 100% Polyester,which is soft,w'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'High-Quality Material Made of 100% Polyester,which is soft,w'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B097CZMC6H",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 10.651,
+  "time": "2026-10-30T18:47:03+00:00"
+}

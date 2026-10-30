@@ -1,0 +1,64 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4,
+        5,
+        6,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        7,
+        8,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün beden ve kalıp bilgisi vermiyor; müşteriler ise ürünün küçük ve rahatsız olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4, 5, 6, 12: Bedenler küçük, rahatsız ediyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden tablosu ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 10, 14: Çok ince ve kalitesiz, şeffaf görünüyor.",
+      "islem": "ekle",
+      "duzeltme": "Kumaş kalitesi hakkında bilgi ekleyin; 'Ürün ince ve şeffaf olabilir' uyarısı ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 7, 8, 13: Kalite düşük, çabuk yıpranıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında bilgi ekleyin; 'Ürünlerin dayanıklılığı sınırlı olabilir' uyarısı ekleyin."
+    }
+  ]
+}

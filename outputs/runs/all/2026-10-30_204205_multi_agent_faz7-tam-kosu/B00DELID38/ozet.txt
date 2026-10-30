@@ -1,0 +1,10 @@
+ASIN:         B00DELID38
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '65/35 poly/cotton pique'
+ana_risk:     Sayfa, 65/35 poly/cotton pique malzeme iddiasında bulunuyor, ancak müşteriler etiket ve dikişlerin rahatsız edici olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında etiketin ve dikişlerin kalitesi hakkında bilgi verin; 'Etiketler yumuşak ve dikişler rahatsız etmeyecek şekilde tasarlanmıştır' ifadesini ekleyin.
+      sayfa: '65/35 poly/cotton pique' | müşteri: Yorum 1, 2: Etiket ve dikişler rahatsız edici.

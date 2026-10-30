@@ -1,0 +1,13 @@
+ASIN:         B0C4TT16MJ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 10, 13 | sayfa iddiası: '60% ring-spun cotton/40% polyester'
+  - Beden/Kalıp: yorum 3, 6, 8, 11, 12, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada kumaşın kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini ekleyin.
+      sayfa: '60% ring-spun cotton/40% polyester' | müşteri: Kumaş ince ve kalitesiz; Yorum 10, 13.
+  - [Beden/Kalıp | ekle] Yıkama sonrası küçülme hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Ürün yıkandıktan sonra küçülüyor; Yorum 3, 6, 8, 11, 12, 14.

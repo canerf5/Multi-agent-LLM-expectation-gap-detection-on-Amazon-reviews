@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Manmade",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Manmade sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Deer Stags has been making shoes comfortable since 1929.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Recognized for their patented S.U.P.R.O. Technology and slip-lasted construction",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Deer Stags has become a leader of comfort footwear for men, women, and children.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "they design a broad range of styles for every individual and every occasion.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

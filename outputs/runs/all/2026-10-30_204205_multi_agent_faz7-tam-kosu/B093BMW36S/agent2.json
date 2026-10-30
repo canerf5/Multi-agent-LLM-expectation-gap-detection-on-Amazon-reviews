@@ -1,0 +1,75 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden büyük geldi, ölçüye uymuyor.",
+      "yorum_numaralari": [
+        5,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Kalıp çok geniş, oturuşu kötü.",
+      "yorum_numaralari": [
+        1,
+        3,
+        6,
+        9,
+        11,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk fotoğraftaki gibi değil, yanıltıcı.",
+      "yorum_numaralari": [
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş ince ve kalitesiz.",
+      "yorum_numaralari": [
+        3,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün görünümü beklenenden farklı.",
+      "yorum_numaralari": [
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün işçilik hatası var, dikişler kötü.",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada bilgi yok.",
+      "yorum_numaralari": [
+        2,
+        7
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

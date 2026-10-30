@@ -1,0 +1,15 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The lace trim adds a sweet and sexy look to this top.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The lace trim adds a sweet and sexy look to this top.'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B00LYTECHI",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 5,
+  "sure_duvar_sn": 9.516,
+  "time": "2026-10-30T18:50:47+00:00"
+}

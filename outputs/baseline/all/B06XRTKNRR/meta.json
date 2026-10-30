@@ -1,0 +1,26 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Extremely lightweight for kids to keep on their feet for lon'",
+    "tek konu kuralı: yorum 1 hem Dayanıklılık hem Beden/Kalıp için sayılmış",
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Kalite için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Extremely lightweight for kids to keep on their feet for lon'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Dayanıklılık: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys'",
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'ROOMY FIT: Our most generous, roomy fit across all kids rain'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys'",
+    "tek konu kuralı: yorum 1 hem Dayanıklılık hem Beden/Kalıp için sayılmış",
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Kalite için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'ROOMY FIT: Our most generous, roomy fit across all kids rain'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys'"
+  ],
+  "parent_asin": "B06XRTKNRR",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 5,
+  "sure_duvar_sn": 13.025,
+  "time": "2026-10-30T18:26:04+00:00"
+}

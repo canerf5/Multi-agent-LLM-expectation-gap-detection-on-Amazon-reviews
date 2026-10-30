@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'This shirt was of very poor quality.'",
+    "tek konu kuralı: yorum 4 hem Beden/Kalıp hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 10 hem Kalite hem Malzeme için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'This shirt was of very poor quality.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 4 hem Beden/Kalıp hem Kalite için sayılmış",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B0C4TT16MJ",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 14,
+  "sure_duvar_sn": 9.324,
+  "time": "2026-10-30T18:39:55+00:00"
+}

@@ -1,0 +1,5 @@
+ASIN:         B07GX6Q8C6
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

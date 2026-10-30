@@ -1,0 +1,16 @@
+ASIN:         B01HF9ZNDC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 11, 10 | sayfa iddiası: 'Experience out-of-the-box comfort in this gore-tex hiker.'
+  - Kalite: yorum 5, 6, 7, 8 | sayfa iddiası: 'Experience out-of-the-box comfort in this gore-tex hiker.'
+  - Malzeme: yorum 9, 14, 15 | sayfa iddiası: 'GORE-TEX waterproof membrane, exceptional breathability and waterproof performance.'
+ana_risk:     Sayfa, 'out-of-the-box comfort' ve 'GORE-TEX waterproof' iddialarında bulunuyor; ancak müşteriler bu konularda rahatsızlık ve su geçirmezlik sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve oturuş hakkında daha net bilgi ver; 'Kalıp normalden uzun, bir beden küçük almanız önerilir' notu ekle.
+      sayfa: 'Experience out-of-the-box comfort in this gore-tex hiker.' | müşteri: Yorum 10, 11: Kalıp çok uzun, ayak öne kayıyor ve rahatsız ediyor.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi ver; 'Ürünlerin dayanıklılığı konusunda dikkatli olunması önerilir' notu ekle.
+      sayfa: 'Experience out-of-the-box comfort in this gore-tex hiker.' | müşteri: Yorum 5, 6, 7, 8: Ürün kalitesi düşük, kısa sürede bozuluyor.
+  - [Malzeme | değiştir] Su geçirmezlik konusunda daha net bilgi ver; 'Su geçirmezlik garantisi yok, dikkatli kullanılması önerilir' notu ekle.
+      sayfa: 'GORE-TEX waterproof membrane, exceptional breathability and waterproof performance.' | müşteri: Yorum 9, 14, 15: Su geçirmezlik iddiası doğru değil, ayakkabılar su alıyor.

@@ -1,0 +1,13 @@
+ASIN:         B0BSBBCHRZ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Görsel: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ve kalıp ile ilgili bilgi vermiyor; müşteriler elbiseyi çok büyük ve şekilsiz buluyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri ve kalıp bilgisi ekleyin; 'Kalıp geniş, bir beden küçük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Elbise çok büyük ve şekilsiz.
+  - [Görsel | ekle] Ürünün model üzerindeki görünümünü ve gerçek uzunluğunu gösteren ek fotoğraflar ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Elbise modeldeki gibi görünmüyor, uzunluğu ve şekli farklı.

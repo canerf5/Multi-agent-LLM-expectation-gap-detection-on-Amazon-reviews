@@ -1,0 +1,5 @@
+ASIN:         B07BJH68PP
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

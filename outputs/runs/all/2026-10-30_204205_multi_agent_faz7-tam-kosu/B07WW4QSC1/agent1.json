@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Acrylic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "SIZE: One size fits most.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "It's a classic open front dolman cardigan that you can just put over any fall outfit.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Its softness will keep you warm and its dolman sleeves and relaxed fit will keep you comfortable and yet fashionable.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B0BT5FRJXS
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 3, 4 | sayfa iddiası: 'COMFY & COZY - A special blend of comfort and fun, these plush materials are soft to the touch and will keep you warm during those cold winter months.'
+  - Kalite: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün yumuşak ve konforlu olduğu iddiasında bulunuyor; ancak müşteriler ince ve kalitesiz bir malzeme ile karşılaştıklarını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Malzeme hakkında daha net bilgi ver; 'Ürün ince ve kalitesiz bir kumaştan yapılmıştır, yumuşaklık garantisi yoktur.' gibi bir uyarı ekle.
+      sayfa: 'COMFY & COZY - A special blend of comfort and fun, these plush materials are soft to the touch and will keep you warm during those cold winter months.' | müşteri: Yorum 1, 2, 3, 4: Malzeme ince ve kalitesiz, yumuşak değil.
+  - [Kalite | ekle] Kalite hakkında daha net bilgi ver; 'Ürün kalitesi düşük, dikkatli inceleyerek satın alınız.' gibi bir uyarı ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 4: Kalite çok kötü, ucuz görünüyor.

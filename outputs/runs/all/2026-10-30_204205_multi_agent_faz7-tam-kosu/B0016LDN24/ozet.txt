@@ -1,0 +1,13 @@
+ASIN:         B0016LDN24
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 12 | sayfa iddiası: 'the front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips'
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor; Malzeme iddiası var, fakat kumaşın çok fazla toz tuttuğu şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının normalden küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'the front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips' | müşteri: Yorum 2, 4, 5, 6, 12: Çok küçük geliyor
+  - [Malzeme | değiştir] Kumaşın toz tutma özelliği hakkında bilgi eklenmeli; 'Kumaş toz tutma eğilimindedir' notu ekleyin.
+      sayfa: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings' | müşteri: Yorum 1, 3: Kumaş çok fazla toz tutuyor

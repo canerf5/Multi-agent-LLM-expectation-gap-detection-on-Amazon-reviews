@@ -1,0 +1,66 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        9,
+        10
+      ],
+      "sayfa_iddiasi": "Slim flattering fit"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        8,
+        10,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        5,
+        10,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "Easy to care for and affordable."
+    }
+  ],
+  "ana_risk": "Sayfa, 'Slim flattering fit' iddiasında bulunuyor ama müşteriler bedenlerin küçük ve uyumsuz olduğunu belirtiyor; ayrıca kalite ve dayanıklılık sorunları yaşıyorlar.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Slim flattering fit",
+      "musteri_deneyimi": "Yorum 2, 9, 10: Bedenler küçük ve uyumsuz.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin kalıbı hakkında daha net bilgi ver; 'Küçük beden almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 8, 10, 12, 13: Kalite sorunları var, dikişler ve düğmeler hemen kopuyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalite kontrolü hakkında bilgi ekleyin; 'Ürünlerimizi yıkadıktan sonra dikkatli kullanmanızı öneririz' notu ekleyin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Easy to care for and affordable.",
+      "musteri_deneyimi": "Yorum 1, 5, 10, 12, 13: Ürünler birkaç yıkamada bozuluyor.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık hakkında bilgi ekleyin; 'Ürünlerimizi yıkadıktan sonra dikkatli kullanmanızı öneririz' notu ekleyin."
+    }
+  ]
+}

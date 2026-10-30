@@ -1,0 +1,16 @@
+ASIN:         B0016LDN24
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 12 | sayfa iddiası: 'The front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips.'
+  - Dayanıklılık: yorum 9, 10 | sayfa iddiası: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings.'
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings.'
+ana_risk:     Sayfa, pantolonların kalıbının doğru oturduğunu ve dayanıklı olduğunu vaat ediyor; ancak müşteriler kalıbın çok küçük olduğunu ve dayanıklılık sorunları yaşadıklarını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'kalıp dar; bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'The front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips.' | müşteri: Yorum 2, 4, 5, 6, 12: Kalıp çok küçük geliyor.
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha net bilgi ver; 'bu pantolonların dayanıklılığı ile ilgili sorunlar yaşanabiliyor' notu ekle.
+      sayfa: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings.' | müşteri: Yorum 9, 10: Ürün kısa sürede bozuluyor.
+  - [Malzeme | değiştir] Kumaş yapısı hakkında daha net bilgi ver; 'kumaşın yapışkanlık yapabileceği konusunda uyarı ekle'.
+      sayfa: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings.' | müşteri: Yorum 1, 3: Kumaş yapısı nedeniyle her şey yapışıyor.

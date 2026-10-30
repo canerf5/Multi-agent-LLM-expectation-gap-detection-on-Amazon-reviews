@@ -1,0 +1,10 @@
+ASIN:         B07QY8SLWP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı hakkında bilgi yok, ancak müşteriler parmak kısmının çok dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Parmak kısmının dar olduğu bilgisi sayfaya eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 5, 6, 7: Parmak kısmı çok dar.

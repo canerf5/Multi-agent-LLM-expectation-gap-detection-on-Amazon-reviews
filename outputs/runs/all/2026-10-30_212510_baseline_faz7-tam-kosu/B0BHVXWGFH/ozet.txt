@@ -1,0 +1,16 @@
+ASIN:         B0BHVXWGFH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 6, 11, 15 | sayfa iddiası: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55"'
+  - Görsel: yorum 2, 3, 7, 10, 12, 14 | sayfa iddiası: 'Feature: High Waist, high stretch, button, zipper, pocket, long jeans.'
+  - Kalite: yorum 4, 5, 9, 11, 13 | sayfa iddiası: "Fabric is very stretchy,and it's soft and comfortable"
+ana_risk:     Sayfa, ürünün beden ve kalıp bilgilerini doğru yansıtmıyor; müşteriler, ürünlerin beklediklerinden çok daha küçük ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek daha doğru beden bilgisi verin.
+      sayfa: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55"' | müşteri: Yorum 1, 6, 11, 15: Çok küçük ve yanlış beden gönderilmiş.
+  - [Görsel | değiştir] Ürün fotoğraflarını gerçek ürüne uygun şekilde güncelleyin.
+      sayfa: 'Feature: High Waist, high stretch, button, zipper, pocket, long jeans.' | müşteri: Yorum 2, 3, 7, 10, 12, 14: Ürün fotoğraflardakiyle aynı değil.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi verin ve kalite kontrol süreçlerini belirtin.
+      sayfa: "Fabric is very stretchy,and it's soft and comfortable" | müşteri: Yorum 4, 5, 9, 11, 13: Kalite çok kötü, dikişler ve malzeme sorunlu.

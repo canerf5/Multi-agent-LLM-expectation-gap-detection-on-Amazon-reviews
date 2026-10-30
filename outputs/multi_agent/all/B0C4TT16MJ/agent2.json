@@ -1,0 +1,56 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Dikişler bozuluyor.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş ince ve kalitesiz.",
+      "yorum_numaralari": [
+        10,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ürün yıkandıktan sonra küçülüyor.",
+      "yorum_numaralari": [
+        3,
+        6,
+        8,
+        11,
+        12,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi çok düşük.",
+      "yorum_numaralari": [
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada yıkama sonrası küçülme bilgisi yok.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

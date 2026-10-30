@@ -1,0 +1,21 @@
+{
+  "deneme": 1,
+  "ilk_ihlaller": [],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B077FR9NFV",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 9,
+  "agent1_uyarilari": [
+    "beklenti 3: iddia sayfada birebir geçmiyor: 'Elegant Halter neck with floral lace top bodice, hollow out '"
+  ],
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 4)",
+    "yorum 4 birden fazla ilgili grupta (grup 1 ve 4)",
+    "yorum 6 birden fazla ilgili grupta (grup 1 ve 4)",
+    "yorum 9 birden fazla ilgili grupta (grup 1 ve 4)"
+  ],
+  "sure_duvar_sn": 19.058,
+  "time": "2026-10-30T18:07:10+00:00"
+}

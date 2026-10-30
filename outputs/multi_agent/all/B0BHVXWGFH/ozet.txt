@@ -1,0 +1,13 @@
+ASIN:         B0BHVXWGFH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 6 | sayfa iddiası: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55'
+  - Malzeme: yorum 8, 11 | sayfa iddiası: '64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler çok küçük geldiğini ve yanlış beden gönderildiğini belirtiyor; Malzeme iddiası da esnek değil deniyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek daha geniş bir beden aralığı sunun.
+      sayfa: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55' | müşteri: Yorum 1, 6: Çok küçük geldi ve yanlış beden gönderildi.
+  - [Malzeme | değiştir] Malzeme açıklamasına 'beklenenden daha az esnek' ifadesini ekleyin.
+      sayfa: '64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex' | müşteri: Yorum 8, 11: Esnek değil, beklenenden farklı.

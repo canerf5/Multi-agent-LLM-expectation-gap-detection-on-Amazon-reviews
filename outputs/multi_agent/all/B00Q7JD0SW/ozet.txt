@@ -1,0 +1,10 @@
+ASIN:         B00Q7JD0SW
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 3 | sayfa iddiası: '100% Leather and Textile'
+ana_risk:     Sayfa, '100% Leather and Textile' iddiasında bulunuyor, ancak kullanıcılar ayakkabıların soğuk havada yeterince sıcak tutmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Sayfada 'Soğuk havalarda yeterli yalıtım sağlamadığı belirtiliyor; bu nedenle daha iyi bir yalıtım için bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: '100% Leather and Textile' | müşteri: Yorum 1, 3: Ayakkabılar soğuk havada yeterince sıcak tutmuyor.

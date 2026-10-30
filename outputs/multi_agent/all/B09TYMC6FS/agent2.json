@@ -1,0 +1,36 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğraftaki gibi değil",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi düşük ve rahatsız edici",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden biraz küçük geliyor",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

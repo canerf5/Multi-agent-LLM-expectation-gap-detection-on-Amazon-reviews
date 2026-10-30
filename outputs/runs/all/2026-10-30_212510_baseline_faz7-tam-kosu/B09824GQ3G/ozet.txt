@@ -1,0 +1,13 @@
+ASIN:         B09824GQ3G
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün bedeninin küçük olduğunu ve kalitesinin düşük olduğunu belirtmiyor; müşteriler bu sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kapüşonun küçük olduğu ve tam kapatmadığı bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Kapüşon küçük, başı tam kapatmıyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekleyin; tüy dökme sorunu hakkında uyarı yapın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Kalite kötü, çok fazla tüy döküyor.

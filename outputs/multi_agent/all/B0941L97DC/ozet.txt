@@ -1,0 +1,10 @@
+ASIN:         B0941L97DC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: "LifeStride's selection of sizes and widths ensures you'll find the perfect fit."
+ana_risk:     Sayfada 'mükemmel uyum' iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Bedeninizden bir beden büyük almanız önerilir.' ifadesi eklenecek.
+      sayfa: "LifeStride's selection of sizes and widths ensures you'll find the perfect fit." | müşteri: Yorum 1, 2: Çok küçük geldi.

@@ -1,0 +1,13 @@
+ASIN:         B0057XA0DC
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 7 | sayfa iddiası: '100% Cotton'
+  - Beden/Kalıp: yorum 3, 4, 6 | sayfa iddiası: 'Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket'
+ana_risk:     Sayfa %100 pamuk iddiasında bulunuyor, ancak müşteriler kumaşın ince olduğunu ve %15 polyester içerdiğini belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürünün %100 pamuk olduğunu belirtin, kumaşın ince olduğunu vurgulayın ve %15 polyester içerdiğini ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 2: Kumaş çok ince; Yorum 7: Ürün %100 pamuk değil, %15 polyester var.
+  - [Beden/Kalıp | değiştir] Bedenin büyük geldiğini belirtin, 'normalden 2-3 beden büyük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket' | müşteri: Yorum 3, 4, 6: 2-3 beden büyük geldi.

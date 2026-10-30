@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Renk: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "tek konu kuralı: yorum 3 hem Renk hem Görsel için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Renk: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "Görsel: en az 2 farklı destekleyen yorum gerekli, 1 var [2]"
+  ],
+  "parent_asin": "B097NBGR75",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 3,
+  "sure_duvar_sn": 8.271,
+  "time": "2026-10-30T18:42:56+00:00"
+}

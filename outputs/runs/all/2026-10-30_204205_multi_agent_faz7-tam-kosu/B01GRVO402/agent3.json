@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "100% Other Fibers"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, %100 diğer liflerden yapıldığı iddiasında bulunuyor; ancak müşteriler astarın plastik gibi olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Other Fibers",
+      "musteri_deneyimi": "Yorum 1: Astarı plastik gibi, yalıtım özelliği yok.",
+      "islem": "değiştir",
+      "duzeltme": "Astarın malzeme içeriğini ve yalıtım özelliklerini net bir şekilde belirtin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: 36\" boy seçeneği yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasına beden seçenekleri hakkında daha fazla bilgi ekleyin."
+    }
+  ]
+}

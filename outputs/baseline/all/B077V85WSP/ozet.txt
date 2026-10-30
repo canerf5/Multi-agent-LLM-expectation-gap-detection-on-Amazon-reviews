@@ -1,0 +1,13 @@
+ASIN:         B077V85WSP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 10, 11 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 13 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ve kalıp konusunda bilgi vermiyor; müşteriler ürünün küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının küçük olduğu ve bedenlerin dar geldiği bilgisi eklenecek.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 4, 10, 11: Ürün kalıbı küçük, bedenler beklenenden dar geliyor.
+  - [Malzeme | ekle] Kumaşın kaşındırıcı olabileceği bilgisi eklenecek.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 13: Kumaş kaşındırıyor ve rahatsızlık veriyor.

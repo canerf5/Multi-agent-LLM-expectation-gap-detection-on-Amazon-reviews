@@ -1,0 +1,41 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "Fitted cropped legging with super soft waistband to allow for maximum movement and flexibility"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden kalıbı iddiası var, ancak müşteriler bedenin çok küçük olduğunu belirtiyor; ayrıca kalite sorunları da yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Fitted cropped legging with super soft waistband to allow for maximum movement and flexibility",
+      "musteri_deneyimi": "Yorum 1: Beden çok küçük, ayak deliklerinden geçemedim.",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbının küçük olduğu bilgisi eklenmeli; 'kalıp dar, bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3: Ürün 3 kez giyildikten sonra delik açıldı.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesi hakkında bilgi ekleyin; 'Ürün kalitesiz, dikkatli kullanın' uyarısı ekleyin."
+    }
+  ]
+}

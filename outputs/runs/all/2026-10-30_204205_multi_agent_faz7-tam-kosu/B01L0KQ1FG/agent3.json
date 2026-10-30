@@ -1,0 +1,65 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp",
+    "Renk"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Relaxed fit"
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        8,
+        13
+      ],
+      "sayfa_iddiasi": "Tan back neck lining"
+    }
+  ],
+  "ana_risk": "Sayfada '100% Cotton' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu ve kağıt gibi hissettirdiğini belirtiyor; ayrıca 'Relaxed fit' iddiası var ama bedenlerin beklenenden küçük olduğu şikayet ediliyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 1, 4: Kumaş kalitesi kötü, kağıt gibi hissediliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesi hakkında daha net bilgi ver; 'kalite düşük, kağıt gibi hissediyor' notunu ekle."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Relaxed fit",
+      "musteri_deneyimi": "Yorum 2, 3, 9, 10, 11, 12, 14, 15: Bedenler beklenenden küçük, normalde giyilen bedenden daha küçük.",
+      "islem": "değiştir",
+      "duzeltme": "Beden tablosunu güncelle ve 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notunu ekle."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "Tan back neck lining",
+      "musteri_deneyimi": "Yorum 8, 13: Renk beklenenden daha koyu.",
+      "islem": "değiştir",
+      "duzeltme": "Renk açıklamasını güncelle ve 'Renk, fotoğraftakinden daha koyu olabilir' uyarısını ekle."
+    }
+  ]
+}

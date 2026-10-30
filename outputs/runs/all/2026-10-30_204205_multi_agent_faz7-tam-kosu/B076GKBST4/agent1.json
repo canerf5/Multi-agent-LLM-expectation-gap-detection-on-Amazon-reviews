@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "60% Cotton / 40% Poly",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "White, Black, Navy = 100% Cotton, H. Grey = 88% Cotton 12% Polyester, C. Grey = 60% Cotton 40% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "S:34~36 M:38~40 L:42~44 XL:46~48 2XL:50~52 3XL: 54~56",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Features a clean and simple design, with soft and breathable cotton to keep the chill at bay.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Stay warm, stylish and comfortable in our Classic fit crew neck thermal shirt.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "A must-have piece for your winter wardrobe.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Görsel: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Tale As Old As Time T Shirts, Vintage Womens T Shirts.'",
+    "tek konu kuralı: yorum 2 hem Görsel hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 3 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 8 hem Beden/Kalıp hem Dayanıklılık için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Tale As Old As Time T Shirts, Vintage Womens T Shirts.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Görsel hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 3 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 8 hem Beden/Kalıp hem Dayanıklılık için sayılmış"
+  ],
+  "parent_asin": "B07VV1RV62",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 10,
+  "sure_duvar_sn": 16.242,
+  "time": "2026-10-30T18:35:17+00:00"
+}

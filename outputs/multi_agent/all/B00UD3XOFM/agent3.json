@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler düşük kaliteli ürünler aldıklarını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 3: Ürün beklenenden farklı, kalitesi düşük.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasında kalite kontrolü yapıldığına dair bilgi ekleyin."
+    }
+  ]
+}

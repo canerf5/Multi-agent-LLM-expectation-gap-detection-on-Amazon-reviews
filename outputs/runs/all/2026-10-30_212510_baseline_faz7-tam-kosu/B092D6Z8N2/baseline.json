@@ -1,0 +1,49 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        6,
+        7,
+        13,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Good elasticity, breathable mesh, durable fabric, shock absorption and comfortable fit with comfort sport soccer socks make your team conspicuous!"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün malzeme kalitesinin iyi olduğunu iddia ediyor; ancak müşteriler, bu çorapların teri emmediğini ve kötü kokulara neden olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Good elasticity, breathable mesh, durable fabric, shock absorption and comfortable fit with comfort sport soccer socks make your team conspicuous!",
+      "musteri_deneyimi": "Yorum 2, 6, 13, 14, 15: Çoraplar teri emiyor ve kötü kokuya neden oluyor.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha net bilgi ver; 'Bu çoraplar polyester içeriyor ve teri emme kapasitesi düşük.' gibi bir not ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 5, 8, 12: Çoraplar kalitesiz ve çabuk yıpranıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasına 'Kalite garantisi yok; çorapların dayanıklılığı sınırlı olabilir.' uyarısını ekle."
+    }
+  ]
+}

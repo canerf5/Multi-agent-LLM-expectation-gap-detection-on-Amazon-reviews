@@ -1,0 +1,13 @@
+ASIN:         B07YZ9QVH1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 5, 7 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 4, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve kalite ile ilgili iddialar var, ancak müşteriler ürünün küçük ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün açıklamasında 'D ve DD bedenleri için uygun değil' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 5, 7: Çok küçük geliyor.
+  - [Kalite | ekle] Ürün sayfasında malzeme kalitesi hakkında daha net bilgi verin; 'kaliteyi artırmak için daha iyi malzeme kullanıldığına dair bilgi ekleyin.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 7: Kalite düşük, ucuz malzeme.

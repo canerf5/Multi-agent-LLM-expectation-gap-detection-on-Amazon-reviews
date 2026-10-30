@@ -1,0 +1,13 @@
+ASIN:         B01N41CTGP
+gap_var:      Evet
+gap_tipleri:  Görsel, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 4, 8 | sayfa iddiası: 'This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.'
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün baskısının eğlenceli olduğunu iddia ediyor, ancak müşteriler baskının kötü olduğunu belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.
+öneriler:
+  - [Görsel | değiştir] Baskı kalitesi hakkında daha net bilgi verin.
+      sayfa: 'This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.' | müşteri: Yorum 4, 8: Ürünün baskısı kötü, görüntü bozuk.
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında daha net bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Kollar çok kısa, beden ölçüsü garip.

@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "This item is snug-fitting"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün snug-fitting olduğunu belirtirken, müşteriler bedenin küçük geldiğini ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "This item is snug-fitting",
+      "musteri_deneyimi": "Yorum 2, 3: 5T beden için küçük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Kalite düşük, dikişler ilk yıkamada açılıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesi hakkında bilgi ekleyin; 'Dikişlerin dayanıklılığı konusunda dikkatli olun'."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 1, 4: Kumaş yumuşak değil.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın yumuşaklığı hakkında daha net bilgi verin; 'Kumaşın yumuşaklığı konusunda dikkatli olun'."
+    }
+  ]
+}

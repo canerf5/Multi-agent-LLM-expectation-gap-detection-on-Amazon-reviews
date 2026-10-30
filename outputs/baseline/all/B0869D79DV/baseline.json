@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden ve kalıp ile ilgili doğru bilgi vermiyor; müşteriler yanlış beden ve kalıp aldıklarını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 5: Beden ölçüleri doğru değil, 8 beden dar ve kısa geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Beden ölçüleri hakkında daha net bilgi ver; kalıp dar olduğu belirtilmeli."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Kalite sorunları var, dikişler bozuluyor ve renk akıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesi hakkında bilgi ekle; dikişlerin dayanıklılığı ve renk sabitleyici bilgisi verilmeli."
+    }
+  ]
+}

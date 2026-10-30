@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "sayfa_iddiasi": "Perfect fit: Our sandals are great gifts for young girls or ladies of all ages. Please check our chart to find the size that suits you. Very suitable for narrow feet."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "High-quality material: The lace-up shoe upper is made of artificial PU material with an adjustable buckle."
+    }
+  ],
+  "ana_risk": "Sayfa, 'dar ayaklar için çok uygun' iddiasında bulunuyor, ancak birçok müşteri ayakkabıların çok geniş olduğunu ve ayaklarının kaydığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Perfect fit: Our sandals are great gifts for young girls or ladies of all ages. Please check our chart to find the size that suits you. Very suitable for narrow feet.",
+      "musteri_deneyimi": "Yorum 2, 3, 4, 5, 7: Ayakkabılar çok geniş ve büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp genişliği hakkında bilgi ekleyin; 'Bu ayakkabılar dar ayaklar için uygun olmayabilir, geniş ayaklar için daha iyi bir seçenek arayın.'"
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "High-quality material: The lace-up shoe upper is made of artificial PU material with an adjustable buckle.",
+      "musteri_deneyimi": "Yorum 1, 5, 6: Malzeme kalitesi düşük, ucuz görünüyor ve ayakkabılar renk veriyor.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha net bilgi verin; 'Üst kısım yapay PU malzemeden yapılmıştır, bu nedenle bazı kullanıcılar için estetik olarak hoş olmayabilir.'"
+    }
+  ]
+}

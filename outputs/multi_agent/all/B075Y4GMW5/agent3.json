@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        3
+      ],
+      "sayfa_iddiasi": "Suede sole"
+    }
+  ],
+  "ana_risk": "Sayfada 'Suede sole' iddiası var, ancak müşteriler ürünün kısa sürede bozulduğunu belirtiyorlar.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Suede sole",
+      "musteri_deneyimi": "Yorum 1, 3: Ürün kısa sürede bozuldu.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi verin."
+    }
+  ]
+}

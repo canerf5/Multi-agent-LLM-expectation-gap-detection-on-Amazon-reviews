@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Wool lining",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Hand Wash Only",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "SIZE: Please refer to the Last Picture -\"Size Chart\" before ordering.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "solid color: black/ blue/ red",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Midi-length wool blend coat with very basic and simple design, never out of date, suit for everyone and various occasions",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Elegant and classic style, perfect for daily wear in cold weather, deep fall and winter, easy to match, you can match with sweatshirts or jeans for leisure style, you also can match with skirt or dress for feminine style",
+      "iddia_turu": "genel"
+    }
+  ]
+}

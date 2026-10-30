@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "90% Polyester, 10% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Extremely lightweight, soft, breathable, 4-way stretch, and smooth material keep comfortable wear experience",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Cut in a tapered but not overly slim fit, they have a comfortable elasticated drawstring waist, High ribbed for more comfortable ankles and lighter movement",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Waterproof, durable, breathable and stretch fabric, help you to evaporate the sports sweat in time, make you feel comfortable indoors or outdoors",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "This product fits a little slim, so we recommend sizing up if you are between sizes",
+      "iddia_turu": "somut"
+    }
+  ]
+}

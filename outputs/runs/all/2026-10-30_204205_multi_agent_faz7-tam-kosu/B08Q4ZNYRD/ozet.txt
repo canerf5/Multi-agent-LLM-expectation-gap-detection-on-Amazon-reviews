@@ -1,0 +1,13 @@
+ASIN:         B08Q4ZNYRD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'this item is snug-fitting'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'bu ürün dar oturuyor' iddiası var, ancak müşteriler 5T bedenin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar oturduğunu belirtin; '5T beden küçük geliyor, bir beden büyük almanız önerilir.'
+      sayfa: 'this item is snug-fitting' | müşteri: Yorum 2, 3: 5T beden küçük geliyor.
+  - [Kalite | ekle] Ürün sayfasına dikişlerin kalitesi hakkında bilgi ekleyin; 'Dikişlerin ilk yıkamada açılabileceği konusunda dikkatli olun.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Dikişler ilk yıkamada açıldı.

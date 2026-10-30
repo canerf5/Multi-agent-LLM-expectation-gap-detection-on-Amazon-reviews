@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "90%Nylon, 10%Spendex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Our moisture wicking breathable material will keep you cool and sweat-free",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Livona’s Sports Bra measurements are based on US standard sizing S-XXL.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "This crop tank Cami bra deliver superior support and comfort during intense workouts",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Classic full coverage pullover bra style for enhanced range of motion",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This wireless bra features include Removable Pads, Adjustable Straps, Tagless, Scoop-Neck Plunging bra for Feminine Look",
+      "iddia_turu": "genel"
+    }
+  ]
+}

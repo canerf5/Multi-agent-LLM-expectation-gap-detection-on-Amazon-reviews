@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "65% Viscose, 35% Polyamide"
+    }
+  ],
+  "ana_risk": "Sayfa, kumaşın %65 Viskoz ve %35 Polyamid olduğunu belirtirken, müşteriler kumaşın çok ince ve şeffaf olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "65% Viscose, 35% Polyamide",
+      "musteri_deneyimi": "Yorum 2, 3: Kumaş çok ince ve şeffaf.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Synthetic",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "synthetic sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Specializing in fashionable women's footwear, Report collections pair innovative design with versatility and style.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Report shoes are perfect for girls of any age -- for dressing up or keeping it casual.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Cutting edge Report styles have also been featured in Teen Vogue, Cosmo Girl, Seventeen, Nylon, and Glamour.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün bedeninin küçük olduğunu ve kalitesinin düşük olduğunu belirtmiyor; müşteriler bu sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4: Kalıp beklenenden küçük; büyük alındığında küçük geldi.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp küçük; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2: İlk kullanımda elastik koptu; Yorum 3: Bir gün giydikten sonra nubbies oluştu.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında bilgi ekleyin; elastiklerin dayanıklılığı hakkında uyarı ekleyin."
+    }
+  ]
+}

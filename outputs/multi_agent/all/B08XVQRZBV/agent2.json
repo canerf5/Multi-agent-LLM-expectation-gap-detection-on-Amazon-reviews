@@ -1,0 +1,51 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Sokaklar küçük veya büyük geliyor",
+      "yorum_numaralari": [
+        1,
+        3,
+        7,
+        12,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğrafları yanıltıcı",
+      "yorum_numaralari": [
+        2,
+        9,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi düşük, ince ve dayanıksız",
+      "yorum_numaralari": [
+        6,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kaymaz özellikleri etkisiz, grip sağlamıyor",
+      "yorum_numaralari": [
+        4,
+        8,
+        10,
+        11,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

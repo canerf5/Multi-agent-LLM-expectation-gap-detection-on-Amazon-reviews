@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 12 hem Beden/Kalıp hem Görsel için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08XVQRZBV",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 12 birden fazla ilgili grupta (grup 1 ve 2)"
+  ],
+  "sure_duvar_sn": 19.079,
+  "time": "2026-10-30T18:06:42+00:00"
+}

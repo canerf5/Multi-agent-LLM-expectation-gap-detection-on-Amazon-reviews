@@ -1,0 +1,50 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok dar ve küçük geliyor.",
+      "yorum_numaralari": [
+        1,
+        2,
+        5,
+        6,
+        10,
+        11,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Aşındırıcı malzeme kullanılmış.",
+      "yorum_numaralari": [
+        3,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Tabanlar ayrılıyor veya kalitesi düşük.",
+      "yorum_numaralari": [
+        4,
+        8,
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "İlk günden itibaren sorunlar var.",
+      "yorum_numaralari": [
+        7,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

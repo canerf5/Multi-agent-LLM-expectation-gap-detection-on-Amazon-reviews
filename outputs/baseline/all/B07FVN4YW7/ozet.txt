@@ -1,0 +1,13 @@
+ASIN:         B07FVN4YW7
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 5, 6 | sayfa iddiası: 'Please check carefully with the size chart we provide before you place an order'
+  - Malzeme: yorum 3, 6, 7 | sayfa iddiası: 'Super soft and comfortable to wear, glossy appearance, hand wash'
+ana_risk:     Sayfa, beden ve kalıp konusunda doğru bir uyum vaat ediyor, ancak müşteriler ürünün çok küçük ve uyumsuz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden uyumu hakkında daha net bilgi ver; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notu ekle.
+      sayfa: 'Please check carefully with the size chart we provide before you place an order' | müşteri: Yorum 1, 2, 5, 6: Ürün bedenleri uyumsuz, çok küçük geliyor.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi ver; 'Malzeme kalitesi düşük, dikkatli kullanım önerilir' notu ekle.
+      sayfa: 'Super soft and comfortable to wear, glossy appearance, hand wash' | müşteri: Yorum 3, 6, 7: Malzeme kalitesi kötü, dayanıklı değil.

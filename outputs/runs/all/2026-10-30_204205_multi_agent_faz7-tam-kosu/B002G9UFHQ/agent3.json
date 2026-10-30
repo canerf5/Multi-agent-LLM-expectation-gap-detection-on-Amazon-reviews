@@ -1,0 +1,38 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "This shoe runs 2 sizes smaller than street shoe size"
+    }
+  ],
+  "ana_risk": "Bu ayakkabı 2 beden küçük olduğu iddia ediliyor, ancak birçok müşteri ürünün çok küçük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "This shoe runs 2 sizes smaller than street shoe size",
+      "musteri_deneyimi": "Yorum 1-15: Ürünler çok küçük, beklenenden dar.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün sayfasında beden bilgisi olarak 'Bu ayakkabı sokak ayakkabı numarasından 2 beden küçük' ifadesini koruyun, ancak beden tablosunu daha açıklayıcı hale getirin."
+    }
+  ]
+}

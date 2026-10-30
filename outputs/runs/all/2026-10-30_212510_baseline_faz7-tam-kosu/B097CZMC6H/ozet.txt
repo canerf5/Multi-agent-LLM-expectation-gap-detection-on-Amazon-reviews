@@ -1,0 +1,13 @@
+ASIN:         B097CZMC6H
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 6, 8, 9, 13 | sayfa iddiası: 'Please order one size up if you are taller, stronger, or grows faster.'
+  - Malzeme: yorum 1, 5, 10, 11, 12, 14, 15 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ve malzeme kalitesi ile ilgili iddialar var, ancak müşteriler bu ürünün kalitesiz ve yanlış bedende geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük olduğu ve bir veya iki beden büyük sipariş verilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'Please order one size up if you are taller, stronger, or grows faster.' | müşteri: Yorum 3, 4, 6, 8, 9, 13: Bedenler küçük geliyor.
+  - [Malzeme | ekle] Malzemenin kalitesiz olduğu ve ince bir yapıya sahip olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5, 10, 11, 12, 14, 15: Malzeme kalitesiz ve rahatsız.

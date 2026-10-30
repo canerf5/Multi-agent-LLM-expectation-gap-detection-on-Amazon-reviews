@@ -1,0 +1,28 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar dar geldi ve rahatsız etti.",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Ayakkabılar büyük geldi ve kayıyor.",
+      "yorum_numaralari": [
+        4,
+        5,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

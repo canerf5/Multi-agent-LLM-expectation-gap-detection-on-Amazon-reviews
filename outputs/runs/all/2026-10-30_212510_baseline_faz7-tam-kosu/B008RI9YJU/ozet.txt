@@ -1,0 +1,13 @@
+ASIN:         B008RI9YJU
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 10, 12 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 7, 11, 13, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbı ve dayanıklılığı hakkında bilgi vermiyor; müşteriler ise ürünün küçük geldiğini ve dayanıklılığının yetersiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp küçük; bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 10, 12: Kalıp küçük geliyor.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında daha net bilgi verilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 7, 11, 13, 14: Ürün kısa sürede aşınıyor.

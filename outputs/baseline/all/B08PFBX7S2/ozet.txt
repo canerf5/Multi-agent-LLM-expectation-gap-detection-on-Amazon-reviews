@@ -1,0 +1,19 @@
+ASIN:         B08PFBX7S2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 9, 11, 12, 13 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 10, 14 | sayfa iddiası: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.'
+  - Kalite: yorum 2, 6, 8, 15 | sayfa iddiası: 'Stitching around front pocket on hoodie is horrible.'
+  - Renk: yorum 2, 5 | sayfa iddiası: 'comes in great colors.'
+ana_risk:     Ürün sayfasında belirtilen malzeme, kalite ve renk iddiaları, müşterilerin yaşadığı sorunlarla çelişiyor; birçok müşteri malzemenin beklenenden farklı olduğunu, kalitenin düşük olduğunu ve rengin yanlış gönderildiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden kalıbının büyük olduğu ve bir beden küçük alınması gerektiği bilgisini ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 9, 11, 12, 13: Bedenler büyük geliyor ve yanlış beden gönderiliyor.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi ver; 'Bu ürün 50% polyester ve 50% pamuk karışımından yapılmıştır, bu nedenle bazı kullanıcılar için beklenenden farklı bir his verebilir.' gibi bir not ekle.
+      sayfa: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.' | müşteri: Yorum 3, 10, 14: Malzeme beklenenden farklı, ince ve kalitesiz.
+  - [Kalite | değiştir] Kalite kontrolü hakkında bilgi ekle; 'Ürünlerimiz sıkı kalite kontrol süreçlerinden geçmektedir, ancak herhangi bir sorun yaşarsanız lütfen bizimle iletişime geçin.' gibi bir not ekle.
+      sayfa: 'Stitching around front pocket on hoodie is horrible.' | müşteri: Yorum 2, 6, 8, 15: Kalite düşük, dikişler kötü ve ürün hasarlı geliyor.
+  - [Renk | değiştir] Renklerin görseldeki gibi olmayabileceği konusunda uyarı ekle; 'Renkler görseldeki gibi olmayabilir, lütfen sipariş vermeden önce dikkatlice kontrol edin.' gibi bir not ekle.
+      sayfa: 'comes in great colors.' | müşteri: Yorum 2, 5: Renk beklenenden çok daha koyu ve farklı.

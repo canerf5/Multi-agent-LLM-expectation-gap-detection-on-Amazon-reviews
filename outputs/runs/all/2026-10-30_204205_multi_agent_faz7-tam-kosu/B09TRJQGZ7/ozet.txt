@@ -1,0 +1,16 @@
+ASIN:         B09TRJQGZ7
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 8, 11 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 11, 14 | sayfa iddiası: 'Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.'
+  - Görsel: yorum 7, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada '100% Polyester' iddiası var, ancak müşteriler kumaşın kalitesinin düşük olduğunu belirtiyor; ayrıca beden ölçülerinin beklenenden küçük olduğu ve ürünün fotoğraftaki gibi görünmediği şikayetleri var.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: '100% Polyester' | müşteri: Yorum 8, 11: Kumaşın kalitesi düşük ve ince.
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin küçük geldiği bilgisi eklenmeli.
+      sayfa: 'Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.' | müşteri: Yorum 11, 14: Beden ölçüsü beklenenden küçük.
+  - [Görsel | ekle] Ürünün fotoğraftaki görünümünden farklı olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 7, 12: Ürün fotoğraftaki gibi değil.

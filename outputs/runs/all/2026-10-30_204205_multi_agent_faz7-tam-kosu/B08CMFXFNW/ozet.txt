@@ -1,0 +1,13 @@
+ASIN:         B08CMFXFNW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'elastic waistband with inner drawstring for you adjust the size according to your body'
+  - Dayanıklılık: yorum 4, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, pantolonların yıkandıktan sonra kısaldığını belirtmiyor; ayrıca ürünün dayanıklılığı hakkında bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Yıkama sonrası kısalma olabileceği bilgisi eklenecek.
+      sayfa: 'elastic waistband with inner drawstring for you adjust the size according to your body' | müşteri: Yorum 2, 5: Pantolonlar yıkandıktan sonra kısaldı
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi eklenecek.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 6, 7: Ürün kısa sürede yıpranıyor ve dikişleri açılıyor

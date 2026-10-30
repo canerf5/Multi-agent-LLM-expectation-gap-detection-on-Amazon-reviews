@@ -1,0 +1,13 @@
+ASIN:         B06XGB784C
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 6, 13 | sayfa iddiası: 'Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel'
+  - Dayanıklılık: yorum 2, 3, 7, 8, 14, 15 | sayfa iddiası: 'Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use'
+ana_risk:     Kumaş kalitesi iddiası var, ancak müşteriler kumaşın her yıkamada parçalandığını ve ürünün yıkamadan sonra inceleşip yırtıldığını bildiriyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Her yıkamada parçalanma riski vardır' uyarısını ekle.
+      sayfa: 'Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel' | müşteri: Yorum 6, 13: Kumaş kalitesi kötü, her yıkamada parçalanıyor.
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha net bilgi ver; 'Ürün yıkama sonrası inceleşebilir' uyarısını ekle.
+      sayfa: 'Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use' | müşteri: Yorum 2, 3, 7, 8, 14, 15: Robe, yıkamadan sonra inceleşti ve yırtıldı.

@@ -1,0 +1,13 @@
+ASIN:         B094DXKG7Q
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 5 | sayfa iddiası: 'HYPER-COMFY A knee-high cut ensures that these Pride flag socks are comfortable enough to wear all day long!'
+  - Malzeme: yorum 2, 3, 5 | sayfa iddiası: 'Comfortblend fabric is soft and breathable.'
+ana_risk:     Kalite ve malzeme ile ilgili iddialar var, ancak müşteriler ürünün kalitesiz olduğunu ve deliklerle geldiğini belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrolü hakkında bilgi ekleyin ve ürünün dayanıklılığına dair daha net bir ifade yazın.
+      sayfa: 'HYPER-COMFY A knee-high cut ensures that these Pride flag socks are comfortable enough to wear all day long!' | müşteri: Yorum 1, 2, 5: Ürün deliklerle geldi ve kalitesi beklenenden düşük.
+  - [Malzeme | değiştir] Kullanılan malzemenin kalitesi hakkında daha fazla bilgi verin ve dayanıklılığı artırmak için öneriler ekleyin.
+      sayfa: 'Comfortblend fabric is soft and breathable.' | müşteri: Yorum 2, 3, 5: Malzeme ince ve kalitesiz, beklenenden daha kötü.

@@ -1,0 +1,85 @@
+{
+  "tag": "agent2:B00SYPOTY6",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3105,
+    "output_tokens": 282,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00063495,
+  "sure_sn": 3.717,
+  "created": "2026-10-30T17:55:59+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] After reading it ran small I ordered a size larger ... — After reading it ran small I ordered a size larger than normal and it was still too tight to wear\n\n2) [2★] Levi quality went in the toilet — Levi quality went in the toilet. This is not the Levi’s denim that I’m used to buying even 15 years ago cheap fabric I ordered an extra large while it fits in the shoulders the rest of it could be a medium wasted my money\n\n3) [1★] One Star — Nice shirt if your a string bean.\n\n4) [2★] Must be for skinny guys — I am 5'10\", 200#, 36 waist. I normally wear a large but bought the X-large after reading the reviews. It was so tight in the chest that I couldn't comfortably button it. The sleeves were border-line to long. I really liked the shirt, I wish it fit.\n\n5) [1★] I received the shirt on time but I noticed the ... — I received the shirt on time but I noticed the shirt had an awful smell. I read the tag that said please wash before wearing and I washed it twice but unfortunately it still has a faint smell of a burnt smell. I donated the shirt ,my loss.\n\n6) [1★] I have been buying Levi clothes for 50 years and am very disappointed in the quality of these shirts — I recently bought 3 of the black style, and after only a couple washings the fabric at the corners of all the pockets has ripped, and I mean on all three shirts. The fabric where the sleeve openings are has torn or worn as well. It's almost as if the fabric is rotten. I patched all three so maybe that will stop the spread of the holes. I have been buying Levi clothes for 50 years and am very disappointed in the quality of these shirts. I do love the cut and fit. The slimmer fit is old style and fits my slender shape well. I also have several older blue ones that are fine.\n\n7) [2★] Nice quality, slim fit, but a button was damaged upon arrival. — I'm 5'10\", about 170 lbs, slightly broad shoulders, ordered in medium and it fits perfectly. I like the length of the shirt, for me it's a slim fit... \"tight but not too tight\". Did have to request an exchange because just as it has happened with other clothing items I've ordered from Amazon, the shirt arrived defective, this time a button was damaged, that's why I'm taking out 2 stars out the 4 I would have originally given to this item. *Update - Got the replacement shirt, same thing, damaged buttons. I'm keeping it and will have the buttons fixed, sucks that I have to go thru this on a brand new unworn shirt, but I'm saving about 50% by purchasing it thru Amazon than Levi's official website. Most of the clothes I order thru Amazon always arrives damaged or begins falling apart after wearing it once.\n\n8) [2★] Two Stars — Don't buy this. It uses snaps rather than buttons. They are a real pain especially the sleeves\n\n9) [2★] Two Stars — Nice shirt but it was sized wrong. Label marked xxl. But it was a large.\n\n10) [1★] Size up twice if you can. If not move on. — I'm not fat. But an XXL was to tight around my chest and stomach. Columbia, Ariat, Polo, LL Bean an XL fits great with room to spare. All levi's shirts I've tried have fit this way.\n\n11) [1★] I have had very limited success with any clothing ordered ... — I have had very limited success with any clothing ordered that says it is imported. I don't know why but they must not be using USA measurements for sizing.\n\n12) [1★] who said he liked the snug fit — I normally wear a large but I ordered an extra large so I had room for movement while working. This thing arrived labeled XL. Maybe for a Munchkin. I gave it to my son, a medium, who said he liked the snug fit. I don't see how they can blow it so badly.\n\n13) [2★] Love Levi, but not this shirt!! — I am a Levi fan, but they dont make a XXL that fits me. I am '6 foot, 215lbs. and I could barely get this shirt on. Too small in the shoulders and not long enough in the sleeves. I bought a Wrangles XXLT and it fits great!!\n\n14) [1★] This is not Levi quality!! — This is way small ordered xl and tag says xl .. no way fits like a s/m\n\n15) [2★] fitted for slender men; an extra large is typically ... — fitted for slender men; an extra large is typically very loose fitting on me but this was too tight across the shoulders and chest and nearly as tight in the biceps and forearm. Mis-sized? not taking the chance.....",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Ürün küçük geldi, bir beden büyük almak gerekti.",
+        "yorum_numaralari": [
+          1,
+          2,
+          4,
+          10,
+          12,
+          13,
+          14,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Kumaş kalitesi kötü, yıkandıkça yıpranıyor.",
+        "yorum_numaralari": [
+          2,
+          6,
+          7,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş kötü, yanık kokusu var.",
+        "yorum_numaralari": [
+          5
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün fotoğraftaki gibi değil, düğmeler hasarlı geldi.",
+        "yorum_numaralari": [
+          7
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Ürün hakkında yeterli bilgi yok.",
+        "yorum_numaralari": [
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Renk",
+        "ozet": "Renk beklenenden farklı.",
+        "yorum_numaralari": [
+          8
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

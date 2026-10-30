@@ -1,0 +1,19 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Kalitesi çok kötü, hemen parçalanmaya başladı'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Kalitesi çok kötü, hemen parçalanmaya başladı'"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B005FPCOT0",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 3,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 2)"
+  ],
+  "sure_duvar_sn": 10.699,
+  "time": "2026-10-30T18:13:57+00:00"
+}

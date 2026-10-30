@@ -1,0 +1,16 @@
+ASIN:         B07NY2QQM6
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 4 | sayfa iddiası: 'constructed from durable textile and synthetic overlays to give you a dependable work shoe'
+  - Malzeme: yorum 7, 1 | sayfa iddiası: '100% Leather and Synthetic'
+  - Beden/Kalıp: yorum 5, 6 | sayfa iddiası: 'memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step'
+ana_risk:     Dayanıklılık iddiası var, ancak ürün kısa sürede bozuluyor; malzeme kalitesi düşük ve ayakkabılar dar geliyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha fazla bilgi ekleyin; ürünün dayanıklılığı hakkında net bilgi verin.
+      sayfa: 'constructed from durable textile and synthetic overlays to give you a dependable work shoe' | müşteri: Yorum 2, 4: Ürün kısa sürede bozuluyor, yapıştırıcıları açılıyor.
+  - [Malzeme | değiştir] Kullanılan malzeme kalitesi hakkında daha net bilgi verin; memory foam özelliğinin etkisini açıklayın.
+      sayfa: '100% Leather and Synthetic' | müşteri: Yorum 7, 1: Kullanılan malzeme kalitesiz, ince ve dar; memory foam hissedilmiyor, ayakları acıtıyor.
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında daha net bilgi verin; rahatlık için öneriler ekleyin.
+      sayfa: 'memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step' | müşteri: Yorum 5, 6: Ayakkabılar dar, rahat değil.

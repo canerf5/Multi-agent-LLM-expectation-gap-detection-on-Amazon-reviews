@@ -1,0 +1,13 @@
+ASIN:         B085NSYH4Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 7, 9, 12 | sayfa iddiası: 'Runs Small!!! Please order one size up if you want a more comfortable style.'
+  - Malzeme: yorum 2, 5, 10, 13, 14 | sayfa iddiası: 'They are breathable, comfortable and no itchy.'
+ana_risk:     Sayfa, 'küçük kalıyor' ve 'rahatsız etmiyor' iddialarında bulunuyor; ancak müşteriler bu elbisenin çok dar ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Küçük kalıp uyarısını daha belirgin hale getirerek, 'Bir beden büyük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'Runs Small!!! Please order one size up if you want a more comfortable style.' | müşteri: Yorum 3, 4, 7, 9, 12: Çok küçük geliyor ve dar kalıp var.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve şeffaf, dikkatli giyinilmesi önerilir' notunu ekleyin.
+      sayfa: 'They are breathable, comfortable and no itchy.' | müşteri: Yorum 2, 5, 10, 13, 14: Kumaş çok ince ve kalitesiz.

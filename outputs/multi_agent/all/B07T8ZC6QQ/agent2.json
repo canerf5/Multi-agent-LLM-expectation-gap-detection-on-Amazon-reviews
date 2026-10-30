@@ -1,0 +1,26 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük ve dar geliyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "İlk kullanımda bozuldu",
+      "yorum_numaralari": [
+        3,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

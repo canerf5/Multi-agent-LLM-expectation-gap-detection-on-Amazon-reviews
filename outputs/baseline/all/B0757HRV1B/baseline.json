@@ -1,0 +1,62 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Dayanıklılık",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "sayfa_iddiasi": "durable men's work pant featuring two cargo pockets with flap closures and articulated double knees for quick mobility"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "articulated double knees offer quick mobility, the way all pants should."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        8
+      ],
+      "sayfa_iddiasi": "reinforced knees"
+    }
+  ],
+  "ana_risk": "Sayfa, 'dayanıklı' ve 'güçlendirilmiş dizlere sahip' pantolon vaat ediyor, ancak müşteriler kalitesiz dikişler ve dayanıklılık sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "durable men's work pant featuring two cargo pockets with flap closures and articulated double knees for quick mobility",
+      "musteri_deneyimi": "Yorum 1, 3, 4, 7: Dikişler zayıf, ana düğme kopuyor.",
+      "islem": "değiştir",
+      "duzeltme": "Dikiş kalitesi hakkında daha net bilgi ver."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "articulated double knees offer quick mobility, the way all pants should.",
+      "musteri_deneyimi": "Yorum 1, 5, 6: Pantolonlar kısa sürede yırtılıyor, dayanıklılık sorunları var.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık hakkında daha net bilgi ver."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "reinforced knees",
+      "musteri_deneyimi": "Yorum 2, 8: Pantolonlar tek kat kumaştan yapılmış, güçlendirilmiş diz yok.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş yapısı hakkında daha net bilgi ver."
+    }
+  ]
+}

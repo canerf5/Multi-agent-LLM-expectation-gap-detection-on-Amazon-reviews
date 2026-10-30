@@ -1,0 +1,10 @@
+ASIN:         B00SRSLRXG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 7 | sayfa iddiası: 'L (US 14)'
+ana_risk:     Sayfada L (US 14) bedeni iddia ediliyor, ancak müşteriler bedenin dar ve küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar olduğu bilgisi eklenmeli; 'Dar kalıp, bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'L (US 14)' | müşteri: Yorum 3, 5, 7: Beden tam oturmuyor, çok dar geldi; beden tam değil, küçük geldi.

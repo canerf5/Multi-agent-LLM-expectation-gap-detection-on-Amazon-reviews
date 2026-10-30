@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "95% Modal, 5% Elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "super soft and skin friendly",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight and breathable, moisture wicking for all day fresh and cool",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "elastic waistband with inner drawstring for you adjust the size according to your body",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Two pockets design on both sides for storage, can keep your keys and change",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "perfect for your families or friend as the birthday gift, Mother’s Day gift, Valentine’s Day gift or anniversary gift",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "perfect for casual wear, sleep wear, even exercising, gardening, jogging around the house, provides you a more relaxed leisure time",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "US size form XS to 2XL",
+      "iddia_turu": "somut"
+    }
+  ]
+}

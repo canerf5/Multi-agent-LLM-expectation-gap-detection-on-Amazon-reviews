@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 8 hem Malzeme hem Kalite için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B012DCTQ8O",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 8 birden fazla ilgili grupta (grup 3 ve 4)"
+  ],
+  "sure_duvar_sn": 21.613,
+  "time": "2026-10-30T18:07:31+00:00"
+}

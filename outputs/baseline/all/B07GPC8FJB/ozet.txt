@@ -1,0 +1,13 @@
+ASIN:         B07GPC8FJB
+gap_var:      Evet
+gap_tipleri:  Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kalitesi ile ilgili ciddi sorunlar var; sayfada kalite kontrolü hakkında bilgi yok, ancak müşteriler defolu kumaş ve bozuk fermuar gibi sorunlar yaşıyor.
+öneriler:
+  - [Kalite | ekle] Ürün sayfasına kalite kontrolü hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 4: Ürün kalitesi düşük, defolu kumaş ve bozuk fermuar sorunları var.
+  - [Dayanıklılık | ekle] Ürün sayfasına dayanıklılık hakkında bilgi ekleyin; 'Ürün yıkama sonrası pilling yapabilir ve fermuarlar zamanla bozulabilir.' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün yıkama sonrası pilling yapıyor ve fermuarlar kısa sürede bozuluyor.

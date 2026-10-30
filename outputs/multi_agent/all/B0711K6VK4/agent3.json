@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Görsel"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler ürünün küçük geldiğini ve fotoğraftaki gibi olmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Ürün küçük geliyor",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbının küçük olduğu bilgisini ekleyin; 'Bir beden büyük almanız önerilir'."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün fotoğraftaki gibi değil, ince bir hoodie",
+      "islem": "ekle",
+      "duzeltme": "Ürün görselinin gerçek görünümünü yansıtması için daha net fotoğraflar ekleyin."
+    }
+  ]
+}

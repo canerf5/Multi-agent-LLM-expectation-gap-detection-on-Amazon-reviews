@@ -1,0 +1,13 @@
+ASIN:         B09476T6C1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5, 8 | sayfa iddiası: 'For safety, cotton pajamas should always fit snugly'
+  - Malzeme: yorum 4, 6 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfa, pamuklu pijamaların sıkı oturması gerektiğini iddia ediyor; ancak müşteriler bedenlerin çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'For safety, cotton pajamas should always fit snugly' | müşteri: Yorum 1, 5, 8: Bedenler çok küçük geliyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve hafif, yaz ayları için idealdir.'
+      sayfa: '100% Cotton' | müşteri: Yorum 4, 6: Kumaş kalitesi düşük, ince ve ucuz.

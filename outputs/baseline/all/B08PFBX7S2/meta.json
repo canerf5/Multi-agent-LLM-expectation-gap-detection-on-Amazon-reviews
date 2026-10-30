@@ -1,0 +1,26 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Runs large — Runs very large.'",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Stitching around front pocket on hoodie is horrible.'",
+    "tek konu kuralı: yorum 2 hem Kalite hem Renk için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Runs large — Runs very large.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Stitching around front pocket on hoodie is horrible.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Stitching around front pocket on hoodie is horrible.'",
+    "tek konu kuralı: yorum 2 hem Kalite hem Renk için sayılmış",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Made of a 10.5-ounce, 50% cotton/50% polyester blend.'",
+    "öneri 3: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Stitching around front pocket on hoodie is horrible.'"
+  ],
+  "parent_asin": "B08PFBX7S2",
+  "split": "gold",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 15.95,
+  "time": "2026-10-30T18:28:13+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "65%Cotton，35%Rayon",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "It features classic shirt collar, two front pockets at chest and full-length button down closure.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Casual button dowm shirt for women.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Cuffed sleeve with roll taps, can be rolled up as a 3/4 sleeve or long sleeve shirt to adjust different weather.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft and breathable material, provides you a comfortable feminine touch and comfortable feeling.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-30T18:53:04+00:00",
+  "altin_standart": {
+    "dosya_sha256": "76dd9c6fbc3b8d68e9b8fa44024d5f423e7bd88260c52a3606bebe90122cf809",
+    "urun": 40,
+    "surum_etiketi": "v0.1-data"
+  },
+  "kosular": {
+    "multi_agent": {
+      "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+      "split": "all",
+      "model": "gpt-4o-mini-2024-07-18",
+      "git_commit": "3536efa259bacfca72faabed0b6b1f540db62036",
+      "prompt_hash": "7e81fcc7f726d3f5c9b10e8b9f80ed46609216fbe291e8608a2f32aa465520da"
+    },
+    "baseline": {
+      "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+      "split": "all",
+      "model": "gpt-4o-mini-2024-07-18",
+      "git_commit": "3536efa259bacfca72faabed0b6b1f540db62036",
+      "prompt_hash": "afcd0444d25e31961f2cf9bffad164bd2983b49e01e99a8334c853f01a18e7ff"
+    }
+  },
+  "bootstrap": {
+    "tekrar": 1000,
+    "tohum": 42,
+    "yontem": "eşleştirilmiş, ürünler yerine koyarak; %95 yüzdelik güven aralığı; fark = multi_agent - baseline"
+  },
+  "tanimsiz_sinif_kurali": "TP + FP + FN = 0 olan sınıf o örneklemde macro ortalamaya katılmaz",
+  "uyarilar": []
+}

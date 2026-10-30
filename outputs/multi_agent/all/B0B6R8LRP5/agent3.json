@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        4,
+        2
+      ],
+      "sayfa_iddiasi": "Not too short, not too long, just right around the waistband."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        9
+      ],
+      "sayfa_iddiasi": "Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day."
+    }
+  ],
+  "ana_risk": "Sayfa, kalıbın doğru oturduğunu iddia ediyor, ancak müşteriler kısa ve kötü oturan bir kalıp ile karşılaştıklarını belirtiyorlar; kumaşın ne olduğu belirtilmemişken, sayfada yumuşak ve sıcak bir malzeme olduğu iddia ediliyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Not too short, not too long, just right around the waistband.",
+      "musteri_deneyimi": "Kısa ve kötü oturan bir kalıp; Ürün beklenenden farklı oturuyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp hakkında daha net bilgi ver; 'Kısa ve kötü oturan bir kalıp' ifadesini kaldır."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.",
+      "musteri_deneyimi": "Kumaşın ne olduğu belirtilmemiş, pamuk değil.",
+      "islem": "ekle",
+      "duzeltme": "Kumaşın içeriği hakkında bilgi ekle; 'Kumaşın içeriği pamuk değil, detaylı bilgi verilecek'."
+    }
+  ]
+}

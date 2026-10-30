@@ -1,0 +1,2467 @@
+ASIN:         B09G4SCGS2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 6 | sayfa iddiası: "XXL fits men's shoe sizes 15-18"
+ana_risk:     Sayfa, XXL bedenin 15-18 numara ayakkabılara uyduğunu iddia ediyor, ancak müşteriler soketlerin beklenenden küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden bilgisi olarak 'XXL, 15-18 numara ayakkabılar için uygundur' ifadesini 'XXL, 15-18 numara ayakkabılar için uygundur; ancak soketler küçük gelebilir, bir beden büyük almanız önerilir' şeklinde değiştirin.
+      sayfa: "XXL fits men's shoe sizes 15-18" | müşteri: Yorum 1, 2, 4, 5, 6: Soketler beklenenden küçük geldi
+
+ASIN:         B018MT3BW4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünlerin belirtilen bedenden daha küçük olduğunu belirten şikayetlerle çelişiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürünlerin bedeni hakkında 'Bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5: Ürünler belirtilen bedenden daha küçük.
+
+ASIN:         B079HS5K4Z
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 4, 5, 8 | sayfa iddiası: '60% polyester,40% spandex.'
+ana_risk:     Malzeme iddiası var ama ürün kalitesi ve dayanıklılığı ile ilgili şikayetler mevcut.
+öneriler:
+  - [Dayanıklılık | ekle] Ürün dayanıklılığı hakkında bilgi ekleyin; dikişlerin kalitesi hakkında bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 6, 7: Dikişler yırtıldı veya ürün parçalandı.
+  - [Kalite | değiştir] Malzeme kalitesi ve dikişlerin dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: '60% polyester,40% spandex.' | müşteri: Yorum 2, 4, 5, 8: Ürün kalitesi bekleneni karşılamıyor; dikişler ve malzeme sorunlu.
+
+ASIN:         B07DH9K932
+gap_var:      Evet
+gap_tipleri:  Renk
+seviye:       Orta
+gerekçeler:
+  - Renk: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, renk solukluğu hakkında bilgi vermiyor; müşteriler renklerin soluk olduğunu belirtiyor.
+öneriler:
+  - [Renk | ekle] Renklerin soluk olabileceği bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Renk soluk
+
+ASIN:         B08F1788ZY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 7, 8, 9, 11, 12, 15 | sayfa iddiası: '70D plus size tights stightens slightly from tummy to thigh'
+  - Görsel: yorum 6, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden/Kalıp iddiası var, ancak birçok yorum ürünün çok küçük ve dar geldiğini belirtiyor; ürün fotoğrafları yanıltıcı olduğu belirtiliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha geniş olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: '70D plus size tights stightens slightly from tummy to thigh' | müşteri: Yorum 1, 2, 7, 8, 9, 11, 12, 15: Çok küçük ve dar geliyor
+  - [Görsel | ekle] Ürün fotoğraflarının gerçek ürünü yansıtması gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 14: Ürün fotoğrafları yanıltıcı
+
+ASIN:         B06XRTKNRR
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B073WL5662
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4 | sayfa iddiası: 'Long Fleece with Rib Trimming'
+  - Dayanıklılık: yorum 1, 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'Long Fleece with Rib Trimming' iddiasında bulunuyor ancak müşteriler ürünün fleece değil, ince pamuklu olduğunu belirtiyor; ayrıca ürün hemen yırtılıyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün açıklamasında 'ince pamuklu' ifadesini ekleyin.
+      sayfa: 'Long Fleece with Rib Trimming' | müşteri: Yorum 2, 4: Ürün fleece değil, ince pamuklu.
+  - [Dayanıklılık | ekle] Ürün açıklamasına 'Ürün dayanıklılığı hakkında bilgi verin; yırtılma riski olabilir.' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 5: Ürün hemen yırtıldı.
+
+ASIN:         B08VSG8YY2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'BIG AND TALL SIZING: You should order Tall if you are 6\'2" or taller. You should order Big if you are 6\'1" or shorter'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler ürünün çok büyük geldiğini ve bir beden küçük alınması gerektiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden önerisini gözden geçirerek, 'Bir beden küçük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'BIG AND TALL SIZING: You should order Tall if you are 6\'2" or taller. You should order Big if you are 6\'1" or shorter' | müşteri: Yorum 1, 3: Ürün çok büyük geliyor, bir beden küçük alınmalı.
+
+ASIN:         B075XJL5ZW
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 5, 3, 7, 8 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch'
+ana_risk:     Sayfa, beden kalıbı ile ilgili ölçü bilgisi verirken, kullanıcılar boyun kısmının rahatsız edici olduğunu belirtiyor; ayrıca kalite ile ilgili sorunlar da yaşanıyor.
+öneriler:
+  - [Kalite | ekle] Ürün açıklamasına 'Ürün yeni ve lekesizdir' ifadesi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Ürün lekeli ve kullanılmış geldi.
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında 'Boyun kısmı rahat bir oturuş sağlar' ifadesi eklenmeli.
+      sayfa: 'Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch' | müşteri: Yorum 1, 4: Boyun kısmı rahatsız ediyor.
+
+ASIN:         B07WW4QSC1
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada ürün kalitesi hakkında bilgi yok, ancak müşteriler ürünün kalitesinin beklenenden düşük olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin; 'Ürün kimyasal bir kokuya sahip olabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün kalitesi beklenenden düşük.
+
+ASIN:         B01L0KQ1FG
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4 | sayfa iddiası: '100% Cotton'
+  - Beden/Kalıp: yorum 2, 3, 9, 10, 11, 12, 14, 15 | sayfa iddiası: 'Relaxed fit'
+  - Renk: yorum 8, 13 | sayfa iddiası: 'Tan back neck lining'
+ana_risk:     Sayfada '100% Cotton' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu ve kağıt gibi hissettirdiğini belirtiyor; ayrıca 'Relaxed fit' iddiası var ama bedenlerin beklenenden küçük olduğu şikayet ediliyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'kalite düşük, kağıt gibi hissediyor' notunu ekle.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 4: Kumaş kalitesi kötü, kağıt gibi hissediliyor.
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelle ve 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'Relaxed fit' | müşteri: Yorum 2, 3, 9, 10, 11, 12, 14, 15: Bedenler beklenenden küçük, normalde giyilen bedenden daha küçük.
+  - [Renk | değiştir] Renk açıklamasını güncelle ve 'Renk, fotoğraftakinden daha koyu olabilir' uyarısını ekle.
+      sayfa: 'Tan back neck lining' | müşteri: Yorum 8, 13: Renk beklenenden daha koyu.
+
+ASIN:         B07V2PCH4X
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesi hakkında bilgi vermiyor; müşteriler ise ürünün bedeninin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün bedeninin küçük geldiğine dair bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün numarası küçük geliyor.
+
+ASIN:         B0941L97DC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: "LifeStride's selection of sizes and widths ensures you'll find the perfect fit."
+ana_risk:     Sayfada 'mükemmel uyum' iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Bedeninizden bir beden büyük almanız önerilir.' ifadesi eklenecek.
+      sayfa: "LifeStride's selection of sizes and widths ensures you'll find the perfect fit." | müşteri: Yorum 1, 2: Çok küçük geldi.
+
+ASIN:         B00307HTUY
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 3, 4, 7 | sayfa iddiası: '100% Leather'
+  - Dayanıklılık: yorum 5, 6 | sayfa iddiası: 'Non-slip outsole'
+ana_risk:     Sayfada '100% Leather' ve 'Non-slip outsole' iddiaları var, ancak müşteriler kumaş kalitesinin kötü olduğunu ve ürünün kısa sürede bozulduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin yüksek olduğu bilgisi eklenmeli.
+      sayfa: '100% Leather' | müşteri: Yorum 3, 4, 7: Kumaş kalitesi kötü, deri çatladı.
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha fazla bilgi verilmeli.
+      sayfa: 'Non-slip outsole' | müşteri: Yorum 5, 6: Ürün kısa sürede bozuldu.
+
+ASIN:         B0C6HHMSTS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'adjustable strap with buckle'
+ana_risk:     Sayfa, ayakkabının ayarlanabilir kayışla birlikte geldiğini iddia ediyor; ancak müşteriler ayakkabının dar ve rahatsız olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Ayakkabı dar kalıp; bir beden büyük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'adjustable strap with buckle' | müşteri: Yorum 1, 2, 3: Ayakkabı çok dar geliyor, numarası küçük, rahatsız ediyor.
+
+ASIN:         B09476T6C1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5, 8 | sayfa iddiası: 'For safety, cotton pajamas should always fit snugly'
+  - Malzeme: yorum 4, 6 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfa, pamuklu pijamaların sıkı oturması gerektiğini iddia ediyor; ancak müşteriler bedenlerin çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'For safety, cotton pajamas should always fit snugly' | müşteri: Yorum 1, 5, 8: Bedenler çok küçük geliyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve hafif, yaz ayları için idealdir.'
+      sayfa: '100% Cotton' | müşteri: Yorum 4, 6: Kumaş kalitesi düşük, ince ve ucuz.
+
+ASIN:         B0936XDNJ4
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 4, 10, 11, 15 | sayfa iddiası: 'we will be responsible for the end'
+  - Beden/Kalıp: yorum 2, 3, 5, 12, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 6, 7, 8, 13 | sayfa iddiası: '60% Nylon, 35% Polyester, 5% Spandex'
+ana_risk:     Ürün sayfasında kumaşın %60 Naylon, %35 Polyester ve %5 Spandeks olduğu belirtiliyor, ancak müşteriler kumaşın şeffaf olduğunu ve kalitenin düşük olduğunu bildiriyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrolü yapıldığına dair bilgi ekleyin.
+      sayfa: 'we will be responsible for the end' | müşteri: Yorum 1, 4, 10, 11, 15: Ürün kalitesi düşük, dikişler yırtılıyor.
+  - [Beden/Kalıp | ekle] Beden tablosu ekleyin ve bedenlerin küçük geldiğine dair uyarı yapın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 5, 12, 14: Bedenler küçük geliyor, yanlış beden gönderilmiş.
+  - [Malzeme | değiştir] Kumaşın şeffaf olabileceğine dair uyarı ekleyin.
+      sayfa: '60% Nylon, 35% Polyester, 5% Spandex' | müşteri: Yorum 6, 7, 8, 13: Kumaş şeffaf, görünümde sorun var.
+
+ASIN:         B09LCGFPDM
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 3, 4, 5 | sayfa iddiası: 'Ultra lightweight, soft, ultra flexible, durable EVA material'
+ana_risk:     Sayfada malzeme kalitesi ile ilgili somut iddialar var, ancak kullanıcılar dikiş ve yapışkanlarla ilgili sorunlar yaşıyor.
+öneriler:
+  - [Kalite | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; dikişlerin sağlamlığı ve yapışkanların kalitesi hakkında bilgi ekleyin.
+      sayfa: 'Ultra lightweight, soft, ultra flexible, durable EVA material' | müşteri: Yorum 1, 3, 4, 5: Kalite sorunları; dikişler, yapışkanlar çalışmıyor.
+
+ASIN:         B07XYM7M4P
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2 | sayfa iddiası: 'Fabric: Polyester& Cotton/ Machine Washable'
+ana_risk:     Sayfa, polyester ve pamuk karışımı kumaşın kalitesiz olduğunu iddia ediyor; ancak müşteriler dış malzemenin kalitesiz ve sert olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | ekle] Kumaş kalitesi hakkında daha net bilgi ver; 'Dış malzeme kalitesiz ve sert' ifadesini ekle.
+      sayfa: 'Fabric: Polyester& Cotton/ Machine Washable' | müşteri: Yorum 2: Dış malzeme kalitesiz, sert gibi.
+
+ASIN:         B01AGP7RN6
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 3 | sayfa iddiası: 'Waterproof'
+ana_risk:     Sayfada 'Waterproof' iddiası var, ancak ürün kısa sürede bozuluyor; bu durum dayanıklılık konusunda ciddi bir uyumsuzluk yaratıyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Kısa sürede bozulma riski vardır' uyarısını ekleyin.
+      sayfa: 'Waterproof' | müşteri: Yorum 1, 2, 3: Ürün kısa sürede bozuluyor.
+
+ASIN:         B08PFBX7S2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 9 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 6 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '50% Polyester, 50% Cotton'
+ana_risk:     Sayfada kumaş kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın sert ve kaşındırıcı olduğunu belirtiyor; ayrıca dikişlerin kötü olduğunu ve ürünün hemen bozulduğunu söylüyorlar.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının büyük olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 9: Çok büyük geldi
+  - [Kalite | ekle] Ürünün kalitesinin düşük olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 6: Dikişler kötü, ürün hemen bozuldu
+  - [Malzeme | değiştir] Kumaşın kalitesinin düşük olduğu ve sert olduğu bilgisini düzeltin.
+      sayfa: '50% Polyester, 50% Cotton' | müşteri: Yorum 3, 4: Kumaş kalitesi düşük, sert ve kaşındırıyor
+
+ASIN:         B094DXKG7Q
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 3, 5 | sayfa iddiası: '60% Nylon, 30% Cotton, 10% Spandex'
+ana_risk:     Sayfa, ürünün malzeme içeriği olarak %60 Naylon, %30 Pamuk ve %10 Spandeks olduğunu belirtirken, müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş ince ve kalitesiz' ifadesini ekle.
+      sayfa: '60% Nylon, 30% Cotton, 10% Spandex' | müşteri: Yorum 3, 5: Kumaş ince ve kalitesiz.
+
+ASIN:         B0C5XCVFHW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 9 | sayfa iddiası: 'CUSTOM FIT: Tommy Hilfiger’s modern button down is cut slightly slimmer in the chest and shoulder with a slightly shorter length, so it’s easy to go untucked.'
+  - Malzeme: yorum 4, 5, 10 | sayfa iddiası: '100% Cotton'
+  - Kalite: yorum 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında 'CUSTOM FIT' iddiası var, ancak müşteriler omuzların çok dar olduğunu ve hareket kısıtladığını belirtiyor; ayrıca '100% Cotton' iddiası var ama kumaşın ince ve kalitesiz olduğu şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında kalıp ve beden bilgilerini daha net belirtin; 'Omuzlar dar, hareket kısıtlayabilir' uyarısını ekleyin.
+      sayfa: 'CUSTOM FIT: Tommy Hilfiger’s modern button down is cut slightly slimmer in the chest and shoulder with a slightly shorter length, so it’s easy to go untucked.' | müşteri: Yorum 1, 3, 9: Omuzlar çok dar, hareket kısıtlıyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha fazla bilgi verin; 'Kumaş ince, dikkatli yıkanmalıdır' notunu ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 4, 5, 10: Kumaş çok ince ve kalitesiz.
+  - [Kalite | ekle] Ürün sayfasına 'Ürün hasarlı gelirse lütfen iletişime geçin' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 7: Ürün hasarlı geldi.
+
+ASIN:         B08PSLXLPC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 12, 5, 11, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 3, 7, 10, 15 | sayfa iddiası: 'made of genuine luxury split leather upper with classic fine stitching.'
+ana_risk:     Sayfada malzeme kalitesi ile ilgili somut bir iddia var, ancak müşteriler ayakkabıların ucuz olduğunu ve destek sunmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasında bedenlerin küçük olduğu ve bir beden büyük sipariş verilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 12, 5, 11, 14: Ayakkabılar belirtilen bedenden çok küçük, bir ayakkabı diğerinden büyük, bedenler küçük, bir beden büyük sipariş verilmeli, ayakkabılar kısa ve geniş.
+  - [Malzeme | değiştir] Sayfada malzeme kalitesinin yüksek olduğu vurgusu gözden geçirilmeli ve destekleyici malzeme bilgisi eklenmeli.
+      sayfa: 'made of genuine luxury split leather upper with classic fine stitching.' | müşteri: Yorum 2, 3, 7, 10, 15: Ayakkabılar çok ucuz ve destek yok.
+
+ASIN:         B08FDKYSV9
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B09WDM6TDV
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B08GLYQ7G8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 11, 12 | sayfa iddiası: 'SIZE: Please refer to the Last Picture -"Size Chart" before ordering.'
+  - Malzeme: yorum 3, 9, 10 | sayfa iddiası: 'Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester'
+  - Görsel: yorum 2, 6, 14 | sayfa iddiası: 'solid color: black/ blue/ red'
+ana_risk:     Sayfada kumaş kalitesi ile ilgili somut bir iddia var, ancak müşteriler kumaş kalitesinin çok düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha doğru bir şekilde belirtildiği bir ifade ekleyin; 'Beden kalıbı normalden küçük, bir beden büyük almanız önerilir'.
+      sayfa: 'SIZE: Please refer to the Last Picture -"Size Chart" before ordering.' | müşteri: Yorum 5, 11, 12: Çok küçük geldi.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, dayanıklı ve uzun ömürlüdür'.
+      sayfa: 'Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester' | müşteri: Yorum 3, 9, 10: Kumaş kalitesi çok düşük.
+  - [Görsel | değiştir] Ürün görsellerinin gerçek ürünü yansıttığını belirtin; 'Ürün görselleri gerçek ürünü yansıtmaktadır, renk ve doku farklılıkları olabilir'.
+      sayfa: 'solid color: black/ blue/ red' | müşteri: Yorum 2, 6, 14: Fotoğraftaki ürünle alakası yok.
+
+ASIN:         B00ISOYFNS
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B08GFSLZ5R
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'Available as 3 size - S,M,L Suitable for 95% of adult men and women.'
+ana_risk:     Sayfa, 95% uyumlu beden aralığı sunduğunu iddia ediyor, ancak müşteriler ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek, 'Ürün kalıbı normalden küçük, 2 beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Available as 3 size - S,M,L Suitable for 95% of adult men and women.' | müşteri: Yorum 2, 3: Ürün çok küçük, 2 beden büyük alınmalı.
+
+ASIN:         B09FH23ZTM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 10, 8, 4 | sayfa iddiası: 'Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.'
+ana_risk:     Sayfa, ayakkabıların kalıp ve kalite özellikleri hakkında bilgi veriyor; ancak müşteriler kalıp uyumsuzluğu ve kalitesizlik sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün açıklamasında beden kalıbı hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Bir ayakkabı diğerinden küçük geliyor; üç farklı numara denedim, hepsi aynı.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha fazla bilgi verin; 'Ürünlerimiz yüksek kaliteli malzemelerle üretilmiştir' gibi.
+      sayfa: 'Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.' | müşteri: Yorum 10, 8, 4: Yapımında ve malzemesinde sorun var; ürün dayanıklı değil, bir sezon bile gitmez; ayakkabılar yürürken çok ses çıkarıyor.
+
+ASIN:         B002MPF54C
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Item tends to run small. Recommend buying one size up.'
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '78% Nylon, 22% Spandex'
+ana_risk:     Sayfada 'Item tends to run small' iddiası var, ancak müşteriler 'çok küçük geldi' diyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Beden küçük geliyor, bir beden büyük almanız önerilir.' ifadesi eklenecek.
+      sayfa: 'Item tends to run small. Recommend buying one size up.' | müşteri: Yorum 1, 2: Çok küçük geldi.
+  - [Malzeme | değiştir] Sayfada 'Kumaş ince; yeterince termal koruma sağlamıyor.' ifadesi eklenecek.
+      sayfa: '78% Nylon, 22% Spandex' | müşteri: Yorum 3, 4: Kumaş çok ince ve yeterince termal koruma sağlamıyor.
+
+ASIN:         B0B4R4299N
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 2, 3 | sayfa iddiası: 'Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic.'
+  - Malzeme: yorum 1, 2, 3 | sayfa iddiası: '65% Cotton /35% Polyester'
+  - Renk: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün görseldeki tasarıma, kumaş kalitesine ve renk iddialarına dair şikayetler var; fotoğraftaki görünüm, kumaş kalitesi ve renk hakkında sorunlar yaşanıyor.
+öneriler:
+  - [Görsel | değiştir] Ürün fotoğraflarını güncelleyerek gerçek görünümünü yansıtın.
+      sayfa: 'Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic.' | müşteri: Yorum 1, 2, 3: Ürün fotoğraftaki görünümden farklı.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini gözden geçirin.
+      sayfa: '65% Cotton /35% Polyester' | müşteri: Yorum 1, 2, 3: Kumaş ince ve kalitesiz görünüyor.
+  - [Renk | ekle] Renk kalitesi hakkında bilgi ekleyin; 'Renk fotoğraftakinden farklı ve soluk' ifadesini dikkate alın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Renk fotoğraftakinden farklı ve soluk.
+
+ASIN:         B01H4XAOVK
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0BRXWDMRC
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 6, 7, 10 | sayfa iddiası: 'Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform.'
+  - Beden/Kalıp: yorum 3, 4, 5, 9, 11, 14, 15 | sayfa iddiası: 'Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you.'
+ana_risk:     Kumaş kalitesi kötü, oysa sayfada nefes alabilen bir malzeme olduğu iddia ediliyor; bedenler beklenenden küçük veya büyük, sayfada ise doğru beden seçimi için bilgi veriliyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: 'Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform.' | müşteri: Yorum 1, 6, 7, 10: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Beden seçiminde dikkat edilmesi gereken noktalar daha net bir şekilde belirtilmeli.
+      sayfa: 'Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you.' | müşteri: Yorum 3, 4, 5, 9, 11, 14, 15: Bedenler beklenenden küçük veya büyük.
+
+ASIN:         B002G9UFHQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 13, 14, 15 | sayfa iddiası: 'This shoe runs 2 sizes smaller than street shoe size'
+ana_risk:     Bu ayakkabı 2 beden küçük olduğu iddia ediliyor, ancak birçok müşteri ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden bilgisi olarak 'Bu ayakkabı sokak ayakkabı numarasından 2 beden küçük' ifadesini koruyun, ancak beden tablosunu daha açıklayıcı hale getirin.
+      sayfa: 'This shoe runs 2 sizes smaller than street shoe size' | müşteri: Yorum 1-15: Ürünler çok küçük, beklenenden dar.
+
+ASIN:         B092D6Z8N2
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4 | sayfa iddiası: '95% Polyester, 5% Elastane'
+ana_risk:     Malzeme iddiası var, ancak müşteriler çorapların teri emmediğini ve kötü koku yaptığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında 'Çoraplar teri ememiyor, kötü koku yapıyor' şeklinde bir uyarı ekleyin.
+      sayfa: '95% Polyester, 5% Elastane' | müşteri: Yorum 4, 9, 10, 11, 14: Çoraplar teri ememiyor, kötü koku yapıyor.
+
+ASIN:         B001PTHGP2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 5, 6, 10, 11, 15 | sayfa iddiası: 'Heel measures approximately 1"'
+  - Malzeme: yorum 3, 13 | sayfa iddiası: '100% Leather and Synthetic'
+  - Dayanıklılık: yorum 4, 8, 9 | sayfa iddiası: 'thick leather and fabric straps that keep up with your rugged style'
+ana_risk:     Sayfada 'Heel measures approximately 1"' iddiası var, ancak müşteriler çok dar ve küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha geniş bir aralıkta olduğu bilgisi eklenmeli.
+      sayfa: 'Heel measures approximately 1"' | müşteri: Yorum 1, 2, 5, 6, 10, 11, 15: Çok dar ve küçük geliyor.
+  - [Malzeme | değiştir] Kullanılan malzemenin kalitesi hakkında daha net bilgi verilmeli.
+      sayfa: '100% Leather and Synthetic' | müşteri: Yorum 3, 13: Aşındırıcı malzeme kullanılmış.
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha fazla bilgi eklenmeli.
+      sayfa: 'thick leather and fabric straps that keep up with your rugged style' | müşteri: Yorum 4, 8, 9: Tabanlar ayrılıyor veya kalitesi düşük.
+
+ASIN:         B0BSBBCHRZ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'loose fit a-line flowy silhouette'
+ana_risk:     Sayfa, elbisenin kalıbının geniş ve dökümlü olduğunu iddia ediyor, ancak müşteriler elbisenin şekilsiz ve büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Elbisenin kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; 'Bedeninizden bir beden küçük almanız önerilir'.
+      sayfa: 'loose fit a-line flowy silhouette' | müşteri: Yorum 1, 3: Elbise tamamen şekilsiz ve büyük geldi.
+
+ASIN:         B0C4XT56MD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'wide traditional belt with a tightening cord: for optimal support of the shorts around the waist.'
+ana_risk:     Sayfada 'optimal support of the shorts around the waist' iddiası var, ancak müşteriler beden ölçülerinin çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin küçük olduğu bilgisi eklenmeli; 'Beden ölçüleri normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'wide traditional belt with a tightening cord: for optimal support of the shorts around the waist.' | müşteri: Yorum 1, 2, 3: Beden ölçüleri çok küçük geliyor.
+
+ASIN:         B0B76ZVSJN
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B08V4QYTR6
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0747LCQB1
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits'
+ana_risk:     Sayfada dayanıklılık ile ilgili 'asla çıkmaz' iddiası var, ancak müşteriler ürünün kısa sürede delik açtığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Ürün kısa sürede delik açabilir' uyarısını ekleyin.
+      sayfa: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits' | müşteri: Yorum 2, 3: Ürün kısa sürede delik açtı
+
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2, 4: Bedenler küçük geliyor.
+
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı hakkında bilgi yok, ancak müşteriler ayakkabıların dar kalıp olduğunu ve numara uyumsuzluğu yaşadıklarını bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'Dar kalıp; bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar kalıp, numara uyumsuzluğu var.
+
+ASIN:         B07B4CCYBZ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 6, 10, 11 | sayfa iddiası: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet'
+  - Beden/Kalıp: yorum 2, 15 | sayfa iddiası: 'The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off'
+  - Dayanıklılık: yorum 3, 4, 12 | sayfa iddiası: 'Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty'
+ana_risk:     Su geçirmez olduğu iddia ediliyor, ancak müşteriler ayakkabıların su geçirdiğini belirtiyor; ayrıca dayanıklılık konusunda da şikayetler var.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik özelliği hakkında daha net bilgi ver; 'Kumaş su geçirmiyor' ifadesini kaldır.
+      sayfa: 'Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet' | müşteri: Yorum 1, 5, 6, 10, 11: Kumaş su geçirmiyor, ayakkabılar ıslanıyor.
+  - [Beden/Kalıp | değiştir] Bedenlerin dar geldiğine dair uyarı ekle; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off' | müşteri: Yorum 2, 15: Bedenleri küçük veya dar geliyor.
+  - [Dayanıklılık | değiştir] Kuruma süresi hakkında bilgi ekle; 'Uzun sürede kuruduğu belirtiliyor'.
+      sayfa: 'Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty' | müşteri: Yorum 3, 4, 12: Ayakkabılar uzun sürede kuruyor.
+
+ASIN:         B0050UP9ME
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '100% Spandex'
+ana_risk:     Sayfa, kumaşın %100 spandex olduğunu iddia ediyor, ancak müşteriler velcro kalitesinin düşük olduğunu ve yıkamada çıktığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenin küçük geldiğine dair bilgi ekleyin; 'Bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Beden küçük geliyor, bir beden büyük alınmalı.
+  - [Malzeme | değiştir] Velcro kalitesinin düşük olduğu ve yıkamada çıktığı bilgisini düzeltin.
+      sayfa: '100% Spandex' | müşteri: Yorum 1, 2: Velcro kalitesi düşük, yıkamada çıkıyor.
+
+ASIN:         B07Z2PWVWG
+gap_var:      Evet
+gap_tipleri:  Renk, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Renk: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'Size S-----Length 64cm/25.2"-----Bust 96cm/37.8" Size M------Length 66cm/26.0"-----Bust 100cm/39.3" Size L--------Length 68cm/26.8"-----Bust 106cm/41.7" Size XL--------Length 71cm/28"-----Bust 112cm/44" Size XXL--------Length 74cm/29.2"-----Bust 118cm/44.6"'
+ana_risk:     Sayfa, beyaz kısımların renk değiştirebileceği ve yıkama sonrası bedenin küçüleceği iddiasında bulunmuyor, ancak müşteriler bu durumları yaşıyor.
+öneriler:
+  - [Renk | ekle] Beyaz kısımların renk değiştirebileceği bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Beyaz kısım pembe oldu; Yorum 3: Beyaz kısım pembe oldu.
+  - [Beden/Kalıp | ekle] Yıkama sonrası bedenin küçüleceği bilgisini ekleyin.
+      sayfa: 'Size S-----Length 64cm/25.2"-----Bust 96cm/37.8" Size M------Length 66cm/26.0"-----Bust 100cm/39.3" Size L--------Length 68cm/26.8"-----Bust 106cm/41.7" Size XL--------Length 71cm/28"-----Bust 112cm/44" Size XXL--------Length 74cm/29.2"-----Bust 118cm/44.6"' | müşteri: Yorum 3: Yıkadıktan sonra beden küçüldü.
+
+ASIN:         B004CO8OWG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'Our soft cotton is pre-shrunk for a perfect fit wash after wash.'
+  - Malzeme: yorum 3 | sayfa iddiası: 'Fiber Content: "95% Cotton, 5% Spandex"'
+ana_risk:     Ürün açıklamada belirtilen malzeme içermiyor ve beden kalıbı küçük geliyor; sayfada bu konuda bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir.'
+      sayfa: 'Our soft cotton is pre-shrunk for a perfect fit wash after wash.' | müşteri: Yorum 1, 4: Bu ürünler küçük geliyor.
+  - [Malzeme | ekle] Malzeme içeriği ile ilgili doğru bilgi ekleyin; 'Ürün %95 pamuk ve %5 spandeks içermektedir.'
+      sayfa: 'Fiber Content: "95% Cotton, 5% Spandex"' | müşteri: Yorum 3: Ürün açıklamada belirtilen malzemeyi içermiyor.
+
+ASIN:         B0844S491Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, bedenlerin büyük geldiğine dair şikayetler varken, beden ölçüleri hakkında yeterli bilgi vermiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenlerin büyük geldiği bilgisi eklenmeli; 'Bedenler normalden büyük kalıp olarak tasarlanmıştır, bir beden küçük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3, 5, 6: Bedenler çok büyük geliyor
+
+ASIN:         B06XGB784C
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 6, 13 | sayfa iddiası: 'Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel'
+  - Dayanıklılık: yorum 2, 3, 7, 8, 14, 15 | sayfa iddiası: 'Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use'
+ana_risk:     Kumaş kalitesi iddiası var, ancak müşteriler kumaşın her yıkamada parçalandığını ve ürünün yıkamadan sonra inceleşip yırtıldığını bildiriyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Her yıkamada parçalanma riski vardır' uyarısını ekle.
+      sayfa: 'Made of 100% cotton for breathability and strength; zero twist cotton fibers ensure a supremely soft feel' | müşteri: Yorum 6, 13: Kumaş kalitesi kötü, her yıkamada parçalanıyor.
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha net bilgi ver; 'Ürün yıkama sonrası inceleşebilir' uyarısını ekle.
+      sayfa: 'Highly absorbent and quick drying; light fabric weight (360 grams per square meter) for year-round use' | müşteri: Yorum 2, 3, 7, 8, 14, 15: Robe, yıkamadan sonra inceleşti ve yırtıldı.
+
+ASIN:         B0BGPVTZDQ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4, 10 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 5, 8, 14 | sayfa iddiası: 'the size is smaller than the normal size. Please order one size up if you are taller, stronger, or grows faster.'
+  - Görsel: yorum 1, 3, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, kumaşın %100 polyester olduğunu iddia ediyor; ancak müşteriler kumaş kalitesinin kötü olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi düşük' uyarısını ekle.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 4, 10: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Ürün kalıbı hakkında daha net bilgi ver; 'Bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'the size is smaller than the normal size. Please order one size up if you are taller, stronger, or grows faster.' | müşteri: Yorum 5, 8, 14: Ürün kalıbı beklenenden farklı.
+  - [Görsel | ekle] Ürün fotoğraflarının gerçek ürünü yansıtması gerektiğini belirt.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 12: Ürün fotoğraftaki görünümden farklı.
+
+ASIN:         B08X19SQNZ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4 | sayfa iddiası: 'Upper: Made of breathable mesh fabric, which allows your feet to breathe freely when running or walking.'
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların nefes alabilir malzemeden yapıldığı iddiasında bulunuyor; ancak müşteriler rahatlık ve destek eksikliği yaşıyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında 'Nefes alabilir üst malzeme, ancak yeterli destek sağlamıyor' ifadesini ekleyin.
+      sayfa: 'Upper: Made of breathable mesh fabric, which allows your feet to breathe freely when running or walking.' | müşteri: Yorum 2, 4: Ayakkabılar rahat değil ve destek yok.
+  - [Beden/Kalıp | ekle] Sayfada 'Ayakkabı kalıbı dar; bir beden büyük almanız önerilir' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Ayakkabılar dar geliyor.
+
+ASIN:         B0BX26QF8K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'pants have an elastic waistband and adjustable drawstring for a comfortable fit'
+ana_risk:     Sayfa, esnek bel bandı ve ayarlanabilir ip ile rahat bir oturuş vaat ediyor, ancak bazı müşteriler ürünün küçük ve büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; 'Bedeninizden bir beden büyük almanız önerilir.'
+      sayfa: 'pants have an elastic waistband and adjustable drawstring for a comfortable fit' | müşteri: Yorum 2: Küçük geldi; Yorum 3: Çok büyük geldi
+
+ASIN:         B00Q7JD0SW
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 3 | sayfa iddiası: '100% Leather and Textile'
+ana_risk:     Sayfa, '100% Leather and Textile' iddiasında bulunuyor, ancak kullanıcılar ayakkabıların soğuk havada yeterince sıcak tutmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Sayfada 'Soğuk havalarda yeterli yalıtım sağlamadığı belirtiliyor; bu nedenle daha iyi bir yalıtım için bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: '100% Leather and Textile' | müşteri: Yorum 1, 3: Ayakkabılar soğuk havada yeterince sıcak tutmuyor.
+
+ASIN:         B07FVN4YW7
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Please check carefully with the size chart we provide before you place an order'
+  - Malzeme: yorum 3, 6 | sayfa iddiası: 'Patent Leather+Spandex'
+ana_risk:     Ürün bedeni çok küçük geldiği ve kumaş kalitesinin kötü olduğu belirtiliyor; sayfada beden kontrolü yapılması gerektiği ve malzeme olarak patent deri ve spandeks olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu daha belirgin hale getirerek, 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Please check carefully with the size chart we provide before you place an order' | müşteri: Yorum 1, 2: Ürün bedeni çok küçük geldi.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, dayanıklıdır' ifadesini gözden geçirin.
+      sayfa: 'Patent Leather+Spandex' | müşteri: Yorum 3, 6: Kumaş kalitesi kötü ve dayanıklı değil.
+
+ASIN:         B091RLYWYJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5 | sayfa iddiası: 'Heel measures approximately 1.75"'
+ana_risk:     Sayfada belirtilen 1.75" topuk yüksekliği ile ilgili olarak, müşteriler numaranın çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında 'Numara küçük geliyor; bir beden büyük almanız önerilir' uyarısını ekleyin.
+      sayfa: 'Heel measures approximately 1.75"' | müşteri: Yorum 1, 2, 3, 4, 5: Numara çok küçük geliyor
+
+ASIN:         B073KWM1NV
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B07D7J5WX4
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 3, 4, 6, 9, 12, 13, 15 | sayfa iddiası: 'Made with premium quality light weight and durable material'
+  - Kalite: yorum 7, 10, 11, 14 | sayfa iddiası: 'efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain'
+ana_risk:     Sayfa, kaliteli malzeme iddiasında bulunuyor ancak kullanıcılar kumaşın ince ve kalitesiz olduğunu belirtiyor; ayrıca ilk kullanımda dikişlerin açıldığı şikayetleri var.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'kalite kontrolü yapılmıştır' gibi ifadeler ekle.
+      sayfa: 'Made with premium quality light weight and durable material' | müşteri: Kumaş ince ve kalitesiz.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha fazla bilgi ekle; 'ilk kullanımda dikişlerin açılmaması için dikkat edilmesi gerekenler' gibi.
+      sayfa: 'efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain' | müşteri: İlk kullanımda dikişler açıldı veya kalitesiz malzeme kullanıldı.
+
+ASIN:         B09NFJNS8C
+gap_var:      Evet
+gap_tipleri:  Malzeme, Görsel, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 3, 4, 8 | sayfa iddiası: 'Cotton Blend'
+  - Görsel: yorum 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.'
+ana_risk:     Sayfada 'Cotton Blend' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi yüksek değil, sert ve ucuz hissettiriyor' notunu ekle.
+      sayfa: 'Cotton Blend' | müşteri: Yorum 1, 2, 3, 4, 8: Kumaş kalitesi kötü, sert ve ucuz hissettiriyor.
+  - [Görsel | ekle] Ürün görselinin gerçek görünümünü yansıtması gerektiğini belirt.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 7: Ürün fotoğraftaki gibi değil, beklenen görünüm yok.
+  - [Beden/Kalıp | değiştir] Bedenin büyük geldiğini ve bir beden küçük alınması gerektiğini belirt.
+      sayfa: 'suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.' | müşteri: Yorum 2, 5: Beden büyük, bir beden küçük alınmalı.
+
+ASIN:         B00IV551F0
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0811NJJNR
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0869D79DV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 6 | sayfa iddiası: 'Wide waistband keeps you snug and flat.'
+ana_risk:     Sayfada 'Wide waistband keeps you snug and flat.' iddiası var, ancak müşteriler bedenin çok küçük ve kısa olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük olduğu bilgisi eklenmeli.
+      sayfa: 'Wide waistband keeps you snug and flat.' | müşteri: Yorum 3, 6: Çok küçük ve kısa geldi.
+
+ASIN:         B07JKDQFY9
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B00IGIRXRG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: "Fits men's shoe size 6-12"
+  - Dayanıklılık: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden kalıbı ile ilgili iddia var, ancak müşteriler ürünün çok büyük veya çok küçük geldiğini belirtiyor; dayanıklılık konusunda ise sayfada bilgi yok ama delik açılması şikayeti var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; örneğin, 'Beden kalıbı normalden büyük veya küçük olabilir, lütfen ölçülerinizi kontrol edin.'
+      sayfa: "Fits men's shoe size 6-12" | müşteri: Yorum 2, 3: Çok büyük veya çok küçük geliyor.
+  - [Dayanıklılık | ekle] Ürün sayfasına dayanıklılık hakkında bilgi ekleyin; örneğin, 'Ürün dayanıklılığı ile ilgili dikkat edilmesi gereken noktalar: Hızla delik açılabilir, dikkatli kullanım önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Hızla delik açılıyor.
+
+ASIN:         B093BMW36S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 10 | sayfa iddiası: 'Body: 90% Polyester, 10% Elastane; Lining: 90% Polyester, 10% Elastane'
+ana_risk:     Sayfa, kumaşın kalitesi hakkında bilgi veriyor ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenin büyük geldiği ve ölçülerin uyumsuz olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 5, 14: Beden büyük geldi, ölçüye uymuyor.
+  - [Malzeme | değiştir] Kumaşın kalitesiz olduğu bilgisi eklenmeli.
+      sayfa: 'Body: 90% Polyester, 10% Elastane; Lining: 90% Polyester, 10% Elastane' | müşteri: Yorum 3, 10: Kumaş ince ve kalitesiz.
+
+ASIN:         B07YZ9QVH1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 6 | sayfa iddiası: 'T back with adjustable straps offers a customized fit'
+  - Malzeme: yorum 2, 7 | sayfa iddiası: '90%polyamide, 10% spandex'
+  - Görsel: yorum 3, 5 | sayfa iddiası: 'Side lining with scalloped trimming adds extra femininity'
+ana_risk:     Sayfada 'T back with adjustable straps offers a customized fit' iddiası var, ancak müşteriler kupa boyutlarının D ve DD'ye uymadığını ve ön kısımda geniş durduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kupa boyutları hakkında daha net bilgi ver; D ve DD boyutlarının uyumunu belirt.
+      sayfa: 'T back with adjustable straps offers a customized fit' | müşteri: Yorum 1, 6: Kupa boyutları D ve DD'ye uymuyor; ön kısımda geniş duruyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha fazla bilgi ekle; '90% polyamide, 10% spandex' ifadesinin kalitesini vurgula.
+      sayfa: '90%polyamide, 10% spandex' | müşteri: Yorum 2, 7: Ucuz hissettiriyor.
+  - [Görsel | değiştir] Görseldeki dikişlerin kalitesi hakkında bilgi ver; 'kupa yapısının koni şeklinde görünüm vermediğini' belirt.
+      sayfa: 'Side lining with scalloped trimming adds extra femininity' | müşteri: Yorum 3, 5: Kupa ortasında dikiş var, kötü bir görünüm yaratıyor; kupa yapısı kötü, koni şeklinde görünüm veriyor.
+
+ASIN:         B08Q4ZNYRD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'this item is snug-fitting'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'bu ürün dar oturuyor' iddiası var, ancak müşteriler 5T bedenin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar oturduğunu belirtin; '5T beden küçük geliyor, bir beden büyük almanız önerilir.'
+      sayfa: 'this item is snug-fitting' | müşteri: Yorum 2, 3: 5T beden küçük geliyor.
+  - [Kalite | ekle] Ürün sayfasına dikişlerin kalitesi hakkında bilgi ekleyin; 'Dikişlerin ilk yıkamada açılabileceği konusunda dikkatli olun.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Dikişler ilk yıkamada açıldı.
+
+ASIN:         B00E8FQU3O
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden kalıbı hakkında bilgi vermiyor ancak müşteriler bedenin çok büyük geldiğini ve ayakkabının kayışının gevşek olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden kalıbı hakkında bilgi ekleyin; 'Beden büyük geliyor, ayakkabının kayışı ayarlanamıyor' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Topuk kayışı ayarlanamıyor, çok gevşek; Yorum 2: Beden çok büyük geliyor.
+
+ASIN:         B07RLS1Q3R
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 3, 5, 12, 14, 15 | sayfa iddiası: 'Easy to Wash and Durable.'
+  - Beden/Kalıp: yorum 2, 4, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün dayanıklılığı ile ilgili iddia var, ancak birçok yorum ürünün kısa sürede bozulduğunu belirtiyor; beden kalıbı ile ilgili de benzer şikayetler mevcut.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Kısa sürede bozulma riski vardır' uyarısını ekleyin.
+      sayfa: 'Easy to Wash and Durable.' | müşteri: Yorum 1, 3, 5, 12, 14, 15: Ürün kısa sürede bozuluyor veya delik açılıyor.
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'Beden seçiminde bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 6: Ürün numarası beklenenden küçük.
+
+ASIN:         B07RRTPN6J
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 5 | sayfa iddiası: '95% Polyester, 5% Spandex'
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada kumaşın %95 polyester ve %5 spandex olduğu iddia ediliyor, ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor; ayrıca kalıbın çok küçük ve dar olduğu şikayetleri var.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş ince ve kalitesiz' ifadesini ekle.
+      sayfa: '95% Polyester, 5% Spandex' | müşteri: Yorum 1, 2, 5: Kumaş ince ve kalitesiz.
+  - [Beden/Kalıp | ekle] Kalıp hakkında bilgi ekle; 'Kalıp dar, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Kalıp çok küçük ve dar.
+
+ASIN:         B00SYPOTY6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler kumaş kalitesinin kötü olduğunu ve yıkandıkça yıprandığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının küçük olduğu bilgisi eklenmeli, bir beden büyük alınması önerilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün küçük geldi, bir beden büyük almak gerekti.
+  - [Kalite | ekle] Kumaşın kalitesi hakkında bilgi eklenmeli, yıkama sonrası yıpranma olabileceği belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 14: Kumaş kalitesi kötü, yıkandıkça yıpranıyor.
+
+ASIN:         B0057XA0DC
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 7 | sayfa iddiası: '100% Cotton'
+  - Beden/Kalıp: yorum 3, 4, 6 | sayfa iddiası: 'Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket'
+ana_risk:     Sayfa %100 pamuk iddiasında bulunuyor, ancak müşteriler kumaşın ince olduğunu ve %15 polyester içerdiğini belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürünün %100 pamuk olduğunu belirtin, kumaşın ince olduğunu vurgulayın ve %15 polyester içerdiğini ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 2: Kumaş çok ince; Yorum 7: Ürün %100 pamuk değil, %15 polyester var.
+  - [Beden/Kalıp | değiştir] Bedenin büyük geldiğini belirtin, 'normalden 2-3 beden büyük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket' | müşteri: Yorum 3, 4, 6: 2-3 beden büyük geldi.
+
+ASIN:         B08D14RMRJ
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 6 | sayfa iddiası: 'protective die cut rubber rand and toe cap'
+  - Kalite: yorum 3, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Dayanıklılık iddiası var, ancak kullanıcılar tabanın ayrıldığını bildiriyor; kalite iddiası yok ama kullanıcılar ürünün kalitesiz olduğunu ve rahat olmadığını belirtiyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Tabanın dayanıklılığı hakkında daha fazla bilgi verin; tabanın ayrılma riski ile ilgili uyarı ekleyin.
+      sayfa: 'protective die cut rubber rand and toe cap' | müşteri: Yorum 2, 6: Sole (taban) ayrılıyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında daha net bilgi verin; kayganlık ve rahatlık konularında kullanıcı deneyimlerini yansıtın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5, 7: Ürün yeni geldi ama tabanında sim var, sanki kullanılmış; ayakkabılar artık rahat değil, ayaklarımı acıtıyor; ürün reklam edildiği gibi değil, kaygan ve kalitesiz görünüyor.
+
+ASIN:         B08C2WMB2M
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5 | sayfa iddiası: 'Women loose solid shoulder pads sleeveless casual cotton tank top.'
+  - Malzeme: yorum 8, 10 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak müşteriler kumaşın kalitesiz ve şeffaf olduğunu belirtiyor; ayrıca kalıp çok küçük geliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Women loose solid shoulder pads sleeveless casual cotton tank top.' | müşteri: Yorum 4, 5: Kalıp çok küçük geliyor.
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında 'şeffaf ve ince kumaş' uyarısını ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 8, 10: Kumaş kalitesi kötü ve şeffaf.
+
+ASIN:         B08TB391QJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'Shaft measures approximately 15.75" from arch'
+  - Malzeme: yorum 4, 6 | sayfa iddiası: '100% Synthetic'
+ana_risk:     Beden ölçüleri ile ilgili iddialar var, ancak kullanıcılar bedenlerin dar olduğunu ve ziplenemediğini belirtiyor; malzeme ile ilgili iddialar da dayanıklılık sorunları ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin dar olduğu ve ziplenemediği bilgisini ekleyin.
+      sayfa: 'Shaft measures approximately 15.75" from arch' | müşteri: Yorum 3, 5: Bedenleri dar, ziplenemiyor.
+  - [Malzeme | değiştir] Dayanıklılık sorunları hakkında bilgi verin; tabanların çıkma riski olduğunu belirtin.
+      sayfa: '100% Synthetic' | müşteri: Yorum 4, 6: Dayanıklılık sorunları var, tabanlar çıkıyor.
+
+ASIN:         B07VV1RV62
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 8, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada dayanıklılık hakkında bilgi yok, ancak müşteriler ürünün ilk yıkamada küçüldüğünü belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün yıkama talimatlarını ve dayanıklılığı hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 8, 9: İlk yıkamada küçüldü.
+
+ASIN:         B076H9BGDL
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: 'Waterproof Breathable'
+ana_risk:     Sayfa su geçirmezlik iddiasında bulunuyor, ancak müşteriler ürünün su geçirmediğini belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik iddiasını gözden geçirerek, ürünün su geçirmediğine dair bilgi ekleyin.
+      sayfa: 'Waterproof Breathable' | müşteri: Yorum 2, 3: Kumaş crinkly plastik ve nefes almaz; ürün su geçirmiyor.
+
+ASIN:         B015H4F666
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 8 | sayfa iddiası: 'Material:Polyester+Lace'
+ana_risk:     Sayfada polyester ve dantel malzeme iddiası var, ancak müşteriler kumaşı çok ince ve şeffaf buluyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: 'Material:Polyester+Lace' | müşteri: Yorum 1, 8: Çok ince ve şeffaf kumaş.
+
+ASIN:         B0B81XVL8S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite, Eksik Bilgi
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B00UD3XOFM
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler düşük kaliteli ürünler aldıklarını bildiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün sayfasında kalite kontrolü yapıldığına dair bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Ürün beklenenden farklı, kalitesi düşük.
+
+ASIN:         B088NK1NVB
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 6, 7, 8, 9, 10, 13 | sayfa iddiası: '94% Nylon, 6% Spandex'
+  - Beden/Kalıp: yorum 2, 11, 12 | sayfa iddiası: 'Short-length / Seamless Ribbed / Biker Shorts'
+ana_risk:     Sayfa, ürünün %94 naylon ve %6 spandeks malzemeden yapıldığını iddia ediyor, ancak müşteriler şortların tamamen şeffaf ve ince olduğunu belirtiyor; ayrıca şortlar bacaklarda kayma sorunu yaşıyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında 'Şortlar %94 naylon ve %6 spandeks malzemeden yapılmıştır; ancak şeffaflık nedeniyle dikkatli giyilmesi önerilir.' ifadesi eklenmeli.
+      sayfa: '94% Nylon, 6% Spandex' | müşteri: Yorum 1, 5, 6, 7, 8, 9, 10, 13: Şortlar tamamen şeffaf ve ince, giyilemez durumda.
+  - [Beden/Kalıp | değiştir] Ürün sayfasında 'Şortlar, bacaklarda kayma yapabilir; bu nedenle beden seçiminizi dikkatli yapmanız önerilir.' ifadesi eklenmeli.
+      sayfa: 'Short-length / Seamless Ribbed / Biker Shorts' | müşteri: Yorum 2, 11, 12: Şortlar bacaklarda çok fazla yukarı kayıyor.
+
+ASIN:         B00V3R17IS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının düzgün olduğunu iddia ediyor ancak müşteriler yıkama sonrası beden küçülmesi ve yukarı doğru kıvrılma yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Yıkama sonrası beden küçülmesi olabileceğine dair bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: İlk soğuk yıkamada 2 beden küçüldü; yıkamada sürekli yukarı doğru kıvrılıyor.
+
+ASIN:         B09RBDZFKZ
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B078PP6525
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 15 | sayfa iddiası: 'slim fit'
+ana_risk:     Sayfada 'slim fit' iddiası var, ancak birçok müşteri ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'slim fit' ifadesinin yanına 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'slim fit' | müşteri: Yorum 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 15: Çok küçük geldi, beklenen bedenden daha dar.
+
+ASIN:         B098D5JNP4
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 8, 12, 15 | sayfa iddiası: 'Easy to care for and affordable.'
+  - Beden/Kalıp: yorum 2, 9, 14 | sayfa iddiası: 'Slim flattering fit'
+  - Malzeme: yorum 5, 7, 11 | sayfa iddiası: '76% Rayon, 21% Nylon, 3% Spandex'
+ana_risk:     Sayfa, kumaş kalitesinin yüksek olduğunu iddia ediyor ancak müşteriler kumaşın kalitesinin düşük olduğunu ve çabuk yıprandığını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında dikiş kalitesi hakkında daha net bilgi verin ve olası sorunları belirtin.
+      sayfa: 'Easy to care for and affordable.' | müşteri: Yorum 1, 8, 12, 15: Dikişler kötü, düğmeler ilk yıkamada düştü.
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden ölçüleri hakkında daha net bilgi verin ve bedenlerin küçük geldiğini belirtin.
+      sayfa: 'Slim flattering fit' | müşteri: Yorum 2, 9, 14: Bedenler küçük, yanlış ölçü.
+  - [Malzeme | değiştir] Ürün sayfasında kumaşın dayanıklılığı hakkında daha net bilgi verin ve kalitesiz kumaş uyarısı ekleyin.
+      sayfa: '76% Rayon, 21% Nylon, 3% Spandex' | müşteri: Yorum 5, 7, 11: Kumaş kalitesi düşük, çabuk yıpranıyor.
+
+ASIN:         B01L75RUUO
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'XX-Large'
+ana_risk:     Sayfada 'XX-Large' bedeni iddia ediliyor, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir' yazın.
+      sayfa: 'XX-Large' | müşteri: Yorum 1, 2, 3, 4: Çok küçük geldi
+
+ASIN:         B09824GQ3G
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, kumaş kalitesi hakkında bilgi vermiyor; ancak müşteriler kumaş kalitesinin kötü olduğunu ve logo yerleşiminin hatalı olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Kumaş kalitesinin kötü olduğu ve logo yerleşiminin hatalı olduğu hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Kumaş kalitesi kötü, çok tüyleniyor; Yorum 4: Logo ters yerleştirilmiş.
+
+ASIN:         B009YR3E58
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 8, 11, 12, 13, 14 | sayfa iddiası: 'a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely'
+  - Malzeme: yorum 6, 10 | sayfa iddiası: '65% Polyester, 35% Cotton'
+ana_risk:     Sayfada 'modern fit' ve 'rahat hareket' iddiası var, ancak birçok müşteri bedenin çok küçük geldiğini belirtiyor; kumaşın sert olduğu ve daha yumuşak olması gerektiği de şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely' | müşteri: Yorum 1, 3, 5, 8, 11, 12, 13, 14: Çok küçük geliyor
+  - [Malzeme | değiştir] Kumaşın sert olduğu ve daha yumuşak olması gerektiğine dair bilgi ekleyin.
+      sayfa: '65% Polyester, 35% Cotton' | müşteri: Yorum 6, 10: Kumaş sert ve rahatsız; kumaşın daha yumuşak olması gerekirdi
+
+ASIN:         B07MPYQZ8L
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4, 12, 14, 15 | sayfa iddiası: '65%Cotton，35%Rayon'
+  - Beden/Kalıp: yorum 3, 7, 10, 11, 13 | sayfa iddiası: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.'
+ana_risk:     Malzeme iddiası var, ancak müşteriler kaşındıran ve sert kumaşla karşılaştıklarını belirtiyor; Beden/Kalıp iddiası var, fakat birçok müşteri ürünün çok büyük geldiğini söylüyor.
+öneriler:
+  - [Malzeme | değiştir] Sayfada kumaşın yumuşak ve nefes alabilir olduğu bilgisi eklenmeli.
+      sayfa: '65%Cotton，35%Rayon' | müşteri: Yorum 1, 4, 12, 14, 15: Kaşındıran ve sert kumaş.
+  - [Beden/Kalıp | değiştir] Sayfada bedenlerin büyük geldiğine dair bir uyarı eklenmeli; 'Bir beden küçük almanız önerilir' notu eklenmeli.
+      sayfa: 'Size Small fits size 4 - size 6, size Medium fits size 8 - size 10, size Large fits size 12 - size 14, size X-Large fits size 16 - size 18, size XX-Large fits size 20 - size 22.' | müşteri: Yorum 3, 7, 10, 11, 13: Çok büyük geldi.
+
+ASIN:         B0109G7Q60
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B00N85ERNK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 10 | sayfa iddiası: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger'
+  - Malzeme: yorum 8, 9 | sayfa iddiası: 'fabric'
+ana_risk:     Ayakkabının küçük olduğu iddiası var, ancak kullanıcılar ayakkabının dar geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Dar kalıp; bir beden büyük almanız önerilir' ifadesi eklenmeli.
+      sayfa: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger' | müşteri: Yorum 3, 5, 10: Çok dar geldi.
+  - [Malzeme | değiştir] Sayfada 'Sert malzeme; daha yumuşak bir deneyim için inceleyin' ifadesi eklenmeli.
+      sayfa: 'fabric' | müşteri: Yorum 8, 9: Ayakkabılar çok sert ve rahatsız.
+
+ASIN:         B01N8XLXBC
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B07GBBN1K3
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '100% Polyester'
+ana_risk:     Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaşın şeffaf olduğunu ve sıcak havalar için uygun olmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın şeffaf olduğu ve sıcak havalar için uygun olmadığı bilgisini ekleyin.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 3: Kumaş şeffaf ve sıcak havalar için uygun değil.
+
+ASIN:         B00SRSLRXG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 7 | sayfa iddiası: 'L (US 14)'
+ana_risk:     Sayfada L (US 14) bedeni iddia ediliyor, ancak müşteriler bedenin dar ve küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar olduğu bilgisi eklenmeli; 'Dar kalıp, bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'L (US 14)' | müşteri: Yorum 3, 5, 7: Beden tam oturmuyor, çok dar geldi; beden tam değil, küçük geldi.
+
+ASIN:         B00OV48VUW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width."
+ana_risk:     Sayfa, her bedene uygun kalıp geliştirdiğini iddia ediyor, ancak müşteriler geniş geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp genişliği hakkında bilgi verin; 'Bu model geniş kalıp olarak tasarlanmıştır.' ekleyin.
+      sayfa: "Trotter's develops a separate last (the form around which the leather is shaped) for each size and width." | müşteri: Yorum 1, 2, 3, 4: Geniş geldi, dar numara bekleniyordu.
+
+ASIN:         B01GFLJSGO
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0946X8ZRT
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 6 | sayfa iddiası: 'make you adjust the tightness to fit for your head and different hairstyles'
+  - Kalite: yorum 4, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, başlık ayarlama konusunda yardımcı olacağını iddia ediyor, ancak müşteriler ürünün çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'make you adjust the tightness to fit for your head and different hairstyles' | müşteri: Yorum 1, 2, 3, 6: Çok küçük geliyor
+  - [Kalite | ekle] Düğmelerin boyutu ve tutuş gücü hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 7: Düğmeler çok küçük ve maskeleri tutmuyor
+
+ASIN:         B09ZHFVMR5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: "Extra Wide Elastic Waistband for Kids' Comfort"
+ana_risk:     Sayfada 'Extra Wide Elastic Waistband for Kids' Comfort' iddiası var, ancak 5T ve 2T bedenleri çok büyük geldiği belirtiliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin genişliği hakkında daha net bilgi ver; 'Bedenler normalden büyük kalmaktadır, bir beden küçük almanız önerilir.'
+      sayfa: "Extra Wide Elastic Waistband for Kids' Comfort" | müşteri: Yorum 1, 3: 5T ve 2T bedenleri çok büyük geldi.
+
+ASIN:         B0832TD24Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'Size - 0-6Months, 6-12 Months, 12-18 Months, 18-24 Months, 2T, 3T.'
+ana_risk:     Sayfada beden ölçüleri belirtilmiş, ancak müşteriler ürünün çok büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha küçük almanız gerektiğini belirten bir not ekleyin.
+      sayfa: 'Size - 0-6Months, 6-12 Months, 12-18 Months, 18-24 Months, 2T, 3T.' | müşteri: Yorum 1, 2, 3: Ürün çok büyük geldi.
+
+ASIN:         B09DGG5Z94
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 4, 5 | sayfa iddiası: 'The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more.'
+  - Kalite: yorum 3, 7 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olduğunu iddia ediyor; ancak müşteriler eldivenlerin ıslaklıkta işe yaramadığını belirtiyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olmadığını belirtin.
+      sayfa: 'The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more.' | müşteri: Yorum 4, 5: Eldivenler birkaç saat sonra tamamen ıslanıyor.
+  - [Kalite | ekle] Eldivenlerin su geçirmediği ve soğuk havalarda etkili olmadığı bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 7: Eldivenler su geçirmiyor, eller soğuk kalıyor.
+  - [Eksik Bilgi | ekle] Ürünün su geçirmezlik özelliği hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Açıklamada su geçirmezlik özelliği yoktu.
+
+ASIN:         B08CMFXFNW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'elastic waistband with inner drawstring for you adjust the size according to your body'
+  - Dayanıklılık: yorum 4, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, pantolonların yıkandıktan sonra kısaldığını belirtmiyor; ayrıca ürünün dayanıklılığı hakkında bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Yıkama sonrası kısalma olabileceği bilgisi eklenecek.
+      sayfa: 'elastic waistband with inner drawstring for you adjust the size according to your body' | müşteri: Yorum 2, 5: Pantolonlar yıkandıktan sonra kısaldı
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi eklenecek.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 6, 7: Ürün kısa sürede yıpranıyor ve dikişleri açılıyor
+
+ASIN:         B075Y4GMW5
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 3 | sayfa iddiası: 'Suede sole'
+ana_risk:     Sayfada 'Suede sole' iddiası var, ancak müşteriler ürünün kısa sürede bozulduğunu belirtiyorlar.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: 'Suede sole' | müşteri: Yorum 1, 3: Ürün kısa sürede bozuldu.
+
+ASIN:         B07GX6Q8C6
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B004NNY4AW
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B08BL8643W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 6, 7 | sayfa iddiası: "Women's shoe size (5~9) / Model size info : height (5.7feet), weight (119pounds), shoe size (women's shoe 9.5)"
+  - Malzeme: yorum 10, 13 | sayfa iddiası: '80%Cotton 15%Polyurethane 5%Spandex'
+ana_risk:     Sayfada kumaş kalitesi ile ilgili somut bir iddia var, ancak müşteriler kumaşın kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Soketlerin uzunluğu ve oturuşu hakkında daha fazla bilgi verin.
+      sayfa: "Women's shoe size (5~9) / Model size info : height (5.7feet), weight (119pounds), shoe size (women's shoe 9.5)" | müşteri: Yorum 6, 7: Soketlerin uzunluğu ve oturuşu ile ilgili sorunlar var.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha fazla bilgi verin.
+      sayfa: '80%Cotton 15%Polyurethane 5%Spandex' | müşteri: Yorum 10, 13: Kumaşın kalitesizliği ve rahatsızlığı var.
+
+ASIN:         B013QMOU6S
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 5 | sayfa iddiası: 'molded ethylene vinyl acetate midsole absorbs the pain'
+  - Beden/Kalıp: yorum 3, 4, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Dayanıklılık iddiası var, ancak ürün kısa sürede bozuluyor; beden uyumsuzluğu da yaşanıyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha fazla bilgi ekleyin; ürünün dayanıklılığı hakkında net bilgi verin.
+      sayfa: 'molded ethylene vinyl acetate midsole absorbs the pain' | müşteri: Yorum 1, 2, 5: Ürün kısa sürede bozuluyor.
+  - [Beden/Kalıp | ekle] Ürün bedenleri hakkında daha net bilgi verin; beden tablosu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 6: Numara uyumsuzluğu var.
+
+ASIN:         B01HF9ZNDC
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 9, 11, 14, 15 | sayfa iddiası: '100% Synthetic leather and mesh'
+  - Dayanıklılık: yorum 5, 6, 7 | sayfa iddiası: 'durable synthetic leather'
+  - Görsel: yorum 4, 13 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 sentetik deri ve ağ malzeme iddiasında bulunuyor; ancak müşteriler su geçirmediğini ve dayanıklılığının düşük olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmediği bilgisini ekleyin.
+      sayfa: '100% Synthetic leather and mesh' | müşteri: Yorum 9, 11, 14, 15: Su geçirmiyor.
+  - [Dayanıklılık | değiştir] Dayanıklılığı artırmak için öneriler ekleyin.
+      sayfa: 'durable synthetic leather' | müşteri: Yorum 5, 6, 7: Altı haftada ayrılmaya başladı, üç ayda ayrılmaya ve sızdırmaya başladı.
+  - [Görsel | ekle] Ürün görselinin gerçek görünümünü ve bağcıkların güvenliğini açıklayan bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 13: Ürün fotoğraftaki gibi değil, çok ince; bağcıklar tehlikeli, takılıyor.
+
+ASIN:         B07QY8SLWP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı hakkında bilgi yok, ancak müşteriler parmak kısmının çok dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Parmak kısmının dar olduğu bilgisi sayfaya eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 5, 6, 7: Parmak kısmı çok dar.
+
+ASIN:         B0C4TT16MJ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 10, 13 | sayfa iddiası: '60% ring-spun cotton/40% polyester'
+  - Beden/Kalıp: yorum 3, 6, 8, 11, 12, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada kumaşın kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini ekleyin.
+      sayfa: '60% ring-spun cotton/40% polyester' | müşteri: Kumaş ince ve kalitesiz; Yorum 10, 13.
+  - [Beden/Kalıp | ekle] Yıkama sonrası küçülme hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Ürün yıkandıktan sonra küçülüyor; Yorum 3, 6, 8, 11, 12, 14.
+
+ASIN:         B006Z62862
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining'
+ana_risk:     Su geçirmiyor iddiası var, ancak kullanıcılar su aldığını bildiriyor; ayrıca dar kalıp şikayeti de mevcut.
+öneriler:
+  - [Beden/Kalıp | ekle] Sayfaya 'Dar kalıp; bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Ayakkabı parmak kısmında çok dar geliyor.
+  - [Malzeme | değiştir] Sayfada 'Su geçirmiyor' ifadesinin yanına 'Bazı kullanıcılar su aldığını bildirmiştir' notu ekleyin.
+      sayfa: '100% Waterproof Polyurethane Coated Leather,Waterproof Textile, Fleece Collar Lining' | müşteri: Yorum 3: Su geçirmiyor denilen bot, su alıyor.
+
+ASIN:         B08P2CHY2W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'Athletic/slim fit--Order a size larger if you like a looser fit'
+ana_risk:     Sayfada beden kalıbı için büyük almanız gerektiği belirtiliyor, ancak müşteriler bedenin küçük geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Beden küçük gelmektedir, bir beden büyük almanız önerilir.'
+      sayfa: 'Athletic/slim fit--Order a size larger if you like a looser fit' | müşteri: Yorum 1, 3: Beden küçük geliyor
+
+ASIN:         B0969DJS5V
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0BPJ26Q42
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 3, 4, 6, 8, 14, 2, 10, 15 | sayfa iddiası: '100% Cotton'
+  - Beden/Kalıp: yorum 11, 13 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak müşteriler ürünün lekeli ve dikiş hatalarıyla geldiğini bildiriyor.
+öneriler:
+  - [Kalite | değiştir] Ürünün %100 pamuk olduğu belirtilmesine rağmen, kalite sorunları yaşandığına dair bilgi ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 3, 4, 6, 8, 14: Ürün lekeli geldi; Yorum 2, 10, 15: Ürün kalitesi kötü, dikiş hataları var.
+  - [Beden/Kalıp | ekle] Bedenlerin küçük olduğu bilgisini ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir' şeklinde bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 11, 13: Bedenler çok küçük.
+
+ASIN:         B01N41CTGP
+gap_var:      Evet
+gap_tipleri:  Görsel, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 4, 8 | sayfa iddiası: 'This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.'
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün baskısının eğlenceli olduğunu iddia ediyor, ancak müşteriler baskının kötü olduğunu belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.
+öneriler:
+  - [Görsel | değiştir] Baskı kalitesi hakkında daha net bilgi verin.
+      sayfa: 'This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.' | müşteri: Yorum 4, 8: Ürünün baskısı kötü, görüntü bozuk.
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında daha net bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Kollar çok kısa, beden ölçüsü garip.
+
+ASIN:         B00JLB3236
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada malzeme ile ilgili bilgi yok, ancak müşteriler beden uyumsuzluğu yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün bedenleri hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 4, 5, 6: Beden uyumsuzluğu var.
+
+ASIN:         B005CSNYBM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 6 | sayfa iddiası: '32 inch inseam'
+  - Malzeme: yorum 1, 5, 7, 8, 9 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada '32 inch inseam' iddiası var, ancak müşteriler kalıbın çok dar olduğunu belirtiyor; ayrıca '100% Cotton' iddiası var ama kumaş kalitesi beklenenden düşük bulunmuş.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'Dar kalıp; bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: '32 inch inseam' | müşteri: Yorum 2, 3, 4, 6: Kalıp çok dar veya uygun değil.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında 'Kumaş kalitesi standartların altında olabilir' uyarısını ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 5, 7, 8, 9: Kumaş kalitesi beklenenden düşük.
+
+ASIN:         B07BJH68PP
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B09N7KL432
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'NOTICE: The size of this swiss dot dress is relatively large.'
+ana_risk:     Beden kalıbı büyük olduğu iddia ediliyor, ancak göğüs kısmı çok bol geliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının büyük olduğu bilgisini gözden geçirerek daha net bilgi ver.
+      sayfa: 'NOTICE: The size of this swiss dot dress is relatively large.' | müşteri: Yorum 1, 2: Göğüs kısmı çok bol geliyor.
+
+ASIN:         B07BJCFKFP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 6 | sayfa iddiası: 'Item may run small, consider sizing up.'
+ana_risk:     Sayfada 'Item may run small, consider sizing up.' iddiası var, ancak müşterilerden biri 'çok büyük geldi' diyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden seçimi için 'Bedeninizden bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Item may run small, consider sizing up.' | müşteri: Yorum 4, 6: Çok büyük geldi.
+
+ASIN:         B07MZHXQRB
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 8, 11, 15 | sayfa iddiası: 'Nylon,more durable and breathable.'
+  - Kalite: yorum 2, 12, 13 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 6, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'Nylon, more durable and breathable.' iddiası var, ancak müşteriler malzemenin su geçirmediğini ve nefes almadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Malzemenin su geçirmediği ve nefes almadığı bilgisini ekleyin.
+      sayfa: 'Nylon,more durable and breathable.' | müşteri: Yorum 8, 11, 15: Kesinlikle su geçirmiyor, sadece rüzgar kesici.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 12, 13: Çok kötü kalite, kalitesiz.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında bilgi ekleyin; ürünün uzun süreli kullanıma uygun olmadığını belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 9: Hemen su geçirdi, dayanıklı değil.
+
+ASIN:         B00CTKGG0C
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün dayanıklı olduğu iddiasında bulunmuyor, ancak müşteriler dışarıda yürümek için dayanıklı olmadığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Ürün dışarıda yürümek için dayanıklı değil.
+
+ASIN:         B08XVQRZBV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 7, 15 | sayfa iddiası: 'Loose design at the calf cuff'
+  - Malzeme: yorum 6, 13 | sayfa iddiası: 'Elastic,Cotton'
+ana_risk:     Loose design at the calf cuff iddiası var, ancak müşteriler soketlerin küçük veya büyük geldiğini belirtiyor; ayrıca kumaş kalitesi düşük, ince ve dayanıksız olarak şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüleri hakkında daha net bilgi ver; 'Beden ölçüleri standarttır, 1 beden büyük almanız önerilir' yaz.
+      sayfa: 'Loose design at the calf cuff' | müşteri: Yorum 1, 3, 7, 15: Soketler küçük veya büyük geliyor
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi yüksek, dayanıklı ve kalın' ifadesini ekle.
+      sayfa: 'Elastic,Cotton' | müşteri: Yorum 6, 13: Kumaş kalitesi düşük, ince ve dayanıksız
+
+ASIN:         B07PWQDFSB
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5 | sayfa iddiası: 'available in sizes from XS to 3XL'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'our commitment to quality and comfort is guaranteed'
+ana_risk:     Sayfada 'XS'den 3XL'e kadar beden mevcut' iddiası var, ancak müşteriler 'çok küçük geldi' diyor; ayrıca 'kalite ve konfor garantisi' var ama 'düğmeler ilk günden çıktı' şikayeti var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'available in sizes from XS to 3XL' | müşteri: Yorum 1, 5: Çok küçük geldi
+  - [Kalite | değiştir] Kalite kontrol süreçlerinin güçlendirildiği bilgisi eklenmeli.
+      sayfa: 'our commitment to quality and comfort is guaranteed' | müşteri: Yorum 3, 4: Düşük kalite, düğmeler ilk günden çıktı
+
+ASIN:         B077FR9NFV
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 4, 6, 9 | sayfa iddiası: 'Material: Polyester, Lace, Chiffon'
+  - Beden/Kalıp: yorum 3, 7 | sayfa iddiası: 'Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5"/90cm----|---22.5"/57.5cm---|-----21"/54cm-- ---6------|-----------6 Years----------|------39"/99cm-----|----25"/63.5cm----|----23.5"/60cm- ---8------|-----------8 Years----------|----42"/107.5cm----|----27"/68.5cm----|----25"/64.5cm- ---10-----|----------10 Years----------|---45.5"/116.5cm---|---28.5"/73.5cm---|-----27"/69cm-- ---12-----|----------12 Years----------|-----49"/125cm-----|---30.5"/78.5cm---|---28.5"/73.5cm ---14-----|----------14 Years----------|----52.5"/134cm----|---32.5"/83.5cm---|----30.5"/78cm- ---16-----|----------16 Years----------|-----56"/143cm-----|----34.5"/88cm----|---32.5"/82.5cm'
+ana_risk:     Sayfada kumaşın ince ve şeffaf olduğu belirtiliyor, ancak müşteriler bu durumu şikayet ediyor; ayrıca beden ölçülerinin yanlış olduğu da ifade ediliyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: 'Material: Polyester, Lace, Chiffon' | müşteri: Yorum 1, 2, 4, 6, 9: Kumaş ince ve şeffaf.
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin doğru olduğu ve büyük gelenlerin bir beden küçük alınması gerektiği bilgisi eklenmeli.
+      sayfa: 'Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5"/90cm----|---22.5"/57.5cm---|-----21"/54cm-- ---6------|-----------6 Years----------|------39"/99cm-----|----25"/63.5cm----|----23.5"/60cm- ---8------|-----------8 Years----------|----42"/107.5cm----|----27"/68.5cm----|----25"/64.5cm- ---10-----|----------10 Years----------|---45.5"/116.5cm---|---28.5"/73.5cm---|-----27"/69cm-- ---12-----|----------12 Years----------|-----49"/125cm-----|---30.5"/78.5cm---|---28.5"/73.5cm ---14-----|----------14 Years----------|----52.5"/134cm----|---32.5"/83.5cm---|----30.5"/78cm- ---16-----|----------16 Years----------|-----56"/143cm-----|----34.5"/88cm----|---32.5"/82.5cm' | müşteri: Yorum 3, 7: Beden ölçüsü yanlış, büyük geliyor.
+
+ASIN:         B012DCTQ8O
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 3, 9, 13 | sayfa iddiası: 'Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations.'
+  - Malzeme: yorum 8, 12 | sayfa iddiası: '100% PU Leather'
+ana_risk:     Sayfa, ayakkabıların kalıbı ve malzemesi hakkında yanıltıcı bilgiler veriyor; kullanıcılar ayakkabıların bir numara büyük geldiğini ve poliüretandan yapıldığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfa üzerindeki beden tablosunu güncelleyerek, ayakkabıların bir numara büyük geldiğini belirtin.
+      sayfa: 'Please be sure to check the size chart before ordering: Sanita has recently updated its USA size conversion recommendations.' | müşteri: Yorum 1, 4, 3, 9, 13: Ayakkabılar bir numara büyük geliyor.
+  - [Malzeme | değiştir] Sayfada malzeme bilgisi olarak '100% PU Leather' ifadesini 'Üst kısım poliüretan malzemeden yapılmıştır' şeklinde değiştirin.
+      sayfa: '100% PU Leather' | müşteri: Yorum 8, 12: Ayakkabının üst kısmı deriden değil, poliüretandan yapılmış.
+
+ASIN:         B07RVFG53Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'Size:S-XL.'
+ana_risk:     Sayfada 'Size:S-XL.' iddiası var, ancak kullanıcılar ürünün kısa geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının daha geniş olduğunu belirtin; 'Kısa geldi' yorumlarına göre kalıp ayarlaması yapın.
+      sayfa: 'Size:S-XL.' | müşteri: Yorum 2, 4: Kısa geldi.
+
+ASIN:         B01I8MX85K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada '100% Cotton' ve 'Rubber sole' iddiaları var, ancak müşteriler ayakkabıların kalıbının çok küçük ve çok geniş olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasında kalıp hakkında daha net bilgi verin; 'Ayakkabılar kalıbı dar, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar çok küçük ve çok geniş geldi.
+
+ASIN:         B089CKS4GS
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1 | sayfa iddiası: '92% Modal, 8% Spandex Jersey'
+  - Dayanıklılık: yorum 6, 10 | sayfa iddiası: 'These boxers are incredibly durable and are highly fade resistant.'
+  - Beden/Kalıp: yorum 2, 4, 11 | sayfa iddiası: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).'
+ana_risk:     Sayfada kumaşın kalitesi ve dayanıklılığı ile ilgili somut iddialar var, ancak müşteriler kumaşın ince ve şeffaf olduğunu, ürünlerin yıkama sonrası pilling yaptığını ve bedenlerin normalden küçük olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince olduğu ve şeffaflık sorununa dikkat çekilecek şekilde açıklama ekleyin.
+      sayfa: '92% Modal, 8% Spandex Jersey' | müşteri: Yorum 1: Kumaş çok ince ve şeffaf.
+  - [Dayanıklılık | değiştir] Ürünlerin yıkama sonrası dayanıklılığı hakkında daha net bilgi verin; pilling yapma ihtimaline karşı uyarı ekleyin.
+      sayfa: 'These boxers are incredibly durable and are highly fade resistant.' | müşteri: Yorum 6, 10: Ürünler yıkama sonrası pilling yapıyor ve inceleşiyor.
+  - [Beden/Kalıp | değiştir] Bedenlerin normalden küçük olduğu konusunda uyarı ekleyin; bir beden büyük almanız önerilir.
+      sayfa: 'The sizes are available in Small (28-30”), Medium (32-34”), Large (36-38”) and X-Large (40-42”). Select colors are available in size XX-Large (44-46).' | müşteri: Yorum 2, 4, 11: Bedenler normalden küçük ve kalıp uyumsuz.
+
+ASIN:         B072LX74PY
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B097NBGR75
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B08BFQPRRQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 11 | sayfa iddiası: 'Loose-Fit: designed for comfort'
+  - Malzeme: yorum 4, 8, 9, 10, 12, 13 | sayfa iddiası: '35% Polyester, 35% Acrylic, 30% Nylon'
+ana_risk:     Loose-Fit iddiası var, ancak müşteriler bedenin büyük olduğunu ve oturuşun kötü olduğunu belirtiyor; kumaş kalitesi iddiası var, fakat kullanıcılar kumaşın kalitesiz olduğunu ve pilling yaptığını söylüyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Loose-Fit: designed for comfort' ifadesinin yanına 'Beden büyük, oturuşu kötü; bir beden küçük almanız önerilir.' notunu ekleyin.
+      sayfa: 'Loose-Fit: designed for comfort' | müşteri: Yorum 1, 2, 11: Beden büyük ve oturuş kötü.
+  - [Malzeme | değiştir] Sayfada kumaş kalitesi ile ilgili 'Pilling yapma riski vardır; dikkatli yıkama önerilir.' uyarısını ekleyin.
+      sayfa: '35% Polyester, 35% Acrylic, 30% Nylon' | müşteri: Yorum 4, 8, 9, 10, 12, 13: Kumaş kalitesi kötü, pilling yapıyor.
+
+ASIN:         B08FQVYYDM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 6, 12, 13, 14 | sayfa iddiası: "Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase."
+  - Kalite: yorum 3, 8, 15 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada bedenin dar olduğu belirtiliyor; ancak müşteriler bedenin küçük geldiğini ve ürünün defolu olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin dar olduğu bilgisi vurgulanmalı ve beden tablosu daha belirgin hale getirilmeli.
+      sayfa: "Our size is not consistent with Amazon's size, please do refer to the size chart or check the last photo of product image before purchase." | müşteri: Yorum 5, 6, 12, 13, 14: Beden küçük geldi; beklenenden daha dar.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi eklenmeli; kalite kontrol süreçleri hakkında bilgi verilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 8, 15: Ürün defolu geldi; dikişleri kötü.
+
+ASIN:         B0757HRV1B
+gap_var:      Evet
+gap_tipleri:  Malzeme, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 8 | sayfa iddiası: '100% Cotton'
+  - Dayanıklılık: yorum 5, 6 | sayfa iddiası: 'Double needle stitching and a reinforced kick plate at back leg hem for enhanced durability'
+ana_risk:     Sayfada '100% Cotton' iddiası var, ancak müşteriler güçlendirilmiş dizlerin olmadığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün açıklamasına 'Güçlendirilmiş diz yok' ifadesini ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 2, 8: Açıklamada yazdığı gibi güçlendirilmiş diz yok.
+  - [Dayanıklılık | değiştir] Ürün açıklamasında dizlerin dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: 'Double needle stitching and a reinforced kick plate at back leg hem for enhanced durability' | müşteri: Yorum 5, 6: Dizleri çok çabuk yırtılıyor.
+
+ASIN:         B09PQDLRQZ
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '65% Viscose, 35% Polyamide'
+ana_risk:     Sayfa, kumaşın %65 Viskoz ve %35 Polyamid olduğunu belirtirken, müşteriler kumaşın çok ince ve şeffaf olduğunu bildiriyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: '65% Viscose, 35% Polyamide' | müşteri: Yorum 2, 3: Kumaş çok ince ve şeffaf.
+
+ASIN:         B01GRVO402
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 1 | sayfa iddiası: '100% Other Fibers'
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 diğer liflerden yapıldığı iddiasında bulunuyor; ancak müşteriler astarın plastik gibi olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Astarın malzeme içeriğini ve yalıtım özelliklerini net bir şekilde belirtin.
+      sayfa: '100% Other Fibers' | müşteri: Yorum 1: Astarı plastik gibi, yalıtım özelliği yok.
+  - [Beden/Kalıp | ekle] Ürün sayfasına beden seçenekleri hakkında daha fazla bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: 36" boy seçeneği yok.
+
+ASIN:         B0BPXVJ24W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly.'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler normalden büyük sipariş vermelerine rağmen küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp hakkında 'normalden büyük sipariş verildiğinde bir beden büyük alın' uyarısı ekleyin.
+      sayfa: 'High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly.' | müşteri: Yorum 1, 2: Küçük kalıp, normalden büyük sipariş verildiği halde küçük geldi.
+
+ASIN:         B00DELID38
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '65/35 poly/cotton pique'
+ana_risk:     Sayfa, 65/35 poly/cotton pique malzeme iddiasında bulunuyor, ancak müşteriler etiket ve dikişlerin rahatsız edici olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında etiketin ve dikişlerin kalitesi hakkında bilgi verin; 'Etiketler yumuşak ve dikişler rahatsız etmeyecek şekilde tasarlanmıştır' ifadesini ekleyin.
+      sayfa: '65/35 poly/cotton pique' | müşteri: Yorum 1, 2: Etiket ve dikişler rahatsız edici.
+
+ASIN:         B014CJQIH8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'Regular trim with modern cut fit, good quality warm overcoat'
+  - Renk: yorum 3, 8 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 4, 5, 6, 7 | sayfa iddiası: 'Money-back satisfaction guarantee.'
+ana_risk:     Beden kalıbı, renk ve kalite ile ilgili şikayetler var; sayfada vaat edilen kalıp, renk ve kalite ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha dar olduğunu belirtin; 'Bir beden küçük almanız önerilir' notu ekleyin.
+      sayfa: 'Regular trim with modern cut fit, good quality warm overcoat' | müşteri: Yorum 2: Çok büyük geldi, tam oturmadı.
+  - [Renk | ekle] Renk seçeneklerini ve gerçek renk tonunu belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 8: Renk beklediğim gibi değil, farklı geldi.
+  - [Kalite | değiştir] Kalite kontrol süreçlerini ve kullanılan malzemelerin dayanıklılığını vurgulayın.
+      sayfa: 'Money-back satisfaction guarantee.' | müşteri: Yorum 4, 5, 6, 7: Kalite çok düşük, düğme koptu.
+
+ASIN:         B07GPC8FJB
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '95% Rayon, 5% Other Fibers'
+ana_risk:     Sayfa, ürünün %95 rayon olduğunu iddia ediyor; ancak müşteriler kumaşın sert olduğunu ve pilling yaptığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın pilling yapma özelliği ve sertliği hakkında bilgi ekleyin.
+      sayfa: '95% Rayon, 5% Other Fibers' | müşteri: Yorum 3, 4: Kumaş pilling yapıyor ve sert.
+
+ASIN:         B09JLM1WTC
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 3 | sayfa iddiası: 'Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening'
+  - Beden/Kalıp: yorum 4, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada konfor sağlayan kaliteli malzemeler iddiası var, ancak kullanıcılar kötü kalite ve yapım hatası yaşadıklarını bildiriyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında kalite kontrol süreçleri hakkında bilgi verin.
+      sayfa: 'Soft insoles, smooth linings, and easy-flexing soles provide comfort you can enjoy all day and into the evening' | müşteri: Yorum 1, 2, 3: Kötü kalite ve yapım hatası var.
+  - [Beden/Kalıp | ekle] Ürün sayfasına beden uyumu hakkında bilgi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 6, 7: Ayakkabılar dar ve uyumsuz.
+
+ASIN:         B07989M1JJ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'Mid-rise jeans that are fitted through the thigh and fitted at the knee into a boot cut for a slimming and lengthening silhouette.'
+  - Görsel: yorum 1, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden ölçüsü iddiası var, ancak müşteriler bedenin beklenenden küçük veya uzun olduğunu belirtiyor; ayrıca ürün fotoğraflarıyla uyuşmuyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüsü hakkında daha net bilgi ver; 'Beden ölçüsü normalden küçük veya uzun gelebilir, bir beden büyük almanız önerilir.'
+      sayfa: 'Mid-rise jeans that are fitted through the thigh and fitted at the knee into a boot cut for a slimming and lengthening silhouette.' | müşteri: Yorum 2, 3: Beden ölçüsü beklenenden küçük veya uzun.
+  - [Görsel | ekle] Ürün sayfasına gerçek ürün fotoğraflarını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5, 6, 7: Ürün fotoğraflarıyla uyuşmuyor.
+
+ASIN:         B085NSYH4Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4, 5, 7, 9, 12 | sayfa iddiası: 'Runs Small!!! Please order one size up if you want a more comfortable style.'
+  - Malzeme: yorum 2, 10, 13, 14, 15 | sayfa iddiası: 'made of soft and smooth satin fabric, they are breathable, comfortable and no itchy.'
+ana_risk:     Beden kalıbı küçük geliyor, oysa sayfada bir beden büyük almanız gerektiği belirtiliyor; kumaş kalitesiz, sayfada ise yumuşak ve rahat olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "Bir beden büyük almanız önerilir" ifadesini ekleyin.
+      sayfa: 'Runs Small!!! Please order one size up if you want a more comfortable style.' | müşteri: Yorum 3, 4, 5, 7, 9, 12: Küçük geldi, beden uyumsuzluğu var.
+  - [Malzeme | değiştir] "Kumaş ince ve kalitesizdir" uyarısını ekleyin.
+      sayfa: 'made of soft and smooth satin fabric, they are breathable, comfortable and no itchy.' | müşteri: Yorum 2, 10, 13, 14, 15: Kumaş çok ince ve kalitesiz.
+
+ASIN:         B0C3BW3PCD
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: "'Old Fart' Socks fit men's UK size 6 - 11"
+ana_risk:     Sayfa, 'Old Fart' çoraplarının UK 6-11 beden aralığına uygun olduğunu iddia ediyor, ancak müşteriler çorapların çok küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: "'Old Fart' Socks fit men's UK size 6 - 11" | müşteri: Yorum 3: Çok küçük
+
+ASIN:         B0BKJT83C1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above.'
+ana_risk:     Sayfa, daha geniş bir oturuş için 1-2 beden büyük alınması gerektiğini belirtiyor; ancak müşteriler ürünün çok küçük geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında 'Beden tablosuna göre 1-2 beden büyük almanız önerilir' ifadesinin yanına 'Ancak bazı kullanıcılar ürünü küçük buldu' notunu ekleyin.
+      sayfa: 'If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above.' | müşteri: Yorum 1, 3: Çok küçük geldi.
+
+ASIN:         B07NY2QQM6
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 4 | sayfa iddiası: 'constructed from durable textile and synthetic overlays to give you a dependable work shoe'
+  - Malzeme: yorum 7, 1 | sayfa iddiası: '100% Leather and Synthetic'
+  - Beden/Kalıp: yorum 5, 6 | sayfa iddiası: 'memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step'
+ana_risk:     Dayanıklılık iddiası var, ancak ürün kısa sürede bozuluyor; malzeme kalitesi düşük ve ayakkabılar dar geliyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha fazla bilgi ekleyin; ürünün dayanıklılığı hakkında net bilgi verin.
+      sayfa: 'constructed from durable textile and synthetic overlays to give you a dependable work shoe' | müşteri: Yorum 2, 4: Ürün kısa sürede bozuluyor, yapıştırıcıları açılıyor.
+  - [Malzeme | değiştir] Kullanılan malzeme kalitesi hakkında daha net bilgi verin; memory foam özelliğinin etkisini açıklayın.
+      sayfa: '100% Leather and Synthetic' | müşteri: Yorum 7, 1: Kullanılan malzeme kalitesiz, ince ve dar; memory foam hissedilmiyor, ayakları acıtıyor.
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında daha net bilgi verin; rahatlık için öneriler ekleyin.
+      sayfa: 'memory foam sockliner and midsole work in unison with the cushioned heel insert to deliver additional comfort in every step' | müşteri: Yorum 5, 6: Ayakkabılar dar, rahat değil.
+
+ASIN:         B01EC0Q732
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'Shaft measures approximately 6.25" from arch'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'Shaft measures approximately 6.25" from arch' iddiası var, ancak müşteriler ayakkabıların çok büyük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha net ve doğru bir şekilde belirtildiği bir ifade ekleyin.
+      sayfa: 'Shaft measures approximately 6.25" from arch' | müşteri: Yorum 3, 5: Ayakkabılar çok büyük ve rahatsız.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi ekleyin; örneğin, 'Ürünlerin dayanıklılığı hakkında bilgi verin.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Ürün kalitesi kötü, rahat değil ve çabuk bozuluyor.
+
+ASIN:         B07DFZPSSF
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak kumaşın kırışmadığına dair şikayet var.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Beden ölçüsü küçük geliyor.
+  - [Malzeme | değiştir] Kumaşın kırışmadığına dair bilgi ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 2: Kumaş kırışmıyor gibi değil.
+
+ASIN:         B01GK8UGD6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 7 | sayfa iddiası: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].'
+  - Görsel: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün, 'One Size Regular' iddiasına rağmen bazı kullanıcılara çok büyük geldiğini belirtiyor; ayrıca ürün fotoğraftaki görünümden farklı olduğu ve işçilik hatası içerdiği şikayetleri var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini gözden geçirerek, daha net bir beden aralığı bilgisi ekleyin.
+      sayfa: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].' | müşteri: Yorum 2, 7: Ürün çok büyük geldi.
+  - [Görsel | ekle] Ürün fotoğraflarını güncelleyerek, gerçek görünümünü yansıtacak şekilde değiştirin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün fotoğraftaki görünümden farklı.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi verin ve işçilik standartlarını açıklayın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Ürün işçilik hatası içeriyor.
+
+ASIN:         B09QPL8PQL
+gap_var:      Evet
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0016LDN24
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 12 | sayfa iddiası: 'the front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips'
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor; Malzeme iddiası var, fakat kumaşın çok fazla toz tuttuğu şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının normalden küçük olduğu bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'the front rise is 9 1/8" so it is going to sit below the belly-button and on top of the hips' | müşteri: Yorum 2, 4, 5, 6, 12: Çok küçük geliyor
+  - [Malzeme | değiştir] Kumaşın toz tutma özelliği hakkında bilgi eklenmeli; 'Kumaş toz tutma eğilimindedir' notu ekleyin.
+      sayfa: 'Our durable stretch twill fabric will ensure that the pant continues to look great after repeated washings' | müşteri: Yorum 1, 3: Kumaş çok fazla toz tutuyor
+
+ASIN:         B00UTI0QDE
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, malzeme kalitesi hakkında bilgi vermiyor; ancak müşteriler ayakkabıların dar geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ayakkabıların dar kalıp olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Ayakkabılar çok dar geliyor
+
+ASIN:         B005FPCOT0
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada '100% Manmade' iddiası var, ancak müşteriler kalitenin çok kötü olduğunu ve ürünün hemen parçalandığını bildiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin; 'Ürün dayanıklılığı test edilmiştir' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3: Kalitesi çok kötü, hemen parçalanmaya başladı
+
+ASIN:         B00PUF8MK0
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 2, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün dayanıklılığı hakkında bilgi vermiyor, ancak müşteriler ilk günden itibaren dikişlerin bozulduğunu belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: İlk günden itibaren dikişler bozuldu; Yorum 2, 5.
+
+ASIN:         B005CMR5OK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada bu konuda bilgi yok, ancak müşteriler numara uyumsuzluğu ve kalıp sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ayakkabı kalıbının genişliği hakkında bilgi ekleyin; 'Bu model normalden geniş kalıp olarak tasarlanmıştır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5, 6, 7: Top kısımlar çok bol; önceki aldığım ayakkabıyla uyumlu değil; orta genişlikteki ayakkabı uymadı; bir ayakkabı uyar, diğeri çok büyük; ayakkabı ayakta durmuyor, güvenli değil.
+
+ASIN:         B0799L7B2K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”'
+  - Malzeme: yorum 1, 3 | sayfa iddiası: 'Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it.'
+ana_risk:     Sayfada kalıp ve malzeme ile ilgili somut iddialar var, ancak müşteriler ürünün küçük veya büyük geldiğini ve kalitesinin kötü olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının daha net bir şekilde belirtildiği bir not ekleyin; 'Ürünün kalıbı dar, bir beden büyük almanız önerilir.'
+      sayfa: 'Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”' | müşteri: Yorum 3: Ürün küçük geldi; Yorum 4: Ürün büyük geldi, skinny değil.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, ancak bazı kullanıcılar yırtıkların fazla olduğunu belirtmektedir.'
+      sayfa: 'Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it.' | müşteri: Yorum 1: Kalite kötü; Yorum 3: Kalite kötü.
+
+ASIN:         B00UPG17WY
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: '100% Synthetic'
+ana_risk:     Sayfada '100% Synthetic' iddiası var, ancak kullanıcılar topuk kısmındaki plastik nedeniyle zor giyme sorunuyla karşılaşıyor.
+öneriler:
+  - [Malzeme | değiştir] Topuk kısmının giyimi kolaylaştıracak şekilde tasarlandığını belirtin.
+      sayfa: '100% Synthetic' | müşteri: Yorum 2, 3: Topuk kısmındaki plastik zor giydiriyor.
+
+ASIN:         B00DSN2MDE
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 3, 4, 5, 9, 15 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 6, 12 | sayfa iddiası: '100% Cotton-canvas webbing'
+  - Beden/Kalıp: yorum 2, 7, 11 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada kullanılan malzeme kalitesi yüksek olarak belirtiliyor, ancak müşteriler malzemenin kalitesiz olduğunu ve ürünün kısa sürede bozulduğunu bildiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi ve kalite kontrol süreci eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 9, 15: Ürün kalitesi düşük, kısa sürede bozuluyor.
+  - [Malzeme | değiştir] Kullanılan malzeme hakkında daha detaylı bilgi verilmeli; malzemenin dayanıklılığı ve kalitesi hakkında açıklama eklenmeli.
+      sayfa: '100% Cotton-canvas webbing' | müşteri: Yorum 2, 6, 12: Kullanılan malzeme kalitesiz ve dayanaksız.
+  - [Beden/Kalıp | ekle] Beden tablosu eklenmeli ve kalıp hakkında bilgi verilerek, 'bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 7, 11: Küçük ve dar geliyor.
+
+ASIN:         B0BM1S7CD3
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'adjustability provides the perfect fit'
+  - Kalite: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabının ayak yapısına uygunluk sağlaması gerektiğini iddia ediyor, ancak kullanıcılar arch desteğinin uygun olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Arch desteği hakkında daha net bilgi verin; ayakkabının hangi ayak yapısına uygun olduğu belirtilmeli.
+      sayfa: 'adjustability provides the perfect fit' | müşteri: Yorum 1, 2: Ayakkabının arch desteği ayak yapısına uygun değil.
+  - [Kalite | ekle] Ayakkabının konforu ve denge durumu hakkında bilgi ekleyin; kullanıcıların yaşadığı rahatsızlıklar belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ayakkabı çok rahatsız ve dengesiz.
+
+ASIN:         B086ZWJ5PX
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 1, 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden kalıbı hakkında bilgi vermiyor ancak müşteriler ayakkabıların çok dar geldiğini ve arka kısımda sürtünme yaparak acı verdiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden kalıbı hakkında bilgi ekle; 'dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4: Ayakkabılar çok dar geliyor ve rahat değil.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında bilgi ekle; 'arka kısımda sürtünme yapabilir, dikkatli kullanın' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3: Ayakkabılar arka kısımda sürtünme yapıyor ve acı veriyor.
+
+ASIN:         B07PSM8XXG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5 | sayfa iddiası: 'Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.'
+  - Malzeme: yorum 9, 10 | sayfa iddiası: 'Rubber sole'
+ana_risk:     Metatomical Footbed Design iddiası var, ancak 4 farklı yorum kalıbın küçük veya büyük geldiğini belirtiyor; ayrıca Rubber sole iddiası var ama 2 yorum malzemenin sert ve destekleyici olmadığını söylüyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp hakkında 'normalden bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Metatomical Footbed Design: This internal support mechanism is anatomically engineered to provide excellent arch support and cradle the natural contours of the foot.' | müşteri: Yorum 1, 2, 4, 5: Küçük veya büyük geliyor.
+  - [Malzeme | değiştir] Ürün sayfasında malzeme hakkında 'kullanılan kauçuk taban serttir ve yeterli destek sağlamayabilir' ifadesi ekleyin.
+      sayfa: 'Rubber sole' | müşteri: Yorum 9, 10: Sert ve destekleyici değil.
+
+ASIN:         B097CZMC6H
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 5, 10, 11, 12, 13, 15 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 3, 4, 6, 8, 9, 14 | sayfa iddiası: 'Please order one size up if you are taller, stronger, or grows faster.'
+ana_risk:     Sayfa, %100 polyester malzeme iddiasında bulunuyor ancak müşteriler kumaş kalitesinin kötü olduğunu belirtiyor; ayrıca bedenlerin küçük geldiği iddiası var, sayfada beden konusunda bir uyarı var.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: '100% Polyester' | müşteri: Yorum 1, 5, 10, 11, 12, 13, 15: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiği bilgisi eklenmeli; 'Bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'Please order one size up if you are taller, stronger, or grows faster.' | müşteri: Yorum 3, 4, 6, 8, 9, 14: Bedenler küçük geliyor.
+
+ASIN:         B09TRJQGZ7
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 8, 11 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 11, 14 | sayfa iddiası: 'Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.'
+  - Görsel: yorum 7, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada '100% Polyester' iddiası var, ancak müşteriler kumaşın kalitesinin düşük olduğunu belirtiyor; ayrıca beden ölçülerinin beklenenden küçük olduğu ve ürünün fotoğraftaki gibi görünmediği şikayetleri var.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: '100% Polyester' | müşteri: Yorum 8, 11: Kumaşın kalitesi düşük ve ince.
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin küçük geldiği bilgisi eklenmeli.
+      sayfa: 'Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.' | müşteri: Yorum 11, 14: Beden ölçüsü beklenenden küçük.
+  - [Görsel | ekle] Ürünün fotoğraftaki görünümünden farklı olduğu bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 7, 12: Ürün fotoğraftaki gibi değil.
+
+ASIN:         B008RI9YJU
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 3, 7, 11, 13, 14 | sayfa iddiası: "the company's success stems from it's high quality, diversified, and affordable product line"
+  - Malzeme: yorum 5, 9, 15 | sayfa iddiası: '100% Leather/Synthetic'
+  - Beden/Kalıp: yorum 2, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kalitesi düşük olduğu ve kullanılan malzemenin kalitesiz olduğu iddia ediliyor, ancak müşteriler ürünün kalitesiz olduğunu ve çabuk yıprandığını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrol süreçlerinin iyileştirildiğine dair bilgi ekleyin.
+      sayfa: "the company's success stems from it's high quality, diversified, and affordable product line" | müşteri: Yorum 3, 7, 11, 13, 14: Ürün kalitesi düşük, çabuk yıpranıyor.
+  - [Malzeme | değiştir] Kullanılan malzemenin kalitesi hakkında daha fazla bilgi verin.
+      sayfa: '100% Leather/Synthetic' | müşteri: Yorum 5, 9, 15: Kullanılan malzeme ince ve kalitesiz.
+  - [Beden/Kalıp | ekle] Beden seçiminde bir beden büyük almanız önerilir.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 12: Numara küçük, dar geliyor.
+
+ASIN:         B07G3H31YF
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 10, 12, 15 | sayfa iddiası: 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW'
+  - Eksik Bilgi: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW' iddiası var, ancak müşteriler numaraların çok küçük geldiğini ve genişlik bilgisi olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden ve kalıp hakkında 'Bedenler normalden küçük; bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Suede-like moccasins available in full and half sizes 7-11, 12 M; 7-11, 12 W; 7-11, 12 WW' | müşteri: Yorum 4, 5, 10, 12, 15: Numaralar çok küçük geliyor.
+  - [Eksik Bilgi | ekle] Ürün sayfasına genişlik bilgisi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Ürün açıklamasında genişlik bilgisi yok.
+
+ASIN:         B081NXFM2H
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 5, 3 | sayfa iddiası: 'shearling'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice."
+ana_risk:     Sayfa, 'shearling' malzeme iddiasında bulunuyor ancak müşteriler arka boyasının çıktığını ve temizlenmesinin zor olduğunu belirtiyor; ayrıca dayanıklılık iddiası var ama yürürken kayma ve sertlik şikayetleri mevcut.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında malzeme kalitesi hakkında daha net bilgi verin; 'arka boyası çıkma yapabilir, bu nedenle dikkatli temizlenmelidir' notunu ekleyin.
+      sayfa: 'shearling' | müşteri: Yorum 5: Arka boyası çıkıyor, zor temizleniyor.
+  - [Beden/Kalıp | değiştir] Sayfada 'kayma yapabilir, dikkatli kullanılması önerilir' uyarısını ekleyin.
+      sayfa: "DURABLE OUTSOLE FOR INDOOR & OUTDOOR USE: The BEARPAW Retro Loki's durable, lightweight 1.5 inch Retro Platform EVA outsole makes this women's slipper the perfect indoor/outdoor choice." | müşteri: Yorum 1, 4: Zor yürünüyor, kayıyor ve platform sert.
+
+ASIN:         B077SNV2X1
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'designed for durability, so you can enjoy wearing them for years to come.'
+ana_risk:     Sayfa dayanıklılık iddiası var, ancak kullanıcılar ayakkabının tabanının tamamen yırtıldığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha net bilgi verin; 'Tabanın yırtılma riski vardır' uyarısını ekleyin.
+      sayfa: 'designed for durability, so you can enjoy wearing them for years to come.' | müşteri: Yorum 2, 3: Ayakkabının tabanı tamamen yırtıldı.
+
+ASIN:         B0BT5FRJXS
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 3, 4 | sayfa iddiası: '100% Polyester'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün %100 polyester olduğunu iddia ediyor; ancak müşteriler kumaşın ince ve sert olduğunu, kalitesiz göründüğünü belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve sert, kalitesiz görünüyor' şeklinde bir uyarı ekleyin.
+      sayfa: '100% Polyester' | müşteri: Kumaş ince ve sert, kalitesiz görünüyor; Yorum 1, 2, 3, 4.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'Ürün kalitesi çok düşük, ucuz görünüyor' şeklinde bir not ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Ürün kalitesi çok düşük, ucuz görünüyor; Yorum 2, 4.
+
+ASIN:         B00KC2TM6O
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların kalitesinin yüksek olduğunu iddia ediyor, ancak müşteriler kötü yapım ve ucuz görünümden şikayetçi.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ayakkabılar kötü yapım, görünüm olarak ucuz duruyor.
+
+ASIN:         B00TM78T6E
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 3, 4, 5, 6, 7, 10, 11, 13 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 2, 8, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, malzeme kalitesi ile ilgili bilgi vermiyor; ancak müşteriler çabuk yırtıldığını ve bedenin erkekler için dar olduğunu belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünlerin dayanıklılığı hakkında bilgi ekleyin; 'Ürünlerimiz yüksek kaliteli malzemelerden üretilmiştir, ancak aşırı kullanımlarda yırtılma riski bulunmaktadır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 6, 7, 10, 11, 13: Çabuk yırtılıyorlar
+  - [Beden/Kalıp | ekle] Beden bilgisi ekleyin; 'Erkekler için bedenlerin dar olabileceğini belirtin, kadınlar için uygun.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 8, 12: Beden kadınlara uygun, erkekler için dar
+
+ASIN:         B09S3MCR2R
+gap_var:      Evet
+gap_tipleri:  Malzeme, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 3, 9, 10, 11 | sayfa iddiası: '95% Polyester, 5% Spandex'
+  - Eksik Bilgi: yorum 2, 5, 6, 8 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, kumaşın %95 polyester ve %5 spandeks olduğunu iddia ediyor; ancak müşteriler kumaş kalitesinin düşük olduğunu ve renklerin aktığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin düşük olduğu ve renklerin aktığına dair uyarı ekleyin.
+      sayfa: '95% Polyester, 5% Spandex' | müşteri: Kumaş kalitesi düşük, renk akıyor ve lekeler bırakıyor; Yorum 1, 3, 9, 10, 11.
+  - [Eksik Bilgi | ekle] Ürün açıklamasına iki set olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Ürün açıklamasında iki set olduğu belirtilmemiş; Yorum 2, 5, 6, 8.
+
+ASIN:         B093WB6NFV
+gap_var:      Evet
+gap_tipleri:  Kalite, Görsel
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Görsel: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, yüksek kaliteli kumaş iddiasında bulunuyor, ancak müşteriler kumaşın kalitesiz olduğunu belirtiyor ve tasarımın fotoğraftakiyle uyuşmadığını ifade ediyor.
+öneriler:
+  - [Kalite | ekle] Ürün sayfasında kumaş kalitesi hakkında bilgi ekleyin; 'Kumaş kalitesi yüksek değildir' gibi bir uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Kumaş kalitesiz ve tasarım fotoğraftakiyle uyuşmuyor.
+  - [Görsel | ekle] Ürün sayfasında tasarımın gerçek görünümünü yansıtan fotoğraflar ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Tasarım fotoğraftakiyle alakası yok.
+
+ASIN:         B08BFW4CRM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Shaft measures approximately Above the Knee from arch'
+ana_risk:     Sayfa, beden kalıbı ile ilgili iddialarda bulunuyor ancak yorumlar küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında 'Bir numara büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Shaft measures approximately Above the Knee from arch' | müşteri: Küçük geldi, bir numara büyük alınmalı; Yorum 3, Küçük geldi, normalde giydiğim numara uymadı; Yorum 4
+
+ASIN:         B076GKBST4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'S:34~36 M:38~40 L:42~44 XL:46~48 2XL:50~52 3XL: 54~56'
+  - Malzeme: yorum 1 | sayfa iddiası: '60% Cotton / 40% Poly'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler gömleğin küçük geldiğini belirtiyor; Malzeme iddiası var, fakat kumaş kalitesinin beklenenden düşük olduğu şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini gözden geçirerek daha doğru bilgi verin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'S:34~36 M:38~40 L:42~44 XL:46~48 2XL:50~52 3XL: 54~56' | müşteri: Yorum 1, 3: Gömlek küçük geliyor
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi standartların altındadır' uyarısını ekleyin.
+      sayfa: '60% Cotton / 40% Poly' | müşteri: Yorum 1: Kumaş kalitesi beklenenden düşük
+
+ASIN:         B09TYMC6FS
+gap_var:      Evet
+gap_tipleri:  Görsel, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Görsel: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 4 | sayfa iddiası: '95% Polyester, 5% Spandex'
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün görseldeki gibi değil, kumaş kalitesi düşük ve rahatsız edici; beden ise küçük geliyor.
+öneriler:
+  - [Görsel | ekle] Ürün fotoğrafını gerçek ürüne uygun şekilde güncelle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün fotoğraftaki gibi değil.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'kalitesiz kumaş' ifadesini kaldır.
+      sayfa: '95% Polyester, 5% Spandex' | müşteri: Yorum 2, 4: Kumaş kalitesi düşük ve rahatsız edici.
+  - [Beden/Kalıp | ekle] Bedenin küçük geldiğine dair uyarı ekle; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Beden biraz küçük geliyor.
+
+ASIN:         B08LG7YM6J
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'These rain boots run a bit large, if you are not sure, please go down half size.'
+  - Kalite: yorum 2, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların geniş olduğu iddiasında bulunuyor ancak müşteriler dar geldiğini belirtiyor; ayrıca kalite sorunları da yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Ayakkabı geniş olarak tanıtılmasına rağmen dar geliyor; doğru bedende ama çok geniş' ifadesini ekleyin.
+      sayfa: 'These rain boots run a bit large, if you are not sure, please go down half size.' | müşteri: Yorum 3, 4: Ayakkabı geniş olarak tanıtılmasına rağmen dar geldi; doğru bedende ama çok geniş.
+  - [Kalite | ekle] Sayfada 'Ürün ilk kullanımda yırtılabilir; kalitesi düşük olabilir' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5, 6: Ürün ilk kullanımda yırtıldı ve kalitesi düşük.
+
+ASIN:         B0058FY8X2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'Waist: Small 28"-29", Medium 30"-32", Large 34"-36", XL 38"-40", 2XL 42"-44", 3XL 46"-48".'
+  - Eksik Bilgi: yorum 1, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden uyumu ile ilgili somut bir iddia var, ancak kullanıcılar kötü beden uyumu yaşadıklarını belirtiyor; ayrıca bel lastiği ve fermuar hakkında bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden uyumu hakkında daha net bilgi ver; bedenlerin oturuşu hakkında kullanıcı deneyimlerini ekle.
+      sayfa: 'Waist: Small 28"-29", Medium 30"-32", Large 34"-36", XL 38"-40", 2XL 42"-44", 3XL 46"-48".' | müşteri: Yorum 2, 4: Kötü beden uyumu yaşıyorum.
+  - [Eksik Bilgi | ekle] Ürün açıklamasına bel lastiği ve fermuar bilgilerini ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3: Açıklamada bel lastiği ve fermuar yoktu.
+
+ASIN:         B0BDWHDH9S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'Livona’s Sports Bra measurements are based on US standard sizing S-XXL.'
+ana_risk:     Sayfa, ürünün beden ölçülerinin standartlara uygun olduğunu iddia ediyor; ancak müşteriler, ürünün küçük geldiğini ve uygun destek sağlamadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha net bir şekilde belirtildiği bir açıklama ekleyin; örneğin, 'Beden ölçüleri standart US ölçülerine göre küçük kalabilir, büyük göğüsler için önerilen bedenleri kontrol edin.'
+      sayfa: 'Livona’s Sports Bra measurements are based on US standard sizing S-XXL.' | müşteri: Yorum 1, 2, 3, 4: Küçük beden yeterince küçük değil, destek yok, kötü oturuş.
+
+ASIN:         B007PA43ZG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların dar geldiğini ve büyük geldiğini iddia ediyor; ancak müşteriler hem dar hem de büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ayakkabıların kalıbı hakkında daha net bilgi verin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar geldi ve rahatsız etti; Yorum 4: Ayakkabılar büyük geldi ve kayıyor.
+
+ASIN:         B0861VQGNC
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'The shoe size too small problem has been corrected after June 15th, 2021.'
+ana_risk:     Sayfada 'küçük beden' sorununun düzeltildiği iddiası var, ancak müşteriler hala bedenin küçük geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının küçük olduğu bilgisini ekleyin; 'Beden küçük geldi, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'The shoe size too small problem has been corrected after June 15th, 2021.' | müşteri: Yorum 2, 3: Beden küçük geldi.
+
+ASIN:         B08HQ6VBFC
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 2, 4, 5 | sayfa iddiası: 'We manufacture our tees to be the best super soft high quality shirts.'
+ana_risk:     Sayfa, yüksek kaliteli tişörtler vaat ediyor ancak müşteriler işçilik hataları ve baskı sorunları yaşıyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında işçilik kalitesi hakkında daha net bilgi verin ve baskı hataları ile ilgili uyarı ekleyin.
+      sayfa: 'We manufacture our tees to be the best super soft high quality shirts.' | müşteri: Yorum 1, 2, 4, 5: Üründe işçilik hatası var, baskı düzgün değil.
+
+ASIN:         B008YDWRS8
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2, 3, 5, 6, 8, 11, 14, 15 | sayfa iddiası: 'A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.'
+  - Malzeme: yorum 4, 7 | sayfa iddiası: 'Rubber sole'
+ana_risk:     Dayanıklılık iddiası var, ancak kullanıcılar sole'ların ayrıldığını ve dayanıklılık sorunları yaşadıklarını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha net bilgi verin; 'Sole'ların ayrılma riski vardır' uyarısını ekleyin.
+      sayfa: 'A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.' | müşteri: Yorum 1, 2, 3, 5, 6, 8, 11, 14, 15: Sole'lar ayrılıyor ve dayanıklılık sorunları var.
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi verin; 'Kullanılan malzeme kalitesi standartların altındadır' uyarısını ekleyin.
+      sayfa: 'Rubber sole' | müşteri: Yorum 4, 7: Kullanılan malzeme kalitesi düşük.
+
+ASIN:         B07F2CCYFY
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B06XCYN3MX
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 6 | sayfa iddiası: 'Sleeveless,Pullover,Loose.Nice for relaxed Holiday,Daily,Party,Beach!'
+  - Görsel: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı ile ilgili somut bir iddia var, ancak müşteriler beden uyumsuzluğu yaşıyor; ayrıca ürün üzerlerinde hoş durmadığını belirtiyorlar.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha geniş olduğunu belirtin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Sleeveless,Pullover,Loose.Nice for relaxed Holiday,Daily,Party,Beach!' | müşteri: Yorum 2, 6: Çok küçük geldi, beden uyumsuzluğu var.
+  - [Görsel | ekle] Ürünün üzerindeki görünüm ile ilgili daha fazla bilgi ekleyin; 'Ürün farklı vücut tiplerinde farklı durabilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Ürün üzerimde hoş durmadı.
+
+ASIN:         B00GOL1NX2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'Asian Size : Bust 35.4" / Shoulder 13.5" / Sleeve 20.5" / Front Length 25.5"-27.5"'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor; Kalite ile ilgili de olumsuz yorumlar mevcut.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini gözden geçirerek daha doğru bilgi verin; 'Beden küçük, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Asian Size : Bust 35.4" / Shoulder 13.5" / Sleeve 20.5" / Front Length 25.5"-27.5"' | müşteri: Yorum 1, 2: Çok küçük geldi
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi ekleyin; 'Dikişlerin kalitesi kontrol edilmiştir' gibi bir ifade ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Ucuz görünüyor ve dikişleri bozuk
+
+ASIN:         B0BHVXWGFH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 6 | sayfa iddiası: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55'
+  - Malzeme: yorum 8, 11 | sayfa iddiası: '64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler çok küçük geldiğini ve yanlış beden gönderildiğini belirtiyor; Malzeme iddiası da esnek değil deniyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek daha geniş bir beden aralığı sunun.
+      sayfa: 'Size Chart: Small: Bust: 33-35", Waist: 27-28", Hips: 37-38", / Medium: Bust: 35-37", Waist: 29-30", Hips: 39-40", / Large: Bust: 37-39", Waist: 31-33", Hips: 41-43", / X-Large: Bust: 39-41", Waist: 34-36", Hips: 44-46", / XX-Large Plus: Bust: 41-43", Waist: 37-39", Hips: 47-49", / 3X-Large Plus: Bust: 43-45", Waist: 40-42", Hips: 50-52", / 4X-Large Plus: Bust: 45-47", Waist: 43-45", Hips: 53-55' | müşteri: Yorum 1, 6: Çok küçük geldi ve yanlış beden gönderildi.
+  - [Malzeme | değiştir] Malzeme açıklamasına 'beklenenden daha az esnek' ifadesini ekleyin.
+      sayfa: '64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex' | müşteri: Yorum 8, 11: Esnek değil, beklenenden farklı.
+
+ASIN:         B00LYTECHI
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 5 | sayfa iddiası: '14" Inch from shoulder to hem'
+  - Kalite: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden ölçüsü ile ilgili bir iddia var, ancak müşteriler bedenin küçük geldiğini belirtiyor; kalite ile ilgili bir iddia yok ama şikayetler düşük kaliteyi işaret ediyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüsünün küçük geldiğine dair uyarı ekleyin; 'Beden küçük, bir beden büyük almanız önerilir'.
+      sayfa: '14" Inch from shoulder to hem' | müşteri: Yorum 2, 3, 5: Beden küçük geliyor
+  - [Kalite | ekle] Ürün sayfasına kalite ile ilgili bilgi ekleyin; 'Ürün kalitesi hakkında daha fazla bilgi verilecektir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Kalite düşük
+
+ASIN:         B07BP6QRM8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 9, 11, 14, 5, 7, 12 | sayfa iddiası: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on'
+  - Malzeme: yorum 8 | sayfa iddiası: 'made of high quality baby friendly material'
+ana_risk:     Sayfada ayakkabıların kalıbının ayarlanabilir olduğu iddia ediliyor, ancak müşteriler ayakkabıların çok büyük veya çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp ve beden bilgilerini netleştirerek, 'Ayakkabılar normal bedene göre büyük veya küçük gelebilir, lütfen beden tablosunu kontrol edin.' ifadesini ekleyin.
+      sayfa: 'Adjustable Closure Design Makes Our Sandals Easy to Put on, Take off, and Stay on' | müşteri: Yorum 9, 11, 14: Ayakkabılar çok büyük geldi; Yorum 5, 7, 12: Ayakkabılar çok küçük geldi
+  - [Malzeme | değiştir] Ürün sayfasında malzeme kalitesi hakkında daha fazla bilgi verin; 'Taban kalınlığı hakkında bilgi ekleyin ve ince taban uyarısı yapın.'
+      sayfa: 'made of high quality baby friendly material' | müşteri: Yorum 8: Tabanları ince
+
+ASIN:         B07W3Q1Y2X
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 5, 11 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 8, 14 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada malzeme ile ilgili somut bilgiler var, ancak müşteriler kalıp ve kalite sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının dar olduğu ve numara seçiminde dikkat edilmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 4: Numara küçük geliyor.
+  - [Kalite | ekle] Ürünün dikiş kalitesi hakkında bilgi eklenmeli; dikişlerin sağlam olduğu belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5, 11: Kötü yapım, dikişler çekiliyor.
+  - [Eksik Bilgi | ekle] Ürün açıklamasında doğru numara bilgisi ve ölçü tablosu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 8, 14: Açıklamada doğru numara bilgisi yok.
+
+ASIN:         B09PK1VGKH
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 7 | sayfa iddiası: 'Please check our chart to find the size that suits you. Very suitable for narrow feet.'
+  - Malzeme: yorum 1, 5 | sayfa iddiası: 'The lace-up shoe upper is made of artificial PU material with an adjustable buckle.'
+ana_risk:     Sayfada ayakkabıların dar ayaklara uygun olduğu iddiası var, ancak birçok müşteri ayakkabıların çok büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelleyerek, 'Ayakkabılar normalden büyük kalıp, bir beden küçük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Please check our chart to find the size that suits you. Very suitable for narrow feet.' | müşteri: Yorum 2, 3, 4, 7: Ayakkabılar çok büyük geldi.
+  - [Malzeme | değiştir] Ürün açıklamasına 'Yüksek kaliteli yapay PU malzeme kullanılmıştır.' ifadesini ekleyin.
+      sayfa: 'The lace-up shoe upper is made of artificial PU material with an adjustable buckle.' | müşteri: Yorum 1, 5: Ayakkabının kalitesi çok düşük görünüyor.
+
+ASIN:         B09LCWQHX6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 11 | sayfa iddiası: 'Shaft measures approximately 5" from arch'
+  - Malzeme: yorum 5, 12 | sayfa iddiası: 'synthetic leather'
+ana_risk:     Sayfada 'Shaft measures approximately 5" from arch' iddiası var, ancak müşteriler bacak kısmının kısa olduğunu ve ayakkabıların dar geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini daha net belirtin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Shaft measures approximately 5" from arch' | müşteri: Yorum 3, 11: Dar geliyor, parmak kısmı çok dar; çok büyük, iade edemiyorum.
+  - [Malzeme | değiştir] Malzeme hakkında daha fazla bilgi verin; 'Kaymaz özellikte değildir, dikkatli kullanın' uyarısını ekleyin.
+      sayfa: 'synthetic leather' | müşteri: Yorum 5, 12: Malzeme sert, ayak üstünde sıkı; kaymaz, kayma riski var.
+
+ASIN:         B0711K6VK4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+  - Görsel: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, %100 pamuk iddiasında bulunuyor ancak müşteriler ürünün küçük geldiğini ve fotoğraftaki gibi olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının küçük olduğu bilgisini ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Ürün küçük geliyor
+  - [Görsel | ekle] Ürün görselinin gerçek görünümünü yansıtması için daha net fotoğraflar ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün fotoğraftaki gibi değil, ince bir hoodie
+
+ASIN:         B0B6R8LRP5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 2 | sayfa iddiası: 'Not too short, not too long, just right around the waistband.'
+  - Malzeme: yorum 6, 9 | sayfa iddiası: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.'
+ana_risk:     Sayfa, kalıbın doğru oturduğunu iddia ediyor, ancak müşteriler kısa ve kötü oturan bir kalıp ile karşılaştıklarını belirtiyorlar; kumaşın ne olduğu belirtilmemişken, sayfada yumuşak ve sıcak bir malzeme olduğu iddia ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Kısa ve kötü oturan bir kalıp' ifadesini kaldır.
+      sayfa: 'Not too short, not too long, just right around the waistband.' | müşteri: Kısa ve kötü oturan bir kalıp; Ürün beklenenden farklı oturuyor.
+  - [Malzeme | ekle] Kumaşın içeriği hakkında bilgi ekle; 'Kumaşın içeriği pamuk değil, detaylı bilgi verilecek'.
+      sayfa: 'Super soft and fuzzy fleece lined material, this pullover tops will definitely keep you warm all day.' | müşteri: Kumaşın ne olduğu belirtilmemiş, pamuk değil.
+
+ASIN:         B07DWFVVCV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 11, 12, 15, 3, 4, 13, 2, 9 | sayfa iddiası: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation'
+  - Kalite: yorum 6, 14 | sayfa iddiası: 'without any unpleasant side effects'
+ana_risk:     Sayfada 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' iddiası var, ancak müşteriler ayakkabıların numara olarak küçük ve büyük geldiğini, parmak ucunda dar olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında kalıp ve beden bilgilerini daha net ifade edin; 'Ayakkabılar numara olarak küçük veya büyük gelebilir, lütfen beden tablosunu kontrol edin.'
+      sayfa: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' | müşteri: Yorum 5, 11, 12, 15: Ayakkabılar numara olarak küçük geldi; Yorum 3, 4, 13: Ayakkabılar numara olarak büyük geldi; Yorum 2, 9: Ayakkabılar parmak ucunda dar.
+  - [Kalite | değiştir] Ürün sayfasında kalite ve destek hakkında daha fazla bilgi verin; 'Ayakkabılar, uzun süreli kullanımda konfor ve destek sağlamak için tasarlanmıştır.'
+      sayfa: 'without any unpleasant side effects' | müşteri: Yorum 6, 14: Ayakkabının kalitesi kötü, destek yetersiz.
+
+ASIN:         B077V85WSP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 7, 10, 11, 12 | sayfa iddiası: 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Nylon Silver Ridge Basket Weave'
+ana_risk:     Sayfada 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit' iddiası var, ancak müşteriler şortların çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında 'Bedeninizi seçerken bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit' | müşteri: Yorum 1, 2, 4, 5, 7, 10, 11, 12: Şortlar çok küçük geliyor.
+  - [Malzeme | değiştir] Ürün sayfasında 'Kumaşın kaşındırabileceği konusunda dikkatli olun' uyarısını ekleyin.
+      sayfa: '100% Nylon Silver Ridge Basket Weave' | müşteri: Yorum 3: Kumaş kaşındırıyor.
+
+ASIN:         B082PMWDN7
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada %100 pamuk iddiası var, ancak müşteriler kumaşın ince ve şeffaf olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 2: Kumaş ince ve delikli, kumaş ucuz ve şeffaf.
+
+ASIN:         B07T8ZC6QQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, malzeme kalitesi hakkında bilgi vermiyor; ancak müşteriler ürünün ilk kullanımda bozulduğunu ve bedenin çok küçük ve dar geldiğini bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının dar olduğu ve bir beden büyük almanız gerektiği bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Çok küçük ve dar geliyor
+  - [Kalite | ekle] Ürünün kalitesi hakkında daha net bilgi verin; ilk kullanımda bozulma riski olduğunu belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 6: İlk kullanımda bozuldu
+
+ASIN:         B018DTQKRG
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 14 | sayfa iddiası: 'Mesh'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme olarak 'Mesh' olduğunu iddia ediyor; ancak müşteriler soketlerin çok ince olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün açıklamasında 'Mesh' malzeme ile birlikte 'ince' olduğu bilgisini ekleyin.
+      sayfa: 'Mesh' | müşteri: Yorum 2, 14: Soketler çok ince
+  - [Beden/Kalıp | ekle] Ürün sayfasında beden kalıbı hakkında bilgi ekleyin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Soketler küçük geldi
+
+ASIN:         B08NW1196W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 5, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların beden kalıbı hakkında bilgi vermiyor ancak müşteriler ayakkabıların küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'Bedeninizi bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 9: Ayakkabılar küçük geliyor.
+
+ASIN:         B00NXWRZ0A
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 6, 9, 14, 15 | sayfa iddiası: 'Order one size down for a snug, thermal fit'
+  - Malzeme: yorum 1, 4, 8, 13 | sayfa iddiası: '80% Polyester, 20% Cotton'
+ana_risk:     Sayfada 'Order one size down for a snug, thermal fit' iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının dar olduğunu belirtin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Order one size down for a snug, thermal fit' | müşteri: Yorum 3, 5, 6, 9, 14, 15: Çok küçük geldi, kalıp uyumsuz.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek değil, ucuz hissettiriyor' uyarısını ekleyin.
+      sayfa: '80% Polyester, 20% Cotton' | müşteri: Yorum 1, 4, 8, 13: Kumaş kalitesi düşük, ucuz hissettiriyor.

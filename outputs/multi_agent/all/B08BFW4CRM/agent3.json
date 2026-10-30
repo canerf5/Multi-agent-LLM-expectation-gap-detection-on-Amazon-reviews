@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Shaft measures approximately Above the Knee from arch"
+    }
+  ],
+  "ana_risk": "Sayfa, beden kalıbı ile ilgili iddialarda bulunuyor ancak yorumlar küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Shaft measures approximately Above the Knee from arch",
+      "musteri_deneyimi": "Küçük geldi, bir numara büyük alınmalı; Yorum 3, Küçük geldi, normalde giydiğim numara uymadı; Yorum 4",
+      "islem": "değiştir",
+      "duzeltme": "Beden kalıbı hakkında 'Bir numara büyük almanız önerilir' notunu ekleyin."
+    }
+  ]
+}

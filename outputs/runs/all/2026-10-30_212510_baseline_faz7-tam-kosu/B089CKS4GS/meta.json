@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The sizes are available in Small (28-30”), Medium (32-34”), '",
+    "tek konu kuralı: yorum 1 hem Kalite hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 6 hem Kalite hem Malzeme için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The sizes are available in Small (28-30”), Medium (32-34”), '"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The sizes are available in Small (28-30”), Medium (32-34”), '",
+    "tek konu kuralı: yorum 1 hem Kalite hem Malzeme için sayılmış",
+    "tek konu kuralı: yorum 6 hem Kalite hem Malzeme için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'The sizes are available in Small (28-30”), Medium (32-34”), '"
+  ],
+  "parent_asin": "B089CKS4GS",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 14.819,
+  "time": "2026-10-30T18:42:38+00:00"
+}

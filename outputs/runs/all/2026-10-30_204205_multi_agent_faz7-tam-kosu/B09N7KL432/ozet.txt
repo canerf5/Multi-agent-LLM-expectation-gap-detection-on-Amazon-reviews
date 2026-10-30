@@ -1,0 +1,10 @@
+ASIN:         B09N7KL432
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'NOTICE: The size of this swiss dot dress is relatively large.'
+ana_risk:     Beden kalıbı büyük olduğu iddia ediliyor, ancak göğüs kısmı çok bol geliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının büyük olduğu bilgisini gözden geçirerek daha net bilgi ver.
+      sayfa: 'NOTICE: The size of this swiss dot dress is relatively large.' | müşteri: Yorum 1, 2: Göğüs kısmı çok bol geliyor.

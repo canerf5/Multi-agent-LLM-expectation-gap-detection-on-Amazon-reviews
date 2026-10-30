@@ -1,0 +1,10 @@
+ASIN:         B0C6HHMSTS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'Heel measures approximately 3.5"'
+ana_risk:     Sayfa, ayakkabının kalıbının dar olduğunu belirtmiyor; müşteriler dar ve küçük geldiğini söylüyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; 6-6.5 giyenler için 7 numara önerilir.
+      sayfa: 'Heel measures approximately 3.5"' | müşteri: Yorum 2, 4: Ayakkabılar dar; 6-6.5 giyenler 7 numara almalı.

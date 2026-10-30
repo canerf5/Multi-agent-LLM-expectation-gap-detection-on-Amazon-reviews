@@ -1,0 +1,50 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük geliyor",
+      "yorum_numaralari": [
+        1,
+        3,
+        5,
+        8,
+        11,
+        12,
+        13,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş sert ve rahatsız",
+      "yorum_numaralari": [
+        6,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün beklediğim gibi görünmüyor",
+      "yorum_numaralari": [
+        9,
+        10,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaşın daha yumuşak olması gerekirdi",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

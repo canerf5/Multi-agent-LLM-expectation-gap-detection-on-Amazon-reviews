@@ -1,0 +1,10 @@
+ASIN:         B07WW4QSC1
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada ürün kalitesi hakkında bilgi yok, ancak müşteriler ürünün kalitesinin beklenenden düşük olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin; 'Ürün kimyasal bir kokuya sahip olabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün kalitesi beklenenden düşük.

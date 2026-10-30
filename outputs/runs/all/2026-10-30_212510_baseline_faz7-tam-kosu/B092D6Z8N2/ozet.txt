@@ -1,0 +1,13 @@
+ASIN:         B092D6Z8N2
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 6, 7, 13, 14, 15 | sayfa iddiası: 'Good elasticity, breathable mesh, durable fabric, shock absorption and comfortable fit with comfort sport soccer socks make your team conspicuous!'
+  - Kalite: yorum 1, 5, 8, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesinin iyi olduğunu iddia ediyor; ancak müşteriler, bu çorapların teri emmediğini ve kötü kokulara neden olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi ver; 'Bu çoraplar polyester içeriyor ve teri emme kapasitesi düşük.' gibi bir not ekle.
+      sayfa: 'Good elasticity, breathable mesh, durable fabric, shock absorption and comfortable fit with comfort sport soccer socks make your team conspicuous!' | müşteri: Yorum 2, 6, 13, 14, 15: Çoraplar teri emiyor ve kötü kokuya neden oluyor.
+  - [Kalite | ekle] Ürün sayfasına 'Kalite garantisi yok; çorapların dayanıklılığı sınırlı olabilir.' uyarısını ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 5, 8, 12: Çoraplar kalitesiz ve çabuk yıpranıyor.

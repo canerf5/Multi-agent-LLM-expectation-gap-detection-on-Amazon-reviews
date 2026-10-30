@@ -1,0 +1,45 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok büyük geldi, tam oturmadı.",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Renk",
+      "ozet": "Renk beklediğim gibi değil, farklı geldi.",
+      "yorum_numaralari": [
+        3,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Kalite çok düşük, düğme koptu.",
+      "yorum_numaralari": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Açıklamada yazmıyordu.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

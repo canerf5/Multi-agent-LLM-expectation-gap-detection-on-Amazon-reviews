@@ -1,0 +1,51 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        12,
+        13,
+        15
+      ],
+      "sayfa_iddiasi": "Made with premium quality light weight and durable material"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        7,
+        10,
+        11,
+        14
+      ],
+      "sayfa_iddiasi": "efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain"
+    }
+  ],
+  "ana_risk": "Sayfa, kaliteli malzeme iddiasında bulunuyor ancak kullanıcılar kumaşın ince ve kalitesiz olduğunu belirtiyor; ayrıca ilk kullanımda dikişlerin açıldığı şikayetleri var.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Made with premium quality light weight and durable material",
+      "musteri_deneyimi": "Kumaş ince ve kalitesiz.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesi hakkında daha net bilgi ver; 'kalite kontrolü yapılmıştır' gibi ifadeler ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain",
+      "musteri_deneyimi": "İlk kullanımda dikişler açıldı veya kalitesiz malzeme kullanıldı.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi ekle; 'ilk kullanımda dikişlerin açılmaması için dikkat edilmesi gerekenler' gibi."
+    }
+  ]
+}

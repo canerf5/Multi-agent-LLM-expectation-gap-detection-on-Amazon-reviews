@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Synthetic and mesh",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Manmade sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "This shoe runs 2 sizes smaller than street shoe size",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "The logo on the shoe may vary",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Capezio products remain in the forefront in quality and in technological advances with innovations like the split-sole, the stretch-insert, the Dansneaker and the Tapsneaker.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Capezio believes that their success is dependent upon the individual commitment of each customer to continually set new standards of creativity and performance, while preserving a reputation for dependability and distinction.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

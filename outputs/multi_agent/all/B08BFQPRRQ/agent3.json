@@ -1,0 +1,48 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        11
+      ],
+      "sayfa_iddiasi": "Loose-Fit: designed for comfort"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "35% Polyester, 35% Acrylic, 30% Nylon"
+    }
+  ],
+  "ana_risk": "Loose-Fit iddiası var, ancak müşteriler bedenin büyük olduğunu ve oturuşun kötü olduğunu belirtiyor; kumaş kalitesi iddiası var, fakat kullanıcılar kumaşın kalitesiz olduğunu ve pilling yaptığını söylüyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Loose-Fit: designed for comfort",
+      "musteri_deneyimi": "Yorum 1, 2, 11: Beden büyük ve oturuş kötü.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Loose-Fit: designed for comfort' ifadesinin yanına 'Beden büyük, oturuşu kötü; bir beden küçük almanız önerilir.' notunu ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "35% Polyester, 35% Acrylic, 30% Nylon",
+      "musteri_deneyimi": "Yorum 4, 8, 9, 10, 12, 13: Kumaş kalitesi kötü, pilling yapıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada kumaş kalitesi ile ilgili 'Pilling yapma riski vardır; dikkatli yıkama önerilir.' uyarısını ekleyin."
+    }
+  ]
+}

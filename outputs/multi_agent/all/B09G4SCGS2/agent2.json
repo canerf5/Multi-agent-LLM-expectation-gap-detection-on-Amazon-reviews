@@ -1,0 +1,44 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Soketler beklenenden küçük geldi",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi kötü, yanlış boy gönderilmiş",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün sayfasında doğru boy bilgisi yoktu",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Fiyat çok yüksek, 3 çift çorap için",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kişisel zevk"
+    }
+  ]
+}

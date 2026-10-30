@@ -1,0 +1,13 @@
+ASIN:         B07BJH68PP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: "Chico's inclusive size chart ranges from sizes 0-22."
+  - Malzeme: yorum 2 | sayfa iddiası: 'Soft and lightweight, featuring a 60% Cotton/40% Modal blend, this machine-washable tee is a seasonless staple.'
+ana_risk:     Beden ve kalıp ile ilgili sorunlar var; sayfada beden uyumu hakkında yeterli bilgi verilmemiş, müşteriler yanlış beden gönderildiğini ve kalıbın büyük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden uyumu hakkında daha net bilgi ver; 'Bedenler büyük, bir beden küçük almanız önerilir' notu ekle.
+      sayfa: "Chico's inclusive size chart ranges from sizes 0-22." | müşteri: Yorum 1: Bedenler çok büyük, yanlış beden gönderildi.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi beklenenden düşük' notunu ekle.
+      sayfa: 'Soft and lightweight, featuring a 60% Cotton/40% Modal blend, this machine-washable tee is a seasonless staple.' | müşteri: Yorum 2: Kumaş kalitesi kötü, standartların altında.

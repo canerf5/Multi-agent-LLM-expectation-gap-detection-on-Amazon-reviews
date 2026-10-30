@@ -1,0 +1,13 @@
+ASIN:         B00NXWRZ0A
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 6, 9, 14, 15 | sayfa iddiası: 'Order one size down for a snug, thermal fit'
+  - Malzeme: yorum 1, 4, 8, 13 | sayfa iddiası: '80% Polyester, 20% Cotton'
+ana_risk:     Sayfada 'Order one size down for a snug, thermal fit' iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının dar olduğunu belirtin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Order one size down for a snug, thermal fit' | müşteri: Yorum 3, 5, 6, 9, 14, 15: Çok küçük geldi, kalıp uyumsuz.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek değil, ucuz hissettiriyor' uyarısını ekleyin.
+      sayfa: '80% Polyester, 20% Cotton' | müşteri: Yorum 1, 4, 8, 13: Kumaş kalitesi düşük, ucuz hissettiriyor.

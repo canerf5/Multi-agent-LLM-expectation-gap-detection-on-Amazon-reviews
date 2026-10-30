@@ -1,0 +1,13 @@
+ASIN:         B06XCYN3MX
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 6 | sayfa iddiası: 'Sleeveless,Pullover,Loose.Nice for relaxed Holiday,Daily,Party,Beach!'
+  - Görsel: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı ile ilgili somut bir iddia var, ancak müşteriler beden uyumsuzluğu yaşıyor; ayrıca ürün üzerlerinde hoş durmadığını belirtiyorlar.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha geniş olduğunu belirtin; 'Bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Sleeveless,Pullover,Loose.Nice for relaxed Holiday,Daily,Party,Beach!' | müşteri: Yorum 2, 6: Çok küçük geldi, beden uyumsuzluğu var.
+  - [Görsel | ekle] Ürünün üzerindeki görünüm ile ilgili daha fazla bilgi ekleyin; 'Ürün farklı vücut tiplerinde farklı durabilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Ürün üzerimde hoş durmadı.

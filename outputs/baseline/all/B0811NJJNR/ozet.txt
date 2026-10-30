@@ -1,0 +1,16 @@
+ASIN:         B0811NJJNR
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Görsel: yorum 2 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3 | sayfa iddiası: 'Best Quality Product'
+ana_risk:     Sayfa 'en iyi kalite ürün' iddiasında bulunuyor, ancak müşteriler kalitenin düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp hakkında bilgi ekleyin; 'Kolları küçük, büyük beden alırken dikkat edin'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Kolları çok küçük, büyük beden alındığında küçük beden kolları var.
+  - [Görsel | ekle] Ürünün renkleri hakkında bilgi ekleyin; 'Renkler fotoğraftakinden farklı olabilir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Renk beklenenden farklı, daha açık bir pembe geldi.
+  - [Kalite | değiştir] 'En iyi kalite ürün' ifadesini gözden geçirin ve daha gerçekçi bir ifade ile değiştirin.
+      sayfa: 'Best Quality Product' | müşteri: Yorum 3: Kalite düşük, 2 ayda bozuldu.

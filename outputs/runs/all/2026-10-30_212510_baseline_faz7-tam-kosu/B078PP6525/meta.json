@@ -1,0 +1,17 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Slim fit; fitted sleeves'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Slim fit; fitted sleeves'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B078PP6525",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 5.685,
+  "time": "2026-10-30T18:36:12+00:00"
+}

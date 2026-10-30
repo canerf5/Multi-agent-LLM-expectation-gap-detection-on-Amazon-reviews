@@ -1,0 +1,10 @@
+ASIN:         B015H4F666
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 8 | sayfa iddiası: 'Material:Polyester+Lace'
+ana_risk:     Sayfada polyester ve dantel malzeme iddiası var, ancak müşteriler kumaşı çok ince ve şeffaf buluyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli.
+      sayfa: 'Material:Polyester+Lace' | müşteri: Yorum 1, 8: Çok ince ve şeffaf kumaş.

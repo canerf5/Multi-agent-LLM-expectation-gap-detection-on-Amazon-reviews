@@ -1,0 +1,10 @@
+ASIN:         B07V2PCH4X
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'Made of 100% high-quality and super-super soft durable rubber'
+ana_risk:     Ürün, 'yüksek kaliteli ve süper yumuşak dayanıklı kauçuktan yapılmış' iddiasına rağmen, müşteriler kalıp ve beden uyumsuzluğu yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp ve beden uyumu hakkında bilgi ekleyin; 'Kalıp dar; bir beden büyük almanız önerilir'.
+      sayfa: 'Made of 100% high-quality and super-super soft durable rubber' | müşteri: Yorum 1, 2, 3: Beden uyumsuzluğu var; kalıp küçük veya geniş geliyor.

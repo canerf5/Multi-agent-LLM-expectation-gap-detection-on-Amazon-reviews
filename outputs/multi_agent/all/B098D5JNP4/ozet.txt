@@ -1,0 +1,16 @@
+ASIN:         B098D5JNP4
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 8, 12, 15 | sayfa iddiası: 'Easy to care for and affordable.'
+  - Beden/Kalıp: yorum 2, 9, 14 | sayfa iddiası: 'Slim flattering fit'
+  - Malzeme: yorum 5, 7, 11 | sayfa iddiası: '76% Rayon, 21% Nylon, 3% Spandex'
+ana_risk:     Sayfa, kumaş kalitesinin yüksek olduğunu iddia ediyor ancak müşteriler kumaşın kalitesinin düşük olduğunu ve çabuk yıprandığını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Ürün sayfasında dikiş kalitesi hakkında daha net bilgi verin ve olası sorunları belirtin.
+      sayfa: 'Easy to care for and affordable.' | müşteri: Yorum 1, 8, 12, 15: Dikişler kötü, düğmeler ilk yıkamada düştü.
+  - [Beden/Kalıp | değiştir] Ürün sayfasında beden ölçüleri hakkında daha net bilgi verin ve bedenlerin küçük geldiğini belirtin.
+      sayfa: 'Slim flattering fit' | müşteri: Yorum 2, 9, 14: Bedenler küçük, yanlış ölçü.
+  - [Malzeme | değiştir] Ürün sayfasında kumaşın dayanıklılığı hakkında daha net bilgi verin ve kalitesiz kumaş uyarısı ekleyin.
+      sayfa: '76% Rayon, 21% Nylon, 3% Spandex' | müşteri: Yorum 5, 7, 11: Kumaş kalitesi düşük, çabuk yıpranıyor.

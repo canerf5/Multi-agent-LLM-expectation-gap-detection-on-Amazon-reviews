@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "These rain boots run a bit large, if you are not sure, please go down half size.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "The inside is full of professional diving neoprene materials, which are shockproof, keep warmth and impervious.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "The upper is made of natural plant rubber, which is environmentally friendly and has the advantages of resilience, insulation and water barrier.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "The integrated design of neoprene and nature rubber outsole can work well at mud;grassy;sandy;rainy and snowy situation.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

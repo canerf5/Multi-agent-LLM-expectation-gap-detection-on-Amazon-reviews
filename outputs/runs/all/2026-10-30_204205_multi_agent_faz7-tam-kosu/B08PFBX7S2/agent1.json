@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "50% Polyester, 50% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "10.5 Oz. 50% Cotton / 50% Polyester Blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "spandex-reinforced rib-knit cuffs and waistband",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "the carhartt logo is printed on the sleeve and a logo patch is sewn on the pocket",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "comes in great colors",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Machine wash cold with like colors, Do not bleach, Tumble dry low remove promptly, Do not iron ornamentation",
+      "iddia_turu": "genel"
+    }
+  ]
+}

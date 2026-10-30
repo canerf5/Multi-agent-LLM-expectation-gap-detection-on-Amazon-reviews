@@ -1,0 +1,16 @@
+ASIN:         B077FR9NFV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 7 | sayfa iddiası: 'Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5"/90cm----|---22.5"/57.5cm---|-----21"/54cm-- ---6------|-----------6 Years----------|------39"/99cm-----|----25"/63.5cm----|----23.5"/60cm- ---8------|-----------8 Years----------|----42"/107.5cm----|----27"/68.5cm----|----25"/64.5cm- ---10-----|----------10 Years----------|---45.5"/116.5cm---|---28.5"/73.5cm---|-----27"/69cm-- ---12-----|----------12 Years----------|-----49"/125cm-----|---30.5"/78.5cm---|---28.5"/73.5cm ---14-----|----------14 Years----------|----52.5"/134cm----|---32.5"/83.5cm---|----30.5"/78cm- ---16-----|----------16 Years----------|-----56"/143cm-----|----34.5"/88cm----|---32.5"/82.5cm'
+  - Malzeme: yorum 1, 2, 4, 6, 9 | sayfa iddiası: 'Floor Length lace chiffon party dress for girls .'
+  - Kalite: yorum 1, 4, 6, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, elbisenin kalitesinin yüksek olduğunu ve uygun beden seçenekleri sunduğunu vaat ediyor; ancak müşteriler elbisenin kalitesiz, ince ve hatalı yapıda olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden önerilerini gözden geçirerek daha doğru ölçüler ekleyin.
+      sayfa: 'Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5"/90cm----|---22.5"/57.5cm---|-----21"/54cm-- ---6------|-----------6 Years----------|------39"/99cm-----|----25"/63.5cm----|----23.5"/60cm- ---8------|-----------8 Years----------|----42"/107.5cm----|----27"/68.5cm----|----25"/64.5cm- ---10-----|----------10 Years----------|---45.5"/116.5cm---|---28.5"/73.5cm---|-----27"/69cm-- ---12-----|----------12 Years----------|-----49"/125cm-----|---30.5"/78.5cm---|---28.5"/73.5cm ---14-----|----------14 Years----------|----52.5"/134cm----|---32.5"/83.5cm---|----30.5"/78cm- ---16-----|----------16 Years----------|-----56"/143cm-----|----34.5"/88cm----|---32.5"/82.5cm' | müşteri: Yorum 3, 7: Bedenler büyük geliyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; ince ve şeffaf olduğu belirtilmeli.
+      sayfa: 'Floor Length lace chiffon party dress for girls .' | müşteri: Yorum 1, 2, 4, 6, 9: Kumaş ince ve kalitesiz.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin; kalitesiz olduğu belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 6, 9: Kalite çok düşük, elbise çabuk yıpranıyor.

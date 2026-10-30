@@ -1,0 +1,23 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Görsel: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Looks much better online'",
+    "tek konu kuralı: yorum 2 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 3 hem Görsel hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 5 hem Görsel hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 11 hem Malzeme hem Kalite için sayılmış",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Looks much better online'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Malzeme hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 5 hem Görsel hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 11 hem Malzeme hem Kalite için sayılmış"
+  ],
+  "parent_asin": "B0BGPVTZDQ",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 14,
+  "sure_duvar_sn": 12.631,
+  "time": "2026-10-30T18:31:41+00:00"
+}

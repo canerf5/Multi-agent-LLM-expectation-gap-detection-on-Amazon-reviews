@@ -1,0 +1,13 @@
+ASIN:         B0BKJT83C1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'Please Note: If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above.'
+  - Kalite: yorum 1, 2 | sayfa iddiası: 'A good coat not only can keep you warmth,it can also make you be trendy and stylish,this thick coat can accompany with you in the chilly days.'
+ana_risk:     Beden ve kalite ile ilgili iddialar var, ancak müşteriler ürünün kalitesiz olduğunu ve bedenin beklenenden küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; '1-2 beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'Please Note: If you like a looser feel, it is recommended that you buy 1-2 sizes larger according to the size chart provided in the picture above.' | müşteri: Yorum 1, 3: 1-2 beden küçük geliyor.
+  - [Kalite | değiştir] Kalite ile ilgili iddiaları gözden geçir ve daha gerçekçi bir ifade kullan.
+      sayfa: 'A good coat not only can keep you warmth,it can also make you be trendy and stylish,this thick coat can accompany with you in the chilly days.' | müşteri: Yorum 1, 2: Kalite çok kötü, dikişler zayıf ve fermuar takılıyor.

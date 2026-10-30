@@ -1,0 +1,17 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Numara çok küçük geliyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

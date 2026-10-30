@@ -1,0 +1,27 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 2 hem Dayanıklılık hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 3 hem Dayanıklılık hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 11 hem Dayanıklılık hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 14 hem Dayanıklılık hem Kalite için sayılmış",
+    "tek konu kuralı: yorum 10 hem Kalite hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08BL8643W",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 15,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 2 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 3 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 11 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 14 birden fazla ilgili grupta (grup 1 ve 2)",
+    "yorum 10 birden fazla ilgili grupta (grup 2 ve 4)",
+    "yorum 4 birden fazla ilgili grupta (grup 1 ve 5)"
+  ],
+  "sure_duvar_sn": 23.482,
+  "time": "2026-10-30T18:02:55+00:00"
+}

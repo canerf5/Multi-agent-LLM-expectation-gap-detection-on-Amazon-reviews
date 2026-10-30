@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 4 hem Beden/Kalıp hem Kalite için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]"
+  ],
+  "parent_asin": "B014CJQIH8",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 8,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "grup 4: ilgili = false ama ilgisiz_sebebi yok",
+    "yorum 4 birden fazla ilgili grupta (grup 1 ve 3)"
+  ],
+  "sure_duvar_sn": 57.56,
+  "time": "2026-10-30T18:11:12+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü, sert ve ucuz hissettiriyor.",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün fotoğraftaki gibi değil, beklenen görünüm yok.",
+      "yorum_numaralari": [
+        1,
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden büyük, bir beden küçük alınmalı.",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi çok düşük, dikişler kötü.",
+      "yorum_numaralari": [
+        1,
+        3,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında windbreaker özelliği yoktu.",
+      "yorum_numaralari": [
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düğmesi eksik geldi.",
+      "yorum_numaralari": [
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

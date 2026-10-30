@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [3]",
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Kalite: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "Dayanıklılık: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "parent_asin": "B07GX6Q8C6",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 3,
+  "sure_duvar_sn": 7.733,
+  "time": "2026-10-30T18:38:56+00:00"
+}

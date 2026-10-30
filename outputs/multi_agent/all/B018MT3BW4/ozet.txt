@@ -1,0 +1,10 @@
+ASIN:         B018MT3BW4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünlerin belirtilen bedenden daha küçük olduğunu belirten şikayetlerle çelişiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürünlerin bedeni hakkında 'Bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5: Ürünler belirtilen bedenden daha küçük.

@@ -1,0 +1,16 @@
+ASIN:         B07WW4QSC1
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1 | sayfa iddiası: 'Enjoy high-end quality, fashionable clothing for women at a low price point.'
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'SIZE: One size fits most.'
+  - Renk: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa yüksek kaliteli bir ürün vaat ediyor, ancak müşteriler kalitesiz ve kötü kokulu bir ürün aldıklarını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi ver; 'Ürün açıldığında kimyasal bir koku olabilir, bu normaldir ve yıkandığında geçer.' gibi bir not ekle.
+      sayfa: 'Enjoy high-end quality, fashionable clothing for women at a low price point.' | müşteri: Yorum 1: Ürün kötü kokuyor ve beklenen kalitede değil.
+  - [Beden/Kalıp | değiştir] Kalıp hakkında bilgi ekle; 'Kalıp dar; bir beden büyük almanız önerilir.' notunu ekle.
+      sayfa: 'SIZE: One size fits most.' | müşteri: Yorum 2: Ürün küçük geliyor.
+  - [Renk | ekle] Renk açıklaması ekle; 'Renk seçenekleri ve gerçek renk tonları hakkında bilgi verin.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Renk beklediğim gibi değil.

@@ -1,0 +1,13 @@
+ASIN:         B00CTKGG0C
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Malzeme
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 3 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün dayanıklılığı ve malzeme kalitesi hakkında bilgi vermiyor; müşteriler dayanıklılığın düşük olduğunu ve tabanların kaygan olduğunu belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünün dayanıklılığı hakkında bilgi ekleyin; 'Dış mekan kullanımı için uygun değil' gibi bir uyarı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Dışarıda yürümeye dayanıklı değil.
+  - [Malzeme | ekle] Tabanların kaygan olduğu bilgisini ekleyin; 'Kaygan zeminlerde dikkatli olun' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Tabanlar kaygan, düşme tehlikesi var.

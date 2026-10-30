@@ -1,0 +1,13 @@
+ASIN:         B09DGG5Z94
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 3, 4, 5 | sayfa iddiası: 'Waterproof Ski Gloves: The insert waterproof PU fabric can prevent snow water permeating into skiing gloves.'
+  - Beden/Kalıp: yorum 6 | sayfa iddiası: 'Please Refer To The Size Chart To Choose Your Size.Choose One Smaller Size Than Usually If You Are Not Sure Your Size.'
+ana_risk:     Sayfa, su geçirmezlik iddiasında bulunuyor ancak kullanıcılar eldivenlerin su geçirdiğini ve ellerinin ıslandığını belirtiyor; ayrıca beden ölçüleriyle ilgili sorunlar yaşanıyor.
+öneriler:
+  - [Malzeme | değiştir] Su geçirmezlik iddiasını gözden geçirerek, ürünün su geçirmezlik performansını daha net bir şekilde belirtin.
+      sayfa: 'Waterproof Ski Gloves: The insert waterproof PU fabric can prevent snow water permeating into skiing gloves.' | müşteri: Yorum 3, 4, 5: Eldivenler su geçirmiyor, eller ıslanıyor.
+  - [Beden/Kalıp | değiştir] Beden ölçüleri hakkında daha net bilgi verin; küçük ve orta boyların ölçüleri arasındaki farkı belirtin.
+      sayfa: 'Please Refer To The Size Chart To Choose Your Size.Choose One Smaller Size Than Usually If You Are Not Sure Your Size.' | müşteri: Yorum 6: Küçük ve orta boy aynı boyda, 9 yaşındaki çocuğuma büyük geldi.

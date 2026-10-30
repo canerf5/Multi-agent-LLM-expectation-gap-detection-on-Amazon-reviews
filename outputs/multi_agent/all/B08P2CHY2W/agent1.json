@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "90% Ringspun Cotton/10% Poly",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "90/10 ringspun cotton/poly blend--This shirt is made of a preshrunk cotton/poly.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "It will not shrink after washing.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "It is light weight and very soft and comfortable.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Athletic/slim fit--Order a size larger if you like a looser fit",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "We use a high-quality silk screen process so our designs last. No cheap vinyl or heat transfer, ever.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

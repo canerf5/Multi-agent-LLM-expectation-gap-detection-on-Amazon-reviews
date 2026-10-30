@@ -1,0 +1,13 @@
+ASIN:         B0109G7Q60
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'US Size Measurements [Bust / Shoulder / Length] Size S: [ 34 / 14.5 / 22 ] Size M: [ 35 / 14.5 / 22.5 ] Size L: [ 37.5 / 15.5 / 23 ] Size 1XL: [ 42 / 17 / 24 ] Size 2XL: [ 44 / 17.25 / 25 ] Size 3XL: [ 45.5 / 17.5 / 25 ]'
+  - Kalite: yorum 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ölçüleri hakkında bilgi veriyor ancak bazı müşteriler ürünün kısa olduğunu belirtiyor; ayrıca kalite ile ilgili zayıf bir zipper durumu var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının kısa olduğu bilgisi eklenmeli; 'Kısa kalıp, bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'US Size Measurements [Bust / Shoulder / Length] Size S: [ 34 / 14.5 / 22 ] Size M: [ 35 / 14.5 / 22.5 ] Size L: [ 37.5 / 15.5 / 23 ] Size 1XL: [ 42 / 17 / 24 ] Size 2XL: [ 44 / 17.25 / 25 ] Size 3XL: [ 45.5 / 17.5 / 25 ]' | müşteri: Yorum 2: Ürün kısa geldi.
+  - [Kalite | ekle] Fermuarların kalitesi hakkında bilgi eklenmeli; 'Fermuarlar zor açılmakta ve kapanmaktadır, dikkatli kullanılması önerilir' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Fermuarlar zor açılıp kapanıyor.

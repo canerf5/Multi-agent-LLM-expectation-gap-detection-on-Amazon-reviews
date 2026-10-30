@@ -1,0 +1,35 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün lekeli ve kullanılmış geldi.",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düğmesi kutudan çıkar çıkmaz düştü.",
+      "yorum_numaralari": [
+        3,
+        7,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Boyun kısmı rahatsız ediyor.",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

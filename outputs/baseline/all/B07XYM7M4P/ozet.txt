@@ -1,0 +1,10 @@
+ASIN:         B07XYM7M4P
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kalıbı ve beden uyumu ile ilgili sorunlar var; sayfada bu konuda bilgi yok.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbı hakkında bilgi ekleyin; 'Bedenler normalden küçük veya dar kalıp olabilir, bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Beden uyumu sorunlu; kalıp dar ve bel kısmı geniş.

@@ -1,0 +1,57 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün lekeli geldi",
+      "yorum_numaralari": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi kötü, dikiş hataları var",
+      "yorum_numaralari": [
+        2,
+        10,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler çok küçük",
+      "yorum_numaralari": [
+        11,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün yıkandığında küçülüyor",
+      "yorum_numaralari": [
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün oxford olarak tanıtılmamış",
+      "yorum_numaralari": [
+        9
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

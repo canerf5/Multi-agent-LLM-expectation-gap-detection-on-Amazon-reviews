@@ -1,0 +1,76 @@
+{
+  "tag": "agent1:B002MPF54C",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2541,
+    "output_tokens": 342,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00058635,
+  "sure_sn": 3.83,
+  "created": "2026-10-30T17:48:07+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: Speedo Kids' UPF 50+ Begin to Swim Thermal Swimsuit\n\nFİYAT: $32.01\n\nÖZELLİKLER:\n• 78% Nylon, 22% Spandex\n• Nylon lining\n• Zipper closure\n• Thermal suit provides extra buoyancy and added warmth in or out of the water\n• UV 50+ trademarked \"Block the Burn\" sun protection from the harmful UVA and UVB rays\n• 80% neoprene and 20% nylon for just the right amount of comfortable stretch for a great fit and optimum mobility\n• Zipper front for easy on and off, with colorful panel design\n• Improved fit so that overstretched product does not decrease the UPF rating\n• Item tends to run small. Recommend buying one size up.\n\nAÇIKLAMA: As a part of Speedo's \"Fun in the Sun\" product series, you can rest assured that your child is being protected from the harmful sun rays in our UV Thermal Suit with UV50+ Block the Burn technology. This great garment offers extra buoyancy in the water as well as added warmth for extended hours in the pool or on the beach. The neoprene/nylon fabrication is extremely comfortable and flexible to allow for optimum mobility for the active child. Sizes range from 2T (toddler) all the way up to a children's 9/10, so go ahead and outfit all of your water enthusiasts. At a Glance Provides added warmth and extra buoyancy. Provides added warmth and extra buoyancy. Comfortable, flexible fabric offers optimum mobility. Comfortable, flexible fabric offers optimum mobility. Protection from sun's harmful UVA and UVB rays. Protection from sun's harmful UVA and UVB rays. More body coverage for greater sun protection. More body coverage for greater sun protection. Tighter knit fabric for higher level of protection from the sun's harmful rays. Tighter knit fabric for higher level of protection from the sun's harmful rays. Improved fit so over-stretched product does not decrease the UPF rating. Improved fit so over-stretched product does not decrease the UPF rating. Fabric: 80 percent neoprene / 20 percent Spandex. Fabric: 80 percent neoprene / 20 percent Spandex.\n\nDETAYLAR:\n- Is Discontinued By Manufacturer: Yes\n- Package Dimensions: 10.2 x 7.3 x 3.4 inches; 10.4 Ounces\n- Item model number: 7570349-004-Blue-9/10-P\n- Department: Unisex-adult\n- Date First Available: August 18, 2009\n- Manufacturer: Speedo",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "78% Nylon, 22% Spandex",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "80% neoprene and 20% nylon for just the right amount of comfortable stretch for a great fit and optimum mobility",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "Fabric: 80 percent neoprene / 20 percent Spandex.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "Improved fit so that overstretched product does not decrease the UPF rating",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "colorful panel design",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "More body coverage for greater sun protection.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Tighter knit fabric for higher level of protection from the sun's harmful rays.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Comfortable, flexible fabric offers optimum mobility.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Provides added warmth and extra buoyancy.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Protection from sun's harmful UVA and UVB rays.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "Item tends to run small. Recommend buying one size up.",
+        "iddia_turu": "somut"
+      }
+    ]
+  }
+}

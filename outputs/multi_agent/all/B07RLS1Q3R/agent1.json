@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Fabric",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Premium Quality:Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.No good quality,No Casbeam.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Simple color to match any syle.Very fashionable,very lightweight,kids just need to slip on and go.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Easy to Wash and Durable.",
+      "iddia_turu": "somut"
+    }
+  ]
+}

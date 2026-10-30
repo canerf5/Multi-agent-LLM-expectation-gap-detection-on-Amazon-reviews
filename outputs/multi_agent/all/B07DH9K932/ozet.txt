@@ -1,0 +1,10 @@
+ASIN:         B07DH9K932
+gap_var:      Evet
+gap_tipleri:  Renk
+seviye:       Orta
+gerekçeler:
+  - Renk: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, renk solukluğu hakkında bilgi vermiyor; müşteriler renklerin soluk olduğunu belirtiyor.
+öneriler:
+  - [Renk | ekle] Renklerin soluk olabileceği bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Renk soluk

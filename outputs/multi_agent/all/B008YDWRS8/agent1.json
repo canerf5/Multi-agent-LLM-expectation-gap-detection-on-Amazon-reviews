@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "A dual-density midsole adds cushioning, and a stability shank provides the support you need for long days on your feet.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Side cutouts ventilate this versatile, light-duty work boot.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

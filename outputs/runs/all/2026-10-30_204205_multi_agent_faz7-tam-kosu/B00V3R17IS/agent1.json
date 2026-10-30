@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% cotton jersey, 6.1 oz.; Ash, Charcoal Heather, Light Steel and Oxford Gray, cotton/polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "6.1-ounce, 100% ring spun cotton (preshrunk)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Ash is 99/1 cotton/poly. Light Steel is 90/10 cotton/poly. Oxford Grey and Charcoal Heather is 60/40 cotton/poly.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Made from dense, tight and smooth premium cotton for years of wear",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Soft cotton fabric provides comfort and elegance.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Women loose solid shoulder pads sleeveless casual cotton tank top.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Stylish design of this casual sleeveless top with wide armhole, fashion enough to keep you young.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "A sleeveless shoulder pads tee top is great for most occasions, beach, dating, school, club, shopping, etc.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B01H4XAOVK
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 1 | sayfa iddiası: 'Durable'
+  - Beden/Kalıp: yorum 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Dayanıklılık iddiası var, ancak müşteriler ayakkabıların bir hafta içinde parçalandığını belirtiyor; beden kalıbı ile ilgili de uyumsuzluk yaşanıyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık konusunda daha net bilgi ver; 'Yüksek dayanıklılık bekleniyor, ancak bazı kullanıcılar dayanıklılık sorunları bildirdi.'
+      sayfa: 'Durable' | müşteri: Yorum 1: Ayakkabılar bir hafta içinde parçalanmaya başladı.
+  - [Beden/Kalıp | ekle] Ayakkabı genişliği hakkında bilgi ekle; 'Dar kalıp; geniş ayaklar için önerilmez.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Ayakkabı yeterince geniş değil.

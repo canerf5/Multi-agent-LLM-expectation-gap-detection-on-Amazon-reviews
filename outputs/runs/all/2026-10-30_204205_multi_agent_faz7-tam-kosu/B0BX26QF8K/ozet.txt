@@ -1,0 +1,10 @@
+ASIN:         B0BX26QF8K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'pants have an elastic waistband and adjustable drawstring for a comfortable fit'
+ana_risk:     Sayfa, esnek bel bandı ve ayarlanabilir ip ile rahat bir oturuş vaat ediyor, ancak bazı müşteriler ürünün küçük ve büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının daha net bir şekilde belirtildiği bir ifade ekleyin; 'Bedeninizden bir beden büyük almanız önerilir.'
+      sayfa: 'pants have an elastic waistband and adjustable drawstring for a comfortable fit' | müşteri: Yorum 2: Küçük geldi; Yorum 3: Çok büyük geldi

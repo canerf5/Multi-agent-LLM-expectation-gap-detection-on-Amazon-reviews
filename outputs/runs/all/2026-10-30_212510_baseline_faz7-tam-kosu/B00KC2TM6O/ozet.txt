@@ -1,0 +1,13 @@
+ASIN:         B00KC2TM6O
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün konforlu olduğunu vaat ediyor; ancak müşteriler, ayakkabıların rahat olmadığını ve kalitesiz göründüğünü belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp ve oturuş hakkında bilgi ekleyin; 'Ayakkabılar dar kalıp olabilir, geniş ayaklar için uygun olmayabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Ayakkabılar rahat değil ve geniş kalıp beklenmesine rağmen dar geldi.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'Ürün kalitesi değişkenlik gösterebilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ayakkabılar ucuz görünüyor ve kalitesi düşük.

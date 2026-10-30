@@ -1,0 +1,67 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        5,
+        6,
+        10,
+        11,
+        15
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        7,
+        12,
+        13
+      ],
+      "sayfa_iddiasi": "The Stuyak features a cushioned footbed for comforting every step"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        4,
+        8,
+        9
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden ve kalıp konusunda dar bir yapı iddiası var, ancak birçok müşteri ayakkabıların dar olduğunu ve rahat bir oturuş sağlamadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 5, 6, 10, 11, 15: Dar kalıp, bir beden büyük almak gerekiyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "The Stuyak features a cushioned footbed for comforting every step",
+      "musteri_deneyimi": "Yorum 3, 7, 12, 13: Thong tasarımı rahatsız edici, yürüyünce sürtünme yapıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kullanıcıların rahatsızlık hissetmemesi için thong tasarımında yumuşak malzeme kullanıldığı belirtilmeli."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 8, 9: Orta kullanımda tabanlar ayrılıyor, kalite sorunları var.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi verilmeli; dayanıklılık bilgisi eklenmeli."
+    }
+  ]
+}

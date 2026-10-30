@@ -1,0 +1,62 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Görsel",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "sayfa_iddiasi": "Cotton Blend"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X."
+    }
+  ],
+  "ana_risk": "Sayfada 'Cotton Blend' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Cotton Blend",
+      "musteri_deneyimi": "Yorum 1, 2, 3, 4, 8: Kumaş kalitesi kötü, sert ve ucuz hissettiriyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi yüksek değil, sert ve ucuz hissettiriyor' notunu ekle."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 6, 7: Ürün fotoğraftaki gibi değil, beklenen görünüm yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün görselinin gerçek görünümünü yansıtması gerektiğini belirt."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.",
+      "musteri_deneyimi": "Yorum 2, 5: Beden büyük, bir beden küçük alınmalı.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenin büyük geldiğini ve bir beden küçük alınması gerektiğini belirt."
+    }
+  ]
+}

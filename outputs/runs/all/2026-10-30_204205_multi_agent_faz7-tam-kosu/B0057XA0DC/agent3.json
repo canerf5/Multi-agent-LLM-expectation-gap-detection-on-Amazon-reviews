@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        7
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4,
+        6
+      ],
+      "sayfa_iddiasi": "Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket"
+    }
+  ],
+  "ana_risk": "Sayfa %100 pamuk iddiasında bulunuyor, ancak müşteriler kumaşın ince olduğunu ve %15 polyester içerdiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 2: Kumaş çok ince; Yorum 7: Ürün %100 pamuk değil, %15 polyester var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün %100 pamuk olduğunu belirtin, kumaşın ince olduğunu vurgulayın ve %15 polyester içerdiğini ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket",
+      "musteri_deneyimi": "Yorum 3, 4, 6: 2-3 beden büyük geldi.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenin büyük geldiğini belirtin, 'normalden 2-3 beden büyük almanız önerilir' ifadesini ekleyin."
+    }
+  ]
+}

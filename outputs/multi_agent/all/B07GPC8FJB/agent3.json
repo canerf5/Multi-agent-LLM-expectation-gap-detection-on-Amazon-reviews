@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "95% Rayon, 5% Other Fibers"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün %95 rayon olduğunu iddia ediyor; ancak müşteriler kumaşın sert olduğunu ve pilling yaptığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "95% Rayon, 5% Other Fibers",
+      "musteri_deneyimi": "Yorum 3, 4: Kumaş pilling yapıyor ve sert.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın pilling yapma özelliği ve sertliği hakkında bilgi ekleyin."
+    }
+  ]
+}

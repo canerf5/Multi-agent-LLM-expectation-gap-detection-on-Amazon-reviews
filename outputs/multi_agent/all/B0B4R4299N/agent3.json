@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Görsel",
+    "Malzeme",
+    "Renk"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "65% Cotton /35% Polyester"
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün görseldeki tasarıma, kumaş kalitesine ve renk iddialarına dair şikayetler var; fotoğraftaki görünüm, kumaş kalitesi ve renk hakkında sorunlar yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "Designed with Side Slit .Crewneck/Round Neck,Long Sleeve,Loose Fit,Solid Color,Striped Tunic.",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Ürün fotoğraftaki görünümden farklı.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün fotoğraflarını güncelleyerek gerçek görünümünü yansıtın."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "65% Cotton /35% Polyester",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Kumaş ince ve kalitesiz görünüyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini gözden geçirin."
+    },
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Renk fotoğraftakinden farklı ve soluk.",
+      "islem": "ekle",
+      "duzeltme": "Renk kalitesi hakkında bilgi ekleyin; 'Renk fotoğraftakinden farklı ve soluk' ifadesini dikkate alın."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+ASIN:         B06XRTKNRR
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 2 | sayfa iddiası: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys keeps those puddle-jumping feet cozy and dry for the rainiest of days.'
+  - Beden/Kalıp: yorum 1, 4 | sayfa iddiası: 'ROOMY FIT: Our most generous, roomy fit across all kids rain boots Extremely lightweight for kids to keep on their feet for long periods of time.'
+  - Kalite: yorum 1, 3 | sayfa iddiası: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys keeps those puddle-jumping feet cozy and dry for the rainiest of days.'
+ana_risk:     Sayfa, dayanıklılık ve konfor vaat ediyor; ancak müşteriler, ürünün kalitesinin düştüğünü ve rahatsızlık verdiğini bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi ver.
+      sayfa: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys keeps those puddle-jumping feet cozy and dry for the rainiest of days.' | müşteri: Yorum 1, 2: Kalite düşmüş, kısa sürede yırtılıyor.
+  - [Beden/Kalıp | değiştir] Kalıp ve beden uyumu hakkında daha net bilgi ver.
+      sayfa: 'ROOMY FIT: Our most generous, roomy fit across all kids rain boots Extremely lightweight for kids to keep on their feet for long periods of time.' | müşteri: Yorum 1, 4: Kalıp dar, rahat değil.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha net bilgi ver.
+      sayfa: 'MAKE A SPLASH: Crocs Handle It Rain Boots for girls and boys keeps those puddle-jumping feet cozy and dry for the rainiest of days.' | müşteri: Yorum 1, 3: Kalite sorunları var, rahatsız ediyor.

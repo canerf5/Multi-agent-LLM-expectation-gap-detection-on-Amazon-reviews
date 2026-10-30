@@ -1,0 +1,10 @@
+ASIN:         B01L75RUUO
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ölçüleri hakkında bilgi vermiyor; müşteriler ürünün beklenenden çok daha küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün bedenleri hakkında net bilgi ver; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3, 4: Ürün bedenleri beklenenden çok küçük.

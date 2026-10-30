@@ -1,0 +1,16 @@
+ASIN:         B0757HRV1B
+gap_var:      Evet
+gap_tipleri:  Kalite, Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 3, 4, 7 | sayfa iddiası: "durable men's work pant featuring two cargo pockets with flap closures and articulated double knees for quick mobility"
+  - Dayanıklılık: yorum 1, 5, 6 | sayfa iddiası: 'articulated double knees offer quick mobility, the way all pants should.'
+  - Malzeme: yorum 2, 8 | sayfa iddiası: 'reinforced knees'
+ana_risk:     Sayfa, 'dayanıklı' ve 'güçlendirilmiş dizlere sahip' pantolon vaat ediyor, ancak müşteriler kalitesiz dikişler ve dayanıklılık sorunları yaşıyor.
+öneriler:
+  - [Kalite | değiştir] Dikiş kalitesi hakkında daha net bilgi ver.
+      sayfa: "durable men's work pant featuring two cargo pockets with flap closures and articulated double knees for quick mobility" | müşteri: Yorum 1, 3, 4, 7: Dikişler zayıf, ana düğme kopuyor.
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında daha net bilgi ver.
+      sayfa: 'articulated double knees offer quick mobility, the way all pants should.' | müşteri: Yorum 1, 5, 6: Pantolonlar kısa sürede yırtılıyor, dayanıklılık sorunları var.
+  - [Malzeme | değiştir] Kumaş yapısı hakkında daha net bilgi ver.
+      sayfa: 'reinforced knees' | müşteri: Yorum 2, 8: Pantolonlar tek kat kumaştan yapılmış, güçlendirilmiş diz yok.

@@ -1,0 +1,57 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden büyük ve oturuş kötü.",
+      "yorum_numaralari": [
+        1,
+        2,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü, pilling yapıyor.",
+      "yorum_numaralari": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "İlk kullanımda dikişler açıldı veya hasar oluştu.",
+      "yorum_numaralari": [
+        3,
+        6,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün tam set değil, eksik parça var.",
+      "yorum_numaralari": [
+        7,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": null,
+      "ozet": "Kargo veya paketleme ile ilgili şikayet yok.",
+      "yorum_numaralari": [],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kargo/paketleme"
+    }
+  ]
+}

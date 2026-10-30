@@ -1,0 +1,10 @@
+ASIN:         B092D6Z8N2
+gap_var:      Evet
+gap_tipleri:  Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4 | sayfa iddiası: '95% Polyester, 5% Elastane'
+ana_risk:     Malzeme iddiası var, ancak müşteriler çorapların teri emmediğini ve kötü koku yaptığını belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün sayfasında 'Çoraplar teri ememiyor, kötü koku yapıyor' şeklinde bir uyarı ekleyin.
+      sayfa: '95% Polyester, 5% Elastane' | müşteri: Yorum 4, 9, 10, 11, 14: Çoraplar teri ememiyor, kötü koku yapıyor.

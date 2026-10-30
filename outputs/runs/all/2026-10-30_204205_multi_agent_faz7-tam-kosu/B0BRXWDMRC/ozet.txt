@@ -1,0 +1,13 @@
+ASIN:         B0BRXWDMRC
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 6, 7, 10 | sayfa iddiası: 'Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform.'
+  - Beden/Kalıp: yorum 3, 4, 5, 9, 11, 14, 15 | sayfa iddiası: 'Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you.'
+ana_risk:     Kumaş kalitesi kötü, oysa sayfada nefes alabilen bir malzeme olduğu iddia ediliyor; bedenler beklenenden küçük veya büyük, sayfada ise doğru beden seçimi için bilgi veriliyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: 'Made from breathable Material,it can make you feels very comfortable & soft, not easy to deform.' | müşteri: Yorum 1, 6, 7, 10: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Beden seçiminde dikkat edilmesi gereken noktalar daha net bir şekilde belirtilmeli.
+      sayfa: 'Please DO NOT choose your standard size when ordering. Please take a look at the size charts in our picture gallery on the left side to find your perfect size. Otherwise, it may happen that the Shirt runs too small or even too big for you.' | müşteri: Yorum 3, 4, 5, 9, 11, 14, 15: Bedenler beklenenden küçük veya büyük.

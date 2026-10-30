@@ -1,0 +1,16 @@
+ASIN:         B09NFJNS8C
+gap_var:      Evet
+gap_tipleri:  Malzeme, Kalite, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4, 8 | sayfa iddiası: 'High-quality windbreaker fabric. Soft and lightweight.'
+  - Kalite: yorum 1, 2, 3, 6, 7 | sayfa iddiası: 'Good workmanship down to every detail for a chic look.'
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'This lovely lightweight autumn jacket dress is suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.'
+ana_risk:     Sayfa, 'yüksek kaliteli rüzgarlık kumaş' iddiasında bulunuyor, ancak müşteriler malzeme kalitesinin çok düşük olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Malzeme kalitesi hakkında daha net bilgi ver; 'kalite düşük, ucuz görünüyor' gibi bir uyarı ekle.
+      sayfa: 'High-quality windbreaker fabric. Soft and lightweight.' | müşteri: Yorum 1, 4, 8: Malzeme kalitesi çok düşük, ucuz görünüyor ve dayanıklı değil.
+  - [Kalite | değiştir] Kalite hakkında daha net bilgi ver; 'işçilik kalitesi düşük' gibi bir uyarı ekle.
+      sayfa: 'Good workmanship down to every detail for a chic look.' | müşteri: Yorum 1, 2, 3, 6, 7: Ürün kalitesi çok kötü, dikişler ve genel işçilik sorunlu.
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında bilgi ekle; 'bir beden küçük almanız önerilir' notunu ekle.
+      sayfa: 'This lovely lightweight autumn jacket dress is suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.' | müşteri: Yorum 2, 5: Beden biraz büyük geliyor.

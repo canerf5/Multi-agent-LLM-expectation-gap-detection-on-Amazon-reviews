@@ -1,0 +1,13 @@
+ASIN:         B00LYTECHI
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 5 | sayfa iddiası: '14" Inch from shoulder to hem'
+  - Kalite: yorum 1, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden ölçüsü ile ilgili bir iddia var, ancak müşteriler bedenin küçük geldiğini belirtiyor; kalite ile ilgili bir iddia yok ama şikayetler düşük kaliteyi işaret ediyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçüsünün küçük geldiğine dair uyarı ekleyin; 'Beden küçük, bir beden büyük almanız önerilir'.
+      sayfa: '14" Inch from shoulder to hem' | müşteri: Yorum 2, 3, 5: Beden küçük geliyor
+  - [Kalite | ekle] Ürün sayfasına kalite ile ilgili bilgi ekleyin; 'Ürün kalitesi hakkında daha fazla bilgi verilecektir'.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4: Kalite düşük

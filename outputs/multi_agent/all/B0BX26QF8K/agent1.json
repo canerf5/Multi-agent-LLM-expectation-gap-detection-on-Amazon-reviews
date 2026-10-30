@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Made from 100% high-quality silk satin",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "the silk satin material is highly breathable",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "pants have an elastic waistband and adjustable drawstring for a comfortable fit",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "The set includes a button-down shirt and matching pants, creating a stylish and classic look",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "This pajama set is perfect for any occasion, whether you want to relax at home, read a book, watch a movie, or sleep soundly",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "It is also a great gift for your loved ones",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "This pajama set is easy to care for, and it can be machine washed and tumble dried on low heat without losing its quality or shape",
+      "iddia_turu": "genel"
+    }
+  ]
+}

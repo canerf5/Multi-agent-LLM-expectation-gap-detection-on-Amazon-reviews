@@ -1,0 +1,10 @@
+ASIN:         B09824GQ3G
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, kumaş kalitesi hakkında bilgi vermiyor; ancak müşteriler kumaş kalitesinin kötü olduğunu ve logo yerleşiminin hatalı olduğunu belirtiyor.
+öneriler:
+  - [Kalite | ekle] Kumaş kalitesinin kötü olduğu ve logo yerleşiminin hatalı olduğu hakkında bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2: Kumaş kalitesi kötü, çok tüyleniyor; Yorum 4: Logo ters yerleştirilmiş.

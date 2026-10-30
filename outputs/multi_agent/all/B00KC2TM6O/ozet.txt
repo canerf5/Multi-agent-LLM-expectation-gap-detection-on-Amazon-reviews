@@ -1,0 +1,10 @@
+ASIN:         B00KC2TM6O
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların kalitesinin yüksek olduğunu iddia ediyor, ancak müşteriler kötü yapım ve ucuz görünümden şikayetçi.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ayakkabılar kötü yapım, görünüm olarak ucuz duruyor.

@@ -1,0 +1,45 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Görsel",
+      "ozet": "Ürünün baskısı kötü, görüntü bozuk.",
+      "yorum_numaralari": [
+        4,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün kalitesi düşük, dikişler ve malzeme kötü.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Kollar çok kısa, beden ölçüsü garip.",
+      "yorum_numaralari": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün açıklamasında 'sweater' yazıyordu ama aslında tişört.",
+      "yorum_numaralari": [
+        1,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

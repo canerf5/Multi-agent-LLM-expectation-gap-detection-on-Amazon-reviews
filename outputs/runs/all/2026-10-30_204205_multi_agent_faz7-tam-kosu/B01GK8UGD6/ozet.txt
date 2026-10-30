@@ -1,0 +1,16 @@
+ASIN:         B01GK8UGD6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 7 | sayfa iddiası: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].'
+  - Görsel: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün, 'One Size Regular' iddiasına rağmen bazı kullanıcılara çok büyük geldiğini belirtiyor; ayrıca ürün fotoğraftaki görünümden farklı olduğu ve işçilik hatası içerdiği şikayetleri var.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerini gözden geçirerek, daha net bir beden aralığı bilgisi ekleyin.
+      sayfa: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].' | müşteri: Yorum 2, 7: Ürün çok büyük geldi.
+  - [Görsel | ekle] Ürün fotoğraflarını güncelleyerek, gerçek görünümünü yansıtacak şekilde değiştirin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün fotoğraftaki görünümden farklı.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi verin ve işçilik standartlarını açıklayın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Ürün işçilik hatası içeriyor.

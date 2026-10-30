@@ -1,0 +1,19 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Size runs about 1/2 size small.'",
+    "Kalite: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Overall just poorly made shoes.'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Size runs about 1/2 size small.'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Overall just poorly made shoes.'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi 'bilgi yok'; en fazla Orta)"
+  ],
+  "parent_asin": "B07W3Q1Y2X",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 14.063,
+  "time": "2026-10-30T18:51:06+00:00"
+}

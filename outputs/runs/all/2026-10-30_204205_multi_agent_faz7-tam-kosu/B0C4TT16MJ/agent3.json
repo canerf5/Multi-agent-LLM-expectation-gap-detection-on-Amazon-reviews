@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        10,
+        13
+      ],
+      "sayfa_iddiasi": "60% ring-spun cotton/40% polyester"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        6,
+        8,
+        11,
+        12,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada kumaşın kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın ince ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "60% ring-spun cotton/40% polyester",
+      "musteri_deneyimi": "Kumaş ince ve kalitesiz; Yorum 10, 13.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesi hakkında daha net bilgi verin; 'Kumaş ince ve kalitesiz' ifadesini ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Ürün yıkandıktan sonra küçülüyor; Yorum 3, 6, 8, 11, 12, 14.",
+      "islem": "ekle",
+      "duzeltme": "Yıkama sonrası küçülme hakkında bilgi ekleyin."
+    }
+  ]
+}

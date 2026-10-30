@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün fleece olduğunu iddia etmiyor ancak müşteriler ince ve kalitesiz bir kumaşla karşılaştıklarını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Fleece değil, ince ribana pamuk.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün fleece olmadığını ve ince ribana pamuk olduğunu belirtin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 3, 5: Dikiş yerlerinde delikler var ve hemen yırtılıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün kalitesi hakkında bilgi verin; dikiş yerlerinin dayanıklılığı hakkında uyarı ekleyin."
+    }
+  ]
+}

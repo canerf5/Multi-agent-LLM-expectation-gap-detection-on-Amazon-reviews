@@ -1,0 +1,16 @@
+{
+  "deneme": 1,
+  "ilk_ihlaller": [],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B00307HTUY",
+  "split": "gold",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 7,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 4 birden fazla ilgili grupta (grup 1 ve 4)"
+  ],
+  "sure_duvar_sn": 7.905,
+  "time": "2026-10-30T17:44:42+00:00"
+}

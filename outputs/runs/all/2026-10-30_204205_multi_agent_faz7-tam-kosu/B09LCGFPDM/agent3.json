@@ -1,0 +1,29 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "Ultra lightweight, soft, ultra flexible, durable EVA material"
+    }
+  ],
+  "ana_risk": "Sayfada malzeme kalitesi ile ilgili somut iddialar var, ancak kullanıcılar dikiş ve yapışkanlarla ilgili sorunlar yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Ultra lightweight, soft, ultra flexible, durable EVA material",
+      "musteri_deneyimi": "Yorum 1, 3, 4, 5: Kalite sorunları; dikişler, yapışkanlar çalışmıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme kalitesi hakkında daha net bilgi verin; dikişlerin sağlamlığı ve yapışkanların kalitesi hakkında bilgi ekleyin."
+    }
+  ]
+}

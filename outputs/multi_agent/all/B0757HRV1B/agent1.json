@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "made from 9.5 ounce, 100% sanded cotton duck",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Durable men's work pant featuring two cargo pockets with flap closures and articulated double knees for quick mobility",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Double needle stitching and a reinforced kick plate at back leg hem for enhanced durability",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Stonewashed to create a vintage, weathered \"lived-in\" look",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Casual, relaxed fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "articulated double knees offer quick mobility",
+      "iddia_turu": "genel"
+    }
+  ]
+}

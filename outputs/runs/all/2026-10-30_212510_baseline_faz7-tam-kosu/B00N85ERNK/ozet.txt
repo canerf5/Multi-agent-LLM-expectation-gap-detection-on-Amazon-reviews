@@ -1,0 +1,13 @@
+ASIN:         B00N85ERNK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 7, 8, 9 | sayfa iddiası: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger'
+  - Eksik Bilgi: yorum 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabının küçük geldiğini belirtiyor ancak müşteriler bu konuda şikayet ediyor; ayrıca iade ücreti hakkında bilgi yok.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Shoe fits small. For a roomier feel consider ordering 1/2 size larger' | müşteri: Yorum 3, 5, 7, 8, 9: Ayakkabı çok dar geliyor.
+  - [Eksik Bilgi | ekle] İade işlemleri için $6.00 ücret alınmaktadır.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4: İade için $6.00 ücret alındığını bilmiyordum.

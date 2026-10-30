@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "synthetic sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "waterproof build that keeps puddle-jumping feet cozy and dry",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Extremely lightweight for kids to keep on their feet for long periods of time",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Oversized handles make them easy for kids to take these boots on and off",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "available in a number of bright colors",
+      "iddia_turu": "genel"
+    }
+  ]
+}

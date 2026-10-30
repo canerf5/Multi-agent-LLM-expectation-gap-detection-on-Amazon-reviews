@@ -1,0 +1,13 @@
+ASIN:         B07T8ZC6QQ
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5 | sayfa iddiası: 'Heel measures approximately 0.75"'
+  - Kalite: yorum 3, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ayakkabıların kalıbının dar olduğunu belirtmiyor; müşteriler ise ürünün dar ve küçük olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'Heel measures approximately 0.75"' | müşteri: Yorum 1, 2, 4, 5: Ayakkabılar dar ve küçük geliyor.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'ilk kullanımda kırılma riski var' uyarısı ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 6: Kalite çok kötü, ilk kullanımda kırılıyor.

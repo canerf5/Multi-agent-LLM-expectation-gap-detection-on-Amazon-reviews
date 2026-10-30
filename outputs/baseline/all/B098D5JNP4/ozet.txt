@@ -1,0 +1,16 @@
+ASIN:         B098D5JNP4
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 9, 10 | sayfa iddiası: 'Slim flattering fit'
+  - Kalite: yorum 1, 8, 10, 12, 13 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 1, 5, 10, 12, 13 | sayfa iddiası: 'Easy to care for and affordable.'
+ana_risk:     Sayfa, 'Slim flattering fit' iddiasında bulunuyor ama müşteriler bedenlerin küçük ve uyumsuz olduğunu belirtiyor; ayrıca kalite ve dayanıklılık sorunları yaşıyorlar.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin kalıbı hakkında daha net bilgi ver; 'Küçük beden almanız önerilir' notu ekleyin.
+      sayfa: 'Slim flattering fit' | müşteri: Yorum 2, 9, 10: Bedenler küçük ve uyumsuz.
+  - [Kalite | ekle] Kalite kontrolü hakkında bilgi ekleyin; 'Ürünlerimizi yıkadıktan sonra dikkatli kullanmanızı öneririz' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 8, 10, 12, 13: Kalite sorunları var, dikişler ve düğmeler hemen kopuyor.
+  - [Dayanıklılık | değiştir] Dayanıklılık hakkında bilgi ekleyin; 'Ürünlerimizi yıkadıktan sonra dikkatli kullanmanızı öneririz' notu ekleyin.
+      sayfa: 'Easy to care for and affordable.' | müşteri: Yorum 1, 5, 10, 12, 13: Ürünler birkaç yıkamada bozuluyor.

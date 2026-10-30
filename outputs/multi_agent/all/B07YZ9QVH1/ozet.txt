@@ -1,0 +1,16 @@
+ASIN:         B07YZ9QVH1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 6 | sayfa iddiası: 'T back with adjustable straps offers a customized fit'
+  - Malzeme: yorum 2, 7 | sayfa iddiası: '90%polyamide, 10% spandex'
+  - Görsel: yorum 3, 5 | sayfa iddiası: 'Side lining with scalloped trimming adds extra femininity'
+ana_risk:     Sayfada 'T back with adjustable straps offers a customized fit' iddiası var, ancak müşteriler kupa boyutlarının D ve DD'ye uymadığını ve ön kısımda geniş durduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kupa boyutları hakkında daha net bilgi ver; D ve DD boyutlarının uyumunu belirt.
+      sayfa: 'T back with adjustable straps offers a customized fit' | müşteri: Yorum 1, 6: Kupa boyutları D ve DD'ye uymuyor; ön kısımda geniş duruyor.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha fazla bilgi ekle; '90% polyamide, 10% spandex' ifadesinin kalitesini vurgula.
+      sayfa: '90%polyamide, 10% spandex' | müşteri: Yorum 2, 7: Ucuz hissettiriyor.
+  - [Görsel | değiştir] Görseldeki dikişlerin kalitesi hakkında bilgi ver; 'kupa yapısının koni şeklinde görünüm vermediğini' belirt.
+      sayfa: 'Side lining with scalloped trimming adds extra femininity' | müşteri: Yorum 3, 5: Kupa ortasında dikiş var, kötü bir görünüm yaratıyor; kupa yapısı kötü, koni şeklinde görünüm veriyor.

@@ -1,0 +1,5 @@
+ASIN:         B0B81XVL8S
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Kalite, Eksik Bilgi
+seviye:       Yok
+ana_risk:     -

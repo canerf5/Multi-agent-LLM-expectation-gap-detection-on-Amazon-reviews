@@ -1,0 +1,16 @@
+ASIN:         B00TM78T6E
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 8, 12 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 4, 5, 6, 7, 10, 11, 13 | sayfa iddiası: 'Ultralight compression provides men with a comfortable, functional fit for athletes.'
+  - Kalite: yorum 1, 4, 9 | sayfa iddiası: 'Comfort & Quality: Ultralight design improves air flow over the skin and allows air to cool the skin helping moderate body temperature while padded cushioning and seamless toe-closure protects against and hotspots.'
+ana_risk:     Beden uyumsuzluğu ve dayanıklılık sorunları var; sayfa, ürünün dayanıklılığı ve kalitesi hakkında yanıltıcı bilgiler veriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Erkekler için uygun beden bilgisi ekleyin; 'Bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 8: Kadınlara uygun boyut, erkekler için uygun değil.
+  - [Dayanıklılık | değiştir] Ürün açıklamasında dayanıklılık hakkında daha net bilgi verin; 'Daha dayanıklı bir yapı sunuyoruz' gibi ifadeler ekleyin.
+      sayfa: 'Ultralight compression provides men with a comfortable, functional fit for athletes.' | müşteri: Yorum 3, 4, 5, 6, 7, 10, 11, 13: Ürün dayanıklılığı düşük, çabuk yırtılıyor.
+  - [Kalite | değiştir] Kalite ile ilgili daha gerçekçi bir açıklama yapın; 'Ürün fiyatına göre beklenen kalitede olmayabilir' gibi bir not ekleyin.
+      sayfa: 'Comfort & Quality: Ultralight design improves air flow over the skin and allows air to cool the skin helping moderate body temperature while padded cushioning and seamless toe-closure protects against and hotspots.' | müşteri: Yorum 1, 4, 9: Fiyatına göre kalite beklentisi karşılanmıyor.

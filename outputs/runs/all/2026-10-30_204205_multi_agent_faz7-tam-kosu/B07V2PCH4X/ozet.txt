@@ -1,0 +1,10 @@
+ASIN:         B07V2PCH4X
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesi hakkında bilgi vermiyor; müşteriler ise ürünün bedeninin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün bedeninin küçük geldiğine dair bilgi ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün numarası küçük geliyor.

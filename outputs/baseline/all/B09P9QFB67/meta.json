@@ -1,0 +1,14 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Renk: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B09P9QFB67",
+  "split": "dev",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 4,
+  "sure_duvar_sn": 0.002,
+  "time": "2026-10-30T18:30:38+00:00"
+}

@@ -1,0 +1,10 @@
+ASIN:         B07F2CCYFY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: 'To ensure the size you choose is just right, please refer to our sizing chart.'
+ana_risk:     Beden konusunda müşterilerin beklentileri karşılanmıyor; sayfada doğru beden bilgisi veriliyor ancak yorumlar bu bilgiyi çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden tablosunun doğruluğunu kontrol et ve gerekirse düzelt.
+      sayfa: 'To ensure the size you choose is just right, please refer to our sizing chart.' | müşteri: Yorum 1, 3: Beden tablosu yanlış, çok büyük geliyor.

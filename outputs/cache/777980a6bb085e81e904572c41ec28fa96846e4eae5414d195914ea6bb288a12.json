@@ -1,0 +1,74 @@
+{
+  "tag": "agent2:B07B4CCYBZ",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3390,
+    "output_tokens": 237,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0006507,
+  "sure_sn": 3.049,
+  "created": "2026-10-30T17:50:10+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] NOT waterproof. Ok for snow as long as it’s not wet or slushy. — These boots are NOT waterproof, nor are they water resistant. My son already wore these about 3x or else i would return them. I don’t typically write reviews but but I am sharing our experience so that no one else is duped into believing this nonsense that these boots are waterproof. We used these in about 20 degree temps in the snow last month and his feet were basically dry — his toes were a little damp but I chalked that up to sweaty active feet. However, yesterday in the rain I quickly learned the truth about these boots. As my son sat digging in the mud at the park (wearing rain pants pulled OVER the ankles of the boots mind you) it seems the water was actually being absorbed by the boot like a sponge... I had no idea this was happening while we were out but it was apparent when we got home and his socks were absolutely SOAKED. We are lucky it was a warmer winter day out or else this could have been a very hazardous situation for my son and his toes. If all you are doing is walking in the drizzling rain or non-wet/slushy snow these are probably fine but if your kid likes to jump in puddles or play in the mud and be active DO NOT PURCHASE THESE BOOTS.\n\n2) [2★] baby really enjoyed pulling them on and off with handles when trying ... — Boots were cute, but they felt a little snug on baby's feet. His toes were at the very tip top of the boot, so not sure if he'd be able to wear thick socks with them. Also, I'm not sure if these are completely waterproof. However, baby really enjoyed pulling them on and off with handles when trying on. I returned them.\n\n3) [1★] Too long to dry — These boots take FOREVER to dry once wet and they are really, really easy to get wet. They are way too short. My son can walk okay in them, but not great. I ended up buying a pair of Crocs to replace the Bogs. He loves the Crocs and so do I.\n\n4) [2★] Cute and easy to put on — Cute and easy to put on. Other than that, they are synthetic and the feet sweat inside. After a day at school, my son's socks are always wet, even with cotton.\n\n5) [1★] Not water proof! — I don't know what is up with these boots but they are not at all waterproof. Are they fake bogs? I have an email out with the company to try and find out. Soaking wet feet and they are impossible to dry quickly due to the material in the boot lining. Buy oakiwear boots instead!\n\n6) [2★] Not waterproof — The boot is very cute and warm. But NOT waterproof. I took my little to play in the snow, and his little feet got very wet. I’m very disappointed specially because it’s pricey for a non waterproof boots\n\n7) [1★] Dangerous and careless and NOT waterproof — Furious after taking my child out in the snow and to have not a little waterproofing issue but a boat load of water in my son's shoes. My poor kid has neuropathy and this is dangerous and careless of Bogs to sell these.\n\n8) [2★] what is the opposite of waterproof? — I honestly can't believe these are sold as 'waterproof.' My daughter's socks are SOAKED every time she wears these in the snow. I need to stuff them with newspaper each night to dry them out. After a few days of this, I really wondered whether I bought the non-waterproof version of Baby Bogs and then just never went back to check my order. If I had realized this sooner, I would have sent them back after a day. And I can confirm the soaking wetness isn't from snow falling into the boots. The pros - my daughter loves them, doesn't seem to mind the potential for frostbite, and loves to pull them on herself.\n\n9) [1★] These should not be considered \"snow boots\" — These are not snow boots!! These are advertised as a snow boot but are more suitable for rain or no more than 1/2 of snow. My daughter wore these out in about 4 inches of snow and her feet were were mildly frost bitten after only 30 minutes outside. I just ordered a pair of kamik' to replace these. Waste of money.\n\n10) [2★] Terrible and not waterproof — These aren’t waterproof at all. I have three boys and have purchased bogs before. These are either fakes or just terrible quality. Can not be warn is rain or snow or wet grass.\n\n11) [1★] Not waterproof — These boots are not waterproof! It seems because I ordered them more than 30 days ago, I can no longer replace them even though the tag on the boots said that Bogs will guarantee them. Not sure what to do, but buyer beware!\n\n12) [2★] Heavy, hard and overpriced — These are obviously high quality boots but they were just too heavy for my little one to walk in and bulky too. Not really waterproof either but they did keep her feet dry even though the boots themselves were damp and took a long time to dry out. I guess I thought for the price these would be awesome but Bogs didn't put much thought into their boots for toddlers. Hard and inflexible as well.\n\n13) [1★] Sent used boots! — I was sent used boots covered in animal hair and several long human hair. Absolulty dusgused.\n\n14) [2★] Bottom traction is terrible — I was excited about these at first - however, now that we’ve had them for a few months in rainy season I have come to see how their traction is terrible. Our daughter slips in these on hardwood floors/play structures/stairs with any hint of moisture on the surface. We have decided to stick to her hunter boots, which does not have this issue (and she prefers them anyway). Wouldn’t recommend or buy again.\n\n15) [1★] Big and heavy — Disappointed. Sized up . My grandson wears a 6_61/2 shoe. The size 7 was too big to even consider a growing into fit. My grandson's evaluation \"heavy\". Sadly I will be returning these boots and moving on.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Malzeme",
+        "ozet": "Kumaş su geçirmiyor, ayakkabılar ıslanıyor.",
+        "yorum_numaralari": [
+          1,
+          5,
+          6,
+          10,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Bedenleri küçük veya dar geliyor.",
+        "yorum_numaralari": [
+          2,
+          3,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Ayakkabılar uzun sürede kuruyor.",
+        "yorum_numaralari": [
+          3,
+          4,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Gönderilen ürün kullanılmıştı.",
+        "yorum_numaralari": [
+          13
+        ],
+        "ilgili": false,
+        "ilgisiz_sebebi": "kullanılmış ürün"
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Kayma problemi var, alt tutuşu kötü.",
+        "yorum_numaralari": [
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

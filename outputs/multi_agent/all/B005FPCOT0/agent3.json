@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada '100% Manmade' iddiası var, ancak müşteriler kalitenin çok kötü olduğunu ve ürünün hemen parçalandığını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Kalitesi çok kötü, hemen parçalanmaya başladı",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında daha net bilgi verin; 'Ürün dayanıklılığı test edilmiştir' ifadesini ekleyin."
+    }
+  ]
+}

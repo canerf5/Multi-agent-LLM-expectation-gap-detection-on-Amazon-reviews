@@ -1,0 +1,10 @@
+ASIN:         B077SNV2X1
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'designed for durability, so you can enjoy wearing them for years to come.'
+ana_risk:     Sayfa dayanıklılık iddiası var, ancak kullanıcılar ayakkabının tabanının tamamen yırtıldığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili daha net bilgi verin; 'Tabanın yırtılma riski vardır' uyarısını ekleyin.
+      sayfa: 'designed for durability, so you can enjoy wearing them for years to come.' | müşteri: Yorum 2, 3: Ayakkabının tabanı tamamen yırtıldı.

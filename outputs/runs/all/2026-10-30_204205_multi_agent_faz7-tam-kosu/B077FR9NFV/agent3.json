@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "sayfa_iddiasi": "Material: Polyester, Lace, Chiffon"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        7
+      ],
+      "sayfa_iddiasi": "Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5\"/90cm----|---22.5\"/57.5cm---|-----21\"/54cm-- ---6------|-----------6 Years----------|------39\"/99cm-----|----25\"/63.5cm----|----23.5\"/60cm- ---8------|-----------8 Years----------|----42\"/107.5cm----|----27\"/68.5cm----|----25\"/64.5cm- ---10-----|----------10 Years----------|---45.5\"/116.5cm---|---28.5\"/73.5cm---|-----27\"/69cm-- ---12-----|----------12 Years----------|-----49\"/125cm-----|---30.5\"/78.5cm---|---28.5\"/73.5cm ---14-----|----------14 Years----------|----52.5\"/134cm----|---32.5\"/83.5cm---|----30.5\"/78cm- ---16-----|----------16 Years----------|-----56\"/143cm-----|----34.5\"/88cm----|---32.5\"/82.5cm"
+    }
+  ],
+  "ana_risk": "Sayfada kumaşın ince ve şeffaf olduğu belirtiliyor, ancak müşteriler bu durumu şikayet ediyor; ayrıca beden ölçülerinin yanlış olduğu da ifade ediliyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Material: Polyester, Lace, Chiffon",
+      "musteri_deneyimi": "Yorum 1, 2, 4, 6, 9: Kumaş ince ve şeffaf.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın ince ve şeffaf olduğu bilgisi eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Recommended Size---|-------Length------|-------Chest------|-------Waist--- ---4------|-----------4 Years----------|-----35.5\"/90cm----|---22.5\"/57.5cm---|-----21\"/54cm-- ---6------|-----------6 Years----------|------39\"/99cm-----|----25\"/63.5cm----|----23.5\"/60cm- ---8------|-----------8 Years----------|----42\"/107.5cm----|----27\"/68.5cm----|----25\"/64.5cm- ---10-----|----------10 Years----------|---45.5\"/116.5cm---|---28.5\"/73.5cm---|-----27\"/69cm-- ---12-----|----------12 Years----------|-----49\"/125cm-----|---30.5\"/78.5cm---|---28.5\"/73.5cm ---14-----|----------14 Years----------|----52.5\"/134cm----|---32.5\"/83.5cm---|----30.5\"/78cm- ---16-----|----------16 Years----------|-----56\"/143cm-----|----34.5\"/88cm----|---32.5\"/82.5cm",
+      "musteri_deneyimi": "Yorum 3, 7: Beden ölçüsü yanlış, büyük geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerinin doğru olduğu ve büyük gelenlerin bir beden küçük alınması gerektiği bilgisi eklenmeli."
+    }
+  ]
+}

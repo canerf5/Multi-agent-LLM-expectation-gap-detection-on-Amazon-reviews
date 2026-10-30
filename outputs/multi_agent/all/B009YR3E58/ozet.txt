@@ -1,0 +1,13 @@
+ASIN:         B009YR3E58
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 8, 11, 12, 13, 14 | sayfa iddiası: 'a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely'
+  - Malzeme: yorum 6, 10 | sayfa iddiası: '65% Polyester, 35% Cotton'
+ana_risk:     Sayfada 'modern fit' ve 'rahat hareket' iddiası var, ancak birçok müşteri bedenin çok küçük geldiğini belirtiyor; kumaşın sert olduğu ve daha yumuşak olması gerektiği de şikayet ediliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'a women’s modern fit and half-back elastic waistband with a drawstring allow you to move freely' | müşteri: Yorum 1, 3, 5, 8, 11, 12, 13, 14: Çok küçük geliyor
+  - [Malzeme | değiştir] Kumaşın sert olduğu ve daha yumuşak olması gerektiğine dair bilgi ekleyin.
+      sayfa: '65% Polyester, 35% Cotton' | müşteri: Yorum 6, 10: Kumaş sert ve rahatsız; kumaşın daha yumuşak olması gerekirdi

@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "synthetic-and-rubber",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Ortholite Sockliner - Moisture management (Ortholite is a registered trademark of ATP Manufacturing LLC)",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "AHAR Plus Outsole - Strategically positioned in critical areas of the outsole, this exceptionally durable compound is 50% more durable than standard ASICS High Abrasion Rubber.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Trusstic System technology - Reduces the weight of the sole unit while retaining the structural integrity of the shoe.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Rearfoot GEL technology cushioning system - Attenuates shock during impact phase and allows for a smooth transition to midstance.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "I.G.S (Impact Guidance System) Technology - ASICS design philosophy that employs linked componentry to enhance the foot's natural gait from heel strike to toe-off.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

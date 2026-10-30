@@ -1,0 +1,94 @@
+{
+  "tag": "agent2:B00DSN2MDE",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3531,
+    "output_tokens": 313,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00071745,
+  "sure_sn": 4.299,
+  "created": "2026-10-30T18:15:00+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [2★] I will think it twice before buying again this same model in the future. — The material is really soft and gentle to the soles of your feet. The strap is also soft and pliable not hurting the top of your feet. The soles are just perfectly sized (fit as expected).The strap is way loose on one side, more so than in the other (too large for the size). In order to keep them from flopping out of your feet you have to pinch them with your toes. I had bought many Teva flip flops before but this is the first one that does not snuggle my feet. It looks like the attention to details and quality control is missing on this product. I will think it twice before buying again this same model in the future.\n\n2) [1★] I loved my soon to be three year old daily worn Teva Deckers ... — I spend 90+ % of my waking hours wearing flip flops. Yeah, I know I'm lucky. I loved my soon to be three year old Teva Deckers (first Tevas I have owned) so much I looked for a new pair. Unfortunately, Teva in what now appears to be their incompetent managements wisdom - has chosen not to make them anymore - so I compromised for the Mush II. Huge mistake and disappointment. My problems with the Mush Ii are the following: 1. Though my Deckers and the Mush II are size 10 - the Mush II is more than 3/4 of an inch shorter and 3/8\" narrower than the Deckers - which fit perfectly. The Mush II is too small. They fit my wife. 2. In the Amazon photos the Mush II - Dune model has what appears to a shade of olive green faded straps which I was fine with. In reality the straps are faded tan or beige - and but ugly. 3. Not only are the straps faded and ugly, but they are made of cotton which will not last if I wear these in wet environments - cotton rots quickly when wet frequently. The Mush (aptly descriptive term) apparently made by some incompetent factory with no supervision of quality control by Teva. Very disappointed. My wife told me she would give me $ 5.00 for them and sew some embroidered ribbon over the straps so they aren't so but ugly - I should have taken it. Mush II is no better than the $7.00 flops I also have, surely won't last any longer (turns out in the 18 months I have had them I have had to re-glue the soles twice and the straps have come out once. Really, don't waste you money on this Mush. Carefully checkout what ever you consider buying from Teva - because they are not managing quality control as evinced by the Mush. My conclusion is that I either got lucky with my Teva Deckers - or Teva has lost all quality control and design abilities, management competence and their current business model is ripoff of their loyal customers.\n\n3) [1★] Poor Quality — Ordered (2) pairs of these flip flops based on the reviews, but they clearly missed quality control because the 1st pair broke after 1 week & the 2nd pair broke 2 days after we received them, super disappointed in this product from a well known brand and years of purchasing them.\n\n4) [1★] Poor quality and far from the Teva I loved 20 years ago. — I wore these on a 3 day rafting trip. The first time I stepped in mud the strap ripped off the sandal. They also get very slippery when wet. For a flip flop originally designed by rafting guides these are pathetic. If you want something to use around the house they'd be fine but don't get them wet or you'll rip your big toe off.\n\n5) [2★] Great look but not durable — For such a simple shoe one might expect something that would last. I use them when I take a shower and occasionally at night, they broke at the strap after one year of light indoor use ... so I for one am not impressed.\n\n6) [2★] You get what you pay for — These squeak louder than SpongeBobs boots when they get wet or sweaty. They have zero support and are like walking on mush.\n\n7) [2★] Not the quality I expected — Runs small to size. Very narrow. Definitely not the quality of Teva products a few years ago. Very disappointed. Returned for a refund.\n\n8) [2★] Two Stars — Not what I expected.... Already going flat\n\n9) [1★] Pretty comfortable, until the strap fell apart at six months of light usage. Try a different brand/model... — Definitely mushy. Doesn't take long to create foot grooves. Slippery when wet. Unfortunately, they only lasted 6 months. The right side of the right shoe is hanging on by a thread. Bought for $18 - they are $25 + shipping on teva.com. If you are going to buy disposable flip flops, you're just as well off getting a no name brand. These are junk. They are also a big narrow.\n\n10) [1★] I Bought A Different Teva Slipper — The canvas is raised and not flat. I kept standing on the raised canvas. The canvas was also rough and not smooth for my feet. I went ahead and bought a different Teva slipper, which I enjoyed 5 stars.\n\n11) [2★] the top bands did not give at all and I ... — the top bands did not give at all and I found it uncomfortable. maybe my feet are too fat :( I gave them away\n\n12) [2★] Disappointed — These Tevas do not feel like the two pair of Mush II that I have bought. They have much firmer soles and don't have the Mush II emblem on the heel. At first I thought, unlike my other pairs they might need breaking in but wearing them has made no difference. They're still way firmer and less comfortable than I expected.\n\n13) [1★] Fake merchandise labeled “Amazon’s Choice” — I don’t believe these are real Teva flip flops. I was sent the wrong color, which I can overlook; but upon further inspection, they don’t appear to be authentic Teva. Every pair that I have previously owned has a small patch type logo in the heal that is a different color than the footbed of the flop. Or, has a deep engraving that never wears down even with heavy use. The new ones I received do not have the patch logo and the engraving is so light, it’s barely visible. Nice try China!\n\n14) [2★] I like the look of the shoes and they seem comfortable — I like the look of the shoes and they seem comfortable, but our pair came with a big white strip of plastic melted across the flip flop.\n\n15) [1★] Flip Flop, I hardly knew ye — I have had great experiences with Teva products in the past but this particular pair just broke, only lasting 3 months. VERY disappointed.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün kalitesi düşük, kısa sürede bozuluyor.",
+        "yorum_numaralari": [
+          3,
+          4,
+          5,
+          9,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Küçük ve dar geliyor.",
+        "yorum_numaralari": [
+          2,
+          7,
+          11
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kullanılan malzeme kalitesiz ve dayanaksız.",
+        "yorum_numaralari": [
+          2,
+          6,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Renk",
+        "ozet": "Renk beklenenden farklı ve hoş değil.",
+        "yorum_numaralari": [
+          2
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada kalite kontrol hakkında bilgi yok.",
+        "yorum_numaralari": [
+          1
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün görseldeki gibi değil.",
+        "yorum_numaralari": [
+          13
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün kalitesi beklenenden düşük.",
+        "yorum_numaralari": [
+          8,
+          10,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

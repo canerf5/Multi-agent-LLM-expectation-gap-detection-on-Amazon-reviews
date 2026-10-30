@@ -1,0 +1,16 @@
+ASIN:         B0936XDNJ4
+gap_var:      Evet
+gap_tipleri:  Kalite, Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 1, 4, 10, 11, 15 | sayfa iddiası: 'we will be responsible for the end'
+  - Beden/Kalıp: yorum 2, 3, 5, 12, 14 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 6, 7, 8, 13 | sayfa iddiası: '60% Nylon, 35% Polyester, 5% Spandex'
+ana_risk:     Ürün sayfasında kumaşın %60 Naylon, %35 Polyester ve %5 Spandeks olduğu belirtiliyor, ancak müşteriler kumaşın şeffaf olduğunu ve kalitenin düşük olduğunu bildiriyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrolü yapıldığına dair bilgi ekleyin.
+      sayfa: 'we will be responsible for the end' | müşteri: Yorum 1, 4, 10, 11, 15: Ürün kalitesi düşük, dikişler yırtılıyor.
+  - [Beden/Kalıp | ekle] Beden tablosu ekleyin ve bedenlerin küçük geldiğine dair uyarı yapın.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3, 5, 12, 14: Bedenler küçük geliyor, yanlış beden gönderilmiş.
+  - [Malzeme | değiştir] Kumaşın şeffaf olabileceğine dair uyarı ekleyin.
+      sayfa: '60% Nylon, 35% Polyester, 5% Spandex' | müşteri: Yorum 6, 7, 8, 13: Kumaş şeffaf, görünümde sorun var.

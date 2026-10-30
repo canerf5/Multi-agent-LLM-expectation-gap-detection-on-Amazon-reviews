@@ -1,0 +1,16 @@
+ASIN:         B00DSN2MDE
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 7 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3, 4, 15 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 3, 4, 9 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, bedenin küçük olduğu ve kalitenin düşük olduğu iddialarında bulunmuyor, ancak müşteriler bu sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenin küçük olduğu bilgisi eklenmeli; 'Küçük almayın, bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 7: Beden küçük geliyor.
+  - [Kalite | ekle] Kalite kontrolü hakkında bilgi eklenmeli; 'Ürün kalitesi kontrol edilmiştir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 15: Kalite düşük, ürün kısa sürede bozuluyor.
+  - [Dayanıklılık | ekle] Dayanıklılık hakkında bilgi eklenmeli; 'Ürün hafif kullanımda bile dayanıklı değildir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 9: Ürün dayanıklı değil, kısa sürede bozuluyor.

@@ -1,0 +1,63 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp",
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        5,
+        6,
+        10,
+        11
+      ],
+      "sayfa_iddiasi": "Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        15
+      ],
+      "sayfa_iddiasi": "The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        3,
+        4,
+        12
+      ],
+      "sayfa_iddiasi": "Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty"
+    }
+  ],
+  "ana_risk": "Su geçirmez olduğu iddia ediliyor, ancak müşteriler ayakkabıların su geçirdiğini belirtiyor; ayrıca dayanıklılık konusunda da şikayetler var.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Waterproof and light weight rain boot is made with a durable rubber over a four-way stretch inner bottie for dry feet",
+      "musteri_deneyimi": "Yorum 1, 5, 6, 10, 11: Kumaş su geçirmiyor, ayakkabılar ıslanıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Su geçirmezlik özelliği hakkında daha net bilgi ver; 'Kumaş su geçirmiyor' ifadesini kaldır."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "The combination of a hook/loop strap and sturdy handles makes these winter boots easy for little kids to get on and off",
+      "musteri_deneyimi": "Yorum 2, 15: Bedenleri küçük veya dar geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Bedenlerin dar geldiğine dair uyarı ekle; 'Bir beden büyük almanız önerilir'."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Contoured footbed with bio-technology helps fight unwanted odors. Machine washable when the boots get dirty",
+      "musteri_deneyimi": "Yorum 3, 4, 12: Ayakkabılar uzun sürede kuruyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kuruma süresi hakkında bilgi ekle; 'Uzun sürede kuruduğu belirtiliyor'."
+    }
+  ]
+}

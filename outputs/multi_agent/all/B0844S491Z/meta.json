@@ -1,0 +1,22 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [4]",
+    "Eksik Bilgi: en az 2 farklı destekleyen yorum gerekli, 1 var [7]",
+    "tek konu kuralı: yorum 7 hem Beden/Kalıp hem Eksik Bilgi için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B0844S491Z",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 8,
+  "agent1_uyarilari": [
+    "beklenti 4: iddia sayfada birebir geçmiyor: 'designed to help control blood flow and prevent soreness dur'"
+  ],
+  "agent2_uyarilari": [
+    "yorum 7 birden fazla ilgili grupta (grup 1 ve 3)"
+  ],
+  "sure_duvar_sn": 16.471,
+  "time": "2026-10-30T17:51:29+00:00"
+}

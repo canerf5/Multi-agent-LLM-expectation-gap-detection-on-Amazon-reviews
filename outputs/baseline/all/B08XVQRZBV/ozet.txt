@@ -1,0 +1,16 @@
+ASIN:         B08XVQRZBV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Görsel, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 7, 15 | sayfa iddiası: 'Loose design at the calf cuff'
+  - Görsel: yorum 2, 9, 12 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 5, 6, 13 | sayfa iddiası: 'Durable and breathable'
+ana_risk:     Sayfa, kalın ve sıcak bir taban sunan bir ürün vaat ediyor; ancak müşteriler, tabanın ince ve rahatsız edici olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve beden bilgisi ekleyin; 'Beden kalıbı dar, bir beden büyük almanız önerilir.'
+      sayfa: 'Loose design at the calf cuff' | müşteri: Yorum 1, 3, 7, 15: Beden kalıbı dar; büyük alındığında bile sıkı geliyor.
+  - [Görsel | ekle] Ürün görsellerinin gerçek boyutunu ve kalıbını yansıttığını belirtin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 9, 12: Ürün görseldeki gibi değil, daha kısa ve dar.
+  - [Malzeme | değiştir] Malzeme kalınlığı ve konforu hakkında bilgi ekleyin; 'Daha kalın bir taban sunulmaktadır.'
+      sayfa: 'Durable and breathable' | müşteri: Yorum 5, 6, 13: Malzeme ince ve rahatsız; taban kalınlığı artırılmalı.

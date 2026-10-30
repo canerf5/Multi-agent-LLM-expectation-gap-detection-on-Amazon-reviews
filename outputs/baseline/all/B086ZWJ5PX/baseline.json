@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "The fit and comfort This shoe offers are exceptional!"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "100% Leather"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün konforlu ve iyi bir uyum sunduğunu iddia ediyor; ancak müşteriler, ayakkabıların rahatsız edici olduğunu ve kalitesiz bir deri kullandığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "The fit and comfort This shoe offers are exceptional!",
+      "musteri_deneyimi": "Yorum 2, 3, 4: Ayakkabılar çok dar ve rahatsız.",
+      "islem": "değiştir",
+      "duzeltme": "\"Bu ayakkabılar dar kalıp ve uzun süreli kullanımda rahatsızlık verebilir\" uyarısını ekle."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Leather",
+      "musteri_deneyimi": "Yorum 2, 5: Deri kalitesi kötü ve sert.",
+      "islem": "değiştir",
+      "duzeltme": "\"Kullanılan derinin kalitesi değişkenlik gösterebilir; bazı kullanıcılar sertlikten şikayetçi olmuştur\" notunu ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2, 5: Ürün kalitesi beklenenden düşük.",
+      "islem": "ekle",
+      "duzeltme": "\"Ürün kalitesi hakkında daha fazla bilgi verin; kullanıcıların deneyimlerini yansıtacak bir uyarı ekleyin.\""
+    }
+  ]
+}

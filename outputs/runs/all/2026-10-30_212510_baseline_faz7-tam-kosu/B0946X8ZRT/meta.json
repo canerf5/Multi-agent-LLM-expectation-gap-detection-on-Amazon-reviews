@@ -1,0 +1,20 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Easy to adjust: the caps with elastic band and adjustable ba'",
+    "Malzeme: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Practical buttons design: our printed cap is designed with b'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Easy to adjust: the caps with elastic band and adjustable ba'",
+    "öneri 2: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Practical buttons design: our printed cap is designed with b'"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "Beden/Kalıp: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Easy to adjust: the caps with elastic band and adjustable ba'",
+    "öneri 1: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: 'Easy to adjust: the caps with elastic band and adjustable ba'"
+  ],
+  "parent_asin": "B0946X8ZRT",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 7,
+  "sure_duvar_sn": 11.202,
+  "time": "2026-10-30T18:38:01+00:00"
+}

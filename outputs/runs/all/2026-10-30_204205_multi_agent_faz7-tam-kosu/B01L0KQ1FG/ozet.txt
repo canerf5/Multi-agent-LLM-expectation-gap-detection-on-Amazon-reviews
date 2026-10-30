@@ -1,0 +1,16 @@
+ASIN:         B01L0KQ1FG
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Renk
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 4 | sayfa iddiası: '100% Cotton'
+  - Beden/Kalıp: yorum 2, 3, 9, 10, 11, 12, 14, 15 | sayfa iddiası: 'Relaxed fit'
+  - Renk: yorum 8, 13 | sayfa iddiası: 'Tan back neck lining'
+ana_risk:     Sayfada '100% Cotton' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu ve kağıt gibi hissettirdiğini belirtiyor; ayrıca 'Relaxed fit' iddiası var ama bedenlerin beklenenden küçük olduğu şikayet ediliyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'kalite düşük, kağıt gibi hissediyor' notunu ekle.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 4: Kumaş kalitesi kötü, kağıt gibi hissediliyor.
+  - [Beden/Kalıp | değiştir] Beden tablosunu güncelle ve 'Bedenler normalden küçük, bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'Relaxed fit' | müşteri: Yorum 2, 3, 9, 10, 11, 12, 14, 15: Bedenler beklenenden küçük, normalde giyilen bedenden daha küçük.
+  - [Renk | değiştir] Renk açıklamasını güncelle ve 'Renk, fotoğraftakinden daha koyu olabilir' uyarısını ekle.
+      sayfa: 'Tan back neck lining' | müşteri: Yorum 8, 13: Renk beklenenden daha koyu.

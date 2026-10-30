@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "XXL fits men's shoe sizes 15-18",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "XXL fits men's shoe sizes 14-18",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material content: 50% cotton, 30% polyester, 17% nylon, 3% spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight, breathable",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Material content: 50% cotton, 30% polyester, 17% nylon, 3% spandex",
+      "iddia_turu": "somut"
+    }
+  ]
+}

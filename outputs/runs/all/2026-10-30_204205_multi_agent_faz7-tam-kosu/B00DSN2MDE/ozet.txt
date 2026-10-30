@@ -1,0 +1,16 @@
+ASIN:         B00DSN2MDE
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 3, 4, 5, 9, 15 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 6, 12 | sayfa iddiası: '100% Cotton-canvas webbing'
+  - Beden/Kalıp: yorum 2, 7, 11 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada kullanılan malzeme kalitesi yüksek olarak belirtiliyor, ancak müşteriler malzemenin kalitesiz olduğunu ve ürünün kısa sürede bozulduğunu bildiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi ve kalite kontrol süreci eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 9, 15: Ürün kalitesi düşük, kısa sürede bozuluyor.
+  - [Malzeme | değiştir] Kullanılan malzeme hakkında daha detaylı bilgi verilmeli; malzemenin dayanıklılığı ve kalitesi hakkında açıklama eklenmeli.
+      sayfa: '100% Cotton-canvas webbing' | müşteri: Yorum 2, 6, 12: Kullanılan malzeme kalitesiz ve dayanaksız.
+  - [Beden/Kalıp | ekle] Beden tablosu eklenmeli ve kalıp hakkında bilgi verilerek, 'bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 7, 11: Küçük ve dar geliyor.

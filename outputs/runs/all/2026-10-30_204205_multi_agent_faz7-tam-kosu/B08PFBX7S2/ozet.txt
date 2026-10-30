@@ -1,0 +1,16 @@
+ASIN:         B08PFBX7S2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 9 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 6 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 3, 4 | sayfa iddiası: '50% Polyester, 50% Cotton'
+ana_risk:     Sayfada kumaş kalitesi ile ilgili bilgi var, ancak müşteriler kumaşın sert ve kaşındırıcı olduğunu belirtiyor; ayrıca dikişlerin kötü olduğunu ve ürünün hemen bozulduğunu söylüyorlar.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün kalıbının büyük olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 9: Çok büyük geldi
+  - [Kalite | ekle] Ürünün kalitesinin düşük olduğu bilgisini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 6: Dikişler kötü, ürün hemen bozuldu
+  - [Malzeme | değiştir] Kumaşın kalitesinin düşük olduğu ve sert olduğu bilgisini düzeltin.
+      sayfa: '50% Polyester, 50% Cotton' | müşteri: Yorum 3, 4: Kumaş kalitesi düşük, sert ve kaşındırıyor

@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "We provide soft and lightweight pure superior cotton and Polyester non-fading T-shirts."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Our T-shirts are high quality shirts. Get comfortable wearing and feeling."
+    }
+  ],
+  "ana_risk": "Sayfa, pamuk içeriği ve yüksek kalite iddiasında bulunuyor; ancak müşteriler, ürünün tamamen polyester olduğunu ve kalitesiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "We provide soft and lightweight pure superior cotton and Polyester non-fading T-shirts.",
+      "musteri_deneyimi": "Yorum 1, 4: Ürün tamamen polyester, pamuk yok.",
+      "islem": "değiştir",
+      "duzeltme": "Pamuk içeriği hakkında doğru bilgi verin; 'Pamuk içeriği yok, tamamen polyester.' yazın."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Our T-shirts are high quality shirts. Get comfortable wearing and feeling.",
+      "musteri_deneyimi": "Yorum 2, 3: Kalite düşük, kumaş rahatsız edici.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite iddiasını gözden geçirin; 'Kalite standartlarımızı karşılamıyor.' yazın."
+    }
+  ]
+}

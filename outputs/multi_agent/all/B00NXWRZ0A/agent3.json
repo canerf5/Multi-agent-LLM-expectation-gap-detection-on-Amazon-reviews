@@ -1,0 +1,49 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        5,
+        6,
+        9,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "Order one size down for a snug, thermal fit"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        4,
+        8,
+        13
+      ],
+      "sayfa_iddiasi": "80% Polyester, 20% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfada 'Order one size down for a snug, thermal fit' iddiası var, ancak müşteriler ürünün çok küçük geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Order one size down for a snug, thermal fit",
+      "musteri_deneyimi": "Yorum 3, 5, 6, 9, 14, 15: Çok küçük geldi, kalıp uyumsuz.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalıbının dar olduğunu belirtin; 'Bir beden büyük almanız önerilir' notunu ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "80% Polyester, 20% Cotton",
+      "musteri_deneyimi": "Yorum 1, 4, 8, 13: Kumaş kalitesi düşük, ucuz hissettiriyor.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek değil, ucuz hissettiriyor' uyarısını ekleyin."
+    }
+  ]
+}

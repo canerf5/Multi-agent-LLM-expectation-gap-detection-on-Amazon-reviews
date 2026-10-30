@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "90% Polyester, 10% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight and stretchy fabric for a comfortable fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Sizing: Small- Length: 23in / Medium- Length: 24in / Large- Length: 25in",
+      "iddia_turu": "somut"
+    }
+  ]
+}

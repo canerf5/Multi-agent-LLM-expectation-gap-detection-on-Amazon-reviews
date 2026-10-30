@@ -1,0 +1,66 @@
+{
+  "tag": "agent1:B08NW1196W",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2570,
+    "output_tokens": 398,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0006243,
+  "sure_sn": 5.079,
+  "created": "2026-10-30T18:24:26+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: Vionic Women's Aura Penelope Slip On No Laces Sneaker- Supportive Leather Casual Platform Sneakers That Include Three-Zone Comfort with Orthotic Insole Arch Support, Medium Fit\n\nFİYAT: $99.98\n\nÖZELLİKLER:\n• Imported\n• Rubber sole\n• Leather Upper. Rubber Outsole. Removable Textile Covered EVA Footbed.\n• YOUR NEW FAVORITE SNEAKERS: A casual rubber sole slip-on in nubuck, or a leather option that has cool embossed-croco or leopard patches around the heel.\n• MAINTAINING YOUR WOMENS SLIP-ON SNEAKERS: Preserve the appearance of your Vionic shoes. We recommend that you clean the leather, if needed, using a dry, cotton cloth to wipe away dirt or dust. Keep the footwear away from direct heat to prevent it from drying.\n• LEADING IN COMFORT: Wear your new Vionic footwear for just a few hours for the first few days to allow your feet to adjust to the new level of orthotic comfort and support. Within one to two weeks, you will find the product completely comfortable.\n• VIONIC SHOES: The innovative biomechanics of THREE-ZONE COMFORT deliver enhanced stability with a deep heel cup, superior forefoot cushioning, and ultimate arch support midsole. These essential contact points hug your foot's natural curves in all of our casual, dress, active, and slipper styles. Experience the Vionic difference: on-trend fashion, unmatched fit, and feel-great wellness from the ground up. Vionic: Style You Want, Comfort You Crave.\n\nAÇIKLAMA: A casual rubber sole slip-on in nubuck, or a leather option that has cool embossed-croco or leopard patches around the heel. The perfect walking shoe for women is a casual comfort, orthotic insole sneaker. Not only can you get your steps in wearing these shoes, they’re easy to pair with any outfit because of their fashion-forward, sporty design. These comfortable women's sneakers will appeal to everyday champions looking for the best footwear possible; whether going for a short stroll, long-distance walking for wellness, doing work inside or outside the home, or getting around town. We recommend wearing your new Vionic sneakers for short periods of time over the first week or two so your feet can adjust to the new level of orthotic relief they’re experiencing. There’s a science to our style: Vionic shoes have Three-Zone Comfort technology which delivers stability, cushioning, and ultimate arch support via podiatrist-developed contours that are seamlessly designed into each and every pair. Vionic active sneakers help support natural alignment from the ground up, in looks you’re going to love.\n\nDETAYLAR:\n- Department: Womens\n- Date First Available: November 19, 2020\n- Manufacturer: Vionic",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "Leather Upper. Rubber Outsole. Removable Textile Covered EVA Footbed.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "A casual rubber sole slip-on in nubuck, or a leather option that has cool embossed-croco or leopard patches around the heel.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "We recommend that you clean the leather, if needed, using a dry, cotton cloth to wipe away dirt or dust.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "the perfect walking shoe for women is a casual comfort, orthotic insole sneaker.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "they’re easy to pair with any outfit because of their fashion-forward, sporty design.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Vionic shoes have Three-Zone Comfort technology which delivers stability, cushioning, and ultimate arch support via podiatrist-developed contours that are seamlessly designed into each and every pair.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Vionic active sneakers help support natural alignment from the ground up, in looks you’re going to love.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "Wear your new Vionic footwear for just a few hours for the first few days to allow your feet to adjust to the new level of orthotic comfort and support.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "We recommend wearing your new Vionic sneakers for short periods of time over the first week or two so your feet can adjust to the new level of orthotic relief they’re experiencing.",
+        "iddia_turu": "genel"
+      }
+    ]
+  }
+}

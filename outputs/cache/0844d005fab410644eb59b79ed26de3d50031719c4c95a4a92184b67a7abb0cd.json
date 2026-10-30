@@ -1,0 +1,51 @@
+{
+  "tag": "agent1:B002G9UFHQ",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2541,
+    "output_tokens": 219,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.00051255,
+  "sure_sn": 2.835,
+  "created": "2026-10-30T17:49:03+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: Capezio Fierce DS11C Dance Sneaker (Little Kid/Big Kid)\n\nFİYAT: $54.28\n\nÖZELLİKLER:\n• 100% Synthetic and mesh\n• Imported\n• Manmade sole\n• The logo on the shoe may vary\n• This shoe runs 2 sizes smaller than street shoe size\n\nAÇIKLAMA: Turn with flair in the Fierce Dansneaker®. This mesh Fierce Dansneaker® helps rising dancers spin with ease thanks to built-in patented flex points and forepart spin spot. Includes cushioned Achilles notch and footbed to reassure they're dancing in ultimate comfort. Hand selected for hip-hop, jazz and zumba dancers who love to spin non-stop. Capezio's Fierce dance sneaker is ready for any serious dance session. The lightweight design features a flat, boxed toe for easier toe stands, premium arch support, padded linings, and comes with two sets of laces so that they can change up their look. Salvatore Capezio was born in 1871 in Muro Lucano, Italy. Uninterested in following in his father's footsteps as a construction engineer, he became an artist of his own right, a cobbler. In 1887, at the age of 17, he opened his shop on Broadway and 39th Street, diagonally across from the old Metropolitan Opera House in New York City. Soon, the shop became a meeting place for dancers who would stop by to discuss their needs and to get a pair of his shoes. As Capezio's popularity grew, dancers from around the world made it a point to visit him and purchase his shoes. The innovation of the products that Salvatore Capezio created and the camaraderie he shared with the dancers molded the direction that his company would follow. In this image, the Capezio brand was established to promote and recognize ongoing achievements and participation in dance. Capezio products remain in the forefront in quality and in technological advances with innovations like the split-sole, the stretch-insert, the Dansneaker and the Tapsneaker. Capezio believes that their success is dependent upon the individual commitment of each customer to continually set new standards of creativity and performance, while preserving a reputation for dependability and distinction. Capezio pledges their support and dedication to the advancement of dance, theater and recreation in communities worldwide. See more\n\nDETAYLAR:\n- Is Discontinued By Manufacturer: No\n- Package Dimensions: 12 x 8 x 4 inches; 2 Pounds\n- Item model number: DS11C\n- Department: Unisex-child\n- Date First Available: July 15, 2009\n- Manufacturer: Capezio",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "100% Synthetic and mesh",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "Manmade sole",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "This shoe runs 2 sizes smaller than street shoe size",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "The logo on the shoe may vary",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "Capezio products remain in the forefront in quality and in technological advances with innovations like the split-sole, the stretch-insert, the Dansneaker and the Tapsneaker.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Kalite",
+        "iddia": "Capezio believes that their success is dependent upon the individual commitment of each customer to continually set new standards of creativity and performance, while preserving a reputation for dependability and distinction.",
+        "iddia_turu": "genel"
+      }
+    ]
+  }
+}

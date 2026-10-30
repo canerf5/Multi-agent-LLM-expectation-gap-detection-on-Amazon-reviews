@@ -1,0 +1,16 @@
+ASIN:         B0C3BW3PCD
+gap_var:      Evet
+gap_tipleri:  Görsel, Kalite, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Görsel: yorum 1 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 3 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: "Old Fart' Socks fit men's UK size 6 - 11"
+ana_risk:     Ürün görseli ile gelen ürün arasında büyük bir fark var; ayrıca kalite ile ilgili şikayetler var.
+öneriler:
+  - [Görsel | ekle] Ürün görselinin gerçek ürünü yansıtması için güncellenmesi gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1: Gelen ürün fotoğraftaki gibi değil, çok çirkin.
+  - [Kalite | ekle] Ürün kalitesi hakkında daha fazla bilgi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3: Kalite çok düşük.
+  - [Beden/Kalıp | değiştir] Beden uyumu hakkında daha net bilgi verilmeli; 'kalıp dar, bir beden büyük almanız önerilir' notu eklenmeli.
+      sayfa: "Old Fart' Socks fit men's UK size 6 - 11" | müşteri: Yorum 3: Çok küçük.

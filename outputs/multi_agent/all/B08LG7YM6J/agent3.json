@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "These rain boots run a bit large, if you are not sure, please go down half size."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        5,
+        6
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların geniş olduğu iddiasında bulunuyor ancak müşteriler dar geldiğini belirtiyor; ayrıca kalite sorunları da yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "These rain boots run a bit large, if you are not sure, please go down half size.",
+      "musteri_deneyimi": "Yorum 3, 4: Ayakkabı geniş olarak tanıtılmasına rağmen dar geldi; doğru bedende ama çok geniş.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada 'Ayakkabı geniş olarak tanıtılmasına rağmen dar geliyor; doğru bedende ama çok geniş' ifadesini ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5, 6: Ürün ilk kullanımda yırtıldı ve kalitesi düşük.",
+      "islem": "ekle",
+      "duzeltme": "Sayfada 'Ürün ilk kullanımda yırtılabilir; kalitesi düşük olabilir' uyarısını ekleyin."
+    }
+  ]
+}

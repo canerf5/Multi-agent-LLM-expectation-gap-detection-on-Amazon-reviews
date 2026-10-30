@@ -1,0 +1,13 @@
+ASIN:         B00UPG17WY
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 4 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 4 | sayfa iddiası: '100% Synthetic'
+ana_risk:     Sayfa, ürünün kalıbının küçük olduğunu belirtmiyor; müşteriler ayakkabının çok dar olduğunu ve giymenin zor olduğunu bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'kalıp dar; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 4: Ayakkabı çok küçük, giyilmesi zor.
+  - [Malzeme | değiştir] Ürün sayfasında tabanın sertliği hakkında bilgi verin.
+      sayfa: '100% Synthetic' | müşteri: Yorum 2, 4: Taban çok sert, giyerken rahatsız ediyor.

@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Lightweight & comfortable"
+    }
+  ],
+  "ana_risk": "Sayfa, dayanıklılık konusunda 'hafif ve rahat' iddiasında bulunuyor; ancak müşteriler ayakkabıların kısa sürede bozulduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Lightweight & comfortable",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Ayakkabılar kısa sürede bozuluyor.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılık hakkında daha net bilgi ver; 'Kısa süreli kullanımlarda dayanıklılığı düşük olabilir' notu ekle."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ASIN:         B0BPXVJ24W
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly.'
+ana_risk:     Beden ve kalıp iddiası var, ancak müşteriler ürünün küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının küçük olduğu ve bir beden büyük almanın önerildiği bilgisi eklenmeli.
+      sayfa: 'High-waisted workout capri leggings with gentle compression offer tummy control, shaping your perfect body subtly.' | müşteri: Yorum 1, 2: Küçük geliyor, beden uyumsuzluğu var.

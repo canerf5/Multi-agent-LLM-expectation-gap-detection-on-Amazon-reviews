@@ -1,0 +1,64 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Robe, yıkamadan sonra inceleşti ve yırtıldı.",
+      "yorum_numaralari": [
+        2,
+        3,
+        7,
+        8,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Ürün ilk yıkamada iplikleri çözülmeye başladı.",
+      "yorum_numaralari": [
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi kötü, her yıkamada parçalanıyor.",
+      "yorum_numaralari": [
+        6,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Ürün yanıcı olduğu belirtilmemiş.",
+      "yorum_numaralari": [
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Yanlış beden ve renk gönderildi.",
+      "yorum_numaralari": [
+        9
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "satıcı/iade"
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün açıldığında kötü bir koku vardı ve lekeli geldi.",
+      "yorum_numaralari": [
+        12
+      ],
+      "ilgili": false,
+      "ilgisiz_sebebi": "kişisel zevk"
+    }
+  ]
+}

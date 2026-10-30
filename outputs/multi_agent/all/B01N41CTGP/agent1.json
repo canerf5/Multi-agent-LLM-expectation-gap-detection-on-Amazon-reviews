@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "MATERIAL: 100% cotton (preshrunk), Sport Grey has 90%/10% cotton/poly with double-needle neck and hem.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "It is cured with a heat treatment process to ensure the color-fastness and lasting durability of the design.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "This durable, comfortable Youth Long Sleeve T-Shirt is sure to be a hit, whether you’re buying it as a gift for somebody special or wearing it yourself.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This funny ugly Christmas sweater inspired design is sure to get a laugh at any ugly sweater party.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "This unique Youth Long Sleeve T-Shirt is designed and printed in the United States with eco-friendly ink, so it is safe for you and the environment.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

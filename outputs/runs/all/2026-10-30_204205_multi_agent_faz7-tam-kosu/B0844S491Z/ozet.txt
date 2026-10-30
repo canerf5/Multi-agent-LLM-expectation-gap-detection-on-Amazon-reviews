@@ -1,0 +1,10 @@
+ASIN:         B0844S491Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 5, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, bedenlerin büyük geldiğine dair şikayetler varken, beden ölçüleri hakkında yeterli bilgi vermiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Bedenlerin büyük geldiği bilgisi eklenmeli; 'Bedenler normalden büyük kalıp olarak tasarlanmıştır, bir beden küçük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3, 5, 6: Bedenler çok büyük geliyor

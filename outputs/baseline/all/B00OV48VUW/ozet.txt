@@ -1,0 +1,10 @@
+ASIN:         B00OV48VUW
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'So every pair feels like it was made just for you.'
+ana_risk:     Sayfa, her numara ve genişlik için özel kalıp kullanıldığını iddia ediyor; ancak müşteriler, sipariş ettikleri dar numaranın geniş olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Dar numara sipariş edenler için kalıp genişliği hakkında bilgi ver.
+      sayfa: 'So every pair feels like it was made just for you.' | müşteri: Yorum 1, 4: Dar numara geniş geliyor.

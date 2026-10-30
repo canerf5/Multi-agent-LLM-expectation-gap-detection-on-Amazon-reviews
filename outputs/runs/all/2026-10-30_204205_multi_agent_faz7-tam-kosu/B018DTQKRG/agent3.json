@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        14
+      ],
+      "sayfa_iddiasi": "Mesh"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün malzeme olarak 'Mesh' olduğunu iddia ediyor; ancak müşteriler soketlerin çok ince olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Mesh",
+      "musteri_deneyimi": "Yorum 2, 14: Soketler çok ince",
+      "islem": "değiştir",
+      "duzeltme": "Ürün açıklamasında 'Mesh' malzeme ile birlikte 'ince' olduğu bilgisini ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Soketler küçük geldi",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasında beden kalıbı hakkında bilgi ekleyin; 'Bir beden büyük almanız önerilir' notunu ekleyin."
+    }
+  ]
+}

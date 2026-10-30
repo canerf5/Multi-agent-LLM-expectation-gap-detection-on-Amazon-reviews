@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "The lace-up shoe upper is made of artificial PU material with an adjustable buckle.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Flat sandals are made of high-quality rubber.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "The rubber sole is flexible, durable and easy to put on and take off, providing excellent support and comfort without making you feel heavy.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Please check our chart to find the size that suits you. Very suitable for narrow feet.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Our sandals are not only very comfortable, but also fashionable, and can be matched with almost any style.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "We take customer service seriously and make every pair of shoes carefully, and hope you are satisfied with the shopping experience.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

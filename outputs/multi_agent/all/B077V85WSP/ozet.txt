@@ -1,0 +1,13 @@
+ASIN:         B077V85WSP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 7, 10, 11, 12 | sayfa iddiası: 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit'
+  - Malzeme: yorum 3 | sayfa iddiası: '100% Nylon Silver Ridge Basket Weave'
+ana_risk:     Sayfada 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit' iddiası var, ancak müşteriler şortların çok küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün sayfasında 'Bedeninizi seçerken bir beden büyük almanız önerilir' ifadesi ekleyin.
+      sayfa: 'Stretch inserts at the sides and shoulders and ergonomic seaming lines offer a sleek, move-with-you fit' | müşteri: Yorum 1, 2, 4, 5, 7, 10, 11, 12: Şortlar çok küçük geliyor.
+  - [Malzeme | değiştir] Ürün sayfasında 'Kumaşın kaşındırabileceği konusunda dikkatli olun' uyarısını ekleyin.
+      sayfa: '100% Nylon Silver Ridge Basket Weave' | müşteri: Yorum 3: Kumaş kaşındırıyor.

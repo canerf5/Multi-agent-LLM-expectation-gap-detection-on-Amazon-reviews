@@ -1,0 +1,10 @@
+ASIN:         B005FPCOT0
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 1, 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada '100% Manmade' iddiası var, ancak müşteriler kalitenin çok kötü olduğunu ve ürünün hemen parçalandığını bildiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında daha net bilgi verin; 'Ürün dayanıklılığı test edilmiştir' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 3: Kalitesi çok kötü, hemen parçalanmaya başladı

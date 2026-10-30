@@ -1,0 +1,13 @@
+ASIN:         B07PWQDFSB
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 5 | sayfa iddiası: 'Our jacket is available in sizes from XS to 3XL, ensuring that every man can find their perfect fit.'
+  - Kalite: yorum 2, 3, 4 | sayfa iddiası: 'Quality Guaranteed: Discover a new level of confidence in your shopping experience! Our commitment to quality and comfort is guaranteed.'
+ana_risk:     Beden ve kalite ile ilgili ciddi sorunlar var; sayfa, her bedenin uygun olacağını ve kaliteli bir ürün sunacağını vaat ediyor, ancak müşteriler tam tersi deneyimler yaşamış.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar, bir beden büyük almanız önerilir.
+      sayfa: 'Our jacket is available in sizes from XS to 3XL, ensuring that every man can find their perfect fit.' | müşteri: Yorum 1, 5: Bedenler beklenenden küçük; kalıp dar.
+  - [Kalite | değiştir] Ürün kalitesi ile ilgili sorunlar yaşanabilir, dikkatli olun.
+      sayfa: 'Quality Guaranteed: Discover a new level of confidence in your shopping experience! Our commitment to quality and comfort is guaranteed.' | müşteri: Yorum 2, 3, 4: Kalite çok düşük; dikişler ve fermuar sorunlu.

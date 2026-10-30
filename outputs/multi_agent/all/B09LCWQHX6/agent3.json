@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        11
+      ],
+      "sayfa_iddiasi": "Shaft measures approximately 5\" from arch"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        5,
+        12
+      ],
+      "sayfa_iddiasi": "synthetic leather"
+    }
+  ],
+  "ana_risk": "Sayfada 'Shaft measures approximately 5\" from arch' iddiası var, ancak müşteriler bacak kısmının kısa olduğunu ve ayakkabıların dar geldiğini belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Shaft measures approximately 5\" from arch",
+      "musteri_deneyimi": "Yorum 3, 11: Dar geliyor, parmak kısmı çok dar; çok büyük, iade edemiyorum.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerini daha net belirtin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "synthetic leather",
+      "musteri_deneyimi": "Yorum 5, 12: Malzeme sert, ayak üstünde sıkı; kaymaz, kayma riski var.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme hakkında daha fazla bilgi verin; 'Kaymaz özellikte değildir, dikkatli kullanın' uyarısını ekleyin."
+    }
+  ]
+}

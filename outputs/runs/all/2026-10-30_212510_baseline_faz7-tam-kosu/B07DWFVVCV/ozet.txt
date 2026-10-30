@@ -1,0 +1,13 @@
+ASIN:         B07DWFVVCV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 5, 11, 12, 15 | sayfa iddiası: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation'
+  - Kalite: yorum 1, 6, 14 | sayfa iddiası: 'the BioMoGo DNA midsole provides adaptive cushioning, while the Extended Progressive Diagonal Rollbar guarantees stability and comfort.'
+ana_risk:     Sayfa, 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' iddiasında bulunuyor, ancak müşteriler ayakkabıların kalıbının küçük olduğunu ve kalitesinin düştüğünü belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Bu model, normalde giydiğiniz numaradan bir beden büyük almanızı öneririz.' ekleyin.
+      sayfa: 'ideal for those with medium arched feet / flat, ideal for those with moderate pronation' | müşteri: Yorum 2, 5, 11, 12, 15: Ayakkabılar kalıp olarak küçük geliyor.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi ver; 'Son kullanıcı geri bildirimlerine göre, bu modelin kalitesi önceki modellerle karşılaştırıldığında düşmüş olabilir.' ekleyin.
+      sayfa: 'the BioMoGo DNA midsole provides adaptive cushioning, while the Extended Progressive Diagonal Rollbar guarantees stability and comfort.' | müşteri: Yorum 1, 6, 14: Ayakkabı kalitesi kötü, destek yetersiz.

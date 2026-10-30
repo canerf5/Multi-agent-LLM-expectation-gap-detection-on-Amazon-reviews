@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "76% Cotton, 23% Polyester, 1% Lycra Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Spandex knitted throughout for a streamlined performance fit",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Durable cushioned gray sole for longer wear and reduced appearance of stains",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Fits men's shoe size 6-12",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Sport ankle length silhouette ideal for warmer weather",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "The Fruit of the Loom men's socks are constructed for comfort and durability.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ASIN:         B09FH23ZTM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 10, 8, 4 | sayfa iddiası: 'Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.'
+ana_risk:     Sayfa, ayakkabıların kalıp ve kalite özellikleri hakkında bilgi veriyor; ancak müşteriler kalıp uyumsuzluğu ve kalitesizlik sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün açıklamasında beden kalıbı hakkında daha net bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5: Bir ayakkabı diğerinden küçük geliyor; üç farklı numara denedim, hepsi aynı.
+  - [Kalite | değiştir] Ürün kalitesi hakkında daha fazla bilgi verin; 'Ürünlerimiz yüksek kaliteli malzemelerle üretilmiştir' gibi.
+      sayfa: 'Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.' | müşteri: Yorum 10, 8, 4: Yapımında ve malzemesinde sorun var; ürün dayanıklı değil, bir sezon bile gitmez; ayakkabılar yürürken çok ses çıkarıyor.

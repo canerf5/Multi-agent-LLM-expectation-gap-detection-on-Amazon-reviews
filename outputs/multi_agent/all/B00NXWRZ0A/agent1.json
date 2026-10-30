@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "80% Polyester, 20% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "soft, warm thermal underwear from the brand you know you can trust",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "soft, poly/cotton blend waffle fabric that wicks away moisture and provides insulation and warmth",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "resists shrinkage",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "retains heat to keep you warm",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Order one size down for a snug, thermal fit",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "the ribbed cuffs have a bit of spandex so they stay snug on your ankles to keep out the cold",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "the covered elastic waist band is tag-free for itch-free comfort",
+      "iddia_turu": "genel"
+    }
+  ]
+}

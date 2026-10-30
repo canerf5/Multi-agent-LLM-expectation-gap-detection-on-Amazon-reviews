@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Dayanıklılık"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        6
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        5,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, beden kalıbı ve kalite ile ilgili sorunlar yaşandığını belirtmiyor; müşteriler ise ürünün küçük geldiğini ve kalitesiz olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 6: Çok küçük geliyor; bir beden büyük alınması öneriliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp dar; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 5: Kalite sorunları var; dikişler kötü, yıkamada bozuluyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün yıkanırken dikkatli kullanılması gerektiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 5, 7: Ürün yıkandıktan sonra bozuluyor; dayanıklılığı hakkında bilgi yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün yıkanma talimatları ve dayanıklılığı hakkında bilgi eklenmeli."
+    }
+  ]
+}

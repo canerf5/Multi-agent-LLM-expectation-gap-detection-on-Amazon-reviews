@@ -1,0 +1,47 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        9,
+        10,
+        11
+      ],
+      "sayfa_iddiasi": "silky-smooth, very softly and comfy."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        2,
+        5,
+        6,
+        8
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalitesinin yüksek olduğunu iddia ediyor ancak müşteriler, ürünün kalitesiz olduğunu ve renklerin solduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "silky-smooth, very softly and comfy.",
+      "musteri_deneyimi": "Yorum 1, 9, 10, 11: Ürün kalitesiz, renkleri soluyor ve lekeler bırakıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalitesinin düşük olduğunu belirtin; 'Ürün kalitesizdir, renkler solabilir ve lekeler bırakabilir.' ekleyin."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5, 6, 8: Ürün sadece bir pijama seti olarak geliyor, çift set bekleniyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasına 'Bu ürün yalnızca bir pijama seti içermektedir.' ifadesini ekleyin."
+    }
+  ]
+}

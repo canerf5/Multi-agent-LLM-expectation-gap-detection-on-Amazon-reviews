@@ -1,0 +1,63 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        10,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        7,
+        10,
+        11
+      ],
+      "sayfa_iddiasi": "Made with premium quality light weight and durable material that softens impact and vibration of hands on the handlebars instantaneously, efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        7,
+        9,
+        13
+      ],
+      "sayfa_iddiasi": "Friction gel pads on palms provide just the right amount of cushioning while feeling the road through the bars for best comfort and durability."
+    }
+  ],
+  "ana_risk": "Sayfa, kaliteli malzeme ve konfor vaad ediyor; ancak müşteriler kalitesiz ve yetersiz malzeme ile karşılaştıklarını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 10, 14: Kalıp küçük, bir beden büyük alınması öneriliyor.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp küçük; bir beden büyük almanız önerilir."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Made with premium quality light weight and durable material that softens impact and vibration of hands on the handlebars instantaneously, efficiently decreases risk of shock-induced wrist injuries and fatigue, as well as soreness and pain.",
+      "musteri_deneyimi": "Yorum 1, 7, 10, 11: Kalite düşük, dikişler hemen açılıyor, malzeme kalitesiz.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite iddiasını gözden geçirerek daha gerçekçi bir ifade ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "Friction gel pads on palms provide just the right amount of cushioning while feeling the road through the bars for best comfort and durability.",
+      "musteri_deneyimi": "Yorum 2, 7, 9, 13: Gel pad yok, sadece ince köpük var.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme açıklamasını güncelleyerek gerçek içeriği belirtin."
+    }
+  ]
+}

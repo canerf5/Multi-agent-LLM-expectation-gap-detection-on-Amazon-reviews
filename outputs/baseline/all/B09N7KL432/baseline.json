@@ -1,0 +1,42 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "The size of this swiss dot dress is relatively large."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, elbisenin büyük beden olduğunu belirtirken, müşteriler elbisenin büyük olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "The size of this swiss dot dress is relatively large.",
+      "musteri_deneyimi": "Yorum 1, 2: Göğüs kısmı çok büyük, elbise bol duruyor.",
+      "islem": "değiştir",
+      "duzeltme": "\"Bu elbise büyük bedendir; bir beden küçük almanız önerilir.\" ifadesini ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1: Elbise tamamen şeffaf, iç gösteriyor.",
+      "islem": "ekle",
+      "duzeltme": "\"Elbisenin şeffaf olduğunu belirtin; altına kaydırmaz bir giysi giyilmesi önerilir.\" ifadesini ekleyin."
+    }
+  ]
+}

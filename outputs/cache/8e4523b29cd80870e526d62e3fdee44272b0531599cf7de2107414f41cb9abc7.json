@@ -1,0 +1,85 @@
+{
+  "tag": "agent2:B008RI9YJU",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 3884,
+    "output_tokens": 276,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0007482,
+  "sure_sn": 3.748,
+  "created": "2026-10-30T18:16:28+00:00",
+  "request": {
+    "system": "Sen bir müşteri yorumu analistisin (Ajan 2: Review Mining Agent).\n\nGÖREV\nSana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.\n\nHer şikayet grubu için:\n- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. \"açıklamada yazmıyordu\"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.\n- ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. \"1–2 numara küçük geliyor\").\n- yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.\n- ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).\n- ilgisiz_sebebi: ilgili = false ise kurallardaki \"Sayılmayanlar\" listesine göre \"kargo/paketleme\", \"satıcı/iade\", \"kullanılmış ürün\" veya \"kişisel zevk\"; ilgili = true ise null.\n\nKURALLAR\n- Aynı sorunu dile getiren yorumları, farklı kelimelerle anlatılsa bile TEK grupta topla; farklı sorunları ayrı gruplara ayır (kurallarda bir konu, en az 2 yorum \"aynı sorundan\" bahsettiğinde sayılır; aynı tipteki farklı sorunlar ayrı gruptur).\n- Kurallardaki \"Tek konu kuralı\"na uy: bir yorum ilgili gruplardan yalnızca BİRİNDE yer alır; birden fazla konuya uyan şikayeti \"Konu tanımları\"ndaki öncelik sırasına göre ata.\n- Tek yorumda geçen bir sorunu da grup olarak yaz (yorum_numaralari tek elemanlı olur); hangisinin sayılacağına sonraki aşama karar verir.\n- \"Sayılmayanlar\" listesindeki şikayetleri ilgili = false olarak işaretle.\n- Sadece yorumlarda yazanı kullan; tahmin etme. Yorum numaraları yalnızca verilen numaralardan olmalı.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (bağlayıcı):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "1) [1★] I love these shoes & have bought several pair for myself ... — I love these shoes & have bought several pair for myself & my daughter. However, this pair had a filthy shoelace on one of the shoes, and a note from the previous buyer explaining why they'd returned it. Probably just an oversite of a warehouse worker, but if I want used shoes I will go to the thrift store.\n\n2) [2★] smaller than the usual Skechers size 7 — I have several pairs of Skechers size 7's, but these were too small. Additionally, they rubbed against the inner ankle region of both feet, which would have caused a blister and alteration of my gait if I had walked in them for any significant length of time. I ended up returning them.\n\n3) [2★] Seems cheaply made for a Sketcher — When I got these in the mail I noticed that the shoe was constructed of a really thin material. I worried how well they would hold up (how long they would last). But they did feel comfortable enough on, while walking around the house. I went online and read so many reviews about the sole of this model being made of cheap foam instead of rubber, which has caused them to wear out on the bottoms really quickly (about 4 to 6 weeks for other reviewers). Rather than take a chance, I decided to return mine. The \"Sketchers Sport\" were a stronger build, but more like a running shoe. You could tell a real difference in construct, between the two. Normally I wear Nikes because they have the extra padding insole and harder, rubber sole that can withstand years of heavy walking. I need to have cushioning inside my sneakers. These didn't have that. The Sketchers did look really nice in grey & blue combo, but I could tell from the construct, that they would not last very long. If the price had been lower I may have kept them and planned on buying another pair in a few months. But I thought $50 to $60 was too much to spend for a shoe that would wear out quickly.\n\n4) [2★] reveiw of skecher shoes — Shoe laces too short. I have to wear them without tying them to be comfortable. I am able to wear for a short walk only.\n\n5) [2★] navy and pink shoe — the fit was ok, but did not like the quality of the shoe. very flimsy and not enough support and too much pink. especially on the toe area. would not buy the again.\n\n6) [1★] They wear fast, it's true... But... — (I want to be clear - I loved this shoe. The one-star is only due to a recent manufacturing decision from Sketchers) These were a game-changer for me at work. Years and years on my feet, lifting, twisting, and walking had taken a toll on my knees, heels, arches etc. As long as I kept moving I was fine, but stop - even for a few moments - and I was stiff and sore. The car ride home left me hobbling to the front door and in the morning I was nearly crippled by pain and stiffness - coupled with restless sleep from throbbing pain in my feet and legs. I am good at what I do and well-compensated due to my longevity with my employer, at this stage of my life starting over is just not an option, so finding another job - as some suggest - is right out. Do I spend the rest of my life and career like an invalid? I hope not to. So, after much trial and error (as well as money wasted and a closet full of barely-worn sneakers) hoping to find a shoe that made a difference, I had found it in the Go Walk. As I said, it was a game-changer. Pain? Gone. Stiffness? Gone. Was I replacing them every 4-5 months over the last two years? Yes. Did I care? Nope. Lightweight, flexible, cushioned, supportive *exactly* where I needed it (the sole) and not where I didn't (everywhere else, because it restricts my movement) - Take my money, Sketchers. My final downfall? This shoe is no longer being made in the 'E' width - my feet are short, but wide along with a high instep; I will not \"go up a size\" to accommodate width because that results in a ridiculously long toe I end up tripping over. I know it's just a shoe - but I am saddened by this decision from Sketchers. I will try something similar, but the exact combination of design in *this* shoe is what worked so well for me, and I am not hopeful. I did send comment to Sketchers directly - not that I expect them to cater to me exclusively - but maybe if others have the same issue I do, and also make their opinions known it would be financially beneficial for Sketchers to reconsider.\n\n7) [2★] Fantastic for about 3 weeks... — These shoes are very light and comfortable. I loved them for about 3 weeks then the cushion nubs on the soles wore flat. That's with only 30 minutes of wear a day while I walk my dog on normal sidewalk conditions. After a little more than a month my feet and knees hurt when I walk from the lack of padding. I already need to shell out money on a new pair of shoes!\n\n8) [2★] My review after 6 mos: not enough support — I wore these shoes to work about 3 days a week for about 5-6 months. I noticed that when I wore them, I had significant heel pain at the end of the day that I didn't' have when wearing other shoes. I don't think they have enough heel support, the heel is low and the sole is very flexible and doesn't provide good support. I'm tossing. Sorry, Skechers, I have bought over a dozen pairs of your shoes and these are the first ones that disappointed me.\n\n9) [2★] Decieving!!!! — Not what I expected, was disappointed in the shoe!! Not very comfortable!!\n\n10) [2★] Go Walk - but only on even surfaces — Lightweight, but this shoe is not for serious walking anywhere with uneven or rough terrain - offers no ankle support and I actually slightly sprained my ankle in this shoe and am in the process of returning them now. My husband got the Go Walk 2 and love them so go figure. Order a half-size up, they run small.\n\n11) [2★] Poorly constructed :( — I bought these shoes in early August, it's now November and the bottom right shoe has decent size hole in it. The other shoe is close to looking the same way. The fit is good, they're extremely light weight. I walk my dog every day - that's all I use the shoes for so they did get a fair amount of wear but not nearly enough to cause this kind of damage over such a short amount of time. I would not recommend these shoes to anyone that wants to use them as walking shoes.\n\n12) [2★] These sketchers are quite narrow, odd as my others ... — These sketchers are quite narrow, odd as my others are not and I figure I would be safe. I don't wear these much due to feeling my feet are squished into the thing\n\n13) [2★] Good shoes , but not for heavy walking (long miles) — These shoes are unbelievably comfortable and light ! HOWEVER , I walk at least 10 miles per day wearing them two/three times a week and within one month both soles just DISAPPEARED ! ONE MONTH?! REALLY ? I love Sketches , but the quality of the sole material for this one is UNACCEPTABLE ! Yes, I walk a lot (and I am not heavy , 130 lb), but they are called WALKING SHOES , aren't they? I am so disappointed ...\n\n14) [2★] Short Term Ahh, And Short Is All You Get — I'm with the other reviewers pleased with the lightness and comfort but who discovered there's no durability. 3 weeks and the soles are wearing through. And they're not cheap, either! Glad I didn't get the second pair I was considering.\n\n15) [2★] Not very comfortable — I bought these hoping to have a comfortable pair of walking shoes for a field trip with one of my children but ended up not wearing them for that. I really like the lightweight uppers on these shoes, but they are definitely not made for lots of walking, despite their \"Go Walk\" name. It feels as if there is no padding in the soles, contrary to the reviews that said they are like walking on pillows. They're okay for casual use, but I certainly wouldn't want to wear them when walking extensively.",
+    "schema": "review_mining"
+  },
+  "response": {
+    "sikayet_gruplari": [
+      {
+        "tip": "Kalite",
+        "ozet": "Ürün kalitesi düşük, çabuk yıpranıyor.",
+        "yorum_numaralari": [
+          3,
+          7,
+          11,
+          13,
+          14
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Beden/Kalıp",
+        "ozet": "Numara küçük, dar geliyor.",
+        "yorum_numaralari": [
+          2,
+          12
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Malzeme",
+        "ozet": "Kullanılan malzeme ince ve kalitesiz.",
+        "yorum_numaralari": [
+          3,
+          5,
+          9,
+          15
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Dayanıklılık",
+        "ozet": "Ürün kısa sürede yıpranıyor.",
+        "yorum_numaralari": [
+          6,
+          10,
+          8
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Eksik Bilgi",
+        "ozet": "Açıklamada yeterli bilgi yok.",
+        "yorum_numaralari": [
+          1
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      },
+      {
+        "tip": "Görsel",
+        "ozet": "Ürün görseldeki gibi değil.",
+        "yorum_numaralari": [
+          4
+        ],
+        "ilgili": true,
+        "ilgisiz_sebebi": null
+      }
+    ]
+  }
+}

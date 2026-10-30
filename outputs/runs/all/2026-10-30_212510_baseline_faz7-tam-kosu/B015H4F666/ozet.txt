@@ -1,0 +1,13 @@
+ASIN:         B015H4F666
+gap_var:      Evet
+gap_tipleri:  Kalite, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 2, 4, 5, 6, 7, 11 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 1, 3, 4, 8 | sayfa iddiası: 'Material:Polyester+Lace'
+ana_risk:     Sayfa, ürünün kalitesiz olduğunu belirtmiyor; ancak müşteriler bu sorunları sıkça dile getiriyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekleyin; 'Düşük kaliteli işçilik ve dikiş hataları olabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5, 6, 7, 11: Ürün kalitesi düşük, dikişlerde yırtıklar var.
+  - [Malzeme | değiştir] Malzeme açıklamasını güncelleyin; 'İnce ve şeffaf bir kumaş kullanılmıştır, dikkatli giyilmesi önerilir.'
+      sayfa: 'Material:Polyester+Lace' | müşteri: Yorum 1, 3, 4, 8: Malzeme ince ve kalitesiz, vücut hatlarını belli ediyor.

@@ -1,0 +1,57 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Renk",
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "breathable materials bring comfort, cool and refreshing to your feet."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "Size suggestions: Men's 7-11."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "We ONLY sell products that we use and feel satisfied with the quality."
+    }
+  ],
+  "ana_risk": "Renk, beden ve kalite ile ilgili iddialar var, ancak müşteriler renklerin soluk olduğunu, bedenin küçük olduğunu ve kalitenin yetersiz olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "breathable materials bring comfort, cool and refreshing to your feet.",
+      "musteri_deneyimi": "Yorum 1, 2: Renk çok soluk ve tatmin edici değil.",
+      "islem": "değiştir",
+      "duzeltme": "Renk açıklamasını güncelleyerek 'soluk turuncu' ifadesini ekleyin."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size suggestions: Men's 7-11.",
+      "musteri_deneyimi": "Yorum 3: Çorap çok küçük.",
+      "islem": "değiştir",
+      "duzeltme": "Beden önerisini 'Beden 7-11, ancak kalıbı dar; bir beden büyük almanız önerilir.' şeklinde güncelleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "We ONLY sell products that we use and feel satisfied with the quality.",
+      "musteri_deneyimi": "Yorum 2: Kalite yetersiz.",
+      "islem": "değiştir",
+      "duzeltme": "Kalite ile ilgili iddiaları gözden geçirerek daha net bilgi verin."
+    }
+  ]
+}

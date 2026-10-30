@@ -1,0 +1,24 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "83% Cotton, 16% Polyester, 1% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Mid-rise jeans that are fitted through the thigh and fitted at the knee into a boot cut for a slimming and lengthening silhouette.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "0=24, 1=25, 3=26, 5=27, 7=28, 9=29, 11=30, 13=31",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Comfortable, stretchy denim for all day wear.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

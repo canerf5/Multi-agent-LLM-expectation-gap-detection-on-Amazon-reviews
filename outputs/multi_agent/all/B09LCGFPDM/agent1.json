@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Ultra lightweight, soft, ultra flexible, durable EVA material",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Waterproof EVA material, non-slip, flexible, durable, ultra lightweight",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "soft and breathable fabric lining for increased all day comfort",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "waterproof, ultra-soft and thickened EVA foam provides your child daily comfort for any occasion!",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Dual adjustment straps designed for quick adjustability, more secure fit throughout the day, and easy on-and-off.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

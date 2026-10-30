@@ -1,0 +1,16 @@
+ASIN:         B08GLYQ7G8
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 5, 11, 12 | sayfa iddiası: 'SIZE: Please refer to the Last Picture -"Size Chart" before ordering.'
+  - Malzeme: yorum 3, 9, 10 | sayfa iddiası: 'Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester'
+  - Görsel: yorum 2, 6, 14 | sayfa iddiası: 'solid color: black/ blue/ red'
+ana_risk:     Sayfada kumaş kalitesi ile ilgili somut bir iddia var, ancak müşteriler kumaş kalitesinin çok düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbının daha doğru bir şekilde belirtildiği bir ifade ekleyin; 'Beden kalıbı normalden küçük, bir beden büyük almanız önerilir'.
+      sayfa: 'SIZE: Please refer to the Last Picture -"Size Chart" before ordering.' | müşteri: Yorum 5, 11, 12: Çok küçük geldi.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi verin; 'Kumaş kalitesi yüksek, dayanıklı ve uzun ömürlüdür'.
+      sayfa: 'Fabric: 10%Wool, 90%Polyester/ Lining: 100%Polyester' | müşteri: Yorum 3, 9, 10: Kumaş kalitesi çok düşük.
+  - [Görsel | değiştir] Ürün görsellerinin gerçek ürünü yansıttığını belirtin; 'Ürün görselleri gerçek ürünü yansıtmaktadır, renk ve doku farklılıkları olabilir'.
+      sayfa: 'solid color: black/ blue/ red' | müşteri: Yorum 2, 6, 14: Fotoğraftaki ürünle alakası yok.

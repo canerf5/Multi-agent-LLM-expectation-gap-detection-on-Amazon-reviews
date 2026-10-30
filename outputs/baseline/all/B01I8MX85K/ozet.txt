@@ -1,0 +1,10 @@
+ASIN:         B01I8MX85K
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4, 5, 6, 7 | sayfa iddiası: 'Platform measures approximately 1.25 inches'
+ana_risk:     Sayfa, ayakkabının kalıbı hakkında bilgi veriyor ancak müşteriler farklı beden ve kalıp sorunları yaşıyor; bu durum, sayfadaki iddia ile çelişiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında daha net bilgi ver; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'Platform measures approximately 1.25 inches' | müşteri: Yorum 1, 2, 3, 4, 5, 6, 7: Beden kalıbı çok dar veya geniş geliyor.

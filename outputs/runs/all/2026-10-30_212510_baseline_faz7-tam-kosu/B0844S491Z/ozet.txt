@@ -1,0 +1,13 @@
+ASIN:         B0844S491Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 5, 6 | sayfa iddiası: 'COOL DRY COMPRESSION TECHNOLOGY: Short sleeve, compression shirts constructed to help control blood flow and prevent soreness during intense workouts and sports games.'
+  - Kalite: yorum 4, 7 | sayfa iddiası: 'MOISTURE WICKING FABRIC: Compression shirts built to evaporate & absorb moisture while minimizing sweat retention.'
+ana_risk:     Sayfa, ürünün sıkı bir oturuş sağlayacağını vaat ediyor; ancak müşteriler, bedenlerin çok büyük olduğunu ve sıkı bir şekilde oturmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında bedenlerin normalden büyük olduğu ve sıkı oturuş sağlamadığına dair bir uyarı ekleyin.
+      sayfa: 'COOL DRY COMPRESSION TECHNOLOGY: Short sleeve, compression shirts constructed to help control blood flow and prevent soreness during intense workouts and sports games.' | müşteri: Yorum 1, 2, 3, 5, 6: Bedenler çok büyük, sıkı oturmuyor.
+  - [Kalite | değiştir] Ürün açıklamasında kalitenin artırıldığına dair bir bilgi ekleyin ve sıkı oturuşun sağlanamadığına dair bir not ekleyin.
+      sayfa: 'MOISTURE WICKING FABRIC: Compression shirts built to evaporate & absorb moisture while minimizing sweat retention.' | müşteri: Yorum 4, 7: Ürün kalitesi düşük, sıkı oturmuyor.

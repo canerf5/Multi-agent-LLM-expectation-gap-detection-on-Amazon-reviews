@@ -1,0 +1,27 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük geliyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düğmeler çok küçük ve maskeleri tutmuyor",
+      "yorum_numaralari": [
+        4,
+        5,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

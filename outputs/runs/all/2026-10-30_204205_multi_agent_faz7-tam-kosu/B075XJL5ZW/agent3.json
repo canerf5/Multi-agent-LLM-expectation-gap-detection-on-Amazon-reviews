@@ -1,0 +1,46 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        5,
+        3,
+        7,
+        8
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch"
+    }
+  ],
+  "ana_risk": "Sayfa, beden kalıbı ile ilgili ölçü bilgisi verirken, kullanıcılar boyun kısmının rahatsız edici olduğunu belirtiyor; ayrıca kalite ile ilgili sorunlar da yaşanıyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5: Ürün lekeli ve kullanılmış geldi.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasına 'Ürün yeni ve lekesizdir' ifadesi eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Neck Circle: 45cm=18inch; Shoulder: 37cm=15inch; Length: 28cm=11inch",
+      "musteri_deneyimi": "Yorum 1, 4: Boyun kısmı rahatsız ediyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün açıklamasında 'Boyun kısmı rahat bir oturuş sağlar' ifadesi eklenmeli."
+    }
+  ]
+}

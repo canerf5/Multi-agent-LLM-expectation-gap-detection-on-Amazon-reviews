@@ -1,0 +1,15 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün kısa sürede bozuluyor",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

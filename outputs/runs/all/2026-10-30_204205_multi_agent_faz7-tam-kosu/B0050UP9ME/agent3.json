@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "100% Spandex"
+    }
+  ],
+  "ana_risk": "Sayfa, kumaşın %100 spandex olduğunu iddia ediyor, ancak müşteriler velcro kalitesinin düşük olduğunu ve yıkamada çıktığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4: Beden küçük geliyor, bir beden büyük alınmalı.",
+      "islem": "ekle",
+      "duzeltme": "Bedenin küçük geldiğine dair bilgi ekleyin; 'Bir beden büyük almanız önerilir.'"
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Spandex",
+      "musteri_deneyimi": "Yorum 1, 2: Velcro kalitesi düşük, yıkamada çıkıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Velcro kalitesinin düşük olduğu ve yıkamada çıktığı bilgisini düzeltin."
+    }
+  ]
+}

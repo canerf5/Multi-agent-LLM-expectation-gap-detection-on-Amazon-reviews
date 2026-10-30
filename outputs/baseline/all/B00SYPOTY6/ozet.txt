@@ -1,0 +1,13 @@
+ASIN:         B00SYPOTY6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 4, 10, 12, 14 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden kalıbı ile ilgili bilgi vermiyor; ancak müşteriler, bedenin küçük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasında beden kalıbının dar olduğu ve bir beden büyük almanız gerektiği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 4, 10, 12, 14: Beden kalıbı küçük, normalden büyük almak gerekiyor.
+  - [Kalite | ekle] Ürün sayfasında kalitenin düşük olduğu ve kumaşın çabuk yıpranabileceği bilgisi eklenmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 6: Kalite düşük, kumaş kalitesiz ve çabuk yıpranıyor.

@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Renk"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, renk solukluğu hakkında bilgi vermiyor; müşteriler renklerin soluk olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Renk",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Renk soluk",
+      "islem": "ekle",
+      "duzeltme": "Renklerin soluk olabileceği bilgisini ekleyin."
+    }
+  ]
+}

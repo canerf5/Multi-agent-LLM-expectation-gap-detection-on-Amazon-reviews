@@ -1,0 +1,5 @@
+ASIN:         B08V4QYTR6
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

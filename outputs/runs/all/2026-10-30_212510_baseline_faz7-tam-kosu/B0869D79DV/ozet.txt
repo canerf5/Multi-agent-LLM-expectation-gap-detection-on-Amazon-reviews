@@ -1,0 +1,13 @@
+ASIN:         B0869D79DV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, beden ve kalıp ile ilgili doğru bilgi vermiyor; müşteriler yanlış beden ve kalıp aldıklarını bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden ölçüleri hakkında daha net bilgi ver; kalıp dar olduğu belirtilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Beden ölçüleri doğru değil, 8 beden dar ve kısa geliyor.
+  - [Kalite | ekle] Ürünün kalitesi hakkında bilgi ekle; dikişlerin dayanıklılığı ve renk sabitleyici bilgisi verilmeli.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: Kalite sorunları var, dikişler bozuluyor ve renk akıyor.

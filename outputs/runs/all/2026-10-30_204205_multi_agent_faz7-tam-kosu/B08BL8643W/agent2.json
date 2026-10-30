@@ -1,0 +1,63 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "İlk yıkamada parçalanma sorunu",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        11,
+        14
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Dikişlerin kalitesizliği ve işçilik hatası",
+      "yorum_numaralari": [
+        2,
+        3,
+        10,
+        11,
+        14,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Soketlerin uzunluğu ve oturuşu ile ilgili sorunlar",
+      "yorum_numaralari": [
+        6,
+        7
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaşın kalitesizliği ve rahatsızlığı",
+      "yorum_numaralari": [
+        10,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "ozet": "Sipariş edilen ürünle ilgili yanlış gönderim",
+      "yorum_numaralari": [
+        4
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

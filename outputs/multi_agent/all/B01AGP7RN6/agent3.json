@@ -1,0 +1,28 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Waterproof"
+    }
+  ],
+  "ana_risk": "Sayfada 'Waterproof' iddiası var, ancak ürün kısa sürede bozuluyor; bu durum dayanıklılık konusunda ciddi bir uyumsuzluk yaratıyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Waterproof",
+      "musteri_deneyimi": "Yorum 1, 2, 3: Ürün kısa sürede bozuluyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Kısa sürede bozulma riski vardır' uyarısını ekleyin."
+    }
+  ]
+}

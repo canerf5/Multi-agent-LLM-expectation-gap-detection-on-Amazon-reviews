@@ -1,0 +1,16 @@
+ASIN:         B09NFJNS8C
+gap_var:      Evet
+gap_tipleri:  Malzeme, Görsel, Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 2, 3, 4, 8 | sayfa iddiası: 'Cotton Blend'
+  - Görsel: yorum 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 2, 5 | sayfa iddiası: 'suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.'
+ana_risk:     Sayfada 'Cotton Blend' iddiası var, ancak müşteriler kumaşın kalitesinin kötü olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaşın kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi yüksek değil, sert ve ucuz hissettiriyor' notunu ekle.
+      sayfa: 'Cotton Blend' | müşteri: Yorum 1, 2, 3, 4, 8: Kumaş kalitesi kötü, sert ve ucuz hissettiriyor.
+  - [Görsel | ekle] Ürün görselinin gerçek görünümünü yansıtması gerektiğini belirt.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 7: Ürün fotoğraftaki gibi değil, beklenen görünüm yok.
+  - [Beden/Kalıp | değiştir] Bedenin büyük geldiğini ve bir beden küçük alınması gerektiğini belirt.
+      sayfa: 'suitable for toddler baby girls 18-24Months, 2-3T, 3-4T, 4-5T, 5-6X.' | müşteri: Yorum 2, 5: Beden büyük, bir beden küçük alınmalı.

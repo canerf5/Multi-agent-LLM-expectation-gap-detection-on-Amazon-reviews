@@ -1,0 +1,17 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Renk için sayılmış",
+    "tek konu kuralı: yorum 1 hem Renk hem Görsel için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Renk için sayılmış"
+  ],
+  "parent_asin": "B093BMW36S",
+  "split": "rest",
+  "run_id": "2026-10-30_212510_baseline_faz7-tam-kosu",
+  "n_reviews": 15,
+  "sure_duvar_sn": 13.022,
+  "time": "2026-10-30T18:33:26+00:00"
+}

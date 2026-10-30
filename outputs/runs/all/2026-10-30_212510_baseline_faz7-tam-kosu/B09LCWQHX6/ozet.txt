@@ -1,0 +1,19 @@
+ASIN:         B09LCWQHX6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite, Dayanıklılık, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5, 10, 11, 13 | sayfa iddiası: 'Shaft measures approximately 5" from arch'
+  - Kalite: yorum 4, 6, 7, 10 | sayfa iddiası: 'bilgi yok'
+  - Dayanıklılık: yorum 6, 7, 10 | sayfa iddiası: 'bilgi yok'
+  - Malzeme: yorum 2, 8 | sayfa iddiası: 'synthetic leather'
+ana_risk:     Sayfa, botların kalıp ve dayanıklılığı hakkında bilgi veriyor; ancak müşteriler dar ve kalitesiz bulduklarını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve ölçü bilgisi ekleyin; 'Kalıp dar, bir beden büyük almanız önerilir.'
+      sayfa: 'Shaft measures approximately 5" from arch' | müşteri: Yorum 1, 3, 5, 10, 11, 13: Kalıp dar ve kısa.
+  - [Kalite | ekle] Ürün sayfasına kalite ile ilgili uyarı ekleyin; 'Kalite sorunları yaşanabilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 6, 7, 10: Kalite sorunları var, çabuk bozuluyor.
+  - [Dayanıklılık | ekle] Ürün sayfasına dayanıklılık ile ilgili bilgi ekleyin; 'Ürünlerin dayanıklılığı konusunda dikkatli olun.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 6, 7, 10: Dayanıklılık sorunları var, çabuk yıpranıyor.
+  - [Malzeme | değiştir] Malzeme açıklamasını güncelleyin; 'Kullanılan malzeme kalitesiz olabilir.'
+      sayfa: 'synthetic leather' | müşteri: Yorum 2, 8: Malzeme kalitesiz, çabuk yıpranıyor.

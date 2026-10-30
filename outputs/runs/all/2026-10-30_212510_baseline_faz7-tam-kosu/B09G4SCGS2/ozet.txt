@@ -1,0 +1,10 @@
+ASIN:         B09G4SCGS2
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4, 5, 6 | sayfa iddiası: "XXL fits men's shoe sizes 15-18"
+ana_risk:     Sayfa XXL beden iddiasında bulunuyor, ancak müşteriler bu ürünün beklenen boyutta olmadığını belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında 'XXL fits men's shoe sizes 15-18' ifadesini 'XXL, bazı kullanıcılar için küçük gelebilir; lütfen ölçülerinizi kontrol edin' şeklinde değiştir.
+      sayfa: "XXL fits men's shoe sizes 15-18" | müşteri: Yorum 1, 2, 4, 5, 6: Ürün beklenen XXL boyutunda değil, küçük geliyor.

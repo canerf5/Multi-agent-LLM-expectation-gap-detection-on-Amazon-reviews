@@ -1,0 +1,13 @@
+ASIN:         B079HS5K4Z
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 1, 6, 7 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 2, 4, 5, 8 | sayfa iddiası: '60% polyester,40% spandex.'
+ana_risk:     Malzeme iddiası var ama ürün kalitesi ve dayanıklılığı ile ilgili şikayetler mevcut.
+öneriler:
+  - [Dayanıklılık | ekle] Ürün dayanıklılığı hakkında bilgi ekleyin; dikişlerin kalitesi hakkında bilgi verin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 6, 7: Dikişler yırtıldı veya ürün parçalandı.
+  - [Kalite | değiştir] Malzeme kalitesi ve dikişlerin dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: '60% polyester,40% spandex.' | müşteri: Yorum 2, 4, 5, 8: Ürün kalitesi bekleneni karşılamıyor; dikişler ve malzeme sorunlu.

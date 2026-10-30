@@ -1,0 +1,59 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Beden/Kalıp",
+    "Görsel"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        8,
+        11
+      ],
+      "sayfa_iddiasi": "100% Polyester"
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        11,
+        14
+      ],
+      "sayfa_iddiasi": "Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22."
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        7,
+        12
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfada '100% Polyester' iddiası var, ancak müşteriler kumaşın kalitesinin düşük olduğunu belirtiyor; ayrıca beden ölçülerinin beklenenden küçük olduğu ve ürünün fotoğraftaki gibi görünmediği şikayetleri var.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Polyester",
+      "musteri_deneyimi": "Yorum 8, 11: Kumaşın kalitesi düşük ve ince.",
+      "islem": "değiştir",
+      "duzeltme": "Kumaşın kalitesinin düşük olduğu bilgisi eklenmeli."
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "Size Small fits Size 4 - Size 6, size Medium fits Size 8 - Size 10, size Large fits Size 12 - Size 14, size X-Large fits Size 16 - Size 18, size XX-Large fits Size 20 - Size 22.",
+      "musteri_deneyimi": "Yorum 11, 14: Beden ölçüsü beklenenden küçük.",
+      "islem": "değiştir",
+      "duzeltme": "Beden ölçülerinin küçük geldiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 7, 12: Ürün fotoğraftaki gibi değil.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün fotoğraftaki görünümünden farklı olduğu bilgisi eklenmeli."
+    }
+  ]
+}

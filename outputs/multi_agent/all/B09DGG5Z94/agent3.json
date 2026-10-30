@@ -1,0 +1,58 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Kalite",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        4,
+        5
+      ],
+      "sayfa_iddiasi": "The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olduğunu iddia ediyor; ancak müşteriler eldivenlerin ıslaklıkta işe yaramadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "The winter ski gloves have superior grip,non-slip soft PU leather patch palm provide firm grip,which help you grip things firmly when you are skiing, snowboarding, cycling,sledding, snowball fights and more.",
+      "musteri_deneyimi": "Yorum 4, 5: Eldivenler birkaç saat sonra tamamen ıslanıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Eldivenlerin su geçirmediğini ve ıslaklıkta kullanılabilir olmadığını belirtin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 7: Eldivenler su geçirmiyor, eller soğuk kalıyor.",
+      "islem": "ekle",
+      "duzeltme": "Eldivenlerin su geçirmediği ve soğuk havalarda etkili olmadığı bilgisini ekleyin."
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1: Açıklamada su geçirmezlik özelliği yoktu.",
+      "islem": "ekle",
+      "duzeltme": "Ürünün su geçirmezlik özelliği hakkında bilgi ekleyin."
+    }
+  ]
+}

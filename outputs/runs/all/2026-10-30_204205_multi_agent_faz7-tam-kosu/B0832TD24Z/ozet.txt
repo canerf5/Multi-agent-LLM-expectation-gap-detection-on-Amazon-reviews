@@ -1,0 +1,10 @@
+ASIN:         B0832TD24Z
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3 | sayfa iddiası: 'Size - 0-6Months, 6-12 Months, 12-18 Months, 18-24 Months, 2T, 3T.'
+ana_risk:     Sayfada beden ölçüleri belirtilmiş, ancak müşteriler ürünün çok büyük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden ölçülerinin daha küçük almanız gerektiğini belirten bir not ekleyin.
+      sayfa: 'Size - 0-6Months, 6-12 Months, 12-18 Months, 18-24 Months, 2T, 3T.' | müşteri: Yorum 1, 2, 3: Ürün çok büyük geldi.

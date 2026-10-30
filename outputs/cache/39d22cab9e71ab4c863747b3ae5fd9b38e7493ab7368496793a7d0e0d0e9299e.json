@@ -1,0 +1,61 @@
+{
+  "tag": "agent1:B0799L7B2K",
+  "model": "gpt-4o-mini-2024-07-18",
+  "usage": {
+    "input_tokens": 2690,
+    "output_tokens": 503,
+    "model_returned": "gpt-4o-mini-2024-07-18"
+  },
+  "cost_usd": 0.0007053,
+  "sure_sn": 6.091,
+  "created": "2026-10-30T18:14:22+00:00",
+  "request": {
+    "system": "Sen bir e-ticaret ürün sayfası analistisin (Ajan 1: Expectation Agent).\n\nGÖREV\nSana yalnızca bir Amazon ürün sayfasının metni verilecek (başlık, fiyat, özellikler, açıklama, detaylar). Bu sayfanın müşteriye NE VAAT ETTİĞİNİ madde madde çıkar. Sayfanın TÜM bölümlerini tara; açıklama paragrafının içindeki iddiaları da ayrı ayrı çıkar. Müşteri yorumlarını görmüyorsun; yorum tahmini yapma, ürünü değerlendirme.\n\nHer beklenti için:\n- konu: Vaadin ilgili olduğu konu. Aşağıdaki \"Konu tanımları\" tablosunda Eksik Bilgi dışındaki 6 konudan, tanımı bu ifadeye en iyi uyanı seç. \"Diğer\" yalnızca ifade bu 6 konunun hiçbirinin tanımına uymuyorsa kullanılır. Eksik Bilgi sayfada bilginin OLMAMASIDIR; sayfadaki bir ifadenin konusu olamaz.\n- iddia: Sayfadaki ilgili ifadenin BİREBİR alıntısı (İngilizce, kelimesi kelimesine; kendi cümlenle yazma, çevirme, kısaltırken anlamı değiştirme).\n- iddia_turu: Aşağıdaki kurallarda \"Seviye kuralı\" altındaki **Somut iddia** tanımına uyuyorsa \"somut\", **Somut iddia sayılmayanlar** tanımına uyuyorsa \"genel\". Tanımdaki ölçüt \"doğrulanabilir\" olmaktır: ifade ölçülerek ya da evet/hayır ile kontrol edilebiliyorsa somut; yumuşaklık, rahatlık, şıklık gibi öznel nitelendirmeler genel'dir.\n\nKURALLAR\n- Sadece sayfada YAZAN şeyleri çıkar. Sayfada olmayan bir vaadi ekleme.\n- Müşteriye ürün hakkında vaat içermeyen kayıt bilgilerini (paket/kargo ölçüsü ve ağırlığı, sayfanın listelenme tarihi, model/ürün numarası, üretimin durdurulup durdurulmadığı) beklenti olarak yazma.\n- Bir ifade birden fazla konuya değiyorsa her konu için ayrı madde yazabilirsin; aynı alıntıyı aynı konu için tekrarlama. İfade bir materyal adı içeriyorsa (ör. leather, cotton, synthetic) en az bir maddesinin konusu Malzeme'dir.\n- Sayfanın bir konuda bilgi VERMEMESİ de önemlidir, ama onu sen yazma: sadece var olan iddiaları listele.\n- Çıktı yalnızca verilen JSON şemasına uygun olmalı.\n\nİnsan etiketleyicinin kullandığı kurallar (\"Konu tanımları\" ve \"Seviye kuralı\" içindeki somut iddia tanımı senin için bağlayıcıdır):\n\n## Tek konu kuralı\nBir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.\n\n**Aynı sorun:** \"En az 2 yorum aynı sorundan bahsediyor\" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum \"çok küçük geldi\", 1 yorum \"çok büyük geldi\" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum \"küçük geldi\" diyorsa işaretlenir.\n\nBir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.\n\n## Seviye kuralı\n| Durum | Seviye |\n|---|---|\n| Sayfada ürüne özgü **somut bir iddia** var ve yorumlar bu iddiayla **doğrudan** çelişiyor | **Yüksek** |\n| Sayfa o konuda bilgi vermemiş **veya** yalnızca genel pazarlama dili kullanmış; yorumlar şikayet ediyor | **Orta** |\n| Çelişki yok | **Yok** |\n\nBirden fazla konu varsa en yüksek seviye yazılır.\n\n**Somut iddia:** Ürüne özgü, doğrulanabilir bir bilgi. Örnekler: ölçü/numara aralığı (\"XXL fits sizes 15-18\"), kalıp uyarısı (\"runs 2 sizes smaller\"), materyal (\"100% leather\", \"fleece\"), işlev (\"waterproof\", \"memory foam\"), renk adı.\n\n**Somut iddia sayılmayanlar** (en fazla **Orta**): Genel pazarlama dili (\"high quality\", \"premium\", \"perfect fit\", \"ultimate comfort\") ve markanın her üründe kullandığı standart metin.\n\n**Renk:** Sayfada renk adı var ve şikayet \"soluk/donuk\" ise **Orta**; başka bir renk geldiyse **Yüksek**.\n\n## Sayılmayanlar\n- Kargo, paketleme, satıcı veya iade süreci şikayetleri\n- Kullanılmış / iade edilmiş ürün gönderimi (satıcı hatası). Buna karşılık hasarlı, delikli, lekeli veya defolu **yeni** ürün gelmesi **Kalite**'dir\n- Kişisel zevk (\"beğenmedim\", \"bana yakışmadı\")\n- Tek bir yorumda geçen sorun\n- Aynı yorumun kopyaları (birebir aynı olanlar script tarafından zaten ayıklanır; neredeyse aynı olanları da tek say)\n- 5 kelimeden kısa yorumlar (otomatik olarak çıkarılır)\n\n## Konu tanımları\n| Konu | Tanım | Örnek şikayet |\n|---|---|---|\n| Beden/Kalıp | Ölçü, kalıp, oturuş | \"Çok küçük geldi\", \"bir beden büyük alın\" |\n| Renk | Renk farklı veya soluk | \"Rengi fotoğraftakinden farklı\", \"çok soluk\" |\n| Görsel | Fotoğraftaki görünümden farklı (renk hariç) | \"Fotoğraftaki ürünle alakası yok\" |\n| Malzeme | Kumaşın/materyalin özelliği | \"Kumaş ince\", \"şeffaf\", \"plastik gibi\", \"su geçirmiyor\", \"kaşındırıyor\", \"sert\" |\n| Dayanıklılık | Zamanla bozulma | \"İki yıkamada söküldü\", \"bir haftada koptu\", \"X kullanımdan sonra yırtıldı\" |\n| Kalite | **Yalnızca** ilk günden var olan işçilik/üretim hatası ve somut sebep belirtmeyen genel kalite şikayeti | \"Dikişler çarpık geldi\", \"düğme kutudan çıkınca koptu\", \"fermuar takılıyor\", \"defolu/lekeli geldi\", \"cheap\", \"poor quality\" |\n| Eksik Bilgi | Sayfada bilginin hiç olmaması | \"Açıklamada yazmıyordu\" (ölçü, bakım vb.) |\n\nÖncelik: Bir şikayet birden fazla konuya uyuyorsa en spesifik olana gider; **Malzeme ve Dayanıklılık, Kalite'den önce** gelir. Örnek: \"Kumaş ucuz ve ince\" → Malzeme (Kalite değil). \"Üç yıkamada dikişleri söküldü\" → Dayanıklılık (Kalite değil). \"Dikişler kutudan söküklü çıktı\" → Kalite.\n",
+    "user": "BAŞLIK: CLOTPUS Men's Slim Fit Ripped Stretch Jeans Destroyed Skinny Pants with Holes\n\nFİYAT: $19.99\n\nÖZELLİKLER:\n• Imported\n• Button closure\n• We only guarantee the quality of the items provided by CLOTPUS, did not authorize any second stores to sell our items. Please select the items which are sold by CLOTPUS.\n• Mens Jeans Slim Fit : Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it. Good stretchy material,comfortable, move freely in it, men fashion jeans skinny design shows your perfect leg shape.\n• Hip Hop Jeans Men : Ripped in the knee, unique design let you more charming. Stretchy and the ripped design give your leg , especial the knee more space , not constrained. Mens fashion jeans is not entirely broken,knee can get protection.\n• Men Skinny Jeans : Modified technique process, color not easy to fade after washing. No chemical smell, natural and healthy, good cutting, all the hem is done well, finished.Deep pockets address your trouble of carrying bigger stuff. Mens skinny jeans stretch with mental zipper and button is not easy to be broken.\n• Black Ripped Jeans : Such a skinny denim ripped jeans for men goes well with shirt,T-shirt,pullover,jacket. A must have for 4 seasons. Simple style, suitable for dating, hanging out, work,school. Light up others’ eye, making you the focus.\n\nAÇIKLAMA: Men's Skinny Destroyed Distressed Jeans Men Denim Pants Broken Hole in Knee Joggers Trousers Skinny Jeans is fashion, never die. No matter in which year, Jeans is always the fashion mainstream. We specialize in designing, making Jeans. We have professional designer , factory , aim to provide more decent pant for men, meeting their require . This Jeans is made of stretchy cotton material, elasticity is very good. So you don’t need to worry that your movement will be restrained when in it. Torn design is popular in fashion, we think everyone should have a ripped jeans. It goes will with different styles of clothes, sometimes simple design is the best, no need to consider matching which clothes, with such simple style, it can go well with all the clothes in your wardrobe. SIZE MEASUREMENT : Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”\n\nDETAYLAR:\n- Department: mens\n- Date First Available: January 25, 2018",
+    "schema": "expectation"
+  },
+  "response": {
+    "beklentiler": [
+      {
+        "konu": "Malzeme",
+        "iddia": "Cotton material,moisture absorption perspiration fibre,soft, making men feel good when wearing it.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Malzeme",
+        "iddia": "This Jeans is made of stretchy cotton material, elasticity is very good.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Beden/Kalıp",
+        "iddia": "Size 28 : waist 28”----length 39”----inseam 30” Size 29 : waist 29”----length 40”----inseam 30” Size 30 : waist 30”----length 40”----inseam 30” Size 31 : waist 31”----length 41”----inseam 31” Size 32 : waist 32”----length 41”----inseam 31” Size 33 : waist 33”----length 41”----inseam 31” Size 34 : waist 34”----length 42”----inseam 31” Size 36 : waist 36”----length 42”----inseam 32” Size 38 : waist 38”----length 43”----inseam 32” Size 40 : waist 40”----length 43”----inseam 32” Size 42 : waist 42”----length 44”----inseam 32”",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Torn design is popular in fashion, we think everyone should have a ripped jeans.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "It goes will with different styles of clothes, sometimes simple design is the best, no need to consider matching which clothes, with such simple style, it can go well with all the clothes in your wardrobe.",
+        "iddia_turu": "genel"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "color not easy to fade after washing.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Dayanıklılık",
+        "iddia": "Mens skinny jeans stretch with mental zipper and button is not easy to be broken.",
+        "iddia_turu": "somut"
+      },
+      {
+        "konu": "Görsel",
+        "iddia": "Such a skinny denim ripped jeans for men goes well with shirt,T-shirt,pullover,jacket.",
+        "iddia_turu": "genel"
+      }
+    ]
+  }
+}

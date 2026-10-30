@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "95% Polyester, 5% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "silky-smooth, very softly and comfy",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Lightweight and skin-friendly material care for people's health.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Classic notch collar, chest pocket lend sophisticated detail.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Two sided pockets to place your phone and wallet.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Model SIZE - Height 183 cm; Weight 83 kg; Bust 102cm; Waist 79cm; Hip 98cm (Size: L).",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "The nightwears are suitable for both hand washing and machine washing.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Hand wash gently can slow down the process of wear down or stiffen up; After cleaning, hang it to dry and do not expose in the sun; Can be folding storage or hanging storage.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

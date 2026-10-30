@@ -1,0 +1,13 @@
+ASIN:         B0946X8ZRT
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 6 | sayfa iddiası: 'Easy to adjust: the caps with elastic band and adjustable back band design, make you adjust the tightness to fit for your head and different hairstyles, make sure comfort wearing experience all times, fits for most women and men.'
+  - Malzeme: yorum 4, 5, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında 'genel olarak çoğu kadın ve erkeğe uyumlu' olduğu belirtiliyor, ancak birçok müşteri başlarının ve saçlarının büyük olduğunu belirterek bu iddiayı çelişiyor; ayrıca düğmelerin işlevselliği de sorunlu.
+öneriler:
+  - [Beden/Kalıp | değiştir] Küçük başlılar için uygun olduğunu belirtin; 'Büyük başlılar için uygun olmayabilir' notu ekleyin.
+      sayfa: 'Easy to adjust: the caps with elastic band and adjustable back band design, make you adjust the tightness to fit for your head and different hairstyles, make sure comfort wearing experience all times, fits for most women and men.' | müşteri: Yorum 1, 2, 3, 6: Çok küçük geliyor.
+  - [Malzeme | ekle] Düğmelerin boyutunun yeterli olmayabileceğini belirtin; 'Düğmelerin boyutu bazı maskeleri tutmak için yeterli olmayabilir' notu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 4, 5, 7: Düğmeler çok küçük, maskeleri tutmuyor.

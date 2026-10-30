@@ -1,0 +1,65 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş çok ince ve şeffaf.",
+      "yorum_numaralari": [
+        1,
+        6
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürünler yıkama sonrası pilling yapıyor ve inceleşiyor.",
+      "yorum_numaralari": [
+        6,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenler normalden küçük ve kalıp uyumsuz.",
+      "yorum_numaralari": [
+        2,
+        4,
+        12
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Dikişler kötü, ilk kullanımda yırtılıyor.",
+      "yorum_numaralari": [
+        7,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün açıklamasında belirtilen özelliklerle uyuşmuyor.",
+      "yorum_numaralari": [
+        9,
+        13
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Kalıp çok kısa ve rahatsız.",
+      "yorum_numaralari": [
+        11,
+        15
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

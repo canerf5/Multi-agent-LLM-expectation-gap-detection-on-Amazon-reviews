@@ -1,0 +1,10 @@
+ASIN:         B07BJCFKFP
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 4, 6 | sayfa iddiası: 'Item may run small, consider sizing up.'
+ana_risk:     Sayfada 'Item may run small, consider sizing up.' iddiası var, ancak müşterilerden biri 'çok büyük geldi' diyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden seçimi için 'Bedeninizden bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'Item may run small, consider sizing up.' | müşteri: Yorum 4, 6: Çok büyük geldi.

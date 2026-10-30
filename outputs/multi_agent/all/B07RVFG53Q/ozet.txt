@@ -1,0 +1,10 @@
+ASIN:         B07RVFG53Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4 | sayfa iddiası: 'Size:S-XL.'
+ana_risk:     Sayfada 'Size:S-XL.' iddiası var, ancak kullanıcılar ürünün kısa geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün kalıbının daha geniş olduğunu belirtin; 'Kısa geldi' yorumlarına göre kalıp ayarlaması yapın.
+      sayfa: 'Size:S-XL.' | müşteri: Yorum 2, 4: Kısa geldi.

@@ -1,0 +1,50 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        4,
+        12,
+        5,
+        11,
+        14
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2,
+        3,
+        7,
+        10,
+        15
+      ],
+      "sayfa_iddiasi": "made of genuine luxury split leather upper with classic fine stitching."
+    }
+  ],
+  "ana_risk": "Sayfada malzeme kalitesi ile ilgili somut bir iddia var, ancak müşteriler ayakkabıların ucuz olduğunu ve destek sunmadığını belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 4, 12, 5, 11, 14: Ayakkabılar belirtilen bedenden çok küçük, bir ayakkabı diğerinden büyük, bedenler küçük, bir beden büyük sipariş verilmeli, ayakkabılar kısa ve geniş.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasında bedenlerin küçük olduğu ve bir beden büyük sipariş verilmesi gerektiği bilgisi eklenmeli."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "made of genuine luxury split leather upper with classic fine stitching.",
+      "musteri_deneyimi": "Yorum 2, 3, 7, 10, 15: Ayakkabılar çok ucuz ve destek yok.",
+      "islem": "değiştir",
+      "duzeltme": "Sayfada malzeme kalitesinin yüksek olduğu vurgusu gözden geçirilmeli ve destekleyici malzeme bilgisi eklenmeli."
+    }
+  ]
+}

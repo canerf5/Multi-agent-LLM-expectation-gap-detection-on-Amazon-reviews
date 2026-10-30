@@ -1,0 +1,16 @@
+ASIN:         B0BGPVTZDQ
+gap_var:      Evet
+gap_tipleri:  Malzeme, Beden/Kalıp, Görsel
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 2, 4, 10 | sayfa iddiası: '100% Polyester'
+  - Beden/Kalıp: yorum 5, 8, 14 | sayfa iddiası: 'the size is smaller than the normal size. Please order one size up if you are taller, stronger, or grows faster.'
+  - Görsel: yorum 1, 3, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, kumaşın %100 polyester olduğunu iddia ediyor; ancak müşteriler kumaş kalitesinin kötü olduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında daha net bilgi ver; 'Kumaş kalitesi düşük' uyarısını ekle.
+      sayfa: '100% Polyester' | müşteri: Yorum 2, 4, 10: Kumaş kalitesi kötü.
+  - [Beden/Kalıp | değiştir] Ürün kalıbı hakkında daha net bilgi ver; 'Bir beden büyük almanız önerilir' notunu ekle.
+      sayfa: 'the size is smaller than the normal size. Please order one size up if you are taller, stronger, or grows faster.' | müşteri: Yorum 5, 8, 14: Ürün kalıbı beklenenden farklı.
+  - [Görsel | ekle] Ürün fotoğraflarının gerçek ürünü yansıtması gerektiğini belirt.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 3, 12: Ürün fotoğraftaki görünümden farklı.

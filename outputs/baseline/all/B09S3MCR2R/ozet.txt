@@ -1,0 +1,13 @@
+ASIN:         B09S3MCR2R
+gap_var:      Evet
+gap_tipleri:  Malzeme, Eksik Bilgi
+seviye:       Yüksek
+gerekçeler:
+  - Malzeme: yorum 1, 9, 10, 11 | sayfa iddiası: 'silky-smooth, very softly and comfy.'
+  - Eksik Bilgi: yorum 2, 5, 6, 8 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalitesinin yüksek olduğunu iddia ediyor ancak müşteriler, ürünün kalitesiz olduğunu ve renklerin solduğunu belirtiyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün kalitesinin düşük olduğunu belirtin; 'Ürün kalitesizdir, renkler solabilir ve lekeler bırakabilir.' ekleyin.
+      sayfa: 'silky-smooth, very softly and comfy.' | müşteri: Yorum 1, 9, 10, 11: Ürün kalitesiz, renkleri soluyor ve lekeler bırakıyor.
+  - [Eksik Bilgi | ekle] Ürün açıklamasına 'Bu ürün yalnızca bir pijama seti içermektedir.' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 5, 6, 8: Ürün sadece bir pijama seti olarak geliyor, çift set bekleniyor.

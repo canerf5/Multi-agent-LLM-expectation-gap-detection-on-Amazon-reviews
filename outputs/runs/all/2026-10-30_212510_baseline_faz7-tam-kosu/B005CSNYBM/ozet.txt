@@ -1,0 +1,13 @@
+ASIN:         B005CSNYBM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 5, 6 | sayfa iddiası: 'Enjoy this comfortable, lightweight cotton jersey pant'
+  - Malzeme: yorum 1, 7, 8, 9 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfa, hafif pamuklu bir pantolon sunduğunu belirtirken, müşteriler kalıbın dar olduğunu ve kumaşın beklenenden daha ince olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'dar kesimdir; bir beden büyük almanız önerilir' notu ekleyin.
+      sayfa: 'Enjoy this comfortable, lightweight cotton jersey pant' | müşteri: Yorum 2, 3, 4, 5, 6: Kalıp dar ve vücuda oturmuyor.
+  - [Malzeme | değiştir] Kumaşın ince olduğunu ve günlük kullanım için uygun olmayabileceğini belirtin.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 7, 8, 9: Kumaş ince ve hafif, beklenenden daha kalitesiz.

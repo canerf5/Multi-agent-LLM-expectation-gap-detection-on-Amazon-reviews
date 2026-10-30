@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Our shirts are a ringspun, 30/1 fine jersey knit on 100% USA-grown cotton.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "this shirt is slightly tapered to be a little less boxy than the old style of mass-market t-shirt.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "you might go one size larger if you're on the fence.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "these are high quality inks - vibrant and durable, and highly crack resistant.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "These are mid-weight shirts - a bit lighter than your mass-market, thick gym class t-shirts, but substantial / not see-through.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "QCM has been one of the most forward-thinking ink manufacturers in the industry, going phthalate-free over ten years ago - way ahead of the curve.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

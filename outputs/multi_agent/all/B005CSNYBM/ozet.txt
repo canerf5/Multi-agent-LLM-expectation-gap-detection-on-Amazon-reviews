@@ -1,0 +1,13 @@
+ASIN:         B005CSNYBM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 4, 6 | sayfa iddiası: '32 inch inseam'
+  - Malzeme: yorum 1, 5, 7, 8, 9 | sayfa iddiası: '100% Cotton'
+ana_risk:     Sayfada '32 inch inseam' iddiası var, ancak müşteriler kalıbın çok dar olduğunu belirtiyor; ayrıca '100% Cotton' iddiası var ama kumaş kalitesi beklenenden düşük bulunmuş.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp hakkında 'Dar kalıp; bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: '32 inch inseam' | müşteri: Yorum 2, 3, 4, 6: Kalıp çok dar veya uygun değil.
+  - [Malzeme | değiştir] Kumaş kalitesi hakkında 'Kumaş kalitesi standartların altında olabilir' uyarısını ekleyin.
+      sayfa: '100% Cotton' | müşteri: Yorum 1, 5, 7, 8, 9: Kumaş kalitesi beklenenden düşük.

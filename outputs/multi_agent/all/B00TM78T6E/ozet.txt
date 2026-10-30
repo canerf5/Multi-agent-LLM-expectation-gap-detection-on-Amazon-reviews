@@ -1,0 +1,13 @@
+ASIN:         B00TM78T6E
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık, Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Dayanıklılık: yorum 3, 4, 5, 6, 7, 10, 11, 13 | sayfa iddiası: 'bilgi yok'
+  - Beden/Kalıp: yorum 2, 8, 12 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, malzeme kalitesi ile ilgili bilgi vermiyor; ancak müşteriler çabuk yırtıldığını ve bedenin erkekler için dar olduğunu belirtiyor.
+öneriler:
+  - [Dayanıklılık | ekle] Ürünlerin dayanıklılığı hakkında bilgi ekleyin; 'Ürünlerimiz yüksek kaliteli malzemelerden üretilmiştir, ancak aşırı kullanımlarda yırtılma riski bulunmaktadır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 4, 5, 6, 7, 10, 11, 13: Çabuk yırtılıyorlar
+  - [Beden/Kalıp | ekle] Beden bilgisi ekleyin; 'Erkekler için bedenlerin dar olabileceğini belirtin, kadınlar için uygun.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 8, 12: Beden kadınlara uygun, erkekler için dar

@@ -1,0 +1,10 @@
+ASIN:         B08BFW4CRM
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 4 | sayfa iddiası: 'Shaft measures approximately Above the Knee from arch'
+ana_risk:     Sayfa, beden kalıbı ile ilgili iddialarda bulunuyor ancak yorumlar küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Beden kalıbı hakkında 'Bir numara büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'Shaft measures approximately Above the Knee from arch' | müşteri: Küçük geldi, bir numara büyük alınmalı; Yorum 3, Küçük geldi, normalde giydiğim numara uymadı; Yorum 4

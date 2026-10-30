@@ -1,0 +1,10 @@
+ASIN:         B005CMR5OK
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 5, 6, 7 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada bu konuda bilgi yok, ancak müşteriler numara uyumsuzluğu ve kalıp sorunları yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ayakkabı kalıbının genişliği hakkında bilgi ekleyin; 'Bu model normalden geniş kalıp olarak tasarlanmıştır.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4, 5, 6, 7: Top kısımlar çok bol; önceki aldığım ayakkabıyla uyumlu değil; orta genişlikteki ayakkabı uymadı; bir ayakkabı uyar, diğeri çok büyük; ayakkabı ayakta durmuyor, güvenli değil.

@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Dayanıklılık"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "elastic waistband with inner drawstring for you adjust the size according to your body"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        4,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, pantolonların yıkandıktan sonra kısaldığını belirtmiyor; ayrıca ürünün dayanıklılığı hakkında bilgi yok.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "elastic waistband with inner drawstring for you adjust the size according to your body",
+      "musteri_deneyimi": "Yorum 2, 5: Pantolonlar yıkandıktan sonra kısaldı",
+      "islem": "değiştir",
+      "duzeltme": "Yıkama sonrası kısalma olabileceği bilgisi eklenecek."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 6, 7: Ürün kısa sürede yıpranıyor ve dikişleri açılıyor",
+      "islem": "ekle",
+      "duzeltme": "Ürünün dayanıklılığı hakkında bilgi eklenecek."
+    }
+  ]
+}

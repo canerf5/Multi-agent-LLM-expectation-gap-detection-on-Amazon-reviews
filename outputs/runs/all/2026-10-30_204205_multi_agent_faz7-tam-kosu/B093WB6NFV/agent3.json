@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Görsel"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        2,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, yüksek kaliteli kumaş iddiasında bulunuyor, ancak müşteriler kumaşın kalitesiz olduğunu belirtiyor ve tasarımın fotoğraftakiyle uyuşmadığını ifade ediyor.",
+  "oneriler": [
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Kumaş kalitesiz ve tasarım fotoğraftakiyle uyuşmuyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasında kumaş kalitesi hakkında bilgi ekleyin; 'Kumaş kalitesi yüksek değildir' gibi bir uyarı ekleyin."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 4: Tasarım fotoğraftakiyle alakası yok.",
+      "islem": "ekle",
+      "duzeltme": "Ürün sayfasında tasarımın gerçek görünümünü yansıtan fotoğraflar ekleyin."
+    }
+  ]
+}

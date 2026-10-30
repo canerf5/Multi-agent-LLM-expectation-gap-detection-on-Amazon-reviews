@@ -1,0 +1,13 @@
+ASIN:         B00SRSLRXG
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3, 5, 7 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 1, 2, 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün sayfasında beden ve kalite ile ilgili bilgi yok; ancak müşteriler bu konularda sorun yaşıyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Beden kalıbının dar olduğu bilgisi eklenmeli; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5, 7: Bedenler beklenenden küçük veya dar geliyor.
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi eklenmeli; 'Ürün kalitesi değişkenlik gösterebilir, dikkatli inceleyin.'
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2, 6: Ürün kalitesi düşük, hasarlı veya bekleneni karşılamıyor.

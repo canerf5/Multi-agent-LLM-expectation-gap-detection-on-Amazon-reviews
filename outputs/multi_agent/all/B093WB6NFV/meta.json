@@ -1,0 +1,24 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "tek konu kuralı: yorum 2 hem Kalite hem Görsel için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Görsel için sayılmış"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "tek konu kuralı: yorum 2 hem Kalite hem Görsel için sayılmış",
+    "tek konu kuralı: yorum 4 hem Kalite hem Görsel için sayılmış"
+  ],
+  "parent_asin": "B093WB6NFV",
+  "split": "rest",
+  "run_id": "2026-10-30_204205_multi_agent_faz7-tam-kosu",
+  "n_reviews": 4,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 2 birden fazla ilgili grupta (grup 2 ve 3)",
+    "yorum 4 birden fazla ilgili grupta (grup 2 ve 3)"
+  ],
+  "sure_duvar_sn": 16.018,
+  "time": "2026-10-30T18:18:45+00:00"
+}

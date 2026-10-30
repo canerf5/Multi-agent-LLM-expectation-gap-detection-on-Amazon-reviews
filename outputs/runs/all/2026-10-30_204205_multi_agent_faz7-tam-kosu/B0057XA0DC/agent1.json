@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Relaxed Fit Long Sleeve Henley T-Shirt with Left Chest Pocket",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Quality Construction with Taped Shoulder, Back, and Neck Seams",
+      "iddia_turu": "genel"
+    }
+  ]
+}

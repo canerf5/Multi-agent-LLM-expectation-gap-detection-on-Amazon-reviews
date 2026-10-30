@@ -1,0 +1,48 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Malzeme",
+      "ozet": "Çok ince ve şeffaf kumaş.",
+      "yorum_numaralari": [
+        1,
+        8
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Kalite",
+      "ozet": "Düşük kalite, dikiş hataları ve hasarlı ürünler.",
+      "yorum_numaralari": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Beden ölçüleri uyumsuz, çok büyük geldi.",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Görsel",
+      "ozet": "Ürün görünümü beklenenden kötü.",
+      "yorum_numaralari": [
+        9,
+        10
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

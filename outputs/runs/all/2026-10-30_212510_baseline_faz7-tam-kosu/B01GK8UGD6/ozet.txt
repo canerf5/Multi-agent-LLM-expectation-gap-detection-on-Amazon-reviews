@@ -1,0 +1,19 @@
+ASIN:         B01GK8UGD6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Renk, Görsel, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3, 7 | sayfa iddiası: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].'
+  - Renk: yorum 2, 4 | sayfa iddiası: 'The top clearly looks pink or magenta on line. But it is purple when you get it.'
+  - Görsel: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+  - Kalite: yorum 6 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, 'One Size Regular' iddiasında bulunuyor ancak müşteriler bu ürünün çok büyük olduğunu belirtiyor; ayrıca renk ve görsel uyumsuzlukları da yaşanıyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ürün açıklamasında bedenin daha dar olduğunu belirtin; 'Beden kalıbı geniştir, bir beden küçük almanız önerilir.'
+      sayfa: 'One Size Regular: [(Fits Approximate Top Size: US 0-4X, UK 6-28, EU 34-56) Max bust size: 78 inches (198.1cm), Length: 30 inches (76.2cm)].' | müşteri: Yorum 2, 3, 7: Ürün çok büyük geliyor.
+  - [Renk | ekle] Ürün sayfasında renklerin gerçek hayatta nasıl göründüğüne dair bir uyarı ekleyin.
+      sayfa: 'The top clearly looks pink or magenta on line. But it is purple when you get it.' | müşteri: Yorum 2, 4: Renk beklenenden farklı geldi.
+  - [Görsel | ekle] Ürün sayfasında fotoğrafların gerçek ürünü tam olarak yansıtmayabileceğine dair bir not ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 3: Ürün görseldeki gibi değil.
+  - [Kalite | ekle] Ürün sayfasında yıkama talimatlarına dikkat edilmesi gerektiğini vurgulayan bir not ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 6: Ürün yıkamada hasar gördü.

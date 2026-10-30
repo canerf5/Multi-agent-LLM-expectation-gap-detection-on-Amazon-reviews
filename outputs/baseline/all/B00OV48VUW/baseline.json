@@ -1,0 +1,29 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "So every pair feels like it was made just for you."
+    }
+  ],
+  "ana_risk": "Sayfa, her numara ve genişlik için özel kalıp kullanıldığını iddia ediyor; ancak müşteriler, sipariş ettikleri dar numaranın geniş olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "So every pair feels like it was made just for you.",
+      "musteri_deneyimi": "Yorum 1, 4: Dar numara geniş geliyor.",
+      "islem": "değiştir",
+      "duzeltme": "Dar numara sipariş edenler için kalıp genişliği hakkında bilgi ver."
+    }
+  ]
+}

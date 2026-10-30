@@ -1,0 +1,13 @@
+ASIN:         B08BL8643W
+gap_var:      Evet
+gap_tipleri:  Kalite, Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Kalite: yorum 2, 4, 10, 14 | sayfa iddiası: 'High quality spandex provides excellent stretch and comfortable fit'
+  - Dayanıklılık: yorum 1, 3, 5, 9 | sayfa iddiası: 'Premium Cotton Material provides excellent moisture management, and maximized breathability, providing a pleasant wear experience all day'
+ana_risk:     Kalite ve dayanıklılık iddiaları var, ancak müşteriler ürünün kalitesiz olduğunu ve çabuk yıprandığını belirtiyor.
+öneriler:
+  - [Kalite | değiştir] Kalite kontrolü yapıldığına dair bilgi ekleyin ve ürünün kalitesini artırmak için geliştirmeler yapıldığını belirtin.
+      sayfa: 'High quality spandex provides excellent stretch and comfortable fit' | müşteri: Yorum 2, 4, 10, 14: Kalite kötü, dikişler çarpık ve çabuk yıpranıyor.
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin ve kullanıcıların beklentilerini karşılayacak şekilde geliştirin.
+      sayfa: 'Premium Cotton Material provides excellent moisture management, and maximized breathability, providing a pleasant wear experience all day' | müşteri: Yorum 1, 3, 5, 9: Ürün çabuk yıpranıyor, delik açılıyor.

@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün kalıbının büyük olduğunu belirtmiyor; müşteriler, ürünün beklenenden 2 beden büyük olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 3, 4: Ürün 2 beden büyük geliyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalıbının büyük olduğu bilgisi eklenmeli; 'Bu ürün normalden 2 beden büyük kalıp ile üretilmiştir.'"
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 1, 2: Yaka etiketi rahatsız edici, ciltte tahrişe neden oluyor.",
+      "islem": "ekle",
+      "duzeltme": "Yaka etiketinin rahatsız edici olabileceği bilgisi eklenmeli; 'Yaka etiketinin ciltte tahrişe neden olabileceği konusunda dikkatli olunmalıdır.'"
+    }
+  ]
+}

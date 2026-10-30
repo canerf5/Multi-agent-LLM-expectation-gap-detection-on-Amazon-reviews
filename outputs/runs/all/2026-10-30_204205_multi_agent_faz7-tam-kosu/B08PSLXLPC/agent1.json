@@ -1,0 +1,44 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "made of genuine luxury split leather upper with classic fine stitching.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Cowskin leather lining and hi-poly insole.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Built with leather and synthetic material to provide exceptional comfort and detail.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Lightweight and flexible rubber sole.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "convenient to wear and take off, makes you feel comfortable when walking or standing all day.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "Sumptuous padded insole to soothe and pamper your feet.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "These gorgeous pair of loafers are essentials for any occasion.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Fit for Spring/ Summer/ Autumn perfectly.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

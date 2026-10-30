@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Upper: Made of breathable mesh fabric, which allows your feet to breathe freely when running or walking.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Rubber sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Running Shoes Adopt Blade Rubber Outsole: the exquisite hollow carved design bottom can increase the slip resistance and wear resistance of the sole, and ensure the stability when walking.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Stylish color scheme gives you a different visual experience, slip-on closure type easy put on & off.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "The Unique Design of Fashionable womens Shoes is Suitable for Occasions: shopping, leisure, work, walking, running, jogging, training, indoor, sports, outdoor, travel, tennis, camping, etc.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Top made of 100 percent polyester jersey bottom made of 99 percent polyester flannel, 1 percent other",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "long-sleeve tee features Merry graphic on front; pull-on pants come in allover plaid with elasticized waist and ankle cuffs",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Kalite",
+      "iddia": "this garment is flame resistant",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "sizes 8-22",
+      "iddia_turu": "somut"
+    }
+  ]
+}

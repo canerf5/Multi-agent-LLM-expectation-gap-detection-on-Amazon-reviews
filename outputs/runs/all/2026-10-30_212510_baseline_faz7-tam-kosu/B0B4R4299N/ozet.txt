@@ -1,0 +1,13 @@
+ASIN:         B0B4R4299N
+gap_var:      Evet
+gap_tipleri:  Malzeme, Görsel
+seviye:       Orta
+gerekçeler:
+  - Malzeme: yorum 2, 3 | sayfa iddiası: 'Skin-Friendly Material--65% Cotton and 35% Polyester Tunic Tops, stretchy fabric, lightweight, soft, skin-friendly and breathable, Provide a More Comfortable Wearing Experience.'
+  - Görsel: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün malzeme kalitesi ve görünümüne dair iddialarda bulunuyor; ancak müşteriler ince ve kalitesiz buluyor.
+öneriler:
+  - [Malzeme | değiştir] Ürün malzemesinin kalitesiz olduğunu belirten bir uyarı ekle.
+      sayfa: 'Skin-Friendly Material--65% Cotton and 35% Polyester Tunic Tops, stretchy fabric, lightweight, soft, skin-friendly and breathable, Provide a More Comfortable Wearing Experience.' | müşteri: Yorum 2, 3: Ürün çok ince ve kalitesiz görünüyor.
+  - [Görsel | ekle] Ürün görsellerinin gerçek renk ve görünümünü yansıtması için açıklama ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ürün görseldeki gibi durmuyor, renkler daha soluk.

@@ -1,0 +1,61 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite",
+    "Malzeme"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        4,
+        5,
+        10
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        7,
+        8,
+        11
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        6,
+        8
+      ],
+      "sayfa_iddiasi": "100% Cotton"
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün beden ve kalıp uyumu hakkında bilgi vermiyor; müşteriler ise ürünün küçük ve rahatsız olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 5, 10: Kalıp küçük ve uyumsuz.",
+      "islem": "ekle",
+      "duzeltme": "Kalıp ve beden uyumu hakkında bilgi ekleyin; 'kalıp dar, bir beden büyük almanız önerilir' notu ekleyin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 7, 8, 11: Kalite kötü, ürün kullanılmış gibi görünüyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün kalitesi hakkında bilgi ekleyin; 'kalite garantisi yoktur' uyarısı ekleyin."
+    },
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Cotton",
+      "musteri_deneyimi": "Yorum 6, 8: Ürün 100% pamuk değil, spandeks karışımı.",
+      "islem": "değiştir",
+      "duzeltme": "Malzeme bilgisi değiştirilmeli; '100% pamuk değil, spandeks karışımıdır' olarak güncellenmeli."
+    }
+  ]
+}

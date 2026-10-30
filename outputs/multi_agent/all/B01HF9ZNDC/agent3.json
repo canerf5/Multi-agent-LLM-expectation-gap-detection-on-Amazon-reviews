@@ -1,0 +1,62 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Malzeme",
+    "Dayanıklılık",
+    "Görsel"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        9,
+        11,
+        14,
+        15
+      ],
+      "sayfa_iddiasi": "100% Synthetic leather and mesh"
+    },
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        5,
+        6,
+        7
+      ],
+      "sayfa_iddiasi": "durable synthetic leather"
+    },
+    {
+      "tip": "Görsel",
+      "yorum_numaralari": [
+        4,
+        13
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Sayfa, %100 sentetik deri ve ağ malzeme iddiasında bulunuyor; ancak müşteriler su geçirmediğini ve dayanıklılığının düşük olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Malzeme",
+      "sayfa_iddiasi": "100% Synthetic leather and mesh",
+      "musteri_deneyimi": "Yorum 9, 11, 14, 15: Su geçirmiyor.",
+      "islem": "değiştir",
+      "duzeltme": "Su geçirmediği bilgisini ekleyin."
+    },
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "durable synthetic leather",
+      "musteri_deneyimi": "Yorum 5, 6, 7: Altı haftada ayrılmaya başladı, üç ayda ayrılmaya ve sızdırmaya başladı.",
+      "islem": "değiştir",
+      "duzeltme": "Dayanıklılığı artırmak için öneriler ekleyin."
+    },
+    {
+      "tip": "Görsel",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 4, 13: Ürün fotoğraftaki gibi değil, çok ince; bağcıklar tehlikeli, takılıyor.",
+      "islem": "ekle",
+      "duzeltme": "Ürün görselinin gerçek görünümünü ve bağcıkların güvenliğini açıklayan bilgi ekleyin."
+    }
+  ]
+}

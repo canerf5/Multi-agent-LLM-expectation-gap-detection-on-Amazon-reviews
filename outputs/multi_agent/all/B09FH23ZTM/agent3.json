@@ -1,0 +1,44 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        10,
+        8,
+        4
+      ],
+      "sayfa_iddiasi": "Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value."
+    }
+  ],
+  "ana_risk": "Sayfa, ayakkabıların kalıp ve kalite özellikleri hakkında bilgi veriyor; ancak müşteriler kalıp uyumsuzluğu ve kalitesizlik sorunları yaşıyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "bilgi yok",
+      "musteri_deneyimi": "Yorum 2, 5: Bir ayakkabı diğerinden küçük geliyor; üç farklı numara denedim, hepsi aynı.",
+      "islem": "ekle",
+      "duzeltme": "Ürün açıklamasında beden kalıbı hakkında daha net bilgi verin."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Crevo specializes in handcrafted product with high quality leathers and materials that offer both comfort and value.",
+      "musteri_deneyimi": "Yorum 10, 8, 4: Yapımında ve malzemesinde sorun var; ürün dayanıklı değil, bir sezon bile gitmez; ayakkabılar yürürken çok ses çıkarıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün kalitesi hakkında daha fazla bilgi verin; 'Ürünlerimiz yüksek kaliteli malzemelerle üretilmiştir' gibi."
+    }
+  ]
+}

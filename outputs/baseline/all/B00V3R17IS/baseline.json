@@ -1,0 +1,43 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık",
+    "Kalite"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "Made from dense, tight and smooth premium cotton for years of wear, it's a legend among t-shirts."
+    },
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        4
+      ],
+      "sayfa_iddiasi": "Made from dense, tight and smooth premium cotton for years of wear, it's a legend among t-shirts."
+    }
+  ],
+  "ana_risk": "Sayfa, ürünün dayanıklılığını ve kalitesini öne çıkarıyor; ancak müşteriler dikişlerin yırtıldığını ve kumaşta delikler olduğunu bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Made from dense, tight and smooth premium cotton for years of wear, it's a legend among t-shirts.",
+      "musteri_deneyimi": "Yorum 1, 2: Dikişler ilk yıkamada yırtıldı ve kumaşta delikler var.",
+      "islem": "değiştir",
+      "duzeltme": "Ürün dayanıklılığı hakkında daha net bilgi ver; 'ilk yıkamada yırtılma riski var' uyarısı ekle."
+    },
+    {
+      "tip": "Kalite",
+      "sayfa_iddiasi": "Made from dense, tight and smooth premium cotton for years of wear, it's a legend among t-shirts.",
+      "musteri_deneyimi": "Yorum 3, 4: Ürün yıkandıktan sonra küçülüyor ve alt kısmı sürekli yukarı doğru kıvrılıyor.",
+      "islem": "değiştir",
+      "duzeltme": "Küçülme ve şekil bozulması hakkında bilgi ekle; 'yıkama sonrası küçülme riski var' uyarısı ekle."
+    }
+  ]
+}

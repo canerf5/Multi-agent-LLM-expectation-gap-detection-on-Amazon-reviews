@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "95% Polyester, 5% Elastane",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Good elasticity, breathable mesh, durable fabric, shock absorption and comfortable fit",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Renk",
+      "iddia": "available in multiple classic colors such as white, black, blue, red",
+      "iddia_turu": "somut"
+    }
+  ]
+}

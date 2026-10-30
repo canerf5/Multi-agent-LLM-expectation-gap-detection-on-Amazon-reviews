@@ -1,0 +1,10 @@
+ASIN:         B09ZHFVMR5
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3 | sayfa iddiası: "Extra Wide Elastic Waistband for Kids' Comfort"
+ana_risk:     Sayfada 'Extra Wide Elastic Waistband for Kids' Comfort' iddiası var, ancak 5T ve 2T bedenleri çok büyük geldiği belirtiliyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin genişliği hakkında daha net bilgi ver; 'Bedenler normalden büyük kalmaktadır, bir beden küçük almanız önerilir.'
+      sayfa: "Extra Wide Elastic Waistband for Kids' Comfort" | müşteri: Yorum 1, 3: 5T ve 2T bedenleri çok büyük geldi.

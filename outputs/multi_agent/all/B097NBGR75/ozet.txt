@@ -1,0 +1,5 @@
+ASIN:         B097NBGR75
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

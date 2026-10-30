@@ -1,0 +1,13 @@
+ASIN:         B073KWM1NV
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 3 | sayfa iddiası: 'The sling-back hook and loop fastening makes them adjustable while providing a secure fit.'
+  - Kalite: yorum 1, 4 | sayfa iddiası: 'Cushion Soft technology for unbelievable comfort.'
+ana_risk:     Sayfa, ayakkabının ayakla uyumunu ve destek seviyesini vurgularken, müşteriler bu konularda sorun yaşıyor; ayakkabılar kayıyor ve yeterli destek sunmuyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Ayakkabının kayma sorununu önlemek için strapların daha iyi ayarlanabilir olduğunu belirtin.
+      sayfa: 'The sling-back hook and loop fastening makes them adjustable while providing a secure fit.' | müşteri: Yorum 2, 3: Ayakkabının kaydığı ve ayakla uyum sağlamadığı belirtiliyor.
+  - [Kalite | değiştir] Ürünün destek seviyesi hakkında daha net bilgi verin; yeterli destek sunmadığına dair yorumlar var.
+      sayfa: 'Cushion Soft technology for unbelievable comfort.' | müşteri: Yorum 1, 4: Ayakkabının yeterli destek sunmadığı ve strapların kalitesiz olduğu belirtiliyor.

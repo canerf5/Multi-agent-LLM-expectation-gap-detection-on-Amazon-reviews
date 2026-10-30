@@ -1,0 +1,16 @@
+ASIN:         B07RLS1Q3R
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Dayanıklılık, Kalite
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 4, 6, 11 | sayfa iddiası: 'It goes with all match:Simple color to match any syle.Very fashionable,very lightweight,kids just need to slip on and go.'
+  - Dayanıklılık: yorum 1, 5, 12, 15 | sayfa iddiası: 'Premium Quality:Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.No good quality,No Casbeam.'
+  - Kalite: yorum 1, 3, 8, 10 | sayfa iddiası: 'Premium Quality:Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.No good quality,No Casbeam.'
+ana_risk:     Sayfa, ürünün kalitesinin yüksek olduğunu iddia ediyor; ancak müşteriler, ürünlerin kısa sürede yıprandığını ve dayanıklılığının düşük olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp dar; bir beden büyük almanız önerilir.
+      sayfa: 'It goes with all match:Simple color to match any syle.Very fashionable,very lightweight,kids just need to slip on and go.' | müşteri: Yorum 2, 4, 6, 11: Ayakkabılar çok küçük geliyor ve kalıbı dar.
+  - [Dayanıklılık | değiştir] Ürün kalitesinin düşük olduğu bilgisi eklenmeli.
+      sayfa: 'Premium Quality:Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.No good quality,No Casbeam.' | müşteri: Yorum 1, 5, 12, 15: Ayakkabılar kısa sürede yıpranıyor ve delik açılıyor.
+  - [Kalite | değiştir] Kalite ile ilgili daha net bilgi verilmeli; ürünün dayanıklılığı hakkında uyarı eklenmeli.
+      sayfa: 'Premium Quality:Breathable Knit upper and Lightweight Rubber Sole with compact outer fabric.No good quality,No Casbeam.' | müşteri: Yorum 1, 3, 8, 10: Ürün kalitesi çok düşük, hemen yıpranıyor.

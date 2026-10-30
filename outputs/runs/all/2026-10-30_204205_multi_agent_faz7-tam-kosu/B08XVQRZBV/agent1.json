@@ -1,0 +1,39 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "Elastic,Cotton",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Durable and breathable",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "5 pairs Non Slip Socks are made of high quality blended yarn.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Dayanıklılık",
+      "iddia": "Thanks to the absorbent fabric our hospital socks wick away the moisture from your feet and dry quickly to prevent sweat build-up without hindering your mobility.",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Loose design at the calf cuff",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Our Non Slip Socks make sure your feet stay firmly planted on the ground so that you can move without worrying about slipping.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "If you are dissatisfied with our products, we will definitely refund or replace the product without paying extra fees.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

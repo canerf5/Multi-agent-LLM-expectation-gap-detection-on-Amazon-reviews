@@ -1,0 +1,10 @@
+ASIN:         B0C6HHMSTS
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 3, 4 | sayfa iddiası: 'adjustable strap with buckle'
+ana_risk:     Sayfa, ayakkabının ayarlanabilir kayışla birlikte geldiğini iddia ediyor; ancak müşteriler ayakkabının dar ve rahatsız olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Sayfada 'Ayakkabı dar kalıp; bir beden büyük almanız önerilir' ifadesini ekleyin.
+      sayfa: 'adjustable strap with buckle' | müşteri: Yorum 1, 2, 3: Ayakkabı çok dar geliyor, numarası küçük, rahatsız ediyor.

@@ -1,0 +1,34 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "64.7% Cotton, 30.2% Polyester, 4.1% Regenerated Fiber, 1% Spandex",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Fabric is very stretchy,and it's soft and comfortable",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Size Chart: Small: Bust: 33-35\", Waist: 27-28\", Hips: 37-38\", / Medium: Bust: 35-37\", Waist: 29-30\", Hips: 39-40\", / Large: Bust: 37-39\", Waist: 31-33\", Hips: 41-43\", / X-Large: Bust: 39-41\", Waist: 34-36\", Hips: 44-46\", / XX-Large Plus: Bust: 41-43\", Waist: 37-39\", Hips: 47-49\", / 3X-Large Plus: Bust: 43-45\", Waist: 40-42\", Hips: 50-52\", / 4X-Large Plus: Bust: 45-47\", Waist: 43-45\", Hips: 53-55",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Beden/Kalıp",
+      "iddia": "Going up a size if you love a more relaxed style",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "It is versatile to wear and suits most occasions such as casual, school, office, shopping, going out, party, vacation, and so on.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Our philosophy is that all body types need to be celebrated without sacrificing comfort or style.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

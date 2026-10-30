@@ -1,0 +1,19 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "55% Cotton, 45% Polyester",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Made With A Comfortable And Resilient 55% Cotton / 45% Polyester Blend",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Rothco’s Kids' cargo pants are comfortable and stylish.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

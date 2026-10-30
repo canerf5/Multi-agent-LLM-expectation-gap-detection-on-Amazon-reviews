@@ -23,8 +23,10 @@ GOLD_COLS = {
 # Değerlendirmede kullanılan tipler (Eksik Bilgi test setinde support = 0; kapsam.md §6)
 EVAL_TYPES = [t for t in GAP_TYPES if t != "Eksik Bilgi"]
 
-EXPECTATION_TOPICS = GAP_TYPES + ["Diğer"]
+# Ajan 1 konuları: Eksik Bilgi sayfada bilginin OLMAMASIDIR, sayfa iddiasının konusu olamaz
+EXPECTATION_TOPICS = [t for t in GAP_TYPES if t != "Eksik Bilgi"] + ["Diğer"]
 CLAIM_KINDS = ["somut", "genel"]
+FIX_ACTIONS = ["kaldır", "değiştir", "ekle"]
 IRRELEVANT_REASONS = ["kargo/paketleme", "satıcı/iade", "kullanılmış ürün", "kişisel zevk"]
 NO_INFO = "bilgi yok"
 
@@ -54,7 +56,7 @@ EXPECTATION_SCHEMA = {
     "name": "expectation",
     "schema": _obj({
         "beklentiler": _arr(_obj({
-            "konu": _str("7 gap tipinden biri veya 'Diğer'", EXPECTATION_TOPICS),
+            "konu": _str("Eksik Bilgi dışındaki 6 gap tipinden biri veya 'Diğer'", EXPECTATION_TOPICS),
             "iddia": _str("Sayfadan birebir alıntı (İngilizce, değiştirmeden)"),
             "iddia_turu": _str("'somut' = ürüne özgü doğrulanabilir bilgi; 'genel' = genel pazarlama dili",
                                CLAIM_KINDS),
@@ -90,7 +92,13 @@ RESULT_SCHEMA = {
             "sayfa_iddiasi": _str(f"İlgili sayfa iddiası (alıntı) veya '{NO_INFO}'"),
         })),
         "ana_risk": _str("Tek cümlelik ana risk; gap yoksa boş metin"),
-        "oneriler": _arr(_str(), "Sayfa iyileştirme önerileri; gap yoksa boş liste"),
+        "oneriler": _arr(_obj({
+            "tip": _str("Önerinin dayandığı gap tipi", GAP_TYPES),
+            "sayfa_iddiasi": _str(f"Düzeltilecek sayfa ifadesi (alıntı) veya '{NO_INFO}'"),
+            "musteri_deneyimi": _str("Yorum numaralarıyla şikayetin kısa Türkçe özeti"),
+            "islem": _str("'kaldır', 'değiştir' veya 'ekle'", FIX_ACTIONS),
+            "duzeltme": _str("Ürün sayfasında yapılacak somut değişiklik (Türkçe)"),
+        }), "Sayfa iyileştirme önerileri; gap yoksa boş liste"),
     }),
 }
 

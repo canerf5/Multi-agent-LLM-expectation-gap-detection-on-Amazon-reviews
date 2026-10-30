@@ -1,0 +1,21 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        1,
+        2
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden kalıbı ile ilgili şikayetler mevcut, ancak sayfada bu konuda bilgi yok.",
+  "oneriler": [
+    "Beden tablosu/kalıp uyarısı ekle"
+  ]
+}

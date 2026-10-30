@@ -1,0 +1,10 @@
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits'
+ana_risk:     Ürün dayanıklılığı ile ilgili iddialar var, ancak müşteriler kısa sürede delik açtığını belirtiyorlar.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili iddiayı gözden geçirerek, ürünün dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits' | müşteri: Yorum 2, 3: Ürün kısa sürede delik açtı.

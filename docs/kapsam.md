@@ -46,11 +46,13 @@ Sistem, sıralı çalışan üç LLM ajanından oluşmaktadır.
 
 - Girdi: Ajan 1 ve Ajan 2'nin çıktıları
 - Görev: "Beklenti ile deneyim arasındaki fark ne? Tipi ne? Seviyesi ne? Sayfada ne değişmeli?"
-- Çıktı: Gap var mı, tip(ler), seviye (Yok / Orta / Yüksek), ana risk, iyileştirme önerileri (JSON)
+- Çıktı: Gap var mı, tip(ler), seviye (Yok / Orta / Yüksek), her tip için destekleyen yorumlar ve ilgili sayfa iddiası, ana risk, iyileştirme önerileri (JSON). Her öneri bir gap tipine dayanır ve şunları içerir: düzeltilecek sayfa ifadesi (Ajan 1'in alıntısı) veya "bilgi yok", müşterilerin yaşadığı sorun (yorum numaralarıyla), işlem (kaldır / değiştir / ekle) ve sayfada yapılacak somut düzeltme. Öneriler yalnızca ürün sayfası değişikliğidir; ürünün kendisine yönelik değildir.
+
+**Tutarlılık kontrolü:** Ajan 3'ün kararı kodla kurallara göre denetlenir: her gap tipinin en az 2 farklı yorumu olması, bir yorumun tek tipe sayılması, sayfa iddiası olmayan tipin Yüksek olamaması, sayfa alıntılarının birebir geçmesi ve her gap tipine en az bir öneri düşmesi. İhlal varsa model, ihlaller açıklanarak bir kez daha sorgulanır; ikinci cevap da tutarsızsa sonuç değiştirilmeden "tutarsız" olarak işaretlenir. Aynı kontrol ve tek tekrar hakkı tek LLM baseline'ına da uygulanır.
 
 **Yapılandırılmış çıktı:** Tüm ajanlar, önceden tanımlanmış JSON şemalarına uygun çıktı üretir; gap tipleri sabit bir listeyle sınırlandırılır. Böylece sonuçlar otomatik olarak analiz edilebilir ve karşılaştırılabilir.
 
-**Uygulama:** Pipeline sabit ve sıralı olduğundan bir orkestrasyon framework'ü kullanılmamış, sistem doğrudan Python ve OpenAI SDK ile gerçekleştirilmiştir. Tüm çağrılar `temperature = 0` ile yapılır ve önbelleğe alınır; böylece sonuçlar tekrarlanabilir. Her ajanın ara çıktısı ayrıca kaydedilir.
+**Uygulama:** Pipeline sabit ve sıralı olduğundan bir orkestrasyon framework'ü kullanılmamış, sistem doğrudan Python ve OpenAI SDK ile gerçekleştirilmiştir. Tüm çağrılar `temperature = 0` ile yapılır ve önbelleğe alınır; böylece sonuçlar tekrarlanabilir. Her ajanın ara çıktısı ayrıca kaydedilir. Her koşu, modele giden prompt'ların tam metniyle birlikte ayrı bir klasörde saklanır ve hiçbir koşu bir öncekinin üzerine yazmaz (bkz. §6, "Sonuçların ve ölçümlerin kaydı").
 
 ## 4. Veri Seti ve Ön İşleme
 
@@ -155,6 +157,22 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 - Alt Soru 3: Rastgele seçilen 20 ürünün önerileri, sayfa bağlamıyla tutarlılık açısından araştırmacı tarafından 1–5 ölçeğinde puanlanır
 - Hata analizi: Yanlış tahmin edilen ürünlerde hatanın hangi ajandan kaynaklandığı incelenir
 
+**Sonuçların ve ölçümlerin kaydı:** Karşılaştırmaların her adımı yeniden üretilebilir ve izlenebilir olacak biçimde kaydedilir.
+
+*Koşu kaydı (her iki sistem, her koşu):* `outputs/runs/<küme>/<koşu>/` klasörü:
+
+- `manifest.json`: sistem, küme, ürünler, model sürümü, temperature, git commit'i, prompt / kural / şema / config dosyalarının hash'leri, koşu notu, tamamlanıp tamamlanmadığı
+- `prompts/`: modele giden prompt'ların tam metni
+- ürün başına ara çıktılar (her ajanın JSON çıktısı, tutarlılık kontrolü bilgisi, §9 biçiminde özet)
+- `sonuclar.csv`: ürün başına tek satır; gap tipleri altın standartla aynı sütun adlarıyla
+- `llm_calls.jsonl`: koşunun tüm LLM çağrıları
+- `olcumler.json`: gold gerektirmeyen süreç ölçümleri: gap var oranı, tip ve seviye dağılımı; tekrar gereken ve tutarsız kalan ürün oranı ile ihlal türleri; ajan uyarı sayıları; öneri sayısı ve işlem dağılımı; çağrı, token, maliyet ve süre
+- `outputs/runs/index.csv`: her koşu için tek satır (prompt geliştirme geçmişi; iki sistemin geliştirme kümesinde kaç kez denendiği)
+
+Maliyet, token ve süre hem "ödenen" (önbellekten gelen çağrı 0) hem "eşdeğer" (önbellekten gelen çağrı için ilk ücretli çağrının değeri) olarak kaydedilir; sistemler arası karşılaştırmada eşdeğer değerler kullanılır.
+
+*Değerlendirme kaydı (test kümesi, Faz 8):* `reports/degerlendirme/<tarih>/` klasörü: karşılaştırılan koşuların kimlikleri, altın standart dosyasının hash'i, sürüm etiketi ve bootstrap ayarları (`girdi.json`); her sistem için yukarıdaki metrikler ve %95 güven aralıkları (`metrikler.csv`); tip bazında TP / FP / FN / P / R / F1 / support (`tip_bazinda.csv`); eşleştirilmiş bootstrap farkları (`karsilastirma.csv`); ürün bazında altın standart ve iki sistemin kararları (`urun_bazinda.csv`); teze girecek tablolar (`rapor.md`). Alt Soru 3 puanlaması (`oneri_puanlama.csv`) ve hata analizi (`hata_analizi.csv`, hatanın kaynağı olan ajan) da aynı klasörde saklanır. Bootstrap tekrar sayısı ve rastgelelik tohumu `config.yaml`'da sabitlenir.
+
 **Beklenti:** Çok ajanlı sistemin tek LLM'i her metrikte geçmesi zorunlu değildir. Ancak açıklanabilirlik, hata izlenebilirliği ve adım bazlı analiz açısından üstünlük sağlaması beklenmektedir. Sonuçlar objektif olarak raporlanacaktır.
 
 ## 7. Kapsam
@@ -166,7 +184,7 @@ Etiketleme, sistemler çalıştırılmadan önce tamamlanır ve sürüm kontrol�
 | Veri | Amazon Reviews 2023 |
 | Ürün sayısı | 200 |
 | Ajan sayısı | 3 |
-| Model | OpenAI GPT-4o-mini; tarihli tam sürüm API erişimi doğrulandığında `config.yaml`'a ve buraya yazılacak (doğrulama bekliyor) |
+| Model | OpenAI GPT-4o-mini (`gpt-4o-mini-2024-07-18`; erişim ve fiyat 30 Ekim 2026'da doğrulandı) |
 | Değerlendirme | 40 ürün manuel etiket; ana metrik gap tipi micro-F1 (+ 6 tip macro-F1); ikincil: seviye isabeti, gap var/yok Macro F1; bootstrap %95 güven aralığı ve eşleştirilmiş karşılaştırma |
 | Karşılaştırma | Çok ajanlı sistem vs tek LLM |
 | Çıktı formatı | JSON (yapılandırılmış) |
@@ -188,15 +206,21 @@ Her ürün için sistem aşağıdaki formatta çıktı üretecektir:
 
 ```
 ASIN:         B07XXXXXXX
-Gap var mı:   Evet
-Gap tipleri:  Beden / Kalıp, Malzeme
-Gap seviyesi: Yüksek
-Ana risk:     Beden uyumsuzluğu
-Öneriler:
-  - Beden tablosu ekle
-  - Gerçek çekim fotoğraf koy
-  - Kumaş kalınlığını açıklamaya ekle
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 3, 5 | sayfa iddiası: 'True to size'
+  - Malzeme: yorum 2, 4 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa 'true to size' diyor ama müşteriler 1-2 beden küçük geldiğini söylüyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] "True to size" ifadesini kaldır; "bir beden büyük almanız önerilir" notu ekle
+      sayfa: 'True to size' | müşteri: Yorum 1, 3, 5: 1-2 beden küçük geliyor
+  - [Malzeme | ekle] Kumaş kalınlığı ve şeffaflık bilgisini açıklamaya ekle
+      sayfa: 'bilgi yok' | müşteri: Yorum 2, 4: kumaş ince ve şeffaf
 ```
+
+Bu metin, sistemin JSON çıktısından otomatik üretilir (`ozet.txt`).
 
 ## 10. Sınırlılıklar
 
@@ -240,3 +264,5 @@ Bu çalışma, e-ticaret ürün sayfalarındaki beklenti uyumsuzluğunu çok aja
 | Tekrarlı yorumlar | — | Birebir aynı negatif yorumlar tek sayılır | Kopyalar "en az 2 yorum" kuralını yanıltıyor |
 | Etiketleme kuralları (sürüm 2) | Tip tanımları yalnızca örnekle; seviye "Yüksek" için "sayfa açıkça iddiada bulunmuş" | Tek konu kuralı (bir şikayet yalnızca tek tipe sayılır, her tipin kendi en az 2 yorumu olmalı); tip tanımları ve öncelik (Malzeme ve Dayanıklılık, Kalite'den önce; Kalite yalnızca ilk günden işçilik/üretim hatası ve genel "cheap/poor quality"); "Yüksek" için ürüne özgü somut iddia şartı (genel pazarlama dili en fazla Orta; renk adı + soluk/donuk = Orta, başka renk = Yüksek); kullanılmış/iade edilmiş ürün gönderimi satıcı hatası (sayılmaz), hasarlı/defolu yeni ürün Kalite | Etiketleme sonrası tutarlılık kontrolünde tip sınırları ve "açık iddia" tanımı netleştirildi; sistem çalıştırılmadan önce 40 ürünün tamamı yeni kurallarla yeniden gözden geçirildi |
 | Bölüm numaraları | 8, 11, 13 eksik | Sıralı (1–13) | Biçim |
+| Öneri formatı ve tutarlılık kontrolü (30 Ekim 2026) | Öneriler serbest metin listesi; tutarlılık kontrolü belgelenmemiş | Her öneri gap tipi, sayfa ifadesi, müşteri deneyimi, işlem (kaldır/değiştir/ekle) ve düzeltme içerir; kodla tutarlılık kontrolü ve tek tekrar hakkı (§3), iki sisteme aynı | Geliştirme kümesindeki (5 ürün) ilk denemede öneriler hangi vaadin tutmadığını ve sayfanın neresinin düzeltileceğini göstermiyordu; Alt Soru 3 puanlaması için öneri ile sayfa bağlamı arasındaki bağ açık olmalı. Gold kümesi kullanılmadı |
+| Sonuç ve ölçüm kaydı (30 Ekim 2026) | Her koşu ürün çıktılarının üzerine yazıyordu; ölçümlerin kaydı tanımlı değildi | Her koşu ayrı klasörde (manifest, prompt'lar, ürün çıktıları, sonuç tablosu, süreç ölçümleri); değerlendirme çıktılarının dosya yapısı tanımlandı (§6) | Koşuların ve iki sistemin tezde karşılaştırılabilmesi, prompt geliştirme geçmişinin ve maliyet/sürenin raporlanabilmesi |

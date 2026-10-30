@@ -1,0 +1,31 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Renk",
+      "ozet": "Renk, fotoğraftakinden çok daha açık geldi.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok dar geldi, 2 beden büyük alınmalı.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kollar ince, yastıklama yok.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

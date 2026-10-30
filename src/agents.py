@@ -103,8 +103,22 @@ def check_input(p, page, reviews, max_reviews=15):
 
 
 # ---------------------------------------------------------------- tutarlılık
-def result_violations(res, n_reviews):
-    """ORTAK SONUÇ kararının kurallarla tutarlılığı; ihlal metinleri listesi."""
+def _norm(s):
+    return " ".join(str(s).split()).casefold()
+
+
+def quote_ok(quote, sources):
+    """Alıntı 'bilgi yok' ya da kaynak metinlerden birinin içinde geçiyor mu (boşluk/harf duyarsız).
+    sources = None ise denetlenmez. Ajan 3 için kaynak Ajan 1 alıntıları, baseline için sayfa metnidir."""
+    if sources is None or str(quote).strip() == NO_INFO:
+        return True
+    q = _norm(quote)
+    return bool(q) and any(q in _norm(s) for s in sources)
+
+
+def result_violations(res, n_reviews, quotes=None):
+    """ORTAK SONUÇ kararının kurallarla tutarlılığı; ihlal metinleri listesi.
+    quotes: sayfa_iddiasi alıntılarının geçmesi gereken kaynak metinler (None = alıntı denetlenmez)."""
     v = []
     types = res["gap_tipleri"]
     if len(set(types)) != len(types):
@@ -116,6 +130,8 @@ def result_violations(res, n_reviews):
             v.append(f"gap_var = false ama seviye '{res['seviye']}' (Yok olmalı)")
         if res["tip_gerekceleri"]:
             v.append("gap_var = false ama tip_gerekceleri dolu")
+        if res["oneriler"]:
+            v.append("gap_var = false ama oneriler dolu")
         return v
     if not types:
         v.append("gap_var = true ama hiç gap tipi yok")
@@ -139,6 +155,8 @@ def result_violations(res, n_reviews):
             v.append(f"{t}: geçersiz yorum numarası {bad} (ürünün {n_reviews} yorumu var)")
         if not str(g["sayfa_iddiasi"]).strip():
             v.append(f"{t}: sayfa_iddiasi boş (iddia yoksa '{NO_INFO}' yazılmalı)")
+        elif not quote_ok(g["sayfa_iddiasi"], quotes):
+            v.append(f"{t}: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: {g['sayfa_iddiasi'][:60]!r}")
     extra = sorted(set(by_type) - set(types))
     if extra:
         v.append(f"tip_gerekceleri gap_tipleri dışında tip içeriyor: {extra}")
@@ -148,7 +166,53 @@ def result_violations(res, n_reviews):
             if n in seen:
                 v.append(f"tek konu kuralı: yorum {n} hem {seen[n]} hem {t} için sayılmış")
             seen[n] = t
+    # seviye kuralı: sayfada iddia yoksa en fazla Orta
+    if res["seviye"] == "Yüksek" and all(str(by_type[t]["sayfa_iddiasi"]).strip() == NO_INFO
+                                          for t in types if t in by_type):
+        v.append(f"seviye Yüksek ama hiçbir gap tipinde sayfa iddiası yok (hepsi '{NO_INFO}'; en fazla Orta)")
+    # öneriler: her öneri bir gap tipine dayanır, her gap tipine en az bir öneri
+    if not res["oneriler"]:
+        v.append("gap_var = true ama oneriler boş")
+    for i, o in enumerate(res["oneriler"], 1):
+        if o["tip"] not in types:
+            v.append(f"öneri {i}: tip '{o['tip']}' gap_tipleri içinde yok")
+        if not str(o["duzeltme"]).strip():
+            v.append(f"öneri {i}: duzeltme boş")
+        if not str(o["sayfa_iddiasi"]).strip():
+            v.append(f"öneri {i}: sayfa_iddiasi boş (iddia yoksa '{NO_INFO}' yazılmalı)")
+        elif not quote_ok(o["sayfa_iddiasi"], quotes):
+            v.append(f"öneri {i}: sayfa_iddiasi sayfa iddialarında birebir geçmiyor: {o['sayfa_iddiasi'][:60]!r}")
+        if str(o["sayfa_iddiasi"]).strip() == NO_INFO and o["islem"] != "ekle":
+            v.append(f"öneri {i}: sayfada iddia yokken islem '{o['islem']}' olamaz ('ekle' olmalı)")
+    no_fix = [t for t in types if not any(o["tip"] == t for o in res["oneriler"])]
+    if no_fix:
+        v.append(f"şu gap tipleri için öneri yok: {no_fix}")
     return v
+
+
+def expectation_warnings(a1, page):
+    """Ajan 1 çıktısı için uyarılar: sayfada birebir geçmeyen alıntılar (çıktıyı değiştirmez)."""
+    return [f"beklenti {i}: iddia sayfada birebir geçmiyor: {b['iddia'][:60]!r}"
+            for i, b in enumerate(a1["beklentiler"], 1) if not quote_ok(b["iddia"], [page])]
+
+
+def render_text(asin, res):
+    """ORTAK SONUÇ'u kapsam §9 metin biçimine çevirir (insan okuması için)."""
+    lines = [f"ASIN:         {asin}",
+             f"gap_var:      {'Evet' if res['gap_var'] else 'Hayır'}",
+             f"gap_tipleri:  {', '.join(res['gap_tipleri']) or '-'}",
+             f"seviye:       {res['seviye']}"]
+    if res["tip_gerekceleri"]:
+        lines.append("gerekçeler:")
+        lines += [f"  - {g['tip']}: yorum {', '.join(map(str, g['yorum_numaralari']))} | "
+                  f"sayfa iddiası: {g['sayfa_iddiasi']!r}" for g in res["tip_gerekceleri"]]
+    lines.append(f"ana_risk:     {res['ana_risk'] or '-'}")
+    if res["oneriler"]:
+        lines.append("öneriler:")
+        for o in res["oneriler"]:
+            lines += [f"  - [{o['tip']} | {o['islem']}] {o['duzeltme']}",
+                      f"      sayfa: {o['sayfa_iddiasi']!r} | müşteri: {o['musteri_deneyimi']}"]
+    return "\n".join(lines)
 
 
 def review_mining_warnings(out, n_reviews):
@@ -192,8 +256,9 @@ def agent3(a1, a2, n_reviews, asin):
     """Karar + öneri. Tutarsızlıkta ihlali açıklayıp 1 kez tekrar sorar.
     (sonuç, meta) döndürür; ikinci deneme de tutarsızsa sonuç DEĞİŞTİRİLMEDEN meta['tutarsiz'] = True."""
     system, user = load_prompt("gap_fix"), agent3_input(a1, a2)
+    quotes = [b["iddia"] for b in a1["beklentiler"]]          # Ajan 3'ün görebildiği tek sayfa kaynağı
     res = llm.call_llm(system, user, RESULT_SCHEMA, tag=f"agent3:{asin}")
-    viol = result_violations(res, n_reviews)
+    viol = result_violations(res, n_reviews, quotes)
     meta = {"deneme": 1, "ilk_ihlaller": viol, "tutarsiz": False, "ihlaller": []}
     if not viol:
         return res, meta
@@ -202,10 +267,11 @@ def agent3(a1, a2, n_reviews, asin):
                   + "\n\nÖnceki cevap:\n" + json.dumps(res, ensure_ascii=False, indent=2)
                   + "\n\nKurallara uyan düzeltilmiş cevabı ver.")
     res2 = llm.call_llm(system, retry_user, RESULT_SCHEMA, tag=f"agent3_retry:{asin}")
-    viol2 = result_violations(res2, n_reviews)
+    viol2 = result_violations(res2, n_reviews, quotes)
     meta.update({"deneme": 2, "ihlaller": viol2, "tutarsiz": bool(viol2)})
     return res2, meta
 
 
-__all__ = ["GAP_TYPES", "agent1", "agent2", "agent3", "check_input", "load_prompt", "page_text",
-           "result_violations", "review_mining_warnings", "reviews_text", "rule_sections", "rules_block"]
+__all__ = ["GAP_TYPES", "agent1", "agent2", "agent3", "check_input", "expectation_warnings", "load_prompt",
+           "page_text", "quote_ok", "render_text", "result_violations", "review_mining_warnings", "reviews_text",
+           "rule_sections", "rules_block"]

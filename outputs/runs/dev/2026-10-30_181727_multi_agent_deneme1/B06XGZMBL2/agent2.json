@@ -1,0 +1,32 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenleri çok küçük, oturmuyor.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün, kısa süre içinde delik açtı.",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kumaş kalitesi düşük, kaşındırıyor.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

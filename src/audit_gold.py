@@ -3,7 +3,7 @@ Gold sızıntı denetimi — KULLANICI tarafından çalıştırılır (gold bari
 Claude Code için engeller).
 
 Gold ürünlerinin ASIN'lerini ve başlıklarını sistem geliştirme alanlarında arar:
-  prompts/, src/, outputs/cache/, outputs/llm_log.jsonl, outputs/multi_agent/dev/
+  prompts/, src/, outputs/cache/, outputs/llm_log.jsonl, outputs/multi_agent/dev/, outputs/runs/dev/
 Faz 7 öncesi beklenen sonuç: HİÇ İZ YOK.
 
 Okunanlar:
@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGETS = ["prompts", "src", "outputs/cache", "outputs/llm_log.jsonl", "outputs/multi_agent/dev"]
+TARGETS = ["prompts", "src", "outputs/cache", "outputs/llm_log.jsonl", "outputs/multi_agent/dev", "outputs/runs/dev"]
 SKIP_DIRS = {"__pycache__"}
 TITLE_PREFIX = 40      # başlığın ilk N karakteri de aranır (kısaltılmış alıntıları yakalamak için)
 

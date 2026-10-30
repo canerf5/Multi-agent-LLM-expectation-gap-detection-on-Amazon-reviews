@@ -1,0 +1,10 @@
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının dar olduğunu belirtmezken, müşteriler ayakkabıların dar kalıp olduğunu ve numara tutmadığını bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Sayfaya kalıp ve beden bilgisi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar kalıp ve numara tutmuyor.

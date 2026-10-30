@@ -1,0 +1,30 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Kalite",
+    "Eksik Bilgi"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Kalite",
+      "yorum_numaralari": [
+        3,
+        5
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    },
+    {
+      "tip": "Eksik Bilgi",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün kalitesi ile ilgili ciddi şikayetler var.",
+  "oneriler": [
+    "Ürün kalitesini düzelt",
+    "Ürün açıklamasını detaylandır"
+  ]
+}

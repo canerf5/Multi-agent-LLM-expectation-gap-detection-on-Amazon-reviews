@@ -1,0 +1,10 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa ürün kalitesinin yüksek olduğunu iddia ediyor, ancak müşteriler kötü işçilik ve düşük kalite sorunları yaşıyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Ürün kalitesi düşük, kötü işçilik var.

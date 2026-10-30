@@ -114,20 +114,3 @@ Farklı mağaza sayısı: 181
 | Clarks | 2 |
 | Fruit of the Loom | 2 |
 | Champion | 2 |
-
-## 7. Örnek Ürünler (ilk 10)
-
-| parent_asin | Küme | Mağaza | Başlık | Yorum | Negatif |
-|---|---|---|---|---|---|
-| B09G4SCGS2 | gold | XXL | XXL Crew Sport Socks (Men's Size 15-18) (3-Pack) | 27 | 6 |
-| B018MT3BW4 | gold | Rothco | Rothco Kids BDU Pants | 270 | 24 |
-| B079HS5K4Z | gold | Yissang | Yissang Women's All Sequined Sparkle Party Stretchy Leg | 17 | 8 |
-| B07DH9K932 | gold | AzWeiler | Azweiler Men's Quarter Length Crew Socks Cotton Made At | 14 | 3 |
-| B08F1788ZY | gold | MANZI | MANZI Plus Size Tights for Women 70D Queen Size Tights( | 122 | 16 |
-| B06XRTKNRR | gold | Crocs | Crocs Kids' Handle It Rain Boots | Waterproof Slip On S | 14 | 5 |
-| B073WL5662 | gold | Coco-Limon | Coco-Limon Women Joggers - Long Fleece with Rib Trimmin | 15 | 5 |
-| B08VSG8YY2 | gold | KingSize | KingSize KS Island Men's Big & Tall Printed Rayon Short | 14 | 3 |
-| B075XJL5ZW | gold | Wearlizer | Wearlizer Dickey False Fake Collar & Doll Collar Vintag | 41 | 8 |
-| B07WW4QSC1 | gold | MYS Collection | Knit Open Poncho - Sweater Versatile Kimono Cardigan Ta | 25 | 4 |
-
-Tam liste: `reports/orneklem_listesi.csv`

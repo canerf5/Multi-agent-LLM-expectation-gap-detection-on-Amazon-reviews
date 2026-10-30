@@ -6,8 +6,9 @@ FAZ 5 — Tek ortak LLM çağrısı: call_llm(system_prompt, user_content, schem
   ayrıca doğrulanır.
 - Önbellek: anahtar = sha256(model + system_prompt + user_content + şema),
   dosya = outputs/cache/<hash>.json. Aynı girdi ikinci kez ödenmez.
-- Her çağrı outputs/llm_log.jsonl'a yazılır: zaman, tag, model, token, maliyet,
-  önbellek isabeti.
+- Her çağrı outputs/llm_log.jsonl'a yazılır: zaman, tag, model, token, maliyet, süre,
+  önbellek isabeti. Önbellekten gelen çağrıda ödenen maliyet 0'dır; ilk (ücretli) çağrının
+  token, maliyet ve süresi orig_* alanlarında tutulur (sistemler arası maliyet karşılaştırması için).
 - Hata / zaman aşımında 3 kez artan beklemeyle (2, 4, 8 sn) tekrar dener.
 - Güvenlik: config.yaml'da model_verified = false iken gerçek API çağrısı yapılmaz
   (önbellekten okuma serbest).
@@ -117,7 +118,10 @@ def call_llm(system_prompt, user_content, schema, tag):
     if path.exists():
         with open(path, encoding="utf-8") as f:
             cached = json.load(f)
-        _log({**entry, "cache_hit": True, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0})
+        usage = cached.get("usage") or {}
+        _log({**entry, "cache_hit": True, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0, "sure_sn": 0.0,
+              "orig_input_tokens": usage.get("input_tokens"), "orig_output_tokens": usage.get("output_tokens"),
+              "orig_cost_usd": cached.get("cost_usd"), "orig_sure_sn": cached.get("sure_sn")})
         return cached["response"]
 
     if _request is _REAL_REQUEST and not c.get("model_verified"):
@@ -125,6 +129,7 @@ def call_llm(system_prompt, user_content, schema, tag):
                        "yapılmaz.")
 
     last = None
+    t0 = time.perf_counter()
     for attempt in range(c.get("llm_retries", 3) + 1):
         try:
             content, usage = _request(model, system_prompt, user_content, schema, c.get("temperature", 0),
@@ -138,6 +143,7 @@ def call_llm(system_prompt, user_content, schema, tag):
             time.sleep(RETRY_WAIT[min(attempt, len(RETRY_WAIT) - 1)])
     else:  # pragma: no cover
         raise LLMError(f"Çağrı başarısız: {last}")
+    dur = round(time.perf_counter() - t0, 3)       # tekrar denemeler ve beklemeler dahil
 
     try:
         data = json.loads(content)
@@ -152,11 +158,12 @@ def call_llm(system_prompt, user_content, schema, tag):
     cost = cost_usd(usage)
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump({"tag": tag, "model": model, "usage": usage, "cost_usd": cost, "created": entry["time"],
+        json.dump({"tag": tag, "model": model, "usage": usage, "cost_usd": cost, "sure_sn": dur,
+                   "created": entry["time"],
                    "request": {"system": system_prompt, "user": user_content, "schema": schema["name"]},
                    "response": data}, f, ensure_ascii=False, indent=2)
     _log({**entry, "cache_hit": False, "input_tokens": usage["input_tokens"],
-          "output_tokens": usage["output_tokens"], "cost_usd": cost,
+          "output_tokens": usage["output_tokens"], "cost_usd": cost, "sure_sn": dur,
           "model_returned": usage.get("model_returned")})
     return data
 

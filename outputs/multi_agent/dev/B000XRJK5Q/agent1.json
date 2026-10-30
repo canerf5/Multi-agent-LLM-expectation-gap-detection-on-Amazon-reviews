@@ -1,0 +1,49 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Syntheitc",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Manmade sole",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "caged strappy leather upper",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "pretty open toe",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "stacked wedge",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Take your style cues from the gorgeous Grecian gods and goddesses and slip into this updated Heech sandal from Nine West.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Nine West offers a quick edit of the runways -- pinpointing the must have looks of the season, and translating what is fun, hip, and of the moment.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "It is trend-right footwear that you will reach for in your closet again and again.",
+      "iddia_turu": "genel"
+    },
+    {
+      "konu": "Diğer",
+      "iddia": "Nine West is sure to be your trusted resource for everyday chic style.",
+      "iddia_turu": "genel"
+    }
+  ]
+}

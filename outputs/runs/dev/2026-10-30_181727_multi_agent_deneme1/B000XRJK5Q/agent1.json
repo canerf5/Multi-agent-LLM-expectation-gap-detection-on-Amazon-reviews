@@ -1,0 +1,14 @@
+{
+  "beklentiler": [
+    {
+      "konu": "Malzeme",
+      "iddia": "100% Syntheitc",
+      "iddia_turu": "somut"
+    },
+    {
+      "konu": "Malzeme",
+      "iddia": "Manmade sole",
+      "iddia_turu": "somut"
+    }
+  ]
+}

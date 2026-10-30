@@ -27,6 +27,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import agents  # noqa: E402
 import llm  # noqa: E402
 import pipeline  # noqa: E402
+import runs  # noqa: E402
 import schemas  # noqa: E402
 
 
@@ -46,7 +47,10 @@ def all_asins(split):
 
 VALID_RESULT = {"gap_var": True, "gap_tipleri": ["Beden/Kalıp"], "seviye": "Orta",
                 "tip_gerekceleri": [{"tip": "Beden/Kalıp", "yorum_numaralari": [1, 2], "sayfa_iddiasi": "bilgi yok"}],
-                "ana_risk": "Beden küçük geliyor.", "oneriler": ["Beden tablosu ekle"]}
+                "ana_risk": "Beden küçük geliyor.",
+                "oneriler": [{"tip": "Beden/Kalıp", "sayfa_iddiasi": "bilgi yok",
+                              "musteri_deneyimi": "Yorum 1, 2: küçük geliyor", "islem": "ekle",
+                              "duzeltme": "Beden tablosu ekle"}]}
 BAD_RESULT = {**VALID_RESULT, "tip_gerekceleri": [{"tip": "Beden/Kalıp", "yorum_numaralari": [1],
                                                     "sayfa_iddiasi": "bilgi yok"}]}
 
@@ -193,6 +197,46 @@ class TestConsistency(unittest.TestCase):
         missing = {**VALID_RESULT, "gap_tipleri": ["Beden/Kalıp", "Renk"]}
         self.assertTrue(any("Renk" in x for x in rv(missing, 5)))
 
+    def test_level_and_quote_rules(self):
+        rv = agents.result_violations
+        # sayfa iddiası yokken Yüksek olamaz
+        self.assertTrue(any("Yüksek" in x for x in rv({**VALID_RESULT, "seviye": "Yüksek"}, 5)))
+        claim = "Runs true to size"
+        high = {**VALID_RESULT, "seviye": "Yüksek",
+                "tip_gerekceleri": [{"tip": "Beden/Kalıp", "yorum_numaralari": [1, 2], "sayfa_iddiasi": claim}],
+                "oneriler": [{**VALID_RESULT["oneriler"][0], "sayfa_iddiasi": claim, "islem": "değiştir"}]}
+        self.assertEqual(rv(high, 5, quotes=["Fit: runs  TRUE to size."]), [])     # boşluk/harf duyarsız
+        self.assertEqual(rv(high, 5), [])                                          # kaynak verilmezse denetlenmez
+        made_up = rv(high, 5, quotes=["100% cotton"])
+        self.assertTrue(any("birebir geçmiyor" in x for x in made_up))
+        self.assertTrue(any("öneri 1" in x for x in made_up))
+
+    def test_suggestion_rules(self):
+        rv = agents.result_violations
+        fix = VALID_RESULT["oneriler"][0]
+        self.assertTrue(any("oneriler boş" in x for x in rv({**VALID_RESULT, "oneriler": []}, 5)))
+        self.assertTrue(any("gap_tipleri içinde yok" in x
+                            for x in rv({**VALID_RESULT, "oneriler": [{**fix, "tip": "Renk"}]}, 5)))
+        self.assertTrue(any("'ekle' olmalı" in x
+                            for x in rv({**VALID_RESULT, "oneriler": [{**fix, "islem": "kaldır"}]}, 5)))
+        self.assertTrue(any("duzeltme boş" in x
+                            for x in rv({**VALID_RESULT, "oneriler": [{**fix, "duzeltme": " "}]}, 5)))
+        no_gap = {"gap_var": False, "gap_tipleri": [], "seviye": "Yok", "tip_gerekceleri": [], "ana_risk": "",
+                  "oneriler": [fix]}
+        self.assertTrue(any("oneriler dolu" in x for x in rv(no_gap, 5)))
+
+    def test_expectation_warnings_and_render(self):
+        p = pipeline.load_products("dev")[0]
+        page = agents.page_text(p)
+        ok = {"beklentiler": [{"konu": "Diğer", "iddia": p["title"], "iddia_turu": "genel"}]}
+        self.assertEqual(agents.expectation_warnings(ok, page), [])
+        bad = {"beklentiler": [{"konu": "Malzeme", "iddia": "uydurma iddia xyz", "iddia_turu": "somut"}]}
+        self.assertEqual(len(agents.expectation_warnings(bad, page)), 1)
+        text = agents.render_text("B000TEST00", VALID_RESULT)
+        for part in ("B000TEST00", "gap_var:      Evet", "Beden/Kalıp", "[Beden/Kalıp | ekle] Beden tablosu ekle"):
+            self.assertIn(part, text)
+        self.assertNotIn("Eksik Bilgi", schemas.EXPECTATION_TOPICS)
+
 
 # ------------------------------------------------------------------ uçtan uca (sahte LLM)
 class TestEndToEnd(TempOutputs):
@@ -205,7 +249,7 @@ class TestEndToEnd(TempOutputs):
         self.assertEqual({d.name for d in out.iterdir() if d.is_dir()}, {"dev"})
         self.assertEqual({d.name for d in (out / "dev").iterdir() if d.is_dir()}, set(dev))
         for asin in dev:
-            for f in ("agent1.json", "agent2.json", "agent3.json", "meta.json"):
+            for f in ("agent1.json", "agent2.json", "agent3.json", "meta.json", "ozet.txt"):
                 self.assertTrue((out / "dev" / asin / f).exists(), f"{asin}/{f}")
         self.assertEqual(len(fake.calls), 15)
         self.assertTrue(all(c["temperature"] == 0 for c in fake.calls))
@@ -239,6 +283,79 @@ class TestEndToEnd(TempOutputs):
         second = self.log()[15:]
         self.assertEqual(len(second), 15)
         self.assertTrue(all(e["cache_hit"] and e["cost_usd"] == 0 for e in second))
+
+    def test_run_records(self):
+        """Her koşu ayrı klasöre yazılır; önbellekli koşuda ödenen 0, eşdeğer maliyet aynı kalır."""
+        dev = all_asins("dev")
+        with mock.patch.object(llm, "_request", FakeLLM()):
+            pipeline.main(["--not", "Öneri formatı v2!"])
+        with mock.patch.object(llm, "_request", FakeLLM()):
+            pipeline.main([])
+        run_dirs = list((self.tmp / "runs" / "dev").iterdir())
+        self.assertEqual(len(run_dirs), 2)
+        first = next(d for d in run_dirs if d.name.endswith("_multi_agent_oneri-formati-v2"))
+        second = next(d for d in run_dirs if d != first)
+        for f in ("manifest.json", "sonuclar.csv", "ozetler.txt", "llm_calls.jsonl", "olcumler.json",
+                  "prompts/expectation.md", "prompts/review_mining.md", "prompts/gap_fix.md"):
+            self.assertTrue((first / f).exists(), f)
+        for asin in dev:
+            for f in ("agent1.json", "agent2.json", "agent3.json", "meta.json", "ozet.txt"):
+                self.assertTrue((first / asin / f).exists(), f"{asin}/{f}")
+        self.assertEqual((first / "prompts" / "gap_fix.md").read_text(encoding="utf-8"),
+                         agents.load_prompt("gap_fix"))
+
+        import csv
+        with open(first / "sonuclar.csv", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        self.assertEqual(list(rows[0]), runs.RESULT_COLS)
+        self.assertEqual({r["parent_asin"] for r in rows}, set(dev))
+        self.assertTrue(set(schemas.GOLD_COLS.values()) <= set(rows[0]))      # gold ile aynı tip sütunları
+
+        man = json.loads((first / "manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(man["tamamlandi"])
+        self.assertEqual(man["sistem"], "multi_agent")
+        self.assertEqual(sorted(man["urunler_tamamlanan"]), sorted(dev))
+        self.assertEqual(set(man["hash"]["prompts"]), {"expectation", "review_mining", "gap_fix"})
+        for k in ("git_commit", "kod_degisikligi_var", "model", "config"):
+            self.assertIn(k, man)
+
+        m1 = json.loads((first / "olcumler.json").read_text(encoding="utf-8"))
+        m2 = json.loads((second / "olcumler.json").read_text(encoding="utf-8"))
+        self.assertEqual((m1["urun"], m1["cagri"]["toplam"], m1["cagri"]["onbellekten"]), (5, 15, 0))
+        self.assertGreater(m1["maliyet_usd"]["odenen"], 0)
+        self.assertEqual(m2["cagri"]["onbellekten"], 15)
+        self.assertEqual(m2["maliyet_usd"]["odenen"], 0)
+        self.assertEqual(m2["maliyet_usd"]["esdeger"], m1["maliyet_usd"]["esdeger"])
+        self.assertEqual(m2["token"]["girdi_esdeger"], m1["token"]["girdi_esdeger"])
+        self.assertEqual(m1["oneriler"]["islem_dagilimi"]["ekle"], 5)
+
+        with open(self.tmp / "runs" / "index.csv", encoding="utf-8") as f:
+            index = list(csv.DictReader(f))
+        self.assertEqual([r["run_id"] for r in index], [first.name, second.name])
+        self.assertEqual(index[0]["prompt_hash"], index[1]["prompt_hash"])
+
+    def test_partial_run_still_recorded(self):
+        class Boom(FakeLLM):
+            def __call__(self, *a, **k):
+                if len(self.calls) == 3:                                        # 2. ürünün ilk çağrısı
+                    raise ValueError("kalıcı hata")
+                return super().__call__(*a, **k)
+        with mock.patch.object(llm, "_request", Boom()):
+            with self.assertRaises(ValueError):
+                pipeline.main([])
+        (run,) = (self.tmp / "runs" / "dev").iterdir()
+        man = json.loads((run / "manifest.json").read_text(encoding="utf-8"))
+        self.assertFalse(man["tamamlandi"])
+        self.assertIn("kalıcı hata", man["hata"])
+        self.assertEqual(len(man["urunler_tamamlanan"]), 1)
+        self.assertEqual(len((run / "sonuclar.csv").read_text(encoding="utf-8").splitlines()), 2)
+
+    def test_slug_and_violation_kind(self):
+        self.assertEqual(runs.slug("Öneri formatı v2!"), "oneri-formati-v2")
+        self.assertEqual(runs.slug(None), "")
+        self.assertEqual(runs.violation_kind("Renk: en az 2 farklı destekleyen yorum gerekli, 1 var [1]"),
+                         "2 yorum şartı")
+        self.assertEqual(runs.violation_kind("bilinmeyen"), "diğer")
 
     def test_retry_fixes_violation(self):
         asin = next(iter(all_asins("dev")))

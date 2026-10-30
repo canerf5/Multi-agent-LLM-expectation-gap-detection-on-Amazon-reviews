@@ -7,20 +7,26 @@ açar: touch .gold_unlock), data/gold/ altında commit'lenmemiş değişiklik yo
 tag'i varsa ve data/gold/ tag'deki haliyle aynıysa çalışır.
 
 Çıktılar:
-  outputs/multi_agent/<split>/<asin>/agent1.json, agent2.json, agent3.json, meta.json
-  outputs/multi_agent/<split>/tutarsiz.jsonl   (ikinci denemede de tutarsız kalanlar)
+  outputs/runs/<split>/<run_id>/                KOŞU KAYDI (src/runs.py): her koşu ayrı klasör; manifest,
+                                                prompt'lar, <asin>/ ara çıktıları, sonuclar.csv, ozetler.txt,
+                                                llm_calls.jsonl, olcumler.json; outputs/runs/index.csv
+  outputs/multi_agent/<split>/<asin>/           SON koşunun kopyası: agent1.json, agent2.json, agent3.json,
+                                                meta.json, ozet.txt (kapsam §9 metin biçimi)
+  outputs/multi_agent/<split>/tutarsiz.jsonl    (ikinci denemede de tutarsız kalanlar)
   outputs/llm_log.jsonl, outputs/cache/         (src/llm.py)
 
 Kullanım:
     python src/pipeline.py --estimate                 # çağrı sayısı + tahmini maliyet (API yok)
     python src/pipeline.py --asin B08V4QYTR6          # tek dev ürün
-    python src/pipeline.py                            # 5 dev ürünün hepsi
+    python src/pipeline.py --not "oneri formati"      # 5 dev ürünün hepsi; koşuya kısa not
     python src/pipeline.py --split gold               # yalnızca kilit koşulları sağlanırsa
 """
 import argparse
 import json
+import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -28,6 +34,7 @@ import yaml
 
 import agents
 import llm
+import runs
 from schemas import EXPECTATION_SCHEMA, RESULT_SCHEMA, REVIEW_MINING_SCHEMA
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,12 +96,14 @@ def estimate(products, out_tokens=(600, 900, 700)):
             "maliyet_usd_tekrar_dahil_en_fazla": cost * 4 / 3, "satirlar": rows}
 
 
-def run_product(p, split, out_root):
+def run_product(p, run_dir):
+    """Bir ürünü 3 ajandan geçirir; ara çıktıları run_dir/<asin>/ altına yazar. (sonuç, meta) döndürür."""
+    t0 = time.perf_counter()
     page, reviews = agents.page_text(p), agents.reviews_text(p)
     errs = agents.check_input(p, page, reviews)
     if errs:
         raise ValueError(f"{p['parent_asin']}: girdi kontrolü başarısız: {errs}")
-    d = out_root / split / p["parent_asin"]
+    d = run_dir / p["parent_asin"]
     d.mkdir(parents=True, exist_ok=True)
 
     a1 = agents.agent1(p)
@@ -103,16 +112,35 @@ def run_product(p, split, out_root):
     (d / "agent2.json").write_text(json.dumps(a2, ensure_ascii=False, indent=2), encoding="utf-8")
     a3, meta = agents.agent3(a1, a2, len(p["negative_reviews"]), p["parent_asin"])
     (d / "agent3.json").write_text(json.dumps(a3, ensure_ascii=False, indent=2), encoding="utf-8")
+    (d / "ozet.txt").write_text(agents.render_text(p["parent_asin"], a3) + "\n", encoding="utf-8")
 
-    meta.update({"parent_asin": p["parent_asin"], "split": split, "n_reviews": len(p["negative_reviews"]),
+    meta.update({"parent_asin": p["parent_asin"], "split": p["split"], "run_id": run_dir.name,
+                 "n_reviews": len(p["negative_reviews"]),
+                 "agent1_uyarilari": agents.expectation_warnings(a1, page),
                  "agent2_uyarilari": agents.review_mining_warnings(a2, len(p["negative_reviews"])),
+                 "sure_duvar_sn": round(time.perf_counter() - t0, 3),
                  "time": datetime.now(timezone.utc).isoformat(timespec="seconds")})
     (d / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    if meta["tutarsiz"]:
-        with open(out_root / split / "tutarsiz.jsonl", "a", encoding="utf-8") as f:
-            f.write(json.dumps({"parent_asin": p["parent_asin"], "ihlaller": meta["ihlaller"],
-                                "time": meta["time"]}, ensure_ascii=False) + "\n")
     return a3, meta
+
+
+def update_latest(run_dir, split, metas):
+    """Son koşunun ürün klasörlerini outputs/multi_agent/<split>/ altına kopyalar."""
+    latest = llm.OUT_DIR / "multi_agent" / split
+    for m in metas:
+        shutil.copytree(run_dir / m["parent_asin"], latest / m["parent_asin"], dirs_exist_ok=True)
+        if m["tutarsiz"]:
+            with open(latest / "tutarsiz.jsonl", "a", encoding="utf-8") as f:
+                f.write(json.dumps({"parent_asin": m["parent_asin"], "ihlaller": m["ihlaller"], "time": m["time"],
+                                    "run_id": run_dir.name}, ensure_ascii=False) + "\n")
+
+
+def read_log_from(n):
+    path = llm.OUT_DIR / "llm_log.jsonl"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return [json.loads(l) for l in list(f)[n:]]
 
 
 def main(argv=None):
@@ -120,6 +148,7 @@ def main(argv=None):
     ap.add_argument("--split", choices=["dev", "gold", "rest"], default="dev")
     ap.add_argument("--asin", action="append", help="yalnızca bu ürün(ler); seçili split içinde olmalı")
     ap.add_argument("--estimate", action="store_true", help="API çağırmadan çağrı sayısı ve maliyet tahmini")
+    ap.add_argument("--not", dest="note", help="koşu kaydına kısa not (ör. 'oneri formati'); klasör adına da girer")
     args = ap.parse_args(argv)
 
     if args.split == "gold":
@@ -142,21 +171,32 @@ def main(argv=None):
               f"(doğrulandı: {load_cfg().get('model_verified')})")
         return
 
-    out_root = llm.OUT_DIR / "multi_agent"
-    n_log_before = sum(1 for _ in open(llm.OUT_DIR / "llm_log.jsonl", encoding="utf-8")) \
-        if (llm.OUT_DIR / "llm_log.jsonl").exists() else 0
-    for p in products:
-        a3, meta = run_product(p, args.split, out_root)
-        flag = " TUTARSIZ" if meta["tutarsiz"] else (" (tekrar ile düzeldi)" if meta["deneme"] == 2 else "")
-        print(f"{p['parent_asin']}: gap_var={a3['gap_var']} tipler={a3['gap_tipleri']} seviye={a3['seviye']}{flag}")
-    new = []
-    if (llm.OUT_DIR / "llm_log.jsonl").exists():
-        with open(llm.OUT_DIR / "llm_log.jsonl", encoding="utf-8") as f:
-            new = [json.loads(l) for l in list(f)[n_log_before:]]
-    cost = sum(e.get("cost_usd") or 0 for e in new)
-    print(f"\nÇağrı: {len(new)} (önbellekten: {sum(e.get('cache_hit', False) for e in new)}) | "
-          f"token: girdi {sum(e.get('input_tokens', 0) for e in new):,}, çıktı {sum(e.get('output_tokens', 0) for e in new):,} | "
-          f"maliyet: ${cost:.6f}")
+    prompts = {n: agents.load_prompt(n) for n in ("expectation", "review_mining", "gap_fix")}
+    run_dir = runs.new_run_dir(llm.OUT_DIR, "multi_agent", args.split, args.note)
+    started = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    n_log_before = len(read_log_from(0))
+    t0 = time.perf_counter()
+    results, metas, error = [], [], None
+    try:
+        for p in products:
+            a3, meta = run_product(p, run_dir)
+            results.append(a3)
+            metas.append(meta)
+            flag = " TUTARSIZ" if meta["tutarsiz"] else (" (tekrar ile düzeldi)" if meta["deneme"] == 2 else "")
+            print(f"{p['parent_asin']}: gap_var={a3['gap_var']} tipler={a3['gap_tipleri']} seviye={a3['seviye']}{flag}")
+    except BaseException as exc:                     # kayıt yine yazılır, hata yukarı iletilir
+        error = f"{type(exc).__name__}: {exc}"
+        raise
+    finally:
+        calls = read_log_from(n_log_before)
+        _, m = runs.write_run(run_dir, system="multi_agent", split=args.split, note=args.note, products=products,
+                              results=results, metas=metas, calls=calls, prompts=prompts, started=started,
+                              wall_sn=time.perf_counter() - t0, completed=error is None, error=error)
+        update_latest(run_dir, args.split, metas)
+        print(f"\nÇağrı: {m['cagri']['toplam']} (önbellekten: {m['cagri']['onbellekten']}) | "
+              f"token: girdi {m['token']['girdi_odenen']:,}, çıktı {m['token']['cikti_odenen']:,} | "
+              f"maliyet: ${m['maliyet_usd']['odenen']:.6f} (eşdeğer ${m['maliyet_usd']['esdeger']:.6f})")
+        print(f"Koşu kaydı: {run_dir}" + ("" if error is None else "  (YARIM: hata nedeniyle tamamlanmadı)"))
 
 
 if __name__ == "__main__":

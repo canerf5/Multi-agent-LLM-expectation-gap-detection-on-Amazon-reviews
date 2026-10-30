@@ -1,0 +1,49 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Kalite
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa ürün kalitesinin yüksek olduğunu iddia ediyor, ancak müşteriler kötü işçilik ve düşük kalite sorunları yaşıyor.
+öneriler:
+  - [Kalite | ekle] Ürün kalitesi hakkında bilgi ekle.
+      sayfa: 'bilgi yok' | müşteri: Yorum 3, 5: Ürün kalitesi düşük, kötü işçilik var.
+
+ASIN:         B0747LCQB1
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits'
+ana_risk:     Ürün dayanıklılığı ile ilgili iddialar var, ancak müşteriler kısa sürede delik açtığını belirtiyorlar.
+öneriler:
+  - [Dayanıklılık | değiştir] Dayanıklılık ile ilgili iddiayı gözden geçirerek, ürünün dayanıklılığı hakkında daha net bilgi verin.
+      sayfa: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits' | müşteri: Yorum 2, 3: Ürün kısa sürede delik açtı.
+
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Sayfa, bedenlerin uygun olduğunu iddia ediyor ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler normalden küçük olabilir, bir beden büyük almanız önerilir.'
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2: Bedenler küçük geliyor.
+
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa, ürünün kalıbının dar olduğunu belirtmezken, müşteriler ayakkabıların dar kalıp olduğunu ve numara tutmadığını bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Sayfaya kalıp ve beden bilgisi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar kalıp ve numara tutmuyor.

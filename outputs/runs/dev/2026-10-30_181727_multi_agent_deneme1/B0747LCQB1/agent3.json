@@ -1,0 +1,38 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp",
+    "Malzeme",
+    "Renk"
+  ],
+  "seviye": "Orta",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        3
+      ],
+      "sayfa_iddiasi": "Slim fit, DCF016-11 colors in 6 (U.S) sizes are available."
+    },
+    {
+      "tip": "Malzeme",
+      "yorum_numaralari": [
+        2
+      ],
+      "sayfa_iddiasi": "80% Cotton, 20% Polyester"
+    },
+    {
+      "tip": "Renk",
+      "yorum_numaralari": [
+        1
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Beden kalıbı dar olduğu ve malzeme ince olduğu yönünde şikayetler var, sayfada bu konularda somut iddialar mevcut.",
+  "oneriler": [
+    "Beden tablosu ekle",
+    "Kumaş kalınlığını belirt",
+    "Ürün fotoğraflarını güncelle"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "urun": 5,
+  "karar": {
+    "gap_var": 5,
+    "gap_var_orani": 1.0,
+    "tip_sayilari": {
+      "Beden/Kalıp": 3,
+      "Renk": 1,
+      "Görsel": 0,
+      "Kalite": 1,
+      "Malzeme": 1,
+      "Dayanıklılık": 1,
+      "Eksik Bilgi": 1
+    },
+    "seviye_dagilimi": {
+      "Yok": 0,
+      "Orta": 3,
+      "Yüksek": 2
+    }
+  },
+  "tutarlilik": {
+    "tekrar_gereken": 4,
+    "tekrar_gereken_orani": 0.8,
+    "tutarsiz": 2,
+    "tutarsiz_orani": 0.4,
+    "ilk_ihlal_turleri": {
+      "2 yorum şartı": 9,
+      "tek konu kuralı": 1
+    },
+    "kalan_ihlal_turleri": {
+      "2 yorum şartı": 4
+    }
+  },
+  "uyarilar": {
+    "agent1": 0,
+    "agent2": 1
+  },
+  "oneriler": {
+    "toplam": 9,
+    "urun_basina": 1.8,
+    "islem_dagilimi": {
+      "kaldır": 0,
+      "değiştir": 0,
+      "ekle": 0
+    }
+  },
+  "cagri": {
+    "toplam": 19,
+    "onbellekten": 4,
+    "hatali": 0
+  },
+  "token": {
+    "girdi_odenen": 35402,
+    "cikti_odenen": 2393,
+    "girdi_esdeger": 45110,
+    "cikti_esdeger": 3137
+  },
+  "maliyet_usd": {
+    "odenen": 0.0067461,
+    "esdeger": 0.0086487,
+    "urun_basina_esdeger": 0.00172974
+  },
+  "sure_sn": {
+    "api_esdeger": 0,
+    "urun_basina_api_esdeger": 0.0,
+    "duvar_saati": 50.0
+  },
+  "aciklama": "esdeger = önbellekten gelen çağrılar için ilk (ücretli) çağrının değerleri; sistemler arası karşılaştırmada esdeger kullanılır"
+}

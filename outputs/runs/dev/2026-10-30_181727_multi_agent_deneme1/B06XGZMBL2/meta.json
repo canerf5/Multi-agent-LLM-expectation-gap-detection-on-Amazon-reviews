@@ -1,0 +1,17 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [1]",
+    "tek konu kuralı: yorum 1 hem Beden/Kalıp hem Malzeme için sayılmış"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B06XGZMBL2",
+  "split": "dev",
+  "n_reviews": 3,
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 3)"
+  ],
+  "time": "2026-10-30T15:18:02+00:00"
+}

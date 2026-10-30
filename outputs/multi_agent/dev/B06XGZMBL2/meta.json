@@ -1,0 +1,18 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [1]"
+  ],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B06XGZMBL2",
+  "split": "dev",
+  "run_id": "2026-10-30_184806_multi_agent_deneme2-oneri-formati",
+  "n_reviews": 3,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [
+    "yorum 1 birden fazla ilgili grupta (grup 1 ve 3)"
+  ],
+  "sure_duvar_sn": 14.803,
+  "time": "2026-10-30T15:48:41+00:00"
+}

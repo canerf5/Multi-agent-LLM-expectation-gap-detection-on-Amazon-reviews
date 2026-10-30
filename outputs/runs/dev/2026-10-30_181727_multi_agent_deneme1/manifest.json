@@ -1,0 +1,78 @@
+{
+  "run_id": "2026-10-30_181727_multi_agent_deneme1",
+  "sistem": "multi_agent",
+  "split": "dev",
+  "not": "deneme1",
+  "tamamlandi": true,
+  "hata": null,
+  "baslangic": "2026-10-30T15:17:27+00:00",
+  "bitis": "2026-10-30T15:48:00+00:00",
+  "urunler_istenen": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "urunler_tamamlanan": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "model": "gpt-4o-mini-2024-07-18",
+  "temperature": 0,
+  "model_verified": true,
+  "git_commit": "629a702209074596e3641d667233fdfffaba4ae3",
+  "kod_degisikligi_var": true,
+  "hash": {
+    "prompts": {
+      "expectation": "3a8e3c66d89f742589b6b201c6281bec8dee9f2e815580d47c48ad728a2d42a4",
+      "gap_fix": "8255bc72616156c95a3213c16c1305cb3af261d3985dd68ac858e5af47c203a6",
+      "review_mining": "051d44633045cdb0db2036c0a49397a33c8eb1567f0805864faf9a83d3ce2c6a"
+    },
+    "prompt_toplam": "b36097fff76b3ffa96be6d108731f02f8e99f72b5d380546f6ab6a0eb9438af2",
+    "kurallar": "d073693aa2bcff6b5a921b59ef8df531295380a79b0e1f2e0f24af933ecffc21",
+    "semalar": null,
+    "config": "d1c230fad3b7ce31655fde555473fff1198706c168a7c363b322ad04aa8e9110"
+  },
+  "config": {
+    "category": "Clothing_Shoes_and_Jewelry",
+    "max_reviews": null,
+    "min_reviews": 10,
+    "min_negative": 3,
+    "negative_max_rating": 2,
+    "min_words": 5,
+    "max_neg_per_product": 15,
+    "include_categories": [
+      "Clothing",
+      "Shoes",
+      "Boot Shop",
+      "Sport Specific Clothing"
+    ],
+    "exclude_categories": [
+      "Jewelry",
+      "Watches",
+      "Accessories",
+      "Handbags & Wallets",
+      "Luggage & Travel Gear",
+      "Shoe, Jewelry & Watch Accessories",
+      "Costumes & Accessories"
+    ],
+    "dedupe_reviews": true,
+    "n_reserve": 10,
+    "n_products": 200,
+    "n_gold": 40,
+    "n_dev": 5,
+    "seed": 42,
+    "model": "gpt-4o-mini-2024-07-18",
+    "model_verified": true,
+    "temperature": 0,
+    "price_input_per_1m": 0.15,
+    "price_output_per_1m": 0.6,
+    "llm_timeout": 120,
+    "llm_retries": 3
+  },
+  "geriye_donuk_arsiv": "Bu kayıt 30 Ekim 2026'da, koşudan sonra oluşturuldu (API çağrısı yapılmadan). Prompt'lar git HEAD (629a702209) şablonları; config.yaml o sırada model sürümü için değiştirilmişti (kod_degisikligi_var). Eski şema: öneriler düz metin (ozetler.txt'de '(eski format)'), şema hash'i yok. Çağrı süreleri o sürümde ölçülmüyordu; duvar saati log zamanlarından yaklaşık hesaplandı. B08V4QYTR6'nın 4 çağrısı önceki tek ürün koşusunun önbelleğinden geldi; eşdeğer değerleri önbellek dosyasından alındı."
+}

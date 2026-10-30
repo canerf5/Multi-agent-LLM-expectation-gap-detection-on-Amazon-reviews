@@ -21,13 +21,17 @@ src/schemas.py                 Faz 5: GAP_TYPES/LEVELS, gold sütun eşlemesi, s
 src/llm.py                     Faz 5: tek ortak call_llm (önbellek, log, maliyet, tekrar deneme)
 src/agents.py                  Faz 5: 3 ajan, girdi metni ve kontrolü, tutarlılık kontrolü
 src/pipeline.py                Faz 5: Ajan 1 -> 2 -> 3; varsayılan dev; gold kilidi
+src/runs.py                    Faz 5: koşu kaydı (manifest, sonuclar.csv, olcumler.json, index.csv); iki sisteme ortak
+src/audit_gold.py              gold sızıntı denetimi (yalnızca kullanıcı çalıştırır)
 prompts/*.md                   ajan prompt'ları; {KURALLAR} çalışma anında kurallar dosyasından doldurulur
 tests/test_faz5.py             API'siz testler (sahte LLM)
+tests/test_bariyer.py          gold bariyeri testleri
 data/raw/                      ham Amazon dosyaları (~43 GB), git'e GİRMEZ
 data/processed/products_200.jsonl  örneklem (gold 40 / dev 5 / rest 155 / reserve 10)
 data/gold/gold_40.csv          ALTIN STANDART (değerlendirmede tek kaynak)
 reports/                       örneklem raporu, ileride metrikler
-outputs/                       LLM çıktıları: multi_agent/<split>/<asin>/, cache/, llm_log.jsonl
+outputs/                       LLM çıktıları: runs/<split>/<koşu>/ (her koşu ayrı, üzerine yazılmaz) + runs/index.csv,
+                               multi_agent/<split>/<asin>/ (son koşunun kopyası), cache/, llm_log.jsonl
 ```
 Python ortamı: `.venv` (`.venv/bin/python`). Ham veriyle örneklem komutu README'deki "Çalıştırma sırası" tablosunda.
 

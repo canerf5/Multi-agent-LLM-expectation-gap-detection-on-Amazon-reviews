@@ -1,0 +1,21 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "bilgi yok"
+    }
+  ],
+  "ana_risk": "Ürün kısa süre içinde delik açma sorunuyla ilgili ciddi şikayetler var.",
+  "oneriler": [
+    "Ürünün dayanıklılığı hakkında bilgi ver"
+  ]
+}

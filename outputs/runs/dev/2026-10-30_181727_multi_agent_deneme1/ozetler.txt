@@ -1,0 +1,65 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Kalite, Eksik Bilgi
+seviye:       Orta
+gerekçeler:
+  - Kalite: yorum 3, 5 | sayfa iddiası: 'bilgi yok'
+  - Eksik Bilgi: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kalitesi ile ilgili ciddi şikayetler var.
+öneriler:
+  - [- | (eski format)] Ürün kalitesini düzelt
+      sayfa: '-' | müşteri: -
+  - [- | (eski format)] Ürün açıklamasını detaylandır
+      sayfa: '-' | müşteri: -
+
+ASIN:         B0747LCQB1
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp, Malzeme, Renk
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 3 | sayfa iddiası: 'Slim fit, DCF016-11 colors in 6 (U.S) sizes are available.'
+  - Malzeme: yorum 2 | sayfa iddiası: '80% Cotton, 20% Polyester'
+  - Renk: yorum 1 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden kalıbı dar olduğu ve malzeme ince olduğu yönünde şikayetler var, sayfada bu konularda somut iddialar mevcut.
+öneriler:
+  - [- | (eski format)] Beden tablosu ekle
+      sayfa: '-' | müşteri: -
+  - [- | (eski format)] Kumaş kalınlığını belirt
+      sayfa: '-' | müşteri: -
+  - [- | (eski format)] Ürün fotoğraflarını güncelle
+      sayfa: '-' | müşteri: -
+
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Ürün kısa süre içinde delik açma sorunuyla ilgili ciddi şikayetler var.
+öneriler:
+  - [- | (eski format)] Ürünün dayanıklılığı hakkında bilgi ver
+      sayfa: '-' | müşteri: -
+
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Beden iddiası var, ancak kullanıcılar bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [- | (eski format)] Beden tablosu ekle
+      sayfa: '-' | müşteri: -
+  - [- | (eski format)] Kalıp uyarısı ekle
+      sayfa: '-' | müşteri: -
+
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Beden kalıbı ile ilgili şikayetler mevcut, ancak sayfada bu konuda bilgi yok.
+öneriler:
+  - [- | (eski format)] Beden tablosu/kalıp uyarısı ekle
+      sayfa: '-' | müşteri: -

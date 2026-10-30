@@ -1,0 +1,31 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Renk",
+      "ozet": "Renk fotoğraftakinden farklı",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Çok küçük geldi, 2 beden büyük alınmalı",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Malzeme",
+      "ozet": "Kollar ince, yetersiz dolgu var",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

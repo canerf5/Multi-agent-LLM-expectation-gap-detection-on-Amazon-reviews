@@ -1,0 +1,14 @@
+{
+  "deneme": 1,
+  "ilk_ihlaller": [],
+  "tutarsiz": false,
+  "ihlaller": [],
+  "parent_asin": "B08V4QYTR6",
+  "split": "dev",
+  "run_id": "2026-10-30_194122_multi_agent_dogrulama-nihai-prompt",
+  "n_reviews": 5,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 6.936,
+  "time": "2026-10-30T16:41:29+00:00"
+}

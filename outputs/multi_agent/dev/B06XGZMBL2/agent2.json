@@ -2,7 +2,7 @@
   "sikayet_gruplari": [
     {
       "tip": "Beden/Kalıp",
-      "ozet": "Bedenleri çok küçük geliyor.",
+      "ozet": "Bedenler çok küçük geliyor",
       "yorum_numaralari": [
         1
       ],
@@ -11,19 +11,10 @@
     },
     {
       "tip": "Dayanıklılık",
-      "ozet": "Ürün kısa sürede delik açtı.",
+      "ozet": "Ürün kısa sürede delik açtı",
       "yorum_numaralari": [
         2,
         3
-      ],
-      "ilgili": true,
-      "ilgisiz_sebebi": null
-    },
-    {
-      "tip": "Malzeme",
-      "ozet": "Kumaş kalitesi düşük.",
-      "yorum_numaralari": [
-        1
       ],
       "ilgili": true,
       "ilgisiz_sebebi": null

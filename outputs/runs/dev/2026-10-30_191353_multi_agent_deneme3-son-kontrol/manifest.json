@@ -1,0 +1,77 @@
+{
+  "run_id": "2026-10-30_191353_multi_agent_deneme3-son-kontrol",
+  "sistem": "multi_agent",
+  "split": "dev",
+  "not": "deneme3 son kontrol",
+  "tamamlandi": true,
+  "hata": null,
+  "baslangic": "2026-10-30T16:13:53+00:00",
+  "bitis": "2026-10-30T16:15:01+00:00",
+  "urunler_istenen": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "urunler_tamamlanan": [
+    "B08V4QYTR6",
+    "B0747LCQB1",
+    "B06XGZMBL2",
+    "B09P9QFB67",
+    "B000XRJK5Q"
+  ],
+  "model": "gpt-4o-mini-2024-07-18",
+  "temperature": 0,
+  "model_verified": true,
+  "git_commit": "7d5646ac9619583381d8673e9c2cd607b79ae213",
+  "kod_degisikligi_var": true,
+  "hash": {
+    "prompts": {
+      "expectation": "cf857480ed659d9b2afb3504b531d85d596daab4251ca34f01dea9dbc18166b1",
+      "gap_fix": "5cbf13727c4e25f5e992dc91cc7ce4940fcded9cf66a1fef8181715aebdcc126",
+      "review_mining": "2b059b31f71e976108bc3e05f497014d6ea928fc49725afcc7ee5befd3651ddf"
+    },
+    "prompt_toplam": "dc33ef52046f542258e6d110c48f469c28a09c341ccd2b8af2e1ef605259af28",
+    "kurallar": "d073693aa2bcff6b5a921b59ef8df531295380a79b0e1f2e0f24af933ecffc21",
+    "semalar": "c802162a81c135ac8d2d7b4bb256dae440d5367199c5f2e54c7d06f63770de3a",
+    "config": "d1c230fad3b7ce31655fde555473fff1198706c168a7c363b322ad04aa8e9110"
+  },
+  "config": {
+    "category": "Clothing_Shoes_and_Jewelry",
+    "max_reviews": null,
+    "min_reviews": 10,
+    "min_negative": 3,
+    "negative_max_rating": 2,
+    "min_words": 5,
+    "max_neg_per_product": 15,
+    "include_categories": [
+      "Clothing",
+      "Shoes",
+      "Boot Shop",
+      "Sport Specific Clothing"
+    ],
+    "exclude_categories": [
+      "Jewelry",
+      "Watches",
+      "Accessories",
+      "Handbags & Wallets",
+      "Luggage & Travel Gear",
+      "Shoe, Jewelry & Watch Accessories",
+      "Costumes & Accessories"
+    ],
+    "dedupe_reviews": true,
+    "n_reserve": 10,
+    "n_products": 200,
+    "n_gold": 40,
+    "n_dev": 5,
+    "seed": 42,
+    "model": "gpt-4o-mini-2024-07-18",
+    "model_verified": true,
+    "temperature": 0,
+    "price_input_per_1m": 0.15,
+    "price_output_per_1m": 0.6,
+    "llm_timeout": 120,
+    "llm_retries": 3
+  }
+}

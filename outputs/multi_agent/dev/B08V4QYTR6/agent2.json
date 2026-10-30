@@ -2,7 +2,7 @@
   "sikayet_gruplari": [
     {
       "tip": "Malzeme",
-      "ozet": "Şortlar ince ve yeterince esnek değil.",
+      "ozet": "Şortlar ince ve yeterince esnek değil",
       "yorum_numaralari": [
         4
       ],
@@ -11,17 +11,16 @@
     },
     {
       "tip": "Kalite",
-      "ozet": "Ürün kalitesi düşük, kötü işçilik var.",
+      "ozet": "Ürün kalitesi düşük, kötü işçilik",
       "yorum_numaralari": [
-        3,
-        5
+        3
       ],
       "ilgili": true,
       "ilgisiz_sebebi": null
     },
     {
       "tip": "Beden/Kalıp",
-      "ozet": "Bel lastiği rahatsız edici, kalıp uygun değil.",
+      "ozet": "Bel lastiği rahatsız edici, kemer gibi hissettiriyor",
       "yorum_numaralari": [
         2
       ],
@@ -29,8 +28,17 @@
       "ilgisiz_sebebi": null
     },
     {
+      "tip": "Dayanıklılık",
+      "ozet": "Yıkandıktan sonra ürün kalitesi düştü, dikişler bozuldu",
+      "yorum_numaralari": [
+        5
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
       "tip": "Eksik Bilgi",
-      "ozet": "Ürün açıklamasında yeterli bilgi yok.",
+      "ozet": "Ürün yeterince destek sağlamıyor, açıklamada yoktu",
       "yorum_numaralari": [
         1
       ],

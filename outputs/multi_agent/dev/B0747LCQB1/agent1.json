@@ -8,7 +8,7 @@
     {
       "konu": "Malzeme",
       "iddia": "Ultra soft Faux-fur lining",
-      "iddia_turu": "somut"
+      "iddia_turu": "genel"
     },
     {
       "konu": "Malzeme",
@@ -19,6 +19,11 @@
       "konu": "Beden/Kalıp",
       "iddia": "Slim fit, DCF016-11 colors in 6 (U.S) sizes are available.",
       "iddia_turu": "somut"
+    },
+    {
+      "konu": "Görsel",
+      "iddia": "Ribbed trims at cuffs and waistband / Kanga pocket / Long sleeve / Drawstring with metal tips",
+      "iddia_turu": "genel"
     }
   ]
 }

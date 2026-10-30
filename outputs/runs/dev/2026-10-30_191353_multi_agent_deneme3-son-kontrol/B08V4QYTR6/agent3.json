@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Beden/Kalıp"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Beden/Kalıp",
+      "yorum_numaralari": [
+        2,
+        1
+      ],
+      "sayfa_iddiasi": "8\" High Waisted"
+    }
+  ],
+  "ana_risk": "Sayfada '8\" High Waisted' iddiası var, ancak kullanıcılar bel lastiğinin rahatsız edici olduğunu ve kalıbın sorunlu olduğunu belirtiyor.",
+  "oneriler": [
+    {
+      "tip": "Beden/Kalıp",
+      "sayfa_iddiasi": "8\" High Waisted",
+      "musteri_deneyimi": "Yorum 2, 1: Bel lastiği rahatsız edici, kalıp sorunlu.",
+      "islem": "değiştir",
+      "duzeltme": "Kalıp ve bel lastiği ile ilgili daha net bilgi verin; 'Bel lastiği rahatsız edici olabilir, kalıp geniş veya dar olabilir' şeklinde bir uyarı ekleyin."
+    }
+  ]
+}

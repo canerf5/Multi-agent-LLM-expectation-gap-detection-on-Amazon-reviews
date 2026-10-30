@@ -1,0 +1,44 @@
+ASIN:         B08V4QYTR6
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B0747LCQB1
+gap_var:      Hayır
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits'
+ana_risk:     Sayfada dayanıklılık ile ilgili 'asla çıkmaz' iddiası var, ancak müşteriler ürünün kısa sürede delik açtığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Ürün kısa sürede delik açabilir' uyarısını ekleyin.
+      sayfa: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits' | müşteri: Yorum 2, 3: Ürün kısa sürede delik açtı
+
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2, 4: Bedenler küçük geliyor.
+
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfada beden kalıbı hakkında bilgi yok, ancak müşteriler ayakkabıların dar kalıp olduğunu ve numara uyumsuzluğu yaşadıklarını bildiriyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Ürün sayfasına 'Dar kalıp; bir beden büyük almanız önerilir.' ifadesini ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar kalıp, numara uyumsuzluğu var.

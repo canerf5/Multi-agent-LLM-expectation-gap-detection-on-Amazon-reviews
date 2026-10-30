@@ -2,7 +2,7 @@
   "sikayet_gruplari": [
     {
       "tip": "Beden/Kalıp",
-      "ozet": "Ayakkabılar dar kalıp ve numara tutmuyor.",
+      "ozet": "Ayakkabılar dar kalıp, numara uyumsuzluğu var.",
       "yorum_numaralari": [
         1,
         2
@@ -12,7 +12,7 @@
     },
     {
       "tip": "Malzeme",
-      "ozet": "Ürün, açıklamada belirtilen deri değil, sentetik malzeme.",
+      "ozet": "Ürün açıklamasında deri olduğu belirtilmesine rağmen sentetik malzeme geldi.",
       "yorum_numaralari": [
         3
       ],

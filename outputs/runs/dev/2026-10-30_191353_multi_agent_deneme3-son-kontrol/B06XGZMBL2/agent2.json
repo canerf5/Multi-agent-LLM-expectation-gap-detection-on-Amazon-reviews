@@ -1,0 +1,31 @@
+{
+  "sikayet_gruplari": [
+    {
+      "tip": "Beden/Kalıp",
+      "ozet": "Bedenleri çok küçük, ayak deliğinden geçemedim.",
+      "yorum_numaralari": [
+        1
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Ürün 3 giyişten sonra delik açtı.",
+      "yorum_numaralari": [
+        3
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    },
+    {
+      "tip": "Dayanıklılık",
+      "ozet": "Mesh kısmında dikişlerden ayrılma ve küçük delikler oluştu.",
+      "yorum_numaralari": [
+        2
+      ],
+      "ilgili": true,
+      "ilgisiz_sebebi": null
+    }
+  ]
+}

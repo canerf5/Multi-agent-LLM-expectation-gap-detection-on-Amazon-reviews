@@ -14,14 +14,14 @@
       "sayfa_iddiasi": "Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits"
     }
   ],
-  "ana_risk": "Ürün dayanıklılığı ile ilgili iddialar var, ancak müşteriler kısa sürede delik açtığını belirtiyorlar.",
+  "ana_risk": "Sayfada dayanıklılık ile ilgili 'asla çıkmaz' iddiası var, ancak müşteriler ürünün kısa sürede delik açtığını bildiriyor.",
   "oneriler": [
     {
       "tip": "Dayanıklılık",
       "sayfa_iddiasi": "Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits",
-      "musteri_deneyimi": "Yorum 2, 3: Ürün kısa sürede delik açtı.",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün kısa sürede delik açtı",
       "islem": "değiştir",
-      "duzeltme": "Dayanıklılık ile ilgili iddiayı gözden geçirerek, ürünün dayanıklılığı hakkında daha net bilgi verin."
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Ürün kısa sürede delik açabilir' uyarısını ekleyin."
     }
   ]
 }

@@ -1,17 +1,14 @@
 {
-  "deneme": 2,
-  "ilk_ihlaller": [
-    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [4]",
-    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [2]"
-  ],
+  "deneme": 1,
+  "ilk_ihlaller": [],
   "tutarsiz": false,
   "ihlaller": [],
   "parent_asin": "B08V4QYTR6",
   "split": "dev",
-  "run_id": "2026-10-30_184806_multi_agent_deneme2-oneri-formati",
+  "run_id": "2026-10-30_194122_multi_agent_dogrulama-nihai-prompt",
   "n_reviews": 5,
   "agent1_uyarilari": [],
   "agent2_uyarilari": [],
-  "sure_duvar_sn": 14.197,
-  "time": "2026-10-30T15:48:20+00:00"
+  "sure_duvar_sn": 6.936,
+  "time": "2026-10-30T16:41:29+00:00"
 }

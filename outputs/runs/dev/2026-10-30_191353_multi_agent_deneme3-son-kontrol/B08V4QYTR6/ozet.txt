@@ -1,0 +1,10 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 1 | sayfa iddiası: '8" High Waisted'
+ana_risk:     Sayfada '8" High Waisted' iddiası var, ancak kullanıcılar bel lastiğinin rahatsız edici olduğunu ve kalıbın sorunlu olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve bel lastiği ile ilgili daha net bilgi verin; 'Bel lastiği rahatsız edici olabilir, kalıp geniş veya dar olabilir' şeklinde bir uyarı ekleyin.
+      sayfa: '8" High Waisted' | müşteri: Yorum 2, 1: Bel lastiği rahatsız edici, kalıp sorunlu.

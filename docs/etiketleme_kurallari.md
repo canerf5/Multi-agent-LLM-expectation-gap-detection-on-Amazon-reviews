@@ -28,6 +28,8 @@ Sayfanın verdiği söz ile müşterilerin şikayeti arasında çelişki var mı
 ## Tek konu kuralı
 Bir şikayet grubu yalnızca **tek** konuya sayılır. Ürünün birden fazla konusu olabilir, ama her konunun **kendi** en az 2 yorumu olmalıdır; aynı yorumlar iki konuyu birden desteklemek için kullanılamaz.
 
+**Aynı sorun:** "En az 2 yorum aynı sorundan bahsediyor" şartında yön farkı ayrı sorundur. Aynı tipteki farklı sorunlar birleştirilerek 2'ye tamamlanmaz. Örnek: 1 yorum "çok küçük geldi", 1 yorum "çok büyük geldi" diyorsa ikisi de Beden/Kalıp olsa da iki ayrı sorundur ve Beden/Kalıp işaretlenmez; 2 yorum "küçük geldi" diyorsa işaretlenir.
+
 Bir şikayet birden fazla konuya uyuyorsa **en spesifik** olana gider: Malzeme ve Dayanıklılık, Kalite'den önce gelir. Kalite yalnızca aşağıdaki tanımdaki durumlar için kullanılır.
 
 ## Seviye kuralı
@@ -78,3 +80,5 @@ Birden fazla konu varsa en yüksek seviye yazılır.
 Etiketleme bitip `data/gold/etiketleme.xlsx` GitHub'a commit edilmeden LLM sistemi çalıştırılmaz. Commit tarihi, etiketlerin sistem çıktısından önce hazırlandığının kanıtıdır.
 
 **Kural revizyonu (sürüm 2):** İlk etiketlemeden sonra yapılan tutarlılık kontrolünde tip sınırlarının ("Kalite"nin Malzeme ve Dayanıklılık ile örtüşmesi; aynı yorumların iki konuya birden sayılması) ve "açık iddia" tanımının belirsiz olduğu görüldü. "Tek konu kuralı", konu tanımları/öncelik sırası ve "somut iddia" tanımı eklendi. Sistem çalıştırılmadan önce 40 ürünün tamamı yeni kurallarla yeniden gözden geçirildi. İlk etiketleme ayrı bir commit olarak saklanmaktadır ("Faz 4: ilk etiketleme (kural netleştirme öncesi)").
+
+**Netleştirme (30 Ekim 2026):** "Tek konu kuralı" altına "aynı sorun" tanımı (yön farkı ayrı sorundur; aynı tipteki farklı sorunlar 2'ye tamamlanmaz) örnekle eklendi. Bu netleştirme altın standart etiketlerini değiştirmemiştir.

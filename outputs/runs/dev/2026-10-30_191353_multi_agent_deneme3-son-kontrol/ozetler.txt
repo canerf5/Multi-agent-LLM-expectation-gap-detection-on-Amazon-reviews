@@ -1,0 +1,49 @@
+ASIN:         B08V4QYTR6
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 2, 1 | sayfa iddiası: '8" High Waisted'
+ana_risk:     Sayfada '8" High Waisted' iddiası var, ancak kullanıcılar bel lastiğinin rahatsız edici olduğunu ve kalıbın sorunlu olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Kalıp ve bel lastiği ile ilgili daha net bilgi verin; 'Bel lastiği rahatsız edici olabilir, kalıp geniş veya dar olabilir' şeklinde bir uyarı ekleyin.
+      sayfa: '8" High Waisted' | müşteri: Yorum 2, 1: Bel lastiği rahatsız edici, kalıp sorunlu.
+
+ASIN:         B0747LCQB1
+gap_var:      Evet
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -
+
+ASIN:         B06XGZMBL2
+gap_var:      Evet
+gap_tipleri:  Dayanıklılık
+seviye:       Yüksek
+gerekçeler:
+  - Dayanıklılık: yorum 2, 3 | sayfa iddiası: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits'
+ana_risk:     Dayanıklılık iddiası var, ancak kullanıcılar ürünün kısa sürede delik açtığını ve dikişlerinin ayrıldığını bildiriyor.
+öneriler:
+  - [Dayanıklılık | değiştir] Ürünün dayanıklılığı hakkında daha net bilgi verin; '3 giyişten sonra delik açma riski vardır' uyarısını ekleyin.
+      sayfa: 'Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits' | müşteri: Yorum 2, 3: Ürün 3 giyişten sonra delik açtı ve mesh kısmında dikişlerden ayrılma oldu.
+
+ASIN:         B09P9QFB67
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Yüksek
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Sayfa, bedenlerin uygun olduğunu iddia ediyor; ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
+öneriler:
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler normalden küçük, bir beden büyük almanız önerilir.'
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2: Bedenler küçük geliyor.
+
+ASIN:         B000XRJK5Q
+gap_var:      Evet
+gap_tipleri:  Beden/Kalıp
+seviye:       Orta
+gerekçeler:
+  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'bilgi yok'
+ana_risk:     Sayfa kalıp hakkında bilgi vermiyor, ancak müşteriler ayakkabıların dar kalıp olduğunu belirtiyor.
+öneriler:
+  - [Beden/Kalıp | ekle] Sayfada 'Dar kalıp; bir numara büyük almanız önerilir' uyarısını ekleyin.
+      sayfa: 'bilgi yok' | müşteri: Yorum 1, 2: Ayakkabılar dar kalıp, numara uyumsuzluğu var.

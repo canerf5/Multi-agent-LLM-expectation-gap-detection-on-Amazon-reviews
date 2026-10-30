@@ -1,0 +1,5 @@
+ASIN:         B0747LCQB1
+gap_var:      Evet
+gap_tipleri:  -
+seviye:       Yok
+ana_risk:     -

@@ -3,7 +3,7 @@
   "gap_tipleri": [
     "Beden/Kalıp"
   ],
-  "seviye": "Yüksek",
+  "seviye": "Orta",
   "tip_gerekceleri": [
     {
       "tip": "Beden/Kalıp",
@@ -14,14 +14,14 @@
       "sayfa_iddiasi": "bilgi yok"
     }
   ],
-  "ana_risk": "Sayfa, ürünün kalıbının dar olduğunu belirtmezken, müşteriler ayakkabıların dar kalıp olduğunu ve numara tutmadığını bildiriyor.",
+  "ana_risk": "Sayfada beden kalıbı hakkında bilgi yok, ancak müşteriler ayakkabıların dar kalıp olduğunu ve numara uyumsuzluğu yaşadıklarını bildiriyor.",
   "oneriler": [
     {
       "tip": "Beden/Kalıp",
       "sayfa_iddiasi": "bilgi yok",
-      "musteri_deneyimi": "Yorum 1, 2: Ayakkabılar dar kalıp ve numara tutmuyor.",
+      "musteri_deneyimi": "Yorum 1, 2: Ayakkabılar dar kalıp, numara uyumsuzluğu var.",
       "islem": "ekle",
-      "duzeltme": "Sayfaya kalıp ve beden bilgisi ekleyin; 'Dar kalıp, bir beden büyük almanız önerilir' notunu ekleyin."
+      "duzeltme": "Ürün sayfasına 'Dar kalıp; bir beden büyük almanız önerilir.' ifadesini ekleyin."
     }
   ]
 }

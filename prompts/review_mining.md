@@ -4,7 +4,7 @@ GÖREV
 Sana yalnızca bir ürünün numaralı negatif müşteri yorumları (1–2 yıldız) verilecek. Ürün sayfasını görmüyorsun. Müşterilerin GERÇEKTE neyden şikayet ettiğini gruplandır.
 
 Her şikayet grubu için:
-- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. "açıklamada yazmıyordu"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç.
+- tip: Şikayetin konusu; aşağıdaki konu tanımlarındaki 7 konudan biri. İlgisiz şikayette null. Eksik Bilgi'yi yalnızca yorum, sayfada veya açıklamada bir bilginin YER ALMADIĞINI açıkça söylüyorsa kullan (ör. "açıklamada yazmıyordu"); ürünün beklentiyi karşılamaması tek başına Eksik Bilgi değildir, o durumda sorunun kendi konusunu seç. Üründe bir özelliğin bulunmaması veya yetersiz olması da Eksik Bilgi değildir; o özelliğin konusudur (ör. kumaşla ilgili bir özellik Malzeme'dir). Yorum sayfadan veya açıklamadan söz etmiyorsa Eksik Bilgi kullanma.
 - ozet: Şikayetin kısa Türkçe özeti (ne söyleniyor; ör. "1–2 numara küçük geliyor").
 - yorum_numaralari: Bu şikayeti dile getiren yorumların numaraları.
 - ilgili: Şikayet ürün sayfasının yarattığı beklentiyle ilgili olabilir mi (true) yoksa kapsam dışı mı (false).

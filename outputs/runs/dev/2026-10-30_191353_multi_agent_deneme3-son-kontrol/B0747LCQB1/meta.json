@@ -1,0 +1,21 @@
+{
+  "deneme": 2,
+  "ilk_ihlaller": [
+    "Malzeme: en az 2 farklı destekleyen yorum gerekli, 1 var [2]",
+    "Beden/Kalıp: en az 2 farklı destekleyen yorum gerekli, 1 var [3]"
+  ],
+  "tutarsiz": true,
+  "ihlaller": [
+    "gap_var = true ama hiç gap tipi yok",
+    "gap_var = true ama seviye 'Yok' (Orta veya Yüksek olmalı)",
+    "gap_var = true ama oneriler boş"
+  ],
+  "parent_asin": "B0747LCQB1",
+  "split": "dev",
+  "run_id": "2026-10-30_191353_multi_agent_deneme3-son-kontrol",
+  "n_reviews": 3,
+  "agent1_uyarilari": [],
+  "agent2_uyarilari": [],
+  "sure_duvar_sn": 18.911,
+  "time": "2026-10-30T16:14:23+00:00"
+}

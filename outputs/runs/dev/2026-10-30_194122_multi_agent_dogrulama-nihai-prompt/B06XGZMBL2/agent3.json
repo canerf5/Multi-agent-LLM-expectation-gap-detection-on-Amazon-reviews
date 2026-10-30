@@ -1,0 +1,27 @@
+{
+  "gap_var": true,
+  "gap_tipleri": [
+    "Dayanıklılık"
+  ],
+  "seviye": "Yüksek",
+  "tip_gerekceleri": [
+    {
+      "tip": "Dayanıklılık",
+      "yorum_numaralari": [
+        2,
+        3
+      ],
+      "sayfa_iddiasi": "Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits"
+    }
+  ],
+  "ana_risk": "Sayfada dayanıklılık ile ilgili 'asla çıkmaz' iddiası var, ancak müşteriler ürünün kısa sürede delik açtığını bildiriyor.",
+  "oneriler": [
+    {
+      "tip": "Dayanıklılık",
+      "sayfa_iddiasi": "Permanently embedded at the fiber level and engineered to never wash out, our fast-drying technology never quits",
+      "musteri_deneyimi": "Yorum 2, 3: Ürün kısa sürede delik açtı",
+      "islem": "değiştir",
+      "duzeltme": "Ürünün dayanıklılığı hakkında daha net bilgi verin; 'Ürün kısa sürede delik açabilir' uyarısını ekleyin."
+    }
+  ]
+}

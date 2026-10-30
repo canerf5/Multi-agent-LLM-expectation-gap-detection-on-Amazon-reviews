@@ -3,8 +3,8 @@ gap_var:      Evet
 gap_tipleri:  Beden/Kalıp
 seviye:       Yüksek
 gerekçeler:
-  - Beden/Kalıp: yorum 1, 2 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
-ana_risk:     Sayfa, bedenlerin uygun olduğunu iddia ediyor ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
+  - Beden/Kalıp: yorum 1, 2, 4 | sayfa iddiası: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.'
+ana_risk:     Beden/Kalıp iddiası var, ancak müşteriler bedenlerin küçük geldiğini belirtiyor.
 öneriler:
-  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bedenler normalden küçük olabilir, bir beden büyük almanız önerilir.'
-      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2: Bedenler küçük geliyor.
+  - [Beden/Kalıp | değiştir] Bedenlerin küçük geldiğine dair uyarı ekleyin; 'Bir beden büyük almanız önerilir'.
+      sayfa: 'This mens golf polo shirts short sleeve based on US regular fit: S, M, L, XL, XXL, 3XL.' | müşteri: Yorum 1, 2, 4: Bedenler küçük geliyor.

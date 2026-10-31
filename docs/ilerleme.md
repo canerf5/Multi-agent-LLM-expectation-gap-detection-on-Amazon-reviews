@@ -12,7 +12,7 @@ Son güncelleme: 30 Ekim 2026
 | 6. Baseline + 5 dev ürünle deneme | ✅ Bitti (baseline donduruldu) | 30 Ekim 2026 | tag `v0.2-agents` |
 | 7. 200 ürün tam koşu | ✅ Bitti | 30 Ekim 2026 | `outputs/runs/all/` |
 | 8. Değerlendirme | ✅ Bitti | 30 Ekim 2026 | `reports/degerlendirme/2026-10-30_215304/`, tag `v0.3-results` |
-| **9. Hata analizi + alt sorular** | 🔧 **Sıradaki** | — | — |
+| **9. Hata analizi + alt sorular** | 🔧 **Devam ediyor** (Alt Soru 2 bitti) | — | — |
 | 10. Tez yazımı | Bekliyor | — | tag `v1.0-final` |
 
 ## Biten fazların özeti
@@ -88,12 +88,13 @@ Toplam ödenen: $0,80 (tahmin ~$0,73, en fazla ~$1,12).
 
 Çoğunluk referansları: hep "Evet" → accuracy 0,900, Macro F1 0,474; hep "Orta" → seviye isabeti 0,700, 3 seviye macro-F1 0,275. Süreç: tutarsız karar 2 (3 ajan) / 21 (baseline); Eksik Bilgi yanlış pozitif 0 / 2; test kümesinde eşdeğer maliyet $0,087 / $0,070, eşdeğer API süresi 482 / 328 sn.
 
-## Sıradaki: Faz 9 — Hata analizi ve alt sorular
+## Devam eden: Faz 9 — Hata analizi ve alt sorular
 
-1. Hata analizi (yontem §7.6): `urun_bazinda.csv` ve ajan ara çıktıları; `hata_analizi.csv`.
-2. Alt Soru 2 (yontem §7.4): 200 ürünün 3 ajanlı çıktısı; Mann-Whitney U + Holm.
-3. Alt Soru 3 (yontem §7.5): kalan kümeden 20 ürün, kör puanlama sayfası; kullanıcı puanlar.
-4. Kullanıcı: kilidi kapatır (hata analizi test ürünlerinin ara çıktılarını okumayı gerektirirse kilit bu iş bitene kadar açık kalabilir).
+**Alt Soru 2 (bitti, 31 Ekim 2026):** `src/06_alt_soru2.py` → `reports/alt_soru2/`. 200 ürünün 3 ajanlı çıktısında gap 176/200 üründe; tip sıklıkları: Beden/Kalıp 134, Malzeme 83, Kalite 40, Dayanıklılık 27, Görsel 15, Eksik Bilgi 6, Renk 5. Hiçbir tipte, tipe sahip olan ve olmayan ürünlerin ortalama puanları arasında anlamlı fark yok (Mann-Whitney U, Holm sonrası tüm p = 1,00; |r| ≤ 0,24).
+
+**Alt Soru 3 (puanlama bekliyor):** `src/05_alt_soru3.py make` → `reports/degerlendirme/2026-10-30_215304/oneri_puanlama.xlsx` (20 ürün, 39 puanlanacak hücre, 1 hücrede öneri yok). Anahtar `oneri_anahtar.json` puanlama bitene kadar açılmaz ve commit'lenmez (`.gitignore`); SHA-256: `e267f83460a85ebd2abb0bb463cf5c69c8ca1a3ae6f6bc164e08e06092997a42`. Kullanıcı puanlar → `python src/05_alt_soru3.py ozet` → anahtar commit'lenir ve `.gitignore` satırı kaldırılır.
+
+**Hata analizi (kilit bekliyor):** yontem §7.6; `urun_bazinda.csv` ve ajan ara çıktıları; seviye karışıklık matrisi; Dayanıklılık/Renk/Malzeme'de iki sistem farkı. Kullanıcı kilidi açınca yapılır, iş bitince kilit kapatılır.
 
 **Kapanan kararlar (30 Ekim 2026):** fiyat/detay girdi farkı belgelendi (`docs/yontem.md` §3, kapsam sınırlılıkları); "markası" kapsamdan çıkarıldı; tutarsız kararlar olduğu gibi değerlendirilir, sayısı raporlanır; seviye isabeti çoğunluk referansı (%70) ve 3 seviye macro-F1 ile verilir; "aynı sorun" (yön farkı ayrı sorundur) kurallara eklendi; Alt Soru 2 (Mann-Whitney U) ve Alt Soru 3 (kalan kümeden 20 ürün, kör puanlama, rubrik) tanımlandı. Kapsam teknik ayrıntılardan arındırıldı, ayrıntılar `docs/yontem.md`'ye taşındı.
 

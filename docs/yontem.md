@@ -231,12 +231,14 @@ Değerlendirme `src/evaluate.py` ile yapılır: altın standart dosyası, iki si
 - **Çoklu karşılaştırma:** 7 tip için ayrı testler yapıldığından p-değerlerine Holm düzeltmesi uygulanır (α = 0,05). Gruplardan biri boş kalan tip (ör. hiçbir üründe tespit edilmeyen) test edilemez; düzeltme test edilebilen tipler üzerinden yapılır ve test edilemeyen tipler ayrıca belirtilir.
 - **Ortalama puan:** Ürünün veri setindeki tüm yorumlarından (yalnızca negatifler değil) hesaplanan ortalama puan kullanılır. Meta verisindeki `average_rating` alanı kullanılmaz: bu alan Amazon sayfasında verinin toplandığı anda gösterilen puandır ve veri setinde bulunmayan yorumları da içerebilir; veri setindeki yorumlardan hesaplanan ortalama, analizdeki yorumlarla aynı kaynağa ve aynı zaman aralığına dayanır ve yeniden hesaplanabilir.
 - **Sınırlılık:** Analiz elle etiket yerine sistem çıktısına dayanır; sistemin hataları (yanlış pozitif ve negatif tipler) sonuçlara yansır. Test kümesindeki sistem başarısı bu analizin güvenilirliği için referans olarak birlikte raporlanır.
+- **Uygulama:** `src/06_alt_soru2.py`; veri Faz 7 tam koşusunun 3 ajanlı çıktısıdır. Mann-Whitney U testinin yanında etki büyüklüğü olarak rank-biserial korelasyon (r = 1 − 2U / (n₁·n₂); r > 0, tipe sahip ürünlerin puanının daha düşük olduğunu gösterir) raporlanır. Çıktılar: `reports/alt_soru2/sonuc.csv`, `reports/alt_soru2/rapor.md`.
 
 ### 7.5 Alt Soru 3
 
 - **Örneklem:** Kalan kümeden (155 ürün) sabit tohumla (seed = 42) 20 ürün seçilir.
 - **Körleme:** Her ürün için iki sistemin önerileri sistem adı gizlenerek ve sistem sırası ürün başına rastgele (sabit tohumla) karıştırılarak sunulur; eşleme puanlama bittikten sonra açılır.
 - **Puanlama birimi:** Her ürün için her sistemin önerilerinin tamamı tek puan alır. Sayfa metni ve yorumlar puanlayıcıya birlikte gösterilir. Bir sistem o üründe gap bulmamışsa (öneri yoksa) puan verilmez ve bu durum ayrıca raporlanır.
+- **Uygulama:** `src/05_alt_soru3.py`. Kalan kümenin ürünleri (örneklem dosyasındaki sırayla) Python `random.Random(42)` üreteciyle 20'si seçilir; aynı üreteç her ürün için sistemlerin A/B sırasını belirler. Puanlama dosyası (`oneri_puanlama.xlsx`) önerileri yalnızca "Sistem A / Sistem B" olarak gösterir; eşleme ayrı bir anahtar dosyasındadır (`oneri_anahtar.json`). Anahtar puanlama bitene kadar açılmaz ve sürüm kontrolüne alınmaz; puanlamadan önce oluşturulduğunun kanıtı olarak SHA-256 özeti (`e267f834…2997a42`) `docs/ilerleme.md`'ye işlenmiştir. Puanlar bitince anahtarla eşlenir (`oneri_puanlama.csv`, `oneri_puanlama_ozet.md`).
 - **Rubrik (sayfa bağlamıyla tutarlılık, 1–5):**
 
 | Puan | Tanım |

@@ -240,3 +240,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Alt Soru 3 kör puanlama anahtarı — puanlama bitene kadar commit'lenmez (özeti ilerleme.md'de)
+reports/degerlendirme/*/oneri_anahtar.json
